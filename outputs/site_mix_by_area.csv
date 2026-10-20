@@ -1,21 +1,21 @@
 broad_name,Sydney,Atlanta,Paris,sydney_vs_avg_pp
-Image & 3D Generation,76.41,13.03,10.56,9.03
-3D Vision & Perception,75.95,13.34,10.71,8.57
-Robotics & Embodied AI,74.55,16.67,8.79,7.16
-Video Generation & Understanding,73.96,19.44,6.6,6.58
-Time Series & Forecasting,73.84,11.63,14.53,6.46
-Vision-Language Models,73.08,14.29,12.64,5.7
-LLM Post-Training,71.16,21.72,7.12,3.78
-Biomolecules & Causal Discovery,69.92,16.02,14.06,2.54
-Graph Learning,68.47,16.22,15.32,1.09
-LLM Reasoning & Retrieval,68.14,22.79,9.07,0.76
-Efficient LLMs & Architectures,67.44,19.86,12.7,0.06
-LLM Behavior & Safety,67.37,22.24,10.39,-0.01
-LLM Agents,67.1,24.3,8.6,-0.28
-PDEs & Dynamical Systems,64.89,21.37,13.74,-2.5
-Reinforcement Learning,64.22,24.34,11.44,-3.16
-DL Theory & Neuroscience,61.0,16.1,22.9,-6.38
-Optimization & Statistics,60.54,21.97,17.49,-6.84
-"Diffusion, Flows & Inference",59.59,20.94,19.47,-7.79
-Trustworthy & Statistical ML,56.69,25.05,18.26,-10.69
-"Bandits, Games & Mechanisms",50.83,25.41,23.76,-16.55
+Robotics & Embodied AI,75.31,15.8,8.89,8.69
+Image & 3D Generation,75.2,14.93,9.87,8.58
+Video Generation & Understanding,74.32,18.65,7.03,7.7
+3D Vision & Perception,73.62,13.32,13.06,7.0
+LLM Post-Training,71.64,21.19,7.16,5.02
+Vision-Language Models,71.46,15.03,13.51,4.84
+Time Series & Forecasting,71.23,13.7,15.07,4.61
+Biomolecules & Causal Discovery,69.28,15.36,15.36,2.65
+LLM Agents,68.29,22.71,9.0,1.66
+LLM Reasoning & Retrieval,68.26,21.8,9.94,1.64
+Graph Learning,68.0,15.33,16.67,1.38
+LLM Behavior & Safety,66.56,21.55,11.89,-0.06
+Efficient LLMs & Architectures,66.47,20.88,12.65,-0.15
+Reinforcement Learning,63.48,24.11,12.41,-3.14
+DL Theory & Neuroscience,62.08,16.21,21.71,-4.54
+PDEs & Dynamical Systems,60.12,23.12,16.76,-6.51
+"Diffusion, Flows & Inference",58.65,20.19,21.15,-7.97
+Optimization & Statistics,57.86,22.86,19.29,-8.77
+Trustworthy & Statistical ML,54.59,25.08,20.33,-12.03
+"Bandits, Games & Mechanisms",48.28,25.0,26.72,-18.35

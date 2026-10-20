@@ -5,6 +5,7 @@ import json
 from pathlib import Path
 import numpy as np
 import pandas as pd
+from common import load_papers
 import plotly.graph_objects as go
 import plotly.express as px
 
@@ -14,7 +15,7 @@ P, OUT, DOCS = ROOT / "data/processed", ROOT / "outputs", ROOT / "docs"
 INK, A26, A25 = "#1f2a44", "#d9480f", "#8aa1b1"
 FONT = dict(family="Inter, system-ui, sans-serif", size=13, color=INK)
 
-df = pd.read_parquet(P / "papers_clustered.parquet")
+df = load_papers()
 labels = json.load(open(ROOT / "data/labels/labels.json"))
 S = json.load(open(OUT / "stats.json"))
 fine_name = {int(k): v["name"] for k, v in labels["fine"].items()}

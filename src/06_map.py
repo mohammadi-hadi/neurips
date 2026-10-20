@@ -6,6 +6,7 @@ import json
 from pathlib import Path
 import numpy as np
 import pandas as pd
+from common import load_papers
 import datamapplot
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -13,7 +14,7 @@ P, OUT, DOCS = ROOT / "data/processed", ROOT / "outputs", ROOT / "docs"
 (OUT / "figures").mkdir(parents=True, exist_ok=True)
 DOCS.mkdir(exist_ok=True)
 
-df = pd.read_parquet(P / "papers_clustered.parquet")
+df = load_papers()
 labels = json.load(open(ROOT / "data/labels/labels.json"))
 fine_name = {int(k): v["name"] for k, v in labels["fine"].items()}
 broad_name = {int(k): v["name"] for k, v in labels["broad"].items()}
@@ -30,7 +31,7 @@ fine_lab = d["fine"].map(fine_name).to_numpy()
 broad_lab = d["broad"].map(broad_name).to_numpy()
 
 status = d["decision"].map({"oral": "Oral", "spotlight": "Spotlight", "poster": "Poster"}).fillna("Decision not yet public")
-city = d["site"].replace({"unscheduled": "Not yet scheduled", "": "Not yet scheduled"})
+city = d["site"].replace({"unscheduled": "City not listed", "": "City not listed"})
 
 
 def sector(s):
@@ -61,9 +62,12 @@ for s, c in zip(start, city):
     else:
         day.append(s.tz_convert(local_tz[c]).strftime("Dec %d") + " " + c[:3])  # sorts by date
 
-hover = (d["title"] + " — " + status + " · " + city).to_numpy()
+title = d["title_display"]
+hover = (title + " — " + status + " · " + city).to_numpy()
+safe = title.str.replace(r"[`$\\]", "", regex=True)
 extra = pd.DataFrame({
-    "title": d["title"], "authors": d["authors"].str.slice(0, 160), "status": status, "city": city,
+    "title": title, "safe_title": safe, "openreview": d["openreview"].fillna(""), "pdf": d["pdf"].fillna(""), "arxiv": d["arxiv"],
+    "authors": d["authors"].str.slice(0, 160), "status": status, "city": city,
     "topic": d["fine"].map(fine_name), "area": d["broad"].map(broad_name), "change": change_txt,
     "url": d["url"], "abstract": d["abstract"].str.slice(0, 420) + "…",
 })
@@ -73,7 +77,7 @@ cmap_raw = [g, city.to_numpy(), status.to_numpy(), who.to_numpy(), np.log2(d["n_
 cmap_meta = [
     {"field": "growth", "description": "Change since 2025 (red grew, blue shrank)", "cmap": "RdBu_r", "kind": "continuous"},
     {"field": "city", "description": "City where the poster is presented", "kind": "categorical",
-     "color_mapping": {"Sydney": "#0b7285", "Atlanta": "#862e9c", "Paris": "#e8a20c", "Not yet scheduled": "#ced4da"}},
+     "color_mapping": {"Sydney": "#0b7285", "Atlanta": "#862e9c", "Paris": "#e8a20c", "City not listed": "#ced4da"}},
     {"field": "status", "description": "Oral, spotlight or poster", "kind": "categorical",
      "color_mapping": {"Oral": "#c92a2a", "Spotlight": "#f08c00", "Poster": "#adb5bd", "Decision not yet public": "#e9ecef"}},
     {"field": "sector", "description": "Who wrote it (affiliations)", "kind": "categorical",
@@ -85,6 +89,13 @@ cmap_meta = [
 CSS = """
 #title-container{background:rgba(255,255,255,.92)!important;border-radius:10px;box-shadow:0 2px 12px rgba(31,42,68,.08)}
 #main-title{font-weight:700!important;color:#1f2a44!important;letter-spacing:-.01em}
+#paper-links{display:none;position:absolute;right:14px;bottom:60px;z-index:20;width:340px;background:#fff;
+  border-radius:10px;box-shadow:0 6px 24px rgba(31,42,68,.18);padding:14px 16px;font:13px/1.4 Inter,system-ui,sans-serif;color:#1f2a44}
+#paper-links .t{font-weight:700;margin:0 22px 10px 0}
+#paper-links a{display:inline-block;margin:0 6px 6px 0;padding:6px 10px;border-radius:7px;background:#f1f3f5;color:#1f2a44;text-decoration:none;font-weight:600}
+#paper-links a.main{background:#d9480f;color:#fff}
+#paper-links .n{font-size:11px;color:#6b7489;margin-top:2px}
+#paper-links .x{position:absolute;top:8px;right:10px;cursor:pointer;font-size:16px;color:#6b7489;border:0;background:none}
 .atlas-back{position:absolute;bottom:14px;right:14px;z-index:10;font:600 13px Inter,system-ui,sans-serif;
   background:#1f2a44;color:#fff;padding:8px 12px;border-radius:8px;text-decoration:none}
 """
@@ -97,8 +108,9 @@ plot = datamapplot.create_interactive_plot(
 <div style="opacity:.7;font-size:12px;margin:2px 0 6px">{authors}</div>
 <div style="font-size:12px"><b>{status}</b> · {city} · <i>{area}</i></div>
 <div style="font-size:12px;color:#d9480f;margin:2px 0 6px">{change}</div>
-<div style="font-size:12px;opacity:.85">{abstract}</div></div>""",
-    on_click="window.open(`{url}`)",
+<div style="font-size:12px;opacity:.85">{abstract}</div>
+<div style="font-size:11px;margin-top:6px;color:#1f2a44"><b>Click the dot</b> for the NeurIPS page, arXiv, OpenReview and PDF links.</div></div>""",
+    on_click="showLinks(`{url}`, `{arxiv}`, `{openreview}`, `{pdf}`, `{safe_title}`)",
     marker_size_array=marker,
     title="NeurIPS 2026 · Atlas of change",
     sub_title=f"{len(d):,} papers placed by what their abstracts say. Recolour by change since 2025, city, status, "
@@ -114,7 +126,22 @@ plot = datamapplot.create_interactive_plot(
                         "histogram_bin_selected_fill_color": "#d9480f",
                         "histogram_width": 420, "histogram_height": 90},
     custom_css=CSS,
-    custom_html='<a class="atlas-back" href="index.html">← Read the analysis</a>',
+    custom_html='<a class="atlas-back" href="index.html">← Read the analysis</a>'
+                '<div id="paper-links"><button class="x" onclick="this.parentNode.style.display=\'none\'" '
+                'aria-label="close">×</button><div class="t"></div><div class="l"></div></div>',
+    custom_js="""
+function showLinks(page, arxiv, forum, pdf, title) {
+  const box = document.getElementById('paper-links');
+  box.querySelector('.t').textContent = title;
+  let h = '<a class="main" href="' + page + '" target="_blank" rel="noopener">NeurIPS page</a>' +
+          '<a href="' + arxiv + '" target="_blank" rel="noopener">Find on arXiv</a>';
+  if (forum) h += '<a href="' + forum + '" target="_blank" rel="noopener">OpenReview*</a>' +
+                  '<a href="' + pdf + '" target="_blank" rel="noopener">PDF*</a>' +
+                  '<div class="n">* Not public yet on OpenReview (20 Oct 2026); these links work once NeurIPS releases the papers.</div>';
+  box.querySelector('.l').innerHTML = h;
+  box.style.display = 'block';
+}
+""",
     darkmode=False,
     font_family="Inter",
     cluster_boundary_polygons=True,

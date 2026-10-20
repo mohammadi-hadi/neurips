@@ -5,6 +5,7 @@ from collections import Counter
 from pathlib import Path
 import numpy as np
 import pandas as pd
+from common import load_papers
 import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
@@ -17,7 +18,7 @@ plt.rcParams.update({"font.size": 10, "axes.spines.top": False, "axes.spines.rig
                      "figure.dpi": 150, "savefig.bbox": "tight"})
 INK, A26, A25 = "#1f2a44", "#d9480f", "#8aa1b1"
 
-df = pd.read_parquet(P / "papers_clustered.parquet")
+df = load_papers()
 labels = json.load(open(ROOT / "data/labels/labels.json"))
 fine_name = {int(k): v["name"] for k, v in labels["fine"].items()}
 broad_name = {int(k): v["name"] for k, v in labels["broad"].items()}

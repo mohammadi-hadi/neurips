@@ -8,11 +8,12 @@ import json
 from pathlib import Path
 import numpy as np
 import pandas as pd
+from common import load_papers
 from sklearn.cluster import KMeans
 
 ROOT = Path(__file__).resolve().parents[1]
 P, OUT = ROOT / "data/processed", ROOT / "outputs"
-df = pd.read_parquet(P / "papers_clustered.parquet")
+df = load_papers()
 X = np.load(P / "embeddings.npy")
 broad_name = {int(k): v["name"] for k, v in json.load(open(ROOT / "data/labels/labels.json"))["broad"].items()}
 is25, is26 = (df.year == 2025).to_numpy(), (df.year == 2026).to_numpy()

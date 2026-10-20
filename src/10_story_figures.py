@@ -16,6 +16,7 @@ import json
 from pathlib import Path
 import numpy as np
 import pandas as pd
+from common import load_papers
 import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
@@ -38,7 +39,7 @@ plt.rcParams.update({"font.family": ["Helvetica Neue", "Arial", "DejaVu Sans"], 
 SOURCE = "Data: NeurIPS 2025 & 2026 accepted papers (neurips.cc) · Analysis: Hadi Mohammadi · github.com/mohammadi-hadi/NeurIPS2026_Analysis"
 URL = "mohammadi-hadi.github.io/NeurIPS2026_Analysis"
 
-df = pd.read_parquet(P / "papers_clustered.parquet")
+df = load_papers()
 L = json.load(open(ROOT / "data/labels/labels.json"))
 S = json.load(open(OUT / "stats.json"))
 fine_name = {int(k): v["name"] for k, v in L["fine"].items()}
@@ -244,8 +245,8 @@ ax.set_xlabel("percentage points above or below the city's overall share")
 ax.legend(frameon=False, loc="lower center", bbox_to_anchor=(0.4, 1.0), ncol=3, fontsize=10)
 grid_x(ax)
 frame(fig, "Vision and robotics are mostly in Sydney; theory leans to Paris",
-      f"Bandits and trustworthy ML lean to both Paris and Atlanta. Scheduled posters only "
-      f"({n_unsched:,} papers were not yet scheduled).")
+      "Bandits and trustworthy ML lean to both Paris and Atlanta. Deviation from the overall split of "
+      f"{avg['Sydney']:.0f}% Sydney, {avg['Atlanta']:.0f}% Atlanta, {avg['Paris']:.0f}% Paris.")
 fig.savefig(FIG / "cities_lean.png"); plt.close(fig)
 
 # ================= 6. vocabulary, orals, organisations, countries =================

@@ -1340,157 +1340,156 @@
   }
  ],
  "site_counts": {
-  "Sydney": 4842,
-  "unscheduled": 1919,
-  "Atlanta": 1406,
-  "Paris": 938,
+  "Sydney": 6066,
+  "Atlanta": 1769,
+  "Paris": 1270,
   "": 5
  },
  "site_overall_pct": {
-  "Sydney": 67.38,
-  "Atlanta": 19.57,
-  "Paris": 13.05
+  "Sydney": 66.62,
+  "Atlanta": 19.43,
+  "Paris": 13.95
  },
  "site_mix_by_area": [
   {
-   "broad_name": "Image & 3D Generation",
-   "Sydney": 76.41,
-   "Atlanta": 13.03,
-   "Paris": 10.56,
-   "sydney_vs_avg_pp": 9.03
-  },
-  {
-   "broad_name": "3D Vision & Perception",
-   "Sydney": 75.95,
-   "Atlanta": 13.34,
-   "Paris": 10.71,
-   "sydney_vs_avg_pp": 8.57
-  },
-  {
    "broad_name": "Robotics & Embodied AI",
-   "Sydney": 74.55,
-   "Atlanta": 16.67,
-   "Paris": 8.79,
-   "sydney_vs_avg_pp": 7.16
+   "Sydney": 75.31,
+   "Atlanta": 15.8,
+   "Paris": 8.89,
+   "sydney_vs_avg_pp": 8.69
+  },
+  {
+   "broad_name": "Image & 3D Generation",
+   "Sydney": 75.2,
+   "Atlanta": 14.93,
+   "Paris": 9.87,
+   "sydney_vs_avg_pp": 8.58
   },
   {
    "broad_name": "Video Generation & Understanding",
-   "Sydney": 73.96,
-   "Atlanta": 19.44,
-   "Paris": 6.6,
-   "sydney_vs_avg_pp": 6.58
+   "Sydney": 74.32,
+   "Atlanta": 18.65,
+   "Paris": 7.03,
+   "sydney_vs_avg_pp": 7.7
   },
   {
-   "broad_name": "Time Series & Forecasting",
-   "Sydney": 73.84,
-   "Atlanta": 11.63,
-   "Paris": 14.53,
-   "sydney_vs_avg_pp": 6.46
-  },
-  {
-   "broad_name": "Vision-Language Models",
-   "Sydney": 73.08,
-   "Atlanta": 14.29,
-   "Paris": 12.64,
-   "sydney_vs_avg_pp": 5.7
+   "broad_name": "3D Vision & Perception",
+   "Sydney": 73.62,
+   "Atlanta": 13.32,
+   "Paris": 13.06,
+   "sydney_vs_avg_pp": 7.0
   },
   {
    "broad_name": "LLM Post-Training",
-   "Sydney": 71.16,
-   "Atlanta": 21.72,
-   "Paris": 7.12,
-   "sydney_vs_avg_pp": 3.78
+   "Sydney": 71.64,
+   "Atlanta": 21.19,
+   "Paris": 7.16,
+   "sydney_vs_avg_pp": 5.02
+  },
+  {
+   "broad_name": "Vision-Language Models",
+   "Sydney": 71.46,
+   "Atlanta": 15.03,
+   "Paris": 13.51,
+   "sydney_vs_avg_pp": 4.84
+  },
+  {
+   "broad_name": "Time Series & Forecasting",
+   "Sydney": 71.23,
+   "Atlanta": 13.7,
+   "Paris": 15.07,
+   "sydney_vs_avg_pp": 4.61
   },
   {
    "broad_name": "Biomolecules & Causal Discovery",
-   "Sydney": 69.92,
-   "Atlanta": 16.02,
-   "Paris": 14.06,
-   "sydney_vs_avg_pp": 2.54
-  },
-  {
-   "broad_name": "Graph Learning",
-   "Sydney": 68.47,
-   "Atlanta": 16.22,
-   "Paris": 15.32,
-   "sydney_vs_avg_pp": 1.09
-  },
-  {
-   "broad_name": "LLM Reasoning & Retrieval",
-   "Sydney": 68.14,
-   "Atlanta": 22.79,
-   "Paris": 9.07,
-   "sydney_vs_avg_pp": 0.76
-  },
-  {
-   "broad_name": "Efficient LLMs & Architectures",
-   "Sydney": 67.44,
-   "Atlanta": 19.86,
-   "Paris": 12.7,
-   "sydney_vs_avg_pp": 0.06
-  },
-  {
-   "broad_name": "LLM Behavior & Safety",
-   "Sydney": 67.37,
-   "Atlanta": 22.24,
-   "Paris": 10.39,
-   "sydney_vs_avg_pp": -0.01
+   "Sydney": 69.28,
+   "Atlanta": 15.36,
+   "Paris": 15.36,
+   "sydney_vs_avg_pp": 2.65
   },
   {
    "broad_name": "LLM Agents",
-   "Sydney": 67.1,
-   "Atlanta": 24.3,
-   "Paris": 8.6,
-   "sydney_vs_avg_pp": -0.28
+   "Sydney": 68.29,
+   "Atlanta": 22.71,
+   "Paris": 9.0,
+   "sydney_vs_avg_pp": 1.66
   },
   {
-   "broad_name": "PDEs & Dynamical Systems",
-   "Sydney": 64.89,
-   "Atlanta": 21.37,
-   "Paris": 13.74,
-   "sydney_vs_avg_pp": -2.5
+   "broad_name": "LLM Reasoning & Retrieval",
+   "Sydney": 68.26,
+   "Atlanta": 21.8,
+   "Paris": 9.94,
+   "sydney_vs_avg_pp": 1.64
+  },
+  {
+   "broad_name": "Graph Learning",
+   "Sydney": 68.0,
+   "Atlanta": 15.33,
+   "Paris": 16.67,
+   "sydney_vs_avg_pp": 1.38
+  },
+  {
+   "broad_name": "LLM Behavior & Safety",
+   "Sydney": 66.56,
+   "Atlanta": 21.55,
+   "Paris": 11.89,
+   "sydney_vs_avg_pp": -0.06
+  },
+  {
+   "broad_name": "Efficient LLMs & Architectures",
+   "Sydney": 66.47,
+   "Atlanta": 20.88,
+   "Paris": 12.65,
+   "sydney_vs_avg_pp": -0.15
   },
   {
    "broad_name": "Reinforcement Learning",
-   "Sydney": 64.22,
-   "Atlanta": 24.34,
-   "Paris": 11.44,
-   "sydney_vs_avg_pp": -3.16
+   "Sydney": 63.48,
+   "Atlanta": 24.11,
+   "Paris": 12.41,
+   "sydney_vs_avg_pp": -3.14
   },
   {
    "broad_name": "DL Theory & Neuroscience",
-   "Sydney": 61.0,
-   "Atlanta": 16.1,
-   "Paris": 22.9,
-   "sydney_vs_avg_pp": -6.38
+   "Sydney": 62.08,
+   "Atlanta": 16.21,
+   "Paris": 21.71,
+   "sydney_vs_avg_pp": -4.54
   },
   {
-   "broad_name": "Optimization & Statistics",
-   "Sydney": 60.54,
-   "Atlanta": 21.97,
-   "Paris": 17.49,
-   "sydney_vs_avg_pp": -6.84
+   "broad_name": "PDEs & Dynamical Systems",
+   "Sydney": 60.12,
+   "Atlanta": 23.12,
+   "Paris": 16.76,
+   "sydney_vs_avg_pp": -6.51
   },
   {
    "broad_name": "Diffusion, Flows & Inference",
-   "Sydney": 59.59,
-   "Atlanta": 20.94,
-   "Paris": 19.47,
-   "sydney_vs_avg_pp": -7.79
+   "Sydney": 58.65,
+   "Atlanta": 20.19,
+   "Paris": 21.15,
+   "sydney_vs_avg_pp": -7.97
+  },
+  {
+   "broad_name": "Optimization & Statistics",
+   "Sydney": 57.86,
+   "Atlanta": 22.86,
+   "Paris": 19.29,
+   "sydney_vs_avg_pp": -8.77
   },
   {
    "broad_name": "Trustworthy & Statistical ML",
-   "Sydney": 56.69,
-   "Atlanta": 25.05,
-   "Paris": 18.26,
-   "sydney_vs_avg_pp": -10.69
+   "Sydney": 54.59,
+   "Atlanta": 25.08,
+   "Paris": 20.33,
+   "sydney_vs_avg_pp": -12.03
   },
   {
    "broad_name": "Bandits, Games & Mechanisms",
-   "Sydney": 50.83,
-   "Atlanta": 25.41,
-   "Paris": 23.76,
-   "sydney_vs_avg_pp": -16.55
+   "Sydney": 48.28,
+   "Atlanta": 25.0,
+   "Paris": 26.72,
+   "sydney_vs_avg_pp": -18.35
   }
  ],
  "institutions_2026": [
