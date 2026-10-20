@@ -18,6 +18,10 @@ papers are about"><meta property="og:description" content="All NeurIPS 2026 pape
 .atlas-hero{margin:8px auto 36px}
 .atlas-hero iframe{width:100%;height:min(78vh,760px);border:1px solid var(--rule);border-radius:10px;background:#fff;display:block;
   box-shadow:0 2px 18px rgba(30,58,95,.08)}
+.map-frame{position:relative}
+.map-cover{position:absolute;inset:0;border:0;background:transparent;cursor:pointer;display:flex;align-items:flex-end;justify-content:center;padding-bottom:18px}
+.map-cover span{font-family:var(--sans);font-size:.9rem;font-weight:500;background:var(--accent);color:#fff;padding:8px 14px;border-radius:8px;box-shadow:0 2px 10px rgba(0,0,0,.15)}
+.map-cover:hover span{background:var(--accent-hover)}
 .atlas-hero .actions{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin-top:14px}
 .post-body figure{margin:28px 0}.post-body figure img{width:100%;height:auto;border:1px solid var(--rule);border-radius:8px;background:#fff}
 .post-body figcaption{font-size:var(--step--1);color:var(--ink-3);margin-top:6px}
@@ -42,7 +46,7 @@ papers are about"><meta property="og:description" content="All NeurIPS 2026 pape
 <nav class="atlas-nav" aria-label="NeurIPS Atlas"><div class="container"><a class="name" href="../">NeurIPS Atlas</a><a class="map" href="atlas.html">Open the map</a><a href="index.html">2026 story</a><a href="papers.html">All papers</a><a href="charts/treemap.html">All topics</a><a href="appendix.html">Appendix</a><a href="https://github.com/mohammadi-hadi/neurips">Code &amp; data</a></div></nav><main id="main"><article class="post">
 <header class="post-head"><div class="post-wrap">
 <p class="post-crumbs"><a href="/blog/">Blog</a><span class="sep">/</span><a href="../">NeurIPS Atlas</a></p><h1>What 9,110 NeurIPS 2026
-papers are about</h1><p class="post-dek">I put all 9,110 accepted papers on one map and compared them with 2025. Agents are the big story.</p>
+papers are about</h1><p class="post-dek">I put all 9,110 NeurIPS 2026 papers on one map and compared them with 2025. Agents are the big story.</p>
 <p class="post-byline"><span>6 min read · 20 October 2026</span></p></div></header>
 <div class="post-body"><div class="post-wrap">
 <p>NeurIPS 2026 has 9,110 papers on its program. That is far too many to
@@ -50,7 +54,7 @@ read, so I put them all on one map and compared them with the 5,856
 papers from 2025.</p>
 <p>The big story is agents. Papers about LLM agents more than doubled
 their share of the conference.</p>
-</div><section class="container atlas-hero" aria-label="map of all papers"><iframe src="atlas.html" title="Map of all NeurIPS 2026 papers"></iframe><div class="actions"><a class="btn" href="atlas.html">Open the map full screen</a><a class="btn btn-ghost" href="papers.html">Search all papers</a></div></section><div class="post-wrap">
+</div><section class="container atlas-hero" aria-label="map of all papers"><div class="map-frame"><iframe src="atlas.html" title="Map of all NeurIPS 2026 papers"></iframe><button class="map-cover" type="button" onclick="this.remove()"><span>Click to explore the map</span></button></div><div class="actions"><a class="btn" href="atlas.html">Open the map full screen</a><a class="btn btn-ghost" href="papers.html">Search all papers</a></div></section><div class="post-wrap">
 <h2 id="seven-things-that-stood-out">Seven things that stood out</h2>
 <ol type="1">
 <li>LLM agents went from 2.9% of papers in 2025 to 6.8% in 2026. That is
