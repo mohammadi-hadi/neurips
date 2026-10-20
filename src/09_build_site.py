@@ -22,13 +22,13 @@ HERO = ('</div><section class="container atlas-hero" aria-label="map of all pape
 
 
 def md_to_html(md_path):
-    body = subprocess.run(["pandoc", str(md_path), "-f", "gfm", "-t", "html5"], capture_output=True,
+    body = subprocess.run(["pandoc", str(md_path), "-f", "gfm", "-t", "html5", "--wrap=none"], capture_output=True,
                           text=True, check=True).stdout
     body = body.replace("../outputs/figures/", "figures/").replace(SITE, "")
     title = re.search(r"<h1[^>]*>(.*?)</h1>", body, re.S)
     body = re.sub(r"<h1[^>]*>.*?</h1>", "", body, count=1, flags=re.S)
     # images become figures with a caption from their alt text
-    body = re.sub(r'<p>(<a href="[^"]*">)?<img src="([^"]+)" alt="([^"]*)"\s*/?>(</a>)?</p>',
+    body = re.sub(r'<p>(<a href="[^"]*">)?<img\s+src="([^"]+)"\s+alt="([^"]*)"\s*/?>(</a>)?</p>',
                   lambda m: f'<figure>{m.group(1) or ""}<img src="{m.group(2)}" alt="{m.group(3)}" loading="lazy">'
                             f'{m.group(4) or ""}<figcaption>{m.group(3)}</figcaption></figure>', body)
     body = re.sub(r"<!--\s*atlas-hero\s*-->\s*<p><strong><a [^>]*>[^<]*</a></strong></p>", HERO, body)
