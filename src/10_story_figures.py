@@ -131,7 +131,7 @@ agent_title = (f"Agent papers went from {n25} to {n26}"
                + (". Every agent topic grew faster than the conference." if all_faster else ""))
 
 
-def draw_agents(ax, fs=10.5, lab_fs=9.5):
+def draw_agents(ax, fs=10.5, lab_fs=9.5, short=None):
     yy = np.arange(len(fam))[::-1]
     ax.hlines(yy, c25, c26, color=ACC, lw=3, alpha=0.5)
     ax.scatter(c25, yy, s=60, color=GREY, zorder=3, label="2025")
@@ -139,7 +139,7 @@ def draw_agents(ax, fs=10.5, lab_fs=9.5):
     for y_, a_, b_ in zip(yy, c25, c26):
         ax.annotate(f"{a_} → {b_}", (b_, y_), xytext=(8, 0), textcoords="offset points", va="center",
                     fontsize=lab_fs, color=INK)
-    ax.set_yticks(yy, [fine_name[f] for f in fam], fontsize=fs)
+    ax.set_yticks(yy, [(short or {}).get(fine_name[f], fine_name[f]) for f in fam], fontsize=fs)
     ax.set_xlim(0, c26.max() * 1.22)
     ax.tick_params(axis="x", labelsize=fs - 1)
     ax.set_xlabel("papers", fontsize=fs - 1)
@@ -322,7 +322,8 @@ def card(name, kicker, big, line, draw, box=(0.06, 0.1, 0.88, 0.52)):
     bottom = t.get_window_extent().transformed(fig.transFigure.inverted()).y0
     fig.text(0.07, bottom - 0.025, line, fontsize=12.5, color=INK, va="top", linespacing=1.3)
     draw(fig, box)
-    fig.text(0.07, 0.035, URL, fontsize=9.5, color=MUTED)
+    if not name.startswith("6_"):  # the last slide shows the address large instead
+        fig.text(0.07, 0.035, URL, fontsize=9.5, color=MUTED)
     with plt.rc_context({"savefig.bbox": "standard"}):
         fig.savefig(CAR / name, dpi=200, facecolor=BG)
     plt.close(fig)
@@ -336,42 +337,100 @@ def draw_img(path):
 
 def draw_field_card(fig, box):
     ax = fig.add_axes(box)
-    keep = {"LLM Agents", "LLM Post-Training", "Robotics & Embodied AI", "Vision & Perception", "Graph Learning & Recommendation",
-            "Diffusion, Flows & Inference", "Image & 3D Generation"}
-    draw_field(ax, keep=keep, fs=9.5, scatter=False)
-    field_colorbar(fig, [box[0] + 0.12, box[1] - 0.025, box[2] - 0.24, 0.012], fs=8.5)
+    keep = {"LLM Agents", "Robotics & Embodied AI", "Vision & Perception", "Graph Learning & Recommendation",
+            "Diffusion, Flows & Inference"}
+    draw_field(ax, keep=keep, fs=13, scatter=False)
+    field_colorbar(fig, [box[0] + 0.1, box[1] - 0.03, box[2] - 0.2, 0.014], fs=11)
 
 
 def draw_atlas_card(fig, box):
     ax = fig.add_axes(box)
     pal = plt.get_cmap("tab20")
     ax.scatter(d26.x, d26.y, s=1.2, c=[pal(int(b) % 20) for b in d26.broad], alpha=0.75, linewidths=0)
-    keep = {"LLM Agents", "LLM Behavior & Safety", "Robotics & Embodied AI", "Vision & Perception",
-            "Reinforcement Learning", "DL Theory & Neuroscience", "Biomolecules & Causal Discovery", "Image & 3D Generation"}
-    pos = spread_labels(med.loc[[b for b in med.index if broad_name[b] in keep]], dx=2.6, dy=0.55)
+    keep = {"LLM Agents", "Robotics & Embodied AI", "Vision & Perception", "LLM Behavior & Safety",
+            "DL Theory & Neuroscience", "Biomolecules & Causal Discovery"}
+    pos = spread_labels(med.loc[[b for b in med.index if broad_name[b] in keep]], dx=3.4, dy=0.8)
     for b, r in pos.iterrows():
-        outline(ax.text(r.x, r.y, broad_name[b], ha="center", va="center", fontsize=9, color=INK, fontweight="bold"), 3)
+        outline(ax.text(r.x, r.y, broad_name[b], ha="center", va="center", fontsize=12.5, color=INK, fontweight="bold"), 4)
     ax.set_xlim(ext[:2]); ax.set_ylim(ext[2:]); ax.axis("off")
 
 
+AGENT_SHORT = {
+    "Tool-Use, Web and GUI Agent Benchmarks": "Agent benchmarks", "LLM Agent Reliability and Efficiency": "Reliability",
+    "LLM Agent Safety and Security": "Safety & security", "LLM Multi-Agent Systems": "Multi-agent systems",
+    "Long-Term Memory for LLM Agents": "Memory", "Self-Evolving Agents and Skill Learning": "Skill learning",
+    "Coding Agents and SWE Benchmarks": "Coding agents", "Multi-Turn LLM Dialogue and Agent RL": "Agent RL & dialogue",
+    "Multimodal Agents and Reasoning Benchmarks": "Multimodal agents"}
+
+
 def draw_agents_card(fig, box):
-    ax = fig.add_axes([box[0] + 0.47, box[1], box[2] - 0.5, box[3]])
-    draw_agents(ax, fs=8, lab_fs=8)
+    ax = fig.add_axes([box[0] + 0.33, box[1], box[2] - 0.36, box[3]])
+    draw_agents(ax, fs=12.5, lab_fs=11.5, short=AGENT_SHORT)
     ax.get_legend().remove()
+    ax.set_xlabel("papers (grey 2025, orange 2026)", fontsize=11)
 
 
 ag = next(x for x in S["broad"] if "Agent" in x["topic"])
 card("1_cover.png", "NeurIPS 2026 · paper atlas", "9,110 papers,\none map",
-     "Every accepted paper, placed by what its\nabstract says. What changed since 2025?",
+     "Every paper at NeurIPS 2026, placed by what\nits abstract says. What changed since 2025?",
      draw_atlas_card, (0.03, 0.07, 0.94, 0.58))
 card("2_agents.png", "Biggest shift", f"LLM agents:\n{ag['share_2025']:.1f}% → {ag['share_2026']:.1f}%",
      f"{n25} → {n26} papers. {k_agents} of the 10 subtopics that\ngained the most share are about agents.",
-     draw_agents_card, (0.05, 0.1, 0.9, 0.5))
+     draw_agents_card, (0.05, 0.14, 0.9, 0.47))
 card("3_moved.png", "Where the field moved", "Red grew,\nblue shrank",
      "The 2026 map, coloured by how each\nsubtopic's share changed since 2025.",
      draw_field_card, (0.02, 0.12, 0.96, 0.5))
-card("4_explore.png", "Explore it yourself", "Search all\n9,110 papers",
-     "Colour it by change, city or status,\nand click any paper. Link in the first comment.",
-     draw_img(FIG / "atlas_screenshot.png") if (FIG / "atlas_screenshot.png").exists() else draw_img(FIG / "atlas_card.png"),
-     (0.03, 0.08, 0.94, 0.56))
+
+
+def draw_cities_card(fig, box):
+    ax = fig.add_axes([box[0] + 0.33, box[1], box[2] - 0.36, box[3]])
+    pick = lean.loc[list(lean.index[-4:]) + list(lean.index[:4])].iloc[::-1]
+    short = {"Video Generation & Understanding": "Video", "Image & 3D Generation": "Image & 3D gen.",
+             "Robotics & Embodied AI": "Robotics", "Vision & Perception": "Vision",
+             "Bandits, Games & Mechanisms": "Bandits & games", "Trustworthy & Statistical ML": "Trustworthy ML",
+             "Diffusion, Flows & Inference": "Diffusion & flows", "Optimization & Statistics": "Optimization"}
+    yy = np.arange(len(pick))
+    ax.axvline(0, color="#9aa3b5", lw=1)
+    for i_ in yy:
+        ax.hlines(i_, pick.iloc[i_].min(), pick.iloc[i_].max(), color="#d5d9e2", lw=1.5, zorder=1)
+    for c in ["Sydney", "Atlanta", "Paris"]:
+        ax.scatter(pick[c], yy, s=70, color=CITY[c], label=c, zorder=3, edgecolor=BG, linewidths=0.8)
+    ax.set_yticks(yy, [short.get(n, n) for n in pick.index], fontsize=12.5)
+    ax.tick_params(axis="x", labelsize=10.5)
+    ax.set_xlabel("points above or below the city's overall share", fontsize=10.5)
+    ax.legend(frameon=False, fontsize=11.5, ncol=3, loc="lower center", bbox_to_anchor=(0.35, 1.0), handletextpad=0.2, columnspacing=1)
+
+
+def draw_numbers_card(fig, box):
+    voc = {r["term"]: r for r in S["vocabulary"]}
+    gnn = fine.loc["Graph Neural Networks"]
+    c26_ = {c: p_ for c, _, p_ in S["countries_2026"]}; c25_ = {c: p_ for c, _, p_ in S["countries_2025"]}
+    solo = (int(round(S["single_author_pct"]["2025"] * S["n_2025"] / 100)), int(round(S["single_author_pct"]["2026"] * S["n_2026"] / 100)))
+    cells = [
+        (f"{voc['benchmark']['pct_2026']:.0f}%", f"of papers mention a benchmark\n(was {voc['benchmark']['pct_2025']:.0f}% in 2025)"),
+        (f"{gnn.share_2025:.1f}% → {gnn.share_2026:.1f}%", "graph neural networks,\nshare of all papers"),
+        (f"{solo[0]} → {solo[1]}", "papers with a single author"),
+        (f"US {c26_['USA']:.0f}%\nChina {c26_['China']:.0f}%", f"papers with an author from each\n(China was {c25_['China']:.0f}% in 2025)"),
+    ]
+    for k, (big, small) in enumerate(cells):
+        x = 0.07 + (k % 2) * 0.46
+        y = box[1] + box[3] - 0.02 - (k // 2) * 0.27
+        fig.text(x, y, big, fontsize=24, fontweight="bold", color=ACC if k < 2 else INK, va="top", linespacing=1.05)
+        fig.text(x, y - (0.125 if "\n" in big else 0.065), small, fontsize=11.5, color=MUTED, va="top", linespacing=1.3)
+
+
+card("4_numbers.png", "What else changed", "Benchmarks up,\ngraphs down",
+     "Four more numbers from the comparison\nwith NeurIPS 2025.", draw_numbers_card, (0.05, 0.1, 0.9, 0.55))
+card("5_cities.png", "Three cities", f"{avg['Sydney']:.0f}% Sydney\n{avg['Atlanta']:.0f}% Atlanta, {avg['Paris']:.0f}% Paris",
+     "Vision and robotics went to Sydney.\nStatistics, bandits and diffusion lean to Paris.", draw_cities_card, (0.05, 0.14, 0.9, 0.44))
+
+
+def draw_explore_card(fig, box):
+    draw_img(FIG / "atlas_screenshot.png")(fig, box)
+    fig.text(0.5, 0.085, "mohammadi.cv/neurips/2026", fontsize=19, fontweight="bold", color=ACC, ha="center")
+
+
+card("6_explore.png", "Explore it yourself", "Search all\n9,110 papers",
+     "Colour the map by change, city or status,\nand click any paper to read it.",
+     draw_explore_card, (0.06, 0.15, 0.88, 0.5))
 print("story figures and carousel written; agents in top-10 gainers:", k_agents)
