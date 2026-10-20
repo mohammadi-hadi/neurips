@@ -1,0 +1,2270 @@
+{
+ "fine": [
+  {
+   "fine_id": 0,
+   "name": "Diffusion Transformer Quantization and Sparsity",
+   "one_line": "These papers speed up image and video diffusion transformers with post-training or quantization-aware quantization and trainable sparse attention.",
+   "keywords": [
+    "diffusion transformer",
+    "DiT quantization",
+    "sparse attention",
+    "video diffusion",
+    "post-training quantization"
+   ],
+   "coherence": "tight"
+  },
+  {
+   "fine_id": 1,
+   "name": "LLM Benchmarking and LLM-as-a-Judge",
+   "one_line": "These papers study how LLMs are evaluated, covering benchmark design and reliability, judge bias, leaderboard rankings and AI peer review.",
+   "keywords": [
+    "LLM evaluation",
+    "LLM-as-a-judge",
+    "benchmark reliability",
+    "leaderboards",
+    "Chatbot Arena"
+   ],
+   "coherence": "mixed"
+  },
+  {
+   "fine_id": 2,
+   "name": "Long-Context Sparse and Linear Attention",
+   "one_line": "These papers make long-context language models efficient through sparse attention, linear RNNs and state-space models, and positional encodings that extend context length.",
+   "keywords": [
+    "long-context LLM",
+    "sparse attention",
+    "linear attention",
+    "state space models",
+    "RoPE extrapolation"
+   ],
+   "coherence": "tight"
+  },
+  {
+   "fine_id": 3,
+   "name": "Reward Models and Human Behavior Modeling",
+   "one_line": "These papers mix reward and process-reward modeling for LLMs, including reward hacking, with computational models of human and animal decision-making behavior.",
+   "keywords": [
+    "reward modeling",
+    "process reward model",
+    "reward hacking",
+    "human behavior modeling",
+    "cognitive science"
+   ],
+   "coherence": "loose"
+  },
+  {
+   "fine_id": 4,
+   "name": "Transformer Mechanisms and Expressivity Theory",
+   "one_line": "These papers analyze how transformers compute, covering in-context learning theory, looped transformers, attention sinks, massive activations and length generalization.",
+   "keywords": [
+    "transformer theory",
+    "in-context learning",
+    "looped transformers",
+    "attention sinks",
+    "length generalization"
+   ],
+   "coherence": "mixed"
+  },
+  {
+   "fine_id": 5,
+   "name": "LLM Knowledge Editing and Forgetting",
+   "one_line": "These papers update or edit the factual knowledge stored in LLMs and study the forgetting and memorization that happen during continual post-training.",
+   "keywords": [
+    "knowledge editing",
+    "catastrophic forgetting",
+    "continual post-training",
+    "memorization",
+    "LLM knowledge"
+   ],
+   "coherence": "mixed"
+  },
+  {
+   "fine_id": 6,
+   "name": "Class-Incremental Continual Learning",
+   "one_line": "These papers learn new classes or tasks one after another without forgetting old ones, often with LoRA adapters, merging or optimizers built for stability and plasticity.",
+   "keywords": [
+    "continual learning",
+    "class-incremental learning",
+    "catastrophic forgetting",
+    "stability-plasticity",
+    "LoRA continual"
+   ],
+   "coherence": "tight"
+  },
+  {
+   "fine_id": 7,
+   "name": "Controllable Video Generation and Editing",
+   "one_line": "These papers generate and edit videos with control over subjects, motion, identity and lighting, often by turning image editors into video editors.",
+   "keywords": [
+    "video editing",
+    "text-to-video",
+    "image-to-video",
+    "motion control",
+    "subject-driven generation"
+   ],
+   "coherence": "tight"
+  },
+  {
+   "fine_id": 8,
+   "name": "3D Gaussian Splatting",
+   "one_line": "These papers improve 3D Gaussian splatting and neural rendering for novel view synthesis, including feed-forward reconstruction, compression and densification.",
+   "keywords": [
+    "3D Gaussian splatting",
+    "novel view synthesis",
+    "feed-forward reconstruction",
+    "neural rendering",
+    "NeRF"
+   ],
+   "coherence": "tight"
+  },
+  {
+   "fine_id": 9,
+   "name": "LLM Safety Alignment and Jailbreaks",
+   "one_line": "These papers study how safety alignment and refusal behavior in LLMs and multimodal models hold up, break under jailbreaks or fine-tuning, and can be made more robust.",
+   "keywords": [
+    "safety alignment",
+    "jailbreak",
+    "refusal",
+    "emergent misalignment",
+    "harmful fine-tuning"
+   ],
+   "coherence": "tight"
+  },
+  {
+   "fine_id": 10,
+   "name": "Visual Reasoning in Multimodal LLMs",
+   "one_line": "These papers improve and diagnose how vision-language models reason over images, including latent visual reasoning, visual chain-of-thought and grounding.",
+   "keywords": [
+    "multimodal reasoning",
+    "vision-language models",
+    "visual chain-of-thought",
+    "latent visual reasoning",
+    "MLLM"
+   ],
+   "coherence": "mixed"
+  },
+  {
+   "fine_id": 11,
+   "name": "KV Cache Compression and Eviction",
+   "one_line": "These papers shrink the memory cost of LLM inference by evicting, quantizing, pruning or reusing key-value cache entries.",
+   "keywords": [
+    "KV cache",
+    "cache eviction",
+    "KV quantization",
+    "prefix caching",
+    "long-context inference"
+   ],
+   "coherence": "tight"
+  },
+  {
+   "fine_id": 12,
+   "name": "Diffusion Language Models Decoding",
+   "one_line": "These papers develop masked and discrete diffusion language models, focusing on parallel decoding, speculative sampling, unmasking strategies and RL post-training.",
+   "keywords": [
+    "diffusion language models",
+    "masked diffusion",
+    "parallel decoding",
+    "dLLM",
+    "discrete diffusion"
+   ],
+   "coherence": "tight"
+  },
+  {
+   "fine_id": 13,
+   "name": "Optimal Transport Algorithms and Theory",
+   "one_line": "These papers propose solvers and estimation theory for optimal transport, including Gromov-Wasserstein, sliced, unbalanced and barycenter problems.",
+   "keywords": [
+    "optimal transport",
+    "Wasserstein distance",
+    "Gromov-Wasserstein",
+    "sliced OT",
+    "OT map estimation"
+   ],
+   "coherence": "tight"
+  },
+  {
+   "fine_id": 14,
+   "name": "Diffusion Sampling and MCMC Samplers",
+   "one_line": "These papers design and analyze samplers built on diffusion models, Langevin dynamics and sequential Monte Carlo, including posterior sampling for inverse problems.",
+   "keywords": [
+    "diffusion sampling",
+    "Langevin dynamics",
+    "sequential Monte Carlo",
+    "posterior sampling",
+    "inverse problems"
+   ],
+   "coherence": "tight"
+  },
+  {
+   "fine_id": 15,
+   "name": "Goal-Conditioned RL and Task Specifications",
+   "one_line": "These papers train RL agents to reach goals or satisfy formal task specifications such as temporal logic and reward machines, often offline and with subgoal planning.",
+   "keywords": [
+    "goal-conditioned RL",
+    "offline GCRL",
+    "temporal logic",
+    "reward machines",
+    "subgoal planning"
+   ],
+   "coherence": "mixed"
+  },
+  {
+   "fine_id": 16,
+   "name": "Learning with Noisy and Weak Labels",
+   "one_line": "These papers handle imperfect supervision such as label noise, partial and positive-unlabeled labels, class imbalance and active learning, along with surrogate-loss theory.",
+   "keywords": [
+    "noisy labels",
+    "weak supervision",
+    "PU learning",
+    "active learning",
+    "surrogate losses"
+   ],
+   "coherence": "mixed"
+  },
+  {
+   "fine_id": 17,
+   "name": "Dexterous and Humanoid Robot Manipulation",
+   "one_line": "These papers learn dexterous hand-object interaction, humanoid loco-manipulation and contact-rich control, often from egocentric human videos and tactile or force signals.",
+   "keywords": [
+    "dexterous manipulation",
+    "humanoid robots",
+    "hand-object interaction",
+    "tactile sensing",
+    "loco-manipulation"
+   ],
+   "coherence": "tight"
+  },
+  {
+   "fine_id": 18,
+   "name": "RL Theory for MDPs",
+   "one_line": "These papers prove convergence and sample-complexity results for policy gradient, value iteration and off-policy evaluation in discounted and average-reward MDPs.",
+   "keywords": [
+    "MDP",
+    "policy gradient convergence",
+    "sample complexity",
+    "average-reward RL",
+    "off-policy evaluation"
+   ],
+   "coherence": "tight"
+  },
+  {
+   "fine_id": 19,
+   "name": "Cooperative Multi-Agent RL",
+   "one_line": "These papers train teams of agents to coordinate and explore in cooperative or mixed-motive multi-agent reinforcement learning and Markov games.",
+   "keywords": [
+    "multi-agent reinforcement learning",
+    "MARL",
+    "cooperative agents",
+    "Markov games",
+    "CTDE"
+   ],
+   "coherence": "tight"
+  },
+  {
+   "fine_id": 20,
+   "name": "Long-Term Memory for LLM Agents",
+   "one_line": "These papers build and benchmark memory systems that let LLM agents store, retrieve and update past experience over long dialogues and tasks.",
+   "keywords": [
+    "agent memory",
+    "long-term memory",
+    "LLM agents",
+    "LongMemEval",
+    "personalized memory"
+   ],
+   "coherence": "tight"
+  },
+  {
+   "fine_id": 21,
+   "name": "Multimodal Agent Benchmarks and Search",
+   "one_line": "These papers evaluate and train multimodal LLM agents for web search, deep research, tool use and embodied decision-making, mostly through new benchmarks.",
+   "keywords": [
+    "multimodal agents",
+    "agent benchmarks",
+    "multimodal search",
+    "web agents",
+    "deep research agents"
+   ],
+   "coherence": "mixed"
+  },
+  {
+   "fine_id": 22,
+   "name": "Anomaly Detection Across Modalities",
+   "one_line": "These papers detect anomalies in industrial images, time series, graphs, video and audio, including zero-shot and few-shot settings.",
+   "keywords": [
+    "anomaly detection",
+    "time series anomaly",
+    "industrial defect detection",
+    "graph anomaly detection",
+    "zero-shot anomaly"
+   ],
+   "coherence": "tight"
+  },
+  {
+   "fine_id": 23,
+   "name": "Weather, Climate and Air Quality Forecasting",
+   "one_line": "These papers forecast weather, air quality, cyclones and other environmental and energy quantities with ML models and new benchmarks.",
+   "keywords": [
+    "weather forecasting",
+    "climate ML",
+    "air quality",
+    "downscaling",
+    "spatio-temporal forecasting"
+   ],
+   "coherence": "tight"
+  },
+  {
+   "fine_id": 24,
+   "name": "Efficient High-Resolution Image Diffusion",
+   "one_line": "These papers make image diffusion models faster and higher-resolution through feature caching, few-step distillation, pixel-space diffusion and diffusion-based super-resolution.",
+   "keywords": [
+    "diffusion acceleration",
+    "pixel-space diffusion",
+    "feature caching",
+    "image super-resolution",
+    "few-step diffusion"
+   ],
+   "coherence": "mixed"
+  },
+  {
+   "fine_id": 25,
+   "name": "Multimodal Fusion and Missing Modalities",
+   "one_line": "These papers study how multimodal models combine modalities, addressing modality imbalance, missing modalities, cross-modal alignment and synergy.",
+   "keywords": [
+    "multimodal learning",
+    "missing modalities",
+    "modality imbalance",
+    "cross-modal alignment",
+    "audio-visual"
+   ],
+   "coherence": "mixed"
+  },
+  {
+   "fine_id": 26,
+   "name": "Action-Conditioned Video World Models",
+   "one_line": "These papers build interactive, action-conditioned video world models for robots, games and embodied agents, sometimes combined with vision-language-action policies.",
+   "keywords": [
+    "world models",
+    "action-conditioned video",
+    "interactive world model",
+    "VLA",
+    "embodied simulation"
+   ],
+   "coherence": "tight"
+  },
+  {
+   "fine_id": 27,
+   "name": "Federated Learning under Heterogeneity",
+   "one_line": "These papers train models across distributed clients with non-IID data, covering aggregation, personalization, federated LoRA, robustness and privacy.",
+   "keywords": [
+    "federated learning",
+    "non-IID",
+    "client heterogeneity",
+    "personalized federated learning",
+    "federated LoRA"
+   ],
+   "coherence": "tight"
+  },
+  {
+   "fine_id": 28,
+   "name": "Domain Adaptation and Generalization",
+   "one_line": "These papers transfer models across distribution shifts through unsupervised, source-free and graph domain adaptation and domain generalization.",
+   "keywords": [
+    "domain adaptation",
+    "domain generalization",
+    "source-free adaptation",
+    "graph domain adaptation",
+    "distribution shift"
+   ],
+   "coherence": "tight"
+  },
+  {
+   "fine_id": 29,
+   "name": "Treatment Effect Estimation and Causal Inference",
+   "one_line": "These papers estimate heterogeneous and average treatment effects and counterfactual outcomes from observational, experimental and survival data.",
+   "keywords": [
+    "treatment effect estimation",
+    "CATE",
+    "causal inference",
+    "counterfactual",
+    "survival analysis"
+   ],
+   "coherence": "tight"
+  },
+  {
+   "fine_id": 120,
+   "name": "Multi-Armed and Contextual Bandits",
+   "one_line": "Regret bounds and algorithms for stochastic, linear, contextual, dueling and cascading bandit problems.",
+   "keywords": [
+    "multi-armed bandits",
+    "contextual bandits",
+    "linear bandits",
+    "regret bounds",
+    "dueling bandits"
+   ],
+   "coherence": "tight"
+  },
+  {
+   "fine_id": 121,
+   "name": "Offline RL with Diffusion Policies",
+   "one_line": "Offline and offline-to-online reinforcement learning using diffusion, flow-matching and generative policies trained on fixed datasets.",
+   "keywords": [
+    "offline reinforcement learning",
+    "diffusion policies",
+    "flow matching",
+    "offline-to-online",
+    "D4RL"
+   ],
+   "coherence": "tight"
+  },
+  {
+   "fine_id": 122,
+   "name": "Spatial Reasoning in VLMs",
+   "one_line": "Benchmarks and agentic methods for 3D and embodied spatial reasoning in vision-language models.",
+   "keywords": [
+    "spatial reasoning",
+    "vision-language models",
+    "embodied reasoning",
+    "3D understanding",
+    "spatial intelligence"
+   ],
+   "coherence": "tight"
+  },
+  {
+   "fine_id": 123,
+   "name": "Deep RL Representations and Multitask",
+   "one_line": "General deep reinforcement learning methods covering representation learning, multitask, meta, transfer, safe and model-based RL.",
+   "keywords": [
+    "deep reinforcement learning",
+    "multitask RL",
+    "meta-RL",
+    "representation learning",
+    "safe RL",
+    "model-based RL"
+   ],
+   "coherence": "mixed"
+  },
+  {
+   "fine_id": 124,
+   "name": "LLM Pruning and MoE Compression",
+   "one_line": "Structured pruning, layer removal and mixture-of-experts compression to make large language models cheaper to store and serve.",
+   "keywords": [
+    "structured pruning",
+    "mixture of experts",
+    "model compression",
+    "layer pruning",
+    "efficient LLMs"
+   ],
+   "coherence": "tight"
+  },
+  {
+   "fine_id": 125,
+   "name": "Physical Plausibility in Video Generation",
+   "one_line": "Evaluating and improving physical consistency, motion realism and world modeling in text-to-video generators.",
+   "keywords": [
+    "video generation",
+    "physical plausibility",
+    "text-to-video",
+    "video world models",
+    "video evaluation"
+   ],
+   "coherence": "tight"
+  },
+  {
+   "fine_id": 126,
+   "name": "Sparse Autoencoders for Interpretability",
+   "one_line": "Building, evaluating and stress-testing sparse autoencoders and dictionary learning to extract interpretable features from model activations.",
+   "keywords": [
+    "sparse autoencoders",
+    "SAE",
+    "mechanistic interpretability",
+    "dictionary learning",
+    "crosscoders"
+   ],
+   "coherence": "tight"
+  },
+  {
+   "fine_id": 127,
+   "name": "Neural Combinatorial Optimization",
+   "one_line": "Learned solvers, often diffusion or RL based, for routing, SAT, MILP and other constraint satisfaction problems.",
+   "keywords": [
+    "neural combinatorial optimization",
+    "vehicle routing",
+    "TSP",
+    "MILP",
+    "constraint satisfaction"
+   ],
+   "coherence": "tight"
+  },
+  {
+   "fine_id": 128,
+   "name": "EEG and Physiological Foundation Models",
+   "one_line": "Foundation models, benchmarks and datasets for EEG, ECG and other physiological signals in clinical and brain-computer interface settings.",
+   "keywords": [
+    "EEG",
+    "foundation models",
+    "brain-computer interface",
+    "ECG",
+    "physiological signals"
+   ],
+   "coherence": "tight"
+  },
+  {
+   "fine_id": 129,
+   "name": "Human Motion and Gesture Generation",
+   "one_line": "Generating, predicting and recognizing human motion, dance, gestures, gait and sign from text, scenes or video.",
+   "keywords": [
+    "human motion generation",
+    "text-to-motion",
+    "co-speech gestures",
+    "dance generation",
+    "motion prediction"
+   ],
+   "coherence": "mixed"
+  },
+  {
+   "fine_id": 130,
+   "name": "On-Policy Distillation for LLM Reasoning",
+   "one_line": "Teacher-student distillation where reasoning LLMs learn from teacher feedback on their own generated trajectories.",
+   "keywords": [
+    "on-policy distillation",
+    "knowledge distillation",
+    "reasoning distillation",
+    "self-distillation",
+    "teacher-student"
+   ],
+   "coherence": "tight"
+  },
+  {
+   "fine_id": 131,
+   "name": "Time Series Forecasting Models",
+   "one_line": "Forecasting architectures and time series foundation models for multivariate, long-horizon and non-stationary data.",
+   "keywords": [
+    "time series forecasting",
+    "time series foundation models",
+    "multivariate forecasting",
+    "long-term forecasting",
+    "TSFM"
+   ],
+   "coherence": "tight"
+  },
+  {
+   "fine_id": 132,
+   "name": "GraphRAG and Agentic Search",
+   "one_line": "Retrieval-augmented generation over knowledge graphs and RL-trained search agents for multi-hop question answering.",
+   "keywords": [
+    "GraphRAG",
+    "knowledge graph QA",
+    "agentic search",
+    "multi-hop QA",
+    "retrieval-augmented generation"
+   ],
+   "coherence": "mixed"
+  },
+  {
+   "fine_id": 133,
+   "name": "Efficient Chain-of-Thought Reasoning",
+   "one_line": "Analyzing reasoning traces and reducing overthinking in large reasoning models through pruning, early stopping and search.",
+   "keywords": [
+    "chain-of-thought",
+    "overthinking",
+    "efficient reasoning",
+    "large reasoning models",
+    "test-time compute"
+   ],
+   "coherence": "mixed"
+  },
+  {
+   "fine_id": 134,
+   "name": "RL Post-Training Stability for LLMs",
+   "one_line": "Off-policy corrections, importance ratios, entropy control and credit assignment for stable reinforcement learning post-training of LLMs.",
+   "keywords": [
+    "RL post-training",
+    "importance ratio",
+    "policy entropy",
+    "off-policy RL",
+    "RLHF",
+    "credit assignment"
+   ],
+   "coherence": "tight"
+  },
+  {
+   "fine_id": 135,
+   "name": "Human-AI Collaboration and Oversight",
+   "one_line": "Position and empirical papers on human oversight, AI-assisted decisions, governance and how AI systems should be evaluated with people.",
+   "keywords": [
+    "human-AI collaboration",
+    "human oversight",
+    "AI governance",
+    "AI-assisted decision making",
+    "AI evaluation"
+   ],
+   "coherence": "mixed"
+  },
+  {
+   "fine_id": 136,
+   "name": "Causal Discovery and Structural Models",
+   "one_line": "Learning causal graphs and identifying causal effects with structural causal models, interventions and latent variables.",
+   "keywords": [
+    "causal discovery",
+    "structural causal models",
+    "causal effect identification",
+    "Markov equivalence",
+    "interventions"
+   ],
+   "coherence": "tight"
+  },
+  {
+   "fine_id": 137,
+   "name": "Algorithmic Fairness and Group Constraints",
+   "one_line": "Fair classification and regression, multigroup fairness, fairness audits and fairness-accuracy tradeoffs under sensitive attributes.",
+   "keywords": [
+    "algorithmic fairness",
+    "demographic parity",
+    "multigroup fairness",
+    "fair representations",
+    "fairness audit"
+   ],
+   "coherence": "tight"
+  },
+  {
+   "fine_id": 138,
+   "name": "Robust Regression and Statistical Inference",
+   "one_line": "Statistical theory for linear regression, covariance estimation and inference under heavy tails, corruption and high dimensions.",
+   "keywords": [
+    "robust regression",
+    "statistical inference",
+    "heavy-tailed",
+    "covariance estimation",
+    "high-dimensional statistics"
+   ],
+   "coherence": "mixed"
+  },
+  {
+   "fine_id": 139,
+   "name": "Tabular Foundation Models",
+   "one_line": "In-context tabular foundation models such as TabPFN plus benchmarks, robustness, privacy and generation for tabular data.",
+   "keywords": [
+    "tabular foundation models",
+    "TabPFN",
+    "tabular learning",
+    "in-context learning",
+    "tabular benchmarks"
+   ],
+   "coherence": "tight"
+  },
+  {
+   "fine_id": 140,
+   "name": "Protein Language Models and Structure",
+   "one_line": "Protein language models, structure prediction, docking and fitness prediction for biomolecules and drug discovery.",
+   "keywords": [
+    "protein language models",
+    "protein structure prediction",
+    "molecular docking",
+    "fitness prediction",
+    "protein representation learning"
+   ],
+   "coherence": "tight"
+  },
+  {
+   "fine_id": 141,
+   "name": "Bayesian and Multi-Objective Optimization",
+   "one_line": "Sample-efficient black-box optimization with Gaussian process surrogates, acquisition functions and multi-objective Pareto search.",
+   "keywords": [
+    "Bayesian optimization",
+    "multi-objective optimization",
+    "acquisition functions",
+    "black-box optimization",
+    "Gaussian processes"
+   ],
+   "coherence": "tight"
+  },
+  {
+   "fine_id": 142,
+   "name": "LLM Behavioral Evaluation and Sycophancy",
+   "one_line": "Evaluating LLM behaviors such as sycophancy, deception, confirmation bias, moral reasoning, risk attitudes and evaluation awareness.",
+   "keywords": [
+    "LLM evaluation",
+    "sycophancy",
+    "deception",
+    "LLM safety",
+    "metacognition",
+    "moral reasoning"
+   ],
+   "coherence": "mixed"
+  },
+  {
+   "fine_id": 143,
+   "name": "LLM Agent Benchmarks",
+   "one_line": "Benchmarks and evaluation suites for tool-using, web, GUI and professional-workflow language agents.",
+   "keywords": [
+    "agent benchmarks",
+    "LLM agents",
+    "tool use",
+    "GUI agents",
+    "web agents"
+   ],
+   "coherence": "tight"
+  },
+  {
+   "fine_id": 144,
+   "name": "Speech and Audio Language Models",
+   "one_line": "Large audio language models, speech recognition, speech enhancement, audio generation and sign language recognition.",
+   "keywords": [
+    "audio language models",
+    "speech recognition",
+    "speech LLMs",
+    "audio generation",
+    "speech enhancement"
+   ],
+   "coherence": "tight"
+  },
+  {
+   "fine_id": 145,
+   "name": "LLM Hallucination Detection and Mitigation",
+   "one_line": "Detecting and reducing hallucinations in LLMs and vision-language models using uncertainty, token-level signals and training.",
+   "keywords": [
+    "hallucination detection",
+    "hallucination mitigation",
+    "uncertainty estimation",
+    "LVLM hallucination",
+    "factuality"
+   ],
+   "coherence": "tight"
+  },
+  {
+   "fine_id": 146,
+   "name": "Benchmark Validity and Model Selection",
+   "one_line": "Data-centric studies of benchmarks, model selection, cascades and evaluation pitfalls in how model behavior is measured.",
+   "keywords": [
+    "benchmarking",
+    "model selection",
+    "data-centric AI",
+    "evaluation methodology",
+    "model cascades"
+   ],
+   "coherence": "loose"
+  },
+  {
+   "fine_id": 147,
+   "name": "Stochastic and Convex Optimization Theory",
+   "one_line": "Convergence rates for stochastic, decentralized, minimax and nonconvex gradient methods, including heavy-tailed noise and step-size schedules.",
+   "keywords": [
+    "stochastic optimization",
+    "convergence rates",
+    "heavy-tailed noise",
+    "minimax optimization",
+    "decentralized optimization"
+   ],
+   "coherence": "tight"
+  },
+  {
+   "fine_id": 148,
+   "name": "Neural Network Verification and Backdoors",
+   "one_line": "Formal verification and certified robustness of neural networks, plus backdoor attacks and provable defenses.",
+   "keywords": [
+    "neural network verification",
+    "certified robustness",
+    "randomized smoothing",
+    "backdoor attacks",
+    "bound propagation"
+   ],
+   "coherence": "mixed"
+  },
+  {
+   "fine_id": 149,
+   "name": "Clustering Coresets and Nearest Neighbor Search",
+   "one_line": "Algorithms and guarantees for coresets, k-means and k-center clustering, metric spaces and approximate nearest neighbor search.",
+   "keywords": [
+    "coresets",
+    "k-means clustering",
+    "nearest neighbor search",
+    "metric spaces",
+    "sketching"
+   ],
+   "coherence": "tight"
+  },
+  {
+   "fine_id": 60,
+   "name": "Diffusion Theory and Density Estimation",
+   "one_line": "Theoretical and statistical work on score-based diffusion models, density estimation, denoising and posterior inference for inverse problems.",
+   "keywords": [
+    "score-based diffusion theory",
+    "density estimation",
+    "inverse problems",
+    "Tweedie denoising",
+    "posterior sampling"
+   ],
+   "coherence": "loose"
+  },
+  {
+   "fine_id": 61,
+   "name": "Neural Operators for PDEs",
+   "one_line": "Neural operator and transformer surrogates that learn to solve partial differential equations for physical simulation and forecasting.",
+   "keywords": [
+    "neural operator",
+    "PDE surrogate",
+    "Fourier neural operator",
+    "CFD",
+    "physics simulation"
+   ],
+   "coherence": "tight"
+  },
+  {
+   "fine_id": 62,
+   "name": "Concept Erasure in Text-to-Image Diffusion",
+   "one_line": "Removing unsafe concepts or styles from text-to-image diffusion models, plus adversarial attacks and defenses on vision-language models.",
+   "keywords": [
+    "concept erasure",
+    "diffusion unlearning",
+    "text-to-image safety",
+    "adversarial transferability",
+    "VLP attacks"
+   ],
+   "coherence": "mixed"
+  },
+  {
+   "fine_id": 63,
+   "name": "Part-Level 3D Asset Generation",
+   "one_line": "Generating structured, part-decomposed or articulated 3D objects and scenes from images or text.",
+   "keywords": [
+    "3D generation",
+    "part-level generation",
+    "articulated assets",
+    "image-to-3D",
+    "scene generation"
+   ],
+   "coherence": "tight"
+  },
+  {
+   "fine_id": 64,
+   "name": "Differentially Private Algorithms and Estimation",
+   "one_line": "Algorithms and optimal rates for statistical estimation, optimization and data analysis under central or local differential privacy.",
+   "keywords": [
+    "differential privacy",
+    "local differential privacy",
+    "private estimation",
+    "private PCA",
+    "adaptive data analysis"
+   ],
+   "coherence": "tight"
+  },
+  {
+   "fine_id": 65,
+   "name": "Learning Equilibria in Games",
+   "one_line": "Learning dynamics and sample complexity for reaching Nash or correlated equilibria in zero-sum, Markov and potential games.",
+   "keywords": [
+    "Nash equilibrium",
+    "Markov games",
+    "last-iterate convergence",
+    "no-regret learning",
+    "game theory"
+   ],
+   "coherence": "tight"
+  },
+  {
+   "fine_id": 66,
+   "name": "World Models for Agent Planning",
+   "one_line": "Latent and symbolic world models that let robots and LLM agents predict outcomes and plan actions.",
+   "keywords": [
+    "world models",
+    "latent planning",
+    "embodied planning",
+    "PDDL",
+    "model-based agents"
+   ],
+   "coherence": "tight"
+  },
+  {
+   "fine_id": 67,
+   "name": "AI-Generated Image and Deepfake Detection",
+   "one_line": "Detecting and localizing AI-generated images, deepfake videos and image tampering for media forensics.",
+   "keywords": [
+    "deepfake detection",
+    "AI-generated image detection",
+    "image forgery localization",
+    "media forensics",
+    "synthetic video detection"
+   ],
+   "coherence": "tight"
+  },
+  {
+   "fine_id": 68,
+   "name": "Medical Imaging and Pathology Models",
+   "one_line": "Segmentation, representation learning and vision-language models for radiology, CT and whole-slide pathology images.",
+   "keywords": [
+    "medical image segmentation",
+    "computational pathology",
+    "whole-slide images",
+    "radiology report generation",
+    "3D medical pretraining"
+   ],
+   "coherence": "tight"
+  },
+  {
+   "fine_id": 69,
+   "name": "Model Merging and LoRA Fusion",
+   "one_line": "Combining fine-tuned models, task vectors or LoRA adapters into a single model without retraining.",
+   "keywords": [
+    "model merging",
+    "LoRA merging",
+    "task arithmetic",
+    "continual merging",
+    "linear mode connectivity"
+   ],
+   "coherence": "tight"
+  },
+  {
+   "fine_id": 70,
+   "name": "Vision-Language-Action Robot Policies",
+   "one_line": "Training, fine-tuning, analysing and evaluating vision-language-action models for robotic manipulation.",
+   "keywords": [
+    "vision-language-action",
+    "VLA",
+    "robotic manipulation",
+    "LIBERO",
+    "robot policy learning"
+   ],
+   "coherence": "tight"
+  },
+  {
+   "fine_id": 71,
+   "name": "Flow Matching Theory and Variants",
+   "one_line": "New formulations, theory and constrained or distilled variants of flow matching and transport-based generative models.",
+   "keywords": [
+    "flow matching",
+    "optimal transport",
+    "probability paths",
+    "one-step generation",
+    "stochastic interpolants"
+   ],
+   "coherence": "tight"
+  },
+  {
+   "fine_id": 72,
+   "name": "End-to-End Autonomous Driving",
+   "one_line": "End-to-end driving planners, driving VLA models, world models and benchmarks for autonomous vehicles.",
+   "keywords": [
+    "autonomous driving",
+    "end-to-end driving",
+    "driving VLA",
+    "NAVSIM",
+    "motion planning"
+   ],
+   "coherence": "tight"
+  },
+  {
+   "fine_id": 73,
+   "name": "Domain-Specific Vision Benchmarks for VLMs",
+   "one_line": "Benchmarks probing multimodal models on specialised imagery such as remote sensing, medical scans, documents, try-on and image quality.",
+   "keywords": [
+    "VLM benchmark",
+    "remote sensing",
+    "medical VQA",
+    "image quality assessment",
+    "virtual try-on"
+   ],
+   "coherence": "mixed"
+  },
+  {
+   "fine_id": 74,
+   "name": "Multi-Turn LLM Dialogue and Agent RL",
+   "one_line": "Reinforcement learning, credit assignment and evaluation for LLMs in multi-turn conversations and interactive agent tasks.",
+   "keywords": [
+    "multi-turn dialogue",
+    "agentic RL",
+    "credit assignment",
+    "user simulation",
+    "spoken dialogue"
+   ],
+   "coherence": "mixed"
+  },
+  {
+   "fine_id": 75,
+   "name": "Activation Steering of LLMs",
+   "one_line": "Controlling language model behaviour at inference time by editing internal activations with steering vectors or subspace interventions.",
+   "keywords": [
+    "activation steering",
+    "steering vectors",
+    "inference-time intervention",
+    "representation engineering",
+    "LLM control"
+   ],
+   "coherence": "tight"
+  },
+  {
+   "fine_id": 76,
+   "name": "Skill Libraries for LLM Agents",
+   "one_line": "LLM agents that discover, store, reuse and evolve skills to solve long-horizon web, embodied and tool-use tasks.",
+   "keywords": [
+    "agent skills",
+    "skill library",
+    "self-evolving agents",
+    "long-horizon tasks",
+    "web agents"
+   ],
+   "coherence": "tight"
+  },
+  {
+   "fine_id": 77,
+   "name": "4D Reconstruction from Monocular Video",
+   "one_line": "Recovering dynamic 3D geometry, motion and human or object animation from monocular or multi-view video.",
+   "keywords": [
+    "4D reconstruction",
+    "dynamic Gaussian splatting",
+    "monocular video",
+    "motion reconstruction",
+    "3D tracking"
+   ],
+   "coherence": "tight"
+  },
+  {
+   "fine_id": 78,
+   "name": "Retrieval-Augmented Generation",
+   "one_line": "Improving faithfulness, efficiency, privacy and knowledge-conflict handling in retrieval-augmented LLM generation.",
+   "keywords": [
+    "retrieval-augmented generation",
+    "RAG",
+    "knowledge conflict",
+    "multimodal RAG",
+    "multi-hop retrieval"
+   ],
+   "coherence": "tight"
+  },
+  {
+   "fine_id": 79,
+   "name": "Test-Time Adaptation of CLIP and ViTs",
+   "one_line": "Adapting, fine-tuning, distilling and robustifying CLIP-style vision-language models and vision transformers under distribution shift.",
+   "keywords": [
+    "test-time adaptation",
+    "CLIP adaptation",
+    "vision transformers",
+    "few-shot adaptation",
+    "adversarial fine-tuning"
+   ],
+   "coherence": "mixed"
+  },
+  {
+   "fine_id": 80,
+   "name": "LLM Agent Reliability and Efficiency",
+   "one_line": "Making LLM agents more reliable, safe and cost-efficient through tool-call decisions, failure prediction, abstention and resource control.",
+   "keywords": [
+    "LLM agents",
+    "tool use",
+    "agent failure attribution",
+    "agent safety",
+    "agent efficiency"
+   ],
+   "coherence": "mixed"
+  },
+  {
+   "fine_id": 81,
+   "name": "LLM Theorem Proving and Formal Math",
+   "one_line": "Using LLMs for formal theorem proving in Lean, autoformalization, proof grading and math reasoning benchmarks.",
+   "keywords": [
+    "theorem proving",
+    "Lean",
+    "autoformalization",
+    "proof verification",
+    "math benchmarks"
+   ],
+   "coherence": "tight"
+  },
+  {
+   "fine_id": 82,
+   "name": "Text-to-Image Generation and Evaluation",
+   "one_line": "Improving and evaluating text-to-image models via reward models, compositional control, aesthetics and bias analysis.",
+   "keywords": [
+    "text-to-image",
+    "T2I evaluation",
+    "reward modeling",
+    "compositional generation",
+    "image aesthetics"
+   ],
+   "coherence": "mixed"
+  },
+  {
+   "fine_id": 83,
+   "name": "LLM Multi-Agent Systems",
+   "one_line": "Designing, training and evaluating teams of collaborating or debating LLM agents, including coordination and orchestration.",
+   "keywords": [
+    "multi-agent systems",
+    "LLM multi-agent",
+    "multi-agent debate",
+    "agent coordination",
+    "orchestration"
+   ],
+   "coherence": "tight"
+  },
+  {
+   "fine_id": 84,
+   "name": "LLM-Generated GPU Kernels and Systems",
+   "one_line": "Using LLMs and agents to write and tune CUDA or Triton kernels, plus benchmarks for HPC and ML systems code.",
+   "keywords": [
+    "GPU kernel generation",
+    "CUDA",
+    "Triton",
+    "HPC benchmark",
+    "ML systems"
+   ],
+   "coherence": "tight"
+  },
+  {
+   "fine_id": 85,
+   "name": "Watermarking Generative Model Outputs",
+   "one_line": "Embedding and detecting watermarks in LLM text, images and audio to trace AI-generated content.",
+   "keywords": [
+    "LLM watermarking",
+    "image watermarking",
+    "multi-bit watermark",
+    "distortion-free watermark",
+    "provenance"
+   ],
+   "coherence": "tight"
+  },
+  {
+   "fine_id": 86,
+   "name": "Preference Optimization for LLM Alignment",
+   "one_line": "DPO-style and RLHF objectives, data selection and robustness methods for aligning LLMs with human preferences.",
+   "keywords": [
+    "direct preference optimization",
+    "RLHF",
+    "LLM alignment",
+    "reward models",
+    "preference data"
+   ],
+   "coherence": "mixed"
+  },
+  {
+   "fine_id": 87,
+   "name": "Graph Neural Networks and Representation",
+   "one_line": "GNN architectures, graph contrastive learning, temporal graphs and graph foundation models for node, link and graph tasks.",
+   "keywords": [
+    "graph neural networks",
+    "link prediction",
+    "heterophily",
+    "graph contrastive learning",
+    "temporal graphs"
+   ],
+   "coherence": "tight"
+  },
+  {
+   "fine_id": 88,
+   "name": "Image Restoration and Inverse Problems",
+   "one_line": "Denoising, super-resolution, image fusion and plug-and-play or diffusion-based restoration of degraded images.",
+   "keywords": [
+    "image restoration",
+    "plug-and-play priors",
+    "super-resolution",
+    "image fusion",
+    "low-light enhancement"
+   ],
+   "coherence": "tight"
+  },
+  {
+   "fine_id": 89,
+   "name": "Protein, Antibody and RNA Design",
+   "one_line": "Generative models and optimization for designing proteins, antibodies, peptides, RNA and DNA sequences.",
+   "keywords": [
+    "protein design",
+    "antibody design",
+    "RNA design",
+    "biological sequence design",
+    "drug design"
+   ],
+   "coherence": "tight"
+  },
+  {
+   "fine_id": 90,
+   "name": "LoRA and Parameter-Efficient Fine-Tuning",
+   "one_line": "Proposes low-rank, sparse, orthogonal and zeroth-order adapter variants and optimizers for fine-tuning large language models with less memory and compute.",
+   "keywords": [
+    "LoRA",
+    "PEFT",
+    "low-rank adaptation",
+    "LLM fine-tuning",
+    "zeroth-order fine-tuning",
+    "federated LoRA"
+   ],
+   "coherence": "tight"
+  },
+  {
+   "fine_id": 91,
+   "name": "Online Convex Optimization Regret Bounds",
+   "one_line": "Derives regret guarantees for online convex and non-convex optimization under delays, switching costs, memory and bandit feedback.",
+   "keywords": [
+    "online convex optimization",
+    "dynamic regret",
+    "FTRL",
+    "delayed feedback",
+    "bandit convex optimization"
+   ],
+   "coherence": "mixed"
+  },
+  {
+   "fine_id": 92,
+   "name": "RLVR for LLM Reasoning",
+   "one_line": "Studies reinforcement learning with verifiable rewards for reasoning models, focusing on GRPO-style advantage estimation, rollout efficiency and training stability.",
+   "keywords": [
+    "RLVR",
+    "GRPO",
+    "verifiable rewards",
+    "LLM reasoning",
+    "policy optimization",
+    "advantage estimation"
+   ],
+   "coherence": "tight"
+  },
+  {
+   "fine_id": 93,
+   "name": "Recurrent Network Dynamics in Neuroscience",
+   "one_line": "Analyzes learning and dynamics in low-rank RNNs, Hopfield networks and reservoirs as models of neural circuits and memory.",
+   "keywords": [
+    "recurrent neural networks",
+    "low-rank RNN",
+    "Hopfield networks",
+    "neural circuits",
+    "reservoir computing",
+    "computational neuroscience"
+   ],
+   "coherence": "mixed"
+  },
+  {
+   "fine_id": 94,
+   "name": "Diffusion Guidance and Sampling",
+   "one_line": "Improves how diffusion and flow models are guided and sampled, including classifier-free guidance, reward-guided and RL post-training, few-step generation and score-matching analysis.",
+   "keywords": [
+    "classifier-free guidance",
+    "diffusion sampling",
+    "reward-guided diffusion",
+    "consistency distillation",
+    "flow matching",
+    "score matching"
+   ],
+   "coherence": "mixed"
+  },
+  {
+   "fine_id": 95,
+   "name": "Urban Mobility and Trajectory Generation",
+   "one_line": "Generates and forecasts vehicle and human trajectories, traffic and spatio-temporal events in cities, including cross-city transfer and benchmarks.",
+   "keywords": [
+    "trajectory generation",
+    "traffic forecasting",
+    "urban mobility",
+    "spatio-temporal",
+    "trajectory prediction"
+   ],
+   "coherence": "mixed"
+  },
+  {
+   "fine_id": 96,
+   "name": "Grokking, Memorization and Generalization Theory",
+   "one_line": "Explains why overparameterized networks generalize, covering grokking, double descent, memorization versus generalization and compression-based bounds.",
+   "keywords": [
+    "grokking",
+    "double descent",
+    "memorization",
+    "generalization bounds",
+    "minimum description length"
+   ],
+   "coherence": "mixed"
+  },
+  {
+   "fine_id": 97,
+   "name": "Object Detection and OOD Detection",
+   "one_line": "Develops open-world, domain-adaptive and long-tailed object detectors and methods for detecting out-of-distribution inputs in vision models.",
+   "keywords": [
+    "object detection",
+    "OOD detection",
+    "open-world detection",
+    "domain adaptive detection",
+    "long-tailed recognition"
+   ],
+   "coherence": "mixed"
+  },
+  {
+   "fine_id": 98,
+   "name": "Multi-View Clustering and Person Re-ID",
+   "one_line": "Learns fused representations across multiple views or modalities for multi-view clustering, incomplete multi-view learning and person or object re-identification.",
+   "keywords": [
+    "multi-view clustering",
+    "person re-identification",
+    "incomplete multi-view",
+    "anchor graph",
+    "cross-view learning"
+   ],
+   "coherence": "loose"
+  },
+  {
+   "fine_id": 99,
+   "name": "Instruction-Based Image Editing",
+   "one_line": "Builds datasets, guidance schemes and RL training for editing images from text instructions, exemplars or drag inputs while preserving unedited content.",
+   "keywords": [
+    "image editing",
+    "instruction-guided editing",
+    "drag-based editing",
+    "flow editing",
+    "inversion"
+   ],
+   "coherence": "mixed"
+  },
+  {
+   "fine_id": 100,
+   "name": "Mechanism Design, Auctions and Social Choice",
+   "one_line": "Designs and analyzes auctions, pricing, resource allocation, persuasion and voting rules for strategic agents, often with learning-augmented guarantees.",
+   "keywords": [
+    "mechanism design",
+    "auctions",
+    "resource allocation",
+    "social choice",
+    "learning-augmented algorithms",
+    "Bayesian persuasion"
+   ],
+   "coherence": "tight"
+  },
+  {
+   "fine_id": 101,
+   "name": "Conformal Prediction Coverage Guarantees",
+   "one_line": "Constructs conformal prediction sets and intervals with marginal, conditional or online coverage guarantees under shift, grouping and multivariate outputs.",
+   "keywords": [
+    "conformal prediction",
+    "prediction sets",
+    "coverage guarantees",
+    "conformal risk control",
+    "uncertainty quantification"
+   ],
+   "coherence": "tight"
+  },
+  {
+   "fine_id": 102,
+   "name": "Feed-Forward 3D Reconstruction (VGGT)",
+   "one_line": "Builds and accelerates feed-forward and streaming multi-view geometry transformers for 3D reconstruction, camera pose, depth and panoramic geometry estimation.",
+   "keywords": [
+    "3D reconstruction",
+    "VGGT",
+    "multi-view geometry",
+    "depth estimation",
+    "pose estimation",
+    "streaming reconstruction"
+   ],
+   "coherence": "tight"
+  },
+  {
+   "fine_id": 103,
+   "name": "Learning Dynamical Systems from Data",
+   "one_line": "Identifies latent and chaotic dynamical systems from observations using Koopman operators, neural ODEs/SDEs, switching models and equation discovery.",
+   "keywords": [
+    "dynamical systems reconstruction",
+    "Koopman operator",
+    "system identification",
+    "neural ODE",
+    "chaotic systems",
+    "equation discovery"
+   ],
+   "coherence": "mixed"
+  },
+  {
+   "fine_id": 104,
+   "name": "Speculative Decoding for LLM Inference",
+   "one_line": "Speeds up LLM generation and serving with draft-and-verify speculative decoding, tree drafting, self-speculation and scheduling.",
+   "keywords": [
+    "speculative decoding",
+    "draft model",
+    "LLM inference",
+    "LLM serving",
+    "self-speculative decoding"
+   ],
+   "coherence": "tight"
+  },
+  {
+   "fine_id": 105,
+   "name": "LLM Agent Safety and Prompt Injection",
+   "one_line": "Benchmarks and defends LLM, computer-use and multi-agent systems against prompt injection, unsafe actions, sabotage and scheming.",
+   "keywords": [
+    "agent safety",
+    "prompt injection",
+    "computer-use agents",
+    "scheming detection",
+    "multi-agent security",
+    "AI control"
+   ],
+   "coherence": "tight"
+  },
+  {
+   "fine_id": 106,
+   "name": "Quantum Machine Learning",
+   "one_line": "Applies machine learning to quantum systems and studies quantum neural networks, circuits, kernels, tomography and neural quantum states.",
+   "keywords": [
+    "quantum machine learning",
+    "neural quantum states",
+    "quantum circuits",
+    "variational quantum algorithms",
+    "quantum tomography"
+   ],
+   "coherence": "tight"
+  },
+  {
+   "fine_id": 107,
+   "name": "Single-Cell and Spatial Transcriptomics Models",
+   "one_line": "Builds foundation models and generative methods for single-cell gene expression, spatial transcriptomics from histology, perturbation response and genomic sequences.",
+   "keywords": [
+    "single-cell",
+    "spatial transcriptomics",
+    "gene expression",
+    "perturbation prediction",
+    "multi-omics",
+    "genomics"
+   ],
+   "coherence": "tight"
+  },
+  {
+   "fine_id": 108,
+   "name": "Verified Code and Software Security Benchmarks",
+   "one_line": "Evaluates LLMs on formally verified code generation, proof writing, vulnerability detection, reverse engineering and cybersecurity tasks.",
+   "keywords": [
+    "formal verification",
+    "verified code generation",
+    "vulnerability detection",
+    "cybersecurity benchmark",
+    "Rust",
+    "CVE"
+   ],
+   "coherence": "mixed"
+  },
+  {
+   "fine_id": 109,
+   "name": "Variational and Simulation-Based Bayesian Inference",
+   "one_line": "Develops variational inference, neural posterior estimation, Gaussian process and Laplace methods for scalable and robust Bayesian inference.",
+   "keywords": [
+    "variational inference",
+    "simulation-based inference",
+    "neural posterior estimation",
+    "Gaussian processes",
+    "Bayesian neural networks"
+   ],
+   "coherence": "mixed"
+  },
+  {
+   "fine_id": 110,
+   "name": "Causal Discovery and Causal Structure Learning",
+   "one_line": "Recovers causal graphs from observational, interventional or time-series data, including amortized foundation models and LLM-informed priors.",
+   "keywords": [
+    "causal discovery",
+    "causal graphs",
+    "structure learning",
+    "amortized causal discovery",
+    "causal reasoning"
+   ],
+   "coherence": "tight"
+  },
+  {
+   "fine_id": 111,
+   "name": "Brain Encoding and Neural Recording Analysis",
+   "one_line": "Models fMRI, EEG and spiking recordings with encoding models, connectivity estimation and neural data tokenizers, plus connectomics benchmarks.",
+   "keywords": [
+    "fMRI encoding",
+    "neural population dynamics",
+    "connectomics",
+    "EEG",
+    "brain-inspired representations"
+   ],
+   "coherence": "mixed"
+  },
+  {
+   "fine_id": 112,
+   "name": "Calibration and Prediction-Powered Inference",
+   "one_line": "Studies post-hoc calibration, multicalibration and prediction-powered inference for reliable estimates and evaluation with few labels.",
+   "keywords": [
+    "calibration",
+    "multicalibration",
+    "prediction-powered inference",
+    "post-hoc calibration",
+    "active testing"
+   ],
+   "coherence": "tight"
+  },
+  {
+   "fine_id": 113,
+   "name": "LLM Jailbreak Attacks and Defenses",
+   "one_line": "Designs, scales and detects jailbreak and red-teaming attacks on LLMs, multimodal and diffusion language models, along with safety defenses.",
+   "keywords": [
+    "jailbreak",
+    "red teaming",
+    "adversarial attacks on LLMs",
+    "LLM safety",
+    "jailbreak detection"
+   ],
+   "coherence": "mixed"
+  },
+  {
+   "fine_id": 114,
+   "name": "Irregular Time Series and Clinical Signals",
+   "one_line": "Models irregularly sampled and continuous-time sequences with neural CDEs, state-space models and point processes, often for EHR, ECG, sleep and wearable data.",
+   "keywords": [
+    "irregular time series",
+    "neural CDE",
+    "state space models",
+    "EHR",
+    "temporal point processes",
+    "health monitoring"
+   ],
+   "coherence": "mixed"
+  },
+  {
+   "fine_id": 115,
+   "name": "Geometry of Learned Representations",
+   "one_line": "Analyzes and designs embedding spaces using manifold, hyperbolic, Riemannian, spherical and topological structure for representation learning.",
+   "keywords": [
+    "representation geometry",
+    "hyperbolic embeddings",
+    "manifold learning",
+    "Riemannian metrics",
+    "topological deep learning",
+    "JEPA"
+   ],
+   "coherence": "loose"
+  },
+  {
+   "fine_id": 116,
+   "name": "Best-Arm Identification in Bandits",
+   "one_line": "Gives sample-complexity bounds and algorithms for fixed-confidence and fixed-budget best-arm identification and pure exploration in bandits.",
+   "keywords": [
+    "best-arm identification",
+    "pure exploration",
+    "multi-armed bandits",
+    "fixed-confidence",
+    "sample complexity"
+   ],
+   "coherence": "tight"
+  },
+  {
+   "fine_id": 117,
+   "name": "Diffusion and Flow Policies for RL",
+   "one_line": "Trains diffusion and flow-matching policies with policy gradients, Q-guidance and offline-to-online RL for multimodal continuous control.",
+   "keywords": [
+    "flow matching policy",
+    "diffusion policy",
+    "generative policies",
+    "offline RL",
+    "policy optimization"
+   ],
+   "coherence": "tight"
+  },
+  {
+   "fine_id": 118,
+   "name": "Retrieval and Long-Document Benchmarks",
+   "one_line": "Builds benchmarks and pipelines for retrievers, embedding models, deep search and long-document understanding with evidence grounding.",
+   "keywords": [
+    "information retrieval",
+    "long-document understanding",
+    "deep search",
+    "embedding benchmark",
+    "RAG",
+    "needle in a haystack"
+   ],
+   "coherence": "mixed"
+  },
+  {
+   "fine_id": 119,
+   "name": "Unified Multimodal Understanding and Generation",
+   "one_line": "Builds single models and visual tokenizers that both understand and generate images, including autoregressive and representation-autoencoder approaches.",
+   "keywords": [
+    "unified multimodal models",
+    "image generation",
+    "visual tokenizers",
+    "representation autoencoders",
+    "text-to-image"
+   ],
+   "coherence": "mixed"
+  },
+  {
+   "fine_id": 30,
+   "name": "Neural Scaling Laws for Pretraining",
+   "one_line": "These papers fit, explain and extrapolate power-law scaling laws that relate loss to model size, data and compute, and derive compute-optimal training recipes.",
+   "keywords": [
+    "scaling laws",
+    "compute-optimal",
+    "power law",
+    "data-constrained pretraining",
+    "hyperparameter transfer"
+   ],
+   "coherence": "mixed"
+  },
+  {
+   "fine_id": 31,
+   "name": "Differential Privacy and Membership Inference",
+   "one_line": "These papers design differentially private training and accounting mechanisms, and audit privacy leakage with membership inference attacks.",
+   "keywords": [
+    "differential privacy",
+    "membership inference",
+    "DP-SGD",
+    "privacy auditing",
+    "privacy accounting"
+   ],
+   "coherence": "tight"
+  },
+  {
+   "fine_id": 32,
+   "name": "LLM Agentic Reasoning Strategies",
+   "one_line": "These papers study how language-model agents choose and combine reasoning strategies for planning, abstraction and scientific problem solving, often with new benchmarks.",
+   "keywords": [
+    "agentic reasoning",
+    "analogical reasoning",
+    "planning",
+    "meta-cognition",
+    "ARC-AGI"
+   ],
+   "coherence": "loose"
+  },
+  {
+   "fine_id": 33,
+   "name": "Muon, Adam and Sign-Based Optimizers",
+   "one_line": "These papers analyse and design neural-network optimizers such as Muon, Adam, Lion and SignSGD, covering orthogonalized updates, momentum and edge-of-stability dynamics.",
+   "keywords": [
+    "Muon",
+    "Adam",
+    "SignSGD",
+    "gradient orthogonalization",
+    "edge of stability",
+    "learning-rate schedule"
+   ],
+   "coherence": "tight"
+  },
+  {
+   "fine_id": 34,
+   "name": "Language Model Internals and Interpretability",
+   "one_line": "These papers probe what computations transformers perform internally, such as in-context learning, copying, belief states and hidden reasoning over filler tokens.",
+   "keywords": [
+    "mechanistic interpretability",
+    "in-context learning",
+    "transformer internals",
+    "self-explanation",
+    "token attribution"
+   ],
+   "coherence": "mixed"
+  },
+  {
+   "fine_id": 35,
+   "name": "Coding Agents and SWE Benchmarks",
+   "one_line": "These papers benchmark and train LLM coding agents on repository-level software engineering, long-horizon development and debugging tasks.",
+   "keywords": [
+    "coding agents",
+    "SWE-bench",
+    "software engineering",
+    "repository-level",
+    "debugging"
+   ],
+   "coherence": "tight"
+  },
+  {
+   "fine_id": 36,
+   "name": "Shapley Values and Feature Attribution",
+   "one_line": "These papers develop and critique post-hoc explanation methods such as Shapley values, integrated gradients and causal attributions for model predictions.",
+   "keywords": [
+    "Shapley values",
+    "SHAP",
+    "integrated gradients",
+    "feature attribution",
+    "explainability",
+    "data valuation"
+   ],
+   "coherence": "tight"
+  },
+  {
+   "fine_id": 37,
+   "name": "PAC Learning and Sample Complexity",
+   "one_line": "These papers prove sample-complexity and lower bounds for PAC, online and agnostic learning, especially of halfspaces and concept classes with VC or Littlestone dimension.",
+   "keywords": [
+    "PAC learning",
+    "sample complexity",
+    "halfspaces",
+    "Littlestone dimension",
+    "statistical query lower bounds"
+   ],
+   "coherence": "tight"
+  },
+  {
+   "fine_id": 38,
+   "name": "Chemical Reactions and Interatomic Potentials",
+   "one_line": "These papers build models and benchmarks for chemistry tasks such as reaction prediction, retrosynthesis, mass-spectrometry retrieval and machine-learned interatomic potentials.",
+   "keywords": [
+    "retrosynthesis",
+    "reaction prediction",
+    "interatomic potentials",
+    "MLIP",
+    "molecular property",
+    "mass spectrometry"
+   ],
+   "coherence": "mixed"
+  },
+  {
+   "fine_id": 39,
+   "name": "Autoregressive Long Video Generation",
+   "one_line": "These papers extend video diffusion models to long or streaming generation with autoregressive rollout, memory for consistency, and distillation for real-time speed.",
+   "keywords": [
+    "video diffusion",
+    "autoregressive video generation",
+    "long video",
+    "text-to-video",
+    "distribution matching distillation"
+   ],
+   "coherence": "tight"
+  },
+  {
+   "fine_id": 40,
+   "name": "Graph and Hypergraph Generation",
+   "one_line": "These papers propose diffusion, flow-matching, autoencoder and sequence models that generate graphs and hypergraphs at scale.",
+   "keywords": [
+    "graph generation",
+    "hypergraph generation",
+    "graph diffusion",
+    "graphons",
+    "flow matching"
+   ],
+   "coherence": "tight"
+  },
+  {
+   "fine_id": 41,
+   "name": "3D Molecule and Material Generation",
+   "one_line": "These papers generate 3D molecules, crystals, proteins and materials with equivariant diffusion, flow and autoregressive models, including structure-based drug design.",
+   "keywords": [
+    "molecule generation",
+    "crystal generation",
+    "protein design",
+    "structure-based drug design",
+    "equivariant diffusion"
+   ],
+   "coherence": "tight"
+  },
+  {
+   "fine_id": 42,
+   "name": "Video Temporal Grounding and Segmentation",
+   "one_line": "These papers localize actions, moments and objects in time and space in video, covering temporal grounding, video object segmentation and video reasoning segmentation.",
+   "keywords": [
+    "temporal grounding",
+    "video object segmentation",
+    "temporal action localization",
+    "video reasoning",
+    "highlight detection"
+   ],
+   "coherence": "mixed"
+  },
+  {
+   "fine_id": 43,
+   "name": "Deep Network Theory and Learning Dynamics",
+   "one_line": "These papers analyse ReLU and residual networks theoretically, covering implicit bias, incremental learning, parameter symmetries, identifiability and feature learning.",
+   "keywords": [
+    "deep learning theory",
+    "ReLU networks",
+    "implicit bias",
+    "learning dynamics",
+    "multi-index models",
+    "parameter symmetries"
+   ],
+   "coherence": "mixed"
+  },
+  {
+   "fine_id": 44,
+   "name": "Neural PDE Solvers and PINNs",
+   "one_line": "These papers solve partial differential equations with physics-informed networks, neural surrogates, PDE foundation models and generative inverse solvers.",
+   "keywords": [
+    "PDE solvers",
+    "physics-informed neural networks",
+    "PINN",
+    "neural surrogates",
+    "inverse problems"
+   ],
+   "coherence": "tight"
+  },
+  {
+   "fine_id": 45,
+   "name": "3D Scene Understanding with VLMs",
+   "one_line": "These papers ground language in 3D scenes for open-vocabulary understanding, spatial reasoning, affordances and localization using point clouds, multi-view images and 3D-LLMs.",
+   "keywords": [
+    "3D scene understanding",
+    "3D grounding",
+    "open-vocabulary 3D",
+    "3D-LLM",
+    "spatial reasoning",
+    "place recognition"
+   ],
+   "coherence": "mixed"
+  },
+  {
+   "fine_id": 46,
+   "name": "Vision-Language Alignment and CLIP",
+   "one_line": "These papers improve image-text alignment in CLIP-style and vision-language models for compositional understanding, long captions and image retrieval.",
+   "keywords": [
+    "CLIP",
+    "image-text alignment",
+    "compositional reasoning",
+    "image retrieval",
+    "vision-language models"
+   ],
+   "coherence": "mixed"
+  },
+  {
+   "fine_id": 47,
+   "name": "Long-Video Understanding with MLLMs",
+   "one_line": "These papers help multimodal LLMs answer questions over long and streaming videos via frame selection, token allocation, KV-cache memory and agentic pipelines.",
+   "keywords": [
+    "long video understanding",
+    "video LLM",
+    "streaming video",
+    "frame selection",
+    "video question answering"
+   ],
+   "coherence": "tight"
+  },
+  {
+   "fine_id": 48,
+   "name": "LLM Personas, Sycophancy and Cultural Bias",
+   "one_line": "These papers measure how LLMs simulate personas and opinions and how they show sycophancy, stereotypes and cultural or value biases.",
+   "keywords": [
+    "persona simulation",
+    "sycophancy",
+    "cultural alignment",
+    "stereotypes",
+    "opinion diversity"
+   ],
+   "coherence": "mixed"
+  },
+  {
+   "fine_id": 49,
+   "name": "Machine Unlearning in LLMs",
+   "one_line": "These papers remove the influence of specific training data from models, mainly LLMs, while preserving utility and resisting relearning.",
+   "keywords": [
+    "machine unlearning",
+    "LLM unlearning",
+    "forget set",
+    "retain set",
+    "influence removal"
+   ],
+   "coherence": "tight"
+  },
+  {
+   "fine_id": 50,
+   "name": "Brain Decoding from fMRI, MEG, ECoG",
+   "one_line": "These papers decode speech, images and intentions from brain recordings and build brain foundation models and datasets for brain-computer interfaces.",
+   "keywords": [
+    "neural decoding",
+    "fMRI",
+    "brain-computer interface",
+    "speech decoding",
+    "ECoG",
+    "MEG"
+   ],
+   "coherence": "tight"
+  },
+  {
+   "fine_id": 51,
+   "name": "Offline and In-Context Reinforcement Learning",
+   "one_line": "These papers learn and adapt policies from fixed datasets, behavior foundation models and in-context RL, including safe offline RL and post-training policy steering.",
+   "keywords": [
+    "offline reinforcement learning",
+    "in-context RL",
+    "behavior foundation models",
+    "world models",
+    "action chunking"
+   ],
+   "coherence": "mixed"
+  },
+  {
+   "fine_id": 52,
+   "name": "Low-Bit LLM Quantization",
+   "one_line": "These papers compress LLM weights and activations to low bit-widths through post-training quantization, quantization-aware training and mixed-precision search.",
+   "keywords": [
+    "post-training quantization",
+    "quantization-aware training",
+    "low-bit LLM",
+    "FP4",
+    "mixed precision",
+    "vector quantization"
+   ],
+   "coherence": "tight"
+  },
+  {
+   "fine_id": 53,
+   "name": "Constrained and Robust MDPs",
+   "one_line": "These papers give provable algorithms for constrained, chance-constrained and robust Markov decision processes, often via primal-dual policy optimization.",
+   "keywords": [
+    "constrained MDP",
+    "primal-dual",
+    "safe reinforcement learning",
+    "robust MDP",
+    "last-iterate convergence"
+   ],
+   "coherence": "mixed"
+  },
+  {
+   "fine_id": 54,
+   "name": "LLMs for Optimization Modeling and Algorithm Design",
+   "one_line": "These papers use LLMs, often with evolutionary search, to formulate optimization models, discover algorithms and generate engineering or combinatorial code, with benchmarks for each.",
+   "keywords": [
+    "optimization modeling",
+    "LLM algorithm discovery",
+    "evolutionary search",
+    "code generation",
+    "operations research benchmarks"
+   ],
+   "coherence": "mixed"
+  },
+  {
+   "fine_id": 55,
+   "name": "Performative Prediction and Decision-Focused Learning",
+   "one_line": "These papers study predictions that feed into decisions, including performative prediction, predict-then-optimize, recalibration and learning-augmented algorithms.",
+   "keywords": [
+    "performative prediction",
+    "predict-then-optimize",
+    "contextual optimization",
+    "calibration",
+    "learning-augmented algorithms"
+   ],
+   "coherence": "loose"
+  },
+  {
+   "fine_id": 56,
+   "name": "Sequential and Generative Recommendation",
+   "one_line": "These papers model user preferences for sequential, multimodal and generative recommendation, increasingly with LLMs and diffusion models.",
+   "keywords": [
+    "recommender systems",
+    "sequential recommendation",
+    "generative recommendation",
+    "user modeling",
+    "personalization"
+   ],
+   "coherence": "tight"
+  },
+  {
+   "fine_id": 57,
+   "name": "LiDAR and Radar Perception for Driving",
+   "one_line": "These papers handle LiDAR, radar and multi-sensor data for localization, point-cloud registration, scene flow and HD map construction in driving and UAV settings.",
+   "keywords": [
+    "LiDAR localization",
+    "mmWave radar",
+    "point cloud registration",
+    "scene flow",
+    "HD map",
+    "autonomous driving"
+   ],
+   "coherence": "mixed"
+  },
+  {
+   "fine_id": 58,
+   "name": "Spiking Neural Networks",
+   "one_line": "These papers train and analyse spiking neural networks for energy-efficient neuromorphic computing, using learnable delays, neuron models and plasticity rules.",
+   "keywords": [
+    "spiking neural networks",
+    "SNN",
+    "neuromorphic computing",
+    "LIF neuron",
+    "synaptic plasticity"
+   ],
+   "coherence": "tight"
+  },
+  {
+   "fine_id": 59,
+   "name": "Clinical LLMs and Medical Benchmarks",
+   "one_line": "These papers evaluate and build LLM agents for clinical reasoning, EHR tasks, medical QA and report generation, along with medical benchmarks.",
+   "keywords": [
+    "clinical reasoning",
+    "medical LLM",
+    "electronic health records",
+    "EHR",
+    "medical benchmark",
+    "radiology report generation"
+   ],
+   "coherence": "tight"
+  }
+ ],
+ "cons": {
+  "broad": [
+   {
+    "broad_id": 0,
+    "name": "LLM Agents",
+    "one_line": "Benchmarks, memory, skills, safety, multi-agent coordination and multi-turn training for tool-using and coding LLM agents, plus human oversight of AI decisions."
+   },
+   {
+    "broad_id": 1,
+    "name": "3D Vision & Perception",
+    "one_line": "Feed-forward and Gaussian-splatting 3D reconstruction, 3D scene grounding, LiDAR perception, medical imaging, restoration, anomaly and OOD detection, and image forensics."
+   },
+   {
+    "broad_id": 2,
+    "name": "LLM Behavior & Safety",
+    "one_line": "Interpretability, evaluation, sycophancy, hallucination, jailbreaks, unlearning, knowledge editing, steering and watermarking of language models, plus diffusion LMs, audio LMs and recommendation."
+   },
+   {
+    "broad_id": 3,
+    "name": "Optimization & Statistics",
+    "one_line": "Optimizer design such as Muon and Adam, stochastic and convex convergence theory, robust regression and Bayesian optimization."
+   },
+   {
+    "broad_id": 4,
+    "name": "Graph Learning",
+    "one_line": "Graph neural network architectures, graph foundation models and generative models for graphs and hypergraphs."
+   },
+   {
+    "broad_id": 5,
+    "name": "DL Theory & Neuroscience",
+    "one_line": "Learning dynamics and generalization theory, representation geometry, attribution and sparse autoencoders, plus brain decoding, spiking networks, quantum ML, verification and neural combinatorial optimization."
+   },
+   {
+    "broad_id": 6,
+    "name": "Robotics & Embodied AI",
+    "one_line": "Vision-language-action policies, dexterous and humanoid manipulation, autonomous driving, world models for planning and embodied spatial reasoning."
+   },
+   {
+    "broad_id": 7,
+    "name": "Vision-Language Models",
+    "one_line": "Visual reasoning, image-text alignment, multimodal fusion, domain-specific benchmarks and test-time adaptation for vision-language models."
+   },
+   {
+    "broad_id": 8,
+    "name": "LLM Reasoning & Retrieval",
+    "one_line": "Efficient chain-of-thought, agentic reasoning, formal math and verified code, LLM-driven optimization modeling, clinical reasoning and retrieval-augmented generation."
+   },
+   {
+    "broad_id": 9,
+    "name": "Reinforcement Learning",
+    "one_line": "Deep, offline, multi-agent, goal-conditioned and constrained RL, generative policies and convergence theory for MDPs."
+   },
+   {
+    "broad_id": 10,
+    "name": "Video Generation & Understanding",
+    "one_line": "Long and controllable video generation, physical plausibility, long-video QA, temporal grounding and human motion generation."
+   },
+   {
+    "broad_id": 11,
+    "name": "Time Series & Forecasting",
+    "one_line": "Time series forecasting models, irregular and continuous-time sequences, weather and climate prediction, and urban mobility."
+   },
+   {
+    "broad_id": 12,
+    "name": "Trustworthy & Statistical ML",
+    "one_line": "Federated learning, differential privacy, fairness, conformal prediction, calibration, causal effect estimation, noisy labels, PAC theory, clustering and tabular foundation models."
+   },
+   {
+    "broad_id": 13,
+    "name": "LLM Post-Training",
+    "one_line": "RL with verifiable rewards, preference optimization, reward models, on-policy distillation and continual learning for language models."
+   },
+   {
+    "broad_id": 14,
+    "name": "PDEs & Dynamical Systems",
+    "one_line": "Neural operators, physics-informed networks and data-driven identification of dynamical systems."
+   },
+   {
+    "broad_id": 15,
+    "name": "Image & 3D Generation",
+    "one_line": "Text-to-image generation and evaluation, efficient high-resolution diffusion, image editing, unified multimodal models, part-level 3D assets and concept erasure."
+   },
+   {
+    "broad_id": 16,
+    "name": "Bandits, Games & Mechanisms",
+    "one_line": "Bandit regret and best-arm identification, online convex optimization, equilibrium learning in games, and mechanism design and social choice."
+   },
+   {
+    "broad_id": 17,
+    "name": "Diffusion, Flows & Inference",
+    "one_line": "Diffusion guidance and sampling, flow matching, diffusion theory, optimal transport, and variational and simulation-based Bayesian inference."
+   },
+   {
+    "broad_id": 18,
+    "name": "Efficient LLMs & Architectures",
+    "one_line": "Transformer theory, sparse attention, KV cache, quantization, pruning, speculative decoding, PEFT, model merging, scaling laws and LLM-written GPU kernels."
+   },
+   {
+    "broad_id": 19,
+    "name": "Biomolecules & Causal Discovery",
+    "one_line": "Single-cell, protein, molecule and chemistry models alongside causal discovery and structural causal models."
+   }
+  ],
+  "fine_renames": [
+   {
+    "fine_id": 110,
+    "name": "Amortized and LLM-Informed Causal Discovery",
+    "reason": "Near-duplicate of 136; this cluster centers on pretrained/amortized and knowledge-informed graph learning."
+   },
+   {
+    "fine_id": 136,
+    "name": "Causal Identifiability and Latent-Variable Models",
+    "reason": "Near-duplicate of 110; titles focus on identification, equivalence classes, invariance and latent variables."
+   },
+   {
+    "fine_id": 31,
+    "name": "Privacy Auditing and Membership Inference",
+    "reason": "Overlaps 64 on 'differential privacy'; this one is distinguished by auditing and attacks."
+   },
+   {
+    "fine_id": 64,
+    "name": "Differentially Private Estimation Rates",
+    "reason": "Overlaps 31; this one is about optimal statistical rates under DP."
+   },
+   {
+    "fine_id": 44,
+    "name": "Physics-Informed Networks and PDE Foundation Models",
+    "reason": "Near-duplicate of 61 ('Neural PDE Solvers' vs 'Neural Operators for PDEs')."
+   },
+   {
+    "fine_id": 61,
+    "name": "Neural Operator Surrogates for PDEs",
+    "reason": "Distinguish from 44."
+   },
+   {
+    "fine_id": 9,
+    "name": "Robustness of LLM Safety Alignment",
+    "reason": "Overlaps 113 on 'jailbreaks'; this cluster is about how alignment and refusal persist or break."
+   },
+   {
+    "fine_id": 113,
+    "name": "Jailbreak and Red-Teaming Attacks",
+    "reason": "Distinguish from 9; focus is attack design and detection."
+   },
+   {
+    "fine_id": 142,
+    "name": "LLM Behavioral Tendencies and Evaluation Awareness",
+    "reason": "'Sycophancy' appears in both 48 and 142."
+   },
+   {
+    "fine_id": 146,
+    "name": "Model Selection and Evaluation Pitfalls",
+    "reason": "Overlaps 1 on benchmark evaluation; this cluster is data-centric model selection, cascades and measurement pitfalls."
+   },
+   {
+    "fine_id": 143,
+    "name": "Tool-Use, Web and GUI Agent Benchmarks",
+    "reason": "Generic 'LLM Agent Benchmarks' overlaps 21 and 35."
+   },
+   {
+    "fine_id": 21,
+    "name": "Multimodal Agents for Search and Deep Research",
+    "reason": "Distinguish from 143 agent benchmarks."
+   },
+   {
+    "fine_id": 118,
+    "name": "Retriever and Long-Document Benchmarks",
+    "reason": "Reduce overlap with 78 and 132 by naming the retriever focus."
+   },
+   {
+    "fine_id": 78,
+    "name": "RAG Faithfulness and Knowledge Conflicts",
+    "reason": "Generic 'Retrieval-Augmented Generation' overlaps 118 and 132."
+   },
+   {
+    "fine_id": 132,
+    "name": "GraphRAG and RL-Trained Search Agents",
+    "reason": "Distinguish from 78 and 21."
+   },
+   {
+    "fine_id": 94,
+    "name": "Diffusion Guidance and Reward Fine-Tuning",
+    "reason": "'Diffusion ... Sampling' duplicated with 14."
+   },
+   {
+    "fine_id": 14,
+    "name": "MCMC, SMC and Posterior Samplers",
+    "reason": "Distinguish from 94; focus is Langevin, SMC and posterior sampling."
+   },
+   {
+    "fine_id": 60,
+    "name": "Statistical Theory of Diffusion Models",
+    "reason": "Distinguish from 14 and 94 with the same 'Diffusion' lead."
+   },
+   {
+    "fine_id": 121,
+    "name": "Generative Policies for Offline RL",
+    "reason": "Near-duplicate of 117 and overlaps 51 on 'offline'."
+   },
+   {
+    "fine_id": 117,
+    "name": "Flow and Diffusion Policy Optimization",
+    "reason": "Distinguish from 121; focus is policy-gradient training of flow and diffusion policies."
+   },
+   {
+    "fine_id": 51,
+    "name": "In-Context RL and Offline Policy Steering",
+    "reason": "Overlaps 121 on 'Offline RL'."
+   },
+   {
+    "fine_id": 18,
+    "name": "Policy Gradient and MDP Convergence Theory",
+    "reason": "'RL Theory for MDPs' is close to 53 'Constrained and Robust MDPs'."
+   },
+   {
+    "fine_id": 120,
+    "name": "Regret Bounds for Stochastic and Contextual Bandits",
+    "reason": "Distinguish from 116 best-arm identification."
+   },
+   {
+    "fine_id": 66,
+    "name": "Latent World Models for Planning",
+    "reason": "Close to 26 'Action-Conditioned Video World Models'."
+   },
+   {
+    "fine_id": 10,
+    "name": "Latent and Chain-of-Thought Visual Reasoning",
+    "reason": "Overlaps 122 'Spatial Reasoning in VLMs'; also mixes 'Multimodal LLMs' and 'VLMs' style."
+   },
+   {
+    "fine_id": 122,
+    "name": "Embodied Spatial Reasoning in VLMs",
+    "reason": "Distinguish from 10 and 45."
+   },
+   {
+    "fine_id": 45,
+    "name": "Language-Grounded 3D Scene Understanding",
+    "reason": "Overlaps 122 on VLMs and spatial reasoning."
+   },
+   {
+    "fine_id": 46,
+    "name": "CLIP-Style Image-Text Alignment",
+    "reason": "Overlaps 79 on 'CLIP'."
+   },
+   {
+    "fine_id": 79,
+    "name": "Test-Time and Few-Shot VLM Adaptation",
+    "reason": "Distinguish from 46; 'CLIP and ViTs' is used in both."
+   },
+   {
+    "fine_id": 34,
+    "name": "LLM Self-Explanation and Hidden Computation",
+    "reason": "'Language Model Internals and Interpretability' overlaps 4, 126 and 75; titles focus on introspection and hidden computation."
+   },
+   {
+    "fine_id": 134,
+    "name": "Off-Policy Stability in LLM RL",
+    "reason": "Overlaps 92, whose description also covers training stability."
+   },
+   {
+    "fine_id": 92,
+    "name": "GRPO-Style RL with Verifiable Rewards",
+    "reason": "Expand the acronym 'RLVR' and distinguish from 134."
+   },
+   {
+    "fine_id": 12,
+    "name": "Decoding for Diffusion Language Models",
+    "reason": "Fix awkward noun stack 'Diffusion Language Models Decoding'."
+   },
+   {
+    "fine_id": 50,
+    "name": "Neural Decoding from Brain Recordings",
+    "reason": "Comma-list style is inconsistent; mirrors 111 brain encoding."
+   },
+   {
+    "fine_id": 114,
+    "name": "Irregular and Continuous-Time Sequences",
+    "reason": "'Clinical Signals' overlaps 128 physiological foundation models."
+   },
+   {
+    "fine_id": 102,
+    "name": "Feed-Forward Multi-View Geometry Transformers",
+    "reason": "Drop parenthetical model name for consistent style; 'feed-forward reconstruction' also appears in 8."
+   },
+   {
+    "fine_id": 87,
+    "name": "Graph Neural Networks and Foundation Models",
+    "reason": "'and Representation' is an incomplete phrase."
+   }
+  ]
+ }
+}

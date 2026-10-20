@@ -1,0 +1,7202 @@
+[
+{
+"raw": "Tsinghua University",
+"canonical": "Tsinghua University",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "Peking University",
+"canonical": "Peking University",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "National University of Singapore",
+"canonical": "NUS",
+"country": "Singapore",
+"sector": "academia"
+},
+{
+"raw": "Stanford University",
+"canonical": "Stanford University",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "Zhejiang University",
+"canonical": "Zhejiang University",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "Nanyang Technological University",
+"canonical": "NTU Singapore",
+"country": "Singapore",
+"sector": "academia"
+},
+{
+"raw": "Shanghai Jiao Tong University",
+"canonical": "Shanghai Jiao Tong University",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "Shanghai Jiaotong University",
+"canonical": "Shanghai Jiao Tong University",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "University of Science and Technology of China",
+"canonical": "USTC",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "The Chinese University of Hong Kong",
+"canonical": "CUHK",
+"country": "Hong Kong",
+"sector": "academia"
+},
+{
+"raw": "Carnegie Mellon University",
+"canonical": "Carnegie Mellon University",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "Tsinghua University, Tsinghua University",
+"canonical": "Tsinghua University",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "Fudan University",
+"canonical": "Fudan University",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "Massachusetts Institute of Technology",
+"canonical": "MIT",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "University of Oxford",
+"canonical": "University of Oxford",
+"country": "UK",
+"sector": "academia"
+},
+{
+"raw": "Alibaba Group",
+"canonical": "Alibaba",
+"country": "China",
+"sector": "industry"
+},
+{
+"raw": "KAIST",
+"canonical": "KAIST",
+"country": "South Korea",
+"sector": "academia"
+},
+{
+"raw": "The Hong Kong University of Science and Technology",
+"canonical": "HKUST",
+"country": "Hong Kong",
+"sector": "academia"
+},
+{
+"raw": "MIT",
+"canonical": "MIT",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "University of California, Berkeley",
+"canonical": "UC Berkeley",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "Google",
+"canonical": "Google",
+"country": "USA",
+"sector": "industry"
+},
+{
+"raw": "New York University",
+"canonical": "New York University",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "Nanjing University",
+"canonical": "Nanjing University",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "Microsoft",
+"canonical": "Microsoft",
+"country": "USA",
+"sector": "industry"
+},
+{
+"raw": "Google DeepMind",
+"canonical": "Google",
+"country": "USA",
+"sector": "industry"
+},
+{
+"raw": "Hong Kong University of Science and Technology",
+"canonical": "HKUST",
+"country": "Hong Kong",
+"sector": "academia"
+},
+{
+"raw": "Harvard University",
+"canonical": "Harvard University",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "Huawei Technologies Ltd.",
+"canonical": "Huawei",
+"country": "China",
+"sector": "industry"
+},
+{
+"raw": "Seoul National University",
+"canonical": "Seoul National University",
+"country": "South Korea",
+"sector": "academia"
+},
+{
+"raw": "Amazon",
+"canonical": "Amazon",
+"country": "USA",
+"sector": "industry"
+},
+{
+"raw": "Princeton University",
+"canonical": "Princeton University",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "University of Illinois at Urbana-Champaign",
+"canonical": "UIUC",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "UC Berkeley",
+"canonical": "UC Berkeley",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "Korea Advanced Institute of Science & Technology",
+"canonical": "KAIST",
+"country": "South Korea",
+"sector": "academia"
+},
+{
+"raw": "NVIDIA",
+"canonical": "NVIDIA",
+"country": "USA",
+"sector": "industry"
+},
+{
+"raw": "Tencent",
+"canonical": "Tencent",
+"country": "China",
+"sector": "industry"
+},
+{
+"raw": "Columbia University",
+"canonical": "Columbia University",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "Purdue University",
+"canonical": "Purdue University",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "Imperial College London",
+"canonical": "Imperial College London",
+"country": "UK",
+"sector": "academia"
+},
+{
+"raw": "University of Cambridge",
+"canonical": "University of Cambridge",
+"country": "UK",
+"sector": "academia"
+},
+{
+"raw": "Georgia Institute of Technology",
+"canonical": "Georgia Tech",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "Harbin Institute of Technology",
+"canonical": "Harbin Institute of Technology",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "Meta",
+"canonical": "Meta",
+"country": "USA",
+"sector": "industry"
+},
+{
+"raw": "University of California, San Diego",
+"canonical": "UC San Diego",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "Northeastern University",
+"canonical": "Northeastern University",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "City University of Hong Kong",
+"canonical": "City University of Hong Kong",
+"country": "Hong Kong",
+"sector": "academia"
+},
+{
+"raw": "ETH Zurich",
+"canonical": "ETH Zurich",
+"country": "Switzerland",
+"sector": "academia"
+},
+{
+"raw": "EPFL",
+"canonical": "EPFL",
+"country": "Switzerland",
+"sector": "academia"
+},
+{
+"raw": "University of Washington",
+"canonical": "University of Washington",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "University of Hong Kong",
+"canonical": "University of Hong Kong",
+"country": "Hong Kong",
+"sector": "academia"
+},
+{
+"raw": "SUN YAT-SEN UNIVERSITY",
+"canonical": "Sun Yat-sen University",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "The University of Hong Kong",
+"canonical": "University of Hong Kong",
+"country": "Hong Kong",
+"sector": "academia"
+},
+{
+"raw": "Johns Hopkins University",
+"canonical": "Johns Hopkins University",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "Wuhan University",
+"canonical": "Wuhan University",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "Huazhong University of Science and Technology",
+"canonical": "Huazhong University of Science and Technology",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "University of Southern California",
+"canonical": "University of Southern California",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "ByteDance Inc.",
+"canonical": "ByteDance",
+"country": "China",
+"sector": "industry"
+},
+{
+"raw": "Cornell University",
+"canonical": "Cornell University",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "Yale University",
+"canonical": "Yale University",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "University of Texas at Austin",
+"canonical": "UT Austin",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "Mohamed bin Zayed University of Artificial Intelligence",
+"canonical": "MBZUAI",
+"country": "UAE",
+"sector": "academia"
+},
+{
+"raw": "Renmin University of China",
+"canonical": "Renmin University of China",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "University of Toronto",
+"canonical": "University of Toronto",
+"country": "Canada",
+"sector": "academia"
+},
+{
+"raw": "Shanghai Artificial Intelligence Laboratory",
+"canonical": "Shanghai AI Laboratory",
+"country": "China",
+"sector": "government/nonprofit"
+},
+{
+"raw": "Xi'an Jiaotong University",
+"canonical": "Xi'an Jiaotong University",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "Institute of automation, Chinese academy of science, Chinese Academy of Sciences",
+"canonical": "Chinese Academy of Sciences",
+"country": "China",
+"sector": "government/nonprofit"
+},
+{
+"raw": "The Hong Kong University of Science and Technology (Guangzhou)",
+"canonical": "HKUST (Guangzhou)",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "University of the Chinese Academy of Sciences",
+"canonical": "University of Chinese Academy of Sciences",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "Hong Kong Polytechnic University",
+"canonical": "Hong Kong Polytechnic University",
+"country": "Hong Kong",
+"sector": "academia"
+},
+{
+"raw": "University of Pennsylvania",
+"canonical": "University of Pennsylvania",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "University of Illinois Urbana-Champaign",
+"canonical": "UIUC",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "University of California, Los Angeles",
+"canonical": "UCLA",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "Beihang University",
+"canonical": "Beihang University",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "University of Electronic Science and Technology of China",
+"canonical": "UESTC",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "Microsoft Research",
+"canonical": "Microsoft",
+"country": "USA",
+"sector": "industry"
+},
+{
+"raw": "Beijing Institute of Technology",
+"canonical": "Beijing Institute of Technology",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "Technical University of Munich",
+"canonical": "Technical University of Munich",
+"country": "Germany",
+"sector": "academia"
+},
+{
+"raw": "Tongji University",
+"canonical": "Tongji University",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "Beijing University of Posts and Telecommunications",
+"canonical": "Beijing University of Posts and Telecommunications",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "ETHZ - ETH Zurich",
+"canonical": "ETH Zurich",
+"country": "Switzerland",
+"sector": "academia"
+},
+{
+"raw": "Tianjin University",
+"canonical": "Tianjin University",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "University of Maryland, College Park",
+"canonical": "University of Maryland",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "Southeast University",
+"canonical": "Southeast University",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "University of Michigan - Ann Arbor",
+"canonical": "University of Michigan",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "University of Chicago",
+"canonical": "University of Chicago",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "Beijing University of Aeronautics and Astronautics",
+"canonical": "Beihang University",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "University of Michigan",
+"canonical": "University of Michigan",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "UCLA",
+"canonical": "UCLA",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "The University of Tokyo",
+"canonical": "University of Tokyo",
+"country": "Japan",
+"sector": "academia"
+},
+{
+"raw": "Facebook",
+"canonical": "Meta",
+"country": "USA",
+"sector": "industry"
+},
+{
+"raw": "The Chinese University of Hong Kong, Shenzhen",
+"canonical": "CUHK-Shenzhen",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "South China University of Technology",
+"canonical": "South China University of Technology",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "UIUC",
+"canonical": "UIUC",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "CMU, Carnegie Mellon University",
+"canonical": "Carnegie Mellon University",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "University of Wisconsin - Madison",
+"canonical": "University of Wisconsin-Madison",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "Southern University of Science and Technology",
+"canonical": "Southern University of Science and Technology",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "Yonsei University",
+"canonical": "Yonsei University",
+"country": "South Korea",
+"sector": "academia"
+},
+{
+"raw": "nanjing university",
+"canonical": "Nanjing University",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "Korea University",
+"canonical": "Korea University",
+"country": "South Korea",
+"sector": "academia"
+},
+{
+"raw": "East China Normal University",
+"canonical": "East China Normal University",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "Stanford",
+"canonical": "Stanford University",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "Apple",
+"canonical": "Apple",
+"country": "USA",
+"sector": "industry"
+},
+{
+"raw": "University of North Carolina at Chapel Hill",
+"canonical": "UNC Chapel Hill",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "Northwestern University",
+"canonical": "Northwestern University",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "The Hong Kong Polytechnic University",
+"canonical": "Hong Kong Polytechnic University",
+"country": "Hong Kong",
+"sector": "academia"
+},
+{
+"raw": "Google Research",
+"canonical": "Google",
+"country": "USA",
+"sector": "industry"
+},
+{
+"raw": "Duke University",
+"canonical": "Duke University",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "Tencent AI Lab",
+"canonical": "Tencent",
+"country": "China",
+"sector": "industry"
+},
+{
+"raw": "Korea Advanced Institute of Science and Technology",
+"canonical": "KAIST",
+"country": "South Korea",
+"sector": "academia"
+},
+{
+"raw": "Xiamen University",
+"canonical": "Xiamen University",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "Westlake University",
+"canonical": "Westlake University",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "EPFL - EPF Lausanne",
+"canonical": "EPFL",
+"country": "Switzerland",
+"sector": "academia"
+},
+{
+"raw": "Sun Yat-Sen University",
+"canonical": "Sun Yat-sen University",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "Monash University",
+"canonical": "Monash University",
+"country": "Australia",
+"sector": "academia"
+},
+{
+"raw": "Nankai University",
+"canonical": "Nankai University",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "INRIA",
+"canonical": "INRIA",
+"country": "France",
+"sector": "government/nonprofit"
+},
+{
+"raw": "Technische Universit\u00e4t M\u00fcnchen",
+"canonical": "Technical University of Munich",
+"country": "Germany",
+"sector": "academia"
+},
+{
+"raw": "University College London",
+"canonical": "University College London",
+"country": "UK",
+"sector": "academia"
+},
+{
+"raw": "Shandong University",
+"canonical": "Shandong University",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "University of Virginia",
+"canonical": "University of Virginia",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "Ant Group",
+"canonical": "Ant Group",
+"country": "China",
+"sector": "industry"
+},
+{
+"raw": "Hong Kong University of Science and Technology (Guangzhou)",
+"canonical": "HKUST (Guangzhou)",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "University of Waterloo",
+"canonical": "University of Waterloo",
+"country": "Canada",
+"sector": "academia"
+},
+{
+"raw": "Rutgers University",
+"canonical": "Rutgers University",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "Shenzhen University",
+"canonical": "Shenzhen University",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "Sichuan University",
+"canonical": "Sichuan University",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "Central South University",
+"canonical": "Central South University",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "University of Wisconsin-Madison",
+"canonical": "University of Wisconsin-Madison",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "Shanghai AI Laboratory",
+"canonical": "Shanghai AI Laboratory",
+"country": "China",
+"sector": "government/nonprofit"
+},
+{
+"raw": "National University of Defense Technology",
+"canonical": "National University of Defense Technology",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "University of Edinburgh",
+"canonical": "University of Edinburgh",
+"country": "UK",
+"sector": "academia"
+},
+{
+"raw": "Arizona State University",
+"canonical": "Arizona State University",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "University of Central Florida",
+"canonical": "University of Central Florida",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "MBZUAI",
+"canonical": "MBZUAI",
+"country": "UAE",
+"sector": "academia"
+},
+{
+"raw": "University College London, University of London",
+"canonical": "University College London",
+"country": "UK",
+"sector": "academia"
+},
+{
+"raw": "University of Amsterdam",
+"canonical": "University of Amsterdam",
+"country": "Netherlands",
+"sector": "academia"
+},
+{
+"raw": "Institute of Automation, Chinese Academy of Sciences",
+"canonical": "Chinese Academy of Sciences",
+"country": "China",
+"sector": "government/nonprofit"
+},
+{
+"raw": "Beijing Jiaotong University",
+"canonical": "Beijing Jiaotong University",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "Singapore Management University",
+"canonical": "Singapore Management University",
+"country": "Singapore",
+"sector": "academia"
+},
+{
+"raw": "Jilin University",
+"canonical": "Jilin University",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "Xidian University",
+"canonical": "Xidian University",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "UC San Diego",
+"canonical": "UC San Diego",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "Sun Yat-sen University",
+"canonical": "Sun Yat-sen University",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "University of British Columbia",
+"canonical": "University of British Columbia",
+"country": "Canada",
+"sector": "academia"
+},
+{
+"raw": "University of Melbourne",
+"canonical": "University of Melbourne",
+"country": "Australia",
+"sector": "academia"
+},
+{
+"raw": "Institute of Computing Technology, Chinese Academy of Sciences",
+"canonical": "Chinese Academy of Sciences",
+"country": "China",
+"sector": "government/nonprofit"
+},
+{
+"raw": "Nanjing University of Science and Technology",
+"canonical": "Nanjing University of Science and Technology",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "Shanghai AI Lab",
+"canonical": "Shanghai AI Laboratory",
+"country": "China",
+"sector": "government/nonprofit"
+},
+{
+"raw": "Chinese Academy of Sciences",
+"canonical": "Chinese Academy of Sciences",
+"country": "China",
+"sector": "government/nonprofit"
+},
+{
+"raw": "Pennsylvania State University",
+"canonical": "Penn State University",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "Tel Aviv University",
+"canonical": "Tel Aviv University",
+"country": "Israel",
+"sector": "academia"
+},
+{
+"raw": "University of Sydney",
+"canonical": "University of Sydney",
+"country": "Australia",
+"sector": "academia"
+},
+{
+"raw": "Technion",
+"canonical": "Technion",
+"country": "Israel",
+"sector": "academia"
+},
+{
+"raw": "UCSD",
+"canonical": "UC San Diego",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "University of Chinese Academy of Sciences",
+"canonical": "University of Chinese Academy of Sciences",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "University of Technology Sydney",
+"canonical": "University of Technology Sydney",
+"country": "Australia",
+"sector": "academia"
+},
+{
+"raw": "McGill University",
+"canonical": "McGill University",
+"country": "Canada",
+"sector": "academia"
+},
+{
+"raw": "Kuaishou- \u5feb\u624b\u79d1\u6280",
+"canonical": "Kuaishou",
+"country": "China",
+"sector": "industry"
+},
+{
+"raw": "ETH Z\u00fcrich",
+"canonical": "ETH Zurich",
+"country": "Switzerland",
+"sector": "academia"
+},
+{
+"raw": "UT Austin",
+"canonical": "UT Austin",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "Australian National University",
+"canonical": "Australian National University",
+"country": "Australia",
+"sector": "academia"
+},
+{
+"raw": "The University of Texas at Austin",
+"canonical": "UT Austin",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "ShanghaiTech University",
+"canonical": "ShanghaiTech University",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "Harbin Institute of Technology, Shenzhen",
+"canonical": "Harbin Institute of Technology",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "ByteDance",
+"canonical": "ByteDance",
+"country": "China",
+"sector": "industry"
+},
+{
+"raw": "University of California, Santa Barbara",
+"canonical": "UC Santa Barbara",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "Department of Computer Science and Engineering, The Chinese University of Hong Kong",
+"canonical": "CUHK",
+"country": "Hong Kong",
+"sector": "academia"
+},
+{
+"raw": "Michigan State University",
+"canonical": "Michigan State University",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "University of Alberta",
+"canonical": "University of Alberta",
+"country": "Canada",
+"sector": "academia"
+},
+{
+"raw": "IBM Research",
+"canonical": "IBM",
+"country": "USA",
+"sector": "industry"
+},
+{
+"raw": "CMU",
+"canonical": "Carnegie Mellon University",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "University of California, Irvine",
+"canonical": "UC Irvine",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "Microsoft Research Asia",
+"canonical": "Microsoft",
+"country": "USA",
+"sector": "industry"
+},
+{
+"raw": "University of Macau",
+"canonical": "University of Macau",
+"country": "Macau",
+"sector": "academia"
+},
+{
+"raw": "Independent",
+"canonical": "Independent",
+"country": "unknown",
+"sector": "unknown"
+},
+{
+"raw": "Independent Researcher",
+"canonical": "Independent",
+"country": "unknown",
+"sector": "unknown"
+},
+{
+"raw": "Shanghai University of Finance and Economics",
+"canonical": "Shanghai University of Finance and Economics",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "University of Pennsylvania, University of Pennsylvania",
+"canonical": "University of Pennsylvania",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "Boston University",
+"canonical": "Boston University",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "University of Maryland",
+"canonical": "University of Maryland",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "Chinese University of Hong Kong",
+"canonical": "CUHK",
+"country": "Hong Kong",
+"sector": "academia"
+},
+{
+"raw": "Harbin Institute of Technology (Shenzhen)",
+"canonical": "Harbin Institute of Technology",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "POSTECH",
+"canonical": "POSTECH",
+"country": "South Korea",
+"sector": "academia"
+},
+{
+"raw": "Bytedance",
+"canonical": "ByteDance",
+"country": "China",
+"sector": "industry"
+},
+{
+"raw": "Meituan",
+"canonical": "Meituan",
+"country": "China",
+"sector": "industry"
+},
+{
+"raw": "The University of Sydney",
+"canonical": "University of Sydney",
+"country": "Australia",
+"sector": "academia"
+},
+{
+"raw": "Brown University",
+"canonical": "Brown University",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "KAUST",
+"canonical": "KAUST",
+"country": "Saudi Arabia",
+"sector": "academia"
+},
+{
+"raw": "Hunan University",
+"canonical": "Hunan University",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "Georgia Tech",
+"canonical": "Georgia Tech",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "CNRS",
+"canonical": "CNRS",
+"country": "France",
+"sector": "government/nonprofit"
+},
+{
+"raw": "Baidu",
+"canonical": "Baidu",
+"country": "China",
+"sector": "industry"
+},
+{
+"raw": "University of T\u00fcbingen",
+"canonical": "University of T\u00fcbingen",
+"country": "Germany",
+"sector": "academia"
+},
+{
+"raw": "Kuaishou Technology",
+"canonical": "Kuaishou",
+"country": "China",
+"sector": "industry"
+},
+{
+"raw": "University of New South Wales",
+"canonical": "UNSW Sydney",
+"country": "Australia",
+"sector": "academia"
+},
+{
+"raw": "Emory University",
+"canonical": "Emory University",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "Adobe Research",
+"canonical": "Adobe",
+"country": "USA",
+"sector": "industry"
+},
+{
+"raw": "University of Florida",
+"canonical": "University of Florida",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "University of Virginia, Charlottesville",
+"canonical": "University of Virginia",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "Texas A&M University - College Station",
+"canonical": "Texas A&M University",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "Zhongguancun Academy",
+"canonical": "Zhongguancun Academy",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "Institute for AI Industry Research (AIR), Tsinghua University",
+"canonical": "Tsinghua University",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "Alibaba DAMO Academy",
+"canonical": "Alibaba",
+"country": "China",
+"sector": "industry"
+},
+{
+"raw": "Tsinghua",
+"canonical": "Tsinghua University",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "Ben-Gurion University of the Negev",
+"canonical": "Ben-Gurion University of the Negev",
+"country": "Israel",
+"sector": "academia"
+},
+{
+"raw": "Peng Cheng Laboratory",
+"canonical": "Peng Cheng Laboratory",
+"country": "China",
+"sector": "government/nonprofit"
+},
+{
+"raw": "The Pennsylvania State University",
+"canonical": "Penn State University",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "ByteDance Seed",
+"canonical": "ByteDance",
+"country": "China",
+"sector": "industry"
+},
+{
+"raw": "Salesforce Research",
+"canonical": "Salesforce",
+"country": "USA",
+"sector": "industry"
+},
+{
+"raw": "Hefei University of Technology",
+"canonical": "Hefei University of Technology",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "University of Queensland",
+"canonical": "University of Queensland",
+"country": "Australia",
+"sector": "academia"
+},
+{
+"raw": "Macquarie University",
+"canonical": "Macquarie University",
+"country": "Australia",
+"sector": "academia"
+},
+{
+"raw": "University of Wisconsin, Madison",
+"canonical": "University of Wisconsin-Madison",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "University of Freiburg",
+"canonical": "University of Freiburg",
+"country": "Germany",
+"sector": "academia"
+},
+{
+"raw": "Oak Ridge National Laboratory",
+"canonical": "Oak Ridge National Laboratory",
+"country": "USA",
+"sector": "government/nonprofit"
+},
+{
+"raw": "UNSW Sydney",
+"canonical": "UNSW Sydney",
+"country": "Australia",
+"sector": "academia"
+},
+{
+"raw": "Oregon State University",
+"canonical": "Oregon State University",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "Ben Gurion University of the Negev",
+"canonical": "Ben-Gurion University of the Negev",
+"country": "Israel",
+"sector": "academia"
+},
+{
+"raw": "Boston University, Boston University",
+"canonical": "Boston University",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "University of Exeter",
+"canonical": "University of Exeter",
+"country": "UK",
+"sector": "academia"
+},
+{
+"raw": "Communication University of China",
+"canonical": "Communication University of China",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "Hebrew University of Jerusalem",
+"canonical": "Hebrew University of Jerusalem",
+"country": "Israel",
+"sector": "academia"
+},
+{
+"raw": "UIC",
+"canonical": "University of Illinois Chicago",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "Zhejiang University of Technology",
+"canonical": "Zhejiang University of Technology",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "University of Zurich",
+"canonical": "University of Zurich",
+"country": "Switzerland",
+"sector": "academia"
+},
+{
+"raw": "University of Sydney, University of Sydney",
+"canonical": "University of Sydney",
+"country": "Australia",
+"sector": "academia"
+},
+{
+"raw": "Leiden University",
+"canonical": "Leiden University",
+"country": "Netherlands",
+"sector": "academia"
+},
+{
+"raw": "University of Illinois Urbana Champaign",
+"canonical": "UIUC",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "Institute of automation, Chinese Academy of Sciences",
+"canonical": "Chinese Academy of Sciences",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "USC",
+"canonical": "USC",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "Capital One",
+"canonical": "Capital One",
+"country": "USA",
+"sector": "industry"
+},
+{
+"raw": "Anhui University",
+"canonical": "Anhui University",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "TU Berlin",
+"canonical": "TU Berlin",
+"country": "Germany",
+"sector": "academia"
+},
+{
+"raw": "University of Pisa",
+"canonical": "University of Pisa",
+"country": "Italy",
+"sector": "academia"
+},
+{
+"raw": "University of Twente",
+"canonical": "University of Twente",
+"country": "Netherlands",
+"sector": "academia"
+},
+{
+"raw": "UCLA Computer Science Department, University of California, Los Angeles",
+"canonical": "UCLA",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "Department of Computer Science, University of Oxford",
+"canonical": "University of Oxford",
+"country": "UK",
+"sector": "academia"
+},
+{
+"raw": "Bar-Ilan University",
+"canonical": "Bar-Ilan University",
+"country": "Israel",
+"sector": "academia"
+},
+{
+"raw": "Harvard University, Harvard University",
+"canonical": "Harvard University",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "Weizmann Institute of Science",
+"canonical": "Weizmann Institute of Science",
+"country": "Israel",
+"sector": "academia"
+},
+{
+"raw": "Tulane University",
+"canonical": "Tulane University",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "Lambda",
+"canonical": "Lambda",
+"country": "USA",
+"sector": "industry"
+},
+{
+"raw": "State University of New York at Buffalo",
+"canonical": "University at Buffalo",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "Royal Melbourne Institute of Technology",
+"canonical": "RMIT University",
+"country": "Australia",
+"sector": "academia"
+},
+{
+"raw": "Southwest Jiaotong University",
+"canonical": "Southwest Jiaotong University",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "University of Tokyo",
+"canonical": "University of Tokyo",
+"country": "Japan",
+"sector": "academia"
+},
+{
+"raw": "FAIR",
+"canonical": "Meta",
+"country": "USA",
+"sector": "industry"
+},
+{
+"raw": "Mila / Universit\u00e9 de Montr\u00e9al",
+"canonical": "Mila",
+"country": "Canada",
+"sector": "academia"
+},
+{
+"raw": "Jagiellonian University",
+"canonical": "Jagiellonian University",
+"country": "Poland",
+"sector": "academia"
+},
+{
+"raw": "Sapienza University of Rome",
+"canonical": "Sapienza University of Rome",
+"country": "Italy",
+"sector": "academia"
+},
+{
+"raw": "Case Western Reserve University",
+"canonical": "Case Western Reserve University",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "Swiss Federal Institute of Technology",
+"canonical": "ETH Zurich",
+"country": "Switzerland",
+"sector": "academia"
+},
+{
+"raw": "Allen Institute for Artificial Intelligence",
+"canonical": "Allen Institute for AI",
+"country": "USA",
+"sector": "government/nonprofit"
+},
+{
+"raw": "LG AI Research",
+"canonical": "LG",
+"country": "South Korea",
+"sector": "industry"
+},
+{
+"raw": "Korea Advanced Institute of Science and Technology (KAIST)",
+"canonical": "KAIST",
+"country": "South Korea",
+"sector": "academia"
+},
+{
+"raw": "University of Edinburgh, University of Edinburgh",
+"canonical": "University of Edinburgh",
+"country": "UK",
+"sector": "academia"
+},
+{
+"raw": "Salesforce AI Research",
+"canonical": "Salesforce",
+"country": "USA",
+"sector": "industry"
+},
+{
+"raw": "Higher School of Economics",
+"canonical": "HSE University",
+"country": "Russia",
+"sector": "academia"
+},
+{
+"raw": "National Yang Ming Chiao Tung University",
+"canonical": "National Yang Ming Chiao Tung University",
+"country": "Taiwan",
+"sector": "academia"
+},
+{
+"raw": "Polytechnic Institute of Milan",
+"canonical": "Politecnico di Milano",
+"country": "Italy",
+"sector": "academia"
+},
+{
+"raw": "Data61, CSIRO",
+"canonical": "CSIRO",
+"country": "Australia",
+"sector": "government/nonprofit"
+},
+{
+"raw": "Li Auto Inc.",
+"canonical": "Li Auto",
+"country": "China",
+"sector": "industry"
+},
+{
+"raw": "George Mason University",
+"canonical": "George Mason University",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "George Washington University",
+"canonical": "George Washington University",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "UC Irvine",
+"canonical": "UC Irvine",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "China Telecom",
+"canonical": "China Telecom",
+"country": "China",
+"sector": "industry"
+},
+{
+"raw": "Megvii Technology Inc.",
+"canonical": "Megvii",
+"country": "China",
+"sector": "industry"
+},
+{
+"raw": "Zhejiang Lab",
+"canonical": "Zhejiang Lab",
+"country": "China",
+"sector": "government/nonprofit"
+},
+{
+"raw": "Technion - Israel Institute of Technology, Technion - Israel Institute of Technology",
+"canonical": "Technion",
+"country": "Israel",
+"sector": "academia"
+},
+{
+"raw": "IIT Bombay",
+"canonical": "IIT Bombay",
+"country": "India",
+"sector": "academia"
+},
+{
+"raw": "Indian Institute of Technology, Bombay",
+"canonical": "IIT Bombay",
+"country": "India",
+"sector": "academia"
+},
+{
+"raw": "Toyota Technological Institute at Chicago",
+"canonical": "TTIC",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "Microsoft Research, Redmond, WA",
+"canonical": "Microsoft",
+"country": "USA",
+"sector": "industry"
+},
+{
+"raw": "International Digital Economy Academy, International Digital Economy Academy",
+"canonical": "IDEA",
+"country": "China",
+"sector": "government/nonprofit"
+},
+{
+"raw": "The University of Warwick",
+"canonical": "University of Warwick",
+"country": "UK",
+"sector": "academia"
+},
+{
+"raw": "School of Computer Science, Peking University",
+"canonical": "Peking University",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "College of Computer Science and Technology, Zhejiang University",
+"canonical": "Zhejiang University",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "Nanyang Technological University, Singapore",
+"canonical": "NTU Singapore",
+"country": "Singapore",
+"sector": "academia"
+},
+{
+"raw": "University of North Carolina, Chapel Hill",
+"canonical": "UNC Chapel Hill",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "University of Western Ontario",
+"canonical": "Western University",
+"country": "Canada",
+"sector": "academia"
+},
+{
+"raw": "Western University",
+"canonical": "Western University",
+"country": "Canada",
+"sector": "academia"
+},
+{
+"raw": "Sharif University of Technology",
+"canonical": "Sharif University of Technology",
+"country": "Iran",
+"sector": "academia"
+},
+{
+"raw": "University of Oslo",
+"canonical": "University of Oslo",
+"country": "Norway",
+"sector": "academia"
+},
+{
+"raw": "Nanjing University of Posts and Telecommunications",
+"canonical": "Nanjing University of Posts and Telecommunications",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "Department of Computer Science, Cornell University",
+"canonical": "Cornell University",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "Department of Computer Science, ETHZ - ETH Zurich",
+"canonical": "ETH Zurich",
+"country": "Switzerland",
+"sector": "academia"
+},
+{
+"raw": "University of Warsaw",
+"canonical": "University of Warsaw",
+"country": "Poland",
+"sector": "academia"
+},
+{
+"raw": "Bytedance AI Lab",
+"canonical": "ByteDance",
+"country": "China",
+"sector": "industry"
+},
+{
+"raw": "The University of Texas at Dallas",
+"canonical": "UT Dallas",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "UNIST",
+"canonical": "UNIST",
+"country": "South Korea",
+"sector": "academia"
+},
+{
+"raw": "Clemson University",
+"canonical": "Clemson University",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "University of California, Merced",
+"canonical": "UC Merced",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "Waseda University",
+"canonical": "Waseda University",
+"country": "Japan",
+"sector": "academia"
+},
+{
+"raw": "University of Southampton",
+"canonical": "University of Southampton",
+"country": "UK",
+"sector": "academia"
+},
+{
+"raw": "Alibaba group",
+"canonical": "Alibaba",
+"country": "China",
+"sector": "industry"
+},
+{
+"raw": "Indian Institute of Technology, Delhi",
+"canonical": "IIT Delhi",
+"country": "India",
+"sector": "academia"
+},
+{
+"raw": "Cornell Tech",
+"canonical": "Cornell University",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "University of Washington, Seattle",
+"canonical": "University of Washington",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "German Research Center for AI",
+"canonical": "DFKI",
+"country": "Germany",
+"sector": "government/nonprofit"
+},
+{
+"raw": "Beijing University of Technology",
+"canonical": "Beijing University of Technology",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "Queen Mary, University of London",
+"canonical": "Queen Mary University of London",
+"country": "UK",
+"sector": "academia"
+},
+{
+"raw": "USI",
+"canonical": "USI Lugano",
+"country": "Switzerland",
+"sector": "academia"
+},
+{
+"raw": "University of Bath",
+"canonical": "University of Bath",
+"country": "UK",
+"sector": "academia"
+},
+{
+"raw": "Genentech",
+"canonical": "Genentech",
+"country": "USA",
+"sector": "industry"
+},
+{
+"raw": "Zhejiang Normal University",
+"canonical": "Zhejiang Normal University",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "Montreal Institute for Learning Algorithms, University of Montreal, Universit\u00e9 de Montr\u00e9al",
+"canonical": "Mila",
+"country": "Canada",
+"sector": "academia"
+},
+{
+"raw": "the University of Hong Kong, University of Hong Kong",
+"canonical": "HKU",
+"country": "Hong Kong",
+"sector": "academia"
+},
+{
+"raw": "Argonne National Laboratory",
+"canonical": "Argonne National Laboratory",
+"country": "USA",
+"sector": "government/nonprofit"
+},
+{
+"raw": ", Tsinghua University",
+"canonical": "Tsinghua University",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "KTH Royal Institute of Technology, Stockholm, Sweden",
+"canonical": "KTH",
+"country": "Sweden",
+"sector": "academia"
+},
+{
+"raw": "Max Planck Institute for Software Systems",
+"canonical": "Max Planck Institute",
+"country": "Germany",
+"sector": "academia"
+},
+{
+"raw": "Penn State University",
+"canonical": "Penn State University",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "Fondazione Bruno Kessler",
+"canonical": "Fondazione Bruno Kessler",
+"country": "Italy",
+"sector": "government/nonprofit"
+},
+{
+"raw": "CISPA Helmholtz Center",
+"canonical": "CISPA",
+"country": "Germany",
+"sector": "government/nonprofit"
+},
+{
+"raw": "USTC",
+"canonical": "USTC",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "Guangzhou University",
+"canonical": "Guangzhou University",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "Shenzhen Technology University",
+"canonical": "Shenzhen Technology University",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "Shanghai University",
+"canonical": "Shanghai University",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "Advanced Micro Devices",
+"canonical": "AMD",
+"country": "USA",
+"sector": "industry"
+},
+{
+"raw": "School of Computer and Communication Sciences, EPFL - EPF Lausanne",
+"canonical": "EPFL",
+"country": "Switzerland",
+"sector": "academia"
+},
+{
+"raw": "The Wharton School, University of Pennsylvania",
+"canonical": "University of Pennsylvania",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "Intel",
+"canonical": "Intel",
+"country": "USA",
+"sector": "industry"
+},
+{
+"raw": "Inception Institute of Artificial Intelligence",
+"canonical": "Inception Institute of AI",
+"country": "UAE",
+"sector": "industry"
+},
+{
+"raw": "Zhengzhou University",
+"canonical": "Zhengzhou University",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "Xi'an University of Electronic Science and Technology",
+"canonical": "Xidian University",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "RIKEN / University of Tokyo",
+"canonical": "RIKEN",
+"country": "Japan",
+"sector": "government/nonprofit"
+},
+{
+"raw": "Unimelb & MBZUAI",
+"canonical": "University of Melbourne",
+"country": "Australia",
+"sector": "academia"
+},
+{
+"raw": "Department of Computer Science",
+"canonical": "unknown",
+"country": "unknown",
+"sector": "unknown"
+},
+{
+"raw": "Guangdong University of Technology",
+"canonical": "Guangdong University of Technology",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "Massachusetts General Hospital, Harvard University",
+"canonical": "Massachusetts General Hospital",
+"country": "USA",
+"sector": "government/nonprofit"
+},
+{
+"raw": "University of North Texas",
+"canonical": "University of North Texas",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "TikTok",
+"canonical": "ByteDance",
+"country": "China",
+"sector": "industry"
+},
+{
+"raw": "Sensetime",
+"canonical": "SenseTime",
+"country": "China",
+"sector": "industry"
+},
+{
+"raw": "Princeton",
+"canonical": "Princeton University",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "DreamX of Alibaba",
+"canonical": "Alibaba",
+"country": "China",
+"sector": "industry"
+},
+{
+"raw": "Google, TUM",
+"canonical": "Google",
+"country": "USA",
+"sector": "industry"
+},
+{
+"raw": "Technical University Munich",
+"canonical": "TU Munich",
+"country": "Germany",
+"sector": "academia"
+},
+{
+"raw": "Allen Institute for AI",
+"canonical": "Allen Institute for AI",
+"country": "USA",
+"sector": "government/nonprofit"
+},
+{
+"raw": "Academia Sinica",
+"canonical": "Academia Sinica",
+"country": "Taiwan",
+"sector": "academia"
+},
+{
+"raw": "Bocconi University",
+"canonical": "Bocconi University",
+"country": "Italy",
+"sector": "academia"
+},
+{
+"raw": "Technische Universit\u00e4t Wien",
+"canonical": "TU Wien",
+"country": "Austria",
+"sector": "academia"
+},
+{
+"raw": "University of Basel",
+"canonical": "University of Basel",
+"country": "Switzerland",
+"sector": "academia"
+},
+{
+"raw": "Beijing jiaotong univercity",
+"canonical": "Beijing Jiaotong University",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "University of Toronto & Vector Institute",
+"canonical": "University of Toronto",
+"country": "Canada",
+"sector": "academia"
+},
+{
+"raw": "Institute for Computer Science, Artificial Intelligence and Technology",
+"canonical": "INSAIT",
+"country": "Bulgaria",
+"sector": "academia"
+},
+{
+"raw": "Google  DeepMind / UC Merced",
+"canonical": "Google",
+"country": "USA",
+"sector": "industry"
+},
+{
+"raw": "T\u00e9l\u00e9com Paris",
+"canonical": "T\u00e9l\u00e9com Paris",
+"country": "France",
+"sector": "academia"
+},
+{
+"raw": "Indian Institute of Science, Indian institute of science, Bangalore",
+"canonical": "Indian Institute of Science",
+"country": "India",
+"sector": "academia"
+},
+{
+"raw": "The University of Manchester",
+"canonical": "University of Manchester",
+"country": "UK",
+"sector": "academia"
+},
+{
+"raw": "Jinan University",
+"canonical": "Jinan University",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "Ulsan National Institute of Science and Technology",
+"canonical": "UNIST",
+"country": "South Korea",
+"sector": "academia"
+},
+{
+"raw": "Indian Institute of Technology Delhi",
+"canonical": "IIT Delhi",
+"country": "India",
+"sector": "academia"
+},
+{
+"raw": "Lehigh University",
+"canonical": "Lehigh University",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "Beijing University of Post and Telecommunication",
+"canonical": "BUPT",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "ELLIS Institute T\u00fcbingen",
+"canonical": "ELLIS Institute T\u00fcbingen",
+"country": "Germany",
+"sector": "government/nonprofit"
+},
+{
+"raw": "Oxford",
+"canonical": "University of Oxford",
+"country": "UK",
+"sector": "academia"
+},
+{
+"raw": "Hasso Plattner Institute",
+"canonical": "Hasso Plattner Institute",
+"country": "Germany",
+"sector": "academia"
+},
+{
+"raw": "KAIST, Korea Advanced Institute of Science & Technology",
+"canonical": "KAIST",
+"country": "South Korea",
+"sector": "academia"
+},
+{
+"raw": "Hokkaido University",
+"canonical": "Hokkaido University",
+"country": "Japan",
+"sector": "academia"
+},
+{
+"raw": "Los Alamos National Laboratory",
+"canonical": "Los Alamos National Laboratory",
+"country": "USA",
+"sector": "government/nonprofit"
+},
+{
+"raw": "Universitat Pompeu Fabra",
+"canonical": "Universitat Pompeu Fabra",
+"country": "Spain",
+"sector": "academia"
+},
+{
+"raw": "Ajou University",
+"canonical": "Ajou University",
+"country": "South Korea",
+"sector": "academia"
+},
+{
+"raw": "Stevens Institute of Technology",
+"canonical": "Stevens Institute of Technology",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "Alibaba Inc.",
+"canonical": "Alibaba",
+"country": "China",
+"sector": "industry"
+},
+{
+"raw": "York University",
+"canonical": "York University",
+"country": "Canada",
+"sector": "academia"
+},
+{
+"raw": "Chalmers University of Technology",
+"canonical": "Chalmers University of Technology",
+"country": "Sweden",
+"sector": "academia"
+},
+{
+"raw": "University of York",
+"canonical": "University of York",
+"country": "UK",
+"sector": "academia"
+},
+{
+"raw": "Queen Mary University of London",
+"canonical": "Queen Mary University of London",
+"country": "UK",
+"sector": "academia"
+},
+{
+"raw": "University of Houston",
+"canonical": "University of Houston",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "Xi'an Jiaotong-Liverpool University",
+"canonical": "Xi'an Jiaotong-Liverpool University",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "University of Luxemburg",
+"canonical": "University of Luxembourg",
+"country": "Luxembourg",
+"sector": "academia"
+},
+{
+"raw": "Hanyang Universty",
+"canonical": "Hanyang University",
+"country": "South Korea",
+"sector": "academia"
+},
+{
+"raw": "Kyung Hee University",
+"canonical": "Kyung Hee University",
+"country": "South Korea",
+"sector": "academia"
+},
+{
+"raw": "TU Delft",
+"canonical": "TU Delft",
+"country": "Netherlands",
+"sector": "academia"
+},
+{
+"raw": "Vrije Universiteit Amsterdam",
+"canonical": "Vrije Universiteit Amsterdam",
+"country": "Netherlands",
+"sector": "academia"
+},
+{
+"raw": "Amazon Web Services",
+"canonical": "Amazon",
+"country": "USA",
+"sector": "industry"
+},
+{
+"raw": "Amazon AGI",
+"canonical": "Amazon",
+"country": "USA",
+"sector": "industry"
+},
+{
+"raw": "Apple Inc.",
+"canonical": "Apple",
+"country": "USA",
+"sector": "industry"
+},
+{
+"raw": "The Chinese University of Hong Kong (Shenzhen)",
+"canonical": "CUHK-Shenzhen",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "Xiamen University, China",
+"canonical": "Xiamen University",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "Tohoku University",
+"canonical": "Tohoku University",
+"country": "Japan",
+"sector": "academia"
+},
+{
+"raw": "Kookmin University",
+"canonical": "Kookmin University",
+"country": "South Korea",
+"sector": "academia"
+},
+{
+"raw": "National Univ. of Singapore",
+"canonical": "NUS",
+"country": "Singapore",
+"sector": "academia"
+},
+{
+"raw": "Beijing Institute for General Artificial Intelligence",
+"canonical": "BIGAI",
+"country": "China",
+"sector": "government/nonprofit"
+},
+{
+"raw": "Wayne State University",
+"canonical": "Wayne State University",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "Indian Institute of Technology Bombay",
+"canonical": "IIT Bombay",
+"country": "India",
+"sector": "academia"
+},
+{
+"raw": "Eastern Institute of Technology, Ningbo",
+"canonical": "Eastern Institute of Technology, Ningbo",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "Harvard Medical School",
+"canonical": "Harvard University",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "China University of Petroleum",
+"canonical": "China University of Petroleum",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "Harbin Engineering University",
+"canonical": "Harbin Engineering University",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "Saarland University",
+"canonical": "Saarland University",
+"country": "Germany",
+"sector": "academia"
+},
+{
+"raw": "SenseTime",
+"canonical": "SenseTime",
+"country": "China",
+"sector": "industry"
+},
+{
+"raw": "AMD",
+"canonical": "AMD",
+"country": "USA",
+"sector": "industry"
+},
+{
+"raw": "City University of Hong Kong (Dongguan)",
+"canonical": "City University of Hong Kong",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "Morgan Stanley",
+"canonical": "Morgan Stanley",
+"country": "USA",
+"sector": "industry"
+},
+{
+"raw": "MATS",
+"canonical": "MATS",
+"country": "USA",
+"sector": "government/nonprofit"
+},
+{
+"raw": "School of Engineering and Applied Sciences, Harvard University",
+"canonical": "Harvard University",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "Indiana University",
+"canonical": "Indiana University",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "Tokyo Institute of Technology",
+"canonical": "Tokyo Institute of Technology",
+"country": "Japan",
+"sector": "academia"
+},
+{
+"raw": "Jiangnan University",
+"canonical": "Jiangnan University",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "California Institute of Technology",
+"canonical": "Caltech",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "Meta FAIR",
+"canonical": "Meta",
+"country": "USA",
+"sector": "industry"
+},
+{
+"raw": "Alibaba",
+"canonical": "Alibaba",
+"country": "China",
+"sector": "industry"
+},
+{
+"raw": "Huawei Noah's Ark Lab",
+"canonical": "Huawei",
+"country": "China",
+"sector": "industry"
+},
+{
+"raw": "national university of singaore, National University of Singapore",
+"canonical": "NUS",
+"country": "Singapore",
+"sector": "academia"
+},
+{
+"raw": "Texas A&M University",
+"canonical": "Texas A&M University",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "Beijing Normal University",
+"canonical": "Beijing Normal University",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "A*STAR",
+"canonical": "A*STAR",
+"country": "Singapore",
+"sector": "government/nonprofit"
+},
+{
+"raw": "Adobe Systems",
+"canonical": "Adobe",
+"country": "USA",
+"sector": "industry"
+},
+{
+"raw": "HKUST",
+"canonical": "HKUST",
+"country": "Hong Kong",
+"sector": "academia"
+},
+{
+"raw": "Ohio State University, Columbus",
+"canonical": "Ohio State University",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "Anthropic",
+"canonical": "Anthropic",
+"country": "USA",
+"sector": "industry"
+},
+{
+"raw": "Dalian University of Technology",
+"canonical": "Dalian University of Technology",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "Delft University of Technology",
+"canonical": "TU Delft",
+"country": "Netherlands",
+"sector": "academia"
+},
+{
+"raw": "Google Deepmind",
+"canonical": "Google",
+"country": "USA",
+"sector": "industry"
+},
+{
+"raw": "Virginia Tech",
+"canonical": "Virginia Tech",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "Rice University",
+"canonical": "Rice University",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "University of California, Davis",
+"canonical": "UC Davis",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "University of Notre Dame",
+"canonical": "University of Notre Dame",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "The Ohio State University",
+"canonical": "Ohio State University",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "Sungkyunkwan University",
+"canonical": "Sungkyunkwan University",
+"country": "South Korea",
+"sector": "academia"
+},
+{
+"raw": "Virginia Polytechnic Institute and State University",
+"canonical": "Virginia Tech",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "Computer Science Department, Stanford University",
+"canonical": "Stanford University",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "Tencent Hunyuan",
+"canonical": "Tencent",
+"country": "China",
+"sector": "industry"
+},
+{
+"raw": "University of Massachusetts at Amherst",
+"canonical": "UMass Amherst",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "Caltech",
+"canonical": "Caltech",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "University of Illinois at Chicago",
+"canonical": "University of Illinois Chicago",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "University of Illinois, Urbana Champaign",
+"canonical": "UIUC",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "RIKEN",
+"canonical": "RIKEN",
+"country": "Japan",
+"sector": "government/nonprofit"
+},
+{
+"raw": "University of Warwick",
+"canonical": "University of Warwick",
+"country": "UK",
+"sector": "academia"
+},
+{
+"raw": "KU Leuven",
+"canonical": "KU Leuven",
+"country": "Belgium",
+"sector": "academia"
+},
+{
+"raw": "Mila",
+"canonical": "Mila",
+"country": "Canada",
+"sector": "academia"
+},
+{
+"raw": "University of Adelaide",
+"canonical": "University of Adelaide",
+"country": "Australia",
+"sector": "academia"
+},
+{
+"raw": "DeepMind",
+"canonical": "Google",
+"country": "USA",
+"sector": "industry"
+},
+{
+"raw": "Northwest Polytechnical University Xi'an",
+"canonical": "Northwestern Polytechnical University",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "University of Bristol",
+"canonical": "University of Bristol",
+"country": "UK",
+"sector": "academia"
+},
+{
+"raw": "Harvard",
+"canonical": "Harvard University",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "Shanxi University",
+"canonical": "Shanxi University",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "\u00c9cole Polytechnique",
+"canonical": "\u00c9cole Polytechnique",
+"country": "France",
+"sector": "academia"
+},
+{
+"raw": "KTH Royal Institute of Technology",
+"canonical": "KTH",
+"country": "Sweden",
+"sector": "academia"
+},
+{
+"raw": "LMU Munich",
+"canonical": "LMU Munich",
+"country": "Germany",
+"sector": "academia"
+},
+{
+"raw": "OpenAI",
+"canonical": "OpenAI",
+"country": "USA",
+"sector": "industry"
+},
+{
+"raw": "CISPA Helmholtz Center for Information Security",
+"canonical": "CISPA",
+"country": "Germany",
+"sector": "government/nonprofit"
+},
+{
+"raw": "Singapore University of Technology and Design",
+"canonical": "SUTD",
+"country": "Singapore",
+"sector": "academia"
+},
+{
+"raw": "Technion - Israel Institute of Technology",
+"canonical": "Technion",
+"country": "Israel",
+"sector": "academia"
+},
+{
+"raw": "Institute of automation, Chinese academy of science",
+"canonical": "Chinese Academy of Sciences",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "International Business Machines",
+"canonical": "IBM",
+"country": "USA",
+"sector": "industry"
+},
+{
+"raw": "Technische Universit\u00e4t Berlin",
+"canonical": "TU Berlin",
+"country": "Germany",
+"sector": "academia"
+},
+{
+"raw": "School of Computer Science, Carnegie Mellon University",
+"canonical": "Carnegie Mellon University",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "Sung Kyun Kwan University",
+"canonical": "Sungkyunkwan University",
+"country": "South Korea",
+"sector": "academia"
+},
+{
+"raw": "University of Manchester",
+"canonical": "University of Manchester",
+"country": "UK",
+"sector": "academia"
+},
+{
+"raw": "Aalto University",
+"canonical": "Aalto University",
+"country": "Finland",
+"sector": "academia"
+},
+{
+"raw": "Technion - Israel Institute of Technology, Technion",
+"canonical": "Technion",
+"country": "Israel",
+"sector": "academia"
+},
+{
+"raw": "Xiaomi Corporation",
+"canonical": "Xiaomi",
+"country": "China",
+"sector": "industry"
+},
+{
+"raw": "Inria",
+"canonical": "Inria",
+"country": "France",
+"sector": "government/nonprofit"
+},
+{
+"raw": "Department of Computer Science, University of Washington",
+"canonical": "University of Washington",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "JD.com",
+"canonical": "JD.com",
+"country": "China",
+"sector": "industry"
+},
+{
+"raw": "University of California, Santa Cruz",
+"canonical": "UC Santa Cruz",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "National Taiwan University",
+"canonical": "National Taiwan University",
+"country": "Taiwan",
+"sector": "academia"
+},
+{
+"raw": "University of Trento",
+"canonical": "University of Trento",
+"country": "Italy",
+"sector": "academia"
+},
+{
+"raw": "University of Science and Technology Beijing",
+"canonical": "University of Science and Technology Beijing",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "Hong Kong Baptist University",
+"canonical": "Hong Kong Baptist University",
+"country": "Hong Kong",
+"sector": "academia"
+},
+{
+"raw": "University of Rochester",
+"canonical": "University of Rochester",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "University of Minnesota - Twin Cities",
+"canonical": "University of Minnesota",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "Hanyang University",
+"canonical": "Hanyang University",
+"country": "South Korea",
+"sector": "academia"
+},
+{
+"raw": "King's College London",
+"canonical": "King's College London",
+"country": "UK",
+"sector": "academia"
+},
+{
+"raw": "Nanjing University of Aeronautics and Astronautics",
+"canonical": "Nanjing University of Aeronautics and Astronautics",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "University of California San Diego",
+"canonical": "UC San Diego",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "Hangzhou Dianzi University",
+"canonical": "Hangzhou Dianzi University",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "Adelaide University",
+"canonical": "University of Adelaide",
+"country": "Australia",
+"sector": "academia"
+},
+{
+"raw": "Aalborg University",
+"canonical": "Aalborg University",
+"country": "Denmark",
+"sector": "academia"
+},
+{
+"raw": "Aarhus University",
+"canonical": "Aarhus University",
+"country": "Denmark",
+"sector": "academia"
+},
+{
+"raw": "University of Texas, Austin",
+"canonical": "UT Austin",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "Griffith University",
+"canonical": "Griffith University",
+"country": "Australia",
+"sector": "academia"
+},
+{
+"raw": "Meta AI",
+"canonical": "Meta",
+"country": "USA",
+"sector": "industry"
+},
+{
+"raw": "University of Surrey",
+"canonical": "University of Surrey",
+"country": "UK",
+"sector": "academia"
+},
+{
+"raw": "Mila - Quebec Artificial Intelligence Institute",
+"canonical": "Mila",
+"country": "Canada",
+"sector": "academia"
+},
+{
+"raw": "King Abdullah University of Science and Technology",
+"canonical": "KAUST",
+"country": "Saudi Arabia",
+"sector": "academia"
+},
+{
+"raw": "Dartmouth College",
+"canonical": "Dartmouth College",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "The University of Queensland",
+"canonical": "University of Queensland",
+"country": "Australia",
+"sector": "academia"
+},
+{
+"raw": "Xiaohongshu",
+"canonical": "Xiaohongshu",
+"country": "China",
+"sector": "industry"
+},
+{
+"raw": "Research, Microsoft",
+"canonical": "Microsoft",
+"country": "USA",
+"sector": "industry"
+},
+{
+"raw": "Institute of Information Engineering, Chinese Academy of Sciences",
+"canonical": "Chinese Academy of Sciences",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "Chongqing University",
+"canonical": "Chongqing University",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "University of Massachusetts Amherst",
+"canonical": "UMass Amherst",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "KAIST AI",
+"canonical": "KAIST",
+"country": "South Korea",
+"sector": "academia"
+},
+{
+"raw": "HKBU / RIKEN",
+"canonical": "Hong Kong Baptist University",
+"country": "Hong Kong",
+"sector": "academia"
+},
+{
+"raw": "Stony Brook University",
+"canonical": "Stony Brook University",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "Technische Universit\u00e4t Darmstadt",
+"canonical": "TU Darmstadt",
+"country": "Germany",
+"sector": "academia"
+},
+{
+"raw": "Eberhard-Karls-Universit\u00e4t T\u00fcbingen",
+"canonical": "University of T\u00fcbingen",
+"country": "Germany",
+"sector": "academia"
+},
+{
+"raw": "Politecnico di Milano",
+"canonical": "Politecnico di Milano",
+"country": "Italy",
+"sector": "academia"
+},
+{
+"raw": "Department of Computer Science and Engineering, Hong Kong University of Science and Technology",
+"canonical": "HKUST",
+"country": "Hong Kong",
+"sector": "academia"
+},
+{
+"raw": "University of Illinois Chicago",
+"canonical": "University of Illinois Chicago",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "Northwestern Polytechnical University",
+"canonical": "Northwestern Polytechnical University",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "Samsung",
+"canonical": "Samsung",
+"country": "South Korea",
+"sector": "industry"
+},
+{
+"raw": "Beijing University of Post and Telecommunications",
+"canonical": "Beijing University of Posts and Telecommunications",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "Pengcheng Laboratory",
+"canonical": "Pengcheng Laboratory",
+"country": "China",
+"sector": "government/nonprofit"
+},
+{
+"raw": "State University of New York at Stony Brook",
+"canonical": "Stony Brook University",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "NYU",
+"canonical": "NYU",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "Simon Fraser University",
+"canonical": "Simon Fraser University",
+"country": "Canada",
+"sector": "academia"
+},
+{
+"raw": "Qualcomm",
+"canonical": "Qualcomm",
+"country": "USA",
+"sector": "industry"
+},
+{
+"raw": "UW-Madison",
+"canonical": "University of Wisconsin-Madison",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "University of California Berkeley",
+"canonical": "UC Berkeley",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "Ludwig-Maximilians-Universit\u00e4t M\u00fcnchen",
+"canonical": "LMU Munich",
+"country": "Germany",
+"sector": "academia"
+},
+{
+"raw": "RIKEN AIP",
+"canonical": "RIKEN",
+"country": "Japan",
+"sector": "government/nonprofit"
+},
+{
+"raw": "Universit\u00e9 de Montr\u00e9al",
+"canonical": "Universit\u00e9 de Montr\u00e9al",
+"country": "Canada",
+"sector": "academia"
+},
+{
+"raw": "Shenzhen Institutes of Advanced Technology, Chinese Academy of Sciences, Chinese Academy of Sciences",
+"canonical": "Chinese Academy of Sciences",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "CMU & MBZUAI",
+"canonical": "Carnegie Mellon University",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "Stanford University / Virtue AI",
+"canonical": "Stanford University",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "University of Arizona",
+"canonical": "University of Arizona",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "Soochow University",
+"canonical": "Soochow University",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "IBM",
+"canonical": "IBM",
+"country": "USA",
+"sector": "industry"
+},
+{
+"raw": "HKUST(GZ)",
+"canonical": "HKUST (Guangzhou)",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "VinUniversity",
+"canonical": "VinUniversity",
+"country": "Vietnam",
+"sector": "academia"
+},
+{
+"raw": "Vector Institute",
+"canonical": "Vector Institute",
+"country": "Canada",
+"sector": "government/nonprofit"
+},
+{
+"raw": "Facebook AI Research",
+"canonical": "Meta",
+"country": "USA",
+"sector": "industry"
+},
+{
+"raw": "Beijing Academy of Artificial Intelligence",
+"canonical": "BAAI",
+"country": "China",
+"sector": "government/nonprofit"
+},
+{
+"raw": "King's College London, University of London",
+"canonical": "King's College London",
+"country": "UK",
+"sector": "academia"
+},
+{
+"raw": "University of Copenhagen",
+"canonical": "University of Copenhagen",
+"country": "Denmark",
+"sector": "academia"
+},
+{
+"raw": "Tencent Youtu Lab",
+"canonical": "Tencent",
+"country": "China",
+"sector": "industry"
+},
+{
+"raw": "University of California, Riverside",
+"canonical": "UC Riverside",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "Eindhoven University of Technology",
+"canonical": "Eindhoven University of Technology",
+"country": "Netherlands",
+"sector": "academia"
+},
+{
+"raw": "University of Georgia",
+"canonical": "University of Georgia",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "JD Explore Academy",
+"canonical": "JD.com",
+"country": "China",
+"sector": "industry"
+},
+{
+"raw": "Mohamed bin Zayed University of AI",
+"canonical": "MBZUAI",
+"country": "UAE",
+"sector": "academia"
+},
+{
+"raw": "CSIRO",
+"canonical": "CSIRO",
+"country": "Australia",
+"sector": "government/nonprofit"
+},
+{
+"raw": "Shenzhen Institutes of Advanced Technology, Chinese Academy of Sciences",
+"canonical": "Chinese Academy of Sciences",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "North Carolina State University",
+"canonical": "North Carolina State University",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "University of Minnesota",
+"canonical": "University of Minnesota",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "University of Texas at Dallas",
+"canonical": "UT Dallas",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "Karlsruher Institut f\u00fcr Technologie",
+"canonical": "Karlsruhe Institute of Technology",
+"country": "Germany",
+"sector": "academia"
+},
+{
+"raw": "Rensselaer Polytechnic Institute",
+"canonical": "Rensselaer Polytechnic Institute",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "TU Munich",
+"canonical": "TU Munich",
+"country": "Germany",
+"sector": "academia"
+},
+{
+"raw": "Karlsruhe Institute of Technology",
+"canonical": "Karlsruhe Institute of Technology",
+"country": "Germany",
+"sector": "academia"
+},
+{
+"raw": "Kuaishou",
+"canonical": "Kuaishou",
+"country": "China",
+"sector": "industry"
+},
+{
+"raw": "Swiss Federal Institute of Technology Lausanne",
+"canonical": "EPFL",
+"country": "Switzerland",
+"sector": "academia"
+},
+{
+"raw": "Qualcomm AI Research",
+"canonical": "Qualcomm",
+"country": "USA",
+"sector": "industry"
+},
+{
+"raw": "Indian Institute of Science",
+"canonical": "Indian Institute of Science",
+"country": "India",
+"sector": "academia"
+},
+{
+"raw": "Guangdong OPPO Mobile Telecommunications Corp.,Ltd.",
+"canonical": "OPPO",
+"country": "China",
+"sector": "industry"
+},
+{
+"raw": "University of Helsinki",
+"canonical": "University of Helsinki",
+"country": "Finland",
+"sector": "academia"
+},
+{
+"raw": "TU Darmstadt",
+"canonical": "TU Darmstadt",
+"country": "Germany",
+"sector": "academia"
+},
+{
+"raw": "ISTA",
+"canonical": "ISTA",
+"country": "Austria",
+"sector": "academia"
+},
+{
+"raw": "Huawei",
+"canonical": "Huawei",
+"country": "China",
+"sector": "industry"
+},
+{
+"raw": "Deakin University",
+"canonical": "Deakin University",
+"country": "Australia",
+"sector": "academia"
+},
+{
+"raw": "Institute of Science and Technology Austria",
+"canonical": "ISTA",
+"country": "Austria",
+"sector": "academia"
+},
+{
+"raw": "Nvidia",
+"canonical": "NVIDIA",
+"country": "USA",
+"sector": "industry"
+},
+{
+"raw": "Flatiron Institute",
+"canonical": "Flatiron Institute",
+"country": "USA",
+"sector": "government/nonprofit"
+},
+{
+"raw": "Institute of Software, Chinese Academy of Sciences",
+"canonical": "Chinese Academy of Sciences",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "Pohang University of Science and Technology",
+"canonical": "POSTECH",
+"country": "South Korea",
+"sector": "academia"
+},
+{
+"raw": "UNC Chapel Hill",
+"canonical": "UNC Chapel Hill",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "University of Texas at Arlington",
+"canonical": "UT Arlington",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "Vanderbilt University",
+"canonical": "Vanderbilt University",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "UNSW, Sydney",
+"canonical": "UNSW Sydney",
+"country": "Australia",
+"sector": "academia"
+},
+{
+"raw": "University of Pittsburgh",
+"canonical": "University of Pittsburgh",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "University of Maryland College Park",
+"canonical": "University of Maryland",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "Snap Inc.",
+"canonical": "Snap",
+"country": "USA",
+"sector": "industry"
+},
+{
+"raw": "Technical University of Denmark",
+"canonical": "DTU",
+"country": "Denmark",
+"sector": "academia"
+},
+{
+"raw": "Washington University in St. Louis",
+"canonical": "Washington University in St. Louis",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "Department of Computer Science, University of Toronto",
+"canonical": "University of Toronto",
+"country": "Canada",
+"sector": "academia"
+},
+{
+"raw": "MPI for Intelligent Systems, T\u00fcbingen",
+"canonical": "Max Planck Institute for Intelligent Systems",
+"country": "Germany",
+"sector": "government/nonprofit"
+},
+{
+"raw": "Qualcomm Inc, QualComm",
+"canonical": "Qualcomm",
+"country": "USA",
+"sector": "industry"
+},
+{
+"raw": "University of Liverpool",
+"canonical": "University of Liverpool",
+"country": "UK",
+"sector": "academia"
+},
+{
+"raw": "Tencent YouTu Lab",
+"canonical": "Tencent",
+"country": "China",
+"sector": "industry"
+},
+{
+"raw": "University of Birmingham",
+"canonical": "University of Birmingham",
+"country": "UK",
+"sector": "academia"
+},
+{
+"raw": "The University of Melbourne",
+"canonical": "University of Melbourne",
+"country": "Australia",
+"sector": "academia"
+},
+{
+"raw": "JHU",
+"canonical": "Johns Hopkins University",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "Institute of Science Tokyo",
+"canonical": "Institute of Science Tokyo",
+"country": "Japan",
+"sector": "academia"
+},
+{
+"raw": "Sorbonne Universit\u00e9 - Facult\u00e9 des Sciences (Paris VI)",
+"canonical": "Sorbonne Universit\u00e9",
+"country": "France",
+"sector": "academia"
+},
+{
+"raw": "Adobe",
+"canonical": "Adobe",
+"country": "USA",
+"sector": "industry"
+},
+{
+"raw": "Chung-Ang University",
+"canonical": "Chung-Ang University",
+"country": "South Korea",
+"sector": "academia"
+},
+{
+"raw": "Hanoi University of Science and Technology",
+"canonical": "Hanoi University of Science and Technology",
+"country": "Vietnam",
+"sector": "academia"
+},
+{
+"raw": "Great Bay University",
+"canonical": "Great Bay University",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "New Jersey Institute of Technology",
+"canonical": "New Jersey Institute of Technology",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "University of Tuebingen",
+"canonical": "University of T\u00fcbingen",
+"country": "Germany",
+"sector": "academia"
+},
+{
+"raw": "Max Planck Institute for Informatics",
+"canonical": "Max Planck Institute for Informatics",
+"country": "Germany",
+"sector": "government/nonprofit"
+},
+{
+"raw": "Florida State University",
+"canonical": "Florida State University",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "Nanjing University of Information Science and Technology",
+"canonical": "Nanjing University of Information Science and Technology",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "Washington University, Saint Louis",
+"canonical": "Washington University in St. Louis",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "KAIST, AITRICS",
+"canonical": "KAIST",
+"country": "South Korea",
+"sector": "academia"
+},
+{
+"raw": "Shenzhen University of Advanced Technology",
+"canonical": "Shenzhen University of Advanced Technology",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": ", Chinese Academy of Sciences",
+"canonical": "Chinese Academy of Sciences",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "The Hong Kong Polytechnic Univ",
+"canonical": "Hong Kong Polytechnic University",
+"country": "Hong Kong",
+"sector": "academia"
+},
+{
+"raw": "Nanjing university",
+"canonical": "Nanjing University",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "South China Normal University",
+"canonical": "South China Normal University",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "Baidu Inc.",
+"canonical": "Baidu",
+"country": "China",
+"sector": "industry"
+},
+{
+"raw": "University of Connecticut",
+"canonical": "University of Connecticut",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "FAIR, Meta",
+"canonical": "Meta",
+"country": "USA",
+"sector": "industry"
+},
+{
+"raw": "Rochester Institute of Technology",
+"canonical": "Rochester Institute of Technology",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "AWS",
+"canonical": "Amazon",
+"country": "USA",
+"sector": "industry"
+},
+{
+"raw": "NVIDIA Research",
+"canonical": "NVIDIA",
+"country": "USA",
+"sector": "industry"
+},
+{
+"raw": "CUHK",
+"canonical": "CUHK",
+"country": "Hong Kong",
+"sector": "academia"
+},
+{
+"raw": "Department of Computer Science, University of North Carolina at Chapel Hill",
+"canonical": "UNC Chapel Hill",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "Lancaster University",
+"canonical": "Lancaster University",
+"country": "UK",
+"sector": "academia"
+},
+{
+"raw": "AIG",
+"canonical": "AIG",
+"country": "USA",
+"sector": "industry"
+},
+{
+"raw": "University of Utah",
+"canonical": "University of Utah",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "Oracle",
+"canonical": "Oracle",
+"country": "USA",
+"sector": "industry"
+},
+{
+"raw": "Max Planck Institute for Intelligent Systems",
+"canonical": "Max Planck Institute for Intelligent Systems",
+"country": "Germany",
+"sector": "government/nonprofit"
+},
+{
+"raw": "UCL",
+"canonical": "UCL",
+"country": "UK",
+"sector": "academia"
+},
+{
+"raw": "RWTH Aachen University",
+"canonical": "RWTH Aachen University",
+"country": "Germany",
+"sector": "academia"
+},
+{
+"raw": "Kyoto University",
+"canonical": "Kyoto University",
+"country": "Japan",
+"sector": "academia"
+},
+{
+"raw": "McMaster University",
+"canonical": "McMaster University",
+"country": "Canada",
+"sector": "academia"
+},
+{
+"raw": "Rheinisch Westf\u00e4lische Technische Hochschule Aachen",
+"canonical": "RWTH Aachen University",
+"country": "Germany",
+"sector": "academia"
+},
+{
+"raw": "University of North Carolina at Charlotte",
+"canonical": "UNC Charlotte",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "University of Illinois, Urbana-Champaign",
+"canonical": "UIUC",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "Universit\u00e9 Paris-Saclay",
+"canonical": "Universit\u00e9 Paris-Saclay",
+"country": "France",
+"sector": "academia"
+},
+{
+"raw": "Scale AI",
+"canonical": "Scale AI",
+"country": "USA",
+"sector": "industry"
+},
+{
+"raw": "University of Montreal",
+"canonical": "Universit\u00e9 de Montr\u00e9al",
+"country": "Canada",
+"sector": "academia"
+},
+{
+"raw": "UT Dallas",
+"canonical": "UT Dallas",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "CapitalOne",
+"canonical": "Capital One",
+"country": "USA",
+"sector": "industry"
+},
+{
+"raw": "The University of Edinburgh",
+"canonical": "University of Edinburgh",
+"country": "UK",
+"sector": "academia"
+},
+{
+"raw": "NLPR, CASIA",
+"canonical": "Chinese Academy of Sciences",
+"country": "China",
+"sector": "government/nonprofit"
+},
+{
+"raw": "NTU",
+"canonical": "NTU Singapore",
+"country": "Singapore",
+"sector": "academia"
+},
+{
+"raw": "Huawei Noah\u2019s Ark Lab",
+"canonical": "Huawei",
+"country": "China",
+"sector": "industry"
+},
+{
+"raw": "J.P. Morgan Chase",
+"canonical": "JPMorgan Chase",
+"country": "USA",
+"sector": "industry"
+},
+{
+"raw": "MPI-SWS",
+"canonical": "Max Planck Society",
+"country": "Germany",
+"sector": "government/nonprofit"
+},
+{
+"raw": "Fuzhou University",
+"canonical": "Fuzhou University",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "NEC Labs America",
+"canonical": "NEC",
+"country": "Japan",
+"sector": "industry"
+},
+{
+"raw": "National University of Singapore (NUS)",
+"canonical": "NUS",
+"country": "Singapore",
+"sector": "academia"
+},
+{
+"raw": "Copenhagen University",
+"canonical": "University of Copenhagen",
+"country": "Denmark",
+"sector": "academia"
+},
+{
+"raw": "MBZUAI Institute of Foundation Models",
+"canonical": "MBZUAI",
+"country": "UAE",
+"sector": "academia"
+},
+{
+"raw": "Helmholtz Zentrum M\u00fcnchen",
+"canonical": "Helmholtz Munich",
+"country": "Germany",
+"sector": "government/nonprofit"
+},
+{
+"raw": "University of Stuttgart",
+"canonical": "University of Stuttgart",
+"country": "Germany",
+"sector": "academia"
+},
+{
+"raw": "University of California, Los Angeles (UCLA)",
+"canonical": "UCLA",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "University of Glasgow",
+"canonical": "University of Glasgow",
+"country": "UK",
+"sector": "academia"
+},
+{
+"raw": "Marburguniversity",
+"canonical": "University of Marburg",
+"country": "Germany",
+"sector": "academia"
+},
+{
+"raw": "Together AI",
+"canonical": "Together AI",
+"country": "USA",
+"sector": "industry"
+},
+{
+"raw": "HPC-AI Technology LLC",
+"canonical": "HPC-AI Tech",
+"country": "Singapore",
+"sector": "industry"
+},
+{
+"raw": "University of Massachusetts, Amherst",
+"canonical": "UMass Amherst",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "MIT CSAIL",
+"canonical": "MIT",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "Link\u00f6ping University",
+"canonical": "Link\u00f6ping University",
+"country": "Sweden",
+"sector": "academia"
+},
+{
+"raw": "Institute of Computing Technology, CAS",
+"canonical": "Chinese Academy of Sciences",
+"country": "China",
+"sector": "government/nonprofit"
+},
+{
+"raw": "Ohio State University",
+"canonical": "Ohio State University",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "University of Auckland",
+"canonical": "University of Auckland",
+"country": "New Zealand",
+"sector": "academia"
+},
+{
+"raw": "Institute of Science and Technology Austria (ISTA)",
+"canonical": "ISTA",
+"country": "Austria",
+"sector": "academia"
+},
+{
+"raw": "The University of Tokyo/RIKEN-AIP",
+"canonical": "University of Tokyo",
+"country": "Japan",
+"sector": "academia"
+},
+{
+"raw": "University of Washington; Meta",
+"canonical": "University of Washington",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "TTI Chicago",
+"canonical": "TTI Chicago",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "meituan",
+"canonical": "Meituan",
+"country": "China",
+"sector": "industry"
+},
+{
+"raw": "Google Brain",
+"canonical": "Google",
+"country": "USA",
+"sector": "industry"
+},
+{
+"raw": "Bosch",
+"canonical": "Bosch",
+"country": "Germany",
+"sector": "industry"
+},
+{
+"raw": "Alan Turing Institute",
+"canonical": "Alan Turing Institute",
+"country": "UK",
+"sector": "government/nonprofit"
+},
+{
+"raw": "Institute of Software Chinese Academy of Sciences",
+"canonical": "Chinese Academy of Sciences",
+"country": "China",
+"sector": "government/nonprofit"
+},
+{
+"raw": "State University of New York, Stony Brook",
+"canonical": "Stony Brook University",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "Zuse Institute Berlin",
+"canonical": "Zuse Institute Berlin",
+"country": "Germany",
+"sector": "government/nonprofit"
+},
+{
+"raw": "Polytechnic Institute of Turin",
+"canonical": "Politecnico di Torino",
+"country": "Italy",
+"sector": "academia"
+},
+{
+"raw": "Lawrence Berkeley National Lab",
+"canonical": "Lawrence Berkeley National Laboratory",
+"country": "USA",
+"sector": "government/nonprofit"
+},
+{
+"raw": "William & Mary",
+"canonical": "William & Mary",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "UNC-Chapel Hill",
+"canonical": "UNC Chapel Hill",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "University of Padua",
+"canonical": "University of Padua",
+"country": "Italy",
+"sector": "academia"
+},
+{
+"raw": "Albert-Ludwigs-Universit\u00e4t Freiburg",
+"canonical": "University of Freiburg",
+"country": "Germany",
+"sector": "academia"
+},
+{
+"raw": "Inha University",
+"canonical": "Inha University",
+"country": "South Korea",
+"sector": "academia"
+},
+{
+"raw": "FAIR at Meta",
+"canonical": "Meta",
+"country": "USA",
+"sector": "industry"
+},
+{
+"raw": "Horizon Robotics",
+"canonical": "Horizon Robotics",
+"country": "China",
+"sector": "industry"
+},
+{
+"raw": "Ruprecht-Karls-Universit\u00e4t Heidelberg",
+"canonical": "Heidelberg University",
+"country": "Germany",
+"sector": "academia"
+},
+{
+"raw": "Toyota Research Institute",
+"canonical": "Toyota",
+"country": "Japan",
+"sector": "industry"
+},
+{
+"raw": "University of Delaware",
+"canonical": "University of Delaware",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "NUS",
+"canonical": "NUS",
+"country": "Singapore",
+"sector": "academia"
+},
+{
+"raw": "Iowa State University",
+"canonical": "Iowa State University",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "Mila - Quebec AI Institute",
+"canonical": "Mila",
+"country": "Canada",
+"sector": "government/nonprofit"
+},
+{
+"raw": "Vivo",
+"canonical": "vivo",
+"country": "China",
+"sector": "industry"
+},
+{
+"raw": "UWaterloo/Perplexity",
+"canonical": "University of Waterloo",
+"country": "Canada",
+"sector": "academia"
+},
+{
+"raw": "The Australian National University",
+"canonical": "Australian National University",
+"country": "Australia",
+"sector": "academia"
+},
+{
+"raw": "Wuhan University of Technology",
+"canonical": "Wuhan University of Technology",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "Lenovo Group Limited",
+"canonical": "Lenovo",
+"country": "China",
+"sector": "industry"
+},
+{
+"raw": "Jagiellonian University in Krakow",
+"canonical": "Jagiellonian University",
+"country": "Poland",
+"sector": "academia"
+},
+{
+"raw": "University of Vienna",
+"canonical": "University of Vienna",
+"country": "Austria",
+"sector": "academia"
+},
+{
+"raw": "ETS Montreal",
+"canonical": "ETS Montreal",
+"country": "Canada",
+"sector": "academia"
+},
+{
+"raw": "University of Iowa",
+"canonical": "University of Iowa",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "East China University of Science and Technology",
+"canonical": "East China University of Science and Technology",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "Heriot-Watt University",
+"canonical": "Heriot-Watt University",
+"country": "UK",
+"sector": "academia"
+},
+{
+"raw": "UC Davis",
+"canonical": "UC Davis",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "Max-Planck Institute",
+"canonical": "Max Planck Society",
+"country": "Germany",
+"sector": "government/nonprofit"
+},
+{
+"raw": "Concordia University",
+"canonical": "Concordia University",
+"country": "Canada",
+"sector": "academia"
+},
+{
+"raw": "Tel Aviv University / Google",
+"canonical": "Tel Aviv University",
+"country": "Israel",
+"sector": "academia"
+},
+{
+"raw": "Georg-August Universit\u00e4t G\u00f6ttingen",
+"canonical": "University of G\u00f6ttingen",
+"country": "Germany",
+"sector": "academia"
+},
+{
+"raw": "University of Roma \"La Sapienza\"",
+"canonical": "Sapienza University of Rome",
+"country": "Italy",
+"sector": "academia"
+},
+{
+"raw": "Tiktok",
+"canonical": "ByteDance",
+"country": "China",
+"sector": "industry"
+},
+{
+"raw": "Ecole Normale Sup\u00e9rieure de Paris",
+"canonical": "ENS Paris",
+"country": "France",
+"sector": "academia"
+},
+{
+"raw": "IIIS, Tsinghua University",
+"canonical": "Tsinghua University",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "UC Berkeley & Amazon",
+"canonical": "UC Berkeley",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "EECS, UC Berkeley",
+"canonical": "UC Berkeley",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "Sogang University",
+"canonical": "Sogang University",
+"country": "South Korea",
+"sector": "academia"
+},
+{
+"raw": "UCSB",
+"canonical": "UC Santa Barbara",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "Computer Science and Engineering Department, University of California, San Diego",
+"canonical": "UC San Diego",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "Cohere",
+"canonical": "Cohere",
+"country": "Canada",
+"sector": "industry"
+},
+{
+"raw": "Ghent University",
+"canonical": "Ghent University",
+"country": "Belgium",
+"sector": "academia"
+},
+{
+"raw": "Sony AI",
+"canonical": "Sony",
+"country": "Japan",
+"sector": "industry"
+},
+{
+"raw": "UK AI Security Institute",
+"canonical": "UK AI Security Institute",
+"country": "UK",
+"sector": "government/nonprofit"
+},
+{
+"raw": "Tsinghua Shenzhen International Graduate School",
+"canonical": "Tsinghua University",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "Applied AI Institute",
+"canonical": "Applied AI Institute",
+"country": "unknown",
+"sector": "unknown"
+},
+{
+"raw": "Shenzhen MSU-BIT University",
+"canonical": "Shenzhen MSU-BIT University",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "Brown University Meta FAIR",
+"canonical": "Brown University",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "CMU/MBZUAI/GenBio",
+"canonical": "Carnegie Mellon University",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "BIGAI",
+"canonical": "BIGAI",
+"country": "China",
+"sector": "government/nonprofit"
+},
+{
+"raw": "Xi\u2019an Jiaotong University",
+"canonical": "Xi'an Jiaotong University",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "Technical University of Munich / Pruna AI",
+"canonical": "Technical University of Munich",
+"country": "Germany",
+"sector": "academia"
+},
+{
+"raw": "Cold Spring Harbor Laboratory",
+"canonical": "Cold Spring Harbor Laboratory",
+"country": "USA",
+"sector": "government/nonprofit"
+},
+{
+"raw": "Tufts University",
+"canonical": "Tufts University",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "Academy of Mathematics and Systems Science, Chinese Academy of Sciences, Chinese Academy of Sciences",
+"canonical": "Chinese Academy of Sciences",
+"country": "China",
+"sector": "government/nonprofit"
+},
+{
+"raw": "Yunnan University",
+"canonical": "Yunnan University",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "The University of Chicago",
+"canonical": "University of Chicago",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "U. Rochester",
+"canonical": "University of Rochester",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "University of Sheffield",
+"canonical": "University of Sheffield",
+"country": "UK",
+"sector": "academia"
+},
+{
+"raw": "Washington State University",
+"canonical": "Washington State University",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "IST Austria",
+"canonical": "ISTA",
+"country": "Austria",
+"sector": "academia"
+},
+{
+"raw": "University of Technology Sydney (UTS)",
+"canonical": "University of Technology Sydney",
+"country": "Australia",
+"sector": "academia"
+},
+{
+"raw": "Applied Research Center, Tencent PCG",
+"canonical": "Tencent",
+"country": "China",
+"sector": "industry"
+},
+{
+"raw": "University of Bonn",
+"canonical": "University of Bonn",
+"country": "Germany",
+"sector": "academia"
+},
+{
+"raw": "Uppsala University",
+"canonical": "Uppsala University",
+"country": "Sweden",
+"sector": "academia"
+},
+{
+"raw": "Macau University of Science and Technology",
+"canonical": "Macau University of Science and Technology",
+"country": "Macau",
+"sector": "academia"
+},
+{
+"raw": "Ecole Nationale des Ponts et Chausees",
+"canonical": "\u00c9cole des Ponts ParisTech",
+"country": "France",
+"sector": "academia"
+},
+{
+"raw": "zhejiang university",
+"canonical": "Zhejiang University",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "INRIA - Ecole Normale Superieure",
+"canonical": "Inria",
+"country": "France",
+"sector": "government/nonprofit"
+},
+{
+"raw": "McGill University / Mila",
+"canonical": "McGill University",
+"country": "Canada",
+"sector": "academia"
+},
+{
+"raw": "CISPA",
+"canonical": "CISPA",
+"country": "Germany",
+"sector": "government/nonprofit"
+},
+{
+"raw": "CASIA",
+"canonical": "Chinese Academy of Sciences",
+"country": "China",
+"sector": "government/nonprofit"
+},
+{
+"raw": "Institut Polytechnique de Paris",
+"canonical": "Institut Polytechnique de Paris",
+"country": "France",
+"sector": "academia"
+},
+{
+"raw": "Korea Advanced Institute of Science & Technology (KAIST)",
+"canonical": "KAIST",
+"country": "South Korea",
+"sector": "academia"
+},
+{
+"raw": "Canva",
+"canonical": "Canva",
+"country": "Australia",
+"sector": "industry"
+},
+{
+"raw": "Universit\u00e9 de Montr\u00e9al; Mila",
+"canonical": "Universit\u00e9 de Montr\u00e9al",
+"country": "Canada",
+"sector": "academia"
+},
+{
+"raw": "UIUC/Virtue AI",
+"canonical": "UIUC",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "University of International Business and Economics",
+"canonical": "University of International Business and Economics",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "Google Deepmind / UCL",
+"canonical": "Google",
+"country": "USA",
+"sector": "industry"
+},
+{
+"raw": "Texas A&M",
+"canonical": "Texas A&M University",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "Humboldt Universit\u00e4t Berlin",
+"canonical": "Humboldt University of Berlin",
+"country": "Germany",
+"sector": "academia"
+},
+{
+"raw": "Southwest University",
+"canonical": "Southwest University",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "UMass Amherst",
+"canonical": "UMass Amherst",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "Daegu Gyeongbuk Institute of Science and Technology",
+"canonical": "DGIST",
+"country": "South Korea",
+"sector": "academia"
+},
+{
+"raw": "University of Colorado at Boulder",
+"canonical": "University of Colorado Boulder",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "The University of North Carolina at Chapel Hill",
+"canonical": "UNC Chapel Hill",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "LG Corporation",
+"canonical": "LG",
+"country": "South Korea",
+"sector": "industry"
+},
+{
+"raw": "University of Haifa",
+"canonical": "University of Haifa",
+"country": "Israel",
+"sector": "academia"
+},
+{
+"raw": "SungKyunKwan University",
+"canonical": "Sungkyunkwan University",
+"country": "South Korea",
+"sector": "academia"
+},
+{
+"raw": "Johannes Kepler Universit\u00e4t Linz",
+"canonical": "Johannes Kepler University Linz",
+"country": "Austria",
+"sector": "academia"
+},
+{
+"raw": "Nanyang Technological University (NTU)",
+"canonical": "NTU Singapore",
+"country": "Singapore",
+"sector": "academia"
+},
+{
+"raw": "Naver AI Lab",
+"canonical": "NAVER",
+"country": "South Korea",
+"sector": "industry"
+},
+{
+"raw": "Qilu University of Technology",
+"canonical": "Qilu University of Technology",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "Technion and Google Research",
+"canonical": "Technion",
+"country": "Israel",
+"sector": "academia"
+},
+{
+"raw": "Cisco",
+"canonical": "Cisco",
+"country": "USA",
+"sector": "industry"
+},
+{
+"raw": "University of Bologna",
+"canonical": "University of Bologna",
+"country": "Italy",
+"sector": "academia"
+},
+{
+"raw": "Drexel University",
+"canonical": "Drexel University",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "Karlsruhe Institute of Technology (KIT)",
+"canonical": "Karlsruhe Institute of Technology",
+"country": "Germany",
+"sector": "academia"
+},
+{
+"raw": "Sea AI Lab",
+"canonical": "Sea AI Lab",
+"country": "Singapore",
+"sector": "industry"
+},
+{
+"raw": "StepFun",
+"canonical": "StepFun",
+"country": "China",
+"sector": "industry"
+},
+{
+"raw": "Inner Mongolia University",
+"canonical": "Inner Mongolia University",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "Joy Future Academy at JD.Com",
+"canonical": "JD.com",
+"country": "China",
+"sector": "industry"
+},
+{
+"raw": "University of California, San Francisco",
+"canonical": "UC San Francisco",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "Netflix",
+"canonical": "Netflix",
+"country": "USA",
+"sector": "industry"
+},
+{
+"raw": "Shenzhen Research Institute of Big Data",
+"canonical": "Shenzhen Research Institute of Big Data",
+"country": "China",
+"sector": "government/nonprofit"
+},
+{
+"raw": "LSE",
+"canonical": "London School of Economics",
+"country": "UK",
+"sector": "academia"
+},
+{
+"raw": "IIT Delhi",
+"canonical": "IIT Delhi",
+"country": "India",
+"sector": "academia"
+},
+{
+"raw": "Google DeepMind / U. de Montreal / Mila",
+"canonical": "Google",
+"country": "USA",
+"sector": "industry"
+},
+{
+"raw": "UC Santa Cruz",
+"canonical": "UC Santa Cruz",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "Hugging Face",
+"canonical": "Hugging Face",
+"country": "USA",
+"sector": "industry"
+},
+{
+"raw": "Sejong University",
+"canonical": "Sejong University",
+"country": "South Korea",
+"sector": "academia"
+},
+{
+"raw": "Heidelberg University",
+"canonical": "Heidelberg University",
+"country": "Germany",
+"sector": "academia"
+},
+{
+"raw": "ELLIS Institute Finland",
+"canonical": "ELLIS Institute Finland",
+"country": "Finland",
+"sector": "government/nonprofit"
+},
+{
+"raw": "Sorbonne Universit\u00e9",
+"canonical": "Sorbonne University",
+"country": "France",
+"sector": "academia"
+},
+{
+"raw": "KRAFTON",
+"canonical": "KRAFTON",
+"country": "South Korea",
+"sector": "industry"
+},
+{
+"raw": "Utrecht University",
+"canonical": "Utrecht University",
+"country": "Netherlands",
+"sector": "academia"
+},
+{
+"raw": "Department of Electronic Engineering, Tsinghua University",
+"canonical": "Tsinghua University",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "Florida International University",
+"canonical": "Florida International University",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "College of Computer Science, Sichuan University",
+"canonical": "Sichuan University",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "Illinois Institute of Technology",
+"canonical": "Illinois Institute of Technology",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "Institute of Software, CAS",
+"canonical": "Chinese Academy of Sciences",
+"country": "China",
+"sector": "government/nonprofit"
+},
+{
+"raw": "Guangdong Laboratory of Artificial Intelligence and Digital Economy (SZ)",
+"canonical": "Guangming Laboratory",
+"country": "China",
+"sector": "government/nonprofit"
+},
+{
+"raw": "The University of Adelaide",
+"canonical": "University of Adelaide",
+"country": "Australia",
+"sector": "academia"
+},
+{
+"raw": "Keio University",
+"canonical": "Keio University",
+"country": "Japan",
+"sector": "academia"
+},
+{
+"raw": "SalesForce.com",
+"canonical": "Salesforce",
+"country": "USA",
+"sector": "industry"
+},
+{
+"raw": "Cardiff University",
+"canonical": "Cardiff University",
+"country": "UK",
+"sector": "academia"
+},
+{
+"raw": "Yandex",
+"canonical": "Yandex",
+"country": "Russia",
+"sector": "industry"
+},
+{
+"raw": "Penn State",
+"canonical": "Penn State University",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "University of Technology Nuremberg",
+"canonical": "University of Technology Nuremberg",
+"country": "Germany",
+"sector": "academia"
+},
+{
+"raw": "University of Wollongong",
+"canonical": "University of Wollongong",
+"country": "Australia",
+"sector": "academia"
+},
+{
+"raw": "Southwest University of Finance and Economics",
+"canonical": "Southwestern University of Finance and Economics",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "Radboud University",
+"canonical": "Radboud University",
+"country": "Netherlands",
+"sector": "academia"
+},
+{
+"raw": "School of Software, Tsinghua University",
+"canonical": "Tsinghua University",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "Universit\u00e4t des Saarlandes",
+"canonical": "Saarland University",
+"country": "Germany",
+"sector": "academia"
+},
+{
+"raw": "Gwangju Institute of Science and Technology",
+"canonical": "GIST",
+"country": "South Korea",
+"sector": "academia"
+},
+{
+"raw": "Central China Normal University",
+"canonical": "Central China Normal University",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "Ant Research",
+"canonical": "Ant Group",
+"country": "China",
+"sector": "industry"
+},
+{
+"raw": "HKUST-GZ",
+"canonical": "HKUST (Guangzhou)",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "Snap Inc",
+"canonical": "Snap",
+"country": "USA",
+"sector": "industry"
+},
+{
+"raw": "University of Sussex",
+"canonical": "University of Sussex",
+"country": "UK",
+"sector": "academia"
+},
+{
+"raw": "Electronics and Telecommunications Research Institute",
+"canonical": "ETRI",
+"country": "South Korea",
+"sector": "government/nonprofit"
+},
+{
+"raw": "The Hong Kong Univeristy of Science and Technology",
+"canonical": "HKUST",
+"country": "Hong Kong",
+"sector": "academia"
+},
+{
+"raw": "Universit\u00e9 Paris Cit\u00e9",
+"canonical": "Universit\u00e9 Paris Cit\u00e9",
+"country": "France",
+"sector": "academia"
+},
+{
+"raw": "Dalhousie University",
+"canonical": "Dalhousie University",
+"country": "Canada",
+"sector": "academia"
+},
+{
+"raw": "AWS AI",
+"canonical": "Amazon",
+"country": "USA",
+"sector": "industry"
+},
+{
+"raw": "SIGS, Tsinghua University",
+"canonical": "Tsinghua University",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "The Institute of Statistical Mathematics",
+"canonical": "Institute of Statistical Mathematics",
+"country": "Japan",
+"sector": "government/nonprofit"
+},
+{
+"raw": "Sony Group Corporation",
+"canonical": "Sony",
+"country": "Japan",
+"sector": "industry"
+},
+{
+"raw": "Saarland Informatics Campus, Max-Planck Institute",
+"canonical": "Max Planck Society",
+"country": "Germany",
+"sector": "government/nonprofit"
+},
+{
+"raw": "University of Luxembourg",
+"canonical": "University of Luxembourg",
+"country": "Luxembourg",
+"sector": "academia"
+},
+{
+"raw": "HSE University",
+"canonical": "HSE University",
+"country": "Russia",
+"sector": "academia"
+},
+{
+"raw": "Indraprastha Institute of Information Technology, Delhi",
+"canonical": "IIIT Delhi",
+"country": "India",
+"sector": "academia"
+},
+{
+"raw": "Worcester Polytechnic Institute",
+"canonical": "Worcester Polytechnic Institute",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "University of Illinois at Urbana Champaign",
+"canonical": "UIUC",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "Hainan University",
+"canonical": "Hainan University",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "Institute of Science and Technology",
+"canonical": "Institute of Science and Technology",
+"country": "unknown",
+"sector": "unknown"
+},
+{
+"raw": "University of Ottawa",
+"canonical": "University of Ottawa",
+"country": "Canada",
+"sector": "academia"
+},
+{
+"raw": "University of Milan",
+"canonical": "University of Milan",
+"country": "Italy",
+"sector": "academia"
+},
+{
+"raw": "Technical University of Munich (TUM)",
+"canonical": "Technical University of Munich",
+"country": "Germany",
+"sector": "academia"
+},
+{
+"raw": "TU Wien",
+"canonical": "TU Wien",
+"country": "Austria",
+"sector": "academia"
+},
+{
+"raw": "INSAIT Sofia & ETH Zurich",
+"canonical": "INSAIT",
+"country": "Bulgaria",
+"sector": "academia"
+},
+{
+"raw": "INSAIT",
+"canonical": "INSAIT",
+"country": "Bulgaria",
+"sector": "academia"
+},
+{
+"raw": "Oxford University",
+"canonical": "University of Oxford",
+"country": "UK",
+"sector": "academia"
+},
+{
+"raw": "None",
+"canonical": "unknown",
+"country": "unknown",
+"sector": "unknown"
+},
+{
+"raw": "Carleton University",
+"canonical": "Carleton University",
+"country": "Canada",
+"sector": "academia"
+},
+{
+"raw": "Boston College",
+"canonical": "Boston College",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "Allen Institute",
+"canonical": "Allen Institute for AI",
+"country": "USA",
+"sector": "government/nonprofit"
+},
+{
+"raw": "Ewha Womans University",
+"canonical": "Ewha Womans University",
+"country": "South Korea",
+"sector": "academia"
+},
+{
+"raw": "Netflix & Cornell University",
+"canonical": "Netflix",
+"country": "USA",
+"sector": "industry"
+},
+{
+"raw": "China University of Petroleum (East China)",
+"canonical": "China University of Petroleum",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "Ant International",
+"canonical": "Ant Group",
+"country": "China",
+"sector": "industry"
+},
+{
+"raw": "Stepfun",
+"canonical": "StepFun",
+"country": "China",
+"sector": "industry"
+},
+{
+"raw": "Youtu Lab, Tencent",
+"canonical": "Tencent",
+"country": "China",
+"sector": "industry"
+},
+{
+"raw": "Western Sydney University",
+"canonical": "Western Sydney University",
+"country": "Australia",
+"sector": "academia"
+},
+{
+"raw": "Queen's University",
+"canonical": "Queen's University",
+"country": "Canada",
+"sector": "academia"
+},
+{
+"raw": "Indian Institute of Technology, Hyderabad",
+"canonical": "IIT Hyderabad",
+"country": "India",
+"sector": "academia"
+},
+{
+"raw": "University of South Florida",
+"canonical": "University of South Florida",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "RMIT University",
+"canonical": "RMIT University",
+"country": "Australia",
+"sector": "academia"
+},
+{
+"raw": "UBC",
+"canonical": "University of British Columbia",
+"country": "Canada",
+"sector": "academia"
+},
+{
+"raw": "College of William and Mary",
+"canonical": "William & Mary",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "University of Texas Southwestern Medical Center",
+"canonical": "UT Southwestern Medical Center",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "Roblox",
+"canonical": "Roblox",
+"country": "USA",
+"sector": "industry"
+},
+{
+"raw": "Shanghai Academy of Artificial Intelligence for Science",
+"canonical": "Shanghai Academy of AI for Science",
+"country": "China",
+"sector": "government/nonprofit"
+},
+{
+"raw": "Institute of Automation, Chinese Academy of Science",
+"canonical": "Chinese Academy of Sciences",
+"country": "China",
+"sector": "government/nonprofit"
+},
+{
+"raw": "Georgia State University",
+"canonical": "Georgia State University",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "peking university",
+"canonical": "Peking University",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "Capital Normal University",
+"canonical": "Capital Normal University",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "University of Pennsylvania and Amazon",
+"canonical": "University of Pennsylvania",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "Duke",
+"canonical": "Duke University",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "University of Texas Health Science Center at Houston",
+"canonical": "UTHealth Houston",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "Radboud University Nijmegen",
+"canonical": "Radboud University",
+"country": "Netherlands",
+"sector": "academia"
+},
+{
+"raw": "Microsoft Research New England",
+"canonical": "Microsoft",
+"country": "USA",
+"sector": "industry"
+},
+{
+"raw": "UC Santa Barbara",
+"canonical": "UC Santa Barbara",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "Fraunhofer HHI",
+"canonical": "Fraunhofer",
+"country": "Germany",
+"sector": "government/nonprofit"
+},
+{
+"raw": "UESTC",
+"canonical": "UESTC",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "Sakana AI",
+"canonical": "Sakana AI",
+"country": "Japan",
+"sector": "industry"
+},
+{
+"raw": "OPPO Research Institute",
+"canonical": "OPPO",
+"country": "China",
+"sector": "industry"
+},
+{
+"raw": "Centrale Sup\u00e9lec",
+"canonical": "CentraleSup\u00e9lec",
+"country": "France",
+"sector": "academia"
+},
+{
+"raw": "Sorbonne University",
+"canonical": "Sorbonne University",
+"country": "France",
+"sector": "academia"
+},
+{
+"raw": "China University of Mining Technology - Xuzhou",
+"canonical": "China University of Mining and Technology",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "University of Modena and Reggio Emilia",
+"canonical": "University of Modena and Reggio Emilia",
+"country": "Italy",
+"sector": "academia"
+},
+{
+"raw": "Seoul National University of Science and Technology",
+"canonical": "Seoul National University of Science and Technology",
+"country": "South Korea",
+"sector": "academia"
+},
+{
+"raw": "CSE, HKUST",
+"canonical": "HKUST",
+"country": "Hong Kong",
+"sector": "academia"
+},
+{
+"raw": "Lanzhou University",
+"canonical": "Lanzhou University",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "Lenovo Research",
+"canonical": "Lenovo",
+"country": "China",
+"sector": "industry"
+},
+{
+"raw": "DFKI & Max Planck Research School for Intelligent Systems",
+"canonical": "DFKI",
+"country": "Germany",
+"sector": "government/nonprofit"
+},
+{
+"raw": "Skoltech",
+"canonical": "Skoltech",
+"country": "Russia",
+"sector": "academia"
+},
+{
+"raw": "Weill Cornell Medicine, Cornell University",
+"canonical": "Cornell University",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "GIST",
+"canonical": "GIST",
+"country": "South Korea",
+"sector": "academia"
+},
+{
+"raw": "Huawei Technologies",
+"canonical": "Huawei",
+"country": "China",
+"sector": "industry"
+},
+{
+"raw": "AntGroup",
+"canonical": "Ant Group",
+"country": "China",
+"sector": "industry"
+},
+{
+"raw": "BAAI",
+"canonical": "BAAI",
+"country": "China",
+"sector": "government/nonprofit"
+},
+{
+"raw": "State University of New York at Binghamton",
+"canonical": "Binghamton University",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "Shanghaitech University",
+"canonical": "ShanghaiTech University",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "Nagoya University",
+"canonical": "Nagoya University",
+"country": "Japan",
+"sector": "academia"
+},
+{
+"raw": "Kyungpook National University",
+"canonical": "Kyungpook National University",
+"country": "South Korea",
+"sector": "academia"
+},
+{
+"raw": "Warsaw University of Technology",
+"canonical": "Warsaw University of Technology",
+"country": "Poland",
+"sector": "academia"
+},
+{
+"raw": "Research, Google",
+"canonical": "Google",
+"country": "USA",
+"sector": "industry"
+},
+{
+"raw": "IBM Research AI",
+"canonical": "IBM",
+"country": "USA",
+"sector": "industry"
+},
+{
+"raw": "Duke Kunshan University",
+"canonical": "Duke Kunshan University",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "Goodfire AI",
+"canonical": "Goodfire",
+"country": "USA",
+"sector": "industry"
+},
+{
+"raw": "JPMorganChase",
+"canonical": "JPMorgan Chase",
+"country": "USA",
+"sector": "industry"
+},
+{
+"raw": "Ningbo University",
+"canonical": "Ningbo University",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "University of Texas at Austin & XTX Markets",
+"canonical": "UT Austin",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "Universit\u00e4t Stuttgart and NEC Labs Europe",
+"canonical": "University of Stuttgart",
+"country": "Germany",
+"sector": "academia"
+},
+{
+"raw": "Universit\u00e4t Stuttgart",
+"canonical": "University of Stuttgart",
+"country": "Germany",
+"sector": "academia"
+},
+{
+"raw": "Nanjing University (NJU)",
+"canonical": "Nanjing University",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "Northeast University at Qinhuangdao Campus",
+"canonical": "Northeastern University (China)",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "ETH Zurich and INSAIT, Sofia University",
+"canonical": "ETH Zurich",
+"country": "Switzerland",
+"sector": "academia"
+},
+{
+"raw": "Samsung Electronics",
+"canonical": "Samsung",
+"country": "South Korea",
+"sector": "industry"
+},
+{
+"raw": "EleutherAI",
+"canonical": "EleutherAI",
+"country": "USA",
+"sector": "government/nonprofit"
+},
+{
+"raw": "Ecole Polytechnique",
+"canonical": "\u00c9cole Polytechnique",
+"country": "France",
+"sector": "academia"
+},
+{
+"raw": "Huawei Technologies Co., Ltd.",
+"canonical": "Huawei",
+"country": "China",
+"sector": "industry"
+},
+{
+"raw": "\u00c9cole de technologie sup\u00e9rieure, Universit\u00e9 du Qu\u00e9bec",
+"canonical": "ETS Montreal",
+"country": "Canada",
+"sector": "academia"
+},
+{
+"raw": "Didi International Business Group",
+"canonical": "DiDi",
+"country": "China",
+"sector": "industry"
+},
+{
+"raw": "University of Tennessee, Knoxville",
+"canonical": "University of Tennessee, Knoxville",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "Universit\u00e4t Bern",
+"canonical": "University of Bern",
+"country": "Switzerland",
+"sector": "academia"
+},
+{
+"raw": "University of Ljubljana",
+"canonical": "University of Ljubljana",
+"country": "Slovenia",
+"sector": "academia"
+},
+{
+"raw": "IST Austria & NeuralMagic",
+"canonical": "ISTA",
+"country": "Austria",
+"sector": "academia"
+},
+{
+"raw": "University of Missouri",
+"canonical": "University of Missouri",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "Google DeepMind & Georgia Tech",
+"canonical": "Google",
+"country": "USA",
+"sector": "industry"
+},
+{
+"raw": "Ho Chi Minh city University of Science, Vietnam National University",
+"canonical": "VNU-HCM University of Science",
+"country": "Vietnam",
+"sector": "academia"
+},
+{
+"raw": "Nanyang Technology University, Singapore",
+"canonical": "NTU Singapore",
+"country": "Singapore",
+"sector": "academia"
+},
+{
+"raw": "ELLIS Unit / University Linz",
+"canonical": "Johannes Kepler University Linz",
+"country": "Austria",
+"sector": "academia"
+},
+{
+"raw": "IBM Research - China",
+"canonical": "IBM",
+"country": "USA",
+"sector": "industry"
+},
+{
+"raw": "Thinking Machines Lab",
+"canonical": "Thinking Machines Lab",
+"country": "USA",
+"sector": "industry"
+},
+{
+"raw": "University of Mannheim",
+"canonical": "University of Mannheim",
+"country": "Germany",
+"sector": "academia"
+},
+{
+"raw": "Chongqing University of Post and Telecommunications",
+"canonical": "Chongqing University of Posts and Telecommunications",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "Dalian Martime University",
+"canonical": "Dalian Maritime University",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "Genentech / NYU",
+"canonical": "Genentech",
+"country": "USA",
+"sector": "industry"
+},
+{
+"raw": "Microsoft CoreAI",
+"canonical": "Microsoft",
+"country": "USA",
+"sector": "industry"
+},
+{
+"raw": "Google Deepmind / Harvard",
+"canonical": "Google",
+"country": "USA",
+"sector": "industry"
+},
+{
+"raw": "Department of Automation, Tsinghua University",
+"canonical": "Tsinghua University",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "Intelligent Science & Technology Academy of CASIC",
+"canonical": "CASIC",
+"country": "China",
+"sector": "industry"
+},
+{
+"raw": "CEA",
+"canonical": "CEA",
+"country": "France",
+"sector": "government/nonprofit"
+},
+{
+"raw": "Pusan National University",
+"canonical": "Pusan National University",
+"country": "South Korea",
+"sector": "academia"
+},
+{
+"raw": "Samsung Research America",
+"canonical": "Samsung",
+"country": "South Korea",
+"sector": "industry"
+},
+{
+"raw": "Meta and University of Oxford",
+"canonical": "Meta",
+"country": "USA",
+"sector": "industry"
+},
+{
+"raw": "Cisco Research",
+"canonical": "Cisco",
+"country": "USA",
+"sector": "industry"
+},
+{
+"raw": "Caritas Institute of Higher Education",
+"canonical": "Caritas Institute of Higher Education",
+"country": "Hong Kong",
+"sector": "academia"
+},
+{
+"raw": "Datadog",
+"canonical": "Datadog",
+"country": "USA",
+"sector": "industry"
+},
+{
+"raw": "Temple University",
+"canonical": "Temple University",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "Technology Innovation Institute",
+"canonical": "Technology Innovation Institute",
+"country": "UAE",
+"sector": "government/nonprofit"
+},
+{
+"raw": "Universit\u00e4t St. Gallen",
+"canonical": "University of St. Gallen",
+"country": "Switzerland",
+"sector": "academia"
+},
+{
+"raw": "Politecnico di Torino",
+"canonical": "Politecnico di Torino",
+"country": "Italy",
+"sector": "academia"
+},
+{
+"raw": "KAIST / Meta",
+"canonical": "KAIST",
+"country": "South Korea",
+"sector": "academia"
+},
+{
+"raw": "University of Arkansas",
+"canonical": "University of Arkansas",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "CMU / Amazon",
+"canonical": "Carnegie Mellon University",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "Syracuse University",
+"canonical": "Syracuse University",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "Suzhou University",
+"canonical": "Soochow University",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "Qiyuan Lab",
+"canonical": "Qiyuan Lab",
+"country": "China",
+"sector": "government/nonprofit"
+},
+{
+"raw": "Redwood Research",
+"canonical": "Redwood Research",
+"country": "USA",
+"sector": "government/nonprofit"
+},
+{
+"raw": "Meta / FAIR",
+"canonical": "Meta",
+"country": "USA",
+"sector": "industry"
+},
+{
+"raw": "MIT-IBM Watson AI Lab",
+"canonical": "MIT-IBM Watson AI Lab",
+"country": "USA",
+"sector": "industry"
+},
+{
+"raw": "The University of British Columbia",
+"canonical": "University of British Columbia",
+"country": "Canada",
+"sector": "academia"
+},
+{
+"raw": "Wan, Alibaba Group",
+"canonical": "Alibaba",
+"country": "China",
+"sector": "industry"
+},
+{
+"raw": "Rheinische Friedrich-Wilhelms Universit\u00e4t Bonn",
+"canonical": "University of Bonn",
+"country": "Germany",
+"sector": "academia"
+},
+{
+"raw": "\u00c9cole Normale Sup\u00e9rieure",
+"canonical": "\u00c9cole Normale Sup\u00e9rieure",
+"country": "France",
+"sector": "academia"
+},
+{
+"raw": "University of Wisconsin Madison",
+"canonical": "University of Wisconsin-Madison",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "GaTech",
+"canonical": "Georgia Tech",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "Accenture",
+"canonical": "Accenture",
+"country": "Ireland",
+"sector": "industry"
+},
+{
+"raw": "NAVER",
+"canonical": "NAVER",
+"country": "South Korea",
+"sector": "industry"
+},
+{
+"raw": "Central University of Finance and Economics",
+"canonical": "Central University of Finance and Economics",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "Pluralis Research",
+"canonical": "Pluralis Research",
+"country": "Australia",
+"sector": "industry"
+},
+{
+"raw": "IBM Research - Zurich",
+"canonical": "IBM",
+"country": "USA",
+"sector": "industry"
+},
+{
+"raw": "University of Nebraska-Lincoln",
+"canonical": "University of Nebraska-Lincoln",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "Institute for AI Industry Research, Tsinghua University",
+"canonical": "Tsinghua University",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "University of Manitoba",
+"canonical": "University of Manitoba",
+"country": "Canada",
+"sector": "academia"
+},
+{
+"raw": "Institute of Automation\uff0cChinese Academy of Sciences",
+"canonical": "Chinese Academy of Sciences",
+"country": "China",
+"sector": "government/nonprofit"
+},
+{
+"raw": "Computer Vision Center, Universitat Aut\u00f3noma de Barcelona",
+"canonical": "Autonomous University of Barcelona",
+"country": "Spain",
+"sector": "academia"
+},
+{
+"raw": "National Technical University of Athens",
+"canonical": "National Technical University of Athens",
+"country": "Greece",
+"sector": "academia"
+},
+{
+"raw": "Ant Financial Services Group",
+"canonical": "Ant Group",
+"country": "China",
+"sector": "industry"
+},
+{
+"raw": "Georgia Tech & NVIDIA",
+"canonical": "Georgia Tech",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "CentraleSup\u00e9lec",
+"canonical": "CentraleSup\u00e9lec",
+"country": "France",
+"sector": "academia"
+},
+{
+"raw": "Meta Platforms",
+"canonical": "Meta",
+"country": "USA",
+"sector": "industry"
+},
+{
+"raw": "University of Genoa",
+"canonical": "University of Genoa",
+"country": "Italy",
+"sector": "academia"
+},
+{
+"raw": "Huazhong Agricultural University",
+"canonical": "Huazhong Agricultural University",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "SAP",
+"canonical": "SAP",
+"country": "Germany",
+"sector": "industry"
+},
+{
+"raw": "SAP SE",
+"canonical": "SAP",
+"country": "Germany",
+"sector": "industry"
+},
+{
+"raw": "DAMO Academy, Alibaba Group",
+"canonical": "Alibaba",
+"country": "China",
+"sector": "industry"
+},
+{
+"raw": "Xiaomi AI Lab",
+"canonical": "Xiaomi",
+"country": "China",
+"sector": "industry"
+},
+{
+"raw": "vivo",
+"canonical": "vivo",
+"country": "China",
+"sector": "industry"
+},
+{
+"raw": "Idiap Research Institute",
+"canonical": "Idiap Research Institute",
+"country": "Switzerland",
+"sector": "government/nonprofit"
+},
+{
+"raw": "Prior Labs, ELLIS Institute & Uni Freiburg",
+"canonical": "Prior Labs",
+"country": "Germany",
+"sector": "industry"
+},
+{
+"raw": "Hangzhou Normal University",
+"canonical": "Hangzhou Normal University",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "School of Computer Science and  Engineering, Nanyang Technological University",
+"canonical": "NTU Singapore",
+"country": "Singapore",
+"sector": "academia"
+},
+{
+"raw": "T\u00fcbingen AI Center",
+"canonical": "University of T\u00fcbingen",
+"country": "Germany",
+"sector": "academia"
+},
+{
+"raw": "Forschungszentrum J\u00fclich",
+"canonical": "Forschungszentrum J\u00fclich",
+"country": "Germany",
+"sector": "government/nonprofit"
+},
+{
+"raw": "Shandong Technology and Business University",
+"canonical": "Shandong Technology and Business University",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "Insta360",
+"canonical": "Insta360",
+"country": "China",
+"sector": "industry"
+},
+{
+"raw": "University of Toronto and Vector Institute",
+"canonical": "University of Toronto",
+"country": "Canada",
+"sector": "academia"
+},
+{
+"raw": "Mohamed Bin Zayed University of Artificial Intelligence",
+"canonical": "MBZUAI",
+"country": "UAE",
+"sector": "academia"
+},
+{
+"raw": "CISPA Helmholtz",
+"canonical": "CISPA",
+"country": "Germany",
+"sector": "government/nonprofit"
+},
+{
+"raw": "Ant Financial",
+"canonical": "Ant Group",
+"country": "China",
+"sector": "industry"
+},
+{
+"raw": "CAS",
+"canonical": "Chinese Academy of Sciences",
+"country": "China",
+"sector": "government/nonprofit"
+},
+{
+"raw": "Memorial Sloan Kettering Cancer Center",
+"canonical": "Memorial Sloan Kettering Cancer Center",
+"country": "USA",
+"sector": "government/nonprofit"
+},
+{
+"raw": "LiAuto",
+"canonical": "Li Auto",
+"country": "China",
+"sector": "industry"
+},
+{
+"raw": "Bytedance Inc.",
+"canonical": "ByteDance",
+"country": "China",
+"sector": "industry"
+},
+{
+"raw": "Harvard University & Amazon",
+"canonical": "Harvard University",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "AWS AI Labs",
+"canonical": "Amazon",
+"country": "USA",
+"sector": "industry"
+},
+{
+"raw": "University of Science and Technology of China (USTC)",
+"canonical": "USTC",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "MILA",
+"canonical": "Mila",
+"country": "Canada",
+"sector": "government/nonprofit"
+},
+{
+"raw": "Mohamed bin Zayed University of Artificial Intelligence (MBZUAI)",
+"canonical": "MBZUAI",
+"country": "UAE",
+"sector": "academia"
+},
+{
+"raw": "Tel Aviv University & Google",
+"canonical": "Tel Aviv University",
+"country": "Israel",
+"sector": "academia"
+},
+{
+"raw": "Salesforce",
+"canonical": "Salesforce",
+"country": "USA",
+"sector": "industry"
+},
+{
+"raw": "UPenn / Apple",
+"canonical": "University of Pennsylvania",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "University of Oklahoma",
+"canonical": "University of Oklahoma",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "stepfun",
+"canonical": "StepFun",
+"country": "China",
+"sector": "industry"
+},
+{
+"raw": "Dept. of Computer Sci. & Eng., Shanghai Jiao Tong University",
+"canonical": "Shanghai Jiao Tong University",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "Ecole Nationale de la Statistique et de l'Administration Economique",
+"canonical": "ENSAE Paris",
+"country": "France",
+"sector": "academia"
+},
+{
+"raw": "Technion---Israel Institute of Technology",
+"canonical": "Technion",
+"country": "Israel",
+"sector": "academia"
+},
+{
+"raw": "MBZUAI&CMU",
+"canonical": "MBZUAI",
+"country": "UAE",
+"sector": "academia"
+},
+{
+"raw": "Bosch Center for Artificial Intelligence",
+"canonical": "Bosch",
+"country": "Germany",
+"sector": "industry"
+},
+{
+"raw": "University of Western Australia",
+"canonical": "University of Western Australia",
+"country": "Australia",
+"sector": "academia"
+},
+{
+"raw": "Icahn School of Medicine at Mount Sinai",
+"canonical": "Icahn School of Medicine at Mount Sinai",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "AGH University of Science and Technology",
+"canonical": "AGH University of Science and Technology",
+"country": "Poland",
+"sector": "academia"
+},
+{
+"raw": "AIDOS Lab, Department of Computer Science, University of Fribourg, Switzerland",
+"canonical": "University of Fribourg",
+"country": "Switzerland",
+"sector": "academia"
+},
+{
+"raw": "Technical University of Darmstadt",
+"canonical": "TU Darmstadt",
+"country": "Germany",
+"sector": "academia"
+},
+{
+"raw": "HCP - Sun Yat-sen University",
+"canonical": "Sun Yat-sen University",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "University of Groningen",
+"canonical": "University of Groningen",
+"country": "Netherlands",
+"sector": "academia"
+},
+{
+"raw": "2077AI",
+"canonical": "2077AI",
+"country": "unknown",
+"sector": "government/nonprofit"
+},
+{
+"raw": "Institute of Artificial Intelligence (TeleAI), China Telecom",
+"canonical": "China Telecom",
+"country": "China",
+"sector": "industry"
+},
+{
+"raw": "Brookhaven National Laboratory",
+"canonical": "Brookhaven National Laboratory",
+"country": "USA",
+"sector": "government/nonprofit"
+},
+{
+"raw": "National Institute of Informatics",
+"canonical": "National Institute of Informatics",
+"country": "Japan",
+"sector": "government/nonprofit"
+},
+{
+"raw": "Universiti Malaya",
+"canonical": "Universiti Malaya",
+"country": "Malaysia",
+"sector": "academia"
+},
+{
+"raw": "UCSB & Virtue AI",
+"canonical": "UC Santa Barbara",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "Nokia Bell Labs",
+"canonical": "Nokia",
+"country": "Finland",
+"sector": "industry"
+},
+{
+"raw": "Universit\u00e4t Vienna",
+"canonical": "University of Vienna",
+"country": "Austria",
+"sector": "academia"
+},
+{
+"raw": "NAVER AI Lab",
+"canonical": "NAVER",
+"country": "South Korea",
+"sector": "industry"
+},
+{
+"raw": "Southwestern University of Finance and Economics",
+"canonical": "Southwestern University of Finance and Economics",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "Army Research Laboratory",
+"canonical": "Army Research Laboratory",
+"country": "USA",
+"sector": "government/nonprofit"
+},
+{
+"raw": "MATS Research",
+"canonical": "MATS",
+"country": "USA",
+"sector": "government/nonprofit"
+},
+{
+"raw": "University of Florence",
+"canonical": "University of Florence",
+"country": "Italy",
+"sector": "academia"
+},
+{
+"raw": "Queensland University of Technology",
+"canonical": "Queensland University of Technology",
+"country": "Australia",
+"sector": "academia"
+},
+{
+"raw": "TUM",
+"canonical": "Technical University of Munich",
+"country": "Germany",
+"sector": "academia"
+},
+{
+"raw": "Sungkyunkwan university (SKKU)",
+"canonical": "Sungkyunkwan University",
+"country": "South Korea",
+"sector": "academia"
+},
+{
+"raw": "MICHIGAN STATE UNIVERSITY",
+"canonical": "Michigan State University",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "DGIST",
+"canonical": "DGIST",
+"country": "South Korea",
+"sector": "academia"
+},
+{
+"raw": "NEC Laboratories America",
+"canonical": "NEC",
+"country": "Japan",
+"sector": "industry"
+},
+{
+"raw": "Midea Group",
+"canonical": "Midea Group",
+"country": "China",
+"sector": "industry"
+},
+{
+"raw": "the University of Hong Kong",
+"canonical": "University of Hong Kong",
+"country": "Hong Kong",
+"sector": "academia"
+},
+{
+"raw": "Guangxi Normal University",
+"canonical": "Guangxi Normal University",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "Valeo",
+"canonical": "Valeo",
+"country": "France",
+"sector": "industry"
+},
+{
+"raw": "Key Laboratory of Intelligent Information Processing, Institute of Computing Technology, Chinese Academy of Sciences",
+"canonical": "Chinese Academy of Sciences",
+"country": "China",
+"sector": "government/nonprofit"
+},
+{
+"raw": "KTH",
+"canonical": "KTH Royal Institute of Technology",
+"country": "Sweden",
+"sector": "academia"
+},
+{
+"raw": "UBC / Vector",
+"canonical": "University of British Columbia",
+"country": "Canada",
+"sector": "academia"
+},
+{
+"raw": "Sungkyunkwan University (SKKU)",
+"canonical": "Sungkyunkwan University",
+"country": "South Korea",
+"sector": "academia"
+},
+{
+"raw": "Didi Research",
+"canonical": "DiDi",
+"country": "China",
+"sector": "industry"
+},
+{
+"raw": "TikTok (Singapore)",
+"canonical": "ByteDance",
+"country": "China",
+"sector": "industry"
+},
+{
+"raw": "International Digital Economy Academy",
+"canonical": "International Digital Economy Academy",
+"country": "China",
+"sector": "government/nonprofit"
+},
+{
+"raw": "iscas",
+"canonical": "Chinese Academy of Sciences",
+"country": "China",
+"sector": "government/nonprofit"
+},
+{
+"raw": "ELLIS Institute T\u00fcbingen & University of Freiburg",
+"canonical": "ELLIS Institute T\u00fcbingen",
+"country": "Germany",
+"sector": "government/nonprofit"
+},
+{
+"raw": "xAI / UCSD",
+"canonical": "xAI",
+"country": "USA",
+"sector": "industry"
+},
+{
+"raw": "International Institute of Information Technology, Hyderabad, International Institute of Information Technology Hyderabad",
+"canonical": "IIIT Hyderabad",
+"country": "India",
+"sector": "academia"
+},
+{
+"raw": "University of California Riverside",
+"canonical": "UC Riverside",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "Ume\u00e5 University",
+"canonical": "Ume\u00e5 University",
+"country": "Sweden",
+"sector": "academia"
+},
+{
+"raw": "University of Goettingen",
+"canonical": "University of G\u00f6ttingen",
+"country": "Germany",
+"sector": "academia"
+},
+{
+"raw": "Indraprastha Institute of Information Technology Delhi",
+"canonical": "IIIT Delhi",
+"country": "India",
+"sector": "academia"
+},
+{
+"raw": "\u00c9cole Polytechnique F\u00e9d\u00e9rale de Lausanne",
+"canonical": "EPFL",
+"country": "Switzerland",
+"sector": "academia"
+},
+{
+"raw": "Universitys of Waterloo",
+"canonical": "University of Waterloo",
+"country": "Canada",
+"sector": "academia"
+},
+{
+"raw": "Hebei University of Technology",
+"canonical": "Hebei University of Technology",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "Shenzhen Loop Area Institute",
+"canonical": "Shenzhen Loop Area Institute",
+"country": "China",
+"sector": "government/nonprofit"
+},
+{
+"raw": "National Tsing Hua University",
+"canonical": "National Tsing Hua University",
+"country": "Taiwan",
+"sector": "academia"
+},
+{
+"raw": "McGill University / Mila / DeepMind Montreal",
+"canonical": "McGill University",
+"country": "Canada",
+"sector": "academia"
+},
+{
+"raw": "Texas Tech University",
+"canonical": "Texas Tech University",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "Konkuk University",
+"canonical": "Konkuk University",
+"country": "South Korea",
+"sector": "academia"
+},
+{
+"raw": "Stockholm University",
+"canonical": "Stockholm University",
+"country": "Sweden",
+"sector": "academia"
+},
+{
+"raw": "University of Troms\u00f8",
+"canonical": "UiT The Arctic University of Norway",
+"country": "Norway",
+"sector": "academia"
+},
+{
+"raw": "Lawrence Berkeley National Laboratory",
+"canonical": "Lawrence Berkeley National Laboratory",
+"country": "USA",
+"sector": "government/nonprofit"
+},
+{
+"raw": "West Virginia University",
+"canonical": "West Virginia University",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "JHU/NVIDIA",
+"canonical": "Johns Hopkins University",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "UC Riverside",
+"canonical": "UC Riverside",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "UC Santa Cruz/ByteDance Research",
+"canonical": "UC Santa Cruz",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "Universit\u00e4t Freiburg",
+"canonical": "University of Freiburg",
+"country": "Germany",
+"sector": "academia"
+},
+{
+"raw": "Friedrich-Alexander-Universit\u00e4t Erlangen-N\u00fcrnberg",
+"canonical": "FAU Erlangen-N\u00fcrnberg",
+"country": "Germany",
+"sector": "academia"
+},
+{
+"raw": "Graz University of Technology",
+"canonical": "Graz University of Technology",
+"country": "Austria",
+"sector": "academia"
+},
+{
+"raw": "FAIR @ Meta",
+"canonical": "Meta",
+"country": "USA",
+"sector": "industry"
+},
+{
+"raw": "Mila/McGill",
+"canonical": "McGill University",
+"country": "Canada",
+"sector": "academia"
+},
+{
+"raw": "Tencent AI for Life Sciences Lab",
+"canonical": "Tencent",
+"country": "China",
+"sector": "industry"
+},
+{
+"raw": "Mistral AI",
+"canonical": "Mistral AI",
+"country": "France",
+"sector": "industry"
+},
+{
+"raw": "University of California Los Angeles",
+"canonical": "UCLA",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "Sandia National Laboratories",
+"canonical": "Sandia National Laboratories",
+"country": "USA",
+"sector": "government/nonprofit"
+},
+{
+"raw": "RWTH Aachen",
+"canonical": "RWTH Aachen University",
+"country": "Germany",
+"sector": "academia"
+},
+{
+"raw": "Northwest Polytechnical University",
+"canonical": "Northwestern Polytechnical University",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "Prescient Design, Genentech",
+"canonical": "Genentech",
+"country": "USA",
+"sector": "industry"
+},
+{
+"raw": "Fraunhofer Heinrich Hertz Institute",
+"canonical": "Fraunhofer",
+"country": "Germany",
+"sector": "government/nonprofit"
+},
+{
+"raw": "UCSD / NeoCognition",
+"canonical": "UC San Diego",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "Department of Informatics, University of Zurich, University of Zurich",
+"canonical": "University of Zurich",
+"country": "Switzerland",
+"sector": "academia"
+},
+{
+"raw": "Telecom SudParis",
+"canonical": "T\u00e9l\u00e9com SudParis",
+"country": "France",
+"sector": "academia"
+},
+{
+"raw": "pluralis",
+"canonical": "Pluralis Research",
+"country": "Australia",
+"sector": "industry"
+},
+{
+"raw": "Ai2 / TTIC",
+"canonical": "Allen Institute for AI",
+"country": "USA",
+"sector": "government/nonprofit"
+},
+{
+"raw": "Meta Inc.",
+"canonical": "Meta",
+"country": "USA",
+"sector": "industry"
+},
+{
+"raw": "University of Athens",
+"canonical": "University of Athens",
+"country": "Greece",
+"sector": "academia"
+},
+{
+"raw": "CISPA & SprintML",
+"canonical": "CISPA",
+"country": "Germany",
+"sector": "government/nonprofit"
+},
+{
+"raw": "Ko\u00e7 University",
+"canonical": "Ko\u00e7 University",
+"country": "Turkey",
+"sector": "academia"
+},
+{
+"raw": "NeoCognition          Ohio State University",
+"canonical": "NeoCognition",
+"country": "USA",
+"sector": "industry"
+},
+{
+"raw": "Harry) Chao (Ohio State University (OSU)",
+"canonical": "Ohio State University",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "Norwegian University of Science and Technology",
+"canonical": "NTNU",
+"country": "Norway",
+"sector": "academia"
+},
+{
+"raw": "Shanghai Jiao Tong Unviersity",
+"canonical": "Shanghai Jiao Tong University",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "U Washington",
+"canonical": "University of Washington",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "RIKEN/University of Tokyo",
+"canonical": "RIKEN",
+"country": "Japan",
+"sector": "government/nonprofit"
+},
+{
+"raw": "Queen's University Belfast",
+"canonical": "Queen's University Belfast",
+"country": "UK",
+"sector": "academia"
+},
+{
+"raw": "Capital Fund Management",
+"canonical": "Capital Fund Management",
+"country": "France",
+"sector": "industry"
+},
+{
+"raw": "New York University & Capital Fund Management",
+"canonical": "New York University",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "University of Illinois, Chicago",
+"canonical": "University of Illinois Chicago",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "Queen Mary University of London / Huawei Research Finland",
+"canonical": "Queen Mary University of London",
+"country": "UK",
+"sector": "academia"
+},
+{
+"raw": "Ruhr-Universit\u00e4t Bochum",
+"canonical": "Ruhr University Bochum",
+"country": "Germany",
+"sector": "academia"
+},
+{
+"raw": "University of British Columbia + Amii",
+"canonical": "University of British Columbia",
+"country": "Canada",
+"sector": "academia"
+},
+{
+"raw": "School of Information and Communications Technology, Hanoi University of Science and Technology",
+"canonical": "Hanoi University of Science and Technology",
+"country": "Vietnam",
+"sector": "academia"
+},
+{
+"raw": "Indian Institute of Technology Hyderabad",
+"canonical": "IIT Hyderabad",
+"country": "India",
+"sector": "academia"
+},
+{
+"raw": "Prior Labs",
+"canonical": "Prior Labs",
+"country": "Germany",
+"sector": "industry"
+},
+{
+"raw": "CS Department, University of Freiburg, Germany, Albert-Ludwigs-Universit\u00e4t Freiburg",
+"canonical": "University of Freiburg",
+"country": "Germany",
+"sector": "academia"
+},
+{
+"raw": "T\u00e9l\u00e9com ParisTech",
+"canonical": "T\u00e9l\u00e9com Paris",
+"country": "France",
+"sector": "academia"
+},
+{
+"raw": "Amazon.com",
+"canonical": "Amazon",
+"country": "USA",
+"sector": "industry"
+},
+{
+"raw": "Brigham and Women's Hospital, Harvard University",
+"canonical": "Brigham and Women's Hospital",
+"country": "USA",
+"sector": "government/nonprofit"
+},
+{
+"raw": "Samsung Research",
+"canonical": "Samsung",
+"country": "South Korea",
+"sector": "industry"
+},
+{
+"raw": "\u00c9cole Polytechnique de Montr\u00e9al, Universit\u00e9 de Montr\u00e9al",
+"canonical": "Polytechnique Montr\u00e9al",
+"country": "Canada",
+"sector": "academia"
+},
+{
+"raw": "Meta (FAIR)",
+"canonical": "Meta",
+"country": "USA",
+"sector": "industry"
+},
+{
+"raw": "University College Dublin",
+"canonical": "University College Dublin",
+"country": "Ireland",
+"sector": "academia"
+},
+{
+"raw": "Osaka University",
+"canonical": "Osaka University",
+"country": "Japan",
+"sector": "academia"
+},
+{
+"raw": "CVSSP, University of Surrey",
+"canonical": "University of Surrey",
+"country": "UK",
+"sector": "academia"
+},
+{
+"raw": "University of Oxford / Martian",
+"canonical": "University of Oxford",
+"country": "UK",
+"sector": "academia"
+},
+{
+"raw": "Max Planck Institute of Biochemistry",
+"canonical": "Max Planck Society",
+"country": "Germany",
+"sector": "government/nonprofit"
+},
+{
+"raw": "MIT/Google",
+"canonical": "MIT",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "Universit\u00e9 de Lille",
+"canonical": "University of Lille",
+"country": "France",
+"sector": "academia"
+},
+{
+"raw": "Freie Universit\u00e4t Berlin",
+"canonical": "Freie Universit\u00e4t Berlin",
+"country": "Germany",
+"sector": "academia"
+},
+{
+"raw": "Center for Information and Language Processing",
+"canonical": "LMU Munich",
+"country": "Germany",
+"sector": "academia"
+},
+{
+"raw": "The University of Tokyo / RIKEN AIP / Kyoto University",
+"canonical": "University of Tokyo",
+"country": "Japan",
+"sector": "academia"
+},
+{
+"raw": "CentraleSupelec",
+"canonical": "CentraleSup\u00e9lec",
+"country": "France",
+"sector": "academia"
+},
+{
+"raw": "Tianjin Normal University",
+"canonical": "Tianjin Normal University",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "The Hong Kong University of Science and Technology (GZ)",
+"canonical": "HKUST (Guangzhou)",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "sensetime",
+"canonical": "SenseTime",
+"country": "China",
+"sector": "industry"
+},
+{
+"raw": "JD Joy Future Academy",
+"canonical": "JD.com",
+"country": "China",
+"sector": "industry"
+},
+{
+"raw": "Institute of Information Engineering, CAS, China",
+"canonical": "Chinese Academy of Sciences",
+"country": "China",
+"sector": "government/nonprofit"
+},
+{
+"raw": "Florida Atlantic University",
+"canonical": "Florida Atlantic University",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "Seoul National University / RippleAI",
+"canonical": "Seoul National University",
+"country": "South Korea",
+"sector": "academia"
+},
+{
+"raw": "Massachusetts General Hospital\uff0c Harvard Medical School",
+"canonical": "Massachusetts General Hospital",
+"country": "USA",
+"sector": "government/nonprofit"
+},
+{
+"raw": "HUAWEI",
+"canonical": "Huawei",
+"country": "China",
+"sector": "industry"
+},
+{
+"raw": "TTI-Chicago",
+"canonical": "Toyota Technological Institute at Chicago",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "Brigham Young University",
+"canonical": "Brigham Young University",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "Layer 6 AI at TD",
+"canonical": "TD Bank",
+"country": "Canada",
+"sector": "industry"
+},
+{
+"raw": "University of Stellenbosch",
+"canonical": "Stellenbosch University",
+"country": "South Africa",
+"sector": "academia"
+},
+{
+"raw": "Auburn University",
+"canonical": "Auburn University",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "Aithyra",
+"canonical": "AITHYRA",
+"country": "Austria",
+"sector": "government/nonprofit"
+},
+{
+"raw": "Bernie) Wang (AWS AI",
+"canonical": "Amazon",
+"country": "USA",
+"sector": "industry"
+},
+{
+"raw": "TU Dortmund",
+"canonical": "TU Dortmund",
+"country": "Germany",
+"sector": "academia"
+},
+{
+"raw": "LAION, JSC",
+"canonical": "LAION",
+"country": "Germany",
+"sector": "government/nonprofit"
+},
+{
+"raw": "LAION, Juelich Supercomputing Center (JSC)",
+"canonical": "LAION",
+"country": "Germany",
+"sector": "government/nonprofit"
+},
+{
+"raw": "LinkedIn",
+"canonical": "Microsoft",
+"country": "USA",
+"sector": "industry"
+},
+{
+"raw": "University of Massachusetts Boston",
+"canonical": "University of Massachusetts Boston",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "University at Buffalo",
+"canonical": "University at Buffalo",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "McGill - Mila",
+"canonical": "McGill University",
+"country": "Canada",
+"sector": "academia"
+},
+{
+"raw": "Ecole polytechnique",
+"canonical": "\u00c9cole Polytechnique",
+"country": "France",
+"sector": "academia"
+},
+{
+"raw": "UC Berkeley NVIDIA",
+"canonical": "UC Berkeley",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "MSRA",
+"canonical": "Microsoft",
+"country": "USA",
+"sector": "industry"
+},
+{
+"raw": "Bilkent University",
+"canonical": "Bilkent University",
+"country": "Turkey",
+"sector": "academia"
+},
+{
+"raw": "Czech Technical University of Prague",
+"canonical": "Czech Technical University in Prague",
+"country": "Czech Republic",
+"sector": "academia"
+},
+{
+"raw": "Texas A&M university",
+"canonical": "Texas A&M University",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "Ocean University of China",
+"canonical": "Ocean University of China",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "Agency for Science, Technology and Research (A*STAR)",
+"canonical": "A*STAR",
+"country": "Singapore",
+"sector": "government/nonprofit"
+},
+{
+"raw": "ICT, Chinese Academy of Sciences",
+"canonical": "Chinese Academy of Sciences",
+"country": "China",
+"sector": "government/nonprofit"
+},
+{
+"raw": "Snowflake",
+"canonical": "Snowflake",
+"country": "USA",
+"sector": "industry"
+},
+{
+"raw": "University of Nottingham",
+"canonical": "University of Nottingham",
+"country": "UK",
+"sector": "academia"
+},
+{
+"raw": "Northwestern (NWU)",
+"canonical": "Northwestern University",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "HKU",
+"canonical": "University of Hong Kong",
+"country": "Hong Kong",
+"sector": "academia"
+},
+{
+"raw": "Korea Institute of Science and Technology",
+"canonical": "KIST",
+"country": "South Korea",
+"sector": "government/nonprofit"
+},
+{
+"raw": "Ecole Polytechnique, IPParis",
+"canonical": "\u00c9cole Polytechnique",
+"country": "France",
+"sector": "academia"
+},
+{
+"raw": "UCI",
+"canonical": "UC Irvine",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "Institute of Statistical Mathematics",
+"canonical": "Institute of Statistical Mathematics",
+"country": "Japan",
+"sector": "government/nonprofit"
+},
+{
+"raw": "The University of Tokyo / RIKEN",
+"canonical": "University of Tokyo",
+"country": "Japan",
+"sector": "academia"
+},
+{
+"raw": "Moonshot AI",
+"canonical": "Moonshot AI",
+"country": "China",
+"sector": "industry"
+},
+{
+"raw": "WeChat AI",
+"canonical": "Tencent",
+"country": "China",
+"sector": "industry"
+},
+{
+"raw": "Huawei / ANU",
+"canonical": "Huawei",
+"country": "China",
+"sector": "industry"
+},
+{
+"raw": "Tencent Technology (shanghai) Co. ltd",
+"canonical": "Tencent",
+"country": "China",
+"sector": "industry"
+},
+{
+"raw": "United States Military Academy",
+"canonical": "United States Military Academy",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "UCAS",
+"canonical": "University of Chinese Academy of Sciences",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "Min-Hsuan) Yeh (University of Wisconsin - Madison",
+"canonical": "University of Wisconsin-Madison",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "iQOO Software Technology (Shanghai) Co., Ltd.",
+"canonical": "vivo",
+"country": "China",
+"sector": "industry"
+},
+{
+"raw": "LY Corporation",
+"canonical": "LY Corporation",
+"country": "Japan",
+"sector": "industry"
+},
+{
+"raw": "University of Bordeaux",
+"canonical": "University of Bordeaux",
+"country": "France",
+"sector": "academia"
+},
+{
+"raw": "Google DeepMind / NYU",
+"canonical": "Google",
+"country": "USA",
+"sector": "industry"
+},
+{
+"raw": "Xiaomi",
+"canonical": "Xiaomi",
+"country": "China",
+"sector": "industry"
+},
+{
+"raw": "VISA",
+"canonical": "Visa",
+"country": "USA",
+"sector": "industry"
+},
+{
+"raw": "Isomorphic Labs",
+"canonical": "Isomorphic Labs",
+"country": "UK",
+"sector": "industry"
+},
+{
+"raw": "CSIRO's Data61",
+"canonical": "CSIRO",
+"country": "Australia",
+"sector": "government/nonprofit"
+},
+{
+"raw": "SAIT-China Lab, Samsung Research Center",
+"canonical": "Samsung",
+"country": "South Korea",
+"sector": "industry"
+},
+{
+"raw": "Sichuan Agricultural University",
+"canonical": "Sichuan Agricultural University",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "Zhejiang Gongshang University",
+"canonical": "Zhejiang Gongshang University",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "IFLYTEK CO.LTD.",
+"canonical": "iFLYTEK",
+"country": "China",
+"sector": "industry"
+},
+{
+"raw": "The Chinese University of HongKong",
+"canonical": "CUHK",
+"country": "Hong Kong",
+"sector": "academia"
+},
+{
+"raw": "Mentee Robotics",
+"canonical": "Mentee Robotics",
+"country": "Israel",
+"sector": "industry"
+},
+{
+"raw": "Google DeepMind / University of Alberta",
+"canonical": "Google",
+"country": "USA",
+"sector": "industry"
+},
+{
+"raw": "The Hong Kong University of Science and Technology (HKUST)",
+"canonical": "HKUST",
+"country": "Hong Kong",
+"sector": "academia"
+},
+{
+"raw": "Gatsby Computational Neuroscience Unit, UCL",
+"canonical": "University College London",
+"country": "UK",
+"sector": "academia"
+},
+{
+"raw": "Bar Ilan University",
+"canonical": "Bar-Ilan University",
+"country": "Israel",
+"sector": "academia"
+},
+{
+"raw": "Universit\u00e9 Grenoble Alpes",
+"canonical": "Universit\u00e9 Grenoble Alpes",
+"country": "France",
+"sector": "academia"
+},
+{
+"raw": "Michigan State University & MIT-IBM Watson AI Lab",
+"canonical": "Michigan State University",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "Karlsruhe Institute for Technology",
+"canonical": "Karlsruhe Institute of Technology",
+"country": "Germany",
+"sector": "academia"
+},
+{
+"raw": "City University of Macau",
+"canonical": "City University of Macau",
+"country": "Macau",
+"sector": "academia"
+},
+{
+"raw": "Technische Universit\u00e4t Dresden",
+"canonical": "TU Dresden",
+"country": "Germany",
+"sector": "academia"
+},
+{
+"raw": "Kempner and SEAS at Harvard University",
+"canonical": "Harvard University",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "NLPR, China",
+"canonical": "Chinese Academy of Sciences",
+"country": "China",
+"sector": "government/nonprofit"
+},
+{
+"raw": "Beijing Technology and Business University",
+"canonical": "Beijing Technology and Business University",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "Tsinghua University; Bytedance",
+"canonical": "Tsinghua University",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "Lawrence Livermore National Laboratory",
+"canonical": "Lawrence Livermore National Laboratory",
+"country": "USA",
+"sector": "government/nonprofit"
+},
+{
+"raw": "Institute of AI (TeleAI), China Telecom",
+"canonical": "China Telecom",
+"country": "China",
+"sector": "industry"
+},
+{
+"raw": "University College London / University of Bristol",
+"canonical": "University College London",
+"country": "UK",
+"sector": "academia"
+},
+{
+"raw": "The Chinese University of Hong Kong (Shenzhen); National University of Singapore",
+"canonical": "CUHK (Shenzhen)",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "University of Washington/AI2",
+"canonical": "University of Washington",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "McGill University/Mila",
+"canonical": "McGill University",
+"country": "Canada",
+"sector": "academia"
+},
+{
+"raw": "VIPL,ICT,Chinese academic of science",
+"canonical": "Chinese Academy of Sciences",
+"country": "China",
+"sector": "government/nonprofit"
+},
+{
+"raw": "University of Southern California (USC)",
+"canonical": "University of Southern California",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "Jilin U.",
+"canonical": "Jilin University",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "Telecom Paris",
+"canonical": "T\u00e9l\u00e9com Paris",
+"country": "France",
+"sector": "academia"
+},
+{
+"raw": "Google research",
+"canonical": "Google",
+"country": "USA",
+"sector": "industry"
+},
+{
+"raw": "UCSF",
+"canonical": "UC San Francisco",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "Taiyuan University of Technology",
+"canonical": "Taiyuan University of Technology",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "Cambridge University",
+"canonical": "University of Cambridge",
+"country": "UK",
+"sector": "academia"
+},
+{
+"raw": "Australian Institute for Machine Learning",
+"canonical": "University of Adelaide",
+"country": "Australia",
+"sector": "academia"
+},
+{
+"raw": "Beijing Normal-Hong Kong Baptist University",
+"canonical": "Beijing Normal-Hong Kong Baptist University",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "WeChat",
+"canonical": "Tencent",
+"country": "China",
+"sector": "industry"
+},
+{
+"raw": "WeChat, Tencent",
+"canonical": "Tencent",
+"country": "China",
+"sector": "industry"
+},
+{
+"raw": "Mila / \u00c9cole Polytechnique de Montr\u00e9al",
+"canonical": "Polytechnique Montr\u00e9al",
+"country": "Canada",
+"sector": "academia"
+},
+{
+"raw": "ETHZ",
+"canonical": "ETH Zurich",
+"country": "Switzerland",
+"sector": "academia"
+},
+{
+"raw": "Defence Science and Technology Group, Australia",
+"canonical": "Defence Science and Technology Group",
+"country": "Australia",
+"sector": "government/nonprofit"
+},
+{
+"raw": "IMT Atlantique",
+"canonical": "IMT Atlantique",
+"country": "France",
+"sector": "academia"
+},
+{
+"raw": "Moscow Independent Research Institute of Artificial Intelligence",
+"canonical": "Moscow Independent Research Institute of Artificial Intelligence",
+"country": "Russia",
+"sector": "government/nonprofit"
+},
+{
+"raw": "University of Cape Town & InstaDeep",
+"canonical": "University of Cape Town",
+"country": "South Africa",
+"sector": "academia"
+},
+{
+"raw": "Stanford; Noeri AI",
+"canonical": "Stanford University",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "Simula Research Laboratory",
+"canonical": "Simula Research Laboratory",
+"country": "Norway",
+"sector": "government/nonprofit"
+},
+{
+"raw": "Meta Superintelligence Labs",
+"canonical": "Meta",
+"country": "USA",
+"sector": "industry"
+},
+{
+"raw": "EPFL/Swiss Federal Technology Institute of Lausanne",
+"canonical": "EPFL",
+"country": "Switzerland",
+"sector": "academia"
+},
+{
+"raw": "The Hong Kong University of Science and Technology (Guangzhou Campus)",
+"canonical": "HKUST (Guangzhou)",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "Beijing Zhongguancun Academy",
+"canonical": "Beijing Zhongguancun Academy",
+"country": "China",
+"sector": "government/nonprofit"
+},
+{
+"raw": ", Purdue University",
+"canonical": "Purdue University",
+"country": "USA",
+"sector": "academia"
+},
+{
+"raw": "Cambridge, Alan Turing Institute",
+"canonical": "University of Cambridge",
+"country": "UK",
+"sector": "academia"
+}
+]
