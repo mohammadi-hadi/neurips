@@ -1,0 +1,12 @@
+pandas==3.0.6
+numpy==2.5.4
+scikit-learn==1.9.1
+umap-learn==0.5.12
+sentence-transformers==6.1.0
+torch==2.14.1
+transformers==5.20.2
+matplotlib==3.11.2
+datamapplot==0.2.2
+requests==2.34.2
+plotly==7.1.0
+pyarrow==26.0.0
