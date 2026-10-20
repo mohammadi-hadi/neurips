@@ -371,7 +371,7 @@ card("3_moved.png", "Where the field moved", "Red grew,\nblue shrank",
      "The 2026 map, coloured by how each\nsubtopic's share changed since 2025.",
      draw_field_card, (0.02, 0.12, 0.96, 0.5))
 card("4_explore.png", "Explore it yourself", "Search all\n9,110 papers",
-     "Recolour by change, city or status,\nfilter by day, click any paper to open it.",
+     "Colour it by change, city or status,\nand click any paper. Link in the first comment.",
      draw_img(FIG / "atlas_screenshot.png") if (FIG / "atlas_screenshot.png").exists() else draw_img(FIG / "atlas_card.png"),
      (0.03, 0.08, 0.94, 0.56))
 print("story figures and carousel written; agents in top-10 gainers:", k_agents)
