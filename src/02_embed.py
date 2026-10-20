@@ -11,7 +11,7 @@ P = ROOT / "data/processed"
 LOCAL = ROOT / "models/Qwen3-Embedding-0.6B"  # same weights, fetched once with curl
 MODEL = sys.argv[1] if len(sys.argv) > 1 else (str(LOCAL) if LOCAL.exists() else "Qwen/Qwen3-Embedding-0.6B")
 
-df = pd.read_pickle(P / "papers.pkl")
+df = pd.read_parquet(P / "papers.parquet")
 texts = (df["title"] + ". " + df["abstract"]).tolist()
 device = "mps" if torch.backends.mps.is_available() else "cpu"
 model = SentenceTransformer(MODEL, device=device)

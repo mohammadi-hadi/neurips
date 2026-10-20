@@ -119,7 +119,12 @@ for c in d26.columns:
 
 both = pd.concat([d26, d25], ignore_index=True)
 both = both[both["abstract"].str.len() > 50].reset_index(drop=True)
-both.to_pickle(OUT / "papers.pkl")
+both["scheduled"] = both["scheduled"].astype(bool)
+both["n_sites"] = pd.to_numeric(both["n_sites"], errors="coerce").fillna(0).astype(int)
+for c in both.columns:
+    if both[c].dtype == object:
+        both[c] = both[c].fillna("").astype(str)
+both.to_parquet(OUT / "papers.parquet", index=False)
 
 s26 = both[both.year == 2026]
 report = {

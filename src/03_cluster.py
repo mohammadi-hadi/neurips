@@ -12,7 +12,7 @@ ROOT = Path(__file__).resolve().parents[1]
 P = ROOT / "data/processed"
 N_FINE, N_BROAD, SEED = 150, 20, 42
 
-df = pd.read_pickle(P / "papers.pkl")
+df = pd.read_parquet(P / "papers.parquet")
 X = np.load(P / "embeddings.npy")
 is26 = (df["year"] == 2026).to_numpy()
 
@@ -68,6 +68,6 @@ for b in range(N_BROAD):
     fs = [c for c in clusters if c["broad_id"] == b]
     broad.append({"broad_id": b, "n_2026": sum(c["n_2026"] for c in fs), "fine_ids": [c["fine_id"] for c in fs]})
 json.dump(broad, open(P / "clusters_broad.json", "w"), indent=1)
-df.drop(columns=[]).to_pickle(P / "papers_clustered.pkl")
+df.to_parquet(P / "papers_clustered.parquet", index=False)
 print("fine sizes 2026: min", sizes.min(), "median", int(np.median(sizes)), "max", sizes.max())
 print("broad sizes:", sorted((b["n_2026"] for b in broad), reverse=True))

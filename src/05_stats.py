@@ -17,7 +17,7 @@ plt.rcParams.update({"font.size": 10, "axes.spines.top": False, "axes.spines.rig
                      "figure.dpi": 150, "savefig.bbox": "tight"})
 INK, A26, A25 = "#1f2a44", "#d9480f", "#8aa1b1"
 
-df = pd.read_pickle(P / "papers_clustered.pkl")
+df = pd.read_parquet(P / "papers_clustered.parquet")
 labels = json.load(open(ROOT / "data/labels/labels.json"))
 fine_name = {int(k): v["name"] for k, v in labels["fine"].items()}
 broad_name = {int(k): v["name"] for k, v in labels["broad"].items()}
@@ -219,7 +219,8 @@ fig, ax = plt.subplots(figsize=(8, 7))
 v = vt.iloc[::-1]
 ax.barh(v.term, v.delta_pp, color=[A26 if x > 0 else A25 for x in v.delta_pp])
 for i, (p26, d) in enumerate(zip(v.pct_2026, v.delta_pp)):
-    ax.text(d + (0.3 if d >= 0 else -0.3), i, f"{p26:.0f}%", va="center", ha="left" if d >= 0 else "right", fontsize=8, color=INK)
+    # share label sits on the opposite side of the zero line for shrinking terms, clear of the tick labels
+    ax.text(d + 0.3 if d >= 0 else 0.3, i, f"{p26:.0f}%", va="center", ha="left", fontsize=8, color=INK)
 ax.axvline(0, color=INK, lw=0.8)
 ax.set_xlabel("change in % of abstracts mentioning the term, 2025 → 2026 (label = 2026 share)")
 ax.set_title("What the abstracts talk about more (and less)", loc="left", color=INK, fontweight="bold")

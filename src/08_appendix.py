@@ -6,7 +6,7 @@ import pandas as pd
 ROOT = Path(__file__).resolve().parents[1]
 P, OUT = ROOT / "data/processed", ROOT / "outputs"
 (ROOT / "report").mkdir(exist_ok=True)
-df = pd.read_pickle(P / "papers_clustered.pkl")
+df = pd.read_parquet(P / "papers_clustered.parquet")
 L = json.load(open(ROOT / "data/labels/labels.json"))
 fine = {int(k): v for k, v in L["fine"].items()}
 broad = {int(k): v for k, v in L["broad"].items()}
