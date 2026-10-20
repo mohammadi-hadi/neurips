@@ -6,7 +6,7 @@ import json
 from pathlib import Path
 import numpy as np
 import pandas as pd
-from common import load_papers
+from common import load_papers, paper_orgs
 import datamapplot
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -35,16 +35,12 @@ city = d["site"].replace({"unscheduled": "City not listed", "": "City not listed
 
 
 def sector(s):
-    secs = set()
-    for raw in s.split(" | "):
-        r = imap.get(raw.strip()) or imap.get(raw.split(",")[0].strip())
-        if r:
-            secs.add(r["sector"])
+    secs = {o[2] for o in paper_orgs(s)}
     if "industry" in secs and "academia" in secs:
         return "Academia + industry"
     if "industry" in secs:
         return "Industry only"
-    if secs:
+    if secs - {"unknown"}:
         return "Academia / public research"
     return "Unknown"
 
@@ -60,13 +56,13 @@ for s, c in zip(start, city):
     if pd.isna(s) or c not in local_tz:
         day.append("not yet scheduled")
     else:
-        day.append(s.tz_convert(local_tz[c]).strftime("Dec %d") + " " + c[:3])  # sorts by date
+        day.append(s.tz_convert(local_tz[c]).strftime("%d") + " " + c[:3])  # "08 Syd": short, sorts by date
 
 title = d["title_display"]
 hover = (title + " — " + status + " · " + city).to_numpy()
 safe = title.str.replace(r"[`$\\]", "", regex=True)
 extra = pd.DataFrame({
-    "title": title, "safe_title": safe, "openreview": d["openreview"].fillna(""), "pdf": d["pdf"].fillna(""), "arxiv": d["arxiv"],
+    "title": title, "safe_title": safe, "openreview": d["or_link"], "pdf": d["pdf_link"], "arxiv": d["arxiv"],
     "authors": d["authors"].str.slice(0, 160), "status": status, "city": city,
     "topic": d["fine"].map(fine_name), "area": d["broad"].map(broad_name), "change": change_txt,
     "url": d["url"], "abstract": d["abstract"].str.slice(0, 420) + "…",
@@ -88,18 +84,18 @@ cmap_meta = [
 
 CSS = """
 #title-container{background:rgba(255,255,255,.92)!important;border-radius:10px;box-shadow:0 2px 12px rgba(31,42,68,.08)}
-#main-title{font-weight:700!important;color:#1f2a44!important;letter-spacing:-.01em}
+#main-title{font-family:"Source Serif 4",Georgia,serif!important;font-weight:600!important;color:#1a1a1a!important;letter-spacing:-.01em}
 #paper-links{display:none;position:absolute;right:14px;bottom:60px;z-index:20;width:340px;background:#fff;
   border-radius:10px;box-shadow:0 6px 24px rgba(31,42,68,.18);padding:14px 16px;font:13px/1.4 Inter,system-ui,sans-serif;color:#1f2a44}
 #paper-links .t{font-weight:700;margin:0 22px 10px 0}
 #paper-links a{display:inline-block;margin:0 6px 6px 0;padding:6px 10px;border-radius:7px;background:#f1f3f5;color:#1f2a44;text-decoration:none;font-weight:600}
-#paper-links a.main{background:#d9480f;color:#fff}
+#paper-links a.main{background:#1e3a5f;color:#fff}
 #paper-links .n{font-size:11px;color:#6b7489;margin-top:2px}
 #paper-links .x{position:absolute;top:8px;right:10px;cursor:pointer;font-size:16px;color:#6b7489;border:0;background:none}
 .embedded #topic-tree,.embedded #d3histogram-container,.embedded .atlas-back{display:none!important}
 .embedded #title-container{display:none!important}
 .atlas-back{position:absolute;bottom:14px;right:14px;z-index:10;font:600 13px Inter,system-ui,sans-serif;
-  background:#1f2a44;color:#fff;padding:8px 12px;border-radius:8px;text-decoration:none}
+  background:#1e3a5f;color:#fff;padding:8px 12px;border-radius:8px;text-decoration:none}
 """
 plot = datamapplot.create_interactive_plot(
     coords, fine_lab, broad_lab,  # finest layer first
@@ -141,9 +137,8 @@ function showLinks(page, arxiv, forum, pdf, title) {
   box.querySelector('.t').textContent = title;
   let h = '<a class="main" href="' + page + '" target="_blank" rel="noopener">NeurIPS page</a>' +
           '<a href="' + arxiv + '" target="_blank" rel="noopener">Find on arXiv</a>';
-  if (forum) h += '<a href="' + forum + '" target="_blank" rel="noopener">OpenReview*</a>' +
-                  '<a href="' + pdf + '" target="_blank" rel="noopener">PDF*</a>' +
-                  '<div class="n">* These work once NeurIPS makes the papers public on OpenReview.</div>';
+  if (forum) h += '<a href="' + forum + '" target="_blank" rel="noopener">OpenReview</a>' +
+                  '<a href="' + pdf + '" target="_blank" rel="noopener">PDF</a>';
   box.querySelector('.l').innerHTML = h;
   box.style.display = 'block';
 }

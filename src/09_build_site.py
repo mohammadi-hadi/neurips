@@ -1,7 +1,9 @@
-"""Build the GitHub Pages site in docs/: blog (index.html), appendix, figures.
+"""Build the GitHub Pages site in docs/ in the style of mohammadi.cv:
+docs/index.html (landing page), docs/2026/index.html (story), docs/2026/appendix.html, figures.
 Needs pandoc on PATH."""
-import re, shutil, subprocess
+import html, re, shutil, subprocess
 from pathlib import Path
+from site_template import page, atlas_nav
 
 ROOT = Path(__file__).resolve().parents[1]
 DOCS = ROOT / "docs/2026"
@@ -10,98 +12,70 @@ SITE = "https://mohammadi.cv/neurips/2026/"
 for f in (ROOT / "outputs/figures").glob("*.png"):
     shutil.copy(f, DOCS / "figures" / f.name)
 
-CSS = """
-:root{--ink:#1f2a44;--muted:#5c677d;--accent:#d9480f;--bg:#ffffff;--card:#f6f7f9;--line:#e3e6ea}
-@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--ink:#e8ebf1;--muted:#a3acbd;--accent:#ff8a4c;--bg:#12151c;--card:#1b2029;--line:#2a313d}}
-*{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.65 Inter,system-ui,-apple-system,Segoe UI,sans-serif}
-nav{position:sticky;top:0;background:var(--bg);border-bottom:1px solid var(--line);z-index:5}
-nav div{max-width:780px;margin:0 auto;padding:10px 16px;display:flex;gap:18px;flex-wrap:wrap;font-size:15px}
-nav a{color:var(--muted);text-decoration:none}nav a:hover{color:var(--accent)}
-main{max-width:780px;margin:0 auto;padding:24px 16px 80px}
-h1{font-size:2.1rem;line-height:1.2;margin:.6em 0 .3em}h2{margin-top:2.2em;font-size:1.45rem}h3{font-size:1.15rem}
-a{color:var(--accent)}img{max-width:100%;height:auto;border-radius:8px;background:#fff}
-figure{margin:1.6em 0}figcaption{color:var(--muted);font-size:14px;margin-top:6px}
-iframe.chart{width:100%;height:640px;border:1px solid var(--line);border-radius:10px;background:#fff;margin:.4em 0 1.6em}
-table{border-collapse:collapse;width:100%;font-size:14px;display:block;overflow-x:auto}
-th,td{border-bottom:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}
-blockquote{margin:1em 0;padding:.6em 1em;background:var(--card);border-left:3px solid var(--accent);border-radius:4px}
-code{background:var(--card);padding:1px 5px;border-radius:4px;font-size:.9em}
-.hero{width:min(1240px,calc(100vw - 32px));margin:18px 0 26px 50%;transform:translateX(-50%)}
-.hero iframe{width:100%;height:min(78vh,760px);border:2px solid var(--accent);border-radius:14px;background:#fff;display:block}
-.hero .btns{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin-top:12px}
-.btn{display:inline-block;padding:12px 18px;border-radius:10px;font-weight:700;text-decoration:none;font-size:16px}
-.btn.main{background:var(--accent);color:#fff}.btn.alt{background:var(--card);color:var(--ink);border:1px solid var(--line)}
-nav a.map{background:var(--accent);color:#fff;padding:3px 10px;border-radius:7px;font-weight:600}
-.cta{display:inline-block;background:var(--accent);color:#fff;padding:10px 16px;border-radius:8px;text-decoration:none;font-weight:600}
-footer{color:var(--muted);font-size:14px;border-top:1px solid var(--line);margin-top:3em;padding-top:1em}
-"""
-
-NAV = ('<nav><div><a href="../"><b>NeurIPS Atlas</b></a><a href="index.html">2026</a><a class="map" href="atlas.html">Open the map</a>'
-       '<a href="papers.html">All papers</a><a href="charts/treemap.html">All topics</a><a href="appendix.html">Appendix</a>'
-       '<a href="https://github.com/mohammadi-hadi/neurips">Code &amp; data</a></div></nav>')
+HEIGHTS = {"treemap": 820, "vocabulary": 740}
+HERO = ('</div><section class="container atlas-hero" aria-label="map of all papers">'
+        '<iframe src="atlas.html" title="Map of all NeurIPS 2026 papers"></iframe>'
+        '<div class="actions"><a class="btn" href="atlas.html">Open the map full screen</a>'
+        '<a class="btn btn-ghost" href="papers.html">Search all papers</a></div></section><div class="post-wrap">')
 
 
-HEIGHTS = {"treemap": 800, "vocabulary": 740}
-
-
-def page(md_path, out_name, title, description):
+def md_to_html(md_path):
     body = subprocess.run(["pandoc", str(md_path), "-f", "gfm", "-t", "html5"], capture_output=True,
                           text=True, check=True).stdout
-    body = body.replace("../outputs/figures/", "figures/").replace("../docs/", "")
-    body = re.sub(r'href="(?:\.\./)?docs/', 'href="', body)
-    body = body.replace(SITE, "")  # keep links relative inside the site
-    hero = ('<section class="hero" aria-label="interactive map of all papers">'
-            '<iframe src="atlas.html" title="Map of all NeurIPS 2026 papers"></iframe>'
-            '<div class="btns"><a class="btn main" href="atlas.html">Open the map full screen</a>'
-            '<a class="btn alt" href="papers.html">Search all papers</a></div></section>')
-    body = re.sub(r"<!--\s*atlas-hero\s*-->\s*<p><strong><a [^>]*>[^<]*</a></strong></p>", hero, body)
+    body = body.replace("../outputs/figures/", "figures/").replace(SITE, "")
+    title = re.search(r"<h1[^>]*>(.*?)</h1>", body, re.S)
+    body = re.sub(r"<h1[^>]*>.*?</h1>", "", body, count=1, flags=re.S)
+    # images become figures with a caption from their alt text
+    body = re.sub(r'<p>(<a href="[^"]*">)?<img src="([^"]+)" alt="([^"]*)"\s*/?>(</a>)?</p>',
+                  lambda m: f'<figure>{m.group(1) or ""}<img src="{m.group(2)}" alt="{m.group(3)}" loading="lazy">'
+                            f'{m.group(4) or ""}<figcaption>{m.group(3)}</figcaption></figure>', body)
+    body = re.sub(r"<!--\s*atlas-hero\s*-->\s*<p><strong><a [^>]*>[^<]*</a></strong></p>", HERO, body)
     body = re.sub(r"<!--\s*interactive:\s*([a-z_]+)\s*-->",
-                  lambda m: f'<iframe class="chart" style="height:{HEIGHTS.get(m.group(1), 680)}px" src="charts/{m.group(1)}.html" loading="lazy" '
-                            f'title="interactive chart: {m.group(1)}"></iframe>', body)
-    html = f"""<!doctype html><html lang="en"><head><meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>{title}</title><meta name="description" content="{description}">
-<meta property="og:title" content="{title}"><meta property="og:description" content="{description}">
-<meta property="og:image" content="{SITE}figures/atlas_static.png"><meta property="og:url" content="{SITE}{out_name}">
-<meta name="twitter:card" content="summary_large_image">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-<style>{CSS}</style></head><body>{NAV}<main>{body}
-<footer>Data: public NeurIPS 2025 and 2026 paper lists from neurips.cc, pulled 20 October 2026.
-Code and method: <a href="https://github.com/mohammadi-hadi/neurips">github.com/mohammadi-hadi/neurips</a>.</footer>
-</main></body></html>"""
-    (DOCS / out_name).write_text(html)
-    print("wrote", DOCS / out_name)
+                  lambda m: f'<iframe class="chart" style="height:{HEIGHTS.get(m.group(1), 680)}px" '
+                            f'src="charts/{m.group(1)}.html" loading="lazy" title="interactive chart"></iframe>', body)
+    return (html.unescape(re.sub(r"<[^>]+>", "", title.group(1))) if title else ""), body
 
 
-page(ROOT / "report/BLOG.md", "index.html", "What 9,110 NeurIPS 2026 papers are about",
-     "All NeurIPS 2026 papers on one map, and what changed since 2025.")
-page(ROOT / "report/APPENDIX.md", "appendix.html", "NeurIPS 2026: all areas and topics",
-     "Every NeurIPS 2026 topic with its numbers, and every oral.")
+def article(md_path, crumbs, dek, byline):
+    title, body = md_to_html(md_path)
+    return title, f"""{atlas_nav()}<main id="main"><article class="post">
+<header class="post-head"><div class="post-wrap">
+<p class="post-crumbs">{crumbs}</p><h1>{title}</h1><p class="post-dek">{dek}</p>
+<p class="post-byline"><span>{byline}</span></p></div></header>
+<div class="post-body"><div class="post-wrap">{body}</div></div></article></main>"""
+
+
+CRUMBS = '<a href="/blog/">Blog</a><span class="sep">/</span><a href="../">NeurIPS Atlas</a>'
+words = len(re.sub(r"[#*\[\]()!<>-]", " ", (ROOT / "report/BLOG.md").read_text()).split())
+title, body = article(ROOT / "report/BLOG.md", CRUMBS,
+                      "I put all 9,110 accepted papers on one map and compared them with 2025. Agents are the big story.",
+                      f"{round(words / 220)} min read · 20 October 2026")
+(DOCS / "index.html").write_text(page(title, "All NeurIPS 2026 papers on one map, and what changed since 2025.",
+                                      SITE, body))
+print("wrote", DOCS / "index.html")
+
+title, body = article(ROOT / "report/APPENDIX.md", CRUMBS + '<span class="sep">/</span><a href="index.html">2026</a>',
+                      "Every NeurIPS 2026 area and topic with its numbers, and every oral.", "Reference")
+body = body.replace('<div class="post-wrap">', '<div class="post-wrap wide">')
+(DOCS / "appendix.html").write_text(page(title, "Every NeurIPS 2026 topic with its numbers, and every oral.",
+                                         SITE + "appendix.html", body))
+print("wrote", DOCS / "appendix.html")
+
 (ROOT / "docs/.nojekyll").write_text("")
-
-# landing page for mohammadi.cv/neurips
-LANDING = f"""<!doctype html><html lang="en"><head><meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1"><title>NeurIPS Atlas</title>
-<meta name="description" content="Maps and numbers on what NeurIPS papers are about and how the conference changes.">
-<meta property="og:title" content="NeurIPS Atlas"><meta property="og:image" content="{SITE}figures/atlas_static.png">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-<style>{CSS}
-.cards{{display:grid;gap:14px;margin-top:20px}}.card{{display:block;border:1px solid var(--line);border-radius:12px;padding:18px;
-text-decoration:none;color:var(--ink)}}.card:hover{{border-color:var(--accent)}}.card b{{font-size:1.15rem}}
-.card span{{display:block;color:var(--muted);margin-top:4px}}
-.shot img{{width:100%;border:2px solid var(--accent);border-radius:14px;margin-top:10px}}.soon{{opacity:.6;pointer-events:none}}</style></head><body>
-<main><h1>NeurIPS Atlas</h1><p>What NeurIPS papers are about, and how that changes each year.
-Made by Hadi Mohammadi from the public paper lists on neurips.cc.</p>
-<a href="2026/atlas.html" class="shot"><img src="2026/figures/atlas_screenshot.png" alt="Map of all NeurIPS 2026 papers"></a>
-<p style="text-align:center"><a class="btn main" href="2026/atlas.html">Open the NeurIPS 2026 map</a>
-<a class="btn alt" href="2026/papers.html">Search all papers</a></p>
-<div class="cards">
-<a class="card" href="2026/"><b>NeurIPS 2026: the story</b><span>All 9,110 papers on one map, and what changed since 2025.</span></a>
-<a class="card soon" href="#"><b>NeurIPS through the years</b><span>Coming soon: how topics, submissions and countries changed since 2014.</span></a>
-</div>
-<footer>Code and data: <a href="https://github.com/mohammadi-hadi/neurips">github.com/mohammadi-hadi/neurips</a> ·
-<a href="https://mohammadi.cv">mohammadi.cv</a></footer></main></body></html>"""
-(ROOT / "docs/index.html").write_text(LANDING)
+LANDING = f"""{atlas_nav("2026/")}<main id="main"><section class="hero"><div class="container">
+<span class="kicker">Project</span><h1>NeurIPS Atlas</h1>
+<p class="section-lede">What NeurIPS papers are about, and how that changes each year. Made from the public paper lists on neurips.cc.</p>
+</div></section>
+<section class="section"><div class="container">
+<a href="2026/atlas.html"><img src="2026/figures/atlas_clusters.png" alt="Map of all NeurIPS 2026 papers"
+ style="width:100%;border:1px solid var(--rule);border-radius:10px;background:#fff"></a>
+<p style="text-align:center;margin-top:16px"><a class="btn" href="2026/atlas.html">Open the NeurIPS 2026 map</a>
+<a class="btn btn-ghost" href="2026/papers.html">Search all papers</a></p>
+<div class="prose" style="margin-top:28px">
+<h2>Editions</h2>
+<p><a href="2026/"><strong>NeurIPS 2026: the story.</strong></a> All 9,110 papers on one map, and what changed since 2025.</p>
+<p><strong>NeurIPS through the years.</strong> Coming soon: how topics, submissions and countries changed since 2014.</p>
+</div></div></section></main>"""
+(ROOT / "docs/index.html").write_text(page("NeurIPS Atlas", "Maps and numbers on what NeurIPS papers are about.",
+                                           "https://mohammadi.cv/neurips/", LANDING))
 print("wrote", ROOT / "docs/index.html")

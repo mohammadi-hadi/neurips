@@ -5,6 +5,7 @@ import json
 from pathlib import Path
 import pandas as pd
 from common import load_papers, OPENREVIEW_NOTE
+from site_template import page as site_page, atlas_nav
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT, DOCS = ROOT / "outputs", ROOT / "docs/2026"
@@ -22,48 +23,38 @@ d["area"] = d["broad"].map(broad_name)
 d["subtopic"] = d["fine"].map(fine_name)
 d["status"] = d["decision"].map({"oral": "Oral", "spotlight": "Spotlight", "poster": "Poster"}).fillna("Decision not yet public")
 d["city"] = d["site"].where(d["site"].isin(list(tz)), "")
-cols = ["title_display", "authors", "area", "subtopic", "status", "city", "when", "url", "arxiv", "openreview", "pdf"]
+cols = ["title_display", "authors", "area", "subtopic", "status", "city", "when", "url", "arxiv", "openreview", "pdf", "or_link"]
 idx = d[cols].rename(columns={"title_display": "title"}).sort_values("title").fillna("")
-idx.to_csv(OUT / "papers_index.csv", index=False)
+csv = idx.drop(columns=["openreview", "pdf"]).rename(columns={"or_link": "openreview"})
+csv["pdf"] = csv["openreview"].str.replace("/forum?id=", "/pdf?id=", regex=False)
+csv.to_csv(OUT / "papers_index.csv", index=False)  # OpenReview columns stay empty until the papers are public
 
 rows = [[r.title, r.authors[:180], r.area, r.subtopic, r.status, r.city, r.when, r.url.rsplit("/", 1)[-1],
-         r.openreview.rsplit("=", 1)[-1] if r.openreview else ""] for r in idx.itertuples()]
+         r.or_link.rsplit("=", 1)[-1] if r.or_link else ""] for r in idx.itertuples()]
 areas = sorted(idx["area"].unique())
 
-page = """<!doctype html><html lang="en"><head><meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>NeurIPS 2026 paper index</title>
-<meta name="description" content="Search all 9,110 NeurIPS 2026 papers and find their links.">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-<style>
-:root{--ink:#1f2a44;--muted:#5c677d;--accent:#d9480f;--bg:#ffffff;--card:#f6f7f9;--line:#e3e6ea}
-@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--ink:#e8ebf1;--muted:#a3acbd;--accent:#ff8a4c;--bg:#12151c;--card:#1b2029;--line:#2a313d}}
-*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 Inter,system-ui,sans-serif}
-nav{border-bottom:1px solid var(--line)}nav div{max-width:1100px;margin:0 auto;padding:10px 16px;display:flex;gap:18px;flex-wrap:wrap;font-size:15px}
-nav a{color:var(--muted);text-decoration:none}nav a:hover{color:var(--accent)}
-nav a.map{background:var(--accent);color:#fff;padding:3px 10px;border-radius:7px;font-weight:600}
-main{max-width:1100px;margin:0 auto;padding:20px 16px 60px}h1{font-size:1.8rem;margin:.3em 0}
-.controls{display:flex;gap:8px;flex-wrap:wrap;margin:14px 0}
-input,select{font:inherit;padding:8px 10px;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--ink)}
-input{flex:1;min-width:220px}
-.p{border-bottom:1px solid var(--line);padding:10px 0}.p .t{font-weight:600}
-.p .m{color:var(--muted);font-size:13px}.p .a{font-size:13px;margin-top:3px}
-.p a{color:var(--accent);margin-right:12px;text-decoration:none;font-weight:600}.p a:hover{text-decoration:underline}
-.tag{display:inline-block;font-size:12px;padding:1px 7px;border-radius:10px;background:var(--card);margin-right:6px}
-.tag.o{background:#c92a2a;color:#fff}.tag.s{background:#f08c00;color:#fff}
-#more{margin-top:14px;padding:8px 14px;border:0;border-radius:8px;background:var(--accent);color:#fff;font:inherit;cursor:pointer}
-</style></head><body>
-<nav><div><a href="../"><b>NeurIPS Atlas</b></a><a href="index.html">2026</a><a class="map" href="atlas.html">Open the map</a>
-<a href="papers.html">All papers</a><a href="charts/treemap.html">All topics</a><a href="appendix.html">Appendix</a>
-<a href="https://github.com/mohammadi-hadi/neurips">Code &amp; data</a></div></nav>
-<main><h1>All NeurIPS 2026 papers</h1>
-<p>Search by title or author, or filter by area, city and status. Each paper links to its NeurIPS page, an arXiv search, OpenReview and the PDF. Times are local.</p>
-<p class="m">* __NOTE__</p>
+CSS = """<style>
+.controls{display:flex;gap:8px;flex-wrap:wrap;margin:18px 0}
+.controls input,.controls select{font:inherit;font-size:var(--step--1);padding:8px 10px;border:1px solid var(--rule);border-radius:8px;background:var(--surface);color:var(--ink)}
+.controls input{flex:1;min-width:220px}
+.p{border-bottom:1px solid var(--rule);padding:12px 0}.p .t{font-weight:600;line-height:1.4}
+.p .m,.meta{color:var(--ink-3);font-size:var(--step--1)}.p .a{font-size:var(--step--1);margin-top:4px}
+.p .a a{margin-right:14px;font-weight:500}
+.tag{display:inline-block;font-family:var(--mono);font-size:.7rem;padding:1px 7px;border-radius:10px;background:var(--paper-deep);margin-right:6px}
+.tag.o{background:var(--accent);color:#fff}.tag.s{background:var(--accent-hover);color:#fff}
+#more{margin-top:16px}
+</style>"""
+BODY = """__NAV__<main id="main"><article class="post"><header class="post-head"><div class="post-wrap wide">
+<p class="post-crumbs"><a href="../">NeurIPS Atlas</a><span class="sep">/</span><a href="index.html">2026</a></p>
+<h1>All __N__ NeurIPS 2026 papers</h1>
+<p>Search by title or author, or filter by area, city and status. Each paper links to its NeurIPS page and an arXiv search. Times are local.</p>
+<p class="meta">__NOTE__</p>
 <div class="controls"><input id="q" type="search" placeholder="Search title or author…" aria-label="search">
 <select id="area" aria-label="area"><option value="">All areas</option>__AREAS__</select>
 <select id="city" aria-label="city"><option value="">All cities</option><option>Sydney</option><option>Atlanta</option><option>Paris</option></select>
 <select id="status" aria-label="status"><option value="">Any status</option><option>Oral</option><option>Spotlight</option><option>Poster</option><option>Decision not yet public</option></select></div>
-<div id="count" class="m"></div><div id="list"></div><button id="more">Show more</button></main>
+<div id="count" class="meta"></div><div id="list"></div><button id="more" class="btn">Show more</button>
+</div></header></article></main>
 <script>
 const D = __DATA__;
 const esc = s => s.replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
@@ -81,7 +72,7 @@ function more() {
     const ax = 'https://arxiv.org/search/?query=' + encodeURIComponent(r[0].replace(/[^\\w\\s-]/g, ' ')).replace(/%20/g, '+') + '&searchtype=title';
     const links = `<a href="https://neurips.cc/virtual/2026/poster/${r[7]}" target="_blank" rel="noopener">NeurIPS page</a>` +
       `<a href="${ax}" target="_blank" rel="noopener">Find on arXiv</a>` +
-      (r[8] ? `<a href="https://openreview.net/forum?id=${r[8]}" target="_blank" rel="noopener">OpenReview*</a><a href="https://openreview.net/pdf?id=${r[8]}" target="_blank" rel="noopener">PDF*</a>` : '');
+      (r[8] ? `<a href="https://openreview.net/forum?id=${r[8]}" target="_blank" rel="noopener">OpenReview</a><a href="https://openreview.net/pdf?id=${r[8]}" target="_blank" rel="noopener">PDF</a>` : '');
     return `<div class="p"><div class="t">${tag}${esc(r[0])}</div><div class="m">${esc(r[1])}</div>` +
       `<div class="a"><span class="tag">${esc(r[2])}</span><span class="tag">${esc(r[3])}</span>${esc(where)}</div><div class="a">${links}</div></div>`;
   }).join('');
@@ -94,9 +85,11 @@ function more() {
 document.getElementById('more').addEventListener('click', more);
 const params = new URLSearchParams(location.search); if (params.get('q')) document.getElementById('q').value = params.get('q');
 filter();
-</script></body></html>"""
-page = (page.replace("__N__", f"{len(rows):,}").replace("__NOTE__", OPENREVIEW_NOTE)
+</script>"""
+body = (BODY.replace("__NAV__", atlas_nav()).replace("__N__", f"{len(rows):,}").replace("__NOTE__", OPENREVIEW_NOTE)
         .replace("__AREAS__", "".join(f"<option>{a}</option>" for a in areas))
         .replace("__DATA__", json.dumps(rows, ensure_ascii=False, separators=(",", ":"))))
-(DOCS / "papers.html").write_text(page)
+(DOCS / "papers.html").write_text(site_page(
+    "All NeurIPS 2026 papers", "Search all 9,110 NeurIPS 2026 papers and find their links.",
+    "https://mohammadi.cv/neurips/2026/papers.html", body, extra_head=CSS))
 print("wrote docs/papers.html,", len(rows), "papers,", sum(1 for r in rows if r[8]), "with OpenReview links")
