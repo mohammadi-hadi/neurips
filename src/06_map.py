@@ -48,6 +48,9 @@ plot = datamapplot.create_interactive_plot(
     initial_zoom_fraction=0.95,
 )
 plot.save(str(DOCS / "atlas.html"))
+# pin the CDN libraries the page loads, so a future "latest" release cannot break it
+page = (DOCS / "atlas.html").read_text().replace("apache-arrow@latest", "apache-arrow@21.2.0")
+(DOCS / "atlas.html").write_text(page)
 
 fig, ax = datamapplot.create_plot(
     coords, broad_lab, title="NeurIPS 2026 paper atlas",
