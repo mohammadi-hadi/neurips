@@ -10,7 +10,7 @@ P, OUT, DOCS = ROOT / "data/processed", ROOT / "outputs", ROOT / "docs"
 (OUT / "figures").mkdir(parents=True, exist_ok=True)
 DOCS.mkdir(exist_ok=True)
 
-df = pd.read_pickle(P / "papers_clustered.pkl")
+df = pd.read_parquet(P / "papers_clustered.parquet")
 labels = json.load(open(ROOT / "data/labels/labels.json"))
 fine_name = {int(k): v["name"] for k, v in labels["fine"].items()}
 broad_name = {int(k): v["name"] for k, v in labels["broad"].items()}
@@ -31,7 +31,7 @@ extra = pd.DataFrame({
 marker = np.where(d["decision"].isin(["oral", "spotlight"]), 6, 2)
 
 plot = datamapplot.create_interactive_plot(
-    coords, broad_lab, fine_lab,
+    coords, fine_lab, broad_lab,  # finest layer first
     hover_text=hover,
     extra_point_data=extra,
     hover_text_html_template="""<div style="max-width:420px">
