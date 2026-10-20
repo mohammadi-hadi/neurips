@@ -6,7 +6,7 @@ OpenReview and PDF links will appear here once NeurIPS makes the 2026 papers pub
 
 ## LLM Behavior & Safety: 796 papers (8.7% of all, 2025: 7.8%)
 
-Interpretability, evaluation, sycophancy, hallucination, jailbreaks, unlearning, knowledge editing, steering and watermarking of language models, plus diffusion LMs, audio LMs and recommendation.
+Interpretability, evaluation, sycophancy, hallucination, jailbreaks, unlearning, knowledge editing, steering and watermarking of language models, plus AI governance and position papers.
 
 | Subtopic | What the papers do | 2026 | share 2025 → 2026 | ★ |
 |---|---|---|---|---|
@@ -74,7 +74,7 @@ Feed-forward and Gaussian-splatting 3D reconstruction, 3D scene grounding, LiDAR
 
 ## Efficient LLMs & Architectures: 771 papers (8.5% of all, 2025: 8.4%)
 
-Transformer theory, sparse attention, KV cache, quantization, pruning, speculative decoding, PEFT, model merging, scaling laws and LLM-written GPU kernels.
+Transformer theory, sparse attention, KV cache, quantization, pruning, speculative decoding, PEFT, model merging, scaling laws, diffusion language models and LLM-written GPU kernels.
 
 | Subtopic | What the papers do | 2026 | share 2025 → 2026 | ★ |
 |---|---|---|---|---|
@@ -102,7 +102,7 @@ Transformer theory, sparse attention, KV cache, quantization, pruning, speculati
 
 ## DL Theory & Neuroscience: 635 papers (7.0% of all, 2025: 7.1%)
 
-Learning dynamics and generalization theory, representation geometry, attribution and sparse autoencoders, plus brain decoding, spiking networks, quantum ML, verification and neural combinatorial optimization.
+Learning dynamics and generalization theory, representation geometry, attribution and sparse autoencoders, plus brain decoding, spiking networks, quantum ML and verification.
 
 | Subtopic | What the papers do | 2026 | share 2025 → 2026 | ★ |
 |---|---|---|---|---|
@@ -204,7 +204,7 @@ Federated learning, differential privacy, fairness, conformal prediction, calibr
 
 ## Vision-Language & Speech Models: 550 papers (6.0% of all, 2025: 6.7%)
 
-Visual reasoning, image-text alignment, multimodal fusion, domain-specific benchmarks and test-time adaptation for vision-language models.
+Visual reasoning, image-text alignment, multimodal fusion, benchmarks and test-time adaptation for vision-language models, plus speech and audio language models.
 
 | Subtopic | What the papers do | 2026 | share 2025 → 2026 | ★ |
 |---|---|---|---|---|
@@ -368,7 +368,7 @@ Single-cell, protein, molecule and chemistry models alongside causal discovery a
 
 ## Optimization & Statistics: 336 papers (3.7% of all, 2025: 4.4%)
 
-Optimizer design such as Muon and Adam, stochastic and convex convergence theory, robust regression and Bayesian optimization.
+Optimizer design such as Muon and Adam, stochastic and convex convergence theory, robust regression, Bayesian optimization and neural combinatorial optimization.
 
 | Subtopic | What the papers do | 2026 | share 2025 → 2026 | ★ |
 |---|---|---|---|---|
@@ -435,7 +435,7 @@ Time series forecasting models, irregular and continuous-time sequences, weather
 
 ## Graph Learning & Recommendation: 195 papers (2.1% of all, 2025: 3.0%)
 
-Graph neural network architectures, graph foundation models and generative models for graphs and hypergraphs.
+Graph neural network architectures, graph foundation models, generative models for graphs and hypergraphs, and sequential and generative recommendation.
 
 | Subtopic | What the papers do | 2026 | share 2025 → 2026 | ★ |
 |---|---|---|---|---|

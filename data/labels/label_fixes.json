@@ -27,10 +27,33 @@
     "7": "Vision-Language & Speech Models"
   },
   "broad_moves": {
-    "135": {"to": 2, "reason": "governance and position papers, not agents (only about a quarter mention agents)"},
-    "12": {"to": 18, "reason": "diffusion language models are a model architecture, not LLM behaviour or safety"},
-    "144": {"to": 7, "reason": "speech and audio language models sit with the other multimodal models"},
-    "56": {"to": 4, "reason": "recommendation sits with graph learning (renamed Graph Learning & Recommendation)"},
-    "127": {"to": 3, "reason": "neural combinatorial optimisation belongs with optimisation, not theory and neuroscience"}
+    "135": {
+      "to": 2,
+      "reason": "governance and position papers, not agents (only about a quarter mention agents)"
+    },
+    "12": {
+      "to": 18,
+      "reason": "diffusion language models are a model architecture, not LLM behaviour or safety"
+    },
+    "144": {
+      "to": 7,
+      "reason": "speech and audio language models sit with the other multimodal models"
+    },
+    "56": {
+      "to": 4,
+      "reason": "recommendation sits with graph learning (renamed Graph Learning & Recommendation)"
+    },
+    "127": {
+      "to": 3,
+      "reason": "neural combinatorial optimisation belongs with optimisation, not theory and neuroscience"
+    }
+  },
+  "broad_descriptions": {
+    "2": "Interpretability, evaluation, sycophancy, hallucination, jailbreaks, unlearning, knowledge editing, steering and watermarking of language models, plus AI governance and position papers.",
+    "3": "Optimizer design such as Muon and Adam, stochastic and convex convergence theory, robust regression, Bayesian optimization and neural combinatorial optimization.",
+    "4": "Graph neural network architectures, graph foundation models, generative models for graphs and hypergraphs, and sequential and generative recommendation.",
+    "5": "Learning dynamics and generalization theory, representation geometry, attribution and sparse autoencoders, plus brain decoding, spiking networks, quantum ML and verification.",
+    "7": "Visual reasoning, image-text alignment, multimodal fusion, benchmarks and test-time adaptation for vision-language models, plus speech and audio language models.",
+    "18": "Transformer theory, sparse attention, KV cache, quantization, pruning, speculative decoding, PEFT, model merging, scaling laws, diffusion language models and LLM-written GPU kernels."
   }
 }

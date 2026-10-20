@@ -26,6 +26,8 @@ for k, name in fixes["fine_renames"].items():
     fine[int(k)]["name"] = name
 for k, name in fixes["broad_renames"].items():
     broad[int(k)]["name"] = name
+for k, text in fixes.get("broad_descriptions", {}).items():
+    broad[int(k)]["one_line"] = text
 moves = {k: v["to"] for k, v in fixes["broad_moves"].items()}
 labels = {"fine": {str(k): {kk: v[kk] for kk in ("name", "one_line", "keywords", "coherence")} for k, v in sorted(fine.items())},
           "broad": {str(k): v for k, v in sorted(broad.items())},

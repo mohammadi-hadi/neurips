@@ -1837,19 +1837,19 @@
   },
   "2": {
    "name": "LLM Behavior & Safety",
-   "one_line": "Interpretability, evaluation, sycophancy, hallucination, jailbreaks, unlearning, knowledge editing, steering and watermarking of language models, plus diffusion LMs, audio LMs and recommendation."
+   "one_line": "Interpretability, evaluation, sycophancy, hallucination, jailbreaks, unlearning, knowledge editing, steering and watermarking of language models, plus AI governance and position papers."
   },
   "3": {
    "name": "Optimization & Statistics",
-   "one_line": "Optimizer design such as Muon and Adam, stochastic and convex convergence theory, robust regression and Bayesian optimization."
+   "one_line": "Optimizer design such as Muon and Adam, stochastic and convex convergence theory, robust regression, Bayesian optimization and neural combinatorial optimization."
   },
   "4": {
    "name": "Graph Learning & Recommendation",
-   "one_line": "Graph neural network architectures, graph foundation models and generative models for graphs and hypergraphs."
+   "one_line": "Graph neural network architectures, graph foundation models, generative models for graphs and hypergraphs, and sequential and generative recommendation."
   },
   "5": {
    "name": "DL Theory & Neuroscience",
-   "one_line": "Learning dynamics and generalization theory, representation geometry, attribution and sparse autoencoders, plus brain decoding, spiking networks, quantum ML, verification and neural combinatorial optimization."
+   "one_line": "Learning dynamics and generalization theory, representation geometry, attribution and sparse autoencoders, plus brain decoding, spiking networks, quantum ML and verification."
   },
   "6": {
    "name": "Robotics & Embodied AI",
@@ -1857,7 +1857,7 @@
   },
   "7": {
    "name": "Vision-Language & Speech Models",
-   "one_line": "Visual reasoning, image-text alignment, multimodal fusion, domain-specific benchmarks and test-time adaptation for vision-language models."
+   "one_line": "Visual reasoning, image-text alignment, multimodal fusion, benchmarks and test-time adaptation for vision-language models, plus speech and audio language models."
   },
   "8": {
    "name": "LLM Reasoning & Retrieval",
@@ -1901,7 +1901,7 @@
   },
   "18": {
    "name": "Efficient LLMs & Architectures",
-   "one_line": "Transformer theory, sparse attention, KV cache, quantization, pruning, speculative decoding, PEFT, model merging, scaling laws and LLM-written GPU kernels."
+   "one_line": "Transformer theory, sparse attention, KV cache, quantization, pruning, speculative decoding, PEFT, model merging, scaling laws, diffusion language models and LLM-written GPU kernels."
   },
   "19": {
    "name": "Biomolecules & Causal Discovery",
