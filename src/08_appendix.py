@@ -15,9 +15,9 @@ d26, d25 = df[df.year == 2026], df[df.year == 2025]
 n26, n25 = d26.fine.value_counts(), d25.fine.value_counts()
 b26, b25 = d26.broad.value_counts(), d25.broad.value_counts()
 
-lines = ["# Appendix: all research areas and subtopics", "",
-         f"NeurIPS 2026: {len(d26):,} papers in 20 areas and 150 subtopics. Shares are % of all papers of that year; "
-         f"2025 ({len(d25):,} papers) is mapped onto the 2026 subtopics. ★ = orals + spotlights in 2026.", "",
+lines = ["# All areas and topics", "",
+         f"All 20 areas and 150 topics of NeurIPS 2026 ({len(d26):,} papers). For each topic you see what the papers do, "
+         f"how many there are, and its share of all papers in 2025 and 2026. ★ is the number of orals and spotlights.", "",
          f"\\* {OPENREVIEW_NOTE}", ""]
 for b in sorted(broad, key=lambda b: -b26.get(b, 0)):
     s26, s25 = 100 * b26.get(b, 0) / len(d26), 100 * b25.get(b, 0) / len(d25)

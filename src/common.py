@@ -36,8 +36,8 @@ def openreview_pdf(forum):
     return forum.replace("/forum?id=", "/pdf?id=") if forum else ""
 
 
-OPENREVIEW_NOTE = ("NeurIPS 2026 papers are not yet public on OpenReview (checked 20 October 2026); "
-                   "the OpenReview and PDF links are the official ones and work once the papers are released.")
+OPENREVIEW_NOTE = ("NeurIPS has not made the 2026 papers public on OpenReview yet (checked 20 October 2026). "
+                   "Those links will work once they do.")
 
 
 def arxiv_search(title):

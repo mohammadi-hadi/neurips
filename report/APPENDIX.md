@@ -1,8 +1,8 @@
-# Appendix: all research areas and subtopics
+# All areas and topics
 
-NeurIPS 2026: 9,110 papers in 20 areas and 150 subtopics. Shares are % of all papers of that year; 2025 (5,859 papers) is mapped onto the 2026 subtopics. ★ = orals + spotlights in 2026.
+All 20 areas and 150 topics of NeurIPS 2026 (9,110 papers). For each topic you see what the papers do, how many there are, and its share of all papers in 2025 and 2026. ★ is the number of orals and spotlights.
 
-\* NeurIPS 2026 papers are not yet public on OpenReview (checked 20 October 2026); the OpenReview and PDF links are the official ones and work once the papers are released.
+\* NeurIPS has not made the 2026 papers public on OpenReview yet (checked 20 October 2026). Those links will work once they do.
 
 ## LLM Behavior & Safety — 943 papers (10.4%, 2025: 9.1%)
 

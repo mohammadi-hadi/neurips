@@ -117,8 +117,8 @@ def field_colorbar(fig, box, fs=9):
 fig = plt.figure(figsize=(12, 12.6))
 draw_field(fig.add_axes([0.0, 0.03, 1.0, 0.9]))
 field_colorbar(fig, [0.68, 0.07, 0.28, 0.014])
-frame(fig, "Where machine learning moved between NeurIPS 2025 and 2026",
-      "The 2026 map, coloured by how each subtopic's share of papers changed since 2025. Red: grew; blue: shrank.")
+frame(fig, "Where NeurIPS moved between 2025 and 2026",
+      "Red topics grew their share of papers. Blue ones shrank.")
 fig.savefig(FIG / "field_moved.png"); plt.close(fig)
 
 # ================= 2. the agent family =================
@@ -128,7 +128,7 @@ c26 = np.array([(d26.fine == f).sum() for f in fam]); c25 = np.array([(d25.fine 
 n25, n26 = int((d25.broad == agent_b).sum()), int((d26.broad == agent_b).sum())
 all_faster = bool((c26 / np.maximum(c25, 1)).min() > growth_conf)
 agent_title = (f"Agent papers went from {n25} to {n26}"
-               + ("; every agent subtopic grew faster than the conference" if all_faster else ""))
+               + (". Every agent topic grew faster than the conference." if all_faster else ""))
 
 
 def draw_agents(ax, fs=10.5, lab_fs=9.5):
@@ -150,8 +150,8 @@ def draw_agents(ax, fs=10.5, lab_fs=9.5):
 fig, ax = plt.subplots(figsize=(11, 7))
 fig.subplots_adjust(top=0.86, bottom=0.14, left=0.36, right=0.95)
 draw_agents(ax)
-frame(fig, agent_title, f"Papers per subtopic in the LLM Agents area. The whole conference grew "
-      f"{growth_conf:.2f}x; the agent area grew {n26 / n25:.1f}x.")
+frame(fig, agent_title, f"Number of papers per agent topic. The whole conference grew {growth_conf:.1f}x. "
+      f"Agent papers grew {n26 / n25:.1f}x.")
 fig.savefig(FIG / "agents_family.png"); plt.close(fig)
 
 # ================= 3. slope chart of areas =================
@@ -195,8 +195,8 @@ ax.set_xlim(-0.95, 1.95); ax.axis("off")
 top_y = max(yl.max(), yr.max()) + 0.45
 ax.text(0, top_y, "2025", ha="center", fontsize=12, fontweight="bold", color=INK)
 ax.text(1, top_y, "2026", ha="center", fontsize=12, fontweight="bold", color=INK)
-frame(fig, "LLM agents doubled their share; 3D vision, trustworthy ML and graph learning gave ground",
-      "Share of accepted papers per research area. Orange: up by more than 0.5 points; blue: down by more than 0.5.")
+frame(fig, "LLM agents doubled their share. 3D vision and graph learning shrank.",
+      "Share of all papers per area. Orange: up more than half a point. Blue: down more than half a point. Grey: smaller change.")
 fig.savefig(FIG / "areas_slope.png"); plt.close(fig)
 
 # ================= 4. subtopics that gained and lost the most share =================
@@ -221,9 +221,9 @@ for ax, t, col, ttl in [(a1, up.iloc[::-1], ACC, "Gained most share"), (a2, dn.i
     ax.set_xlabel("% of accepted papers")
     grid_x(ax)
 a1.legend(frameon=False, loc="lower right", fontsize=9)
-frame(fig, "Agent benchmarks, reliability and memory gained the most ground",
-      "Subtopics with the largest change in share of papers (grey 2025 → coloured 2026; label = share ratio). "
-      "Subtopics are defined on 2026 papers; each 2025 paper is assigned to its nearest one.")
+frame(fig, "Agent topics gained the most ground",
+      "Grey dot: 2025. Coloured dot: 2026. The label shows how many times bigger or smaller the share got "
+      "(paper counts for topics that were tiny in 2025).")
 fig.savefig(FIG / "movers_x.png"); plt.close(fig)
 
 # ================= 5. cities =================
@@ -241,12 +241,12 @@ for c in ["Sydney", "Atlanta", "Paris"]:
     ax.scatter(lean[c], yy, s=70, color=CITY[c], label=f"{c} (overall {avg[c]:.0f}%)", zorder=3,
                edgecolor=BG, linewidths=0.9)
 ax.set_yticks(yy, lean.index)
-ax.set_xlabel("percentage points above or below the city's overall share")
+ax.set_xlabel("points above or below the overall share")
 ax.legend(frameon=False, loc="lower center", bbox_to_anchor=(0.4, 1.0), ncol=3, fontsize=10)
 grid_x(ax)
-frame(fig, "Vision and robotics are mostly in Sydney; theory leans to Paris",
-      "Bandits and trustworthy ML lean to both Paris and Atlanta. Deviation from the overall split of "
-      f"{avg['Sydney']:.0f}% Sydney, {avg['Atlanta']:.0f}% Atlanta, {avg['Paris']:.0f}% Paris.")
+frame(fig, "Vision and robotics went to Sydney. Theory leans to Paris.",
+      f"How far each area is from the overall split: {avg['Sydney']:.0f}% Sydney, "
+      f"{avg['Atlanta']:.0f}% Atlanta, {avg['Paris']:.0f}% Paris.")
 fig.savefig(FIG / "cities_lean.png"); plt.close(fig)
 
 # ================= 6. vocabulary, orals, organisations, countries =================
@@ -255,12 +255,12 @@ fig, ax = plt.subplots(figsize=(10, 9.5))
 fig.subplots_adjust(top=0.87, bottom=0.1, left=0.36, right=0.95)
 ax.barh(v.term, v.delta_pp, color=[ACC if x > 0 else COOL for x in v.delta_pp], height=0.65)
 for i, (p26, dlt) in enumerate(zip(v.pct_2026, v.delta_pp)):
-    ax.text(dlt + 0.15 if dlt >= 0 else 0.15, i, f"{p26:.0f}% of papers", va="center", fontsize=8.5, color=MUTED)
+    ax.text(dlt + 0.15 if dlt >= 0 else 0.15, i, f"{p26:.0f}%", va="center", fontsize=8.5, color=MUTED)
 ax.axvline(0, color="#9aa3b5", lw=1)
-ax.set_xlabel("change since 2025 (percentage points of papers whose title or abstract mentions the term)")
+ax.set_xlabel("change since 2025, in points")
 grid_x(ax)
-frame(fig, "Abstracts talk more about benchmarks and agents, and much less about efficiency",
-      "Share of papers whose title or abstract mentions each term, change 2025 → 2026 (label: 2026 share).")
+frame(fig, "More papers talk about benchmarks and agents. Fewer say 'efficient'.",
+      "Change since 2025 in the share of papers that use each term. The label is the 2026 share.")
 fig.savefig(FIG / "vocabulary_trends.png"); plt.close(fig)
 
 r = pd.DataFrame(S["highlight_rate_by_area"]).sort_values("rate_pct")
@@ -278,8 +278,7 @@ ax.set_xlabel("% of the area's papers selected as oral or spotlight")
 grid_x(ax)
 leader = r.iloc[-1]
 frame(fig, f"{leader.broad_name} papers get the most orals and spotlights",
-      "Share of each area's papers (with a published decision) selected as oral or spotlight. "
-      "Coloured only where the gap to the average is larger than chance would explain.")
+      "Share of each area's papers with a decision that became an oral or spotlight. Grey means the gap could be chance.")
 fig.savefig(FIG / "highlight_rate_by_area.png"); plt.close(fig)
 
 top = S["institutions_2026"][:20][::-1]
@@ -290,8 +289,8 @@ for i, t in enumerate(top):
     ax.text(t[1] + 4, i, str(t[1]), va="center", fontsize=9, color=MUTED)
 ax.set_xlabel("papers with at least one author from the organisation")
 grid_x(ax)
-frame(fig, f"{top[-1][0]} leads, with {top[-1][1]} papers",
-      "The 20 organisations on the most NeurIPS 2026 papers. Spellings are merged; counts are lower bounds.")
+frame(fig, f"{top[-1][0]} is on the most papers: {top[-1][1]}",
+      "The 20 organisations with the most NeurIPS 2026 papers.")
 fig.savefig(FIG / "top_institutions.png"); plt.close(fig)
 
 cc26 = {c: p_ for c, _, p_ in S["countries_2026"]}; cc25 = {c: p_ for c, _, p_ in S["countries_2025"]}
@@ -306,8 +305,8 @@ ax.set_yticks(yy, cs)
 ax.set_xlabel("% of papers (with a mapped affiliation) that have an author from the country")
 ax.legend(frameon=False, loc="lower right")
 grid_x(ax)
-frame(fig, f"USA {cc26['USA']:.0f}%, China {cc26['China']:.0f}%: China's share fell from {cc25['China']:.0f}%",
-      "Share of papers with at least one author affiliated in each country, 2025 → 2026.")
+frame(fig, f"The US is on {cc26['USA']:.0f}% of papers, China on {cc26['China']:.0f}%",
+      f"Share of papers with at least one author from each country. China was at {cc25['China']:.0f}% in 2025.")
 fig.savefig(FIG / "countries.png"); plt.close(fig)
 
 # ================= 7. social cards, 1080 x 1350, large type =================
