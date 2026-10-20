@@ -1,0 +1,36 @@
+{
+  "note": "Corrections after an audit of the topic names against sampled titles (20 Oct 2026). Renames fix names that did not describe their papers; area moves put a topic in the area its papers belong to.",
+  "fine_renames": {
+    "133": "LLM Reasoning and Test-Time Scaling",
+    "135": "AI Governance, Position Papers and Human Oversight",
+    "21": "Multimodal Agents and Reasoning Benchmarks",
+    "12": "Diffusion Language Models",
+    "57": "LiDAR, Radar and Multi-Sensor Perception",
+    "73": "Vision Datasets, Benchmarks and Evaluation",
+    "54": "LLM-Driven Evolutionary Design and Discovery",
+    "6": "Continual Learning and Catastrophic Forgetting",
+    "76": "Self-Evolving Agents and Skill Learning",
+    "134": "LLM RL Training Dynamics and Stability",
+    "14": "Samplers and Diffusion-Based Sampling",
+    "38": "Molecular and Materials ML",
+    "109": "Bayesian Inference and Gaussian Processes",
+    "15": "Goal-Conditioned and Reward-Free RL",
+    "105": "LLM Agent Safety and Security",
+    "145": "LLM Hallucination and Uncertainty",
+    "87": "Graph Neural Networks",
+    "39": "Efficient and Long Video Diffusion",
+    "24": "Efficient Image Diffusion"
+  },
+  "broad_renames": {
+    "1": "Vision & Perception",
+    "4": "Graph Learning & Recommendation",
+    "7": "Vision-Language & Speech Models"
+  },
+  "broad_moves": {
+    "135": {"to": 2, "reason": "governance and position papers, not agents (only about a quarter mention agents)"},
+    "12": {"to": 18, "reason": "diffusion language models are a model architecture, not LLM behaviour or safety"},
+    "144": {"to": 7, "reason": "speech and audio language models sit with the other multimodal models"},
+    "56": {"to": 4, "reason": "recommendation sits with graph learning (renamed Graph Learning & Recommendation)"},
+    "127": {"to": 3, "reason": "neural combinatorial optimisation belongs with optimisation, not theory and neuroscience"}
+  }
+}

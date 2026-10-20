@@ -691,7 +691,7 @@
 },
 {
 "raw": "INRIA",
-"canonical": "INRIA",
+"canonical": "Inria",
 "country": "France",
 "sector": "government/nonprofit"
 },
@@ -1371,7 +1371,7 @@
 "raw": "Institute of automation, Chinese Academy of Sciences",
 "canonical": "Chinese Academy of Sciences",
 "country": "China",
-"sector": "academia"
+"sector": "government/nonprofit"
 },
 {
 "raw": "USC",
@@ -1837,7 +1837,7 @@
 },
 {
 "raw": "the University of Hong Kong, University of Hong Kong",
-"canonical": "HKU",
+"canonical": "University of Hong Kong",
 "country": "Hong Kong",
 "sector": "academia"
 },
@@ -2359,7 +2359,7 @@
 },
 {
 "raw": "City University of Hong Kong (Dongguan)",
-"canonical": "City University of Hong Kong",
+"canonical": "City University of Hong Kong (Dongguan)",
 "country": "China",
 "sector": "academia"
 },
@@ -2673,7 +2673,7 @@
 "raw": "Institute of automation, Chinese academy of science",
 "canonical": "Chinese Academy of Sciences",
 "country": "China",
-"sector": "academia"
+"sector": "government/nonprofit"
 },
 {
 "raw": "International Business Machines",
@@ -2895,7 +2895,7 @@
 "raw": "Institute of Information Engineering, Chinese Academy of Sciences",
 "canonical": "Chinese Academy of Sciences",
 "country": "China",
-"sector": "academia"
+"sector": "government/nonprofit"
 },
 {
 "raw": "Chongqing University",
@@ -2977,7 +2977,7 @@
 },
 {
 "raw": "Pengcheng Laboratory",
-"canonical": "Pengcheng Laboratory",
+"canonical": "Peng Cheng Laboratory",
 "country": "China",
 "sector": "government/nonprofit"
 },
@@ -3039,7 +3039,7 @@
 "raw": "Shenzhen Institutes of Advanced Technology, Chinese Academy of Sciences, Chinese Academy of Sciences",
 "canonical": "Chinese Academy of Sciences",
 "country": "China",
-"sector": "academia"
+"sector": "government/nonprofit"
 },
 {
 "raw": "CMU & MBZUAI",
@@ -3159,7 +3159,7 @@
 "raw": "Shenzhen Institutes of Advanced Technology, Chinese Academy of Sciences",
 "canonical": "Chinese Academy of Sciences",
 "country": "China",
-"sector": "academia"
+"sector": "government/nonprofit"
 },
 {
 "raw": "North Carolina State University",
@@ -3285,7 +3285,7 @@
 "raw": "Institute of Software, Chinese Academy of Sciences",
 "canonical": "Chinese Academy of Sciences",
 "country": "China",
-"sector": "academia"
+"sector": "government/nonprofit"
 },
 {
 "raw": "Pohang University of Science and Technology",
@@ -3483,7 +3483,7 @@
 "raw": ", Chinese Academy of Sciences",
 "canonical": "Chinese Academy of Sciences",
 "country": "China",
-"sector": "academia"
+"sector": "government/nonprofit"
 },
 {
 "raw": "The Hong Kong Polytechnic Univ",
@@ -3951,7 +3951,7 @@
 "raw": "Mila - Quebec AI Institute",
 "canonical": "Mila",
 "country": "Canada",
-"sector": "government/nonprofit"
+"sector": "academia"
 },
 {
 "raw": "Vivo",
@@ -4135,9 +4135,9 @@
 },
 {
 "raw": "Applied AI Institute",
-"canonical": "Applied AI Institute",
-"country": "unknown",
-"sector": "unknown"
+"canonical": "Deakin University",
+"country": "Australia",
+"sector": "academia"
 },
 {
 "raw": "Shenzhen MSU-BIT University",
@@ -5793,7 +5793,7 @@
 "raw": "MILA",
 "canonical": "Mila",
 "country": "Canada",
-"sector": "government/nonprofit"
+"sector": "academia"
 },
 {
 "raw": "Mohamed bin Zayed University of Artificial Intelligence (MBZUAI)",
@@ -7027,7 +7027,7 @@
 },
 {
 "raw": "The Chinese University of Hong Kong (Shenzhen); National University of Singapore",
-"canonical": "CUHK (Shenzhen)",
+"canonical": "CUHK-Shenzhen",
 "country": "China",
 "sector": "academia"
 },
@@ -7197,6 +7197,30 @@
 "raw": "Cambridge, Alan Turing Institute",
 "canonical": "University of Cambridge",
 "country": "UK",
+"sector": "academia"
+},
+{
+"raw": "Northeastern University, China",
+"canonical": "Northeastern University (China)",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "Northeastern University (China)",
+"canonical": "Northeastern University (China)",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "Northeastern University, Shenyang",
+"canonical": "Northeastern University (China)",
+"country": "China",
+"sector": "academia"
+},
+{
+"raw": "Chinese University of Hong Kong, Shenzhen",
+"canonical": "CUHK-Shenzhen",
+"country": "China",
 "sector": "academia"
 }
 ]

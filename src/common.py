@@ -36,8 +36,12 @@ def openreview_pdf(forum):
     return forum.replace("/forum?id=", "/pdf?id=") if forum else ""
 
 
-OPENREVIEW_NOTE = ("NeurIPS has not made the 2026 papers public on OpenReview yet (checked 20 October 2026). "
-                   "Those links will work once they do.")
+# NeurIPS 2026 papers were still closed on OpenReview on 20 October 2026 ("You don't have permission to
+# read this forum"). Keep the OpenReview and PDF buttons hidden until they open, then set this to True
+# and rebuild (src/06_map.py, src/08_appendix.py, src/12_paper_index.py, src/09_build_site.py).
+OPENREVIEW_PUBLIC = False
+OPENREVIEW_NOTE = ("OpenReview and PDF links will appear here once NeurIPS makes the 2026 papers public on OpenReview. "
+                   "Until then, each paper's NeurIPS page has the link." if not OPENREVIEW_PUBLIC else "")
 
 
 def arxiv_search(title):
@@ -58,15 +62,69 @@ def display_titles():
     return out
 
 
-def load_papers():
+_ORGS = None
+
+
+def _org_lookup():
+    global _ORGS
+    if _ORGS is None:
+        rows = json.load(open(ROOT / "data/labels/institutions_map.json"))
+        by_raw = {r["raw"].strip(): (r["canonical"], r["country"], r["sector"]) for r in rows
+                  if r["canonical"].strip().lower() not in ("", "unknown")}
+        by_name = {}
+        for c, ct, se in by_raw.values():
+            by_name.setdefault(c.lower(), (c, ct, se))
+        _ORGS = (by_raw, by_name)
+    return _ORGS
+
+
+def orgs_of(raw):
+    """All organisations named in one affiliation string, e.g. 'MIT/Google' -> {MIT, Google}."""
+    by_raw, by_name = _org_lookup()
+    raw = raw.strip()
+    found = set()
+    hit = by_raw.get(raw) or by_name.get(raw.lower())
+    if hit:
+        found.add(hit)
+    # strings that join several organisations
+    for part in re.split(r"\s*(?:/|;|&|\band\b|\+)\s*", raw):
+        part = part.strip(" ,()")
+        h = by_raw.get(part) or by_name.get(part.lower())
+        if h:
+            found.add(h)
+    if not found:  # 'Department of X, Some University': try each comma part
+        for part in [p.strip() for p in raw.split(",")]:
+            h = by_raw.get(part) or by_name.get(part.lower())
+            if h:
+                found.add(h)
+    return found
+
+
+def paper_orgs(institutions):
+    """Organisations on a paper (institutions = ' | '-joined affiliation strings)."""
+    out = set()
+    for raw in str(institutions or "").split(" | "):
+        if raw.strip():
+            out |= orgs_of(raw)
+    return out
+
+
+def load_papers(drop_duplicates=True):
     """papers_clustered.parquet with schedule, links and titles refreshed from papers.parquet."""
     df = pd.read_parquet(P / "papers_clustered.parquet")
+    labels = json.load(open(ROOT / "data/labels/labels.json"))
+    moves = {int(k): int(v) for k, v in labels.get("broad_moves", {}).items()}
+    df["broad"] = [moves.get(int(f), int(b)) for f, b in zip(df["fine"], df["broad"])]
     base = pd.read_parquet(P / "papers.parquet").set_index("uid")
-    for c in ["site", "session", "room", "start", "end", "openreview", "scheduled", "decision"]:
+    for c in ["site", "session", "room", "start", "end", "openreview", "scheduled", "decision", "dup"]:
         if c in base.columns:
             df[c] = df["uid"].map(base[c])
     titles = display_titles()
     df["title_display"] = df["uid"].map(titles).fillna(df["title"])
     df["pdf"] = df["openreview"].map(openreview_pdf)
+    if drop_duplicates and "dup" in df.columns:
+        df = df[~df["dup"].astype(bool)]  # keeps the original row index, so it still lines up with embeddings.npy
     df["arxiv"] = df["title_display"].map(arxiv_search)
+    df["or_link"] = df["openreview"].fillna("") if OPENREVIEW_PUBLIC else ""
+    df["pdf_link"] = df["pdf"].fillna("") if OPENREVIEW_PUBLIC else ""
     return df

@@ -14,7 +14,7 @@ from sklearn.cluster import KMeans
 ROOT = Path(__file__).resolve().parents[1]
 P, OUT = ROOT / "data/processed", ROOT / "outputs"
 df = load_papers()
-X = np.load(P / "embeddings.npy")
+X = np.load(P / "embeddings.npy")[df.index.to_numpy()]  # rows of the papers kept by load_papers
 broad_name = {int(k): v["name"] for k, v in json.load(open(ROOT / "data/labels/labels.json"))["broad"].items()}
 is25, is26 = (df.year == 2025).to_numpy(), (df.year == 2026).to_numpy()
 

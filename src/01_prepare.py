@@ -138,6 +138,8 @@ for c in d26.columns:
 
 both = pd.concat([d26, d25], ignore_index=True)
 both = both[both["abstract"].str.len() > 50].reset_index(drop=True)
+# the same paper listed more than once in one year's export (e.g. 4 rows for one 2025 paper)
+both["dup"] = both.assign(k=both["title"].str.lower().str.replace(r"[^a-z0-9]", "", regex=True)).duplicated(["year", "k"])
 both["scheduled"] = both["scheduled"].astype(bool)
 both["n_sites"] = pd.to_numeric(both["n_sites"], errors="coerce").fillna(0).astype(int)
 for c in both.columns:
@@ -157,6 +159,7 @@ report = {
     "2026_site": s26["site"].value_counts().to_dict(),
     "2026_all_sites": s26["all_sites"].value_counts().to_dict(),
     "2025_rows": int((both.year == 2025).sum()),
+    "duplicates_flagged": both.groupby("year")["dup"].sum().astype(int).to_dict(),
 }
 json.dump(report, open(OUT / "prepare_report.json", "w"), indent=2)
 print(json.dumps(report, indent=2))

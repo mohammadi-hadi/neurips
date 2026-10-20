@@ -73,7 +73,7 @@
    "coherence": "mixed"
   },
   "6": {
-   "name": "Class-Incremental Continual Learning",
+   "name": "Continual Learning and Catastrophic Forgetting",
    "one_line": "These papers learn new classes or tasks one after another without forgetting old ones, often with LoRA adapters, merging or optimizers built for stability and plasticity.",
    "keywords": [
     "continual learning",
@@ -145,7 +145,7 @@
    "coherence": "tight"
   },
   "12": {
-   "name": "Decoding for Diffusion Language Models",
+   "name": "Diffusion Language Models",
    "one_line": "These papers develop masked and discrete diffusion language models, focusing on parallel decoding, speculative sampling, unmasking strategies and RL post-training.",
    "keywords": [
     "diffusion language models",
@@ -169,7 +169,7 @@
    "coherence": "tight"
   },
   "14": {
-   "name": "MCMC, SMC and Posterior Samplers",
+   "name": "Samplers and Diffusion-Based Sampling",
    "one_line": "These papers design and analyze samplers built on diffusion models, Langevin dynamics and sequential Monte Carlo, including posterior sampling for inverse problems.",
    "keywords": [
     "diffusion sampling",
@@ -181,7 +181,7 @@
    "coherence": "tight"
   },
   "15": {
-   "name": "Goal-Conditioned RL and Task Specifications",
+   "name": "Goal-Conditioned and Reward-Free RL",
    "one_line": "These papers train RL agents to reach goals or satisfy formal task specifications such as temporal logic and reward machines, often offline and with subgoal planning.",
    "keywords": [
     "goal-conditioned RL",
@@ -253,7 +253,7 @@
    "coherence": "tight"
   },
   "21": {
-   "name": "Multimodal Agents for Search and Deep Research",
+   "name": "Multimodal Agents and Reasoning Benchmarks",
    "one_line": "These papers evaluate and train multimodal LLM agents for web search, deep research, tool use and embodied decision-making, mostly through new benchmarks.",
    "keywords": [
     "multimodal agents",
@@ -289,7 +289,7 @@
    "coherence": "tight"
   },
   "24": {
-   "name": "Efficient High-Resolution Image Diffusion",
+   "name": "Efficient Image Diffusion",
    "one_line": "These papers make image diffusion models faster and higher-resolution through feature caching, few-step distillation, pixel-space diffusion and diffusion-based super-resolution.",
    "keywords": [
     "diffusion acceleration",
@@ -459,7 +459,7 @@
    "coherence": "tight"
   },
   "38": {
-   "name": "Chemical Reactions and Interatomic Potentials",
+   "name": "Molecular and Materials ML",
    "one_line": "These papers build models and benchmarks for chemistry tasks such as reaction prediction, retrosynthesis, mass-spectrometry retrieval and machine-learned interatomic potentials.",
    "keywords": [
     "retrosynthesis",
@@ -472,7 +472,7 @@
    "coherence": "mixed"
   },
   "39": {
-   "name": "Autoregressive Long Video Generation",
+   "name": "Efficient and Long Video Diffusion",
    "one_line": "These papers extend video diffusion models to long or streaming generation with autoregressive rollout, memory for consistency, and distillation for real-time speed.",
    "keywords": [
     "video diffusion",
@@ -656,7 +656,7 @@
    "coherence": "mixed"
   },
   "54": {
-   "name": "LLMs for Optimization Modeling and Algorithm Design",
+   "name": "LLM-Driven Evolutionary Design and Discovery",
    "one_line": "These papers use LLMs, often with evolutionary search, to formulate optimization models, discover algorithms and generate engineering or combinatorial code, with benchmarks for each.",
    "keywords": [
     "optimization modeling",
@@ -692,7 +692,7 @@
    "coherence": "tight"
   },
   "57": {
-   "name": "LiDAR and Radar Perception for Driving",
+   "name": "LiDAR, Radar and Multi-Sensor Perception",
    "one_line": "These papers handle LiDAR, radar and multi-sensor data for localization, point-cloud registration, scene flow and HD map construction in driving and UAV settings.",
    "keywords": [
     "LiDAR localization",
@@ -886,7 +886,7 @@
    "coherence": "tight"
   },
   "73": {
-   "name": "Domain-Specific Vision Benchmarks for VLMs",
+   "name": "Vision Datasets, Benchmarks and Evaluation",
    "one_line": "Benchmarks probing multimodal models on specialised imagery such as remote sensing, medical scans, documents, try-on and image quality.",
    "keywords": [
     "VLM benchmark",
@@ -922,7 +922,7 @@
    "coherence": "tight"
   },
   "76": {
-   "name": "Skill Libraries for LLM Agents",
+   "name": "Self-Evolving Agents and Skill Learning",
    "one_line": "LLM agents that discover, store, reuse and evolve skills to solve long-horizon web, embodied and tool-use tasks.",
    "keywords": [
     "agent skills",
@@ -1054,7 +1054,7 @@
    "coherence": "mixed"
   },
   "87": {
-   "name": "Graph Neural Networks and Foundation Models",
+   "name": "Graph Neural Networks",
    "one_line": "GNN architectures, graph contrastive learning, temporal graphs and graph foundation models for node, link and graph tasks.",
    "keywords": [
     "graph neural networks",
@@ -1277,7 +1277,7 @@
    "coherence": "tight"
   },
   "105": {
-   "name": "LLM Agent Safety and Prompt Injection",
+   "name": "LLM Agent Safety and Security",
    "one_line": "Benchmarks and defends LLM, computer-use and multi-agent systems against prompt injection, unsafe actions, sabotage and scheming.",
    "keywords": [
     "agent safety",
@@ -1328,7 +1328,7 @@
    "coherence": "mixed"
   },
   "109": {
-   "name": "Variational and Simulation-Based Bayesian Inference",
+   "name": "Bayesian Inference and Gaussian Processes",
    "one_line": "Develops variational inference, neural posterior estimation, Gaussian process and Laplace methods for scalable and robust Bayesian inference.",
    "keywords": [
     "variational inference",
@@ -1620,7 +1620,7 @@
    "coherence": "mixed"
   },
   "133": {
-   "name": "Efficient Chain-of-Thought Reasoning",
+   "name": "LLM Reasoning and Test-Time Scaling",
    "one_line": "Analyzing reasoning traces and reducing overthinking in large reasoning models through pruning, early stopping and search.",
    "keywords": [
     "chain-of-thought",
@@ -1632,7 +1632,7 @@
    "coherence": "mixed"
   },
   "134": {
-   "name": "Off-Policy Stability in LLM RL",
+   "name": "LLM RL Training Dynamics and Stability",
    "one_line": "Off-policy corrections, importance ratios, entropy control and credit assignment for stable reinforcement learning post-training of LLMs.",
    "keywords": [
     "RL post-training",
@@ -1645,7 +1645,7 @@
    "coherence": "tight"
   },
   "135": {
-   "name": "Human-AI Collaboration and Oversight",
+   "name": "AI Governance, Position Papers and Human Oversight",
    "one_line": "Position and empirical papers on human oversight, AI-assisted decisions, governance and how AI systems should be evaluated with people.",
    "keywords": [
     "human-AI collaboration",
@@ -1766,7 +1766,7 @@
    "coherence": "tight"
   },
   "145": {
-   "name": "LLM Hallucination Detection and Mitigation",
+   "name": "LLM Hallucination and Uncertainty",
    "one_line": "Detecting and reducing hallucinations in LLMs and vision-language models using uncertainty, token-level signals and training.",
    "keywords": [
     "hallucination detection",
@@ -1832,7 +1832,7 @@
    "one_line": "Benchmarks, memory, skills, safety, multi-agent coordination and multi-turn training for tool-using and coding LLM agents, plus human oversight of AI decisions."
   },
   "1": {
-   "name": "3D Vision & Perception",
+   "name": "Vision & Perception",
    "one_line": "Feed-forward and Gaussian-splatting 3D reconstruction, 3D scene grounding, LiDAR perception, medical imaging, restoration, anomaly and OOD detection, and image forensics."
   },
   "2": {
@@ -1844,7 +1844,7 @@
    "one_line": "Optimizer design such as Muon and Adam, stochastic and convex convergence theory, robust regression and Bayesian optimization."
   },
   "4": {
-   "name": "Graph Learning",
+   "name": "Graph Learning & Recommendation",
    "one_line": "Graph neural network architectures, graph foundation models and generative models for graphs and hypergraphs."
   },
   "5": {
@@ -1856,7 +1856,7 @@
    "one_line": "Vision-language-action policies, dexterous and humanoid manipulation, autonomous driving, world models for planning and embodied spatial reasoning."
   },
   "7": {
-   "name": "Vision-Language Models",
+   "name": "Vision-Language & Speech Models",
    "one_line": "Visual reasoning, image-text alignment, multimodal fusion, domain-specific benchmarks and test-time adaptation for vision-language models."
   },
   "8": {
@@ -1907,5 +1907,12 @@
    "name": "Biomolecules & Causal Discovery",
    "one_line": "Single-cell, protein, molecule and chemistry models alongside causal discovery and structural causal models."
   }
+ },
+ "broad_moves": {
+  "135": 2,
+  "12": 18,
+  "144": 7,
+  "56": 4,
+  "127": 3
  }
 }

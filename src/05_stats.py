@@ -114,37 +114,19 @@ ax.legend(frameon=False, ncol=3, loc="upper center", bbox_to_anchor=(0.5, -0.08)
 fig.savefig(FIG / "site_mix_by_area.png"); plt.close(fig)
 
 # ---------- institutions, countries, sectors ----------
-imap = {}
-if (ROOT / "data/labels/institutions_map.json").exists():
-    imap = {r["raw"]: r for r in json.load(open(ROOT / "data/labels/institutions_map.json"))}
-
-
-def canon(raw):
-    raw = raw.strip()
-    if raw in imap:
-        return imap[raw]["canonical"], imap[raw]["country"], imap[raw]["sector"]
-    parts = [p.strip() for p in raw.split(",")]
-    base = parts[0] if parts else raw
-    if base in imap:
-        r = imap[base]
-        return r["canonical"], r["country"], r["sector"]
-    return base, "unmapped", "unknown"
-
-
-def paper_orgs(s):
-    return {canon(x) for x in s.split(" | ") if x.strip()}
+from common import paper_orgs
 
 for year, d in [(2026, d26), (2025, d25)]:
     orgs = d["institutions"].map(paper_orgs)
-    inst = Counter(o[0] for os_ in orgs for o in {(c, k, s) for c, k, s in os_})
-    ctry = Counter(c for os_ in orgs for c in {o[1] for o in os_})
+    inst = Counter(c for os_ in orgs for c in {o[0] for o in os_})          # one count per organisation per paper
+    ctry = Counter(c for os_ in orgs for c in {o[1] for o in os_ if o[1] not in ("unknown", "")})
     has_ind = orgs.map(lambda os_: any(o[2] == "industry" for o in os_))
     has_acad = orgs.map(lambda os_: any(o[2] == "academia" for o in os_))
-    mapped = orgs.map(lambda os_: any(o[1] != "unmapped" for o in os_))
-    S[f"institutions_{year}"] = inst.most_common(40)
-    # share among papers with at least one mapped affiliation, so coverage differences between years cancel out
+    mapped = orgs.map(lambda os_: any(o[1] not in ("unknown", "") for o in os_))
     n_mapped = int(mapped.sum()) if len(d) else 1
-    S[f"countries_{year}"] = [(c, n, round(100 * n / n_mapped, 1)) for c, n in ctry.most_common(25) if c not in ("unmapped", "unknown")]
+    S[f"institutions_{year}"] = inst.most_common(40)
+    # shares among papers with at least one matched affiliation, so coverage differences between years cancel out
+    S[f"countries_{year}"] = [(c, n, round(100 * n / n_mapped, 2)) for c, n in ctry.most_common(25)]
     S[f"industry_share_{year}"] = round(100 * has_ind[mapped].mean(), 1)
     S[f"industry_only_share_{year}"] = round(100 * (has_ind & ~has_acad)[mapped].mean(), 1)
     S[f"papers_with_mapped_org_{year}"] = round(100 * mapped.mean(), 1)

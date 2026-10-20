@@ -20,7 +20,15 @@ for f in fine.values():  # last-resort disambiguation
 assert len(fine) == 150, f"expected 150 subtopics, got {len(fine)}"
 broad = {b["broad_id"]: {"name": b["name"], "one_line": b["one_line"]} for b in raw["cons"]["broad"]}
 assert len(broad) == 20
+# corrections after the audit of names against sampled titles (data/labels/label_fixes.json)
+fixes = json.load(open(ROOT / "data/labels/label_fixes.json"))
+for k, name in fixes["fine_renames"].items():
+    fine[int(k)]["name"] = name
+for k, name in fixes["broad_renames"].items():
+    broad[int(k)]["name"] = name
+moves = {k: v["to"] for k, v in fixes["broad_moves"].items()}
 labels = {"fine": {str(k): {kk: v[kk] for kk in ("name", "one_line", "keywords", "coherence")} for k, v in sorted(fine.items())},
-          "broad": {str(k): v for k, v in sorted(broad.items())}}
+          "broad": {str(k): v for k, v in sorted(broad.items())},
+          "broad_moves": moves}
 json.dump(labels, open(ROOT / "data/labels/labels.json", "w"), indent=1)
 print("labels:", len(labels["fine"]), "subtopics,", len(labels["broad"]), "areas")
