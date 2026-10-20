@@ -2,6 +2,7 @@
 (decision, site, session, time) and clean text for embedding."""
 import csv, json, re, html
 from pathlib import Path
+import numpy as np
 import pandas as pd
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -107,7 +108,25 @@ for x in J:
     if x.get("decision") and rank[d] >= rank.get(best.get(t), 0):
         best[t] = d
 d26["decision"] = [best.get(tkey(t)) or (d if sc else "unknown") for t, d, sc in zip(d26["title"], d26["decision"], d26["scheduled"])]
+# papers missing from the bulk schedule file: use their own pages (src/01b_fill_schedule.py)
+fill_path = RAW / "neurips2026_schedule_fill.json"
+fill = json.load(open(fill_path)) if fill_path.exists() else {}
+d26["schedule_source"] = np.where(d26["scheduled"], "bulk schedule file", "")
+for i in d26.index[~d26["scheduled"] | (d26["openreview"] == "")]:
+    f = fill.get(d26.at[i, "vid"], {})
+    if f.get("openreview") and not d26.at[i, "openreview"]:
+        d26.at[i, "openreview"] = f["openreview"]
+    if not d26.at[i, "scheduled"] and f.get("site") in ("Sydney", "Atlanta", "Paris"):
+        room = re.match(r"(Paris Poster Hall|Hall \S+)", f.get("room", ""))
+        d26.at[i, "site"], d26.at[i, "room"] = f["site"], room.group(1) if room else ""
+        d26.at[i, "start"], d26.at[i, "end"] = f.get("start_utc", ""), f.get("end_utc", "")
+        d26.at[i, "session"] = f"{f['site']} poster"
+        d26.at[i, "scheduled"] = True
+        d26.at[i, "schedule_source"] = "paper page"
 d26.loc[~d26["scheduled"], "site"] = "unscheduled"
+for v, f in fill.items():
+    if f.get("site") in ("Sydney", "Atlanta", "Paris"):
+        sites_by_vid.setdefault(v, set()).add(f["site"])
 d26["all_sites"] = d26["vid"].map(lambda v: ",".join(sorted(sites_by_vid.get(v, []))))
 d26["n_sites"] = d26["all_sites"].map(lambda v: len(v.split(",")) if v else 0)
 
@@ -129,9 +148,11 @@ both.to_parquet(OUT / "papers.parquet", index=False)
 s26 = both[both.year == 2026]
 report = {
     "2026_rows": int(len(s26)),
-    "2026_scheduled_in_json": int(s26["scheduled"].astype(bool).sum()),
+    "2026_scheduled": int(s26["scheduled"].astype(bool).sum()),
     "2026_unscheduled": int((~s26["scheduled"].astype(bool)).sum()),
     "2026_repro_track": int(s26["repro_track"].sum()),
+    "2026_schedule_from_paper_pages": int((s26["schedule_source"] == "paper page").sum()),
+    "2026_with_openreview_link": int(s26["openreview"].str.startswith("https://openreview.net").sum()),
     "2026_decision": s26["decision"].value_counts().to_dict(),
     "2026_site": s26["site"].value_counts().to_dict(),
     "2026_all_sites": s26["all_sites"].value_counts().to_dict(),
