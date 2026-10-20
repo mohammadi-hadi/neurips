@@ -4,7 +4,8 @@ A data-driven tour of the accepted papers at NeurIPS 2026: what the field is wor
 and shrank since 2025, where the orals and spotlights went, who wrote the papers, and how the
 research is split across the three conference sites (Sydney, Atlanta, Paris).
 
-- **Report:** [`report/OVERVIEW.md`](report/OVERVIEW.md)
+- **Blog post:** [`report/BLOG.md`](report/BLOG.md) (web version: `docs/index.html`)
+- **Appendix:** [`report/APPENDIX.md`](report/APPENDIX.md), every area and subtopic with counts, shares and orals
 - **Interactive map:** `docs/atlas.html` (open in a browser; search, hover, click a dot to open the paper)
 - **Interactive charts:** `docs/charts/` (treemap of all subtopics, area shifts, cities, vocabulary, countries)
 - **Tables:** `outputs/*.csv`, figures in `outputs/figures/`
@@ -35,8 +36,9 @@ The raw files are not stored in this repository; `src/00_fetch_data.py` download
 4. **Label** (`src/04_labels.md`): each subtopic is named from its most typical titles, abstracts and
    distinctive terms, then the full list is checked for overlaps and consistent naming.
 5. **Statistics** (`src/05_stats.py`): topic shares, oral/spotlight rates, site mix, organisations
-   and countries (top 600 affiliation strings merged into canonical names), team size, vocabulary trends.
-6. **Map** (`src/06_map.py`): interactive and static maps with [DataMapPlot](https://github.com/TutteInstitute/datamapplot).
+   and countries (top 1,200 affiliation strings merged into canonical names), team size, vocabulary trends.
+6. **Map and charts** (`src/06_map.py`, `src/07_dashboard.py`): interactive and static maps with [DataMapPlot](https://github.com/TutteInstitute/datamapplot), interactive charts with Plotly.
+7. **Site** (`src/08_appendix.py`, `src/09_build_site.py`): appendix tables and the web pages in `docs/`.
 
 ## Reproduce
 
@@ -47,14 +49,16 @@ python src/01_prepare.py && python src/02_embed.py && python src/03_cluster.py
 # labels: see src/04_labels.md, then
 python src/04_apply_labels.py
 python src/05_stats.py && python src/06_map.py && python src/07_dashboard.py
+python src/08_appendix.py && python src/09_build_site.py   # needs pandoc
 ```
 
 ## Caveats
 
 - Clusters are a lens, not ground truth: many papers sit between topics.
 - Country and sector counts use the authors' listed affiliations; a paper counts once for every
-  country or organisation that appears on it. Affiliations outside the 600 most frequent strings are
-  kept under their first listed name without a country.
+  country or organisation that appears on it. The 1,200 most frequent affiliation strings are merged
+  into canonical names with a country and sector; this covers 97% of 2025 and 94% of 2026 papers.
+  Country and industry shares are computed over the papers with at least one mapped affiliation.
 - The 2025 export and the 2026 export may differ slightly in which tracks they include.
 
 Inspired by Jay Alammar's [Illustrated NeurIPS 2025](https://newsletter.languagemodels.co/p/the-illustrated-neurips-2025-a-visual).
