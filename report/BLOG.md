@@ -11,12 +11,12 @@ If I had to sum it up in one line: the fastest-growing part of machine learning 
 - "Benchmark" is everywhere. 38% of 2026 abstracts use the word, up from 32% in 2025.
 - Some 2025 favourites shrank. Graph neural networks fell from 2.5% to 1.4% of papers, efficient chain-of-thought from 2.5% to 1.5%, and LoRA-style fine-tuning from 1.3% to 0.9%.
 - Theory gets the stage. Deep learning theory and neuroscience papers were made orals or spotlights at 8.4%, against 5.2% for the conference as a whole.
-- The conference is split across three cities. Of the papers scheduled so far, 67% present in Sydney, 20% in Atlanta and 13% in Paris, and the more theoretical areas lean towards Paris.
+- The conference is split across three cities. 67% of papers present in Sydney, 19% in Atlanta and 14% in Paris, and the more theoretical areas lean towards Paris.
 - Single-author papers rose from 61 to 282, from 1.0% to 3.1% of all papers.
 
 ## How it was made
 
-Everything comes from public data on neurips.cc: the "Download Data" export with titles, authors, affiliations and abstracts for 2026 and 2025, plus the schedule data behind the virtual site, which says whether a paper is an oral, spotlight or poster and in which city it is presented. I pulled it on 20 October 2026.
+Everything comes from public data on neurips.cc: the "Download Data" export with titles, authors, affiliations and abstracts for 2026 and 2025, plus the schedule data behind the virtual site, which says whether a paper is an oral, spotlight or poster and in which city it is presented. For the 1,919 papers missing from that file, the city and time come from each paper's own page on neurips.cc. I pulled it all on 20 October 2026.
 
 Each paper's title and abstract was turned into a vector with Qwen3-Embedding-0.6B, an open embedding model that I ran locally. K-means then split the 2026 papers into 150 subtopics, and those were grouped into 20 broader research areas.
 
@@ -124,13 +124,13 @@ These rates rest on small numbers. An area with 150 decided papers can move a fu
 
 <!-- interactive: site_mix -->
 
-NeurIPS 2026 runs in three places. Of the papers in the schedule so far (about 7,200), 67.4% present in Sydney, 19.6% in Atlanta and 13.1% in Paris.
+NeurIPS 2026 runs in three places. Of the 9,105 papers with a city, 66.6% present in Sydney, 19.4% in Atlanta and 13.9% in Paris.
 
-The split is not the same everywhere. Vision is the most Sydney-heavy: Image & 3D Generation (76.4% in Sydney), 3D Vision & Perception (76.0%) and Robotics & Embodied AI (74.6%).
+The split is not the same everywhere. Vision and robotics are the most Sydney-heavy: Robotics & Embodied AI (75.3% in Sydney), Image & 3D Generation (75.2%) and Video Generation & Understanding (74.3%).
 
-Paris leans theoretical. Bandits, Games & Mechanisms has 23.8% of its papers there and DL Theory & Neuroscience 22.9%, against 13.1% for the conference. Diffusion, Flows & Inference (19.5%) and Trustworthy & Statistical ML (18.3%) follow. Atlanta draws the most from Bandits, Games & Mechanisms (25.4%), Trustworthy & Statistical ML (25.1%), Reinforcement Learning (24.3%) and LLM Agents (24.3%). Bandits, Games & Mechanisms is the most evenly spread area, with only 50.8% of its papers in Sydney.
+Paris leans theoretical. Bandits, Games & Mechanisms has 26.7% of its papers there and DL Theory & Neuroscience 21.7%, against 13.9% for the conference. Diffusion, Flows & Inference (21.2%) and Trustworthy & Statistical ML (20.3%) follow. Atlanta draws the most from Trustworthy & Statistical ML (25.1%), Bandits, Games & Mechanisms (25.0%), Reinforcement Learning (24.1%) and PDEs & Dynamical Systems (23.1%). Bandits, Games & Mechanisms is the most evenly spread area, with only 48.3% of its papers in Sydney.
 
-One caution: 1,919 papers were not yet in the schedule data on 20 October. They are in the topic analysis but missing from these site shares, which may still shift.
+Where the cities come from: the bulk schedule file was missing 1,919 papers, so their city was read from each paper's own page on neurips.cc. Five papers are in the bulk schedule file without a session or city label and are left out of these shares (two of them are listed for Paris elsewhere in the schedule).
 
 ## Who wrote the papers
 
@@ -154,18 +154,21 @@ Teams are slightly smaller. The mean author count fell from 5.9 to 5.5, the medi
 - **The main result does not depend on how the topics were fitted.** As a check (`src/11_robustness.py`), the 150 subtopics were refitted on 2025 papers only and on both years pooled. The LLM Agents area roughly doubles its share in all three versions (3.5% → 7.7%, 3.2% → 6.8%, 2.9% → 7.3%), and 3D Vision & Perception, Image & 3D Generation, Trustworthy & Statistical ML, Graph Learning and Vision-Language Models lose share in all three. The size of individual subtopic moves varies more between fits, so read the subtopic factors as approximate.
 - **Affiliation mapping is partial.** The 1,200 most frequent affiliation strings were merged into canonical organisations with a country and a sector. That covers 97.3% of 2025 papers but 94.4% of 2026 papers, so the country and industry numbers for 2026 rest on a slightly smaller base, and any group that uses many spellings of its affiliation may be undercounted.
 - **The two exports may differ.** The 2025 and 2026 downloads may not include exactly the same tracks.
-- **The schedule is incomplete.** When the data was pulled, 1,905 papers had no published decision and 1,919 had no city, which affects the oral and spotlight rates and the site split.
+- **Decisions are incomplete.** When the data was pulled, 1,905 papers had no published decision, which affects the oral and spotlight rates. These are papers missing from the bulk schedule file (1,919 in all); their city and time come from each paper's own page on neurips.cc, which does not show the decision. Every paper has a session, and all but five have a city.
 - **Names were machine-proposed.** Subtopic names came from a language model and were reviewed by hand. The appendix lists every subtopic with its description so you can judge them.
 
 ## Explore it yourself
 
-- [Interactive atlas](https://mohammadi-hadi.github.io/NeurIPS2026_Analysis/atlas.html): all 9,110 papers, searchable, click a dot to open the paper.
+- [Interactive atlas](https://mohammadi-hadi.github.io/NeurIPS2026_Analysis/atlas.html): all 9,110 papers on one map, searchable; click a dot for its NeurIPS page, an arXiv search, and its OpenReview page and PDF.
+- [Paper index](https://mohammadi-hadi.github.io/NeurIPS2026_Analysis/papers.html): every paper in a searchable list, filterable by area, city and status, with the same links.
 - [Subtopic treemap](https://mohammadi-hadi.github.io/NeurIPS2026_Analysis/charts/treemap.html): all 150 subtopics, coloured by growth since 2025.
-- [Appendix](https://github.com/mohammadi-hadi/NeurIPS2026_Analysis/blob/main/report/APPENDIX.md): every area and subtopic with descriptions, paper counts, 2025 and 2026 shares and the list of orals.
+- [Appendix](https://mohammadi-hadi.github.io/NeurIPS2026_Analysis/appendix.html): every area and subtopic with descriptions, paper counts, 2025 and 2026 shares, and every oral with its OpenReview and PDF links.
 - [Code and data](https://github.com/mohammadi-hadi/NeurIPS2026_Analysis): the full pipeline, from download to figures.
+
+NeurIPS 2026 papers are not yet public on OpenReview (as of 20 October 2026). The OpenReview and PDF links are the official ones and will open once the papers are released; until then, the NeurIPS page and the arXiv search are the way in.
 
 If you are going to NeurIPS, the atlas is also a quick way to find the posters near your own work.
 
 ---
 
-Hadi Mohammadi, AI and data science researcher. Find me at mohammadi.cv.
+Hadi Mohammadi, AI and data science researcher. Find me at [mohammadi.cv](https://mohammadi.cv).

@@ -7,6 +7,7 @@ research is split across the three conference sites (Sydney, Atlanta, Paris).
 - **Blog post:** [`report/BLOG.md`](report/BLOG.md) (web version: `docs/index.html`)
 - **Appendix:** [`report/APPENDIX.md`](report/APPENDIX.md), every area and subtopic with counts, shares and orals
 - **Interactive atlas of change:** `docs/atlas.html` (search, hover, click a dot to open the paper; recolour by change since 2025, city, status, sector or team size; filter by presentation day; topic tree)
+- **Paper index:** `docs/papers.html`, every paper with links to its NeurIPS page, an arXiv search, its OpenReview page and PDF (also `outputs/papers_index.csv`)
 - **Interactive charts:** `docs/charts/` (treemap of all subtopics, area shifts, cities, vocabulary, countries)
 - **Tables:** `outputs/*.csv`, figures in `outputs/figures/`
 
@@ -19,9 +20,12 @@ All data comes from the public NeurIPS website:
 | `neurips2026_papers_abstracts.csv` | "Download Data" export on [neurips.cc/Downloads/2026](https://neurips.cc/Downloads/2026) | 9,110 papers: title, authors with affiliations, abstract, link |
 | `neurips2025_papers_abstracts.csv` | same export for [2025](https://neurips.cc/Downloads/2025) | 5,859 papers, used for the year-over-year comparison |
 | `neurips2026_orals_posters_meta.json` | schedule data behind the virtual site | decision (oral / spotlight / poster), site, session, room, time |
+| each paper's page on neurips.cc | `src/01b_fill_schedule.py` | city, poster time, room and OpenReview link for the 1,919 papers missing from the schedule file |
 
-Pulled on 20 October 2026. About 1,900 of the 2026 papers were not yet in the schedule data at that
-time; they are included in the topic analysis and marked "not yet scheduled" in the site analysis.
+Pulled on 20 October 2026. With the paper pages, 9,105 of the 9,110 papers have a city and 9,048 have an
+OpenReview link. The oral/spotlight decision is still unknown for 1,905 papers (the paper pages do not show it).
+NeurIPS 2026 papers were not yet public on OpenReview on that date, so the OpenReview and PDF links open
+once NeurIPS releases them; the arXiv title search and the NeurIPS page work today.
 The raw files are not stored in this repository; `src/00_fetch_data.py` downloads them again.
 
 ## Method
@@ -48,12 +52,14 @@ The raw files are not stored in this repository; `src/00_fetch_data.py` download
 uv venv -p 3.12 .venv && uv pip install -r requirements.txt
 source .venv/bin/activate
 python src/00_fetch_data.py
+python src/01b_fill_schedule.py   # city, time and OpenReview link for papers missing from the bulk schedule
 python src/01_prepare.py && python src/02_embed.py && python src/03_cluster.py
 # labels: see src/04_labels.md, then
 python src/04_apply_labels.py
 python src/05_stats.py && python src/06_map.py && python src/07_dashboard.py
 python src/10_story_figures.py && python src/11_robustness.py
-python src/08_appendix.py && python src/09_build_site.py   # needs pandoc
+python src/08_appendix.py && python src/12_paper_index.py && python src/09_build_site.py   # needs pandoc
+python src/13_check_links.py   # checks every link
 ```
 
 ## Caveats
