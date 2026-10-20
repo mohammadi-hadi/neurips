@@ -13,6 +13,7 @@ FONTS = ('<link rel="preconnect" href="https://fonts.googleapis.com">'
 
 # small additions for this project, written with the site's own tokens
 EXTRA_CSS = """
+html,body{overflow-x:hidden}
 .atlas-nav{border-bottom:1px solid var(--rule);background:var(--surface)}
 .atlas-nav .container{display:flex;gap:6px 18px;flex-wrap:wrap;align-items:center;padding-top:10px;padding-bottom:10px;
   font-family:var(--mono);font-size:.78rem;letter-spacing:.02em}
