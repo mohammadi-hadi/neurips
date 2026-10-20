@@ -1,4 +1,6 @@
 source,link,status,note
+README.md,https://mohammadi.cv/neurips/,ok,HTTP 200
+README.md,https://mohammadi.cv/neurips/2026/,ok,HTTP 200
 README.md,report/BLOG.md,ok,relative file
 README.md,report/APPENDIX.md,ok,relative file
 README.md,https://neurips.cc/Downloads/2026,ok,HTTP 200
@@ -439,497 +441,500 @@ report/APPENDIX.md,https://neurips.cc/virtual/2026/poster/151389,ok,HTTP 200
 report/APPENDIX.md,https://arxiv.org/search/?query=Mechanism-Aware+Ensemble+Conditioning+for+Data-Limited+Emulation+of+Extreme+Events&searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
 report/APPENDIX.md,https://openreview.net/forum?id=b0AOZbejEk,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
 report/APPENDIX.md,https://openreview.net/pdf?id=b0AOZbejEk,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-report/BLOG.md,https://mohammadi-hadi.github.io/NeurIPS2026_Analysis/atlas.html,pending,local docs/atlas.html exists
+report/BLOG.md,https://mohammadi.cv/neurips/2026/atlas.html,ok,HTTP 200
 report/BLOG.md,../outputs/figures/atlas_static.png,ok,relative file
 report/BLOG.md,../outputs/figures/field_moved.png,ok,relative file
 report/BLOG.md,../outputs/figures/areas_slope.png,ok,relative file
 report/BLOG.md,../outputs/figures/agents_family.png,ok,relative file
 report/BLOG.md,../outputs/figures/movers_x.png,ok,relative file
-report/BLOG.md,https://mohammadi-hadi.github.io/NeurIPS2026_Analysis/charts/treemap.html,pending,local docs/charts/treemap.html exists
+report/BLOG.md,https://mohammadi.cv/neurips/2026/charts/treemap.html,ok,HTTP 200
 report/BLOG.md,../outputs/figures/vocabulary_trends.png,ok,relative file
 report/BLOG.md,../outputs/figures/highlight_rate_by_area.png,ok,relative file
 report/BLOG.md,../outputs/figures/cities_lean.png,ok,relative file
 report/BLOG.md,../outputs/figures/top_institutions.png,ok,relative file
 report/BLOG.md,../outputs/figures/countries.png,ok,relative file
-report/BLOG.md,https://mohammadi-hadi.github.io/NeurIPS2026_Analysis/papers.html,pending,local docs/papers.html exists
-report/BLOG.md,https://mohammadi-hadi.github.io/NeurIPS2026_Analysis/appendix.html,pending,local docs/appendix.html exists
-report/BLOG.md,https://github.com/mohammadi-hadi/NeurIPS2026_Analysis,pending,repository is private; public link works once it is made public
+report/BLOG.md,https://mohammadi.cv/neurips/2026/papers.html,ok,HTTP 200
+report/BLOG.md,https://mohammadi.cv/neurips/2026/appendix.html,ok,HTTP 200
+report/BLOG.md,https://github.com/mohammadi-hadi/neurips,ok,HTTP 200
 report/BLOG.md,https://mohammadi.cv,ok,HTTP 200
-docs/appendix.html,https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap,ok,HTTP 200
-docs/appendix.html,index.html,ok,relative file
-docs/appendix.html,atlas.html,ok,relative file
-docs/appendix.html,papers.html,ok,relative file
-docs/appendix.html,charts/treemap.html,ok,relative file
-docs/appendix.html,appendix.html,ok,relative file
-docs/appendix.html,https://github.com/mohammadi-hadi/NeurIPS2026_Analysis,pending,repository is private; public link works once it is made public
-docs/appendix.html,https://neurips.cc/virtual/2026/poster/139265,ok,HTTP 200
-docs/appendix.html,https://arxiv.org/search/?query=ALTER++An+Allen+s+Algebra-Based+Evaluation+Framework+for+Temporal+Reasoning+of+LLMs&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
-docs/appendix.html,https://openreview.net/forum?id=ay0UXDsniW,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://openreview.net/pdf?id=ay0UXDsniW,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://neurips.cc/virtual/2026/poster/138960,ok,HTTP 200
-docs/appendix.html,https://arxiv.org/search/?query=Benchmark+Health+Index++A+Systematic+Framework+for+Benchmarking+the+Benchmarks+of+LLMs&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
-docs/appendix.html,https://openreview.net/forum?id=tsoDWPkJOz,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://openreview.net/pdf?id=tsoDWPkJOz,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://neurips.cc/virtual/2026/poster/151014,ok,HTTP 200
-docs/appendix.html,https://arxiv.org/search/?query=Catch-Only-One++Non-Transferable+Examples+for+Model-Specific+Authorization&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
-docs/appendix.html,https://openreview.net/forum?id=db0FP1G7V7,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://openreview.net/pdf?id=db0FP1G7V7,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://neurips.cc/virtual/2026/poster/152543,ok,HTTP 200
-docs/appendix.html,https://arxiv.org/search/?query=CLIOPATRA++Extracting+Private+Information+from+LLM+Insights&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
-docs/appendix.html,https://openreview.net/forum?id=SNNm5MJ9dg,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://openreview.net/pdf?id=SNNm5MJ9dg,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://neurips.cc/virtual/2026/poster/151876,ok,HTTP 200
-docs/appendix.html,https://arxiv.org/search/?query=CURE++Counterfactual+Unsafe-token+Re-masking+for+Diffusion+Large+Language+Model+Test-time+Alignment&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
-docs/appendix.html,https://openreview.net/forum?id=XF2UgJwAIj,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://openreview.net/pdf?id=XF2UgJwAIj,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://neurips.cc/virtual/2026/poster/152494,ok,HTTP 200
-docs/appendix.html,https://arxiv.org/search/?query=Fisher-R1++Training+LLM+Agents+for+Reliable+Hypothesis+Testing&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
-docs/appendix.html,https://openreview.net/forum?id=ShMNgympCf,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://openreview.net/pdf?id=ShMNgympCf,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://neurips.cc/virtual/2026/poster/139278,ok,HTTP 200
-docs/appendix.html,https://arxiv.org/search/?query=HearSayBench++Can+LLMs+Navigate+from+Abstract+Human+Rights+to+Lived+Lives+&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
-docs/appendix.html,https://openreview.net/forum?id=ZqbnpmPYvV,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://openreview.net/pdf?id=ZqbnpmPYvV,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://neurips.cc/virtual/2026/poster/152085,ok,HTTP 200
-docs/appendix.html,https://arxiv.org/search/?query=Leaderboard+Hacking++Preference-Based+Model+Evaluations+are+Vulnerable+to+Manipulation&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
-docs/appendix.html,https://openreview.net/forum?id=VbWRUbpIUv,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://openreview.net/pdf?id=VbWRUbpIUv,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://neurips.cc/virtual/2026/poster/155783,ok,HTTP 200
-docs/appendix.html,https://arxiv.org/search/?query=Learning+to+Audit+ML+Models+with+Theory+of+Mind&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
-docs/appendix.html,https://openreview.net/forum?id=2vhiHLMdzi,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://openreview.net/pdf?id=2vhiHLMdzi,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://neurips.cc/virtual/2026/poster/148220,ok,HTTP 200
-docs/appendix.html,https://arxiv.org/search/?query=LittleLearner++Language+Models+Under+Pedagogically-Controlled+Knowledge+Exposure&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
-docs/appendix.html,https://openreview.net/forum?id=zSwgtp9S5a,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://openreview.net/pdf?id=zSwgtp9S5a,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://neurips.cc/virtual/2026/poster/154333,ok,HTTP 200
-docs/appendix.html,https://arxiv.org/search/?query=LoRAcles++Self-Supervised+Weight-Space+Interpretability+at+Scale&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
-docs/appendix.html,https://openreview.net/forum?id=EOoc3j4hW8,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://openreview.net/pdf?id=EOoc3j4hW8,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://neurips.cc/virtual/2026/poster/148241,ok,HTTP 200
-docs/appendix.html,https://arxiv.org/search/?query=Neural+Chameleons++Language+Models+Can+Learn+to+Hide+Their+Thoughts+from+Unseen+Activation+Monitors&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
-docs/appendix.html,https://openreview.net/forum?id=zLwGdQLBbW,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://openreview.net/pdf?id=zLwGdQLBbW,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://neurips.cc/virtual/2026/poster/151513,ok,HTTP 200
-docs/appendix.html,https://arxiv.org/search/?query=The+Attacker+in+the+Mirror++Breaking+Self-Consistency+in+Safety+via+Anchored+Bipolicy+Self-Play&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
-docs/appendix.html,https://openreview.net/forum?id=a5qQCbrc2b,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://openreview.net/pdf?id=a5qQCbrc2b,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://neurips.cc/virtual/2026/poster/140062,ok,HTTP 200
-docs/appendix.html,https://arxiv.org/search/?query=We+Should+Distinguish+Unlearning+From+Untraining&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
-docs/appendix.html,https://openreview.net/forum?id=U9dDSCabjP,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://openreview.net/pdf?id=U9dDSCabjP,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://neurips.cc/virtual/2026/poster/149762,ok,HTTP 200
-docs/appendix.html,https://arxiv.org/search/?query=BEAST3D++animal+behavioral+analysis+and+neural+encoding+from+multi-view+video+via+Gaussian+splatting&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
-docs/appendix.html,https://openreview.net/forum?id=nWHsSjFVA0,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://openreview.net/pdf?id=nWHsSjFVA0,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://neurips.cc/virtual/2026/poster/153331,ok,HTTP 200
-docs/appendix.html,https://arxiv.org/search/?query=Certifiably+Optimal+Robust+Angular+Synchronization&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
-docs/appendix.html,https://openreview.net/forum?id=M7UwJ21cjC,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://openreview.net/pdf?id=M7UwJ21cjC,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://neurips.cc/virtual/2026/poster/148758,ok,HTTP 200
-docs/appendix.html,https://arxiv.org/search/?query=Consistent+3D+Surface+Flow+Model+with+Global+State&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
-docs/appendix.html,https://openreview.net/forum?id=vGEOI5LZ5X,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://openreview.net/pdf?id=vGEOI5LZ5X,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://neurips.cc/virtual/2026/poster/154303,ok,HTTP 200
-docs/appendix.html,https://arxiv.org/search/?query=D%C3%A9j%C3%A0+View++Looping+Transformers+for+Multi-View+3D+Reconstruction&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
-docs/appendix.html,https://openreview.net/forum?id=Eidz3t6qmk,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://openreview.net/pdf?id=Eidz3t6qmk,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://neurips.cc/virtual/2026/poster/153119,ok,HTTP 200
-docs/appendix.html,https://arxiv.org/search/?query=Non-Colliding+Biometric+Identities+for+Digital+Entities++Geometry++Capacity++and+Million-Scale+Virtual+Identity+Provisioning&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
-docs/appendix.html,https://openreview.net/forum?id=NmbGjaLeN2,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://openreview.net/pdf?id=NmbGjaLeN2,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://neurips.cc/virtual/2026/poster/154593,ok,HTTP 200
-docs/appendix.html,https://arxiv.org/search/?query=Releasing+Anchors+from+Cross-View+Correspondence++Probabilistic+Multi-View+Anchor+Graph+Clustering&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
-docs/appendix.html,https://openreview.net/forum?id=CQIfXmGpTl,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://openreview.net/pdf?id=CQIfXmGpTl,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://neurips.cc/virtual/2026/poster/155674,ok,HTTP 200
-docs/appendix.html,https://arxiv.org/search/?query=SAM+3D+Animal++Promptable+Animal+3D+Reconstruction+from+Images+in+the+Wild&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
-docs/appendix.html,https://openreview.net/forum?id=3pqVVK0kW3,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://openreview.net/pdf?id=3pqVVK0kW3,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://neurips.cc/virtual/2026/poster/153899,ok,HTTP 200
-docs/appendix.html,https://arxiv.org/search/?query=Trellis4D++Complex+4D+Mesh+Generation&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
-docs/appendix.html,https://openreview.net/forum?id=Hse0SKGx7y,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://openreview.net/pdf?id=Hse0SKGx7y,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://neurips.cc/virtual/2026/poster/149484,ok,HTTP 200
-docs/appendix.html,https://arxiv.org/search/?query=Video+Forensic+Self-Descriptions++Leveraging+Temporally+Distributed+Forensic+Microstructures+for+Zero-Shot+Detection+of+AI-Generated+Videos&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
-docs/appendix.html,https://openreview.net/forum?id=pnZvRHgjWk,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://openreview.net/pdf?id=pnZvRHgjWk,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://neurips.cc/virtual/2026/poster/139558,ok,HTTP 200
-docs/appendix.html,https://arxiv.org/search/?query=AgentAbstain++Do+LLM+Agents+Know+When+Not+to+Act+&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
-docs/appendix.html,https://openreview.net/forum?id=Iee7eL6QV0,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://openreview.net/pdf?id=Iee7eL6QV0,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://neurips.cc/virtual/2026/poster/140106,ok,HTTP 200
-docs/appendix.html,https://arxiv.org/search/?query=Agent+Security+is+a+Systems+Problem&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
-docs/appendix.html,https://openreview.net/forum?id=8gDb2bnWWf,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://openreview.net/pdf?id=8gDb2bnWWf,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://neurips.cc/virtual/2026/poster/149524,ok,HTTP 200
-docs/appendix.html,https://arxiv.org/search/?query=APS++Bias-Controlled+Adaptive+Prototype+Simulation+for+Population-Scale+LLM+Agents&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
-docs/appendix.html,https://openreview.net/forum?id=pVNs5UOYq3,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://openreview.net/pdf?id=pVNs5UOYq3,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://neurips.cc/virtual/2026/poster/154319,ok,HTTP 200
-docs/appendix.html,https://arxiv.org/search/?query=ExComm++Exploration-Stage+Communication+for+Error-Resilient+Agentic+Test-Time+Scaling&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
-docs/appendix.html,https://openreview.net/forum?id=EXtXoqNLl3,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://openreview.net/pdf?id=EXtXoqNLl3,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://neurips.cc/virtual/2026/poster/138976,ok,HTTP 200
-docs/appendix.html,https://arxiv.org/search/?query=GenAI+Evaluation+Results+are+Largely+Artifacts+of+Evaluation+Design+Choices++Evidence+from+Audit+Studies+of+Resume+Screening&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
-docs/appendix.html,https://openreview.net/forum?id=sy5IWI4jWC,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://openreview.net/pdf?id=sy5IWI4jWC,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://neurips.cc/virtual/2026/poster/148497,ok,HTTP 200
-docs/appendix.html,https://arxiv.org/search/?query=HeMeR++Heterogeneous+Memory+Reconciliation+for+Embodied+Agents+via+Structured+KV+Reuse&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
-docs/appendix.html,https://openreview.net/forum?id=xMqv6BYsZv,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://openreview.net/pdf?id=xMqv6BYsZv,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://neurips.cc/virtual/2026/poster/150415,ok,HTTP 200
-docs/appendix.html,https://arxiv.org/search/?query=LITMUS++Benchmarking+Behavioral+Jailbreaks+of+LLM+Agents+in+Real+OS+Environments&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
-docs/appendix.html,https://openreview.net/forum?id=iCXoa3VMy0,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://openreview.net/pdf?id=iCXoa3VMy0,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://neurips.cc/virtual/2026/poster/139626,ok,HTTP 200
-docs/appendix.html,https://arxiv.org/search/?query=MLS-Bench++A+Holistic+and+Rigorous+Assessment+of+AI+Systems+on+Building+Better+AI&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
-docs/appendix.html,https://openreview.net/forum?id=EaF7FneBfZ,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://openreview.net/pdf?id=EaF7FneBfZ,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://neurips.cc/virtual/2026/poster/139388,ok,HTTP 200
-docs/appendix.html,https://arxiv.org/search/?query=Offloading+Score++Measuring+AI+Reliance+through+Counterfactual+Workflows&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
-docs/appendix.html,https://openreview.net/forum?id=TT3ACb02l4,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://openreview.net/pdf?id=TT3ACb02l4,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://neurips.cc/virtual/2026/poster/148940,ok,HTTP 200
-docs/appendix.html,https://arxiv.org/search/?query=Resilience+Matters+for+Embodied+Agents+System++New+Metrics++Systematic+Evaluation++and+Optimization&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
-docs/appendix.html,https://openreview.net/forum?id=u2TS1Rxun2,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://openreview.net/pdf?id=u2TS1Rxun2,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://neurips.cc/virtual/2026/poster/149874,ok,HTTP 200
-docs/appendix.html,https://arxiv.org/search/?query=SMART++Scalable+Multi-Agent+Role-conditioned+Teaming+via+LLM-free+Tree+Search&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
-docs/appendix.html,https://openreview.net/forum?id=mYzIBNy0LN,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://openreview.net/pdf?id=mYzIBNy0LN,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://neurips.cc/virtual/2026/poster/154927,ok,HTTP 200
-docs/appendix.html,https://arxiv.org/search/?query=Soteria++Formally+Verified+Planning+with+Runtime+Enforcement+for+Safe+LLM+Agents&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
-docs/appendix.html,https://openreview.net/forum?id=9url1EFMaU,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://openreview.net/pdf?id=9url1EFMaU,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://neurips.cc/virtual/2026/poster/155412,ok,HTTP 200
-docs/appendix.html,https://arxiv.org/search/?query=BrainWorld++A+Structural-Prior-Conditioned+Generative+Model+for+Whole-Brain+4D+fMRI+Dynamics&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
-docs/appendix.html,https://openreview.net/forum?id=5rS8m8pxgo,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://openreview.net/pdf?id=5rS8m8pxgo,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://neurips.cc/virtual/2026/poster/151520,ok,HTTP 200
-docs/appendix.html,https://arxiv.org/search/?query=DD-CAM++Minimal+Sufficient+Explanations+for+Vision+Models+Using+Delta+Debugging&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
-docs/appendix.html,https://openreview.net/forum?id=a30XWAYlaJ,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://openreview.net/pdf?id=a30XWAYlaJ,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://neurips.cc/virtual/2026/poster/150168,ok,HTTP 200
-docs/appendix.html,https://arxiv.org/search/?query=Decomposing+Earth+Embeddings+with+Sparse+Autoencoders&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
-docs/appendix.html,https://openreview.net/forum?id=kB29xkjNQK,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://openreview.net/pdf?id=kB29xkjNQK,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://neurips.cc/virtual/2026/poster/139125,ok,HTTP 200
-docs/appendix.html,https://arxiv.org/search/?query=Evaluating+Neural+Data+Tokenizers++A+Framework+for+Assessing+Learned+Representations+of+Spiking+Activity&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
-docs/appendix.html,https://openreview.net/forum?id=jYb8X9iFPY,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://openreview.net/pdf?id=jYb8X9iFPY,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://neurips.cc/virtual/2026/poster/155943,ok,HTTP 200
-docs/appendix.html,https://arxiv.org/search/?query=Exact+Gaussian+Moment+Matching+for+Residual+Networks++a+Second-Order+Method&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
-docs/appendix.html,https://openreview.net/forum?id=1dsxDeHdpR,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://openreview.net/pdf?id=1dsxDeHdpR,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://neurips.cc/virtual/2026/poster/150840,ok,HTTP 200
-docs/appendix.html,https://arxiv.org/search/?query=Geometry-Aware+Similarity+Metrics+for+Neural+Representations+on+Riemannian+and+Statistical+Manifolds&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
-docs/appendix.html,https://openreview.net/forum?id=evbVz4WWXN,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://openreview.net/pdf?id=evbVz4WWXN,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://neurips.cc/virtual/2026/poster/151393,ok,HTTP 200
-docs/appendix.html,https://arxiv.org/search/?query=IDEA++Unwrapping+Visual+Black-box+Models+by+Interaction+Decomposition&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
-docs/appendix.html,https://openreview.net/forum?id=azDcnhfVNx,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://openreview.net/pdf?id=azDcnhfVNx,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://neurips.cc/virtual/2026/poster/155071,ok,HTTP 200
-docs/appendix.html,https://arxiv.org/search/?query=Learning+interpretable+Schur+forms+of+recurrent+weight+matrices&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
-docs/appendix.html,https://openreview.net/forum?id=8gcHRPsjr5,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://openreview.net/pdf?id=8gcHRPsjr5,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://neurips.cc/virtual/2026/poster/152289,ok,HTTP 200
-docs/appendix.html,https://arxiv.org/search/?query=Learning+Reveals+Invisible+Structure+in+Low-Rank+RNNs&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
-docs/appendix.html,https://openreview.net/forum?id=UB2Xsj6ZZA,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://openreview.net/pdf?id=UB2Xsj6ZZA,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://neurips.cc/virtual/2026/poster/151712,ok,HTTP 200
-docs/appendix.html,https://arxiv.org/search/?query=Learning+Sparse+Semantic-Cortical+Atoms+for+Multisubject+Naturalistic+fMRI+Encoding&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
-docs/appendix.html,https://openreview.net/forum?id=YcEZoSqrxa,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://openreview.net/pdf?id=YcEZoSqrxa,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://neurips.cc/virtual/2026/poster/149255,ok,HTTP 200
-docs/appendix.html,https://arxiv.org/search/?query=MindAlign++Bridging+EEG++Vision++and+Language+for+Zero-Shot+Visual+Decoding&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
-docs/appendix.html,https://openreview.net/forum?id=riv0NRuHeq,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://openreview.net/pdf?id=riv0NRuHeq,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://neurips.cc/virtual/2026/poster/153194,ok,HTTP 200
-docs/appendix.html,https://arxiv.org/search/?query=Neural+population+tuning+statistics+as+priors+for+multitask+generalization&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
-docs/appendix.html,https://openreview.net/forum?id=N8F8d2c171,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://openreview.net/pdf?id=N8F8d2c171,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://neurips.cc/virtual/2026/poster/140002,ok,HTTP 200
-docs/appendix.html,https://arxiv.org/search/?query=The+Dead+Salmons+of+AI+Interpretability++The+Need+for+a+Statistical+Inference+Perspective&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
-docs/appendix.html,https://openreview.net/forum?id=w0wOa4UDHv,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://openreview.net/pdf?id=w0wOa4UDHv,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://neurips.cc/virtual/2026/poster/155585,ok,HTTP 200
-docs/appendix.html,https://arxiv.org/search/?query=The+Sign+Code++The+Hidden+Binary+Nature+of+Deep+Networks&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
-docs/appendix.html,https://openreview.net/forum?id=4WN4vV8RCR,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://openreview.net/pdf?id=4WN4vV8RCR,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://neurips.cc/virtual/2026/poster/153347,ok,HTTP 200
-docs/appendix.html,https://arxiv.org/search/?query=UECO++A+Unified+Encoder+with+Structure-Aware+Attention+Mixture+via+Iterative+Edge+Evolving+for+Neural+Combinatorial+Optimization&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
-docs/appendix.html,https://openreview.net/forum?id=M2lqt23VO7,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://openreview.net/pdf?id=M2lqt23VO7,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://neurips.cc/virtual/2026/poster/154794,ok,HTTP 200
-docs/appendix.html,https://arxiv.org/search/?query=Uniform-in-Time+Weak+Propagation+of+Chaos+in+Shallow+Neural+Networks&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
-docs/appendix.html,https://openreview.net/forum?id=Aupfb8A52K,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://openreview.net/pdf?id=Aupfb8A52K,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://neurips.cc/virtual/2026/poster/153824,ok,HTTP 200
-docs/appendix.html,https://arxiv.org/search/?query=Unlocking+Volition++Proactive+Intention+Decoding+via+Interpretable+Graph+Learning+of+Multi-Region+ECoG&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
-docs/appendix.html,https://openreview.net/forum?id=IRTohTNxhM,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://openreview.net/pdf?id=IRTohTNxhM,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://neurips.cc/virtual/2026/poster/155350,ok,HTTP 200
-docs/appendix.html,https://arxiv.org/search/?query=Bridging+Compute-+and+Data-Optimal+Pretraining&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
-docs/appendix.html,https://openreview.net/forum?id=6HVSfPO1cT,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://openreview.net/pdf?id=6HVSfPO1cT,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://neurips.cc/virtual/2026/poster/154865,ok,HTTP 200
-docs/appendix.html,https://arxiv.org/search/?query=Compact+SO+3++Equivariant+Atomistic+Foundation+Models+via+Structural+Pruning&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
-docs/appendix.html,https://openreview.net/forum?id=AJ8IWO0noE,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://openreview.net/pdf?id=AJ8IWO0noE,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://neurips.cc/virtual/2026/poster/148321,ok,HTTP 200
-docs/appendix.html,https://arxiv.org/search/?query=Felid++A+Flexible+and+Efficient+Design+for+Transformer+Fine-Tuning+over+Encrypted+Data&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
-docs/appendix.html,https://openreview.net/forum?id=yglphSefi0,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://openreview.net/pdf?id=yglphSefi0,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://neurips.cc/virtual/2026/poster/150427,ok,HTTP 200
-docs/appendix.html,https://arxiv.org/search/?query=Fractional+State+Space+Transition+for+Long+Sequence+Modeling&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
-docs/appendix.html,https://openreview.net/forum?id=i6ZEbxGeKu,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://openreview.net/pdf?id=i6ZEbxGeKu,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://neurips.cc/virtual/2026/poster/150472,ok,HTTP 200
-docs/appendix.html,https://arxiv.org/search/?query=Pruning+and+Distilling+Mixture-of-Experts+into+Dense+Language+Models&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
-docs/appendix.html,https://openreview.net/forum?id=hmvlyb1yQu,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://openreview.net/pdf?id=hmvlyb1yQu,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://neurips.cc/virtual/2026/poster/139355,ok,HTTP 200
-docs/appendix.html,https://arxiv.org/search/?query=DD-Ranking++Rethinking+the+Evaluation+of+Dataset+Distillation&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
-docs/appendix.html,https://openreview.net/forum?id=UreH0QGZXp,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://openreview.net/pdf?id=UreH0QGZXp,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://neurips.cc/virtual/2026/poster/155800,ok,HTTP 200
-docs/appendix.html,https://arxiv.org/search/?query=Filtered+Conformal+Ellipsoids+for+Graph-Native+Time+Series&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
-docs/appendix.html,https://openreview.net/forum?id=2mdgP5ws1o,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://openreview.net/pdf?id=2mdgP5ws1o,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://neurips.cc/virtual/2026/poster/149451,ok,HTTP 200
-docs/appendix.html,https://arxiv.org/search/?query=Impossibility+of+Distribution-Free+Predictive+Inference+for+Individual+Treatment+Effects&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
-docs/appendix.html,https://openreview.net/forum?id=pyIv9zfcdd,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://openreview.net/pdf?id=pyIv9zfcdd,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://neurips.cc/virtual/2026/poster/154957,ok,HTTP 200
-docs/appendix.html,https://arxiv.org/search/?query=LLM-Enhanced+Random+Forests+in+Orthogonal+Hyperbolic+Subspaces+for+Tabular+Learning&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
-docs/appendix.html,https://openreview.net/forum?id=9e7CzWvHvW,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://openreview.net/pdf?id=9e7CzWvHvW,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://neurips.cc/virtual/2026/poster/155987,ok,HTTP 200
-docs/appendix.html,https://arxiv.org/search/?query=MaxSketch++Robust+Distinct+Counting+in+Streams+via+Random+Projections&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
-docs/appendix.html,https://openreview.net/forum?id=1MB9KxyzHe,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://openreview.net/pdf?id=1MB9KxyzHe,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://neurips.cc/virtual/2026/poster/153397,ok,HTTP 200
-docs/appendix.html,https://arxiv.org/search/?query=Mitigating+Confidence+Miscalibration+in+Open-World+Semi-Supervised+Learning&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
-docs/appendix.html,https://openreview.net/forum?id=LfaHJnaV9L,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://openreview.net/pdf?id=LfaHJnaV9L,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://neurips.cc/virtual/2026/poster/140022,ok,HTTP 200
-docs/appendix.html,https://arxiv.org/search/?query=Position++Fair+Representations+Cannot+Hold+What+They+Promise&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
-docs/appendix.html,https://openreview.net/forum?id=lmeLparD9S,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://openreview.net/pdf?id=lmeLparD9S,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://neurips.cc/virtual/2026/poster/149340,ok,HTTP 200
-docs/appendix.html,https://arxiv.org/search/?query=Scale-Sensitive+Shattering++Learnability+and+Evaluability+at+Optimal+Scale&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
-docs/appendix.html,https://openreview.net/forum?id=qoanAQUemS,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://openreview.net/pdf?id=qoanAQUemS,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://neurips.cc/virtual/2026/poster/148778,ok,HTTP 200
-docs/appendix.html,https://arxiv.org/search/?query=Surprises+in+Proper+Positive-Only+Learning&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
-docs/appendix.html,https://openreview.net/forum?id=v81L38ZyrQ,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://openreview.net/pdf?id=v81L38ZyrQ,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://neurips.cc/virtual/2026/poster/148311,ok,HTTP 200
-docs/appendix.html,https://arxiv.org/search/?query=Testable+and+Actionable+Calibration+for+Full+Swap+Regret&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
-docs/appendix.html,https://openreview.net/forum?id=yls0nG3VKg,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://openreview.net/pdf?id=yls0nG3VKg,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://neurips.cc/virtual/2026/poster/140101,ok,HTTP 200
-docs/appendix.html,https://arxiv.org/search/?query=The+Aleatoric-Epistemic+Dichotomy+of+Uncertainty+is+Meaningful+and+Indispensable+for+Machine+Learning&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
-docs/appendix.html,https://openreview.net/forum?id=CuRV56FVBy,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://openreview.net/pdf?id=CuRV56FVBy,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://neurips.cc/virtual/2026/poster/151725,ok,HTTP 200
-docs/appendix.html,https://arxiv.org/search/?query=The+Stability+of+Online+Algorithms+in+Performative+Prediction&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
-docs/appendix.html,https://openreview.net/forum?id=YYzvip7hPZ,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://openreview.net/pdf?id=YYzvip7hPZ,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://neurips.cc/virtual/2026/poster/150429,ok,HTTP 200
-docs/appendix.html,https://arxiv.org/search/?query=Escaping+the+Cognitive+Well++Efficient+Competition+Math+with+Off-the-Shelf+Models&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
-docs/appendix.html,https://openreview.net/forum?id=i6Ojls5BRt,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://openreview.net/pdf?id=i6Ojls5BRt,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://neurips.cc/virtual/2026/poster/155022,ok,HTTP 200
-docs/appendix.html,https://arxiv.org/search/?query=Nemotron-Cascade++Scaling+Cascaded+Reinforcement+Learning+for+General-Purpose+Reasoning+Models&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
-docs/appendix.html,https://openreview.net/forum?id=96v36aMNTx,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://openreview.net/pdf?id=96v36aMNTx,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://neurips.cc/virtual/2026/poster/149098,ok,HTTP 200
-docs/appendix.html,https://arxiv.org/search/?query=Binding+Multiple+Modalities+via+Multimodal+Wasserstein+Barycenter&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
-docs/appendix.html,https://openreview.net/forum?id=swVrjlNX4Q,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://openreview.net/pdf?id=swVrjlNX4Q,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://neurips.cc/virtual/2026/poster/152087,ok,HTTP 200
-docs/appendix.html,https://arxiv.org/search/?query=Clarification+as+Supervision++Reinforcement+Learning+for+Vision-Language+Interfaces&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
-docs/appendix.html,https://openreview.net/forum?id=VaoJb3PtWQ,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://openreview.net/pdf?id=VaoJb3PtWQ,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://neurips.cc/virtual/2026/poster/139481,ok,HTTP 200
-docs/appendix.html,https://arxiv.org/search/?query=GeoSym127K++Scalable+Symbolically-verifiable+Synthesis+for+Multimodal+Geometric+Reasoning&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
-docs/appendix.html,https://openreview.net/forum?id=NO4INpEpCi,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://openreview.net/pdf?id=NO4INpEpCi,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://neurips.cc/virtual/2026/poster/156128,ok,HTTP 200
-docs/appendix.html,https://arxiv.org/search/?query=Incentivizing+Medical+Vision+Capabilities+from+Large-Scale+Multimodal+Pre-training&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
-docs/appendix.html,https://openreview.net/forum?id=0BXKsjKlFJ,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://openreview.net/pdf?id=0BXKsjKlFJ,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://neurips.cc/virtual/2026/poster/151372,ok,HTTP 200
-docs/appendix.html,https://arxiv.org/search/?query=They+Can+See+It+but+not+Say+It++Iterative+Self+Knowledge+Re-expression+in+Visual+Reasoning+Relative+Pose+Identification&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
-docs/appendix.html,https://openreview.net/forum?id=b4HCV0e0V8,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://openreview.net/pdf?id=b4HCV0e0V8,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://neurips.cc/virtual/2026/poster/150085,ok,HTTP 200
-docs/appendix.html,https://arxiv.org/search/?query=Thinking+with+Images+as+Continuous+Policy++Numerical+Visual+Chain-of-Thought&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
-docs/appendix.html,https://openreview.net/forum?id=kqCpiR360C,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://openreview.net/pdf?id=kqCpiR360C,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://neurips.cc/virtual/2026/poster/151481,ok,HTTP 200
-docs/appendix.html,https://arxiv.org/search/?query=Can+In-Context+Learning+Support+Intrinsic+Curiosity+&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
-docs/appendix.html,https://openreview.net/forum?id=aHSKeImV3Z,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://openreview.net/pdf?id=aHSKeImV3Z,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://neurips.cc/virtual/2026/poster/149190,ok,HTTP 200
-docs/appendix.html,https://arxiv.org/search/?query=CIG++Exploration+via+Conditional+Information+Gain&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
-docs/appendix.html,https://openreview.net/forum?id=sDCGZbVL6d,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://openreview.net/pdf?id=sDCGZbVL6d,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://neurips.cc/virtual/2026/poster/154512,ok,HTTP 200
-docs/appendix.html,https://arxiv.org/search/?query=Coordination+Connectivity++Shared+Initialization+Shapes+the+Joint-Policy+Landscape+in+MARL&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
-docs/appendix.html,https://openreview.net/forum?id=D2HpZYZ8aI,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://openreview.net/pdf?id=D2HpZYZ8aI,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://neurips.cc/virtual/2026/poster/152582,ok,HTTP 200
-docs/appendix.html,https://arxiv.org/search/?query=Emergence+of+Physical+Intelligence+via+Controllable+Information+Production&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
-docs/appendix.html,https://openreview.net/forum?id=S15gujrcKN,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://openreview.net/pdf?id=S15gujrcKN,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://neurips.cc/virtual/2026/poster/151685,ok,HTTP 200
-docs/appendix.html,https://arxiv.org/search/?query=Training+Generalizable+Collaborative+Agents+via+Strategic+Risk+Aversion&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
-docs/appendix.html,https://openreview.net/forum?id=YmGCdpjNNh,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://openreview.net/pdf?id=YmGCdpjNNh,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://neurips.cc/virtual/2026/poster/153300,ok,HTTP 200
-docs/appendix.html,https://arxiv.org/search/?query=Unifying+Goal-Conditioned+RL+and+Unsupervised+Skill+Learning+via+Control-Maximization&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
-docs/appendix.html,https://openreview.net/forum?id=MHeZHmPRnt,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://openreview.net/pdf?id=MHeZHmPRnt,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://neurips.cc/virtual/2026/poster/155558,ok,HTTP 200
-docs/appendix.html,https://arxiv.org/search/?query=Free+Decompression+with+Algebraic+Spectral+Curves&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
-docs/appendix.html,https://openreview.net/forum?id=4fadvXVZXs,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://openreview.net/pdf?id=4fadvXVZXs,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://neurips.cc/virtual/2026/poster/154240,ok,HTTP 200
-docs/appendix.html,https://arxiv.org/search/?query=Generative+Modeling+via+Drifting&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
-docs/appendix.html,https://openreview.net/forum?id=FCkkBolf4o,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://openreview.net/pdf?id=FCkkBolf4o,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://neurips.cc/virtual/2026/poster/154172,ok,HTTP 200
-docs/appendix.html,https://arxiv.org/search/?query=ParetoSlider++Diffusion+Models+Post-Training+for+Continuous+Reward+Control&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
-docs/appendix.html,https://openreview.net/forum?id=FikEkhzT3F,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://openreview.net/pdf?id=FikEkhzT3F,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://neurips.cc/virtual/2026/poster/151581,ok,HTTP 200
-docs/appendix.html,https://arxiv.org/search/?query=Query+Lower+Bounds+for+Diffusion+Sampling&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
-docs/appendix.html,https://openreview.net/forum?id=ZXOqN26lhR,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://openreview.net/pdf?id=ZXOqN26lhR,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://neurips.cc/virtual/2026/poster/154990,ok,HTTP 200
-docs/appendix.html,https://arxiv.org/search/?query=Representation+Fr%C3%A9chet+Loss+for+Visual+Generation&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
-docs/appendix.html,https://openreview.net/forum?id=9OK87o8Wkf,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://openreview.net/pdf?id=9OK87o8Wkf,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://neurips.cc/virtual/2026/poster/153569,ok,HTTP 200
-docs/appendix.html,https://arxiv.org/search/?query=Shaping+Useful+Noise++Energy+Distributions+Predict+Visual+Pretraining+Quality&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
-docs/appendix.html,https://openreview.net/forum?id=KQRZdjU6Q1,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://openreview.net/pdf?id=KQRZdjU6Q1,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://neurips.cc/virtual/2026/poster/149475,ok,HTTP 200
-docs/appendix.html,https://arxiv.org/search/?query=Strong+Stochastic+Flow+Maps&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
-docs/appendix.html,https://openreview.net/forum?id=ppj0Eq4Y6y,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://openreview.net/pdf?id=ppj0Eq4Y6y,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://neurips.cc/virtual/2026/poster/153677,ok,HTTP 200
-docs/appendix.html,https://arxiv.org/search/?query=Tessellations+of+Semi-Discrete+Flow+Matching&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
-docs/appendix.html,https://openreview.net/forum?id=JbKDDvGT8o,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://openreview.net/pdf?id=JbKDDvGT8o,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://neurips.cc/virtual/2026/poster/139828,ok,HTTP 200
-docs/appendix.html,https://arxiv.org/search/?query=HABIT++Human-Aware+Behavior+and+Interaction+Training+Dataset+for+Robot+Manipulation&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
-docs/appendix.html,https://openreview.net/forum?id=2MmzwEyeO2,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://openreview.net/pdf?id=2MmzwEyeO2,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://neurips.cc/virtual/2026/poster/154464,ok,HTTP 200
-docs/appendix.html,https://arxiv.org/search/?query=Language-Conditioned+World+Modeling+for+Visual+Navigation&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
-docs/appendix.html,https://openreview.net/forum?id=DOtvhTItcX,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://openreview.net/pdf?id=DOtvhTItcX,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://neurips.cc/virtual/2026/poster/149981,ok,HTTP 200
-docs/appendix.html,https://arxiv.org/search/?query=SyncWorld++Visual+Calibration+Enables+World+Models+as+Zero-Shot+Simulators&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
-docs/appendix.html,https://openreview.net/forum?id=lj7OHtUYX1,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://openreview.net/pdf?id=lj7OHtUYX1,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://neurips.cc/virtual/2026/poster/155638,ok,HTTP 200
-docs/appendix.html,https://arxiv.org/search/?query=Can+We+Model+the+Artifacts+Explicitly++Disentangle+Artifacts+via+Pairwise+Edit+Relations+for+Image+Manipulation+Localization&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
-docs/appendix.html,https://openreview.net/forum?id=45xs8n0hj4,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://openreview.net/pdf?id=45xs8n0hj4,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://neurips.cc/virtual/2026/poster/151144,ok,HTTP 200
-docs/appendix.html,https://arxiv.org/search/?query=EntiRE++Invariant+Learning+for+Robust+Concept+Erasure+in+Text-to-Image+Generative+Models&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
-docs/appendix.html,https://openreview.net/forum?id=ch8Vn8e6ZM,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://openreview.net/pdf?id=ch8Vn8e6ZM,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://neurips.cc/virtual/2026/poster/149277,ok,HTTP 200
-docs/appendix.html,https://arxiv.org/search/?query=Behavioral+Geometric+Supervision+Aligns+Video+Foundation+Models+with+Human+Social+Perception&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
-docs/appendix.html,https://openreview.net/forum?id=rVX7LF9vry,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://openreview.net/pdf?id=rVX7LF9vry,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://neurips.cc/virtual/2026/poster/156046,ok,HTTP 200
-docs/appendix.html,https://arxiv.org/search/?query=C3P++Contrastive+promoter-protein+pretraining+yields+representations+capturing+bacterial+gene+regulation&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
-docs/appendix.html,https://openreview.net/forum?id=0pWBLS7Kzj,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://openreview.net/pdf?id=0pWBLS7Kzj,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://neurips.cc/virtual/2026/poster/151296,ok,HTTP 200
-docs/appendix.html,https://arxiv.org/search/?query=CausalBind++Causal+Modeling+and+Learning+for+Protein-Molecule+Virtual+Screening&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
-docs/appendix.html,https://openreview.net/forum?id=bURAYAEF84,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://openreview.net/pdf?id=bURAYAEF84,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://neurips.cc/virtual/2026/poster/152268,ok,HTTP 200
-docs/appendix.html,https://arxiv.org/search/?query=The+Algorithm+Is+Not+the+Behavior++Learned+Priors+Override+Look-Ahead+in+a+Chess-Playing+Neural+Network&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
-docs/appendix.html,https://openreview.net/forum?id=ULhusDnCQy,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://openreview.net/pdf?id=ULhusDnCQy,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://neurips.cc/virtual/2026/poster/150986,ok,HTTP 200
-docs/appendix.html,https://arxiv.org/search/?query=Follow+the+Regularized+Leader+Does+Not+Converge+in+Constrained+Optimization&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
-docs/appendix.html,https://openreview.net/forum?id=dmNapb9nHG,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://openreview.net/pdf?id=dmNapb9nHG,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://neurips.cc/virtual/2026/poster/152757,ok,HTTP 200
-docs/appendix.html,https://arxiv.org/search/?query=The+Power+of+a+Random+Sample+in+Online+Algorithms&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
-docs/appendix.html,https://openreview.net/forum?id=QaYdB3AQtP,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://openreview.net/pdf?id=QaYdB3AQtP,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://neurips.cc/virtual/2026/poster/139749,ok,HTTP 200
-docs/appendix.html,https://arxiv.org/search/?query=MOVEBENCH++A+Benchmark+for+Global-Scale+Wildlife+Movement+Forecasting&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
-docs/appendix.html,https://openreview.net/forum?id=6ss3Wyzv27,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://openreview.net/pdf?id=6ss3Wyzv27,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://neurips.cc/virtual/2026/poster/154914,ok,HTTP 200
-docs/appendix.html,https://arxiv.org/search/?query=Spectral+Energy+Allocation+Enables+Source-Free+Domain+Adaptation+in+Time+Series+Forecasting&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
-docs/appendix.html,https://openreview.net/forum?id=9zd8FaFWpx,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://openreview.net/pdf?id=9zd8FaFWpx,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://neurips.cc/virtual/2026/poster/151700,ok,HTTP 200
-docs/appendix.html,https://arxiv.org/search/?query=TiRex-2++Generalizing+TiRex+to+Multivariate+Data+and+Streaming&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
-docs/appendix.html,https://openreview.net/forum?id=YgN3LimhOJ,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://openreview.net/pdf?id=YgN3LimhOJ,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://neurips.cc/virtual/2026/poster/148644,ok,HTTP 200
-docs/appendix.html,https://arxiv.org/search/?query=Breakeven+complexity++A+new+perspective+on+neural+partial+differential+equation+solvers&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
-docs/appendix.html,https://openreview.net/forum?id=wBeG0ytI2l,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://openreview.net/pdf?id=wBeG0ytI2l,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://neurips.cc/virtual/2026/poster/154008,ok,HTTP 200
-docs/appendix.html,https://arxiv.org/search/?query=DIAGNO++Diagonal+Spherical+Neural+Operators+for+Heterogeneous+Earth+Dynamics+Modeling&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
-docs/appendix.html,https://openreview.net/forum?id=GtXyIhzAqI,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://openreview.net/pdf?id=GtXyIhzAqI,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://neurips.cc/virtual/2026/poster/151389,ok,HTTP 200
-docs/appendix.html,https://arxiv.org/search/?query=Mechanism-Aware+Ensemble+Conditioning+for+Data-Limited+Emulation+of+Extreme+Events&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
-docs/appendix.html,https://openreview.net/forum?id=b0AOZbejEk,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/appendix.html,https://openreview.net/pdf?id=b0AOZbejEk,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/atlas.html,https://unpkg.com/apache-arrow@21.2.0/Arrow.es2015.min.js,ok,HTTP 200
-docs/index.html,https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap,ok,HTTP 200
-docs/index.html,index.html,ok,relative file
-docs/index.html,atlas.html,ok,relative file
-docs/index.html,papers.html,ok,relative file
-docs/index.html,charts/treemap.html,ok,relative file
-docs/index.html,appendix.html,ok,relative file
-docs/index.html,https://github.com/mohammadi-hadi/NeurIPS2026_Analysis,pending,repository is private; public link works once it is made public
-docs/index.html,figures/atlas_static.png,ok,relative file
-docs/index.html,figures/field_moved.png,ok,relative file
-docs/index.html,figures/areas_slope.png,ok,relative file
-docs/index.html,charts/areas_dumbbell.html,ok,relative file
-docs/index.html,figures/agents_family.png,ok,relative file
-docs/index.html,figures/movers_x.png,ok,relative file
-docs/index.html,figures/vocabulary_trends.png,ok,relative file
-docs/index.html,charts/vocabulary.html,ok,relative file
-docs/index.html,figures/highlight_rate_by_area.png,ok,relative file
-docs/index.html,figures/cities_lean.png,ok,relative file
-docs/index.html,charts/site_mix.html,ok,relative file
-docs/index.html,figures/top_institutions.png,ok,relative file
-docs/index.html,figures/countries.png,ok,relative file
-docs/index.html,charts/countries.html,ok,relative file
-docs/index.html,https://mohammadi.cv,ok,HTTP 200
-docs/papers.html,https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap,ok,HTTP 200
-docs/papers.html,index.html,ok,relative file
-docs/papers.html,atlas.html,ok,relative file
-docs/papers.html,papers.html,ok,relative file
-docs/papers.html,charts/treemap.html,ok,relative file
-docs/papers.html,appendix.html,ok,relative file
-docs/papers.html,https://github.com/mohammadi-hadi/NeurIPS2026_Analysis,pending,repository is private; public link works once it is made public
-docs/charts/areas_dumbbell.html,https://cdn.plot.ly/plotly-4.1.1.min.js,ok,HTTP 200
-docs/charts/countries.html,https://cdn.plot.ly/plotly-4.1.1.min.js,ok,HTTP 200
-docs/charts/site_mix.html,https://cdn.plot.ly/plotly-4.1.1.min.js,ok,HTTP 200
-docs/charts/treemap.html,https://cdn.plot.ly/plotly-4.1.1.min.js,ok,HTTP 200
-docs/charts/vocabulary.html,https://cdn.plot.ly/plotly-4.1.1.min.js,ok,HTTP 200
-docs/papers.html,https://neurips.cc/virtual/2026/poster/152156,ok,HTTP 200
+docs/2026/appendix.html,https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap,ok,HTTP 200
+docs/2026/appendix.html,../,ok,relative file
+docs/2026/appendix.html,index.html,ok,relative file
+docs/2026/appendix.html,atlas.html,ok,relative file
+docs/2026/appendix.html,papers.html,ok,relative file
+docs/2026/appendix.html,charts/treemap.html,ok,relative file
+docs/2026/appendix.html,appendix.html,ok,relative file
+docs/2026/appendix.html,https://github.com/mohammadi-hadi/neurips,ok,HTTP 200
+docs/2026/appendix.html,https://neurips.cc/virtual/2026/poster/139265,ok,HTTP 200
+docs/2026/appendix.html,https://arxiv.org/search/?query=ALTER++An+Allen+s+Algebra-Based+Evaluation+Framework+for+Temporal+Reasoning+of+LLMs&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
+docs/2026/appendix.html,https://openreview.net/forum?id=ay0UXDsniW,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://openreview.net/pdf?id=ay0UXDsniW,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://neurips.cc/virtual/2026/poster/138960,ok,HTTP 200
+docs/2026/appendix.html,https://arxiv.org/search/?query=Benchmark+Health+Index++A+Systematic+Framework+for+Benchmarking+the+Benchmarks+of+LLMs&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
+docs/2026/appendix.html,https://openreview.net/forum?id=tsoDWPkJOz,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://openreview.net/pdf?id=tsoDWPkJOz,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://neurips.cc/virtual/2026/poster/151014,ok,HTTP 200
+docs/2026/appendix.html,https://arxiv.org/search/?query=Catch-Only-One++Non-Transferable+Examples+for+Model-Specific+Authorization&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
+docs/2026/appendix.html,https://openreview.net/forum?id=db0FP1G7V7,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://openreview.net/pdf?id=db0FP1G7V7,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://neurips.cc/virtual/2026/poster/152543,ok,HTTP 200
+docs/2026/appendix.html,https://arxiv.org/search/?query=CLIOPATRA++Extracting+Private+Information+from+LLM+Insights&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
+docs/2026/appendix.html,https://openreview.net/forum?id=SNNm5MJ9dg,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://openreview.net/pdf?id=SNNm5MJ9dg,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://neurips.cc/virtual/2026/poster/151876,ok,HTTP 200
+docs/2026/appendix.html,https://arxiv.org/search/?query=CURE++Counterfactual+Unsafe-token+Re-masking+for+Diffusion+Large+Language+Model+Test-time+Alignment&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
+docs/2026/appendix.html,https://openreview.net/forum?id=XF2UgJwAIj,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://openreview.net/pdf?id=XF2UgJwAIj,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://neurips.cc/virtual/2026/poster/152494,ok,HTTP 200
+docs/2026/appendix.html,https://arxiv.org/search/?query=Fisher-R1++Training+LLM+Agents+for+Reliable+Hypothesis+Testing&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
+docs/2026/appendix.html,https://openreview.net/forum?id=ShMNgympCf,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://openreview.net/pdf?id=ShMNgympCf,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://neurips.cc/virtual/2026/poster/139278,ok,HTTP 200
+docs/2026/appendix.html,https://arxiv.org/search/?query=HearSayBench++Can+LLMs+Navigate+from+Abstract+Human+Rights+to+Lived+Lives+&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
+docs/2026/appendix.html,https://openreview.net/forum?id=ZqbnpmPYvV,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://openreview.net/pdf?id=ZqbnpmPYvV,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://neurips.cc/virtual/2026/poster/152085,ok,HTTP 200
+docs/2026/appendix.html,https://arxiv.org/search/?query=Leaderboard+Hacking++Preference-Based+Model+Evaluations+are+Vulnerable+to+Manipulation&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
+docs/2026/appendix.html,https://openreview.net/forum?id=VbWRUbpIUv,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://openreview.net/pdf?id=VbWRUbpIUv,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://neurips.cc/virtual/2026/poster/155783,ok,HTTP 200
+docs/2026/appendix.html,https://arxiv.org/search/?query=Learning+to+Audit+ML+Models+with+Theory+of+Mind&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
+docs/2026/appendix.html,https://openreview.net/forum?id=2vhiHLMdzi,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://openreview.net/pdf?id=2vhiHLMdzi,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://neurips.cc/virtual/2026/poster/148220,ok,HTTP 200
+docs/2026/appendix.html,https://arxiv.org/search/?query=LittleLearner++Language+Models+Under+Pedagogically-Controlled+Knowledge+Exposure&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
+docs/2026/appendix.html,https://openreview.net/forum?id=zSwgtp9S5a,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://openreview.net/pdf?id=zSwgtp9S5a,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://neurips.cc/virtual/2026/poster/154333,ok,HTTP 200
+docs/2026/appendix.html,https://arxiv.org/search/?query=LoRAcles++Self-Supervised+Weight-Space+Interpretability+at+Scale&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
+docs/2026/appendix.html,https://openreview.net/forum?id=EOoc3j4hW8,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://openreview.net/pdf?id=EOoc3j4hW8,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://neurips.cc/virtual/2026/poster/148241,ok,HTTP 200
+docs/2026/appendix.html,https://arxiv.org/search/?query=Neural+Chameleons++Language+Models+Can+Learn+to+Hide+Their+Thoughts+from+Unseen+Activation+Monitors&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
+docs/2026/appendix.html,https://openreview.net/forum?id=zLwGdQLBbW,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://openreview.net/pdf?id=zLwGdQLBbW,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://neurips.cc/virtual/2026/poster/151513,ok,HTTP 200
+docs/2026/appendix.html,https://arxiv.org/search/?query=The+Attacker+in+the+Mirror++Breaking+Self-Consistency+in+Safety+via+Anchored+Bipolicy+Self-Play&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
+docs/2026/appendix.html,https://openreview.net/forum?id=a5qQCbrc2b,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://openreview.net/pdf?id=a5qQCbrc2b,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://neurips.cc/virtual/2026/poster/140062,ok,HTTP 200
+docs/2026/appendix.html,https://arxiv.org/search/?query=We+Should+Distinguish+Unlearning+From+Untraining&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
+docs/2026/appendix.html,https://openreview.net/forum?id=U9dDSCabjP,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://openreview.net/pdf?id=U9dDSCabjP,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://neurips.cc/virtual/2026/poster/149762,ok,HTTP 200
+docs/2026/appendix.html,https://arxiv.org/search/?query=BEAST3D++animal+behavioral+analysis+and+neural+encoding+from+multi-view+video+via+Gaussian+splatting&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
+docs/2026/appendix.html,https://openreview.net/forum?id=nWHsSjFVA0,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://openreview.net/pdf?id=nWHsSjFVA0,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://neurips.cc/virtual/2026/poster/153331,ok,HTTP 200
+docs/2026/appendix.html,https://arxiv.org/search/?query=Certifiably+Optimal+Robust+Angular+Synchronization&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
+docs/2026/appendix.html,https://openreview.net/forum?id=M7UwJ21cjC,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://openreview.net/pdf?id=M7UwJ21cjC,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://neurips.cc/virtual/2026/poster/148758,ok,HTTP 200
+docs/2026/appendix.html,https://arxiv.org/search/?query=Consistent+3D+Surface+Flow+Model+with+Global+State&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
+docs/2026/appendix.html,https://openreview.net/forum?id=vGEOI5LZ5X,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://openreview.net/pdf?id=vGEOI5LZ5X,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://neurips.cc/virtual/2026/poster/154303,ok,HTTP 200
+docs/2026/appendix.html,https://arxiv.org/search/?query=D%C3%A9j%C3%A0+View++Looping+Transformers+for+Multi-View+3D+Reconstruction&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
+docs/2026/appendix.html,https://openreview.net/forum?id=Eidz3t6qmk,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://openreview.net/pdf?id=Eidz3t6qmk,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://neurips.cc/virtual/2026/poster/153119,ok,HTTP 200
+docs/2026/appendix.html,https://arxiv.org/search/?query=Non-Colliding+Biometric+Identities+for+Digital+Entities++Geometry++Capacity++and+Million-Scale+Virtual+Identity+Provisioning&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
+docs/2026/appendix.html,https://openreview.net/forum?id=NmbGjaLeN2,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://openreview.net/pdf?id=NmbGjaLeN2,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://neurips.cc/virtual/2026/poster/154593,ok,HTTP 200
+docs/2026/appendix.html,https://arxiv.org/search/?query=Releasing+Anchors+from+Cross-View+Correspondence++Probabilistic+Multi-View+Anchor+Graph+Clustering&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
+docs/2026/appendix.html,https://openreview.net/forum?id=CQIfXmGpTl,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://openreview.net/pdf?id=CQIfXmGpTl,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://neurips.cc/virtual/2026/poster/155674,ok,HTTP 200
+docs/2026/appendix.html,https://arxiv.org/search/?query=SAM+3D+Animal++Promptable+Animal+3D+Reconstruction+from+Images+in+the+Wild&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
+docs/2026/appendix.html,https://openreview.net/forum?id=3pqVVK0kW3,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://openreview.net/pdf?id=3pqVVK0kW3,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://neurips.cc/virtual/2026/poster/153899,ok,HTTP 200
+docs/2026/appendix.html,https://arxiv.org/search/?query=Trellis4D++Complex+4D+Mesh+Generation&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
+docs/2026/appendix.html,https://openreview.net/forum?id=Hse0SKGx7y,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://openreview.net/pdf?id=Hse0SKGx7y,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://neurips.cc/virtual/2026/poster/149484,ok,HTTP 200
+docs/2026/appendix.html,https://arxiv.org/search/?query=Video+Forensic+Self-Descriptions++Leveraging+Temporally+Distributed+Forensic+Microstructures+for+Zero-Shot+Detection+of+AI-Generated+Videos&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
+docs/2026/appendix.html,https://openreview.net/forum?id=pnZvRHgjWk,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://openreview.net/pdf?id=pnZvRHgjWk,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://neurips.cc/virtual/2026/poster/139558,ok,HTTP 200
+docs/2026/appendix.html,https://arxiv.org/search/?query=AgentAbstain++Do+LLM+Agents+Know+When+Not+to+Act+&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
+docs/2026/appendix.html,https://openreview.net/forum?id=Iee7eL6QV0,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://openreview.net/pdf?id=Iee7eL6QV0,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://neurips.cc/virtual/2026/poster/140106,ok,HTTP 200
+docs/2026/appendix.html,https://arxiv.org/search/?query=Agent+Security+is+a+Systems+Problem&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
+docs/2026/appendix.html,https://openreview.net/forum?id=8gDb2bnWWf,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://openreview.net/pdf?id=8gDb2bnWWf,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://neurips.cc/virtual/2026/poster/149524,ok,HTTP 200
+docs/2026/appendix.html,https://arxiv.org/search/?query=APS++Bias-Controlled+Adaptive+Prototype+Simulation+for+Population-Scale+LLM+Agents&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
+docs/2026/appendix.html,https://openreview.net/forum?id=pVNs5UOYq3,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://openreview.net/pdf?id=pVNs5UOYq3,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://neurips.cc/virtual/2026/poster/154319,ok,HTTP 200
+docs/2026/appendix.html,https://arxiv.org/search/?query=ExComm++Exploration-Stage+Communication+for+Error-Resilient+Agentic+Test-Time+Scaling&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
+docs/2026/appendix.html,https://openreview.net/forum?id=EXtXoqNLl3,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://openreview.net/pdf?id=EXtXoqNLl3,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://neurips.cc/virtual/2026/poster/138976,ok,HTTP 200
+docs/2026/appendix.html,https://arxiv.org/search/?query=GenAI+Evaluation+Results+are+Largely+Artifacts+of+Evaluation+Design+Choices++Evidence+from+Audit+Studies+of+Resume+Screening&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
+docs/2026/appendix.html,https://openreview.net/forum?id=sy5IWI4jWC,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://openreview.net/pdf?id=sy5IWI4jWC,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://neurips.cc/virtual/2026/poster/148497,ok,HTTP 200
+docs/2026/appendix.html,https://arxiv.org/search/?query=HeMeR++Heterogeneous+Memory+Reconciliation+for+Embodied+Agents+via+Structured+KV+Reuse&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
+docs/2026/appendix.html,https://openreview.net/forum?id=xMqv6BYsZv,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://openreview.net/pdf?id=xMqv6BYsZv,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://neurips.cc/virtual/2026/poster/150415,ok,HTTP 200
+docs/2026/appendix.html,https://arxiv.org/search/?query=LITMUS++Benchmarking+Behavioral+Jailbreaks+of+LLM+Agents+in+Real+OS+Environments&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
+docs/2026/appendix.html,https://openreview.net/forum?id=iCXoa3VMy0,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://openreview.net/pdf?id=iCXoa3VMy0,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://neurips.cc/virtual/2026/poster/139626,ok,HTTP 200
+docs/2026/appendix.html,https://arxiv.org/search/?query=MLS-Bench++A+Holistic+and+Rigorous+Assessment+of+AI+Systems+on+Building+Better+AI&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
+docs/2026/appendix.html,https://openreview.net/forum?id=EaF7FneBfZ,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://openreview.net/pdf?id=EaF7FneBfZ,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://neurips.cc/virtual/2026/poster/139388,ok,HTTP 200
+docs/2026/appendix.html,https://arxiv.org/search/?query=Offloading+Score++Measuring+AI+Reliance+through+Counterfactual+Workflows&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
+docs/2026/appendix.html,https://openreview.net/forum?id=TT3ACb02l4,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://openreview.net/pdf?id=TT3ACb02l4,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://neurips.cc/virtual/2026/poster/148940,ok,HTTP 200
+docs/2026/appendix.html,https://arxiv.org/search/?query=Resilience+Matters+for+Embodied+Agents+System++New+Metrics++Systematic+Evaluation++and+Optimization&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
+docs/2026/appendix.html,https://openreview.net/forum?id=u2TS1Rxun2,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://openreview.net/pdf?id=u2TS1Rxun2,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://neurips.cc/virtual/2026/poster/149874,ok,HTTP 200
+docs/2026/appendix.html,https://arxiv.org/search/?query=SMART++Scalable+Multi-Agent+Role-conditioned+Teaming+via+LLM-free+Tree+Search&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
+docs/2026/appendix.html,https://openreview.net/forum?id=mYzIBNy0LN,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://openreview.net/pdf?id=mYzIBNy0LN,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://neurips.cc/virtual/2026/poster/154927,ok,HTTP 200
+docs/2026/appendix.html,https://arxiv.org/search/?query=Soteria++Formally+Verified+Planning+with+Runtime+Enforcement+for+Safe+LLM+Agents&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
+docs/2026/appendix.html,https://openreview.net/forum?id=9url1EFMaU,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://openreview.net/pdf?id=9url1EFMaU,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://neurips.cc/virtual/2026/poster/155412,ok,HTTP 200
+docs/2026/appendix.html,https://arxiv.org/search/?query=BrainWorld++A+Structural-Prior-Conditioned+Generative+Model+for+Whole-Brain+4D+fMRI+Dynamics&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
+docs/2026/appendix.html,https://openreview.net/forum?id=5rS8m8pxgo,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://openreview.net/pdf?id=5rS8m8pxgo,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://neurips.cc/virtual/2026/poster/151520,ok,HTTP 200
+docs/2026/appendix.html,https://arxiv.org/search/?query=DD-CAM++Minimal+Sufficient+Explanations+for+Vision+Models+Using+Delta+Debugging&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
+docs/2026/appendix.html,https://openreview.net/forum?id=a30XWAYlaJ,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://openreview.net/pdf?id=a30XWAYlaJ,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://neurips.cc/virtual/2026/poster/150168,ok,HTTP 200
+docs/2026/appendix.html,https://arxiv.org/search/?query=Decomposing+Earth+Embeddings+with+Sparse+Autoencoders&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
+docs/2026/appendix.html,https://openreview.net/forum?id=kB29xkjNQK,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://openreview.net/pdf?id=kB29xkjNQK,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://neurips.cc/virtual/2026/poster/139125,ok,HTTP 200
+docs/2026/appendix.html,https://arxiv.org/search/?query=Evaluating+Neural+Data+Tokenizers++A+Framework+for+Assessing+Learned+Representations+of+Spiking+Activity&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
+docs/2026/appendix.html,https://openreview.net/forum?id=jYb8X9iFPY,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://openreview.net/pdf?id=jYb8X9iFPY,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://neurips.cc/virtual/2026/poster/155943,ok,HTTP 200
+docs/2026/appendix.html,https://arxiv.org/search/?query=Exact+Gaussian+Moment+Matching+for+Residual+Networks++a+Second-Order+Method&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
+docs/2026/appendix.html,https://openreview.net/forum?id=1dsxDeHdpR,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://openreview.net/pdf?id=1dsxDeHdpR,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://neurips.cc/virtual/2026/poster/150840,ok,HTTP 200
+docs/2026/appendix.html,https://arxiv.org/search/?query=Geometry-Aware+Similarity+Metrics+for+Neural+Representations+on+Riemannian+and+Statistical+Manifolds&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
+docs/2026/appendix.html,https://openreview.net/forum?id=evbVz4WWXN,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://openreview.net/pdf?id=evbVz4WWXN,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://neurips.cc/virtual/2026/poster/151393,ok,HTTP 200
+docs/2026/appendix.html,https://arxiv.org/search/?query=IDEA++Unwrapping+Visual+Black-box+Models+by+Interaction+Decomposition&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
+docs/2026/appendix.html,https://openreview.net/forum?id=azDcnhfVNx,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://openreview.net/pdf?id=azDcnhfVNx,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://neurips.cc/virtual/2026/poster/155071,ok,HTTP 200
+docs/2026/appendix.html,https://arxiv.org/search/?query=Learning+interpretable+Schur+forms+of+recurrent+weight+matrices&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
+docs/2026/appendix.html,https://openreview.net/forum?id=8gcHRPsjr5,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://openreview.net/pdf?id=8gcHRPsjr5,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://neurips.cc/virtual/2026/poster/152289,ok,HTTP 200
+docs/2026/appendix.html,https://arxiv.org/search/?query=Learning+Reveals+Invisible+Structure+in+Low-Rank+RNNs&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
+docs/2026/appendix.html,https://openreview.net/forum?id=UB2Xsj6ZZA,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://openreview.net/pdf?id=UB2Xsj6ZZA,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://neurips.cc/virtual/2026/poster/151712,ok,HTTP 200
+docs/2026/appendix.html,https://arxiv.org/search/?query=Learning+Sparse+Semantic-Cortical+Atoms+for+Multisubject+Naturalistic+fMRI+Encoding&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
+docs/2026/appendix.html,https://openreview.net/forum?id=YcEZoSqrxa,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://openreview.net/pdf?id=YcEZoSqrxa,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://neurips.cc/virtual/2026/poster/149255,ok,HTTP 200
+docs/2026/appendix.html,https://arxiv.org/search/?query=MindAlign++Bridging+EEG++Vision++and+Language+for+Zero-Shot+Visual+Decoding&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
+docs/2026/appendix.html,https://openreview.net/forum?id=riv0NRuHeq,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://openreview.net/pdf?id=riv0NRuHeq,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://neurips.cc/virtual/2026/poster/153194,ok,HTTP 200
+docs/2026/appendix.html,https://arxiv.org/search/?query=Neural+population+tuning+statistics+as+priors+for+multitask+generalization&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
+docs/2026/appendix.html,https://openreview.net/forum?id=N8F8d2c171,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://openreview.net/pdf?id=N8F8d2c171,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://neurips.cc/virtual/2026/poster/140002,ok,HTTP 200
+docs/2026/appendix.html,https://arxiv.org/search/?query=The+Dead+Salmons+of+AI+Interpretability++The+Need+for+a+Statistical+Inference+Perspective&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
+docs/2026/appendix.html,https://openreview.net/forum?id=w0wOa4UDHv,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://openreview.net/pdf?id=w0wOa4UDHv,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://neurips.cc/virtual/2026/poster/155585,ok,HTTP 200
+docs/2026/appendix.html,https://arxiv.org/search/?query=The+Sign+Code++The+Hidden+Binary+Nature+of+Deep+Networks&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
+docs/2026/appendix.html,https://openreview.net/forum?id=4WN4vV8RCR,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://openreview.net/pdf?id=4WN4vV8RCR,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://neurips.cc/virtual/2026/poster/153347,ok,HTTP 200
+docs/2026/appendix.html,https://arxiv.org/search/?query=UECO++A+Unified+Encoder+with+Structure-Aware+Attention+Mixture+via+Iterative+Edge+Evolving+for+Neural+Combinatorial+Optimization&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
+docs/2026/appendix.html,https://openreview.net/forum?id=M2lqt23VO7,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://openreview.net/pdf?id=M2lqt23VO7,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://neurips.cc/virtual/2026/poster/154794,ok,HTTP 200
+docs/2026/appendix.html,https://arxiv.org/search/?query=Uniform-in-Time+Weak+Propagation+of+Chaos+in+Shallow+Neural+Networks&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
+docs/2026/appendix.html,https://openreview.net/forum?id=Aupfb8A52K,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://openreview.net/pdf?id=Aupfb8A52K,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://neurips.cc/virtual/2026/poster/153824,ok,HTTP 200
+docs/2026/appendix.html,https://arxiv.org/search/?query=Unlocking+Volition++Proactive+Intention+Decoding+via+Interpretable+Graph+Learning+of+Multi-Region+ECoG&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
+docs/2026/appendix.html,https://openreview.net/forum?id=IRTohTNxhM,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://openreview.net/pdf?id=IRTohTNxhM,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://neurips.cc/virtual/2026/poster/155350,ok,HTTP 200
+docs/2026/appendix.html,https://arxiv.org/search/?query=Bridging+Compute-+and+Data-Optimal+Pretraining&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
+docs/2026/appendix.html,https://openreview.net/forum?id=6HVSfPO1cT,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://openreview.net/pdf?id=6HVSfPO1cT,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://neurips.cc/virtual/2026/poster/154865,ok,HTTP 200
+docs/2026/appendix.html,https://arxiv.org/search/?query=Compact+SO+3++Equivariant+Atomistic+Foundation+Models+via+Structural+Pruning&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
+docs/2026/appendix.html,https://openreview.net/forum?id=AJ8IWO0noE,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://openreview.net/pdf?id=AJ8IWO0noE,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://neurips.cc/virtual/2026/poster/148321,ok,HTTP 200
+docs/2026/appendix.html,https://arxiv.org/search/?query=Felid++A+Flexible+and+Efficient+Design+for+Transformer+Fine-Tuning+over+Encrypted+Data&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
+docs/2026/appendix.html,https://openreview.net/forum?id=yglphSefi0,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://openreview.net/pdf?id=yglphSefi0,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://neurips.cc/virtual/2026/poster/150427,ok,HTTP 200
+docs/2026/appendix.html,https://arxiv.org/search/?query=Fractional+State+Space+Transition+for+Long+Sequence+Modeling&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
+docs/2026/appendix.html,https://openreview.net/forum?id=i6ZEbxGeKu,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://openreview.net/pdf?id=i6ZEbxGeKu,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://neurips.cc/virtual/2026/poster/150472,ok,HTTP 200
+docs/2026/appendix.html,https://arxiv.org/search/?query=Pruning+and+Distilling+Mixture-of-Experts+into+Dense+Language+Models&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
+docs/2026/appendix.html,https://openreview.net/forum?id=hmvlyb1yQu,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://openreview.net/pdf?id=hmvlyb1yQu,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://neurips.cc/virtual/2026/poster/139355,ok,HTTP 200
+docs/2026/appendix.html,https://arxiv.org/search/?query=DD-Ranking++Rethinking+the+Evaluation+of+Dataset+Distillation&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
+docs/2026/appendix.html,https://openreview.net/forum?id=UreH0QGZXp,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://openreview.net/pdf?id=UreH0QGZXp,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://neurips.cc/virtual/2026/poster/155800,ok,HTTP 200
+docs/2026/appendix.html,https://arxiv.org/search/?query=Filtered+Conformal+Ellipsoids+for+Graph-Native+Time+Series&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
+docs/2026/appendix.html,https://openreview.net/forum?id=2mdgP5ws1o,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://openreview.net/pdf?id=2mdgP5ws1o,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://neurips.cc/virtual/2026/poster/149451,ok,HTTP 200
+docs/2026/appendix.html,https://arxiv.org/search/?query=Impossibility+of+Distribution-Free+Predictive+Inference+for+Individual+Treatment+Effects&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
+docs/2026/appendix.html,https://openreview.net/forum?id=pyIv9zfcdd,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://openreview.net/pdf?id=pyIv9zfcdd,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://neurips.cc/virtual/2026/poster/154957,ok,HTTP 200
+docs/2026/appendix.html,https://arxiv.org/search/?query=LLM-Enhanced+Random+Forests+in+Orthogonal+Hyperbolic+Subspaces+for+Tabular+Learning&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
+docs/2026/appendix.html,https://openreview.net/forum?id=9e7CzWvHvW,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://openreview.net/pdf?id=9e7CzWvHvW,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://neurips.cc/virtual/2026/poster/155987,ok,HTTP 200
+docs/2026/appendix.html,https://arxiv.org/search/?query=MaxSketch++Robust+Distinct+Counting+in+Streams+via+Random+Projections&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
+docs/2026/appendix.html,https://openreview.net/forum?id=1MB9KxyzHe,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://openreview.net/pdf?id=1MB9KxyzHe,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://neurips.cc/virtual/2026/poster/153397,ok,HTTP 200
+docs/2026/appendix.html,https://arxiv.org/search/?query=Mitigating+Confidence+Miscalibration+in+Open-World+Semi-Supervised+Learning&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
+docs/2026/appendix.html,https://openreview.net/forum?id=LfaHJnaV9L,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://openreview.net/pdf?id=LfaHJnaV9L,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://neurips.cc/virtual/2026/poster/140022,ok,HTTP 200
+docs/2026/appendix.html,https://arxiv.org/search/?query=Position++Fair+Representations+Cannot+Hold+What+They+Promise&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
+docs/2026/appendix.html,https://openreview.net/forum?id=lmeLparD9S,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://openreview.net/pdf?id=lmeLparD9S,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://neurips.cc/virtual/2026/poster/149340,ok,HTTP 200
+docs/2026/appendix.html,https://arxiv.org/search/?query=Scale-Sensitive+Shattering++Learnability+and+Evaluability+at+Optimal+Scale&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
+docs/2026/appendix.html,https://openreview.net/forum?id=qoanAQUemS,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://openreview.net/pdf?id=qoanAQUemS,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://neurips.cc/virtual/2026/poster/148778,ok,HTTP 200
+docs/2026/appendix.html,https://arxiv.org/search/?query=Surprises+in+Proper+Positive-Only+Learning&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
+docs/2026/appendix.html,https://openreview.net/forum?id=v81L38ZyrQ,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://openreview.net/pdf?id=v81L38ZyrQ,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://neurips.cc/virtual/2026/poster/148311,ok,HTTP 200
+docs/2026/appendix.html,https://arxiv.org/search/?query=Testable+and+Actionable+Calibration+for+Full+Swap+Regret&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
+docs/2026/appendix.html,https://openreview.net/forum?id=yls0nG3VKg,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://openreview.net/pdf?id=yls0nG3VKg,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://neurips.cc/virtual/2026/poster/140101,ok,HTTP 200
+docs/2026/appendix.html,https://arxiv.org/search/?query=The+Aleatoric-Epistemic+Dichotomy+of+Uncertainty+is+Meaningful+and+Indispensable+for+Machine+Learning&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
+docs/2026/appendix.html,https://openreview.net/forum?id=CuRV56FVBy,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://openreview.net/pdf?id=CuRV56FVBy,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://neurips.cc/virtual/2026/poster/151725,ok,HTTP 200
+docs/2026/appendix.html,https://arxiv.org/search/?query=The+Stability+of+Online+Algorithms+in+Performative+Prediction&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
+docs/2026/appendix.html,https://openreview.net/forum?id=YYzvip7hPZ,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://openreview.net/pdf?id=YYzvip7hPZ,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://neurips.cc/virtual/2026/poster/150429,ok,HTTP 200
+docs/2026/appendix.html,https://arxiv.org/search/?query=Escaping+the+Cognitive+Well++Efficient+Competition+Math+with+Off-the-Shelf+Models&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
+docs/2026/appendix.html,https://openreview.net/forum?id=i6Ojls5BRt,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://openreview.net/pdf?id=i6Ojls5BRt,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://neurips.cc/virtual/2026/poster/155022,ok,HTTP 200
+docs/2026/appendix.html,https://arxiv.org/search/?query=Nemotron-Cascade++Scaling+Cascaded+Reinforcement+Learning+for+General-Purpose+Reasoning+Models&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
+docs/2026/appendix.html,https://openreview.net/forum?id=96v36aMNTx,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://openreview.net/pdf?id=96v36aMNTx,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://neurips.cc/virtual/2026/poster/149098,ok,HTTP 200
+docs/2026/appendix.html,https://arxiv.org/search/?query=Binding+Multiple+Modalities+via+Multimodal+Wasserstein+Barycenter&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
+docs/2026/appendix.html,https://openreview.net/forum?id=swVrjlNX4Q,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://openreview.net/pdf?id=swVrjlNX4Q,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://neurips.cc/virtual/2026/poster/152087,ok,HTTP 200
+docs/2026/appendix.html,https://arxiv.org/search/?query=Clarification+as+Supervision++Reinforcement+Learning+for+Vision-Language+Interfaces&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
+docs/2026/appendix.html,https://openreview.net/forum?id=VaoJb3PtWQ,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://openreview.net/pdf?id=VaoJb3PtWQ,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://neurips.cc/virtual/2026/poster/139481,ok,HTTP 200
+docs/2026/appendix.html,https://arxiv.org/search/?query=GeoSym127K++Scalable+Symbolically-verifiable+Synthesis+for+Multimodal+Geometric+Reasoning&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
+docs/2026/appendix.html,https://openreview.net/forum?id=NO4INpEpCi,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://openreview.net/pdf?id=NO4INpEpCi,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://neurips.cc/virtual/2026/poster/156128,ok,HTTP 200
+docs/2026/appendix.html,https://arxiv.org/search/?query=Incentivizing+Medical+Vision+Capabilities+from+Large-Scale+Multimodal+Pre-training&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
+docs/2026/appendix.html,https://openreview.net/forum?id=0BXKsjKlFJ,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://openreview.net/pdf?id=0BXKsjKlFJ,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://neurips.cc/virtual/2026/poster/151372,ok,HTTP 200
+docs/2026/appendix.html,https://arxiv.org/search/?query=They+Can+See+It+but+not+Say+It++Iterative+Self+Knowledge+Re-expression+in+Visual+Reasoning+Relative+Pose+Identification&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
+docs/2026/appendix.html,https://openreview.net/forum?id=b4HCV0e0V8,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://openreview.net/pdf?id=b4HCV0e0V8,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://neurips.cc/virtual/2026/poster/150085,ok,HTTP 200
+docs/2026/appendix.html,https://arxiv.org/search/?query=Thinking+with+Images+as+Continuous+Policy++Numerical+Visual+Chain-of-Thought&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
+docs/2026/appendix.html,https://openreview.net/forum?id=kqCpiR360C,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://openreview.net/pdf?id=kqCpiR360C,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://neurips.cc/virtual/2026/poster/151481,ok,HTTP 200
+docs/2026/appendix.html,https://arxiv.org/search/?query=Can+In-Context+Learning+Support+Intrinsic+Curiosity+&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
+docs/2026/appendix.html,https://openreview.net/forum?id=aHSKeImV3Z,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://openreview.net/pdf?id=aHSKeImV3Z,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://neurips.cc/virtual/2026/poster/149190,ok,HTTP 200
+docs/2026/appendix.html,https://arxiv.org/search/?query=CIG++Exploration+via+Conditional+Information+Gain&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
+docs/2026/appendix.html,https://openreview.net/forum?id=sDCGZbVL6d,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://openreview.net/pdf?id=sDCGZbVL6d,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://neurips.cc/virtual/2026/poster/154512,ok,HTTP 200
+docs/2026/appendix.html,https://arxiv.org/search/?query=Coordination+Connectivity++Shared+Initialization+Shapes+the+Joint-Policy+Landscape+in+MARL&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
+docs/2026/appendix.html,https://openreview.net/forum?id=D2HpZYZ8aI,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://openreview.net/pdf?id=D2HpZYZ8aI,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://neurips.cc/virtual/2026/poster/152582,ok,HTTP 200
+docs/2026/appendix.html,https://arxiv.org/search/?query=Emergence+of+Physical+Intelligence+via+Controllable+Information+Production&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
+docs/2026/appendix.html,https://openreview.net/forum?id=S15gujrcKN,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://openreview.net/pdf?id=S15gujrcKN,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://neurips.cc/virtual/2026/poster/151685,ok,HTTP 200
+docs/2026/appendix.html,https://arxiv.org/search/?query=Training+Generalizable+Collaborative+Agents+via+Strategic+Risk+Aversion&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
+docs/2026/appendix.html,https://openreview.net/forum?id=YmGCdpjNNh,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://openreview.net/pdf?id=YmGCdpjNNh,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://neurips.cc/virtual/2026/poster/153300,ok,HTTP 200
+docs/2026/appendix.html,https://arxiv.org/search/?query=Unifying+Goal-Conditioned+RL+and+Unsupervised+Skill+Learning+via+Control-Maximization&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
+docs/2026/appendix.html,https://openreview.net/forum?id=MHeZHmPRnt,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://openreview.net/pdf?id=MHeZHmPRnt,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://neurips.cc/virtual/2026/poster/155558,ok,HTTP 200
+docs/2026/appendix.html,https://arxiv.org/search/?query=Free+Decompression+with+Algebraic+Spectral+Curves&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
+docs/2026/appendix.html,https://openreview.net/forum?id=4fadvXVZXs,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://openreview.net/pdf?id=4fadvXVZXs,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://neurips.cc/virtual/2026/poster/154240,ok,HTTP 200
+docs/2026/appendix.html,https://arxiv.org/search/?query=Generative+Modeling+via+Drifting&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
+docs/2026/appendix.html,https://openreview.net/forum?id=FCkkBolf4o,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://openreview.net/pdf?id=FCkkBolf4o,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://neurips.cc/virtual/2026/poster/154172,ok,HTTP 200
+docs/2026/appendix.html,https://arxiv.org/search/?query=ParetoSlider++Diffusion+Models+Post-Training+for+Continuous+Reward+Control&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
+docs/2026/appendix.html,https://openreview.net/forum?id=FikEkhzT3F,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://openreview.net/pdf?id=FikEkhzT3F,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://neurips.cc/virtual/2026/poster/151581,ok,HTTP 200
+docs/2026/appendix.html,https://arxiv.org/search/?query=Query+Lower+Bounds+for+Diffusion+Sampling&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
+docs/2026/appendix.html,https://openreview.net/forum?id=ZXOqN26lhR,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://openreview.net/pdf?id=ZXOqN26lhR,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://neurips.cc/virtual/2026/poster/154990,ok,HTTP 200
+docs/2026/appendix.html,https://arxiv.org/search/?query=Representation+Fr%C3%A9chet+Loss+for+Visual+Generation&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
+docs/2026/appendix.html,https://openreview.net/forum?id=9OK87o8Wkf,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://openreview.net/pdf?id=9OK87o8Wkf,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://neurips.cc/virtual/2026/poster/153569,ok,HTTP 200
+docs/2026/appendix.html,https://arxiv.org/search/?query=Shaping+Useful+Noise++Energy+Distributions+Predict+Visual+Pretraining+Quality&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
+docs/2026/appendix.html,https://openreview.net/forum?id=KQRZdjU6Q1,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://openreview.net/pdf?id=KQRZdjU6Q1,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://neurips.cc/virtual/2026/poster/149475,ok,HTTP 200
+docs/2026/appendix.html,https://arxiv.org/search/?query=Strong+Stochastic+Flow+Maps&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
+docs/2026/appendix.html,https://openreview.net/forum?id=ppj0Eq4Y6y,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://openreview.net/pdf?id=ppj0Eq4Y6y,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://neurips.cc/virtual/2026/poster/153677,ok,HTTP 200
+docs/2026/appendix.html,https://arxiv.org/search/?query=Tessellations+of+Semi-Discrete+Flow+Matching&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
+docs/2026/appendix.html,https://openreview.net/forum?id=JbKDDvGT8o,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://openreview.net/pdf?id=JbKDDvGT8o,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://neurips.cc/virtual/2026/poster/139828,ok,HTTP 200
+docs/2026/appendix.html,https://arxiv.org/search/?query=HABIT++Human-Aware+Behavior+and+Interaction+Training+Dataset+for+Robot+Manipulation&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
+docs/2026/appendix.html,https://openreview.net/forum?id=2MmzwEyeO2,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://openreview.net/pdf?id=2MmzwEyeO2,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://neurips.cc/virtual/2026/poster/154464,ok,HTTP 200
+docs/2026/appendix.html,https://arxiv.org/search/?query=Language-Conditioned+World+Modeling+for+Visual+Navigation&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
+docs/2026/appendix.html,https://openreview.net/forum?id=DOtvhTItcX,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://openreview.net/pdf?id=DOtvhTItcX,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://neurips.cc/virtual/2026/poster/149981,ok,HTTP 200
+docs/2026/appendix.html,https://arxiv.org/search/?query=SyncWorld++Visual+Calibration+Enables+World+Models+as+Zero-Shot+Simulators&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
+docs/2026/appendix.html,https://openreview.net/forum?id=lj7OHtUYX1,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://openreview.net/pdf?id=lj7OHtUYX1,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://neurips.cc/virtual/2026/poster/155638,ok,HTTP 200
+docs/2026/appendix.html,https://arxiv.org/search/?query=Can+We+Model+the+Artifacts+Explicitly++Disentangle+Artifacts+via+Pairwise+Edit+Relations+for+Image+Manipulation+Localization&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
+docs/2026/appendix.html,https://openreview.net/forum?id=45xs8n0hj4,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://openreview.net/pdf?id=45xs8n0hj4,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://neurips.cc/virtual/2026/poster/151144,ok,HTTP 200
+docs/2026/appendix.html,https://arxiv.org/search/?query=EntiRE++Invariant+Learning+for+Robust+Concept+Erasure+in+Text-to-Image+Generative+Models&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
+docs/2026/appendix.html,https://openreview.net/forum?id=ch8Vn8e6ZM,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://openreview.net/pdf?id=ch8Vn8e6ZM,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://neurips.cc/virtual/2026/poster/149277,ok,HTTP 200
+docs/2026/appendix.html,https://arxiv.org/search/?query=Behavioral+Geometric+Supervision+Aligns+Video+Foundation+Models+with+Human+Social+Perception&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
+docs/2026/appendix.html,https://openreview.net/forum?id=rVX7LF9vry,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://openreview.net/pdf?id=rVX7LF9vry,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://neurips.cc/virtual/2026/poster/156046,ok,HTTP 200
+docs/2026/appendix.html,https://arxiv.org/search/?query=C3P++Contrastive+promoter-protein+pretraining+yields+representations+capturing+bacterial+gene+regulation&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
+docs/2026/appendix.html,https://openreview.net/forum?id=0pWBLS7Kzj,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://openreview.net/pdf?id=0pWBLS7Kzj,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://neurips.cc/virtual/2026/poster/151296,ok,HTTP 200
+docs/2026/appendix.html,https://arxiv.org/search/?query=CausalBind++Causal+Modeling+and+Learning+for+Protein-Molecule+Virtual+Screening&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
+docs/2026/appendix.html,https://openreview.net/forum?id=bURAYAEF84,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://openreview.net/pdf?id=bURAYAEF84,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://neurips.cc/virtual/2026/poster/152268,ok,HTTP 200
+docs/2026/appendix.html,https://arxiv.org/search/?query=The+Algorithm+Is+Not+the+Behavior++Learned+Priors+Override+Look-Ahead+in+a+Chess-Playing+Neural+Network&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
+docs/2026/appendix.html,https://openreview.net/forum?id=ULhusDnCQy,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://openreview.net/pdf?id=ULhusDnCQy,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://neurips.cc/virtual/2026/poster/150986,ok,HTTP 200
+docs/2026/appendix.html,https://arxiv.org/search/?query=Follow+the+Regularized+Leader+Does+Not+Converge+in+Constrained+Optimization&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
+docs/2026/appendix.html,https://openreview.net/forum?id=dmNapb9nHG,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://openreview.net/pdf?id=dmNapb9nHG,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://neurips.cc/virtual/2026/poster/152757,ok,HTTP 200
+docs/2026/appendix.html,https://arxiv.org/search/?query=The+Power+of+a+Random+Sample+in+Online+Algorithms&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
+docs/2026/appendix.html,https://openreview.net/forum?id=QaYdB3AQtP,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://openreview.net/pdf?id=QaYdB3AQtP,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://neurips.cc/virtual/2026/poster/139749,ok,HTTP 200
+docs/2026/appendix.html,https://arxiv.org/search/?query=MOVEBENCH++A+Benchmark+for+Global-Scale+Wildlife+Movement+Forecasting&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
+docs/2026/appendix.html,https://openreview.net/forum?id=6ss3Wyzv27,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://openreview.net/pdf?id=6ss3Wyzv27,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://neurips.cc/virtual/2026/poster/154914,ok,HTTP 200
+docs/2026/appendix.html,https://arxiv.org/search/?query=Spectral+Energy+Allocation+Enables+Source-Free+Domain+Adaptation+in+Time+Series+Forecasting&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
+docs/2026/appendix.html,https://openreview.net/forum?id=9zd8FaFWpx,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://openreview.net/pdf?id=9zd8FaFWpx,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://neurips.cc/virtual/2026/poster/151700,ok,HTTP 200
+docs/2026/appendix.html,https://arxiv.org/search/?query=TiRex-2++Generalizing+TiRex+to+Multivariate+Data+and+Streaming&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
+docs/2026/appendix.html,https://openreview.net/forum?id=YgN3LimhOJ,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://openreview.net/pdf?id=YgN3LimhOJ,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://neurips.cc/virtual/2026/poster/148644,ok,HTTP 200
+docs/2026/appendix.html,https://arxiv.org/search/?query=Breakeven+complexity++A+new+perspective+on+neural+partial+differential+equation+solvers&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
+docs/2026/appendix.html,https://openreview.net/forum?id=wBeG0ytI2l,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://openreview.net/pdf?id=wBeG0ytI2l,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://neurips.cc/virtual/2026/poster/154008,ok,HTTP 200
+docs/2026/appendix.html,https://arxiv.org/search/?query=DIAGNO++Diagonal+Spherical+Neural+Operators+for+Heterogeneous+Earth+Dynamics+Modeling&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
+docs/2026/appendix.html,https://openreview.net/forum?id=GtXyIhzAqI,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://openreview.net/pdf?id=GtXyIhzAqI,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://neurips.cc/virtual/2026/poster/151389,ok,HTTP 200
+docs/2026/appendix.html,https://arxiv.org/search/?query=Mechanism-Aware+Ensemble+Conditioning+for+Data-Limited+Emulation+of+Extreme+Events&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
+docs/2026/appendix.html,https://openreview.net/forum?id=b0AOZbejEk,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/appendix.html,https://openreview.net/pdf?id=b0AOZbejEk,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
+docs/2026/atlas.html,https://unpkg.com/jquery@3.7.1/dist/jquery.min.js,ok,HTTP 200
+docs/2026/index.html,https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap,ok,HTTP 200
+docs/2026/index.html,../,ok,relative file
+docs/2026/index.html,index.html,ok,relative file
+docs/2026/index.html,atlas.html,ok,relative file
+docs/2026/index.html,papers.html,ok,relative file
+docs/2026/index.html,charts/treemap.html,ok,relative file
+docs/2026/index.html,appendix.html,ok,relative file
+docs/2026/index.html,https://github.com/mohammadi-hadi/neurips,ok,HTTP 200
+docs/2026/index.html,figures/atlas_static.png,ok,relative file
+docs/2026/index.html,figures/field_moved.png,ok,relative file
+docs/2026/index.html,figures/areas_slope.png,ok,relative file
+docs/2026/index.html,charts/areas_dumbbell.html,ok,relative file
+docs/2026/index.html,figures/agents_family.png,ok,relative file
+docs/2026/index.html,figures/movers_x.png,ok,relative file
+docs/2026/index.html,figures/vocabulary_trends.png,ok,relative file
+docs/2026/index.html,charts/vocabulary.html,ok,relative file
+docs/2026/index.html,figures/highlight_rate_by_area.png,ok,relative file
+docs/2026/index.html,figures/cities_lean.png,ok,relative file
+docs/2026/index.html,charts/site_mix.html,ok,relative file
+docs/2026/index.html,figures/top_institutions.png,ok,relative file
+docs/2026/index.html,figures/countries.png,ok,relative file
+docs/2026/index.html,charts/countries.html,ok,relative file
+docs/2026/index.html,https://mohammadi.cv,ok,HTTP 200
+docs/2026/papers.html,https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap,ok,HTTP 200
+docs/2026/papers.html,../,ok,relative file
+docs/2026/papers.html,index.html,ok,relative file
+docs/2026/papers.html,atlas.html,ok,relative file
+docs/2026/papers.html,papers.html,ok,relative file
+docs/2026/papers.html,charts/treemap.html,ok,relative file
+docs/2026/papers.html,appendix.html,ok,relative file
+docs/2026/papers.html,https://github.com/mohammadi-hadi/neurips,ok,HTTP 200
+docs/2026/charts/areas_dumbbell.html,https://cdn.plot.ly/plotly-4.1.1.min.js,ok,HTTP 200
+docs/2026/charts/countries.html,https://cdn.plot.ly/plotly-4.1.1.min.js,ok,HTTP 200
+docs/2026/charts/site_mix.html,https://cdn.plot.ly/plotly-4.1.1.min.js,ok,HTTP 200
+docs/2026/charts/treemap.html,https://cdn.plot.ly/plotly-4.1.1.min.js,ok,HTTP 200
+docs/2026/charts/vocabulary.html,https://cdn.plot.ly/plotly-4.1.1.min.js,ok,HTTP 200
+docs/2026/papers.html,https://neurips.cc/virtual/2026/poster/152156,ok,HTTP 200
 papers_index.csv (sample),https://neurips.cc/virtual/2026/poster/139400,ok,HTTP 200
 papers_index.csv (sample),https://arxiv.org/search/?query=Reasoning-Aware+IRT++Explainable+Evaluation+of+Test-Time+Scaling+in+Reasoning+Models&searchtype=title,ok,HTTP 200
 papers_index.csv (sample),https://openreview.net/forum?id=Szz5xYoydw,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"

@@ -6,7 +6,7 @@
 - openreview.net answers scripts with a bot check; checked by hand in a logged-in browser on 20 Oct 2026:
   NeurIPS 2026 forums and PDFs are not public yet ("You don't have permission to read this forum"),
   so these links are reported as "not public yet" (they are the official links and open on release)
-- links to the GitHub Pages site are reported as "pending" until the site is published
+- links to the live site (mohammadi.cv/neurips) are fetched like any other link
 Writes outputs/link_check.csv and prints a summary.
 """
 import re, sys, time
@@ -58,8 +58,8 @@ def check_external(url):
     if "arxiv.org/search" in url and url not in ARXIV_TESTED:
         seen[url] = ("ok (pattern)", "same arXiv title-search pattern as the sampled links")
         return seen[url]
-    if url.startswith(SITE):
-        res = ("pending", "GitHub Pages site not published yet; checked locally via docs/")
+    if False:
+        pass
     elif url.rstrip("/") == "https://github.com/mohammadi-hadi/neurips" or \
             url.startswith("https://github.com/mohammadi-hadi/neurips/"):
         r = requests.get(url, headers=UA, timeout=40)
@@ -89,10 +89,6 @@ def check(item):
     if link.startswith(("mailto:", "javascript:", "#")) or link == "":
         return src, link, "skip", ""
     if link.startswith("http"):
-        if link.startswith(SITE):
-            rel = urldefrag(link[len(SITE):])[0] or "index.html"
-            ok = (DOCS / rel).exists()
-            return src, link, "pending" if ok else "broken", f"local docs/{rel} {'exists' if ok else 'MISSING'}"
         st, note = check_external(link)
         return src, link, st, note
     base = src.parent if src.suffix else ROOT
