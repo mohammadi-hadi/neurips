@@ -101,10 +101,20 @@ CSS = """
 .embedded #title-container{display:none!important}
 .atlas-back{position:absolute;bottom:14px;right:14px;z-index:10;font:600 13px Inter,system-ui,sans-serif;
   background:#1e3a5f;color:#fff;padding:8px 12px;border-radius:8px;text-decoration:none}
+/* phones: placed last so these rules win over the ones above */
 @media (max-width:768px){
   #main-title{font-size:21px!important;margin-bottom:4px}
   #title-container{padding:10px 12px!important}
   #title-container>span:not(#main-title){font-size:12.5px!important;line-height:1.4!important}
+  .stack.top-left{max-height:44vh!important}
+  #topic-tree{display:none!important}
+  .stack.bottom-left{display:flex!important}  /* keep the colour menu on phones */
+  #d3histogram-container{display:none!important}
+  #colormap-selector-container{max-width:calc(100vw - 32px)!important;box-sizing:border-box}
+  #colormap-selector-container .color-map-dropdown,#colormap-selector-container .color-map-selected{max-width:100%!important}
+  .atlas-back{bottom:88px;right:12px;padding:7px 11px;font-size:12px}
+  body:has(.color-map-options[style*="block"]) .atlas-back{visibility:hidden}  /* out of the way of the open menu */
+  #paper-links{left:12px;right:12px;width:auto;bottom:132px}
 }
 """
 plot = datamapplot.create_interactive_plot(
