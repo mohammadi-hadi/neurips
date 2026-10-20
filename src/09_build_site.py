@@ -32,7 +32,7 @@ footer{color:var(--muted);font-size:14px;border-top:1px solid var(--line);margin
 """
 
 NAV = ('<nav><div><a href="index.html"><b>NeurIPS 2026 Atlas</b></a><a href="atlas.html">Interactive map</a>'
-       '<a href="charts/treemap.html">All subtopics</a><a href="appendix.html">Appendix</a>'
+       '<a href="papers.html">All papers</a><a href="charts/treemap.html">All subtopics</a><a href="appendix.html">Appendix</a>'
        '<a href="https://github.com/mohammadi-hadi/NeurIPS2026_Analysis">Code &amp; data</a></div></nav>')
 
 
