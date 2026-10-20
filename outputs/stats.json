@@ -1,0 +1,2246 @@
+{
+ "n_2026": 9110,
+ "n_2025": 5859,
+ "broad": [
+  {
+   "topic": "LLM Behavior & Safety",
+   "share_2026": 10.35,
+   "share_2025": 9.1,
+   "n_2026": 943,
+   "n_2025": 533,
+   "delta_pp": 1.25
+  },
+  {
+   "topic": "3D Vision & Perception",
+   "share_2026": 8.57,
+   "share_2025": 10.39,
+   "n_2026": 781,
+   "n_2025": 609,
+   "delta_pp": -1.82
+  },
+  {
+   "topic": "LLM Agents",
+   "share_2026": 7.68,
+   "share_2025": 3.53,
+   "n_2026": 700,
+   "n_2025": 207,
+   "delta_pp": 4.15
+  },
+  {
+   "topic": "DL Theory & Neuroscience",
+   "share_2026": 7.59,
+   "share_2025": 8.07,
+   "n_2026": 691,
+   "n_2025": 473,
+   "delta_pp": -0.49
+  },
+  {
+   "topic": "Efficient LLMs & Architectures",
+   "share_2026": 7.46,
+   "share_2025": 7.9,
+   "n_2026": 680,
+   "n_2025": 463,
+   "delta_pp": -0.44
+  },
+  {
+   "topic": "Trustworthy & Statistical ML",
+   "share_2026": 6.71,
+   "share_2025": 7.8,
+   "n_2026": 611,
+   "n_2025": 457,
+   "delta_pp": -1.09
+  },
+  {
+   "topic": "LLM Reasoning & Retrieval",
+   "share_2026": 5.74,
+   "share_2025": 6.08,
+   "n_2026": 523,
+   "n_2025": 356,
+   "delta_pp": -0.34
+  },
+  {
+   "topic": "Vision-Language Models",
+   "share_2026": 5.04,
+   "share_2025": 5.75,
+   "n_2026": 459,
+   "n_2025": 337,
+   "delta_pp": -0.71
+  },
+  {
+   "topic": "Reinforcement Learning",
+   "share_2026": 4.6,
+   "share_2025": 4.81,
+   "n_2026": 419,
+   "n_2025": 282,
+   "delta_pp": -0.21
+  },
+  {
+   "topic": "Diffusion, Flows & Inference",
+   "share_2026": 4.58,
+   "share_2025": 3.94,
+   "n_2026": 417,
+   "n_2025": 231,
+   "delta_pp": 0.63
+  },
+  {
+   "topic": "Robotics & Embodied AI",
+   "share_2026": 4.45,
+   "share_2025": 3.7,
+   "n_2026": 405,
+   "n_2025": 217,
+   "delta_pp": 0.74
+  },
+  {
+   "topic": "Image & 3D Generation",
+   "share_2026": 4.12,
+   "share_2025": 5.62,
+   "n_2026": 375,
+   "n_2025": 329,
+   "delta_pp": -1.5
+  },
+  {
+   "topic": "Video Generation & Understanding",
+   "share_2026": 4.06,
+   "share_2025": 3.99,
+   "n_2026": 370,
+   "n_2025": 234,
+   "delta_pp": 0.07
+  },
+  {
+   "topic": "Biomolecules & Causal Discovery",
+   "share_2026": 3.79,
+   "share_2025": 3.46,
+   "n_2026": 345,
+   "n_2025": 203,
+   "delta_pp": 0.32
+  },
+  {
+   "topic": "LLM Post-Training",
+   "share_2026": 3.68,
+   "share_2025": 3.12,
+   "n_2026": 335,
+   "n_2025": 183,
+   "delta_pp": 0.55
+  },
+  {
+   "topic": "Optimization & Statistics",
+   "share_2026": 3.07,
+   "share_2025": 3.46,
+   "n_2026": 280,
+   "n_2025": 203,
+   "delta_pp": -0.39
+  },
+  {
+   "topic": "Bandits, Games & Mechanisms",
+   "share_2026": 2.57,
+   "share_2025": 2.95,
+   "n_2026": 234,
+   "n_2025": 173,
+   "delta_pp": -0.38
+  },
+  {
+   "topic": "Time Series & Forecasting",
+   "share_2026": 2.4,
+   "share_2025": 2.2,
+   "n_2026": 219,
+   "n_2025": 129,
+   "delta_pp": 0.2
+  },
+  {
+   "topic": "PDEs & Dynamical Systems",
+   "share_2026": 1.9,
+   "share_2025": 1.52,
+   "n_2026": 173,
+   "n_2025": 89,
+   "delta_pp": 0.38
+  },
+  {
+   "topic": "Graph Learning",
+   "share_2026": 1.65,
+   "share_2025": 2.58,
+   "n_2026": 150,
+   "n_2025": 151,
+   "delta_pp": -0.93
+  }
+ ],
+ "fine_growers": [
+  {
+   "topic": "Tool-Use, Web and GUI Agent Benchmarks",
+   "share_2026": 1.24,
+   "share_2025": 0.38,
+   "n_2026": 113,
+   "n_2025": 22,
+   "delta_pp": 0.86,
+   "growth_x": 3.03
+  },
+  {
+   "topic": "LLM Agent Reliability and Efficiency",
+   "share_2026": 0.97,
+   "share_2025": 0.29,
+   "n_2026": 88,
+   "n_2025": 17,
+   "delta_pp": 0.68,
+   "growth_x": 2.99
+  },
+  {
+   "topic": "Long-Term Memory for LLM Agents",
+   "share_2026": 0.72,
+   "share_2025": 0.12,
+   "n_2026": 66,
+   "n_2025": 7,
+   "delta_pp": 0.61,
+   "growth_x": 4.57
+  },
+  {
+   "topic": "LLM Agent Safety and Prompt Injection",
+   "share_2026": 0.83,
+   "share_2025": 0.32,
+   "n_2026": 76,
+   "n_2025": 19,
+   "delta_pp": 0.51,
+   "growth_x": 2.36
+  },
+  {
+   "topic": "Model Selection and Evaluation Pitfalls",
+   "share_2026": 0.83,
+   "share_2025": 0.38,
+   "n_2026": 76,
+   "n_2025": 22,
+   "delta_pp": 0.46,
+   "growth_x": 2.08
+  },
+  {
+   "topic": "Decoding for Diffusion Language Models",
+   "share_2026": 1.0,
+   "share_2025": 0.55,
+   "n_2026": 91,
+   "n_2025": 32,
+   "delta_pp": 0.45,
+   "growth_x": 1.76
+  },
+  {
+   "topic": "Vision-Language-Action Robot Policies",
+   "share_2026": 1.03,
+   "share_2025": 0.6,
+   "n_2026": 94,
+   "n_2025": 35,
+   "delta_pp": 0.43,
+   "growth_x": 1.67
+  },
+  {
+   "topic": "Coding Agents and SWE Benchmarks",
+   "share_2026": 0.6,
+   "share_2025": 0.2,
+   "n_2026": 55,
+   "n_2025": 12,
+   "delta_pp": 0.4,
+   "growth_x": 2.57
+  },
+  {
+   "topic": "LLM Multi-Agent Systems",
+   "share_2026": 0.8,
+   "share_2025": 0.41,
+   "n_2026": 73,
+   "n_2025": 24,
+   "delta_pp": 0.39,
+   "growth_x": 1.85
+  },
+  {
+   "topic": "GRPO-Style RL with Verifiable Rewards",
+   "share_2026": 0.71,
+   "share_2025": 0.32,
+   "n_2026": 65,
+   "n_2025": 19,
+   "delta_pp": 0.39,
+   "growth_x": 2.04
+  },
+  {
+   "topic": "LLM Behavioral Tendencies and Evaluation Awareness",
+   "share_2026": 1.05,
+   "share_2025": 0.68,
+   "n_2026": 96,
+   "n_2025": 40,
+   "delta_pp": 0.37,
+   "growth_x": 1.51
+  },
+  {
+   "topic": "Flow Matching Theory and Variants",
+   "share_2026": 0.88,
+   "share_2025": 0.51,
+   "n_2026": 80,
+   "n_2025": 30,
+   "delta_pp": 0.37,
+   "growth_x": 1.65
+  }
+ ],
+ "fine_shrinkers": [
+  {
+   "topic": "Graph Neural Networks and Foundation Models",
+   "share_2026": 1.43,
+   "share_2025": 2.49,
+   "n_2026": 130,
+   "n_2025": 146,
+   "delta_pp": -1.06,
+   "growth_x": 0.58
+  },
+  {
+   "topic": "Efficient Chain-of-Thought Reasoning",
+   "share_2026": 1.5,
+   "share_2025": 2.47,
+   "n_2026": 137,
+   "n_2025": 145,
+   "delta_pp": -0.97,
+   "growth_x": 0.62
+  },
+  {
+   "topic": "Learning with Noisy and Weak Labels",
+   "share_2026": 0.53,
+   "share_2025": 1.11,
+   "n_2026": 48,
+   "n_2025": 65,
+   "delta_pp": -0.58,
+   "growth_x": 0.5
+  },
+  {
+   "topic": "Brain Encoding and Neural Recording Analysis",
+   "share_2026": 0.46,
+   "share_2025": 0.97,
+   "n_2026": 42,
+   "n_2025": 57,
+   "delta_pp": -0.51,
+   "growth_x": 0.5
+  },
+  {
+   "topic": "LoRA and Parameter-Efficient Fine-Tuning",
+   "share_2026": 0.9,
+   "share_2025": 1.31,
+   "n_2026": 82,
+   "n_2025": 77,
+   "delta_pp": -0.41,
+   "growth_x": 0.7
+  },
+  {
+   "topic": "Concept Erasure in Text-to-Image Diffusion",
+   "share_2026": 0.37,
+   "share_2025": 0.79,
+   "n_2026": 34,
+   "n_2025": 46,
+   "delta_pp": -0.41,
+   "growth_x": 0.51
+  },
+  {
+   "topic": "Part-Level 3D Asset Generation",
+   "share_2026": 0.7,
+   "share_2025": 1.11,
+   "n_2026": 64,
+   "n_2025": 65,
+   "delta_pp": -0.41,
+   "growth_x": 0.65
+  },
+  {
+   "topic": "Preference Optimization for LLM Alignment",
+   "share_2026": 0.57,
+   "share_2025": 0.97,
+   "n_2026": 52,
+   "n_2025": 57,
+   "delta_pp": -0.4,
+   "growth_x": 0.61
+  },
+  {
+   "topic": "Federated Learning under Heterogeneity",
+   "share_2026": 0.92,
+   "share_2025": 1.31,
+   "n_2026": 84,
+   "n_2025": 77,
+   "delta_pp": -0.39,
+   "growth_x": 0.71
+  },
+  {
+   "topic": "Regret Bounds for Stochastic and Contextual Bandits",
+   "share_2026": 0.7,
+   "share_2025": 1.08,
+   "n_2026": 64,
+   "n_2025": 63,
+   "delta_pp": -0.37,
+   "growth_x": 0.67
+  },
+  {
+   "topic": "Test-Time and Few-Shot VLM Adaptation",
+   "share_2026": 0.82,
+   "share_2025": 1.19,
+   "n_2026": 75,
+   "n_2025": 70,
+   "delta_pp": -0.37,
+   "growth_x": 0.7
+  },
+  {
+   "topic": "Neural Combinatorial Optimization",
+   "share_2026": 0.61,
+   "share_2025": 0.97,
+   "n_2026": 56,
+   "n_2025": 57,
+   "delta_pp": -0.36,
+   "growth_x": 0.65
+  }
+ ],
+ "fine_largest": [
+  {
+   "topic": "Latent and Chain-of-Thought Visual Reasoning",
+   "share_2026": 1.51,
+   "share_2025": 1.55,
+   "n_2026": 138,
+   "n_2025": 91,
+   "delta_pp": -0.04,
+   "growth_x": 0.98
+  },
+  {
+   "topic": "Efficient Chain-of-Thought Reasoning",
+   "share_2026": 1.5,
+   "share_2025": 2.47,
+   "n_2026": 137,
+   "n_2025": 145,
+   "delta_pp": -0.97,
+   "growth_x": 0.62
+  },
+  {
+   "topic": "Diffusion Guidance and Reward Fine-Tuning",
+   "share_2026": 1.45,
+   "share_2025": 1.23,
+   "n_2026": 132,
+   "n_2025": 72,
+   "delta_pp": 0.22,
+   "growth_x": 1.17
+  },
+  {
+   "topic": "Graph Neural Networks and Foundation Models",
+   "share_2026": 1.43,
+   "share_2025": 2.49,
+   "n_2026": 130,
+   "n_2025": 146,
+   "delta_pp": -1.06,
+   "growth_x": 0.58
+  },
+  {
+   "topic": "Transformer Mechanisms and Expressivity Theory",
+   "share_2026": 1.37,
+   "share_2025": 1.69,
+   "n_2026": 125,
+   "n_2025": 99,
+   "delta_pp": -0.32,
+   "growth_x": 0.82
+  },
+  {
+   "topic": "Deep Network Theory and Learning Dynamics",
+   "share_2026": 1.25,
+   "share_2025": 1.43,
+   "n_2026": 114,
+   "n_2025": 84,
+   "delta_pp": -0.18,
+   "growth_x": 0.88
+  },
+  {
+   "topic": "Tool-Use, Web and GUI Agent Benchmarks",
+   "share_2026": 1.24,
+   "share_2025": 0.38,
+   "n_2026": 113,
+   "n_2025": 22,
+   "delta_pp": 0.86,
+   "growth_x": 3.03
+  },
+  {
+   "topic": "Feed-Forward Multi-View Geometry Transformers",
+   "share_2026": 1.13,
+   "share_2025": 1.25,
+   "n_2026": 103,
+   "n_2025": 73,
+   "delta_pp": -0.12,
+   "growth_x": 0.91
+  },
+  {
+   "topic": "LLM Self-Explanation and Hidden Computation",
+   "share_2026": 1.12,
+   "share_2025": 1.18,
+   "n_2026": 102,
+   "n_2025": 69,
+   "delta_pp": -0.06,
+   "growth_x": 0.95
+  },
+  {
+   "topic": "LLM Benchmarking and LLM-as-a-Judge",
+   "share_2026": 1.09,
+   "share_2025": 0.87,
+   "n_2026": 99,
+   "n_2025": 51,
+   "delta_pp": 0.22,
+   "growth_x": 1.23
+  },
+  {
+   "topic": "LLM Behavioral Tendencies and Evaluation Awareness",
+   "share_2026": 1.05,
+   "share_2025": 0.68,
+   "n_2026": 96,
+   "n_2025": 40,
+   "delta_pp": 0.37,
+   "growth_x": 1.51
+  },
+  {
+   "topic": "LLM Pruning and MoE Compression",
+   "share_2026": 1.04,
+   "share_2025": 0.97,
+   "n_2026": 95,
+   "n_2025": 57,
+   "delta_pp": 0.07,
+   "growth_x": 1.07
+  },
+  {
+   "topic": "Vision-Language-Action Robot Policies",
+   "share_2026": 1.03,
+   "share_2025": 0.6,
+   "n_2026": 94,
+   "n_2025": 35,
+   "delta_pp": 0.43,
+   "growth_x": 1.67
+  },
+  {
+   "topic": "Medical Imaging and Pathology Models",
+   "share_2026": 1.02,
+   "share_2025": 0.94,
+   "n_2026": 93,
+   "n_2025": 55,
+   "delta_pp": 0.08,
+   "growth_x": 1.08
+  },
+  {
+   "topic": "Image Restoration and Inverse Problems",
+   "share_2026": 1.02,
+   "share_2025": 1.28,
+   "n_2026": 93,
+   "n_2025": 75,
+   "delta_pp": -0.26,
+   "growth_x": 0.81
+  }
+ ],
+ "decision_counts": {
+  "poster": 6831,
+  "unknown": 1905,
+  "spotlight": 266,
+  "oral": 108
+ },
+ "highlight_rate_overall_pct": 5.19,
+ "highlight_rate_by_area": [
+  {
+   "broad_name": "DL Theory & Neuroscience",
+   "papers": 563,
+   "orals": 17,
+   "spotlights": 30,
+   "rate": 0.08,
+   "rate_pct": 8.35
+  },
+  {
+   "broad_name": "Time Series & Forecasting",
+   "papers": 173,
+   "orals": 3,
+   "spotlights": 8,
+   "rate": 0.06,
+   "rate_pct": 6.36
+  },
+  {
+   "broad_name": "LLM Agents",
+   "papers": 537,
+   "orals": 12,
+   "spotlights": 22,
+   "rate": 0.06,
+   "rate_pct": 6.33
+  },
+  {
+   "broad_name": "Diffusion, Flows & Inference",
+   "papers": 341,
+   "orals": 8,
+   "spotlights": 13,
+   "rate": 0.06,
+   "rate_pct": 6.16
+  },
+  {
+   "broad_name": "Trustworthy & Statistical ML",
+   "papers": 472,
+   "orals": 12,
+   "spotlights": 17,
+   "rate": 0.06,
+   "rate_pct": 6.14
+  },
+  {
+   "broad_name": "3D Vision & Perception",
+   "papers": 608,
+   "orals": 9,
+   "spotlights": 26,
+   "rate": 0.06,
+   "rate_pct": 5.76
+  },
+  {
+   "broad_name": "Vision-Language Models",
+   "papers": 365,
+   "orals": 6,
+   "spotlights": 15,
+   "rate": 0.06,
+   "rate_pct": 5.75
+  },
+  {
+   "broad_name": "Biomolecules & Causal Discovery",
+   "papers": 256,
+   "orals": 2,
+   "spotlights": 12,
+   "rate": 0.05,
+   "rate_pct": 5.47
+  },
+  {
+   "broad_name": "LLM Behavior & Safety",
+   "papers": 761,
+   "orals": 14,
+   "spotlights": 27,
+   "rate": 0.05,
+   "rate_pct": 5.39
+  },
+  {
+   "broad_name": "Image & 3D Generation",
+   "papers": 284,
+   "orals": 2,
+   "spotlights": 13,
+   "rate": 0.05,
+   "rate_pct": 5.28
+  },
+  {
+   "broad_name": "Bandits, Games & Mechanisms",
+   "papers": 183,
+   "orals": 2,
+   "spotlights": 7,
+   "rate": 0.05,
+   "rate_pct": 4.92
+  },
+  {
+   "broad_name": "Reinforcement Learning",
+   "papers": 343,
+   "orals": 6,
+   "spotlights": 10,
+   "rate": 0.05,
+   "rate_pct": 4.66
+  },
+  {
+   "broad_name": "PDEs & Dynamical Systems",
+   "papers": 131,
+   "orals": 3,
+   "spotlights": 3,
+   "rate": 0.05,
+   "rate_pct": 4.58
+  },
+  {
+   "broad_name": "Robotics & Embodied AI",
+   "papers": 330,
+   "orals": 3,
+   "spotlights": 11,
+   "rate": 0.04,
+   "rate_pct": 4.24
+  },
+  {
+   "broad_name": "Optimization & Statistics",
+   "papers": 223,
+   "orals": 0,
+   "spotlights": 9,
+   "rate": 0.04,
+   "rate_pct": 4.04
+  },
+  {
+   "broad_name": "LLM Post-Training",
+   "papers": 267,
+   "orals": 1,
+   "spotlights": 9,
+   "rate": 0.04,
+   "rate_pct": 3.75
+  },
+  {
+   "broad_name": "Graph Learning",
+   "papers": 111,
+   "orals": 0,
+   "spotlights": 4,
+   "rate": 0.04,
+   "rate_pct": 3.6
+  },
+  {
+   "broad_name": "Efficient LLMs & Architectures",
+   "papers": 560,
+   "orals": 5,
+   "spotlights": 15,
+   "rate": 0.04,
+   "rate_pct": 3.57
+  },
+  {
+   "broad_name": "LLM Reasoning & Retrieval",
+   "papers": 408,
+   "orals": 2,
+   "spotlights": 9,
+   "rate": 0.03,
+   "rate_pct": 2.7
+  },
+  {
+   "broad_name": "Video Generation & Understanding",
+   "papers": 289,
+   "orals": 1,
+   "spotlights": 6,
+   "rate": 0.02,
+   "rate_pct": 2.42
+  }
+ ],
+ "orals": [
+  {
+   "title": "AgentAbstain: Do LLM Agents Know When Not to Act?",
+   "fine_name": "LLM Agent Reliability and Efficiency",
+   "broad_name": "LLM Agents",
+   "url": "https://neurips.cc/virtual/2026/poster/139558"
+  },
+  {
+   "title": "Agent Security is a Systems Problem",
+   "fine_name": "LLM Agent Safety and Prompt Injection",
+   "broad_name": "LLM Agents",
+   "url": "https://neurips.cc/virtual/2026/poster/140106"
+  },
+  {
+   "title": "ALTER: An Allen's Algebra-Based Evaluation Framework for Temporal Reasoning of LLMs",
+   "fine_name": "LLM Benchmarking and LLM-as-a-Judge",
+   "broad_name": "LLM Behavior & Safety",
+   "url": "https://neurips.cc/virtual/2026/poster/139265"
+  },
+  {
+   "title": "APS: Bias-Controlled Adaptive Prototype Simulation for Population-Scale LLM Agents",
+   "fine_name": "LLM Agent Reliability and Efficiency",
+   "broad_name": "LLM Agents",
+   "url": "https://neurips.cc/virtual/2026/poster/149524"
+  },
+  {
+   "title": "BEAST3D: animal behavioral analysis and neural encoding from multi-view video via Gaussian splatting",
+   "fine_name": "Feed-Forward Multi-View Geometry Transformers",
+   "broad_name": "3D Vision & Perception",
+   "url": "https://neurips.cc/virtual/2026/poster/149762"
+  },
+  {
+   "title": "Behavioral Geometric Supervision Aligns Video Foundation Models with Human Social Perception",
+   "fine_name": "Video Temporal Grounding and Segmentation",
+   "broad_name": "Video Generation & Understanding",
+   "url": "https://neurips.cc/virtual/2026/poster/149277"
+  },
+  {
+   "title": "Benchmark Health Index: A Systematic Framework for Benchmarking the Benchmarks of LLMs",
+   "fine_name": "LLM Benchmarking and LLM-as-a-Judge",
+   "broad_name": "LLM Behavior & Safety",
+   "url": "https://neurips.cc/virtual/2026/poster/138960"
+  },
+  {
+   "title": "Binding Multiple Modalities via Multimodal Wasserstein Barycenter",
+   "fine_name": "Multimodal Fusion and Missing Modalities",
+   "broad_name": "Vision-Language Models",
+   "url": "https://neurips.cc/virtual/2026/poster/149098"
+  },
+  {
+   "title": "BrainWorld: A Structural-Prior-Conditioned Generative Model for Whole-Brain 4D fMRI Dynamics",
+   "fine_name": "Neural Decoding from Brain Recordings",
+   "broad_name": "DL Theory & Neuroscience",
+   "url": "https://neurips.cc/virtual/2026/poster/155412"
+  },
+  {
+   "title": "Breakeven complexity: A new perspective on neural partial differential equation solvers",
+   "fine_name": "Physics-Informed Networks and PDE Foundation Models",
+   "broad_name": "PDEs & Dynamical Systems",
+   "url": "https://neurips.cc/virtual/2026/poster/148644"
+  },
+  {
+   "title": "Bridging Compute- and Data-Optimal Pretraining",
+   "fine_name": "Neural Scaling Laws for Pretraining",
+   "broad_name": "Efficient LLMs & Architectures",
+   "url": "https://neurips.cc/virtual/2026/poster/155350"
+  },
+  {
+   "title": "C3P: Contrastive promoter-protein pretraining yields representations capturing bacterial gene regulation",
+   "fine_name": "Protein Language Models and Structure",
+   "broad_name": "Biomolecules & Causal Discovery",
+   "url": "https://neurips.cc/virtual/2026/poster/156046"
+  },
+  {
+   "title": "Can In-Context Learning Support Intrinsic Curiosity?",
+   "fine_name": "In-Context RL and Offline Policy Steering",
+   "broad_name": "Reinforcement Learning",
+   "url": "https://neurips.cc/virtual/2026/poster/151481"
+  },
+  {
+   "title": "Can We Model the Artifacts Explicitly? Disentangle Artifacts via Pairwise Edit Relations for Image Manipulation Localization",
+   "fine_name": "Instruction-Based Image Editing",
+   "broad_name": "Image & 3D Generation",
+   "url": "https://neurips.cc/virtual/2026/poster/155638"
+  },
+  {
+   "title": "Catch-Only-One: Non-Transferable Examples for Model-Specific Authorization",
+   "fine_name": "Jailbreak and Red-Teaming Attacks",
+   "broad_name": "LLM Behavior & Safety",
+   "url": "https://neurips.cc/virtual/2026/poster/151014"
+  },
+  {
+   "title": "CausalBind: Causal Modeling and Learning for Protein-Molecule Virtual Screening",
+   "fine_name": "Protein Language Models and Structure",
+   "broad_name": "Biomolecules & Causal Discovery",
+   "url": "https://neurips.cc/virtual/2026/poster/151296"
+  },
+  {
+   "title": "Certifiably Optimal Robust Angular Synchronization",
+   "fine_name": "LiDAR and Radar Perception for Driving",
+   "broad_name": "3D Vision & Perception",
+   "url": "https://neurips.cc/virtual/2026/poster/153331"
+  },
+  {
+   "title": "CIG: Exploration via Conditional Information Gain",
+   "fine_name": "In-Context RL and Offline Policy Steering",
+   "broad_name": "Reinforcement Learning",
+   "url": "https://neurips.cc/virtual/2026/poster/149190"
+  },
+  {
+   "title": "Clarification as Supervision: Reinforcement Learning for Vision-Language Interfaces",
+   "fine_name": "Latent and Chain-of-Thought Visual Reasoning",
+   "broad_name": "Vision-Language Models",
+   "url": "https://neurips.cc/virtual/2026/poster/152087"
+  },
+  {
+   "title": "CLIOPATRA: Extracting Private Information from LLM Insights",
+   "fine_name": "Jailbreak and Red-Teaming Attacks",
+   "broad_name": "LLM Behavior & Safety",
+   "url": "https://neurips.cc/virtual/2026/poster/152543"
+  },
+  {
+   "title": "Compact SO(3) Equivariant Atomistic Foundation Models via Structural Pruning",
+   "fine_name": "LLM Pruning and MoE Compression",
+   "broad_name": "Efficient LLMs & Architectures",
+   "url": "https://neurips.cc/virtual/2026/poster/154865"
+  },
+  {
+   "title": "Consistent 3D Surface Flow Model with Global State",
+   "fine_name": "Feed-Forward Multi-View Geometry Transformers",
+   "broad_name": "3D Vision & Perception",
+   "url": "https://neurips.cc/virtual/2026/poster/148758"
+  },
+  {
+   "title": "Coordination Connectivity: Shared Initialization Shapes the Joint-Policy Landscape in MARL",
+   "fine_name": "Cooperative Multi-Agent RL",
+   "broad_name": "Reinforcement Learning",
+   "url": "https://neurips.cc/virtual/2026/poster/154512"
+  },
+  {
+   "title": "CURE: Counterfactual Unsafe-token Re-masking for Diffusion Large Language Model Test-time Alignment",
+   "fine_name": "Decoding for Diffusion Language Models",
+   "broad_name": "LLM Behavior & Safety",
+   "url": "https://neurips.cc/virtual/2026/poster/151876"
+  },
+  {
+   "title": "DD-CAM: Minimal Sufficient Explanations for Vision Models Using Delta Debugging",
+   "fine_name": "Shapley Values and Feature Attribution",
+   "broad_name": "DL Theory & Neuroscience",
+   "url": "https://neurips.cc/virtual/2026/poster/151520"
+  },
+  {
+   "title": "DD-Ranking: Rethinking the Evaluation of Dataset Distillation",
+   "fine_name": "Model Selection and Evaluation Pitfalls",
+   "broad_name": "Trustworthy & Statistical ML",
+   "url": "https://neurips.cc/virtual/2026/poster/139355"
+  },
+  {
+   "title": "Decomposing Earth Embeddings with Sparse Autoencoders",
+   "fine_name": "Sparse Autoencoders for Interpretability",
+   "broad_name": "DL Theory & Neuroscience",
+   "url": "https://neurips.cc/virtual/2026/poster/150168"
+  },
+  {
+   "title": "D\u00e9j\u00e0 View: Looping Transformers for Multi-View 3D Reconstruction",
+   "fine_name": "Feed-Forward Multi-View Geometry Transformers",
+   "broad_name": "3D Vision & Perception",
+   "url": "https://neurips.cc/virtual/2026/poster/154303"
+  },
+  {
+   "title": "DIAGNO: Diagonal Spherical Neural Operators for Heterogeneous Earth Dynamics Modeling",
+   "fine_name": "Neural Operator Surrogates for PDEs",
+   "broad_name": "PDEs & Dynamical Systems",
+   "url": "https://neurips.cc/virtual/2026/poster/154008"
+  },
+  {
+   "title": "Emergence of Physical Intelligence via Controllable Information Production",
+   "fine_name": "In-Context RL and Offline Policy Steering",
+   "broad_name": "Reinforcement Learning",
+   "url": "https://neurips.cc/virtual/2026/poster/152582"
+  },
+  {
+   "title": "EntiRE: Invariant Learning for Robust Concept Erasure in Text-to-Image Generative Models",
+   "fine_name": "Concept Erasure in Text-to-Image Diffusion",
+   "broad_name": "Image & 3D Generation",
+   "url": "https://neurips.cc/virtual/2026/poster/151144"
+  },
+  {
+   "title": "Escaping the Cognitive Well: Efficient Competition Math with Off-the-Shelf Models",
+   "fine_name": "LLM Theorem Proving and Formal Math",
+   "broad_name": "LLM Reasoning & Retrieval",
+   "url": "https://neurips.cc/virtual/2026/poster/150429"
+  },
+  {
+   "title": "Evaluating Neural Data Tokenizers: A Framework for Assessing Learned Representations of Spiking Activity",
+   "fine_name": "Brain Encoding and Neural Recording Analysis",
+   "broad_name": "DL Theory & Neuroscience",
+   "url": "https://neurips.cc/virtual/2026/poster/139125"
+  },
+  {
+   "title": "Exact Gaussian Moment Matching for Residual Networks: a Second-Order Method",
+   "fine_name": "Deep Network Theory and Learning Dynamics",
+   "broad_name": "DL Theory & Neuroscience",
+   "url": "https://neurips.cc/virtual/2026/poster/155943"
+  },
+  {
+   "title": "ExComm: Exploration-Stage Communication for Error-Resilient Agentic Test-Time Scaling",
+   "fine_name": "LLM Multi-Agent Systems",
+   "broad_name": "LLM Agents",
+   "url": "https://neurips.cc/virtual/2026/poster/154319"
+  },
+  {
+   "title": "Felid: A Flexible and Efficient Design for Transformer Fine-Tuning over Encrypted Data",
+   "fine_name": "LoRA and Parameter-Efficient Fine-Tuning",
+   "broad_name": "Efficient LLMs & Architectures",
+   "url": "https://neurips.cc/virtual/2026/poster/148321"
+  },
+  {
+   "title": "Filtered Conformal Ellipsoids for Graph-Native Time Series",
+   "fine_name": "Conformal Prediction Coverage Guarantees",
+   "broad_name": "Trustworthy & Statistical ML",
+   "url": "https://neurips.cc/virtual/2026/poster/155800"
+  },
+  {
+   "title": "Fisher-R1: Training LLM Agents for Reliable Hypothesis Testing",
+   "fine_name": "LLM Benchmarking and LLM-as-a-Judge",
+   "broad_name": "LLM Behavior & Safety",
+   "url": "https://neurips.cc/virtual/2026/poster/152494"
+  },
+  {
+   "title": "Follow the Regularized Leader Does Not Converge in Constrained Optimization",
+   "fine_name": "Online Convex Optimization Regret Bounds",
+   "broad_name": "Bandits, Games & Mechanisms",
+   "url": "https://neurips.cc/virtual/2026/poster/150986"
+  },
+  {
+   "title": "Fractional State Space Transition for Long Sequence Modeling",
+   "fine_name": "Long-Context Sparse and Linear Attention",
+   "broad_name": "Efficient LLMs & Architectures",
+   "url": "https://neurips.cc/virtual/2026/poster/150427"
+  },
+  {
+   "title": "Free Decompression with Algebraic Spectral Curves",
+   "fine_name": "Statistical Theory of Diffusion Models",
+   "broad_name": "Diffusion, Flows & Inference",
+   "url": "https://neurips.cc/virtual/2026/poster/155558"
+  },
+  {
+   "title": "GenAI Evaluation Results are Largely Artifacts of Evaluation Design Choices: Evidence from Audit Studies of Resume Screening",
+   "fine_name": "Human-AI Collaboration and Oversight",
+   "broad_name": "LLM Agents",
+   "url": "https://neurips.cc/virtual/2026/poster/138976"
+  },
+  {
+   "title": "Generative Modeling via Drifting",
+   "fine_name": "Diffusion Guidance and Reward Fine-Tuning",
+   "broad_name": "Diffusion, Flows & Inference",
+   "url": "https://neurips.cc/virtual/2026/poster/154240"
+  },
+  {
+   "title": "Geometry-Aware Similarity Metrics for Neural Representations on Riemannian and Statistical Manifolds",
+   "fine_name": "Geometry of Learned Representations",
+   "broad_name": "DL Theory & Neuroscience",
+   "url": "https://neurips.cc/virtual/2026/poster/150840"
+  },
+  {
+   "title": "GeoSym127K: Scalable Symbolically-verifiable Synthesis for Multimodal Geometric Reasoning",
+   "fine_name": "Latent and Chain-of-Thought Visual Reasoning",
+   "broad_name": "Vision-Language Models",
+   "url": "https://neurips.cc/virtual/2026/poster/139481"
+  },
+  {
+   "title": "HABIT: Human-Aware Behavior and Interaction Training Dataset for Robot Manipulation",
+   "fine_name": "Dexterous and Humanoid Robot Manipulation",
+   "broad_name": "Robotics & Embodied AI",
+   "url": "https://neurips.cc/virtual/2026/poster/139828"
+  },
+  {
+   "title": "HearSayBench: Can LLMs Navigate from Abstract Human Rights to Lived Lives?",
+   "fine_name": "LLM Personas, Sycophancy and Cultural Bias",
+   "broad_name": "LLM Behavior & Safety",
+   "url": "https://neurips.cc/virtual/2026/poster/139278"
+  },
+  {
+   "title": "HeMeR: Heterogeneous Memory Reconciliation for Embodied Agents via Structured KV Reuse",
+   "fine_name": "Long-Term Memory for LLM Agents",
+   "broad_name": "LLM Agents",
+   "url": "https://neurips.cc/virtual/2026/poster/148497"
+  },
+  {
+   "title": "IDEA: Unwrapping Visual Black-box Models by Interaction Decomposition",
+   "fine_name": "Shapley Values and Feature Attribution",
+   "broad_name": "DL Theory & Neuroscience",
+   "url": "https://neurips.cc/virtual/2026/poster/151393"
+  },
+  {
+   "title": "Impossibility of Distribution-Free Predictive Inference for Individual Treatment Effects",
+   "fine_name": "Treatment Effect Estimation and Causal Inference",
+   "broad_name": "Trustworthy & Statistical ML",
+   "url": "https://neurips.cc/virtual/2026/poster/149451"
+  },
+  {
+   "title": "Incentivizing Medical Vision Capabilities from Large-Scale Multimodal Pre-training",
+   "fine_name": "Latent and Chain-of-Thought Visual Reasoning",
+   "broad_name": "Vision-Language Models",
+   "url": "https://neurips.cc/virtual/2026/poster/156128"
+  },
+  {
+   "title": "Language-Conditioned World Modeling for Visual Navigation",
+   "fine_name": "Vision-Language-Action Robot Policies",
+   "broad_name": "Robotics & Embodied AI",
+   "url": "https://neurips.cc/virtual/2026/poster/154464"
+  },
+  {
+   "title": "Leaderboard Hacking: Preference-Based Model Evaluations are Vulnerable to Manipulation",
+   "fine_name": "LLM Benchmarking and LLM-as-a-Judge",
+   "broad_name": "LLM Behavior & Safety",
+   "url": "https://neurips.cc/virtual/2026/poster/152085"
+  },
+  {
+   "title": "Learning interpretable Schur forms of recurrent weight matrices",
+   "fine_name": "Recurrent Network Dynamics in Neuroscience",
+   "broad_name": "DL Theory & Neuroscience",
+   "url": "https://neurips.cc/virtual/2026/poster/155071"
+  },
+  {
+   "title": "Learning Reveals Invisible Structure in Low-Rank RNNs",
+   "fine_name": "Recurrent Network Dynamics in Neuroscience",
+   "broad_name": "DL Theory & Neuroscience",
+   "url": "https://neurips.cc/virtual/2026/poster/152289"
+  },
+  {
+   "title": "Learning Sparse Semantic-Cortical Atoms for Multisubject Naturalistic fMRI Encoding",
+   "fine_name": "Brain Encoding and Neural Recording Analysis",
+   "broad_name": "DL Theory & Neuroscience",
+   "url": "https://neurips.cc/virtual/2026/poster/151712"
+  },
+  {
+   "title": "Learning to Audit ML Models with Theory of Mind",
+   "fine_name": "LLM Behavioral Tendencies and Evaluation Awareness",
+   "broad_name": "LLM Behavior & Safety",
+   "url": "https://neurips.cc/virtual/2026/poster/155783"
+  },
+  {
+   "title": "LITMUS: Benchmarking Behavioral Jailbreaks of LLM Agents in Real OS Environments",
+   "fine_name": "LLM Agent Safety and Prompt Injection",
+   "broad_name": "LLM Agents",
+   "url": "https://neurips.cc/virtual/2026/poster/150415"
+  },
+  {
+   "title": "LittleLearner: Language Models Under Pedagogically-Controlled Knowledge Exposure",
+   "fine_name": "LLM Knowledge Editing and Forgetting",
+   "broad_name": "LLM Behavior & Safety",
+   "url": "https://neurips.cc/virtual/2026/poster/148220"
+  },
+  {
+   "title": "LLM-Enhanced Random Forests in Orthogonal Hyperbolic Subspaces for Tabular Learning",
+   "fine_name": "Tabular Foundation Models",
+   "broad_name": "Trustworthy & Statistical ML",
+   "url": "https://neurips.cc/virtual/2026/poster/154957"
+  },
+  {
+   "title": "LoRAcles: Self-Supervised Weight-Space Interpretability at Scale",
+   "fine_name": "LLM Self-Explanation and Hidden Computation",
+   "broad_name": "LLM Behavior & Safety",
+   "url": "https://neurips.cc/virtual/2026/poster/154333"
+  },
+  {
+   "title": "MaxSketch: Robust Distinct Counting in Streams via Random Projections",
+   "fine_name": "PAC Learning and Sample Complexity",
+   "broad_name": "Trustworthy & Statistical ML",
+   "url": "https://neurips.cc/virtual/2026/poster/155987"
+  },
+  {
+   "title": "Mechanism-Aware Ensemble Conditioning for Data-Limited Emulation of Extreme Events",
+   "fine_name": "Learning Dynamical Systems from Data",
+   "broad_name": "PDEs & Dynamical Systems",
+   "url": "https://neurips.cc/virtual/2026/poster/151389"
+  },
+  {
+   "title": "MindAlign: Bridging EEG, Vision, and Language for Zero-Shot Visual Decoding",
+   "fine_name": "EEG and Physiological Foundation Models",
+   "broad_name": "DL Theory & Neuroscience",
+   "url": "https://neurips.cc/virtual/2026/poster/149255"
+  },
+  {
+   "title": "Mitigating Confidence Miscalibration in Open-World Semi-Supervised Learning",
+   "fine_name": "Calibration and Prediction-Powered Inference",
+   "broad_name": "Trustworthy & Statistical ML",
+   "url": "https://neurips.cc/virtual/2026/poster/153397"
+  },
+  {
+   "title": "MLS-Bench: A Holistic and Rigorous Assessment of AI Systems on Building Better AI",
+   "fine_name": "Tool-Use, Web and GUI Agent Benchmarks",
+   "broad_name": "LLM Agents",
+   "url": "https://neurips.cc/virtual/2026/poster/139626"
+  },
+  {
+   "title": "MOVEBENCH: A Benchmark for Global-Scale Wildlife Movement Forecasting",
+   "fine_name": "Urban Mobility and Trajectory Generation",
+   "broad_name": "Time Series & Forecasting",
+   "url": "https://neurips.cc/virtual/2026/poster/139749"
+  },
+  {
+   "title": "Nemotron-Cascade: Scaling Cascaded Reinforcement Learning for General-Purpose Reasoning Models",
+   "fine_name": "Efficient Chain-of-Thought Reasoning",
+   "broad_name": "LLM Reasoning & Retrieval",
+   "url": "https://neurips.cc/virtual/2026/poster/155022"
+  },
+  {
+   "title": "Neural Chameleons: Language Models Can Learn to Hide Their Thoughts from Unseen Activation Monitors",
+   "fine_name": "Robustness of LLM Safety Alignment",
+   "broad_name": "LLM Behavior & Safety",
+   "url": "https://neurips.cc/virtual/2026/poster/148241"
+  },
+  {
+   "title": "Neural population tuning statistics as priors for multitask generalization",
+   "fine_name": "Grokking, Memorization and Generalization Theory",
+   "broad_name": "DL Theory & Neuroscience",
+   "url": "https://neurips.cc/virtual/2026/poster/153194"
+  },
+  {
+   "title": "Non-Colliding Biometric Identities for Digital Entities: Geometry, Capacity, and Million-Scale Virtual Identity Provisioning",
+   "fine_name": "AI-Generated Image and Deepfake Detection",
+   "broad_name": "3D Vision & Perception",
+   "url": "https://neurips.cc/virtual/2026/poster/153119"
+  },
+  {
+   "title": "Offloading Score: Measuring AI Reliance through Counterfactual Workflows",
+   "fine_name": "Human-AI Collaboration and Oversight",
+   "broad_name": "LLM Agents",
+   "url": "https://neurips.cc/virtual/2026/poster/139388"
+  },
+  {
+   "title": "ParetoSlider: Diffusion Models Post-Training for Continuous Reward Control",
+   "fine_name": "Diffusion Guidance and Reward Fine-Tuning",
+   "broad_name": "Diffusion, Flows & Inference",
+   "url": "https://neurips.cc/virtual/2026/poster/154172"
+  },
+  {
+   "title": "Position: Fair Representations Cannot Hold What They Promise",
+   "fine_name": "Algorithmic Fairness and Group Constraints",
+   "broad_name": "Trustworthy & Statistical ML",
+   "url": "https://neurips.cc/virtual/2026/poster/140022"
+  },
+  {
+   "title": "Pruning and Distilling Mixture-of-Experts into Dense Language Models",
+   "fine_name": "LLM Pruning and MoE Compression",
+   "broad_name": "Efficient LLMs & Architectures",
+   "url": "https://neurips.cc/virtual/2026/poster/150472"
+  },
+  {
+   "title": "Query Lower Bounds for Diffusion Sampling",
+   "fine_name": "MCMC, SMC and Posterior Samplers",
+   "broad_name": "Diffusion, Flows & Inference",
+   "url": "https://neurips.cc/virtual/2026/poster/151581"
+  },
+  {
+   "title": "Releasing Anchors from Cross-View Correspondence: Probabilistic Multi-View Anchor Graph Clustering",
+   "fine_name": "Multi-View Clustering and Person Re-ID",
+   "broad_name": "3D Vision & Perception",
+   "url": "https://neurips.cc/virtual/2026/poster/154593"
+  },
+  {
+   "title": "Representation Fr\u00e9chet Loss for Visual Generation",
+   "fine_name": "Diffusion Guidance and Reward Fine-Tuning",
+   "broad_name": "Diffusion, Flows & Inference",
+   "url": "https://neurips.cc/virtual/2026/poster/154990"
+  },
+  {
+   "title": "Resilience Matters for Embodied Agents System: New Metrics, Systematic Evaluation, and Optimization",
+   "fine_name": "Tool-Use, Web and GUI Agent Benchmarks",
+   "broad_name": "LLM Agents",
+   "url": "https://neurips.cc/virtual/2026/poster/148940"
+  },
+  {
+   "title": "SAM 3D Animal: Promptable Animal 3D Reconstruction from Images in the Wild",
+   "fine_name": "Feed-Forward Multi-View Geometry Transformers",
+   "broad_name": "3D Vision & Perception",
+   "url": "https://neurips.cc/virtual/2026/poster/155674"
+  },
+  {
+   "title": "Scale-Sensitive Shattering: Learnability and Evaluability at Optimal Scale",
+   "fine_name": "PAC Learning and Sample Complexity",
+   "broad_name": "Trustworthy & Statistical ML",
+   "url": "https://neurips.cc/virtual/2026/poster/149340"
+  },
+  {
+   "title": "Shaping Useful Noise: Energy Distributions Predict Visual Pretraining Quality",
+   "fine_name": "Diffusion Guidance and Reward Fine-Tuning",
+   "broad_name": "Diffusion, Flows & Inference",
+   "url": "https://neurips.cc/virtual/2026/poster/153569"
+  },
+  {
+   "title": "SMART: Scalable Multi-Agent Role-conditioned Teaming via LLM-free Tree Search",
+   "fine_name": "LLM Multi-Agent Systems",
+   "broad_name": "LLM Agents",
+   "url": "https://neurips.cc/virtual/2026/poster/149874"
+  },
+  {
+   "title": "Soteria: Formally Verified Planning with Runtime Enforcement for Safe LLM Agents",
+   "fine_name": "LLM Agent Reliability and Efficiency",
+   "broad_name": "LLM Agents",
+   "url": "https://neurips.cc/virtual/2026/poster/154927"
+  },
+  {
+   "title": "Spectral Energy Allocation Enables Source-Free Domain Adaptation in Time Series Forecasting",
+   "fine_name": "Time Series Forecasting Models",
+   "broad_name": "Time Series & Forecasting",
+   "url": "https://neurips.cc/virtual/2026/poster/154914"
+  },
+  {
+   "title": "Strong Stochastic Flow Maps",
+   "fine_name": "Flow Matching Theory and Variants",
+   "broad_name": "Diffusion, Flows & Inference",
+   "url": "https://neurips.cc/virtual/2026/poster/149475"
+  },
+  {
+   "title": "Surprises in Proper Positive-Only Learning",
+   "fine_name": "PAC Learning and Sample Complexity",
+   "broad_name": "Trustworthy & Statistical ML",
+   "url": "https://neurips.cc/virtual/2026/poster/148778"
+  },
+  {
+   "title": "SyncWorld: Visual Calibration Enables World Models as Zero-Shot Simulators",
+   "fine_name": "Action-Conditioned Video World Models",
+   "broad_name": "Robotics & Embodied AI",
+   "url": "https://neurips.cc/virtual/2026/poster/149981"
+  },
+  {
+   "title": "Tessellations of Semi-Discrete Flow Matching",
+   "fine_name": "Flow Matching Theory and Variants",
+   "broad_name": "Diffusion, Flows & Inference",
+   "url": "https://neurips.cc/virtual/2026/poster/153677"
+  },
+  {
+   "title": "Testable and Actionable Calibration for Full Swap Regret",
+   "fine_name": "Calibration and Prediction-Powered Inference",
+   "broad_name": "Trustworthy & Statistical ML",
+   "url": "https://neurips.cc/virtual/2026/poster/148311"
+  },
+  {
+   "title": "The Aleatoric-Epistemic Dichotomy of Uncertainty is Meaningful and Indispensable for Machine Learning",
+   "fine_name": "Performative Prediction and Decision-Focused Learning",
+   "broad_name": "Trustworthy & Statistical ML",
+   "url": "https://neurips.cc/virtual/2026/poster/140101"
+  },
+  {
+   "title": "The Algorithm Is Not the Behavior: Learned Priors Override Look-Ahead in a Chess-Playing Neural Network",
+   "fine_name": "Reward Models and Human Behavior Modeling",
+   "broad_name": "LLM Post-Training",
+   "url": "https://neurips.cc/virtual/2026/poster/152268"
+  },
+  {
+   "title": "The Attacker in the Mirror: Breaking Self-Consistency in Safety via Anchored Bipolicy Self-Play",
+   "fine_name": "Robustness of LLM Safety Alignment",
+   "broad_name": "LLM Behavior & Safety",
+   "url": "https://neurips.cc/virtual/2026/poster/151513"
+  },
+  {
+   "title": "The Dead Salmons of AI Interpretability: The Need for a Statistical Inference Perspective",
+   "fine_name": "Shapley Values and Feature Attribution",
+   "broad_name": "DL Theory & Neuroscience",
+   "url": "https://neurips.cc/virtual/2026/poster/140002"
+  },
+  {
+   "title": "The Power of a Random Sample in Online Algorithms",
+   "fine_name": "Mechanism Design, Auctions and Social Choice",
+   "broad_name": "Bandits, Games & Mechanisms",
+   "url": "https://neurips.cc/virtual/2026/poster/152757"
+  },
+  {
+   "title": "The Sign Code: The Hidden Binary Nature of Deep Networks",
+   "fine_name": "Deep Network Theory and Learning Dynamics",
+   "broad_name": "DL Theory & Neuroscience",
+   "url": "https://neurips.cc/virtual/2026/poster/155585"
+  },
+  {
+   "title": "The Stability of Online Algorithms in Performative Prediction",
+   "fine_name": "Performative Prediction and Decision-Focused Learning",
+   "broad_name": "Trustworthy & Statistical ML",
+   "url": "https://neurips.cc/virtual/2026/poster/151725"
+  },
+  {
+   "title": "They Can See It but not Say It: Iterative Self Knowledge Re-expression in Visual Reasoning Relative Pose Identification",
+   "fine_name": "Latent and Chain-of-Thought Visual Reasoning",
+   "broad_name": "Vision-Language Models",
+   "url": "https://neurips.cc/virtual/2026/poster/151372"
+  },
+  {
+   "title": "Thinking with Images as Continuous Policy: Numerical Visual Chain-of-Thought",
+   "fine_name": "Latent and Chain-of-Thought Visual Reasoning",
+   "broad_name": "Vision-Language Models",
+   "url": "https://neurips.cc/virtual/2026/poster/150085"
+  },
+  {
+   "title": "TiRex-2: Generalizing TiRex to Multivariate Data and Streaming",
+   "fine_name": "Time Series Forecasting Models",
+   "broad_name": "Time Series & Forecasting",
+   "url": "https://neurips.cc/virtual/2026/poster/151700"
+  },
+  {
+   "title": "Training Generalizable Collaborative Agents via Strategic Risk Aversion",
+   "fine_name": "Cooperative Multi-Agent RL",
+   "broad_name": "Reinforcement Learning",
+   "url": "https://neurips.cc/virtual/2026/poster/151685"
+  },
+  {
+   "title": "Trellis4D: Complex 4D Mesh Generation",
+   "fine_name": "4D Reconstruction from Monocular Video",
+   "broad_name": "3D Vision & Perception",
+   "url": "https://neurips.cc/virtual/2026/poster/153899"
+  },
+  {
+   "title": "UECO: A Unified Encoder with Structure-Aware Attention Mixture via Iterative Edge Evolving for Neural Combinatorial Optimization",
+   "fine_name": "Neural Combinatorial Optimization",
+   "broad_name": "DL Theory & Neuroscience",
+   "url": "https://neurips.cc/virtual/2026/poster/153347"
+  },
+  {
+   "title": "Uniform-in-Time Weak Propagation of Chaos in Shallow Neural Networks",
+   "fine_name": "Deep Network Theory and Learning Dynamics",
+   "broad_name": "DL Theory & Neuroscience",
+   "url": "https://neurips.cc/virtual/2026/poster/154794"
+  },
+  {
+   "title": "Unifying Goal-Conditioned RL and Unsupervised Skill Learning via Control-Maximization",
+   "fine_name": "Goal-Conditioned RL and Task Specifications",
+   "broad_name": "Reinforcement Learning",
+   "url": "https://neurips.cc/virtual/2026/poster/153300"
+  },
+  {
+   "title": "Unlocking Volition: Proactive Intention Decoding via Interpretable Graph Learning of Multi-Region ECoG",
+   "fine_name": "Neural Decoding from Brain Recordings",
+   "broad_name": "DL Theory & Neuroscience",
+   "url": "https://neurips.cc/virtual/2026/poster/153824"
+  },
+  {
+   "title": "Video Forensic Self-Descriptions: Leveraging Temporally Distributed Forensic Microstructures for Zero-Shot Detection of AI-Generated Videos",
+   "fine_name": "AI-Generated Image and Deepfake Detection",
+   "broad_name": "3D Vision & Perception",
+   "url": "https://neurips.cc/virtual/2026/poster/149484"
+  },
+  {
+   "title": "We Should Distinguish Unlearning From Untraining",
+   "fine_name": "Machine Unlearning in LLMs",
+   "broad_name": "LLM Behavior & Safety",
+   "url": "https://neurips.cc/virtual/2026/poster/140062"
+  }
+ ],
+ "site_counts": {
+  "Sydney": 4842,
+  "unscheduled": 1919,
+  "Atlanta": 1406,
+  "Paris": 938,
+  "": 5
+ },
+ "site_overall_pct": {
+  "Sydney": 67.38,
+  "Atlanta": 19.57,
+  "Paris": 13.05
+ },
+ "site_mix_by_area": [
+  {
+   "broad_name": "Image & 3D Generation",
+   "Sydney": 76.41,
+   "Atlanta": 13.03,
+   "Paris": 10.56,
+   "sydney_vs_avg_pp": 9.03
+  },
+  {
+   "broad_name": "3D Vision & Perception",
+   "Sydney": 75.95,
+   "Atlanta": 13.34,
+   "Paris": 10.71,
+   "sydney_vs_avg_pp": 8.57
+  },
+  {
+   "broad_name": "Robotics & Embodied AI",
+   "Sydney": 74.55,
+   "Atlanta": 16.67,
+   "Paris": 8.79,
+   "sydney_vs_avg_pp": 7.16
+  },
+  {
+   "broad_name": "Video Generation & Understanding",
+   "Sydney": 73.96,
+   "Atlanta": 19.44,
+   "Paris": 6.6,
+   "sydney_vs_avg_pp": 6.58
+  },
+  {
+   "broad_name": "Time Series & Forecasting",
+   "Sydney": 73.84,
+   "Atlanta": 11.63,
+   "Paris": 14.53,
+   "sydney_vs_avg_pp": 6.46
+  },
+  {
+   "broad_name": "Vision-Language Models",
+   "Sydney": 73.08,
+   "Atlanta": 14.29,
+   "Paris": 12.64,
+   "sydney_vs_avg_pp": 5.7
+  },
+  {
+   "broad_name": "LLM Post-Training",
+   "Sydney": 71.16,
+   "Atlanta": 21.72,
+   "Paris": 7.12,
+   "sydney_vs_avg_pp": 3.78
+  },
+  {
+   "broad_name": "Biomolecules & Causal Discovery",
+   "Sydney": 69.92,
+   "Atlanta": 16.02,
+   "Paris": 14.06,
+   "sydney_vs_avg_pp": 2.54
+  },
+  {
+   "broad_name": "Graph Learning",
+   "Sydney": 68.47,
+   "Atlanta": 16.22,
+   "Paris": 15.32,
+   "sydney_vs_avg_pp": 1.09
+  },
+  {
+   "broad_name": "LLM Reasoning & Retrieval",
+   "Sydney": 68.14,
+   "Atlanta": 22.79,
+   "Paris": 9.07,
+   "sydney_vs_avg_pp": 0.76
+  },
+  {
+   "broad_name": "Efficient LLMs & Architectures",
+   "Sydney": 67.44,
+   "Atlanta": 19.86,
+   "Paris": 12.7,
+   "sydney_vs_avg_pp": 0.06
+  },
+  {
+   "broad_name": "LLM Behavior & Safety",
+   "Sydney": 67.37,
+   "Atlanta": 22.24,
+   "Paris": 10.39,
+   "sydney_vs_avg_pp": -0.01
+  },
+  {
+   "broad_name": "LLM Agents",
+   "Sydney": 67.1,
+   "Atlanta": 24.3,
+   "Paris": 8.6,
+   "sydney_vs_avg_pp": -0.28
+  },
+  {
+   "broad_name": "PDEs & Dynamical Systems",
+   "Sydney": 64.89,
+   "Atlanta": 21.37,
+   "Paris": 13.74,
+   "sydney_vs_avg_pp": -2.5
+  },
+  {
+   "broad_name": "Reinforcement Learning",
+   "Sydney": 64.22,
+   "Atlanta": 24.34,
+   "Paris": 11.44,
+   "sydney_vs_avg_pp": -3.16
+  },
+  {
+   "broad_name": "DL Theory & Neuroscience",
+   "Sydney": 61.0,
+   "Atlanta": 16.1,
+   "Paris": 22.9,
+   "sydney_vs_avg_pp": -6.38
+  },
+  {
+   "broad_name": "Optimization & Statistics",
+   "Sydney": 60.54,
+   "Atlanta": 21.97,
+   "Paris": 17.49,
+   "sydney_vs_avg_pp": -6.84
+  },
+  {
+   "broad_name": "Diffusion, Flows & Inference",
+   "Sydney": 59.59,
+   "Atlanta": 20.94,
+   "Paris": 19.47,
+   "sydney_vs_avg_pp": -7.79
+  },
+  {
+   "broad_name": "Trustworthy & Statistical ML",
+   "Sydney": 56.69,
+   "Atlanta": 25.05,
+   "Paris": 18.26,
+   "sydney_vs_avg_pp": -10.69
+  },
+  {
+   "broad_name": "Bandits, Games & Mechanisms",
+   "Sydney": 50.83,
+   "Atlanta": 25.41,
+   "Paris": 23.76,
+   "sydney_vs_avg_pp": -16.55
+  }
+ ],
+ "institutions_2026": [
+  [
+   "Tsinghua University",
+   442
+  ],
+  [
+   "Shanghai Jiao Tong University",
+   324
+  ],
+  [
+   "Google",
+   314
+  ],
+  [
+   "Peking University",
+   300
+  ],
+  [
+   "Stanford University",
+   283
+  ],
+  [
+   "MIT",
+   276
+  ],
+  [
+   "Chinese Academy of Sciences",
+   275
+  ],
+  [
+   "NUS",
+   267
+  ],
+  [
+   "HKUST",
+   254
+  ],
+  [
+   "NTU Singapore",
+   251
+  ],
+  [
+   "Zhejiang University",
+   244
+  ],
+  [
+   "KAIST",
+   238
+  ],
+  [
+   "Carnegie Mellon University",
+   234
+  ],
+  [
+   "CUHK",
+   228
+  ],
+  [
+   "UC Berkeley",
+   210
+  ],
+  [
+   "University of Oxford",
+   203
+  ],
+  [
+   "USTC",
+   198
+  ],
+  [
+   "Alibaba",
+   198
+  ],
+  [
+   "Tencent",
+   188
+  ],
+  [
+   "Microsoft",
+   187
+  ],
+  [
+   "Fudan University",
+   179
+  ],
+  [
+   "UIUC",
+   169
+  ],
+  [
+   "Meta",
+   164
+  ],
+  [
+   "Harvard University",
+   156
+  ],
+  [
+   "New York University",
+   148
+  ],
+  [
+   "University of Hong Kong",
+   147
+  ],
+  [
+   "Amazon",
+   144
+  ],
+  [
+   "ETH Zurich",
+   142
+  ],
+  [
+   "UC San Diego",
+   136
+  ],
+  [
+   "Huawei",
+   135
+  ],
+  [
+   "Seoul National University",
+   128
+  ],
+  [
+   "Nanjing University",
+   127
+  ],
+  [
+   "MBZUAI",
+   126
+  ],
+  [
+   "Georgia Tech",
+   124
+  ],
+  [
+   "NVIDIA",
+   121
+  ],
+  [
+   "Northeastern University",
+   118
+  ],
+  [
+   "Purdue University",
+   116
+  ],
+  [
+   "Imperial College London",
+   116
+  ],
+  [
+   "Columbia University",
+   116
+  ],
+  [
+   "EPFL",
+   114
+  ]
+ ],
+ "countries_2026": [
+  [
+   "USA",
+   3877,
+   45.1
+  ],
+  [
+   "China",
+   2962,
+   34.4
+  ],
+  [
+   "Hong Kong",
+   741,
+   8.6
+  ],
+  [
+   "UK",
+   739,
+   8.6
+  ],
+  [
+   "South Korea",
+   623,
+   7.2
+  ],
+  [
+   "Singapore",
+   539,
+   6.3
+  ],
+  [
+   "Germany",
+   480,
+   5.6
+  ],
+  [
+   "Canada",
+   400,
+   4.6
+  ],
+  [
+   "Australia",
+   355,
+   4.1
+  ],
+  [
+   "Switzerland",
+   282,
+   3.3
+  ],
+  [
+   "France",
+   218,
+   2.5
+  ],
+  [
+   "Japan",
+   213,
+   2.5
+  ],
+  [
+   "Israel",
+   150,
+   1.7
+  ],
+  [
+   "UAE",
+   135,
+   1.6
+  ],
+  [
+   "Netherlands",
+   124,
+   1.4
+  ],
+  [
+   "Italy",
+   107,
+   1.2
+  ],
+  [
+   "Denmark",
+   79,
+   0.9
+  ],
+  [
+   "India",
+   74,
+   0.9
+  ],
+  [
+   "Sweden",
+   60,
+   0.7
+  ],
+  [
+   "Austria",
+   53,
+   0.6
+  ],
+  [
+   "Macau",
+   52,
+   0.6
+  ],
+  [
+   "Finland",
+   43,
+   0.5
+  ],
+  [
+   "Vietnam",
+   37,
+   0.4
+  ]
+ ],
+ "industry_share_2026": 24.0,
+ "industry_only_share_2026": 2.5,
+ "papers_with_mapped_org_2026": 94.4,
+ "institutions_2025": [
+  [
+   "Tsinghua University",
+   367
+  ],
+  [
+   "Google",
+   264
+  ],
+  [
+   "Peking University",
+   263
+  ],
+  [
+   "Shanghai Jiao Tong University",
+   232
+  ],
+  [
+   "Chinese Academy of Sciences",
+   227
+  ],
+  [
+   "NUS",
+   217
+  ],
+  [
+   "Stanford University",
+   213
+  ],
+  [
+   "Zhejiang University",
+   208
+  ],
+  [
+   "CUHK",
+   205
+  ],
+  [
+   "NTU Singapore",
+   198
+  ],
+  [
+   "Carnegie Mellon University",
+   195
+  ],
+  [
+   "MIT",
+   191
+  ],
+  [
+   "USTC",
+   181
+  ],
+  [
+   "HKUST",
+   170
+  ],
+  [
+   "Fudan University",
+   165
+  ],
+  [
+   "UC Berkeley",
+   156
+  ],
+  [
+   "Meta",
+   150
+  ],
+  [
+   "Microsoft",
+   144
+  ],
+  [
+   "UIUC",
+   139
+  ],
+  [
+   "Alibaba",
+   137
+  ],
+  [
+   "Nanjing University",
+   128
+  ],
+  [
+   "Tencent",
+   127
+  ],
+  [
+   "KAIST",
+   125
+  ],
+  [
+   "ByteDance",
+   125
+  ],
+  [
+   "University of Hong Kong",
+   122
+  ],
+  [
+   "University of Oxford",
+   119
+  ],
+  [
+   "Harbin Institute of Technology",
+   116
+  ],
+  [
+   "Shanghai AI Laboratory",
+   113
+  ],
+  [
+   "Huawei",
+   113
+  ],
+  [
+   "UC San Diego",
+   107
+  ],
+  [
+   "ETH Zurich",
+   107
+  ],
+  [
+   "Sun Yat-sen University",
+   106
+  ],
+  [
+   "Princeton University",
+   98
+  ],
+  [
+   "Harvard University",
+   96
+  ],
+  [
+   "Beihang University",
+   95
+  ],
+  [
+   "UCLA",
+   90
+  ],
+  [
+   "Amazon",
+   89
+  ],
+  [
+   "New York University",
+   89
+  ],
+  [
+   "NVIDIA",
+   88
+  ],
+  [
+   "EPFL",
+   88
+  ]
+ ],
+ "countries_2025": [
+  [
+   "USA",
+   2667,
+   46.8
+  ],
+  [
+   "China",
+   2404,
+   42.2
+  ],
+  [
+   "Hong Kong",
+   583,
+   10.2
+  ],
+  [
+   "UK",
+   429,
+   7.5
+  ],
+  [
+   "Singapore",
+   428,
+   7.5
+  ],
+  [
+   "South Korea",
+   301,
+   5.3
+  ],
+  [
+   "Germany",
+   293,
+   5.1
+  ],
+  [
+   "Canada",
+   279,
+   4.9
+  ],
+  [
+   "Australia",
+   231,
+   4.1
+  ],
+  [
+   "Switzerland",
+   214,
+   3.8
+  ],
+  [
+   "France",
+   120,
+   2.1
+  ],
+  [
+   "Japan",
+   119,
+   2.1
+  ],
+  [
+   "Israel",
+   105,
+   1.8
+  ],
+  [
+   "UAE",
+   93,
+   1.6
+  ],
+  [
+   "Netherlands",
+   81,
+   1.4
+  ],
+  [
+   "Italy",
+   73,
+   1.3
+  ],
+  [
+   "Austria",
+   46,
+   0.8
+  ],
+  [
+   "Denmark",
+   41,
+   0.7
+  ],
+  [
+   "India",
+   27,
+   0.5
+  ],
+  [
+   "Saudi Arabia",
+   27,
+   0.5
+  ],
+  [
+   "Sweden",
+   25,
+   0.4
+  ],
+  [
+   "Taiwan",
+   23,
+   0.4
+  ],
+  [
+   "Finland",
+   21,
+   0.4
+  ]
+ ],
+ "industry_share_2025": 27.7,
+ "industry_only_share_2025": 2.2,
+ "papers_with_mapped_org_2025": 97.3,
+ "authors_mean": {
+  "2026": 5.47,
+  "2025": 5.86
+ },
+ "authors_median": {
+  "2026": 5.0,
+  "2025": 5.0
+ },
+ "single_author_pct": {
+  "2026": 3.1,
+  "2025": 1.04
+ },
+ "10plus_author_pct": {
+  "2026": 8.91,
+  "2025": 10.14
+ },
+ "vocabulary": [
+  {
+   "term": "benchmark",
+   "pct_2026": 38.0,
+   "pct_2025": 32.2,
+   "delta_pp": 5.8
+  },
+  {
+   "term": "agent / agentic",
+   "pct_2026": 14.4,
+   "pct_2025": 9.3,
+   "delta_pp": 5.2
+  },
+  {
+   "term": "safety / alignment",
+   "pct_2026": 14.5,
+   "pct_2025": 12.6,
+   "delta_pp": 1.9
+  },
+  {
+   "term": "flow matching",
+   "pct_2026": 3.1,
+   "pct_2025": 1.2,
+   "delta_pp": 1.9
+  },
+  {
+   "term": "RLVR / GRPO",
+   "pct_2026": 3.5,
+   "pct_2025": 2.0,
+   "delta_pp": 1.6
+  },
+  {
+   "term": "reasoning",
+   "pct_2026": 17.4,
+   "pct_2025": 16.2,
+   "delta_pp": 1.2
+  },
+  {
+   "term": "medical / clinical",
+   "pct_2026": 4.0,
+   "pct_2025": 2.9,
+   "delta_pp": 1.1
+  },
+  {
+   "term": "interpretability",
+   "pct_2026": 7.4,
+   "pct_2025": 6.3,
+   "delta_pp": 1.1
+  },
+  {
+   "term": "world model",
+   "pct_2026": 1.9,
+   "pct_2025": 1.1,
+   "delta_pp": 0.8
+  },
+  {
+   "term": "reinforcement learning",
+   "pct_2026": 11.2,
+   "pct_2025": 10.5,
+   "delta_pp": 0.7
+  },
+  {
+   "term": "science (protein / molecule / materials)",
+   "pct_2026": 4.9,
+   "pct_2025": 4.2,
+   "delta_pp": 0.6
+  },
+  {
+   "term": "test-time compute / scaling",
+   "pct_2026": 3.7,
+   "pct_2025": 3.2,
+   "delta_pp": 0.5
+  },
+  {
+   "term": "LLM / large language model",
+   "pct_2026": 25.8,
+   "pct_2025": 25.4,
+   "delta_pp": 0.5
+  },
+  {
+   "term": "multimodal / VLM",
+   "pct_2026": 14.6,
+   "pct_2025": 14.2,
+   "delta_pp": 0.4
+  },
+  {
+   "term": "quantum",
+   "pct_2026": 0.8,
+   "pct_2025": 0.5,
+   "delta_pp": 0.3
+  },
+  {
+   "term": "robot",
+   "pct_2026": 3.7,
+   "pct_2025": 3.5,
+   "delta_pp": 0.1
+  },
+  {
+   "term": "LLM-as-a-judge / evaluator",
+   "pct_2026": 2.0,
+   "pct_2025": 2.0,
+   "delta_pp": -0.0
+  },
+  {
+   "term": "video",
+   "pct_2026": 7.2,
+   "pct_2025": 7.4,
+   "delta_pp": -0.2
+  },
+  {
+   "term": "state-space / Mamba",
+   "pct_2026": 1.0,
+   "pct_2025": 1.3,
+   "delta_pp": -0.3
+  },
+  {
+   "term": "diffusion",
+   "pct_2026": 11.0,
+   "pct_2025": 11.3,
+   "delta_pp": -0.3
+  },
+  {
+   "term": "federated learning",
+   "pct_2026": 1.2,
+   "pct_2025": 1.6,
+   "delta_pp": -0.4
+  },
+  {
+   "term": "privacy / differential privacy",
+   "pct_2026": 2.5,
+   "pct_2025": 3.1,
+   "delta_pp": -0.6
+  },
+  {
+   "term": "graph neural network",
+   "pct_2026": 1.7,
+   "pct_2025": 2.4,
+   "delta_pp": -0.7
+  },
+  {
+   "term": "chain-of-thought",
+   "pct_2026": 2.1,
+   "pct_2025": 3.1,
+   "delta_pp": -0.9
+  },
+  {
+   "term": "theory / regret / bounds",
+   "pct_2026": 4.7,
+   "pct_2025": 5.8,
+   "delta_pp": -1.1
+  },
+  {
+   "term": "transformer",
+   "pct_2026": 8.2,
+   "pct_2025": 9.4,
+   "delta_pp": -1.2
+  },
+  {
+   "term": "3D / Gaussian splatting",
+   "pct_2026": 6.4,
+   "pct_2025": 7.8,
+   "delta_pp": -1.5
+  },
+  {
+   "term": "efficient / efficiency",
+   "pct_2026": 21.3,
+   "pct_2025": 29.2,
+   "delta_pp": -7.9
+  }
+ ]
+}
