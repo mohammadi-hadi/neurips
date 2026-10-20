@@ -1,4 +1,7 @@
-"""Interactive and static maps of the NeurIPS 2026 papers (DataMapPlot)."""
+"""Interactive "atlas of change" and a static overview map of the NeurIPS 2026 papers (DataMapPlot).
+
+The interactive map can be recoloured by research area, change since 2025, city, status,
+industry involvement and team size, filtered by presentation day, and browsed with a topic tree."""
 import json
 from pathlib import Path
 import numpy as np
@@ -14,34 +17,104 @@ df = pd.read_parquet(P / "papers_clustered.parquet")
 labels = json.load(open(ROOT / "data/labels/labels.json"))
 fine_name = {int(k): v["name"] for k, v in labels["fine"].items()}
 broad_name = {int(k): v["name"] for k, v in labels["broad"].items()}
+imap = {r["raw"]: r for r in json.load(open(ROOT / "data/labels/institutions_map.json"))}
 
-d = df[df["year"] == 2026].reset_index(drop=True)
+d26, d25 = df[df.year == 2026], df[df.year == 2025]
+sh26 = d26.fine.value_counts(normalize=True)
+sh25 = d25.fine.value_counts(normalize=True).reindex(sh26.index, fill_value=0)
+growth = np.log2((sh26 + 0.0005) / (sh25 + 0.0005))  # per subtopic, 2026 vs 2025 share
+
+d = d26.reset_index(drop=True)
 coords = d[["x", "y"]].to_numpy()
-broad_lab = d["broad"].map(broad_name).to_numpy()
 fine_lab = d["fine"].map(fine_name).to_numpy()
+broad_lab = d["broad"].map(broad_name).to_numpy()
 
-status = d["decision"].replace({"unknown": "poster"}).str.capitalize()
-site = d["site"].replace({"unscheduled": "not yet scheduled", "": "not yet scheduled"})
-hover = (d["title"] + " — " + status + " · " + site).to_numpy()
+status = d["decision"].map({"oral": "Oral", "spotlight": "Spotlight", "poster": "Poster"}).fillna("Decision not yet public")
+city = d["site"].replace({"unscheduled": "Not yet scheduled", "": "Not yet scheduled"})
+
+
+def sector(s):
+    secs = set()
+    for raw in s.split(" | "):
+        r = imap.get(raw.strip()) or imap.get(raw.split(",")[0].strip())
+        if r:
+            secs.add(r["sector"])
+    if "industry" in secs and "academia" in secs:
+        return "Academia + industry"
+    if "industry" in secs:
+        return "Industry only"
+    if secs:
+        return "Academia / public research"
+    return "Unknown"
+
+
+who = d["institutions"].map(sector)
+g = d["fine"].map(growth).clip(-1.5, 1.5).to_numpy()  # symmetric scale: 1.5 = 2.8x more or less share
+change_txt = [f"{fine_name[f]}: {100 * sh25[f]:.2f}% → {100 * sh26[f]:.2f}% of papers since 2025" for f in d["fine"]]
+
+start = pd.to_datetime(d["start"], errors="coerce", utc=True)
+local_tz = {"Sydney": "Australia/Sydney", "Atlanta": "America/New_York", "Paris": "Europe/Paris"}
+day = []
+for s, c in zip(start, city):
+    if pd.isna(s) or c not in local_tz:
+        day.append("not yet scheduled")
+    else:
+        day.append(s.tz_convert(local_tz[c]).strftime("Dec %d") + " " + c[:3])  # sorts by date
+
+hover = (d["title"] + " — " + status + " · " + city).to_numpy()
 extra = pd.DataFrame({
-    "title": d["title"], "authors": d["authors"].str.slice(0, 160),
-    "status": status, "site": site, "topic": d["fine"].map(fine_name),
-    "url": d["url"], "abstract": d["abstract"].str.slice(0, 400) + "…",
+    "title": d["title"], "authors": d["authors"].str.slice(0, 160), "status": status, "city": city,
+    "topic": d["fine"].map(fine_name), "area": d["broad"].map(broad_name), "change": change_txt,
+    "url": d["url"], "abstract": d["abstract"].str.slice(0, 420) + "…",
 })
-marker = np.where(d["decision"].isin(["oral", "spotlight"]), 6, 2)
+marker = np.where(d["decision"].isin(["oral", "spotlight"]), 7, 2.5)
 
+cmap_raw = [g, city.to_numpy(), status.to_numpy(), who.to_numpy(), np.log2(d["n_authors"].clip(1, 40)).to_numpy()]
+cmap_meta = [
+    {"field": "growth", "description": "Change since 2025 (red grew, blue shrank)", "cmap": "RdBu_r", "kind": "continuous"},
+    {"field": "city", "description": "City where the poster is presented", "kind": "categorical",
+     "color_mapping": {"Sydney": "#0b7285", "Atlanta": "#862e9c", "Paris": "#e8a20c", "Not yet scheduled": "#ced4da"}},
+    {"field": "status", "description": "Oral, spotlight or poster", "kind": "categorical",
+     "color_mapping": {"Oral": "#c92a2a", "Spotlight": "#f08c00", "Poster": "#adb5bd", "Decision not yet public": "#e9ecef"}},
+    {"field": "sector", "description": "Who wrote it (affiliations)", "kind": "categorical",
+     "color_mapping": {"Academia / public research": "#4c6ef5", "Academia + industry": "#ae3ec9",
+                       "Industry only": "#e8590c", "Unknown": "#ced4da"}},
+    {"field": "team", "description": "Team size (number of authors, log₂)", "cmap": "viridis", "kind": "continuous"},
+]
+
+CSS = """
+#title-container{background:rgba(255,255,255,.92)!important;border-radius:10px;box-shadow:0 2px 12px rgba(31,42,68,.08)}
+#main-title{font-weight:700!important;color:#1f2a44!important;letter-spacing:-.01em}
+.atlas-back{position:absolute;bottom:14px;right:14px;z-index:10;font:600 13px Inter,system-ui,sans-serif;
+  background:#1f2a44;color:#fff;padding:8px 12px;border-radius:8px;text-decoration:none}
+"""
 plot = datamapplot.create_interactive_plot(
     coords, fine_lab, broad_lab,  # finest layer first
     hover_text=hover,
     extra_point_data=extra,
-    hover_text_html_template="""<div style="max-width:420px">
-<b>{title}</b><br><span style="opacity:.75">{authors}</span><br>
-<span>{status} · {site}</span><br><i>{topic}</i><hr style="margin:4px 0">{abstract}</div>""",
+    hover_text_html_template="""<div style="max-width:440px;font-family:Inter,system-ui,sans-serif">
+<div style="font-weight:700;font-size:14px;line-height:1.3">{title}</div>
+<div style="opacity:.7;font-size:12px;margin:2px 0 6px">{authors}</div>
+<div style="font-size:12px"><b>{status}</b> · {city} · <i>{area}</i></div>
+<div style="font-size:12px;color:#d9480f;margin:2px 0 6px">{change}</div>
+<div style="font-size:12px;opacity:.85">{abstract}</div></div>""",
     on_click="window.open(`{url}`)",
     marker_size_array=marker,
-    title="NeurIPS 2026 · paper atlas",
-    sub_title=f"{len(d):,} accepted papers, clustered by abstract. Bigger dots = orals and spotlights. Click a dot to open the paper.",
+    title="NeurIPS 2026 · Atlas of change",
+    sub_title=f"{len(d):,} papers placed by what their abstracts say. Recolour by change since 2025, city, status, "
+              f"sector or team size; filter by presentation day below. Big dots = orals and spotlights.",
     enable_search=True,
+    enable_topic_tree=True,
+    colormap_rawdata=cmap_raw,
+    colormap_metadata=cmap_meta,
+    histogram_data=pd.Series(day),
+    histogram_n_bins=40,
+    histogram_settings={"histogram_title": "Presentation day (local time) · click to filter",
+                        "histogram_bin_unselected_fill_color": "#d0d7e2",
+                        "histogram_bin_selected_fill_color": "#d9480f",
+                        "histogram_width": 420, "histogram_height": 90},
+    custom_css=CSS,
+    custom_html='<a class="atlas-back" href="index.html">← Read the analysis</a>',
     darkmode=False,
     font_family="Inter",
     cluster_boundary_polygons=True,
@@ -49,14 +122,23 @@ plot = datamapplot.create_interactive_plot(
 )
 plot.save(str(DOCS / "atlas.html"))
 # pin the CDN libraries the page loads, so a future "latest" release cannot break it
-page = (DOCS / "atlas.html").read_text().replace("apache-arrow@latest", "apache-arrow@21.2.0")
+page = (DOCS / "atlas.html").read_text().replace("apache-arrow@latest", "apache-arrow@21.2.0").replace("d3@latest", "d3@7")
 (DOCS / "atlas.html").write_text(page)
 
-fig, ax = datamapplot.create_plot(
-    coords, broad_lab, title="NeurIPS 2026 paper atlas",
-    sub_title=f"{len(d):,} papers · 20 research areas · clustered by abstract",
-    label_font_size=9, label_wrap_width=16, use_medoids=True,
-    figsize=(14, 14), dpi=150, darkmode=False,
-)
-fig.savefig(OUT / "figures/atlas_static.png", bbox_inches="tight", dpi=150)
+BG, INK, MUTED = "#fbfaf7", "#1f2a44", "#6b7489"
+for name, title in [("atlas_static.png", "NeurIPS 2026 paper atlas"), ("atlas_card.png", None)]:
+    kw = dict(title=title, sub_title=f"{len(d):,} papers · 20 research areas · placed by what their abstracts say",
+              title_keywords={"color": INK, "fontweight": "bold", "fontsize": 26},
+              sub_title_keywords={"color": MUTED, "fontsize": 14}) if title else {}
+    fig, ax = datamapplot.create_plot(
+        coords, broad_lab, label_font_size=12 if title else 15, label_wrap_width=14, use_medoids=True,
+        font_family="Helvetica Neue", label_over_points=True, dynamic_label_size=True,
+        figsize=(14, 14), dpi=150, darkmode=False, **kw)
+    fig.patch.set_facecolor(BG); ax.set_facecolor(BG)
+    for sp in ax.spines.values():
+        sp.set_visible(False)
+    if title:
+        fig.text(0.01, 0.01, "Data: NeurIPS 2026 accepted papers (neurips.cc) · Analysis: Hadi Mohammadi · "
+                 "github.com/mohammadi-hadi/NeurIPS2026_Analysis", fontsize=10, color=MUTED)
+    fig.savefig(OUT / "figures" / name, bbox_inches="tight", dpi=150, facecolor=BG)
 print("saved", DOCS / "atlas.html")
