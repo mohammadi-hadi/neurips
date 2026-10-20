@@ -442,19 +442,17 @@ report/APPENDIX.md,https://arxiv.org/search/?query=Mechanism-Aware+Ensemble+Cond
 report/APPENDIX.md,https://openreview.net/forum?id=b0AOZbejEk,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
 report/APPENDIX.md,https://openreview.net/pdf?id=b0AOZbejEk,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
 report/BLOG.md,https://mohammadi.cv/neurips/2026/atlas.html,ok,HTTP 200
+report/BLOG.md,https://mohammadi.cv/neurips/2026/appendix.html,ok,HTTP 200
 report/BLOG.md,../outputs/figures/atlas_static.png,ok,relative file
 report/BLOG.md,../outputs/figures/field_moved.png,ok,relative file
-report/BLOG.md,../outputs/figures/areas_slope.png,ok,relative file
 report/BLOG.md,../outputs/figures/agents_family.png,ok,relative file
+report/BLOG.md,../outputs/figures/areas_slope.png,ok,relative file
 report/BLOG.md,../outputs/figures/movers_x.png,ok,relative file
-report/BLOG.md,https://mohammadi.cv/neurips/2026/charts/treemap.html,ok,HTTP 200
 report/BLOG.md,../outputs/figures/vocabulary_trends.png,ok,relative file
-report/BLOG.md,../outputs/figures/highlight_rate_by_area.png,ok,relative file
 report/BLOG.md,../outputs/figures/cities_lean.png,ok,relative file
-report/BLOG.md,../outputs/figures/top_institutions.png,ok,relative file
 report/BLOG.md,../outputs/figures/countries.png,ok,relative file
 report/BLOG.md,https://mohammadi.cv/neurips/2026/papers.html,ok,HTTP 200
-report/BLOG.md,https://mohammadi.cv/neurips/2026/appendix.html,ok,HTTP 200
+report/BLOG.md,https://mohammadi.cv/neurips/2026/charts/treemap.html,ok,HTTP 200
 report/BLOG.md,https://github.com/mohammadi-hadi/neurips,ok,HTTP 200
 report/BLOG.md,https://mohammadi.cv,ok,HTTP 200
 docs/2026/appendix.html,https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap,ok,HTTP 200
@@ -897,7 +895,7 @@ docs/2026/appendix.html,https://neurips.cc/virtual/2026/poster/151389,ok,HTTP 20
 docs/2026/appendix.html,https://arxiv.org/search/?query=Mechanism-Aware+Ensemble+Conditioning+for+Data-Limited+Emulation+of+Extreme+Events&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
 docs/2026/appendix.html,https://openreview.net/forum?id=b0AOZbejEk,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
 docs/2026/appendix.html,https://openreview.net/pdf?id=b0AOZbejEk,not public yet,"NeurIPS 2026 OpenReview pages are still closed (checked in a browser, 20 Oct 2026)"
-docs/2026/atlas.html,https://unpkg.com/jquery@3.7.1/dist/jquery.min.js,ok,HTTP 200
+docs/2026/atlas.html,https://unpkg.com/deck.gl@9.1/dist.min.js,ok,HTTP 200
 docs/2026/index.html,https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap,ok,HTTP 200
 docs/2026/index.html,../,ok,relative file
 docs/2026/index.html,index.html,ok,relative file
@@ -908,18 +906,12 @@ docs/2026/index.html,appendix.html,ok,relative file
 docs/2026/index.html,https://github.com/mohammadi-hadi/neurips,ok,HTTP 200
 docs/2026/index.html,figures/atlas_static.png,ok,relative file
 docs/2026/index.html,figures/field_moved.png,ok,relative file
-docs/2026/index.html,figures/areas_slope.png,ok,relative file
-docs/2026/index.html,charts/areas_dumbbell.html,ok,relative file
 docs/2026/index.html,figures/agents_family.png,ok,relative file
+docs/2026/index.html,figures/areas_slope.png,ok,relative file
 docs/2026/index.html,figures/movers_x.png,ok,relative file
 docs/2026/index.html,figures/vocabulary_trends.png,ok,relative file
-docs/2026/index.html,charts/vocabulary.html,ok,relative file
-docs/2026/index.html,figures/highlight_rate_by_area.png,ok,relative file
 docs/2026/index.html,figures/cities_lean.png,ok,relative file
-docs/2026/index.html,charts/site_mix.html,ok,relative file
-docs/2026/index.html,figures/top_institutions.png,ok,relative file
 docs/2026/index.html,figures/countries.png,ok,relative file
-docs/2026/index.html,charts/countries.html,ok,relative file
 docs/2026/index.html,https://mohammadi.cv,ok,HTTP 200
 docs/2026/papers.html,https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap,ok,HTTP 200
 docs/2026/papers.html,../,ok,relative file
