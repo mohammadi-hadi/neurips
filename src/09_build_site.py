@@ -27,12 +27,18 @@ table{border-collapse:collapse;width:100%;font-size:14px;display:block;overflow-
 th,td{border-bottom:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}
 blockquote{margin:1em 0;padding:.6em 1em;background:var(--card);border-left:3px solid var(--accent);border-radius:4px}
 code{background:var(--card);padding:1px 5px;border-radius:4px;font-size:.9em}
+.hero{width:min(1240px,calc(100vw - 32px));margin:18px 0 26px 50%;transform:translateX(-50%)}
+.hero iframe{width:100%;height:min(78vh,760px);border:2px solid var(--accent);border-radius:14px;background:#fff;display:block}
+.hero .btns{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin-top:12px}
+.btn{display:inline-block;padding:12px 18px;border-radius:10px;font-weight:700;text-decoration:none;font-size:16px}
+.btn.main{background:var(--accent);color:#fff}.btn.alt{background:var(--card);color:var(--ink);border:1px solid var(--line)}
+nav a.map{background:var(--accent);color:#fff;padding:3px 10px;border-radius:7px;font-weight:600}
 .cta{display:inline-block;background:var(--accent);color:#fff;padding:10px 16px;border-radius:8px;text-decoration:none;font-weight:600}
 footer{color:var(--muted);font-size:14px;border-top:1px solid var(--line);margin-top:3em;padding-top:1em}
 """
 
-NAV = ('<nav><div><a href="../"><b>NeurIPS Atlas</b></a><a href="index.html">2026</a><a href="atlas.html">Interactive map</a>'
-       '<a href="papers.html">All papers</a><a href="charts/treemap.html">All subtopics</a><a href="appendix.html">Appendix</a>'
+NAV = ('<nav><div><a href="../"><b>NeurIPS Atlas</b></a><a href="index.html">2026</a><a class="map" href="atlas.html">Open the map</a>'
+       '<a href="papers.html">All papers</a><a href="charts/treemap.html">All topics</a><a href="appendix.html">Appendix</a>'
        '<a href="https://github.com/mohammadi-hadi/neurips">Code &amp; data</a></div></nav>')
 
 
@@ -45,6 +51,11 @@ def page(md_path, out_name, title, description):
     body = body.replace("../outputs/figures/", "figures/").replace("../docs/", "")
     body = re.sub(r'href="(?:\.\./)?docs/', 'href="', body)
     body = body.replace(SITE, "")  # keep links relative inside the site
+    hero = ('<section class="hero" aria-label="interactive map of all papers">'
+            '<iframe src="atlas.html" title="Map of all NeurIPS 2026 papers"></iframe>'
+            '<div class="btns"><a class="btn main" href="atlas.html">Open the map full screen</a>'
+            '<a class="btn alt" href="papers.html">Search all papers</a></div></section>')
+    body = re.sub(r"<!--\s*atlas-hero\s*-->\s*<p><strong><a [^>]*>[^<]*</a></strong></p>", hero, body)
     body = re.sub(r"<!--\s*interactive:\s*([a-z_]+)\s*-->",
                   lambda m: f'<iframe class="chart" style="height:{HEIGHTS.get(m.group(1), 680)}px" src="charts/{m.group(1)}.html" loading="lazy" '
                             f'title="interactive chart: {m.group(1)}"></iframe>', body)
@@ -64,10 +75,10 @@ Code and method: <a href="https://github.com/mohammadi-hadi/neurips">github.com/
     print("wrote", DOCS / out_name)
 
 
-page(ROOT / "report/BLOG.md", "index.html", "The NeurIPS 2026 Atlas",
-     "What 9,110 accepted NeurIPS 2026 papers say about where machine learning is going: topics, growth since 2025, orals, three cities and who wrote them.")
-page(ROOT / "report/APPENDIX.md", "appendix.html", "NeurIPS 2026 Atlas: all areas and subtopics",
-     "Every research area and subtopic of NeurIPS 2026 with paper counts, shares and orals.")
+page(ROOT / "report/BLOG.md", "index.html", "What 9,110 NeurIPS 2026 papers are about",
+     "All NeurIPS 2026 papers on one map, and what changed since 2025.")
+page(ROOT / "report/APPENDIX.md", "appendix.html", "NeurIPS 2026: all areas and topics",
+     "Every NeurIPS 2026 topic with its numbers, and every oral.")
 (ROOT / "docs/.nojekyll").write_text("")
 
 # landing page for mohammadi.cv/neurips
@@ -79,12 +90,16 @@ LANDING = f"""<!doctype html><html lang="en"><head><meta charset="utf-8">
 <style>{CSS}
 .cards{{display:grid;gap:14px;margin-top:20px}}.card{{display:block;border:1px solid var(--line);border-radius:12px;padding:18px;
 text-decoration:none;color:var(--ink)}}.card:hover{{border-color:var(--accent)}}.card b{{font-size:1.15rem}}
-.card span{{display:block;color:var(--muted);margin-top:4px}}.soon{{opacity:.6;pointer-events:none}}</style></head><body>
-<main><h1>NeurIPS Atlas</h1><p>What NeurIPS papers are about, and how the conference changes from year to year.
-Built from the public paper lists on neurips.cc by Hadi Mohammadi.</p>
+.card span{{display:block;color:var(--muted);margin-top:4px}}
+.shot img{{width:100%;border:2px solid var(--accent);border-radius:14px;margin-top:10px}}.soon{{opacity:.6;pointer-events:none}}</style></head><body>
+<main><h1>NeurIPS Atlas</h1><p>What NeurIPS papers are about, and how that changes each year.
+Made by Hadi Mohammadi from the public paper lists on neurips.cc.</p>
+<a href="2026/atlas.html" class="shot"><img src="2026/figures/atlas_screenshot.png" alt="Map of all NeurIPS 2026 papers"></a>
+<p style="text-align:center"><a class="btn main" href="2026/atlas.html">Open the NeurIPS 2026 map</a>
+<a class="btn alt" href="2026/papers.html">Search all papers</a></p>
 <div class="cards">
-<a class="card" href="2026/"><b>NeurIPS 2026</b><span>9,110 papers on one map, what grew since 2025, the three cities, and every paper with its links.</span></a>
-<a class="card soon" href="#"><b>NeurIPS through the years</b><span>Coming soon: topics, submissions and countries since 2014.</span></a>
+<a class="card" href="2026/"><b>NeurIPS 2026: the story</b><span>All 9,110 papers on one map, and what changed since 2025.</span></a>
+<a class="card soon" href="#"><b>NeurIPS through the years</b><span>Coming soon: how topics, submissions and countries changed since 2014.</span></a>
 </div>
 <footer>Code and data: <a href="https://github.com/mohammadi-hadi/neurips">github.com/mohammadi-hadi/neurips</a> ·
 <a href="https://mohammadi.cv">mohammadi.cv</a></footer></main></body></html>"""

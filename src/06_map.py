@@ -76,14 +76,14 @@ marker = np.where(d["decision"].isin(["oral", "spotlight"]), 7, 2.5)
 cmap_raw = [g, city.to_numpy(), status.to_numpy(), who.to_numpy(), np.log2(d["n_authors"].clip(1, 40)).to_numpy()]
 cmap_meta = [
     {"field": "growth", "description": "Change since 2025 (red grew, blue shrank)", "cmap": "RdBu_r", "kind": "continuous"},
-    {"field": "city", "description": "City where the poster is presented", "kind": "categorical",
+    {"field": "city", "description": "City", "kind": "categorical",
      "color_mapping": {"Sydney": "#0b7285", "Atlanta": "#862e9c", "Paris": "#e8a20c", "City not listed": "#ced4da"}},
     {"field": "status", "description": "Oral, spotlight or poster", "kind": "categorical",
      "color_mapping": {"Oral": "#c92a2a", "Spotlight": "#f08c00", "Poster": "#adb5bd", "Decision not yet public": "#e9ecef"}},
-    {"field": "sector", "description": "Who wrote it (affiliations)", "kind": "categorical",
+    {"field": "sector", "description": "Academia or industry", "kind": "categorical",
      "color_mapping": {"Academia / public research": "#4c6ef5", "Academia + industry": "#ae3ec9",
                        "Industry only": "#e8590c", "Unknown": "#ced4da"}},
-    {"field": "team", "description": "Team size (number of authors, log₂)", "cmap": "viridis", "kind": "continuous"},
+    {"field": "team", "description": "Number of authors", "cmap": "viridis", "kind": "continuous"},
 ]
 
 CSS = """
@@ -96,6 +96,8 @@ CSS = """
 #paper-links a.main{background:#d9480f;color:#fff}
 #paper-links .n{font-size:11px;color:#6b7489;margin-top:2px}
 #paper-links .x{position:absolute;top:8px;right:10px;cursor:pointer;font-size:16px;color:#6b7489;border:0;background:none}
+.embedded #topic-tree,.embedded #d3histogram-container,.embedded .atlas-back{display:none!important}
+.embedded #title-container{display:none!important}
 .atlas-back{position:absolute;bottom:14px;right:14px;z-index:10;font:600 13px Inter,system-ui,sans-serif;
   background:#1f2a44;color:#fff;padding:8px 12px;border-radius:8px;text-decoration:none}
 """
@@ -109,27 +111,31 @@ plot = datamapplot.create_interactive_plot(
 <div style="font-size:12px"><b>{status}</b> · {city} · <i>{area}</i></div>
 <div style="font-size:12px;color:#d9480f;margin:2px 0 6px">{change}</div>
 <div style="font-size:12px;opacity:.85">{abstract}</div>
-<div style="font-size:11px;margin-top:6px;color:#1f2a44"><b>Click the dot</b> for the NeurIPS page, arXiv, OpenReview and PDF links.</div></div>""",
+<div style="font-size:11px;margin-top:6px;color:#1f2a44"><b>Click</b> for links to the paper.</div></div>""",
     on_click="showLinks(`{url}`, `{arxiv}`, `{openreview}`, `{pdf}`, `{safe_title}`)",
     marker_size_array=marker,
-    title="NeurIPS 2026 · Atlas of change",
-    sub_title=f"{len(d):,} papers placed by what their abstracts say. Recolour by change since 2025, city, status, "
-              f"sector or team size; filter by presentation day below. Big dots = orals and spotlights.",
+    title="NeurIPS 2026: every paper on one map",
+    sub_title=f"Each dot is one of the {len(d):,} papers. Similar papers sit close together. Big dots are orals and "
+              f"spotlights. Use the menu at the bottom left to colour by change since 2025, city or status.",
     enable_search=True,
     enable_topic_tree=True,
     colormap_rawdata=cmap_raw,
     colormap_metadata=cmap_meta,
     histogram_data=pd.Series(day),
     histogram_n_bins=40,
-    histogram_settings={"histogram_title": "Presentation day (local time) · click to filter",
+    histogram_settings={"histogram_title": "Poster day. Click a bar to filter.",
                         "histogram_bin_unselected_fill_color": "#d0d7e2",
                         "histogram_bin_selected_fill_color": "#d9480f",
                         "histogram_width": 420, "histogram_height": 90},
     custom_css=CSS,
-    custom_html='<a class="atlas-back" href="index.html">← Read the analysis</a>'
+    custom_html='<a class="atlas-back" href="index.html">← Back to the story</a>'
                 '<div id="paper-links"><button class="x" onclick="this.parentNode.style.display=\'none\'" '
                 'aria-label="close">×</button><div class="t"></div><div class="l"></div></div>',
     custom_js="""
+// When the map is embedded in the story page, keep it clean: only the map, search and the colour menu.
+if (window.self !== window.top) {
+  document.documentElement.classList.add('embedded');
+}
 function showLinks(page, arxiv, forum, pdf, title) {
   const box = document.getElementById('paper-links');
   box.querySelector('.t').textContent = title;
@@ -137,7 +143,7 @@ function showLinks(page, arxiv, forum, pdf, title) {
           '<a href="' + arxiv + '" target="_blank" rel="noopener">Find on arXiv</a>';
   if (forum) h += '<a href="' + forum + '" target="_blank" rel="noopener">OpenReview*</a>' +
                   '<a href="' + pdf + '" target="_blank" rel="noopener">PDF*</a>' +
-                  '<div class="n">* Not public yet on OpenReview (20 Oct 2026); these links work once NeurIPS releases the papers.</div>';
+                  '<div class="n">* These work once NeurIPS makes the papers public on OpenReview.</div>';
   box.querySelector('.l').innerHTML = h;
   box.style.display = 'block';
 }

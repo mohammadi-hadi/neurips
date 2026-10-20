@@ -33,7 +33,7 @@ areas = sorted(idx["area"].unique())
 page = """<!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>NeurIPS 2026 paper index</title>
-<meta name="description" content="Search all 9,110 NeurIPS 2026 papers with links to the NeurIPS page, OpenReview and the PDF.">
+<meta name="description" content="Search all 9,110 NeurIPS 2026 papers and find their links.">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
 :root{--ink:#1f2a44;--muted:#5c677d;--accent:#d9480f;--bg:#ffffff;--card:#f6f7f9;--line:#e3e6ea}
@@ -41,6 +41,7 @@ page = """<!doctype html><html lang="en"><head><meta charset="utf-8">
 *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 Inter,system-ui,sans-serif}
 nav{border-bottom:1px solid var(--line)}nav div{max-width:1100px;margin:0 auto;padding:10px 16px;display:flex;gap:18px;flex-wrap:wrap;font-size:15px}
 nav a{color:var(--muted);text-decoration:none}nav a:hover{color:var(--accent)}
+nav a.map{background:var(--accent);color:#fff;padding:3px 10px;border-radius:7px;font-weight:600}
 main{max-width:1100px;margin:0 auto;padding:20px 16px 60px}h1{font-size:1.8rem;margin:.3em 0}
 .controls{display:flex;gap:8px;flex-wrap:wrap;margin:14px 0}
 input,select{font:inherit;padding:8px 10px;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--ink)}
@@ -52,12 +53,12 @@ input{flex:1;min-width:220px}
 .tag.o{background:#c92a2a;color:#fff}.tag.s{background:#f08c00;color:#fff}
 #more{margin-top:14px;padding:8px 14px;border:0;border-radius:8px;background:var(--accent);color:#fff;font:inherit;cursor:pointer}
 </style></head><body>
-<nav><div><a href="../"><b>NeurIPS Atlas</b></a><a href="index.html">2026</a><a href="atlas.html">Interactive map</a>
-<a href="papers.html">All papers</a><a href="charts/treemap.html">All subtopics</a><a href="appendix.html">Appendix</a>
+<nav><div><a href="../"><b>NeurIPS Atlas</b></a><a href="index.html">2026</a><a class="map" href="atlas.html">Open the map</a>
+<a href="papers.html">All papers</a><a href="charts/treemap.html">All topics</a><a href="appendix.html">Appendix</a>
 <a href="https://github.com/mohammadi-hadi/neurips">Code &amp; data</a></div></nav>
 <main><h1>All NeurIPS 2026 papers</h1>
-<p>__N__ papers with links to the NeurIPS page, an arXiv search, OpenReview and the PDF. Search titles and authors, or filter by area, city and status.
-Poster times are local to the city.</p><p class="m">* __NOTE__</p>
+<p>Search by title or author, or filter by area, city and status. Each paper links to its NeurIPS page, an arXiv search, OpenReview and the PDF. Times are local.</p>
+<p class="m">* __NOTE__</p>
 <div class="controls"><input id="q" type="search" placeholder="Search title or author…" aria-label="search">
 <select id="area" aria-label="area"><option value="">All areas</option>__AREAS__</select>
 <select id="city" aria-label="city"><option value="">All cities</option><option>Sydney</option><option>Atlanta</option><option>Paris</option></select>
