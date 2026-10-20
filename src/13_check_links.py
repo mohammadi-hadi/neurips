@@ -88,6 +88,8 @@ def check(item):
     link = link.strip()
     if link.startswith(("mailto:", "javascript:", "#")) or link == "":
         return src, link, "skip", ""
+    if link.startswith("/"):  # site-root links (header menu, stylesheet) live on mohammadi.cv itself
+        link = "https://mohammadi.cv" + link
     if link.startswith("http"):
         st, note = check_external(link)
         return src, link, st, note
