@@ -44,6 +44,7 @@ The raw files are not stored in this repository; `src/00_fetch_data.py` download
 
 ```bash
 uv venv -p 3.12 .venv && uv pip install -r requirements.txt
+source .venv/bin/activate
 python src/00_fetch_data.py
 python src/01_prepare.py && python src/02_embed.py && python src/03_cluster.py
 # labels: see src/04_labels.md, then

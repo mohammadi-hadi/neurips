@@ -22,7 +22,7 @@ Each paper's title and abstract was turned into a vector with Qwen3-Embedding-0.
 
 One detail matters for every comparison below. The topics were fitted on 2026 papers only. Each 2025 paper was then assigned to its nearest 2026 subtopic. That way both years are measured with the same ruler, and a change in share means the field moved, not that the clustering drew new lines.
 
-A language model proposed a name and a one-line description for each subtopic from its most typical titles, abstracts and distinctive terms. I reviewed the full list for overlaps and naming before using it.
+A language model proposed a name and a one-line description for each subtopic from its most typical titles, abstracts and distinctive terms. The full list was then checked for overlapping and inconsistent names, and the names are published in the repository so anyone can review them.
 
 Because conference sizes differ (9,110 papers against 5,859), I compare shares of each year's papers, and differences in share are given in percentage points.
 
