@@ -83,8 +83,13 @@ cmap_meta = [
 ]
 
 CSS = """
-#title-container{background:rgba(255,255,255,.92)!important;border-radius:10px;box-shadow:0 2px 12px rgba(31,42,68,.08)}
-#main-title{font-family:"Source Serif 4",Georgia,serif!important;font-weight:600!important;color:#1a1a1a!important;letter-spacing:-.01em}
+#title-container{background:rgba(255,255,255,.94)!important;border-radius:10px;box-shadow:0 2px 12px rgba(31,42,68,.08);
+  padding:14px 18px 13px!important;max-width:min(600px,calc(100vw - 48px));line-height:1.2!important}
+#title-container br{display:none}
+#main-title{display:block;font-family:"Source Serif 4",Georgia,serif!important;font-weight:600!important;font-size:30px!important;
+  line-height:1.15!important;letter-spacing:-.01em;color:#1a1a1a!important;margin:0 0 6px;text-wrap:balance}
+#title-container>span:not(#main-title){display:block;font-family:Inter,system-ui,sans-serif!important;font-size:14.5px!important;
+  line-height:1.45!important;color:#444!important;text-wrap:pretty}
 #paper-links{display:none;position:absolute;right:14px;bottom:60px;z-index:20;width:340px;background:#fff;
   border-radius:10px;box-shadow:0 6px 24px rgba(31,42,68,.18);padding:14px 16px;font:13px/1.4 Inter,system-ui,sans-serif;color:#1f2a44}
 #paper-links .t{font-weight:700;margin:0 22px 10px 0}
@@ -96,6 +101,11 @@ CSS = """
 .embedded #title-container{display:none!important}
 .atlas-back{position:absolute;bottom:14px;right:14px;z-index:10;font:600 13px Inter,system-ui,sans-serif;
   background:#1e3a5f;color:#fff;padding:8px 12px;border-radius:8px;text-decoration:none}
+@media (max-width:768px){
+  #main-title{font-size:21px!important;margin-bottom:4px}
+  #title-container{padding:10px 12px!important}
+  #title-container>span:not(#main-title){font-size:12.5px!important;line-height:1.4!important}
+}
 """
 plot = datamapplot.create_interactive_plot(
     coords, fine_lab, broad_lab,  # finest layer first
@@ -151,6 +161,12 @@ function showLinks(page, arxiv, forum, pdf, title) {
 plot.save(str(DOCS / "atlas.html"))
 # pin the CDN libraries the page loads, so a future "latest" release cannot break it
 page = (DOCS / "atlas.html").read_text().replace("apache-arrow@latest", "apache-arrow@21.2.0").replace("d3@latest", "d3@7")
+# load the site's title font; without it the title falls back to Georgia Bold.
+# Inter is left to DataMapPlot, which embeds its own copy and waits for it before drawing labels.
+FONT_LINK = '<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,600&display=swap" rel="stylesheet" />'
+anchor = '<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />'
+assert page.count(anchor) == 1
+page = page.replace(anchor, anchor + "\n" + FONT_LINK)
 (DOCS / "atlas.html").write_text(page)
 
 BG, INK, MUTED = "#fbfaf7", "#1f2a44", "#6b7489"
