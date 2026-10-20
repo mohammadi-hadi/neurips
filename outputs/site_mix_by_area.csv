@@ -2,20 +2,20 @@ broad_name,Sydney,Atlanta,Paris,sydney_vs_avg_pp
 Robotics & Embodied AI,75.31,15.8,8.89,8.69
 Image & 3D Generation,75.2,14.93,9.87,8.58
 Video Generation & Understanding,74.32,18.65,7.03,7.7
-3D Vision & Perception,73.62,13.32,13.06,7.0
+Vision & Perception,73.62,13.32,13.06,7.0
 LLM Post-Training,71.64,21.19,7.16,5.02
-Vision-Language Models,71.46,15.03,13.51,4.84
+Vision-Language & Speech Models,71.58,15.3,13.11,4.96
+LLM Agents,71.29,21.94,6.77,4.67
 Time Series & Forecasting,71.23,13.7,15.07,4.61
+Graph Learning & Recommendation,69.74,14.87,15.38,3.12
 Biomolecules & Causal Discovery,69.28,15.36,15.36,2.65
-LLM Agents,68.29,22.71,9.0,1.66
 LLM Reasoning & Retrieval,68.26,21.8,9.94,1.64
-Graph Learning,68.0,15.33,16.67,1.38
-LLM Behavior & Safety,66.56,21.55,11.89,-0.06
-Efficient LLMs & Architectures,66.47,20.88,12.65,-0.15
+Efficient LLMs & Architectures,67.06,20.75,12.19,0.43
 Reinforcement Learning,63.48,24.11,12.41,-3.14
-DL Theory & Neuroscience,62.08,16.21,21.71,-4.54
+LLM Behavior & Safety,62.69,23.49,13.82,-3.93
+DL Theory & Neuroscience,61.57,16.06,22.36,-5.05
 PDEs & Dynamical Systems,60.12,23.12,16.76,-6.51
+Optimization & Statistics,59.52,22.02,18.45,-7.1
 "Diffusion, Flows & Inference",58.65,20.19,21.15,-7.97
-Optimization & Statistics,57.86,22.86,19.29,-8.77
 Trustworthy & Statistical ML,54.59,25.08,20.33,-12.03
 "Bandits, Games & Mechanisms",48.28,25.0,26.72,-18.35

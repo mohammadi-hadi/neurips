@@ -18,10 +18,10 @@ b26, b25 = d26.broad.value_counts(), d25.broad.value_counts()
 lines = ["# All areas and topics", "",
          f"All 20 areas and 150 topics of NeurIPS 2026 ({len(d26):,} papers). For each topic you see what the papers do, "
          f"how many there are, and its share of all papers in 2025 and 2026. ★ is the number of orals and spotlights.", "",
-         f"\\* {OPENREVIEW_NOTE}", ""]
+         OPENREVIEW_NOTE, ""]
 for b in sorted(broad, key=lambda b: -b26.get(b, 0)):
     s26, s25 = 100 * b26.get(b, 0) / len(d26), 100 * b25.get(b, 0) / len(d25)
-    lines += [f"## {broad[b]['name']} — {b26.get(b, 0):,} papers ({s26:.1f}%, 2025: {s25:.1f}%)", "",
+    lines += [f"## {broad[b]['name']}: {b26.get(b, 0):,} papers ({s26:.1f}% of all, 2025: {s25:.1f}%)", "",
               broad[b]["one_line"], "", "| Subtopic | What the papers do | 2026 | share 2025 → 2026 | ★ |", "|---|---|---|---|---|"]
     fs = sorted([f for f in fine if (d26.fine == f).any() and d26.loc[d26.fine == f, "broad"].iloc[0] == b],
                 key=lambda f: -n26.get(f, 0))
@@ -34,7 +34,7 @@ for b in sorted(broad, key=lambda b: -b26.get(b, 0)):
     if len(orals):
         lines += ["", "**Orals**", ""]
         for o in orals.itertuples():
-            extra = f" · [OpenReview*]({o.openreview}) · [PDF*]({o.pdf})" if o.openreview else ""
+            extra = f" · [OpenReview]({o.or_link}) · [PDF]({o.pdf_link})" if o.or_link else ""
             lines.append(f"- {o.title_display}: [NeurIPS page]({o.url}) · [arXiv]({o.arxiv}){extra}")
     lines.append("")
 (ROOT / "report/APPENDIX.md").write_text("\n".join(lines))

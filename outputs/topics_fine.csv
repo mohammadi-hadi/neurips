@@ -1,8 +1,8 @@
 fine_name,share_2026,share_2025,n_2026,n_2025,delta_pp,growth_x
-Latent and Chain-of-Thought Visual Reasoning,1.51,1.55,138,91,-0.04,0.98
-Efficient Chain-of-Thought Reasoning,1.5,2.47,137,145,-0.97,0.61
+Latent and Chain-of-Thought Visual Reasoning,1.51,1.55,138,91,-0.04,0.97
+LLM Reasoning and Test-Time Scaling,1.5,2.48,137,145,-0.97,0.61
 Diffusion Guidance and Reward Fine-Tuning,1.45,1.23,132,72,0.22,1.18
-Graph Neural Networks and Foundation Models,1.43,2.49,130,146,-1.06,0.57
+Graph Neural Networks,1.43,2.49,130,146,-1.07,0.57
 Transformer Mechanisms and Expressivity Theory,1.37,1.69,125,99,-0.32,0.81
 Deep Network Theory and Learning Dynamics,1.25,1.43,114,84,-0.18,0.87
 "Tool-Use, Web and GUI Agent Benchmarks",1.24,0.38,113,22,0.86,3.3
@@ -14,104 +14,104 @@ LLM Pruning and MoE Compression,1.04,0.97,95,57,0.07,1.07
 Vision-Language-Action Robot Policies,1.03,0.6,94,35,0.43,1.73
 Medical Imaging and Pathology Models,1.02,0.94,93,55,0.08,1.09
 Image Restoration and Inverse Problems,1.02,1.28,93,75,-0.26,0.8
+Diffusion Language Models,1.0,0.55,91,32,0.45,1.83
 Speech and Audio Language Models,1.0,0.97,91,57,0.03,1.03
-Decoding for Diffusion Language Models,1.0,0.55,91,32,0.45,1.83
-Efficient High-Resolution Image Diffusion,0.99,1.33,90,78,-0.34,0.74
+Efficient Image Diffusion,0.99,1.33,90,78,-0.34,0.74
+LLM Agent Reliability and Efficiency,0.97,0.29,88,17,0.68,3.33
 Long-Video Understanding with MLLMs,0.97,1.21,88,71,-0.25,0.8
 "Muon, Adam and Sign-Based Optimizers",0.97,0.92,88,54,0.04,1.05
-LLM Agent Reliability and Efficiency,0.97,0.29,88,17,0.68,3.33
-Off-Policy Stability in LLM RL,0.95,0.67,87,39,0.29,1.43
-CLIP-Style Image-Text Alignment,0.93,0.94,85,55,-0.01,0.99
+LLM RL Training Dynamics and Stability,0.95,0.67,87,39,0.29,1.43
 Stochastic and Convex Optimization Theory,0.93,1.08,85,63,-0.14,0.87
-Multimodal Fusion and Missing Modalities,0.92,1.26,84,74,-0.34,0.73
+CLIP-Style Image-Text Alignment,0.93,0.94,85,55,-0.01,0.99
 Federated Learning under Heterogeneity,0.92,1.31,84,77,-0.39,0.7
-LLMs for Optimization Modeling and Algorithm Design,0.91,0.89,83,52,0.02,1.03
-Time Series Forecasting Models,0.9,0.97,82,57,-0.07,0.93
+Multimodal Fusion and Missing Modalities,0.92,1.26,84,74,-0.34,0.73
+LLM-Driven Evolutionary Design and Discovery,0.91,0.89,83,52,0.02,1.03
 LoRA and Parameter-Efficient Fine-Tuning,0.9,1.31,82,77,-0.41,0.68
-Flow Matching Theory and Variants,0.88,0.51,80,30,0.37,1.72
-Human-AI Collaboration and Oversight,0.88,0.63,80,37,0.25,1.39
+Time Series Forecasting Models,0.9,0.97,82,57,-0.07,0.92
 Deep RL Representations and Multitask,0.88,1.11,80,65,-0.23,0.79
-Domain-Specific Vision Benchmarks for VLMs,0.85,0.8,77,47,0.04,1.05
-Jailbreak and Red-Teaming Attacks,0.85,0.92,77,54,-0.08,0.92
+"AI Governance, Position Papers and Human Oversight",0.88,0.63,80,37,0.25,1.39
+Flow Matching Theory and Variants,0.88,0.51,80,30,0.37,1.71
 Long-Context Sparse and Linear Attention,0.85,0.94,77,55,-0.09,0.9
+Jailbreak and Red-Teaming Attacks,0.85,0.92,77,54,-0.08,0.92
+"Vision Datasets, Benchmarks and Evaluation",0.85,0.8,77,47,0.04,1.05
+Dexterous and Humanoid Robot Manipulation,0.83,0.92,76,54,-0.09,0.9
 Model Selection and Evaluation Pitfalls,0.83,0.38,76,22,0.46,2.22
-Dexterous and Humanoid Robot Manipulation,0.83,0.92,76,54,-0.09,0.91
-LLM Agent Safety and Prompt Injection,0.83,0.32,76,19,0.51,2.57
+LLM Agent Safety and Security,0.83,0.32,76,19,0.51,2.57
 Text-to-Image Generation and Evaluation,0.83,0.84,76,49,-0.0,1.0
-Test-Time and Few-Shot VLM Adaptation,0.82,1.19,75,70,-0.37,0.69
+Test-Time and Few-Shot VLM Adaptation,0.82,1.2,75,70,-0.37,0.69
 Object Detection and OOD Detection,0.81,0.87,74,51,-0.06,0.93
 LLM Multi-Agent Systems,0.8,0.41,73,24,0.39,1.96
-"Mechanism Design, Auctions and Social Choice",0.79,0.9,72,53,-0.11,0.87
-LiDAR and Radar Perception for Driving,0.78,0.73,71,43,0.05,1.06
-"MCMC, SMC and Posterior Samplers",0.78,0.75,71,44,0.03,1.04
-Robust Regression and Statistical Inference,0.77,1.01,70,59,-0.24,0.76
+"Mechanism Design, Auctions and Social Choice",0.79,0.91,72,53,-0.11,0.87
+Samplers and Diffusion-Based Sampling,0.78,0.75,71,44,0.03,1.04
+"LiDAR, Radar and Multi-Sensor Perception",0.78,0.73,71,43,0.05,1.06
 Neural Operator Surrogates for PDEs,0.77,0.44,70,26,0.32,1.73
+Robust Regression and Statistical Inference,0.77,1.01,70,59,-0.24,0.76
 Geometry of Learned Representations,0.76,0.73,69,43,0.02,1.03
 Cooperative Multi-Agent RL,0.76,0.73,69,43,0.02,1.03
-Autoregressive Long Video Generation,0.75,0.55,68,32,0.2,1.37
-Robustness of LLM Safety Alignment,0.75,0.58,68,34,0.17,1.29
 "Grokking, Memorization and Generalization Theory",0.75,0.63,68,37,0.11,1.18
-In-Context RL and Offline Policy Steering,0.72,0.55,66,32,0.18,1.33
-Long-Term Memory for LLM Agents,0.72,0.12,66,7,0.61,6.06
-3D Gaussian Splatting,0.72,0.99,66,58,-0.27,0.73
+Efficient and Long Video Diffusion,0.75,0.55,68,32,0.2,1.37
+Robustness of LLM Safety Alignment,0.75,0.58,68,34,0.17,1.29
 Low-Bit LLM Quantization,0.72,0.51,66,30,0.21,1.41
+Long-Term Memory for LLM Agents,0.72,0.12,66,7,0.6,6.06
+3D Gaussian Splatting,0.72,0.99,66,58,-0.27,0.73
+In-Context RL and Offline Policy Steering,0.72,0.55,66,32,0.18,1.33
 Video Temporal Grounding and Segmentation,0.71,0.73,65,43,-0.02,0.97
 GRPO-Style RL with Verifiable Rewards,0.71,0.32,65,19,0.39,2.2
-Part-Level 3D Asset Generation,0.7,1.11,64,65,-0.41,0.63
-Regret Bounds for Stochastic and Contextual Bandits,0.7,1.08,64,63,-0.37,0.65
 End-to-End Autonomous Driving,0.7,0.56,64,33,0.14,1.25
 Language-Grounded 3D Scene Understanding,0.7,0.99,64,58,-0.29,0.71
+Part-Level 3D Asset Generation,0.7,1.11,64,65,-0.41,0.63
+Regret Bounds for Stochastic and Contextual Bandits,0.7,1.08,64,63,-0.37,0.65
 LLM Agentic Reasoning Strategies,0.69,0.65,63,38,0.04,1.07
 Single-Cell and Spatial Transcriptomics Models,0.69,0.39,63,23,0.3,1.76
-Policy Gradient and MDP Convergence Theory,0.68,0.79,62,46,-0.1,0.87
-Protein Language Models and Structure,0.68,0.63,62,37,0.05,1.08
-Clinical LLMs and Medical Benchmarks,0.68,0.46,62,27,0.22,1.48
 Shapley Values and Feature Attribution,0.68,0.82,62,48,-0.14,0.83
+Clinical LLMs and Medical Benchmarks,0.68,0.46,62,27,0.22,1.48
+Protein Language Models and Structure,0.68,0.63,62,37,0.05,1.08
+Policy Gradient and MDP Convergence Theory,0.68,0.79,62,46,-0.1,0.87
 Unified Multimodal Understanding and Generation,0.67,1.02,61,60,-0.35,0.65
 Irregular and Continuous-Time Sequences,0.67,0.41,61,24,0.26,1.63
 Embodied Spatial Reasoning in VLMs,0.66,0.7,60,41,-0.04,0.94
-Variational and Simulation-Based Bayesian Inference,0.66,0.85,60,50,-0.19,0.77
-Skill Libraries for LLM Agents,0.64,0.31,58,18,0.33,2.07
+Bayesian Inference and Gaussian Processes,0.66,0.85,60,50,-0.2,0.77
+Self-Evolving Agents and Skill Learning,0.64,0.31,58,18,0.33,2.07
 Latent World Models for Planning,0.64,0.53,58,31,0.11,1.2
-Recurrent Network Dynamics in Neuroscience,0.63,0.65,57,38,-0.02,0.96
 Anomaly Detection Across Modalities,0.63,0.67,57,39,-0.04,0.94
-Chemical Reactions and Interatomic Potentials,0.63,0.7,57,41,-0.07,0.89
-Learning Dynamical Systems from Data,0.61,0.41,56,24,0.21,1.5
+Recurrent Network Dynamics in Neuroscience,0.63,0.65,57,38,-0.02,0.96
+Molecular and Materials ML,0.63,0.7,57,41,-0.07,0.89
+Learning Dynamical Systems from Data,0.61,0.41,56,24,0.2,1.5
+LLM Hallucination and Uncertainty,0.61,0.6,56,35,0.02,1.03
 Neural Combinatorial Optimization,0.61,0.97,56,57,-0.36,0.63
-LLM Hallucination Detection and Mitigation,0.61,0.6,56,35,0.02,1.03
-Coding Agents and SWE Benchmarks,0.6,0.2,55,12,0.4,2.95
 "LLM Personas, Sycophancy and Cultural Bias",0.6,0.29,55,17,0.31,2.08
-4D Reconstruction from Monocular Video,0.59,0.85,54,50,-0.26,0.69
+Coding Agents and SWE Benchmarks,0.6,0.2,55,12,0.4,2.95
 Physical Plausibility in Video Generation,0.59,0.43,54,25,0.17,1.39
+4D Reconstruction from Monocular Video,0.59,0.85,54,50,-0.26,0.69
 KV Cache Compression and Eviction,0.58,0.53,53,31,0.05,1.1
 3D Molecule and Material Generation,0.58,0.65,53,38,-0.07,0.9
 Action-Conditioned Video World Models,0.58,0.39,53,23,0.19,1.48
-Controllable Video Generation and Editing,0.57,0.48,52,28,0.09,1.19
 Preference Optimization for LLM Alignment,0.57,0.97,52,57,-0.4,0.59
 Performative Prediction and Decision-Focused Learning,0.57,0.38,52,22,0.2,1.52
-Causal Identifiability and Latent-Variable Models,0.56,0.41,51,24,0.15,1.37
+Controllable Video Generation and Editing,0.57,0.48,52,28,0.09,1.19
 LLM Knowledge Editing and Forgetting,0.56,0.79,51,46,-0.23,0.71
+Causal Identifiability and Latent-Variable Models,0.56,0.41,51,24,0.15,1.37
 Instruction-Based Image Editing,0.55,0.53,50,31,0.02,1.04
-Class-Incremental Continual Learning,0.55,0.75,50,44,-0.2,0.73
+Continual Learning and Catastrophic Forgetting,0.55,0.75,50,44,-0.2,0.73
 On-Policy Distillation for LLM Reasoning,0.54,0.29,49,17,0.25,1.85
+Clustering Coresets and Nearest Neighbor Search,0.53,0.58,48,34,-0.05,0.91
 Learning with Noisy and Weak Labels,0.53,1.11,48,65,-0.58,0.47
 PAC Learning and Sample Complexity,0.53,0.79,48,46,-0.26,0.67
-Clustering Coresets and Nearest Neighbor Search,0.53,0.58,48,34,-0.05,0.91
 Multi-Turn LLM Dialogue and Agent RL,0.53,0.43,48,25,0.1,1.23
-Speculative Decoding for LLM Inference,0.52,0.63,47,37,-0.12,0.82
-Physics-Informed Networks and PDE Foundation Models,0.52,0.67,47,39,-0.15,0.78
-Retriever and Long-Document Benchmarks,0.49,0.22,45,13,0.27,2.23
+Speculative Decoding for LLM Inference,0.52,0.58,47,34,-0.06,0.89
+Physics-Informed Networks and PDE Foundation Models,0.52,0.67,47,39,-0.15,0.77
 Sequential and Generative Recommendation,0.49,0.44,45,26,0.05,1.11
 AI-Generated Image and Deepfake Detection,0.49,0.61,45,36,-0.12,0.8
+Retriever and Long-Document Benchmarks,0.49,0.22,45,13,0.27,2.23
 Treatment Effect Estimation and Causal Inference,0.49,0.63,45,37,-0.14,0.78
 Learning Equilibria in Games,0.48,0.53,44,31,-0.05,0.91
-LLM Theorem Proving and Formal Math,0.48,0.49,44,29,-0.01,0.98
+LLM Theorem Proving and Formal Math,0.48,0.5,44,29,-0.01,0.98
 Neural Scaling Laws for Pretraining,0.47,0.61,43,36,-0.14,0.77
-Multimodal Agents for Search and Deep Research,0.47,0.44,43,26,0.03,1.06
+Multimodal Agents and Reasoning Benchmarks,0.47,0.44,43,26,0.03,1.06
 Human Motion and Gesture Generation,0.47,0.6,43,35,-0.13,0.79
-"Weather, Climate and Air Quality Forecasting",0.46,0.44,42,26,0.02,1.04
 Quantum Machine Learning,0.46,0.22,42,13,0.24,2.08
 Brain Encoding and Neural Recording Analysis,0.46,0.97,42,57,-0.51,0.47
+"Weather, Climate and Air Quality Forecasting",0.46,0.44,42,26,0.02,1.04
 Generative Policies for Offline RL,0.46,0.6,42,35,-0.14,0.77
 EEG and Physiological Foundation Models,0.45,0.29,41,17,0.16,1.55
 Statistical Theory of Diffusion Models,0.45,0.29,41,17,0.16,1.55
@@ -119,25 +119,25 @@ LLM-Generated GPU Kernels and Systems,0.44,0.17,40,10,0.27,2.57
 Machine Unlearning in LLMs,0.44,0.55,40,32,-0.11,0.8
 Privacy Auditing and Membership Inference,0.43,0.44,39,26,-0.02,0.96
 Constrained and Robust MDPs,0.42,0.38,38,22,0.04,1.11
-Neural Network Verification and Backdoors,0.41,0.43,37,25,-0.02,0.95
 Bayesian and Multi-Objective Optimization,0.41,0.46,37,27,-0.05,0.88
-Spiking Neural Networks,0.41,0.44,37,26,-0.04,0.92
+Neural Network Verification and Backdoors,0.41,0.43,37,25,-0.02,0.95
 "Protein, Antibody and RNA Design",0.41,0.34,37,20,0.06,1.19
-Watermarking Generative Model Outputs,0.4,0.49,36,29,-0.1,0.8
+Spiking Neural Networks,0.41,0.44,37,26,-0.04,0.91
 Activation Steering of LLMs,0.4,0.19,36,11,0.21,2.1
+Watermarking Generative Model Outputs,0.4,0.5,36,29,-0.1,0.8
 Conformal Prediction Coverage Guarantees,0.38,0.44,35,26,-0.06,0.87
 Differentially Private Estimation Rates,0.38,0.58,35,34,-0.2,0.66
-Concept Erasure in Text-to-Image Diffusion,0.37,0.79,34,46,-0.41,0.48
-Algorithmic Fairness and Group Constraints,0.37,0.51,34,30,-0.14,0.73
-Domain Adaptation and Generalization,0.37,0.67,34,39,-0.29,0.56
-Verified Code and Software Security Benchmarks,0.37,0.29,34,17,0.08,1.29
 Tabular Foundation Models,0.37,0.36,34,21,0.01,1.04
+Concept Erasure in Text-to-Image Diffusion,0.37,0.79,34,46,-0.41,0.48
 Urban Mobility and Trajectory Generation,0.37,0.38,34,22,-0.0,0.99
-Optimal Transport Algorithms and Theory,0.36,0.31,33,18,0.06,1.18
-Sparse Autoencoders for Interpretability,0.36,0.15,33,9,0.21,2.36
-Neural Decoding from Brain Recordings,0.36,0.32,33,19,0.04,1.12
+Algorithmic Fairness and Group Constraints,0.37,0.51,34,30,-0.14,0.73
+Verified Code and Software Security Benchmarks,0.37,0.29,34,17,0.08,1.29
+Domain Adaptation and Generalization,0.37,0.67,34,39,-0.29,0.56
+Goal-Conditioned and Reward-Free RL,0.36,0.56,33,33,-0.2,0.64
 Calibration and Prediction-Powered Inference,0.36,0.29,33,17,0.07,1.25
-Goal-Conditioned RL and Task Specifications,0.36,0.56,33,33,-0.2,0.64
+Neural Decoding from Brain Recordings,0.36,0.32,33,19,0.04,1.12
+Optimal Transport Algorithms and Theory,0.36,0.31,33,18,0.05,1.18
+Sparse Autoencoders for Interpretability,0.36,0.15,33,9,0.21,2.36
 Reward Models and Human Behavior Modeling,0.35,0.12,32,7,0.23,2.94
 Online Convex Optimization Regret Bounds,0.34,0.32,31,19,0.02,1.05
 Model Merging and LoRA Fusion,0.32,0.26,29,15,0.06,1.24

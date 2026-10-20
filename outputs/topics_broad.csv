@@ -1,21 +1,21 @@
 broad_name,share_2026,share_2025,n_2026,n_2025,delta_pp
-LLM Behavior & Safety,10.35,9.1,943,533,1.25
-3D Vision & Perception,8.57,10.39,781,609,-1.82
-LLM Agents,7.68,3.53,700,207,4.15
-DL Theory & Neuroscience,7.59,8.07,691,473,-0.49
-Efficient LLMs & Architectures,7.46,7.9,680,463,-0.44
-Trustworthy & Statistical ML,6.71,7.8,611,457,-1.09
+LLM Behavior & Safety,8.74,7.77,796,455,0.97
+Vision & Perception,8.57,10.4,781,609,-1.83
+Efficient LLMs & Architectures,8.46,8.4,771,492,0.06
+DL Theory & Neuroscience,6.97,7.1,635,416,-0.13
+LLM Agents,6.81,2.9,620,170,3.9
+Trustworthy & Statistical ML,6.71,7.8,611,457,-1.1
+Vision-Language & Speech Models,6.04,6.73,550,394,-0.69
 LLM Reasoning & Retrieval,5.74,6.08,523,356,-0.34
-Vision-Language Models,5.04,5.75,459,337,-0.71
-Reinforcement Learning,4.6,4.81,419,282,-0.21
+Reinforcement Learning,4.6,4.82,419,282,-0.22
 "Diffusion, Flows & Inference",4.58,3.94,417,231,0.63
-Robotics & Embodied AI,4.45,3.7,405,217,0.74
+Robotics & Embodied AI,4.45,3.71,405,217,0.74
 Image & 3D Generation,4.12,5.62,375,329,-1.5
-Video Generation & Understanding,4.06,3.99,370,234,0.07
-Biomolecules & Causal Discovery,3.79,3.46,345,203,0.32
+Video Generation & Understanding,4.06,4.0,370,234,0.07
+Biomolecules & Causal Discovery,3.79,3.47,345,203,0.32
+Optimization & Statistics,3.69,4.44,336,260,-0.75
 LLM Post-Training,3.68,3.12,335,183,0.55
-Optimization & Statistics,3.07,3.46,280,203,-0.39
-"Bandits, Games & Mechanisms",2.57,2.95,234,173,-0.38
+"Bandits, Games & Mechanisms",2.57,2.95,234,173,-0.39
 Time Series & Forecasting,2.4,2.2,219,129,0.2
+Graph Learning & Recommendation,2.14,3.02,195,177,-0.88
 PDEs & Dynamical Systems,1.9,1.52,173,89,0.38
-Graph Learning,1.65,2.58,150,151,-0.93

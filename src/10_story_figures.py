@@ -195,7 +195,7 @@ ax.set_xlim(-0.95, 1.95); ax.axis("off")
 top_y = max(yl.max(), yr.max()) + 0.45
 ax.text(0, top_y, "2025", ha="center", fontsize=12, fontweight="bold", color=INK)
 ax.text(1, top_y, "2026", ha="center", fontsize=12, fontweight="bold", color=INK)
-frame(fig, "LLM agents doubled their share. 3D vision and graph learning shrank.",
+frame(fig, "LLM agents more than doubled their share. Vision and graph learning shrank.",
       "Share of all papers per area. Orange: up more than half a point. Blue: down more than half a point. Grey: smaller change.")
 fig.savefig(FIG / "areas_slope.png"); plt.close(fig)
 
@@ -336,7 +336,7 @@ def draw_img(path):
 
 def draw_field_card(fig, box):
     ax = fig.add_axes(box)
-    keep = {"LLM Agents", "LLM Post-Training", "Robotics & Embodied AI", "3D Vision & Perception", "Graph Learning",
+    keep = {"LLM Agents", "LLM Post-Training", "Robotics & Embodied AI", "Vision & Perception", "Graph Learning & Recommendation",
             "Diffusion, Flows & Inference", "Image & 3D Generation"}
     draw_field(ax, keep=keep, fs=9.5, scatter=False)
     field_colorbar(fig, [box[0] + 0.12, box[1] - 0.025, box[2] - 0.24, 0.012], fs=8.5)
@@ -346,7 +346,7 @@ def draw_atlas_card(fig, box):
     ax = fig.add_axes(box)
     pal = plt.get_cmap("tab20")
     ax.scatter(d26.x, d26.y, s=1.2, c=[pal(int(b) % 20) for b in d26.broad], alpha=0.75, linewidths=0)
-    keep = {"LLM Agents", "LLM Behavior & Safety", "Robotics & Embodied AI", "3D Vision & Perception",
+    keep = {"LLM Agents", "LLM Behavior & Safety", "Robotics & Embodied AI", "Vision & Perception",
             "Reinforcement Learning", "DL Theory & Neuroscience", "Biomolecules & Causal Discovery", "Image & 3D Generation"}
     pos = spread_labels(med.loc[[b for b in med.index if broad_name[b] in keep]], dx=2.6, dy=0.55)
     for b, r in pos.iterrows():

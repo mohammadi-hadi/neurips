@@ -1,46 +1,46 @@
 {
  "n_2026": 9110,
- "n_2025": 5859,
+ "n_2025": 5856,
  "broad": [
   {
    "topic": "LLM Behavior & Safety",
-   "share_2026": 10.35,
-   "share_2025": 9.1,
-   "n_2026": 943,
-   "n_2025": 533,
-   "delta_pp": 1.25
+   "share_2026": 8.74,
+   "share_2025": 7.77,
+   "n_2026": 796,
+   "n_2025": 455,
+   "delta_pp": 0.97
   },
   {
-   "topic": "3D Vision & Perception",
+   "topic": "Vision & Perception",
    "share_2026": 8.57,
-   "share_2025": 10.39,
+   "share_2025": 10.4,
    "n_2026": 781,
    "n_2025": 609,
-   "delta_pp": -1.82
-  },
-  {
-   "topic": "LLM Agents",
-   "share_2026": 7.68,
-   "share_2025": 3.53,
-   "n_2026": 700,
-   "n_2025": 207,
-   "delta_pp": 4.15
-  },
-  {
-   "topic": "DL Theory & Neuroscience",
-   "share_2026": 7.59,
-   "share_2025": 8.07,
-   "n_2026": 691,
-   "n_2025": 473,
-   "delta_pp": -0.49
+   "delta_pp": -1.83
   },
   {
    "topic": "Efficient LLMs & Architectures",
-   "share_2026": 7.46,
-   "share_2025": 7.9,
-   "n_2026": 680,
-   "n_2025": 463,
-   "delta_pp": -0.44
+   "share_2026": 8.46,
+   "share_2025": 8.4,
+   "n_2026": 771,
+   "n_2025": 492,
+   "delta_pp": 0.06
+  },
+  {
+   "topic": "DL Theory & Neuroscience",
+   "share_2026": 6.97,
+   "share_2025": 7.1,
+   "n_2026": 635,
+   "n_2025": 416,
+   "delta_pp": -0.13
+  },
+  {
+   "topic": "LLM Agents",
+   "share_2026": 6.81,
+   "share_2025": 2.9,
+   "n_2026": 620,
+   "n_2025": 170,
+   "delta_pp": 3.9
   },
   {
    "topic": "Trustworthy & Statistical ML",
@@ -48,7 +48,15 @@
    "share_2025": 7.8,
    "n_2026": 611,
    "n_2025": 457,
-   "delta_pp": -1.09
+   "delta_pp": -1.1
+  },
+  {
+   "topic": "Vision-Language & Speech Models",
+   "share_2026": 6.04,
+   "share_2025": 6.73,
+   "n_2026": 550,
+   "n_2025": 394,
+   "delta_pp": -0.69
   },
   {
    "topic": "LLM Reasoning & Retrieval",
@@ -59,20 +67,12 @@
    "delta_pp": -0.34
   },
   {
-   "topic": "Vision-Language Models",
-   "share_2026": 5.04,
-   "share_2025": 5.75,
-   "n_2026": 459,
-   "n_2025": 337,
-   "delta_pp": -0.71
-  },
-  {
    "topic": "Reinforcement Learning",
    "share_2026": 4.6,
-   "share_2025": 4.81,
+   "share_2025": 4.82,
    "n_2026": 419,
    "n_2025": 282,
-   "delta_pp": -0.21
+   "delta_pp": -0.22
   },
   {
    "topic": "Diffusion, Flows & Inference",
@@ -85,7 +85,7 @@
   {
    "topic": "Robotics & Embodied AI",
    "share_2026": 4.45,
-   "share_2025": 3.7,
+   "share_2025": 3.71,
    "n_2026": 405,
    "n_2025": 217,
    "delta_pp": 0.74
@@ -101,7 +101,7 @@
   {
    "topic": "Video Generation & Understanding",
    "share_2026": 4.06,
-   "share_2025": 3.99,
+   "share_2025": 4.0,
    "n_2026": 370,
    "n_2025": 234,
    "delta_pp": 0.07
@@ -109,10 +109,18 @@
   {
    "topic": "Biomolecules & Causal Discovery",
    "share_2026": 3.79,
-   "share_2025": 3.46,
+   "share_2025": 3.47,
    "n_2026": 345,
    "n_2025": 203,
    "delta_pp": 0.32
+  },
+  {
+   "topic": "Optimization & Statistics",
+   "share_2026": 3.69,
+   "share_2025": 4.44,
+   "n_2026": 336,
+   "n_2025": 260,
+   "delta_pp": -0.75
   },
   {
    "topic": "LLM Post-Training",
@@ -123,20 +131,12 @@
    "delta_pp": 0.55
   },
   {
-   "topic": "Optimization & Statistics",
-   "share_2026": 3.07,
-   "share_2025": 3.46,
-   "n_2026": 280,
-   "n_2025": 203,
-   "delta_pp": -0.39
-  },
-  {
    "topic": "Bandits, Games & Mechanisms",
    "share_2026": 2.57,
    "share_2025": 2.95,
    "n_2026": 234,
    "n_2025": 173,
-   "delta_pp": -0.38
+   "delta_pp": -0.39
   },
   {
    "topic": "Time Series & Forecasting",
@@ -147,20 +147,20 @@
    "delta_pp": 0.2
   },
   {
+   "topic": "Graph Learning & Recommendation",
+   "share_2026": 2.14,
+   "share_2025": 3.02,
+   "n_2026": 195,
+   "n_2025": 177,
+   "delta_pp": -0.88
+  },
+  {
    "topic": "PDEs & Dynamical Systems",
    "share_2026": 1.9,
    "share_2025": 1.52,
    "n_2026": 173,
    "n_2025": 89,
    "delta_pp": 0.38
-  },
-  {
-   "topic": "Graph Learning",
-   "share_2026": 1.65,
-   "share_2025": 2.58,
-   "n_2026": 150,
-   "n_2025": 151,
-   "delta_pp": -0.93
   }
  ],
  "fine_growers": [
@@ -188,11 +188,11 @@
    "share_2025": 0.12,
    "n_2026": 66,
    "n_2025": 7,
-   "delta_pp": 0.61,
+   "delta_pp": 0.6,
    "growth_x": 6.06
   },
   {
-   "topic": "LLM Agent Safety and Prompt Injection",
+   "topic": "LLM Agent Safety and Security",
    "share_2026": 0.83,
    "share_2025": 0.32,
    "n_2026": 76,
@@ -210,7 +210,7 @@
    "growth_x": 2.22
   },
   {
-   "topic": "Decoding for Diffusion Language Models",
+   "topic": "Diffusion Language Models",
    "share_2026": 1.0,
    "share_2025": 0.55,
    "n_2026": 91,
@@ -270,23 +270,23 @@
    "n_2026": 80,
    "n_2025": 30,
    "delta_pp": 0.37,
-   "growth_x": 1.72
+   "growth_x": 1.71
   }
  ],
  "fine_shrinkers": [
   {
-   "topic": "Graph Neural Networks and Foundation Models",
+   "topic": "Graph Neural Networks",
    "share_2026": 1.43,
    "share_2025": 2.49,
    "n_2026": 130,
    "n_2025": 146,
-   "delta_pp": -1.06,
+   "delta_pp": -1.07,
    "growth_x": 0.57
   },
   {
-   "topic": "Efficient Chain-of-Thought Reasoning",
+   "topic": "LLM Reasoning and Test-Time Scaling",
    "share_2026": 1.5,
-   "share_2025": 2.47,
+   "share_2025": 2.48,
    "n_2026": 137,
    "n_2025": 145,
    "delta_pp": -0.97,
@@ -367,7 +367,7 @@
   {
    "topic": "Test-Time and Few-Shot VLM Adaptation",
    "share_2026": 0.82,
-   "share_2025": 1.19,
+   "share_2025": 1.2,
    "n_2026": 75,
    "n_2025": 70,
    "delta_pp": -0.37,
@@ -391,12 +391,12 @@
    "n_2026": 138,
    "n_2025": 91,
    "delta_pp": -0.04,
-   "growth_x": 0.98
+   "growth_x": 0.97
   },
   {
-   "topic": "Efficient Chain-of-Thought Reasoning",
+   "topic": "LLM Reasoning and Test-Time Scaling",
    "share_2026": 1.5,
-   "share_2025": 2.47,
+   "share_2025": 2.48,
    "n_2026": 137,
    "n_2025": 145,
    "delta_pp": -0.97,
@@ -412,12 +412,12 @@
    "growth_x": 1.18
   },
   {
-   "topic": "Graph Neural Networks and Foundation Models",
+   "topic": "Graph Neural Networks",
    "share_2026": 1.43,
    "share_2025": 2.49,
    "n_2026": 130,
    "n_2025": 146,
-   "delta_pp": -1.06,
+   "delta_pp": -1.07,
    "growth_x": 0.57
   },
   {
@@ -530,11 +530,19 @@
  "highlight_rate_by_area": [
   {
    "broad_name": "DL Theory & Neuroscience",
-   "papers": 563,
-   "orals": 17,
-   "spotlights": 30,
-   "rate": 0.08,
-   "rate_pct": 8.35
+   "papers": 517,
+   "orals": 16,
+   "spotlights": 28,
+   "rate": 0.09,
+   "rate_pct": 8.51
+  },
+  {
+   "broad_name": "LLM Behavior & Safety",
+   "papers": 655,
+   "orals": 15,
+   "spotlights": 28,
+   "rate": 0.07,
+   "rate_pct": 6.56
   },
   {
    "broad_name": "Time Series & Forecasting",
@@ -543,14 +551,6 @@
    "spotlights": 8,
    "rate": 0.06,
    "rate_pct": 6.36
-  },
-  {
-   "broad_name": "LLM Agents",
-   "papers": 537,
-   "orals": 12,
-   "spotlights": 22,
-   "rate": 0.06,
-   "rate_pct": 6.33
   },
   {
    "broad_name": "Diffusion, Flows & Inference",
@@ -569,7 +569,7 @@
    "rate_pct": 6.14
   },
   {
-   "broad_name": "3D Vision & Perception",
+   "broad_name": "Vision & Perception",
    "papers": 608,
    "orals": 9,
    "spotlights": 26,
@@ -577,12 +577,12 @@
    "rate_pct": 5.76
   },
   {
-   "broad_name": "Vision-Language Models",
-   "papers": 365,
+   "broad_name": "Vision-Language & Speech Models",
+   "papers": 430,
    "orals": 6,
-   "spotlights": 15,
+   "spotlights": 18,
    "rate": 0.06,
-   "rate_pct": 5.75
+   "rate_pct": 5.58
   },
   {
    "broad_name": "Biomolecules & Causal Discovery",
@@ -593,20 +593,20 @@
    "rate_pct": 5.47
   },
   {
-   "broad_name": "LLM Behavior & Safety",
-   "papers": 761,
-   "orals": 14,
-   "spotlights": 27,
-   "rate": 0.05,
-   "rate_pct": 5.39
-  },
-  {
    "broad_name": "Image & 3D Generation",
    "papers": 284,
    "orals": 2,
    "spotlights": 13,
    "rate": 0.05,
    "rate_pct": 5.28
+  },
+  {
+   "broad_name": "LLM Agents",
+   "papers": 467,
+   "orals": 10,
+   "spotlights": 13,
+   "rate": 0.05,
+   "rate_pct": 4.93
   },
   {
    "broad_name": "Bandits, Games & Mechanisms",
@@ -633,6 +633,14 @@
    "rate_pct": 4.58
   },
   {
+   "broad_name": "Optimization & Statistics",
+   "papers": 269,
+   "orals": 1,
+   "spotlights": 11,
+   "rate": 0.04,
+   "rate_pct": 4.46
+  },
+  {
    "broad_name": "Robotics & Embodied AI",
    "papers": 330,
    "orals": 3,
@@ -641,12 +649,12 @@
    "rate_pct": 4.24
   },
   {
-   "broad_name": "Optimization & Statistics",
-   "papers": 223,
-   "orals": 0,
-   "spotlights": 9,
+   "broad_name": "Efficient LLMs & Architectures",
+   "papers": 639,
+   "orals": 6,
+   "spotlights": 20,
    "rate": 0.04,
-   "rate_pct": 4.04
+   "rate_pct": 4.07
   },
   {
    "broad_name": "LLM Post-Training",
@@ -657,20 +665,12 @@
    "rate_pct": 3.75
   },
   {
-   "broad_name": "Graph Learning",
-   "papers": 111,
+   "broad_name": "Graph Learning & Recommendation",
+   "papers": 143,
    "orals": 0,
    "spotlights": 4,
-   "rate": 0.04,
-   "rate_pct": 3.6
-  },
-  {
-   "broad_name": "Efficient LLMs & Architectures",
-   "papers": 560,
-   "orals": 5,
-   "spotlights": 15,
-   "rate": 0.04,
-   "rate_pct": 3.57
+   "rate": 0.03,
+   "rate_pct": 2.8
   },
   {
    "broad_name": "LLM Reasoning & Retrieval",
@@ -698,7 +698,7 @@
   },
   {
    "title": "Agent Security is a Systems Problem",
-   "fine_name": "LLM Agent Safety and Prompt Injection",
+   "fine_name": "LLM Agent Safety and Security",
    "broad_name": "LLM Agents",
    "url": "https://neurips.cc/virtual/2026/poster/140106"
   },
@@ -717,7 +717,7 @@
   {
    "title": "BEAST3D: animal behavioral analysis and neural encoding from multi-view video via Gaussian splatting",
    "fine_name": "Feed-Forward Multi-View Geometry Transformers",
-   "broad_name": "3D Vision & Perception",
+   "broad_name": "Vision & Perception",
    "url": "https://neurips.cc/virtual/2026/poster/149762"
   },
   {
@@ -735,7 +735,7 @@
   {
    "title": "Binding Multiple Modalities via Multimodal Wasserstein Barycenter",
    "fine_name": "Multimodal Fusion and Missing Modalities",
-   "broad_name": "Vision-Language Models",
+   "broad_name": "Vision-Language & Speech Models",
    "url": "https://neurips.cc/virtual/2026/poster/149098"
   },
   {
@@ -788,8 +788,8 @@
   },
   {
    "title": "Certifiably Optimal Robust Angular Synchronization",
-   "fine_name": "LiDAR and Radar Perception for Driving",
-   "broad_name": "3D Vision & Perception",
+   "fine_name": "LiDAR, Radar and Multi-Sensor Perception",
+   "broad_name": "Vision & Perception",
    "url": "https://neurips.cc/virtual/2026/poster/153331"
   },
   {
@@ -801,7 +801,7 @@
   {
    "title": "Clarification as Supervision: Reinforcement Learning for Vision-Language Interfaces",
    "fine_name": "Latent and Chain-of-Thought Visual Reasoning",
-   "broad_name": "Vision-Language Models",
+   "broad_name": "Vision-Language & Speech Models",
    "url": "https://neurips.cc/virtual/2026/poster/152087"
   },
   {
@@ -819,7 +819,7 @@
   {
    "title": "Consistent 3D Surface Flow Model with Global State",
    "fine_name": "Feed-Forward Multi-View Geometry Transformers",
-   "broad_name": "3D Vision & Perception",
+   "broad_name": "Vision & Perception",
    "url": "https://neurips.cc/virtual/2026/poster/148758"
   },
   {
@@ -830,8 +830,8 @@
   },
   {
    "title": "CURE: Counterfactual Unsafe-token Re-masking for Diffusion Large Language Model Test-time Alignment",
-   "fine_name": "Decoding for Diffusion Language Models",
-   "broad_name": "LLM Behavior & Safety",
+   "fine_name": "Diffusion Language Models",
+   "broad_name": "Efficient LLMs & Architectures",
    "url": "https://neurips.cc/virtual/2026/poster/151876"
   },
   {
@@ -855,7 +855,7 @@
   {
    "title": "D\u00e9j\u00e0 View: Looping Transformers for Multi-View 3D Reconstruction",
    "fine_name": "Feed-Forward Multi-View Geometry Transformers",
-   "broad_name": "3D Vision & Perception",
+   "broad_name": "Vision & Perception",
    "url": "https://neurips.cc/virtual/2026/poster/154303"
   },
   {
@@ -938,8 +938,8 @@
   },
   {
    "title": "GenAI Evaluation Results are Largely Artifacts of Evaluation Design Choices: Evidence from Audit Studies of Resume Screening",
-   "fine_name": "Human-AI Collaboration and Oversight",
-   "broad_name": "LLM Agents",
+   "fine_name": "AI Governance, Position Papers and Human Oversight",
+   "broad_name": "LLM Behavior & Safety",
    "url": "https://neurips.cc/virtual/2026/poster/138976"
   },
   {
@@ -957,7 +957,7 @@
   {
    "title": "GeoSym127K: Scalable Symbolically-verifiable Synthesis for Multimodal Geometric Reasoning",
    "fine_name": "Latent and Chain-of-Thought Visual Reasoning",
-   "broad_name": "Vision-Language Models",
+   "broad_name": "Vision-Language & Speech Models",
    "url": "https://neurips.cc/virtual/2026/poster/139481"
   },
   {
@@ -993,7 +993,7 @@
   {
    "title": "Incentivizing Medical Vision Capabilities from Large-Scale Multimodal Pre-training",
    "fine_name": "Latent and Chain-of-Thought Visual Reasoning",
-   "broad_name": "Vision-Language Models",
+   "broad_name": "Vision-Language & Speech Models",
    "url": "https://neurips.cc/virtual/2026/poster/156128"
   },
   {
@@ -1034,7 +1034,7 @@
   },
   {
    "title": "LITMUS: Benchmarking Behavioral Jailbreaks of LLM Agents in Real OS Environments",
-   "fine_name": "LLM Agent Safety and Prompt Injection",
+   "fine_name": "LLM Agent Safety and Security",
    "broad_name": "LLM Agents",
    "url": "https://neurips.cc/virtual/2026/poster/150415"
   },
@@ -1094,7 +1094,7 @@
   },
   {
    "title": "Nemotron-Cascade: Scaling Cascaded Reinforcement Learning for General-Purpose Reasoning Models",
-   "fine_name": "Efficient Chain-of-Thought Reasoning",
+   "fine_name": "LLM Reasoning and Test-Time Scaling",
    "broad_name": "LLM Reasoning & Retrieval",
    "url": "https://neurips.cc/virtual/2026/poster/155022"
   },
@@ -1113,13 +1113,13 @@
   {
    "title": "Non-Colliding Biometric Identities for Digital Entities: Geometry, Capacity, and Million-Scale Virtual Identity Provisioning",
    "fine_name": "AI-Generated Image and Deepfake Detection",
-   "broad_name": "3D Vision & Perception",
+   "broad_name": "Vision & Perception",
    "url": "https://neurips.cc/virtual/2026/poster/153119"
   },
   {
    "title": "Offloading Score: Measuring AI Reliance through Counterfactual Workflows",
-   "fine_name": "Human-AI Collaboration and Oversight",
-   "broad_name": "LLM Agents",
+   "fine_name": "AI Governance, Position Papers and Human Oversight",
+   "broad_name": "LLM Behavior & Safety",
    "url": "https://neurips.cc/virtual/2026/poster/139388"
   },
   {
@@ -1142,14 +1142,14 @@
   },
   {
    "title": "Query Lower Bounds for Diffusion Sampling",
-   "fine_name": "MCMC, SMC and Posterior Samplers",
+   "fine_name": "Samplers and Diffusion-Based Sampling",
    "broad_name": "Diffusion, Flows & Inference",
    "url": "https://neurips.cc/virtual/2026/poster/151581"
   },
   {
    "title": "Releasing Anchors from Cross-View Correspondence: Probabilistic Multi-View Anchor Graph Clustering",
    "fine_name": "Multi-View Clustering and Person Re-ID",
-   "broad_name": "3D Vision & Perception",
+   "broad_name": "Vision & Perception",
    "url": "https://neurips.cc/virtual/2026/poster/154593"
   },
   {
@@ -1167,7 +1167,7 @@
   {
    "title": "SAM 3D Animal: Promptable Animal 3D Reconstruction from Images in the Wild",
    "fine_name": "Feed-Forward Multi-View Geometry Transformers",
-   "broad_name": "3D Vision & Perception",
+   "broad_name": "Vision & Perception",
    "url": "https://neurips.cc/virtual/2026/poster/155674"
   },
   {
@@ -1275,13 +1275,13 @@
   {
    "title": "They Can See It but not Say It: Iterative Self Knowledge Re-expression in Visual Reasoning Relative Pose Identification",
    "fine_name": "Latent and Chain-of-Thought Visual Reasoning",
-   "broad_name": "Vision-Language Models",
+   "broad_name": "Vision-Language & Speech Models",
    "url": "https://neurips.cc/virtual/2026/poster/151372"
   },
   {
    "title": "Thinking with Images as Continuous Policy: Numerical Visual Chain-of-Thought",
    "fine_name": "Latent and Chain-of-Thought Visual Reasoning",
-   "broad_name": "Vision-Language Models",
+   "broad_name": "Vision-Language & Speech Models",
    "url": "https://neurips.cc/virtual/2026/poster/150085"
   },
   {
@@ -1299,13 +1299,13 @@
   {
    "title": "Trellis4D: Complex 4D Mesh Generation",
    "fine_name": "4D Reconstruction from Monocular Video",
-   "broad_name": "3D Vision & Perception",
+   "broad_name": "Vision & Perception",
    "url": "https://neurips.cc/virtual/2026/poster/153899"
   },
   {
    "title": "UECO: A Unified Encoder with Structure-Aware Attention Mixture via Iterative Edge Evolving for Neural Combinatorial Optimization",
    "fine_name": "Neural Combinatorial Optimization",
-   "broad_name": "DL Theory & Neuroscience",
+   "broad_name": "Optimization & Statistics",
    "url": "https://neurips.cc/virtual/2026/poster/153347"
   },
   {
@@ -1316,7 +1316,7 @@
   },
   {
    "title": "Unifying Goal-Conditioned RL and Unsupervised Skill Learning via Control-Maximization",
-   "fine_name": "Goal-Conditioned RL and Task Specifications",
+   "fine_name": "Goal-Conditioned and Reward-Free RL",
    "broad_name": "Reinforcement Learning",
    "url": "https://neurips.cc/virtual/2026/poster/153300"
   },
@@ -1329,7 +1329,7 @@
   {
    "title": "Video Forensic Self-Descriptions: Leveraging Temporally Distributed Forensic Microstructures for Zero-Shot Detection of AI-Generated Videos",
    "fine_name": "AI-Generated Image and Deepfake Detection",
-   "broad_name": "3D Vision & Perception",
+   "broad_name": "Vision & Perception",
    "url": "https://neurips.cc/virtual/2026/poster/149484"
   },
   {
@@ -1373,7 +1373,7 @@
    "sydney_vs_avg_pp": 7.7
   },
   {
-   "broad_name": "3D Vision & Perception",
+   "broad_name": "Vision & Perception",
    "Sydney": 73.62,
    "Atlanta": 13.32,
    "Paris": 13.06,
@@ -1387,11 +1387,18 @@
    "sydney_vs_avg_pp": 5.02
   },
   {
-   "broad_name": "Vision-Language Models",
-   "Sydney": 71.46,
-   "Atlanta": 15.03,
-   "Paris": 13.51,
-   "sydney_vs_avg_pp": 4.84
+   "broad_name": "Vision-Language & Speech Models",
+   "Sydney": 71.58,
+   "Atlanta": 15.3,
+   "Paris": 13.11,
+   "sydney_vs_avg_pp": 4.96
+  },
+  {
+   "broad_name": "LLM Agents",
+   "Sydney": 71.29,
+   "Atlanta": 21.94,
+   "Paris": 6.77,
+   "sydney_vs_avg_pp": 4.67
   },
   {
    "broad_name": "Time Series & Forecasting",
@@ -1401,18 +1408,18 @@
    "sydney_vs_avg_pp": 4.61
   },
   {
+   "broad_name": "Graph Learning & Recommendation",
+   "Sydney": 69.74,
+   "Atlanta": 14.87,
+   "Paris": 15.38,
+   "sydney_vs_avg_pp": 3.12
+  },
+  {
    "broad_name": "Biomolecules & Causal Discovery",
    "Sydney": 69.28,
    "Atlanta": 15.36,
    "Paris": 15.36,
    "sydney_vs_avg_pp": 2.65
-  },
-  {
-   "broad_name": "LLM Agents",
-   "Sydney": 68.29,
-   "Atlanta": 22.71,
-   "Paris": 9.0,
-   "sydney_vs_avg_pp": 1.66
   },
   {
    "broad_name": "LLM Reasoning & Retrieval",
@@ -1422,25 +1429,11 @@
    "sydney_vs_avg_pp": 1.64
   },
   {
-   "broad_name": "Graph Learning",
-   "Sydney": 68.0,
-   "Atlanta": 15.33,
-   "Paris": 16.67,
-   "sydney_vs_avg_pp": 1.38
-  },
-  {
-   "broad_name": "LLM Behavior & Safety",
-   "Sydney": 66.56,
-   "Atlanta": 21.55,
-   "Paris": 11.89,
-   "sydney_vs_avg_pp": -0.06
-  },
-  {
    "broad_name": "Efficient LLMs & Architectures",
-   "Sydney": 66.47,
-   "Atlanta": 20.88,
-   "Paris": 12.65,
-   "sydney_vs_avg_pp": -0.15
+   "Sydney": 67.06,
+   "Atlanta": 20.75,
+   "Paris": 12.19,
+   "sydney_vs_avg_pp": 0.43
   },
   {
    "broad_name": "Reinforcement Learning",
@@ -1450,11 +1443,18 @@
    "sydney_vs_avg_pp": -3.14
   },
   {
+   "broad_name": "LLM Behavior & Safety",
+   "Sydney": 62.69,
+   "Atlanta": 23.49,
+   "Paris": 13.82,
+   "sydney_vs_avg_pp": -3.93
+  },
+  {
    "broad_name": "DL Theory & Neuroscience",
-   "Sydney": 62.08,
-   "Atlanta": 16.21,
-   "Paris": 21.71,
-   "sydney_vs_avg_pp": -4.54
+   "Sydney": 61.57,
+   "Atlanta": 16.06,
+   "Paris": 22.36,
+   "sydney_vs_avg_pp": -5.05
   },
   {
    "broad_name": "PDEs & Dynamical Systems",
@@ -1464,18 +1464,18 @@
    "sydney_vs_avg_pp": -6.51
   },
   {
+   "broad_name": "Optimization & Statistics",
+   "Sydney": 59.52,
+   "Atlanta": 22.02,
+   "Paris": 18.45,
+   "sydney_vs_avg_pp": -7.1
+  },
+  {
    "broad_name": "Diffusion, Flows & Inference",
    "Sydney": 58.65,
    "Atlanta": 20.19,
    "Paris": 21.15,
    "sydney_vs_avg_pp": -7.97
-  },
-  {
-   "broad_name": "Optimization & Statistics",
-   "Sydney": 57.86,
-   "Atlanta": 22.86,
-   "Paris": 19.29,
-   "sydney_vs_avg_pp": -8.77
   },
   {
    "broad_name": "Trustworthy & Statistical ML",
@@ -1495,15 +1495,15 @@
  "institutions_2026": [
   [
    "Tsinghua University",
-   442
-  ],
-  [
-   "Shanghai Jiao Tong University",
-   324
+   479
   ],
   [
    "Google",
-   314
+   378
+  ],
+  [
+   "Shanghai Jiao Tong University",
+   326
   ],
   [
    "Peking University",
@@ -1511,249 +1511,249 @@
   ],
   [
    "Stanford University",
-   283
+   295
   ],
   [
    "MIT",
-   276
-  ],
-  [
-   "Chinese Academy of Sciences",
-   275
+   287
   ],
   [
    "NUS",
-   267
-  ],
-  [
-   "HKUST",
-   254
+   268
   ],
   [
    "NTU Singapore",
-   251
+   258
+  ],
+  [
+   "Chinese Academy of Sciences",
+   258
+  ],
+  [
+   "HKUST",
+   255
   ],
   [
    "Zhejiang University",
-   244
-  ],
-  [
-   "KAIST",
-   238
+   246
   ],
   [
    "Carnegie Mellon University",
-   234
+   245
+  ],
+  [
+   "KAIST",
+   239
   ],
   [
    "CUHK",
-   228
+   227
   ],
   [
    "UC Berkeley",
-   210
+   218
   ],
   [
    "University of Oxford",
-   203
+   209
+  ],
+  [
+   "Alibaba",
+   199
   ],
   [
    "USTC",
    198
   ],
   [
-   "Alibaba",
-   198
-  ],
-  [
-   "Tencent",
-   188
+   "Meta",
+   196
   ],
   [
    "Microsoft",
-   187
+   193
+  ],
+  [
+   "Tencent",
+   192
   ],
   [
    "Fudan University",
-   179
-  ],
-  [
-   "UIUC",
-   169
-  ],
-  [
-   "Meta",
-   164
-  ],
-  [
-   "Harvard University",
-   156
-  ],
-  [
-   "New York University",
-   148
-  ],
-  [
-   "University of Hong Kong",
-   147
+   182
   ],
   [
    "Amazon",
-   144
+   181
+  ],
+  [
+   "UIUC",
+   173
+  ],
+  [
+   "Harvard University",
+   170
+  ],
+  [
+   "University of Hong Kong",
+   153
   ],
   [
    "ETH Zurich",
-   142
+   152
   ],
   [
-   "UC San Diego",
-   136
-  ],
-  [
-   "Huawei",
-   135
-  ],
-  [
-   "Seoul National University",
-   128
-  ],
-  [
-   "Nanjing University",
-   127
-  ],
-  [
-   "MBZUAI",
-   126
-  ],
-  [
-   "Georgia Tech",
-   124
+   "New York University",
+   149
   ],
   [
    "NVIDIA",
-   121
+   146
   ],
   [
-   "Northeastern University",
-   118
+   "MBZUAI",
+   143
   ],
   [
-   "Purdue University",
-   116
+   "UC San Diego",
+   141
+  ],
+  [
+   "Huawei",
+   137
+  ],
+  [
+   "Seoul National University",
+   130
+  ],
+  [
+   "Nanjing University",
+   129
+  ],
+  [
+   "Georgia Tech",
+   127
   ],
   [
    "Imperial College London",
-   116
-  ],
-  [
-   "Columbia University",
-   116
+   124
   ],
   [
    "EPFL",
-   114
+   122
+  ],
+  [
+   "University of Cambridge",
+   122
+  ],
+  [
+   "Columbia University",
+   120
+  ],
+  [
+   "Northeastern University",
+   119
   ]
  ],
  "countries_2026": [
   [
    "USA",
-   3877,
-   45.1
+   3962,
+   45.81
   ],
   [
    "China",
-   2962,
-   34.4
-  ],
-  [
-   "Hong Kong",
-   741,
-   8.6
+   2983,
+   34.49
   ],
   [
    "UK",
-   739,
-   8.6
+   773,
+   8.94
+  ],
+  [
+   "Hong Kong",
+   748,
+   8.65
   ],
   [
    "South Korea",
-   623,
-   7.2
+   627,
+   7.25
   ],
   [
    "Singapore",
-   539,
-   6.3
+   556,
+   6.43
   ],
   [
    "Germany",
-   480,
-   5.6
+   508,
+   5.87
   ],
   [
    "Canada",
-   400,
-   4.6
+   436,
+   5.04
   ],
   [
    "Australia",
-   355,
-   4.1
+   368,
+   4.25
   ],
   [
    "Switzerland",
-   282,
-   3.3
-  ],
-  [
-   "France",
-   218,
-   2.5
+   305,
+   3.53
   ],
   [
    "Japan",
-   213,
-   2.5
+   259,
+   2.99
+  ],
+  [
+   "France",
+   240,
+   2.77
   ],
   [
    "Israel",
-   150,
-   1.7
+   156,
+   1.8
   ],
   [
    "UAE",
-   135,
-   1.6
+   152,
+   1.76
   ],
   [
    "Netherlands",
-   124,
-   1.4
+   126,
+   1.46
   ],
   [
    "Italy",
-   107,
-   1.2
+   112,
+   1.29
+  ],
+  [
+   "India",
+   79,
+   0.91
   ],
   [
    "Denmark",
    79,
-   0.9
-  ],
-  [
-   "India",
-   74,
-   0.9
+   0.91
   ],
   [
    "Sweden",
-   60,
-   0.7
+   62,
+   0.72
   ],
   [
    "Austria",
    53,
-   0.6
+   0.61
   ],
   [
    "Macau",
@@ -1762,66 +1762,76 @@
   ],
   [
    "Finland",
-   43,
-   0.5
+   51,
+   0.59
+  ],
+  [
+   "Taiwan",
+   39,
+   0.45
   ],
   [
    "Vietnam",
    37,
-   0.4
+   0.43
+  ],
+  [
+   "Belgium",
+   32,
+   0.37
   ]
  ],
- "industry_share_2026": 24.0,
- "industry_only_share_2026": 2.5,
- "papers_with_mapped_org_2026": 94.4,
+ "industry_share_2026": 25.9,
+ "industry_only_share_2026": 2.4,
+ "papers_with_mapped_org_2026": 94.9,
  "institutions_2025": [
   [
    "Tsinghua University",
-   367
+   406
   ],
   [
    "Google",
-   264
+   316
   ],
   [
    "Peking University",
-   263
+   264
   ],
   [
    "Shanghai Jiao Tong University",
    232
   ],
   [
-   "Chinese Academy of Sciences",
-   227
-  ],
-  [
    "NUS",
-   217
+   220
   ],
   [
    "Stanford University",
-   213
+   218
+  ],
+  [
+   "Chinese Academy of Sciences",
+   210
   ],
   [
    "Zhejiang University",
-   208
-  ],
-  [
-   "CUHK",
-   205
-  ],
-  [
-   "NTU Singapore",
-   198
+   210
   ],
   [
    "Carnegie Mellon University",
-   195
+   205
+  ],
+  [
+   "CUHK",
+   203
+  ],
+  [
+   "NTU Singapore",
+   199
   ],
   [
    "MIT",
-   191
+   198
   ],
   [
    "USTC",
@@ -1829,7 +1839,7 @@
   ],
   [
    "HKUST",
-   170
+   172
   ],
   [
    "Fudan University",
@@ -1837,30 +1847,34 @@
   ],
   [
    "UC Berkeley",
-   156
+   165
   ],
   [
    "Meta",
-   150
+   164
   ],
   [
    "Microsoft",
-   144
+   155
   ],
   [
    "UIUC",
-   139
+   142
   ],
   [
    "Alibaba",
-   137
+   138
+  ],
+  [
+   "Tencent",
+   130
   ],
   [
    "Nanjing University",
    128
   ],
   [
-   "Tencent",
+   "ByteDance",
    127
   ],
   [
@@ -1868,36 +1882,40 @@
    125
   ],
   [
-   "ByteDance",
+   "University of Hong Kong",
    125
   ],
   [
-   "University of Hong Kong",
-   122
-  ],
-  [
    "University of Oxford",
-   119
+   120
   ],
   [
    "Harbin Institute of Technology",
    116
   ],
   [
+   "ETH Zurich",
+   116
+  ],
+  [
+   "Huawei",
+   115
+  ],
+  [
+   "UC San Diego",
+   114
+  ],
+  [
+   "Amazon",
+   113
+  ],
+  [
    "Shanghai AI Laboratory",
    113
   ],
   [
-   "Huawei",
-   113
-  ],
-  [
-   "UC San Diego",
-   107
-  ],
-  [
-   "ETH Zurich",
-   107
+   "Harvard University",
+   109
   ],
   [
    "Sun Yat-sen University",
@@ -1905,157 +1923,159 @@
   ],
   [
    "Princeton University",
-   98
-  ],
-  [
-   "Harvard University",
-   96
-  ],
-  [
-   "Beihang University",
-   95
-  ],
-  [
-   "UCLA",
-   90
-  ],
-  [
-   "Amazon",
-   89
+   100
   ],
   [
    "New York University",
-   89
+   99
+  ],
+  [
+   "Beihang University",
+   97
   ],
   [
    "NVIDIA",
-   88
+   97
   ],
   [
-   "EPFL",
-   88
+   "MBZUAI",
+   97
+  ],
+  [
+   "UCLA",
+   91
   ]
  ],
  "countries_2025": [
   [
    "USA",
-   2667,
-   46.8
+   2722,
+   47.49
   ],
   [
    "China",
-   2404,
-   42.2
+   2420,
+   42.22
   ],
   [
    "Hong Kong",
-   583,
-   10.2
+   585,
+   10.21
   ],
   [
    "UK",
-   429,
-   7.5
+   444,
+   7.75
   ],
   [
    "Singapore",
-   428,
-   7.5
-  ],
-  [
-   "South Korea",
-   301,
-   5.3
+   435,
+   7.59
   ],
   [
    "Germany",
-   293,
-   5.1
+   312,
+   5.44
+  ],
+  [
+   "South Korea",
+   305,
+   5.32
   ],
   [
    "Canada",
-   279,
-   4.9
+   304,
+   5.3
   ],
   [
    "Australia",
-   231,
-   4.1
+   233,
+   4.06
   ],
   [
    "Switzerland",
-   214,
-   3.8
+   226,
+   3.94
   ],
   [
    "France",
-   120,
-   2.1
+   150,
+   2.62
   ],
   [
    "Japan",
-   119,
-   2.1
+   143,
+   2.49
   ],
   [
    "Israel",
-   105,
-   1.8
+   114,
+   1.99
   ],
   [
    "UAE",
-   93,
-   1.6
+   106,
+   1.85
   ],
   [
    "Netherlands",
-   81,
-   1.4
+   85,
+   1.48
   ],
   [
    "Italy",
-   73,
-   1.3
+   79,
+   1.38
   ],
   [
    "Austria",
-   46,
-   0.8
+   47,
+   0.82
   ],
   [
    "Denmark",
    41,
-   0.7
+   0.72
+  ],
+  [
+   "Saudi Arabia",
+   29,
+   0.51
   ],
   [
    "India",
    27,
-   0.5
-  ],
-  [
-   "Saudi Arabia",
-   27,
-   0.5
+   0.47
   ],
   [
    "Sweden",
-   25,
-   0.4
-  ],
-  [
-   "Taiwan",
-   23,
-   0.4
+   26,
+   0.45
   ],
   [
    "Finland",
-   21,
-   0.4
+   25,
+   0.44
+  ],
+  [
+   "Taiwan",
+   24,
+   0.42
+  ],
+  [
+   "Poland",
+   19,
+   0.33
+  ],
+  [
+   "Belgium",
+   17,
+   0.3
   ]
  ],
- "industry_share_2025": 27.7,
- "industry_only_share_2025": 2.2,
- "papers_with_mapped_org_2025": 97.3,
+ "industry_share_2025": 29.4,
+ "industry_only_share_2025": 1.9,
+ "papers_with_mapped_org_2025": 97.9,
  "authors_mean": {
   "2026": 5.47,
   "2025": 5.86
@@ -2070,7 +2090,7 @@
  },
  "10plus_author_pct": {
   "2026": 8.91,
-  "2025": 10.14
+  "2025": 10.13
  },
  "vocabulary": [
   {
@@ -2104,21 +2124,21 @@
    "delta_pp": 1.6
   },
   {
-   "term": "reasoning",
-   "pct_2026": 17.4,
-   "pct_2025": 16.2,
-   "delta_pp": 1.2
-  },
-  {
    "term": "medical / clinical",
    "pct_2026": 4.0,
    "pct_2025": 2.9,
    "delta_pp": 1.1
   },
   {
+   "term": "reasoning",
+   "pct_2026": 17.4,
+   "pct_2025": 16.2,
+   "delta_pp": 1.1
+  },
+  {
    "term": "interpretability",
    "pct_2026": 7.4,
-   "pct_2025": 6.3,
+   "pct_2025": 6.4,
    "delta_pp": 1.1
   },
   {
@@ -2136,7 +2156,7 @@
   {
    "term": "science (protein / molecule / materials)",
    "pct_2026": 4.9,
-   "pct_2025": 4.2,
+   "pct_2025": 4.3,
    "delta_pp": 0.6
   },
   {
@@ -2146,16 +2166,16 @@
    "delta_pp": 0.5
   },
   {
-   "term": "LLM / large language model",
-   "pct_2026": 25.8,
-   "pct_2025": 25.4,
-   "delta_pp": 0.5
-  },
-  {
    "term": "multimodal / VLM",
    "pct_2026": 14.6,
    "pct_2025": 14.2,
-   "delta_pp": 0.4
+   "delta_pp": 0.5
+  },
+  {
+   "term": "LLM / large language model",
+   "pct_2026": 25.8,
+   "pct_2025": 25.3,
+   "delta_pp": 0.5
   },
   {
    "term": "quantum",
@@ -2239,7 +2259,7 @@
    "term": "efficient / efficiency",
    "pct_2026": 21.3,
    "pct_2025": 29.2,
-   "delta_pp": -7.9
+   "delta_pp": -8.0
   }
  ]
 }
