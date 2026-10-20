@@ -1,0 +1,389 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>The NeurIPS 2026 Atlas</title><meta name="description" content="What 9,110 accepted NeurIPS 2026 papers say about where machine learning is going: topics, growth since 2025, orals, three cities and who wrote them.">
+<meta property="og:title" content="The NeurIPS 2026 Atlas"><meta property="og:description" content="What 9,110 accepted NeurIPS 2026 papers say about where machine learning is going: topics, growth since 2025, orals, three cities and who wrote them.">
+<meta property="og:image" content="https://mohammadi.cv/neurips/2026/figures/atlas_static.png"><meta property="og:url" content="https://mohammadi.cv/neurips/2026/index.html">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#1f2a44;--muted:#5c677d;--accent:#d9480f;--bg:#ffffff;--card:#f6f7f9;--line:#e3e6ea}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--ink:#e8ebf1;--muted:#a3acbd;--accent:#ff8a4c;--bg:#12151c;--card:#1b2029;--line:#2a313d}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.65 Inter,system-ui,-apple-system,Segoe UI,sans-serif}
+nav{position:sticky;top:0;background:var(--bg);border-bottom:1px solid var(--line);z-index:5}
+nav div{max-width:780px;margin:0 auto;padding:10px 16px;display:flex;gap:18px;flex-wrap:wrap;font-size:15px}
+nav a{color:var(--muted);text-decoration:none}nav a:hover{color:var(--accent)}
+main{max-width:780px;margin:0 auto;padding:24px 16px 80px}
+h1{font-size:2.1rem;line-height:1.2;margin:.6em 0 .3em}h2{margin-top:2.2em;font-size:1.45rem}h3{font-size:1.15rem}
+a{color:var(--accent)}img{max-width:100%;height:auto;border-radius:8px;background:#fff}
+figure{margin:1.6em 0}figcaption{color:var(--muted);font-size:14px;margin-top:6px}
+iframe.chart{width:100%;height:640px;border:1px solid var(--line);border-radius:10px;background:#fff;margin:.4em 0 1.6em}
+table{border-collapse:collapse;width:100%;font-size:14px;display:block;overflow-x:auto}
+th,td{border-bottom:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}
+blockquote{margin:1em 0;padding:.6em 1em;background:var(--card);border-left:3px solid var(--accent);border-radius:4px}
+code{background:var(--card);padding:1px 5px;border-radius:4px;font-size:.9em}
+.cta{display:inline-block;background:var(--accent);color:#fff;padding:10px 16px;border-radius:8px;text-decoration:none;font-weight:600}
+footer{color:var(--muted);font-size:14px;border-top:1px solid var(--line);margin-top:3em;padding-top:1em}
+</style></head><body><nav><div><a href="../"><b>NeurIPS Atlas</b></a><a href="index.html">2026</a><a href="atlas.html">Interactive map</a><a href="papers.html">All papers</a><a href="charts/treemap.html">All subtopics</a><a href="appendix.html">Appendix</a><a href="https://github.com/mohammadi-hadi/neurips">Code &amp; data</a></div></nav><main><h1
+id="the-neurips-2026-atlas-what-9110-papers-say-about-where-machine-learning-is-going">The
+NeurIPS 2026 Atlas: what 9,110 papers say about where machine learning
+is going</h1>
+<p>NeurIPS 2026 accepted 9,110 papers. Nobody reads 9,110 papers,
+including the people who review them. So I did the next best thing: I
+put every title and abstract through an embedding model, grouped them
+into topics, and compared the result with the 5,859 papers accepted in
+2025.</p>
+<p>If I had to sum it up in one line: the fastest-growing part of
+machine learning in 2026 is agents, and how to measure them.</p>
+<h2 id="the-short-version">The short version</h2>
+<ul>
+<li>Agents doubled their share. The LLM Agents area went from 3.5% of
+papers in 2025 to 7.7% in 2026 (700 papers). No other area moved by more
+than 2 percentage points.</li>
+<li>Six of the ten subtopics that gained the most share are about
+agents: agent benchmarks, agent reliability, agent memory, agent safety
+and prompt injection, coding agents, and multi-agent systems.</li>
+<li>"Benchmark" is everywhere. 38% of 2026 abstracts use the word, up
+from 32% in 2025.</li>
+<li>Some 2025 favourites shrank. Graph neural networks fell from 2.5% to
+1.4% of papers, efficient chain-of-thought from 2.5% to 1.5%, and
+LoRA-style fine-tuning from 1.3% to 0.9%.</li>
+<li>Theory gets the stage. Deep learning theory and neuroscience papers
+were made orals or spotlights at 8.4%, against 5.2% for the conference
+as a whole.</li>
+<li>The conference is split across three cities. 67% of papers present
+in Sydney, 19% in Atlanta and 14% in Paris, and the more theoretical
+areas lean towards Paris.</li>
+<li>Single-author papers rose from 61 to 282, from 1.0% to 3.1% of all
+papers.</li>
+</ul>
+<h2 id="how-it-was-made">How it was made</h2>
+<p>Everything comes from public data on neurips.cc: the "Download Data"
+export with titles, authors, affiliations and abstracts for 2026 and
+2025, plus the schedule data behind the virtual site, which says whether
+a paper is an oral, spotlight or poster and in which city it is
+presented. For the 1,919 papers missing from that file, the city and
+time come from each paper's own page on neurips.cc. I pulled it all on
+20 October 2026.</p>
+<p>Each paper's title and abstract was turned into a vector with
+Qwen3-Embedding-0.6B, an open embedding model that I ran locally.
+K-means then split the 2026 papers into 150 subtopics, and those were
+grouped into 20 broader research areas.</p>
+<p>One detail matters for every comparison below. The topics were fitted
+on 2026 papers only. Each 2025 paper was then assigned to its nearest
+2026 subtopic. That way both years are measured with the same ruler, and
+a change in share means the field moved, not that the clustering drew
+new lines.</p>
+<p>A language model proposed a name and a one-line description for each
+subtopic from its most typical titles, abstracts and distinctive terms.
+The full list was then checked for overlapping and inconsistent names,
+and the names are published in the repository so anyone can review
+them.</p>
+<p>Because conference sizes differ (9,110 papers against 5,859), I
+compare shares of each year's papers, and differences in share are given
+in percentage points.</p>
+<p>You can explore the result yourself in the <a
+href="atlas.html">interactive
+atlas</a>: every paper is a dot, you can search by keyword or title, and
+clicking a dot opens the paper. The atlas can also be recoloured by how
+much each subtopic grew since 2025, by city, by oral/spotlight status,
+by who wrote the paper (academia, industry or both) and by team size,
+and a day-by-day bar lets you show only the papers presented on a given
+day.</p>
+<h2 id="the-map">The map</h2>
+<p><img src="figures/atlas_static.png"
+alt="Map of all 9,110 NeurIPS 2026 papers, coloured by 20 research areas" /></p>
+<p>Papers that are close on the map have similar abstracts. The language
+model work fills the top right: behaviour and safety, agents, reasoning
+and retrieval, post-training. Vision, video, 3D and robotics sit
+together on the left. Theory, optimisation, statistics, bandits and
+graph learning gather in the lower right, and the science-flavoured
+areas (biomolecules, PDEs, time series) sit along the bottom.</p>
+<h2 id="where-the-field-moved">Where the field moved</h2>
+<p><img src="figures/field_moved.png"
+alt="The 2026 map coloured by how much each subtopic&#39;s share of papers changed since 2025" /></p>
+<p>This is the same map, coloured by change instead of by topic. Red
+regions hold a larger share of the conference than they did in 2025;
+blue regions hold a smaller one. The top of the map, where the agent and
+reasoning work sits, is the one large red block. Most of the vision
+side, the statistical and bandit corner, and graph learning at the
+bottom are blue: still large fields, but a smaller part of a conference
+that grew by more than half.</p>
+<p>The colour of each region comes from the subtopic shares computed in
+the embedding space, not from where the 2025 papers would land on the
+map, so the picture does not depend on the map layout.</p>
+<h2 id="the-biggest-areas">The biggest areas</h2>
+<p>The largest area is LLM Behavior &amp; Safety, with 943 papers, or
+10.4% of the conference. It covers interpretability, evaluation,
+sycophancy, hallucination, jailbreaks and unlearning. Next come 3D
+Vision &amp; Perception (781), LLM Agents (700), DL Theory &amp;
+Neuroscience (691) and Efficient LLMs &amp; Architectures (680).</p>
+<h2 id="which-areas-grew-and-which-shrank">Which areas grew and which
+shrank</h2>
+<p><img src="figures/areas_slope.png"
+alt="Share of papers per research area, 2025 to 2026" /></p>
+<iframe class="chart" style="height:680px" src="charts/areas_dumbbell.html" loading="lazy" title="interactive chart: areas_dumbbell"></iframe>
+
+<p>LLM Agents is the headline. It held 3.5% of papers in 2025 and 7.7%
+in 2026, a gain of 4.2 percentage points. The next-biggest gain is LLM
+Behavior &amp; Safety at 1.3 points. Robotics &amp; Embodied AI (+0.7),
+Diffusion, Flows &amp; Inference (+0.6) and LLM Post-Training (+0.6)
+also grew.</p>
+<p>The losers are spread more thinly. 3D Vision &amp; Perception lost
+1.8 points, Image &amp; 3D Generation 1.5, Trustworthy &amp; Statistical
+ML 1.1, Graph Learning 0.9 and Vision-Language Models 0.7. Most other
+areas stayed within half a point of their 2025 share.</p>
+<p>Inside the agents area, growth is broad. Every one of its ten
+subtopics grew its share, and these six moved the most:</p>
+<p><img src="figures/agents_family.png"
+alt="Papers per subtopic in the LLM Agents area, 2025 and 2026" /></p>
+<table>
+<thead>
+<tr>
+<th>Subtopic</th>
+<th>2026 papers</th>
+<th>Share 2025</th>
+<th>Share 2026</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tool-Use, Web and GUI Agent Benchmarks</td>
+<td>113</td>
+<td>0.38%</td>
+<td>1.24%</td>
+</tr>
+<tr>
+<td>LLM Agent Reliability and Efficiency</td>
+<td>88</td>
+<td>0.29%</td>
+<td>0.97%</td>
+</tr>
+<tr>
+<td>LLM Agent Safety and Prompt Injection</td>
+<td>76</td>
+<td>0.32%</td>
+<td>0.83%</td>
+</tr>
+<tr>
+<td>LLM Multi-Agent Systems</td>
+<td>73</td>
+<td>0.41%</td>
+<td>0.80%</td>
+</tr>
+<tr>
+<td>Long-Term Memory for LLM Agents</td>
+<td>66</td>
+<td>0.12%</td>
+<td>0.72%</td>
+</tr>
+<tr>
+<td>Coding Agents and SWE Benchmarks</td>
+<td>55</td>
+<td>0.20%</td>
+<td>0.60%</td>
+</tr>
+</tbody>
+</table>
+<p>Read the names in that table again. Most of them are about whether
+agents work and whether they can be trusted: how to test them, when they
+should abstain, how they remember, how they get attacked. A year ago
+this was a small corner of the conference. Agent memory alone went from
+0.1% to 0.7% of papers.</p>
+<h2 id="subtopic-movers">Subtopic movers</h2>
+<p><img src="figures/movers_x.png"
+alt="Subtopics with the largest gains and losses in share of papers" /></p>
+<iframe class="chart" style="height:800px" src="charts/treemap.html" loading="lazy" title="interactive chart: treemap"></iframe>
+
+<p>The ten subtopics that gained the most share include the six agent
+topics above. The other four are worth a look too:</p>
+<ul>
+<li>Model Selection and Evaluation Pitfalls, from 0.38% to 0.83%: papers
+about how benchmarks and model comparisons go wrong.</li>
+<li>Decoding for Diffusion Language Models, from 0.55% to 1.00%: text
+generated by diffusion instead of one token at a time.</li>
+<li>Vision-Language-Action Robot Policies, from 0.60% to 1.03%: one
+model that sees, reads instructions and moves a robot.</li>
+<li>GRPO-Style RL with Verifiable Rewards, from 0.32% to 0.71%: the
+reinforcement learning recipe behind recent reasoning models.</li>
+</ul>
+<p>On the shrinking side, the biggest drop is Graph Neural Networks and
+Foundation Models, from 2.49% to 1.43% of papers. Efficient
+Chain-of-Thought Reasoning is close behind, from 2.47% to 1.50%. It is
+still one of the largest subtopics in 2026 with 137 papers, but the rush
+of 2025 papers on shortening reasoning traces has cooled.</p>
+<p>Two staples of LLM fine-tuning also lost ground. LoRA and
+parameter-efficient fine-tuning fell from 1.31% to 0.90%, and preference
+optimisation for alignment (the DPO family) from 0.97% to 0.57%.
+Learning with noisy labels, brain recording analysis, and concept
+erasure in text-to-image models roughly halved their shares.</p>
+<p>None of these topics is disappearing. Graph neural networks still
+have 130 papers, down from 146, while the conference as a whole grew by
+more than half. LoRA papers actually rose in number (77 to 82); their
+share fell because the rest of the conference grew faster.</p>
+<p>The <a
+href="charts/treemap.html">treemap</a>
+shows all 150 subtopics at once, sized by paper count and coloured by
+growth since 2025.</p>
+<h2 id="what-the-abstracts-talk-about">What the abstracts talk
+about</h2>
+<p><img src="figures/vocabulary_trends.png"
+alt="Change in the share of abstracts mentioning selected terms, 2025 to 2026" /></p>
+<iframe class="chart" style="height:740px" src="charts/vocabulary.html" loading="lazy" title="interactive chart: vocabulary"></iframe>
+
+<p>Topic clusters can hide shifts in language, so I also counted how
+many abstracts mention a set of terms.</p>
+<p>"Benchmark" leads. It appears in 38.0% of 2026 abstracts against
+32.2% in 2025, a rise of 5.8 points. More than a third of papers now
+mention benchmarks when describing their work, and the conference is
+also looking hard at benchmarks themselves: two of this year's orals are
+"Benchmark Health Index: A Systematic Framework for Benchmarking the
+Benchmarks of LLMs" and "Leaderboard Hacking: Preference-Based Model
+Evaluations are Vulnerable to Manipulation".</p>
+<p>"Agent" or "agentic" comes second, from 9.3% to 14.4% of abstracts.
+Smaller rises: safety and alignment (12.6% to 14.5%), flow matching
+(1.2% to 3.1%) and RLVR or GRPO (2.0% to 3.5%).</p>
+<p>One drop is large enough to mention, though I would read it
+carefully. The words "efficient" or "efficiency" appear in 21.3% of 2026
+abstracts, down from 29.2%. Yet the Efficient LLMs &amp; Architectures
+area barely moved, from 7.9% to 7.5% of papers. So the work on
+efficiency is still there. What changed is how often abstracts use the
+word; the data cannot say why. It could also partly reflect differences
+between the two exports, so I treat it as a secondary observation.</p>
+<h2 id="where-the-orals-and-spotlights-went">Where the orals and
+spotlights went</h2>
+<p><img src="figures/highlight_rate_by_area.png"
+alt="Share of papers made oral or spotlight, by research area" /></p>
+<p>When the data was pulled, 108 papers were orals and 266 were
+spotlights, and 1,905 papers had no published decision yet. Of the
+papers with a decision, 5.2% were orals or spotlights.</p>
+<p>The rate differs by area. DL Theory &amp; Neuroscience comes first at
+8.4%, followed by Time Series &amp; Forecasting (6.4%), LLM Agents
+(6.3%), Diffusion, Flows &amp; Inference (6.2%) and Trustworthy &amp;
+Statistical ML (6.1%). At the bottom are Video Generation &amp;
+Understanding (2.4%) and LLM Reasoning &amp; Retrieval (2.7%).</p>
+<p>Agents, then, are both numerous and highlighted a little above the
+average rate. The single subtopic with the most orals and spotlights is
+Human-AI Collaboration and Oversight, with 11 from its 80 papers. Some
+theory subtopics also stand out: PAC Learning and Sample Complexity has
+8 orals and spotlights from 48 papers, and Deep Network Theory and
+Learning Dynamics has 10 from 114.</p>
+<p>These rates rest on small numbers. An area with 150 decided papers
+can move a full point with two extra spotlights, so read the middle of
+the chart as roughly equal.</p>
+<h2 id="three-cities">Three cities</h2>
+<p><img src="figures/cities_lean.png"
+alt="How far each area&#39;s posters lean towards Sydney, Atlanta or Paris" /></p>
+<iframe class="chart" style="height:680px" src="charts/site_mix.html" loading="lazy" title="interactive chart: site_mix"></iframe>
+
+<p>NeurIPS 2026 runs in three places. Of the 9,105 papers with a city,
+66.6% present in Sydney, 19.4% in Atlanta and 13.9% in Paris.</p>
+<p>The split is not the same everywhere. Vision and robotics are the
+most Sydney-heavy: Robotics &amp; Embodied AI (75.3% in Sydney), Image
+&amp; 3D Generation (75.2%) and Video Generation &amp; Understanding
+(74.3%).</p>
+<p>Paris leans theoretical. Bandits, Games &amp; Mechanisms has 26.7% of
+its papers there and DL Theory &amp; Neuroscience 21.7%, against 13.9%
+for the conference. Diffusion, Flows &amp; Inference (21.2%) and
+Trustworthy &amp; Statistical ML (20.3%) follow. Atlanta draws the most
+from Trustworthy &amp; Statistical ML (25.1%), Bandits, Games &amp;
+Mechanisms (25.0%), Reinforcement Learning (24.1%) and PDEs &amp;
+Dynamical Systems (23.1%). Bandits, Games &amp; Mechanisms is the most
+evenly spread area, with only 48.3% of its papers in Sydney.</p>
+<p>Where the cities come from: the bulk schedule file was missing 1,919
+papers, so their city was read from each paper's own page on neurips.cc.
+Five papers are in the bulk schedule file without a session or city
+label and are left out of these shares (two of them are listed for Paris
+elsewhere in the schedule).</p>
+<h2 id="who-wrote-the-papers">Who wrote the papers</h2>
+<p><img src="figures/top_institutions.png"
+alt="Organisations with the most NeurIPS 2026 papers" /></p>
+<p>Tsinghua University appears on the most papers (442), followed by
+Shanghai Jiao Tong University (324), Google (314), Peking University
+(300), Stanford (283) and MIT (276). Google is the top company. Alibaba
+(198), Tencent (188), Microsoft (187) and Meta (164) are the next
+companies on the list.</p>
+<p><img src="figures/countries.png"
+alt="Share of papers with at least one author from each country, 2026 and 2025" /></p>
+<iframe class="chart" style="height:680px" src="charts/countries.html" loading="lazy" title="interactive chart: countries"></iframe>
+
+<p>A paper counts once for every country on its author list, and shares
+are computed over papers with at least one mapped affiliation. The
+United States appears on 45.1% of those papers and China on 34.4%. Hong
+Kong (8.6%), the UK (8.6%), South Korea (7.2%) and Singapore (6.3%) come
+next. South Korea grew from 5.3% to 7.2%, with KAIST on 238 papers.
+China's share is lower than in 2025 (42.2%), but part of that may come
+from affiliation mapping, which covers fewer 2026 papers (see the
+caveats).</p>
+<p>Industry is less present than a year ago: 24.0% of mapped papers have
+at least one author from a company, against 27.7% in 2025. Papers
+written only by industry authors are rare, 2.5%.</p>
+<p>Teams are slightly smaller. The mean author count fell from 5.9 to
+5.5, the median stayed at 5, and papers with ten or more authors went
+from 10.1% to 8.9%. At the other end, single-author papers tripled their
+share, from 1.0% (61 papers) to 3.1% (282).</p>
+<h2 id="caveats">Caveats</h2>
+<ul>
+<li><strong>Clusters are a lens.</strong> Many papers sit between
+topics, and a different number of clusters would draw different
+boundaries. The shares are a good guide to direction and rough size,
+less so to the second decimal.</li>
+<li><strong>The main result does not depend on how the topics were
+fitted.</strong> As a check (<code>src/11_robustness.py</code>), the 150
+subtopics were refitted on 2025 papers only and on both years pooled.
+The LLM Agents area roughly doubles its share in all three versions
+(3.5% → 7.7%, 3.2% → 6.8%, 2.9% → 7.3%), and 3D Vision &amp; Perception,
+Image &amp; 3D Generation, Trustworthy &amp; Statistical ML, Graph
+Learning and Vision-Language Models lose share in all three. The size of
+individual subtopic moves varies more between fits, so read the subtopic
+factors as approximate.</li>
+<li><strong>Affiliation mapping is partial.</strong> The 1,200 most
+frequent affiliation strings were merged into canonical organisations
+with a country and a sector. That covers 97.3% of 2025 papers but 94.4%
+of 2026 papers, so the country and industry numbers for 2026 rest on a
+slightly smaller base, and any group that uses many spellings of its
+affiliation may be undercounted.</li>
+<li><strong>The two exports may differ.</strong> The 2025 and 2026
+downloads may not include exactly the same tracks.</li>
+<li><strong>Decisions are incomplete.</strong> When the data was pulled,
+1,905 papers had no published decision, which affects the oral and
+spotlight rates. These are papers missing from the bulk schedule file
+(1,919 in all); their city and time come from each paper's own page on
+neurips.cc, which does not show the decision. Every paper has a session,
+and all but five have a city.</li>
+<li><strong>Names were machine-proposed.</strong> Subtopic names came
+from a language model and were reviewed by hand. The appendix lists
+every subtopic with its description so you can judge them.</li>
+</ul>
+<h2 id="explore-it-yourself">Explore it yourself</h2>
+<ul>
+<li><a href="atlas.html">Interactive
+atlas</a>: all 9,110 papers on one map, searchable; click a dot for its
+NeurIPS page, an arXiv search, and its OpenReview page and PDF.</li>
+<li><a href="papers.html">Paper
+index</a>: every paper in a searchable list, filterable by area, city
+and status, with the same links.</li>
+<li><a
+href="charts/treemap.html">Subtopic
+treemap</a>: all 150 subtopics, coloured by growth since 2025.</li>
+<li><a
+href="appendix.html">Appendix</a>:
+every area and subtopic with descriptions, paper counts, 2025 and 2026
+shares, and every oral with its OpenReview and PDF links.</li>
+<li><a href="https://github.com/mohammadi-hadi/neurips">Code and
+data</a>: the full pipeline, from download to figures.</li>
+</ul>
+<p>NeurIPS 2026 papers are not yet public on OpenReview (as of 20
+October 2026). The OpenReview and PDF links are the official ones and
+will open once the papers are released; until then, the NeurIPS page and
+the arXiv search are the way in.</p>
+<p>If you are going to NeurIPS, the atlas is also a quick way to find
+the posters near your own work.</p>
+<hr />
+<p>Hadi Mohammadi, AI and data science researcher. Find me at <a
+href="https://mohammadi.cv">mohammadi.cv</a>.</p>
+
+<footer>Data: public NeurIPS 2025 and 2026 paper lists from neurips.cc, pulled 20 October 2026.
+Code and method: <a href="https://github.com/mohammadi-hadi/neurips">github.com/mohammadi-hadi/neurips</a>.</footer>
+</main></body></html>

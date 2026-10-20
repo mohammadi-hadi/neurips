@@ -10,7 +10,7 @@ import plotly.graph_objects as go
 import plotly.express as px
 
 ROOT = Path(__file__).resolve().parents[1]
-P, OUT, DOCS = ROOT / "data/processed", ROOT / "outputs", ROOT / "docs"
+P, OUT, DOCS = ROOT / "data/processed", ROOT / "outputs", ROOT / "docs/2026"
 (DOCS / "charts").mkdir(parents=True, exist_ok=True)
 INK, A26, A25 = "#1f2a44", "#d9480f", "#8aa1b1"
 FONT = dict(family="Inter, system-ui, sans-serif", size=13, color=INK)

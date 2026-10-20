@@ -10,7 +10,7 @@ from common import load_papers
 import datamapplot
 
 ROOT = Path(__file__).resolve().parents[1]
-P, OUT, DOCS = ROOT / "data/processed", ROOT / "outputs", ROOT / "docs"
+P, OUT, DOCS = ROOT / "data/processed", ROOT / "outputs", ROOT / "docs/2026"
 (OUT / "figures").mkdir(parents=True, exist_ok=True)
 DOCS.mkdir(exist_ok=True)
 
@@ -166,6 +166,6 @@ for name, title in [("atlas_static.png", "NeurIPS 2026 paper atlas"), ("atlas_ca
         sp.set_visible(False)
     if title:
         fig.text(0.01, 0.01, "Data: NeurIPS 2026 accepted papers (neurips.cc) · Analysis: Hadi Mohammadi · "
-                 "github.com/mohammadi-hadi/NeurIPS2026_Analysis", fontsize=10, color=MUTED)
+                 "github.com/mohammadi-hadi/neurips", fontsize=10, color=MUTED)
     fig.savefig(OUT / "figures" / name, bbox_inches="tight", dpi=150, facecolor=BG)
 print("saved", DOCS / "atlas.html")

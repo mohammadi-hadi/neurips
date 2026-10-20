@@ -17,8 +17,8 @@ import pandas as pd
 import requests
 
 ROOT = Path(__file__).resolve().parents[1]
-DOCS, OUT = ROOT / "docs", ROOT / "outputs"
-SITE = "https://mohammadi-hadi.github.io/NeurIPS2026_Analysis/"
+DOCS, OUT = ROOT / "docs/2026", ROOT / "outputs"
+SITE = "https://mohammadi.cv/neurips/2026/"
 UA = {"User-Agent": "Mozilla/5.0 (link check; NeurIPS paper overview)"}
 
 links = []  # (source file, link)
@@ -34,7 +34,7 @@ for f in sorted(DOCS.glob("*.html")) + sorted((DOCS / "charts").glob("*.html")):
         if 'rel="preconnect"' in tag or "${" in m.group(1):  # font preconnect host / JS template, not links
             continue
         links.append((f, m.group(1)))
-for f in [ROOT / "docs/papers.html"]:
+for f in [DOCS / "papers.html"]:
     links.append((f, "https://neurips.cc/virtual/2026/poster/152156"))  # template of the JS-built links
 
 idx = pd.read_csv(OUT / "papers_index.csv").fillna("")
@@ -60,8 +60,8 @@ def check_external(url):
         return seen[url]
     if url.startswith(SITE):
         res = ("pending", "GitHub Pages site not published yet; checked locally via docs/")
-    elif url.rstrip("/") == "https://github.com/mohammadi-hadi/NeurIPS2026_Analysis" or \
-            url.startswith("https://github.com/mohammadi-hadi/NeurIPS2026_Analysis/"):
+    elif url.rstrip("/") == "https://github.com/mohammadi-hadi/neurips" or \
+            url.startswith("https://github.com/mohammadi-hadi/neurips/"):
         r = requests.get(url, headers=UA, timeout=40)
         res = ("ok", "HTTP 200") if r.status_code == 200 else ("pending", "repository is private; public link works once it is made public")
     elif "openreview.net" in url:

@@ -7,7 +7,7 @@ import pandas as pd
 from common import load_papers, OPENREVIEW_NOTE
 
 ROOT = Path(__file__).resolve().parents[1]
-OUT, DOCS = ROOT / "outputs", ROOT / "docs"
+OUT, DOCS = ROOT / "outputs", ROOT / "docs/2026"
 L = json.load(open(ROOT / "data/labels/labels.json"))
 fine_name = {int(k): v["name"] for k, v in L["fine"].items()}
 broad_name = {int(k): v["name"] for k, v in L["broad"].items()}
@@ -52,9 +52,9 @@ input{flex:1;min-width:220px}
 .tag.o{background:#c92a2a;color:#fff}.tag.s{background:#f08c00;color:#fff}
 #more{margin-top:14px;padding:8px 14px;border:0;border-radius:8px;background:var(--accent);color:#fff;font:inherit;cursor:pointer}
 </style></head><body>
-<nav><div><a href="index.html"><b>NeurIPS 2026 Atlas</b></a><a href="atlas.html">Interactive map</a>
+<nav><div><a href="../"><b>NeurIPS Atlas</b></a><a href="index.html">2026</a><a href="atlas.html">Interactive map</a>
 <a href="papers.html">All papers</a><a href="charts/treemap.html">All subtopics</a><a href="appendix.html">Appendix</a>
-<a href="https://github.com/mohammadi-hadi/NeurIPS2026_Analysis">Code &amp; data</a></div></nav>
+<a href="https://github.com/mohammadi-hadi/neurips">Code &amp; data</a></div></nav>
 <main><h1>All NeurIPS 2026 papers</h1>
 <p>__N__ papers with links to the NeurIPS page, an arXiv search, OpenReview and the PDF. Search titles and authors, or filter by area, city and status.
 Poster times are local to the city.</p><p class="m">* __NOTE__</p>

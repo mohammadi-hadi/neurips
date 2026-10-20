@@ -26,7 +26,7 @@ A language model proposed a name and a one-line description for each subtopic fr
 
 Because conference sizes differ (9,110 papers against 5,859), I compare shares of each year's papers, and differences in share are given in percentage points.
 
-You can explore the result yourself in the [interactive atlas](https://mohammadi-hadi.github.io/NeurIPS2026_Analysis/atlas.html): every paper is a dot, you can search by keyword or title, and clicking a dot opens the paper. The atlas can also be recoloured by how much each subtopic grew since 2025, by city, by oral/spotlight status, by who wrote the paper (academia, industry or both) and by team size, and a day-by-day bar lets you show only the papers presented on a given day.
+You can explore the result yourself in the [interactive atlas](https://mohammadi.cv/neurips/2026/atlas.html): every paper is a dot, you can search by keyword or title, and clicking a dot opens the paper. The atlas can also be recoloured by how much each subtopic grew since 2025, by city, by oral/spotlight status, by who wrote the paper (academia, industry or both) and by team size, and a day-by-day bar lets you show only the papers presented on a given day.
 
 ## The map
 
@@ -90,7 +90,7 @@ Two staples of LLM fine-tuning also lost ground. LoRA and parameter-efficient fi
 
 None of these topics is disappearing. Graph neural networks still have 130 papers, down from 146, while the conference as a whole grew by more than half. LoRA papers actually rose in number (77 to 82); their share fell because the rest of the conference grew faster.
 
-The [treemap](https://mohammadi-hadi.github.io/NeurIPS2026_Analysis/charts/treemap.html) shows all 150 subtopics at once, sized by paper count and coloured by growth since 2025.
+The [treemap](https://mohammadi.cv/neurips/2026/charts/treemap.html) shows all 150 subtopics at once, sized by paper count and coloured by growth since 2025.
 
 ## What the abstracts talk about
 
@@ -159,11 +159,11 @@ Teams are slightly smaller. The mean author count fell from 5.9 to 5.5, the medi
 
 ## Explore it yourself
 
-- [Interactive atlas](https://mohammadi-hadi.github.io/NeurIPS2026_Analysis/atlas.html): all 9,110 papers on one map, searchable; click a dot for its NeurIPS page, an arXiv search, and its OpenReview page and PDF.
-- [Paper index](https://mohammadi-hadi.github.io/NeurIPS2026_Analysis/papers.html): every paper in a searchable list, filterable by area, city and status, with the same links.
-- [Subtopic treemap](https://mohammadi-hadi.github.io/NeurIPS2026_Analysis/charts/treemap.html): all 150 subtopics, coloured by growth since 2025.
-- [Appendix](https://mohammadi-hadi.github.io/NeurIPS2026_Analysis/appendix.html): every area and subtopic with descriptions, paper counts, 2025 and 2026 shares, and every oral with its OpenReview and PDF links.
-- [Code and data](https://github.com/mohammadi-hadi/NeurIPS2026_Analysis): the full pipeline, from download to figures.
+- [Interactive atlas](https://mohammadi.cv/neurips/2026/atlas.html): all 9,110 papers on one map, searchable; click a dot for its NeurIPS page, an arXiv search, and its OpenReview page and PDF.
+- [Paper index](https://mohammadi.cv/neurips/2026/papers.html): every paper in a searchable list, filterable by area, city and status, with the same links.
+- [Subtopic treemap](https://mohammadi.cv/neurips/2026/charts/treemap.html): all 150 subtopics, coloured by growth since 2025.
+- [Appendix](https://mohammadi.cv/neurips/2026/appendix.html): every area and subtopic with descriptions, paper counts, 2025 and 2026 shares, and every oral with its OpenReview and PDF links.
+- [Code and data](https://github.com/mohammadi-hadi/neurips): the full pipeline, from download to figures.
 
 NeurIPS 2026 papers are not yet public on OpenReview (as of 20 October 2026). The OpenReview and PDF links are the official ones and will open once the papers are released; until then, the NeurIPS page and the arXiv search are the way in.
 

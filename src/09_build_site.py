@@ -4,8 +4,8 @@ import re, shutil, subprocess
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-DOCS = ROOT / "docs"
-SITE = "https://mohammadi-hadi.github.io/NeurIPS2026_Analysis/"
+DOCS = ROOT / "docs/2026"
+SITE = "https://mohammadi.cv/neurips/2026/"
 (DOCS / "figures").mkdir(parents=True, exist_ok=True)
 for f in (ROOT / "outputs/figures").glob("*.png"):
     shutil.copy(f, DOCS / "figures" / f.name)
@@ -31,9 +31,9 @@ code{background:var(--card);padding:1px 5px;border-radius:4px;font-size:.9em}
 footer{color:var(--muted);font-size:14px;border-top:1px solid var(--line);margin-top:3em;padding-top:1em}
 """
 
-NAV = ('<nav><div><a href="index.html"><b>NeurIPS 2026 Atlas</b></a><a href="atlas.html">Interactive map</a>'
+NAV = ('<nav><div><a href="../"><b>NeurIPS Atlas</b></a><a href="index.html">2026</a><a href="atlas.html">Interactive map</a>'
        '<a href="papers.html">All papers</a><a href="charts/treemap.html">All subtopics</a><a href="appendix.html">Appendix</a>'
-       '<a href="https://github.com/mohammadi-hadi/NeurIPS2026_Analysis">Code &amp; data</a></div></nav>')
+       '<a href="https://github.com/mohammadi-hadi/neurips">Code &amp; data</a></div></nav>')
 
 
 HEIGHTS = {"treemap": 800, "vocabulary": 740}
@@ -58,7 +58,7 @@ def page(md_path, out_name, title, description):
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 <style>{CSS}</style></head><body>{NAV}<main>{body}
 <footer>Data: public NeurIPS 2025 and 2026 paper lists from neurips.cc, pulled 20 October 2026.
-Code and method: <a href="https://github.com/mohammadi-hadi/NeurIPS2026_Analysis">github.com/mohammadi-hadi/NeurIPS2026_Analysis</a>.</footer>
+Code and method: <a href="https://github.com/mohammadi-hadi/neurips">github.com/mohammadi-hadi/neurips</a>.</footer>
 </main></body></html>"""
     (DOCS / out_name).write_text(html)
     print("wrote", DOCS / out_name)
@@ -68,4 +68,25 @@ page(ROOT / "report/BLOG.md", "index.html", "The NeurIPS 2026 Atlas",
      "What 9,110 accepted NeurIPS 2026 papers say about where machine learning is going: topics, growth since 2025, orals, three cities and who wrote them.")
 page(ROOT / "report/APPENDIX.md", "appendix.html", "NeurIPS 2026 Atlas: all areas and subtopics",
      "Every research area and subtopic of NeurIPS 2026 with paper counts, shares and orals.")
-(DOCS / ".nojekyll").write_text("")
+(ROOT / "docs/.nojekyll").write_text("")
+
+# landing page for mohammadi.cv/neurips
+LANDING = f"""<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><title>NeurIPS Atlas</title>
+<meta name="description" content="Maps and numbers on what NeurIPS papers are about and how the conference changes.">
+<meta property="og:title" content="NeurIPS Atlas"><meta property="og:image" content="{SITE}figures/atlas_static.png">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<style>{CSS}
+.cards{{display:grid;gap:14px;margin-top:20px}}.card{{display:block;border:1px solid var(--line);border-radius:12px;padding:18px;
+text-decoration:none;color:var(--ink)}}.card:hover{{border-color:var(--accent)}}.card b{{font-size:1.15rem}}
+.card span{{display:block;color:var(--muted);margin-top:4px}}.soon{{opacity:.6;pointer-events:none}}</style></head><body>
+<main><h1>NeurIPS Atlas</h1><p>What NeurIPS papers are about, and how the conference changes from year to year.
+Built from the public paper lists on neurips.cc by Hadi Mohammadi.</p>
+<div class="cards">
+<a class="card" href="2026/"><b>NeurIPS 2026</b><span>9,110 papers on one map, what grew since 2025, the three cities, and every paper with its links.</span></a>
+<a class="card soon" href="#"><b>NeurIPS through the years</b><span>Coming soon: topics, submissions and countries since 2014.</span></a>
+</div>
+<footer>Code and data: <a href="https://github.com/mohammadi-hadi/neurips">github.com/mohammadi-hadi/neurips</a> ·
+<a href="https://mohammadi.cv">mohammadi.cv</a></footer></main></body></html>"""
+(ROOT / "docs/index.html").write_text(LANDING)
+print("wrote", ROOT / "docs/index.html")

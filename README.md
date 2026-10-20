@@ -1,14 +1,18 @@
-# NeurIPS 2026 Paper Atlas
+# NeurIPS Atlas
+
+**Live site: [mohammadi.cv/neurips](https://mohammadi.cv/neurips/)** · 2026 edition: [mohammadi.cv/neurips/2026](https://mohammadi.cv/neurips/2026/)
+
+## NeurIPS 2026
 
 A data-driven tour of the accepted papers at NeurIPS 2026: what the field is working on, what grew
 and shrank since 2025, where the orals and spotlights went, who wrote the papers, and how the
 research is split across the three conference sites (Sydney, Atlanta, Paris).
 
-- **Blog post:** [`report/BLOG.md`](report/BLOG.md) (web version: `docs/index.html`)
+- **Blog post:** [`report/BLOG.md`](report/BLOG.md) (web version: `docs/2026/index.html`)
 - **Appendix:** [`report/APPENDIX.md`](report/APPENDIX.md), every area and subtopic with counts, shares and orals
-- **Interactive atlas of change:** `docs/atlas.html` (search, hover, click a dot to open the paper; recolour by change since 2025, city, status, sector or team size; filter by presentation day; topic tree)
-- **Paper index:** `docs/papers.html`, every paper with links to its NeurIPS page, an arXiv search, its OpenReview page and PDF (also `outputs/papers_index.csv`)
-- **Interactive charts:** `docs/charts/` (treemap of all subtopics, area shifts, cities, vocabulary, countries)
+- **Interactive atlas of change:** `docs/2026/atlas.html` (search, hover, click a dot to open the paper; recolour by change since 2025, city, status, sector or team size; filter by presentation day; topic tree)
+- **Paper index:** `docs/2026/papers.html`, every paper with links to its NeurIPS page, an arXiv search, its OpenReview page and PDF (also `outputs/papers_index.csv`)
+- **Interactive charts:** `docs/2026/charts/` (treemap of all subtopics, area shifts, cities, vocabulary, countries)
 - **Tables:** `outputs/*.csv`, figures in `outputs/figures/`
 
 ## Data
@@ -44,7 +48,7 @@ The raw files are not stored in this repository; `src/00_fetch_data.py` download
 6. **Map and charts** (`src/06_map.py`, `src/07_dashboard.py`): interactive and static maps with [DataMapPlot](https://github.com/TutteInstitute/datamapplot), interactive charts with Plotly.
 7. **Story figures** (`src/10_story_figures.py`): the blog charts and the 1080x1350 social cards in `outputs/carousel/`.
 8. **Robustness** (`src/11_robustness.py`): refits the subtopics on 2025 only and on both years, to check the area shifts.
-9. **Site** (`src/08_appendix.py`, `src/09_build_site.py`): appendix tables and the web pages in `docs/`.
+9. **Site** (`src/08_appendix.py`, `src/09_build_site.py`): appendix tables and the web pages in `docs/` (site: https://mohammadi.cv/neurips/).
 
 ## Reproduce
 

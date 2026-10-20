@@ -36,8 +36,8 @@ plt.rcParams.update({"font.family": ["Helvetica Neue", "Arial", "DejaVu Sans"], 
                      "axes.labelcolor": MUTED, "xtick.color": MUTED, "ytick.color": INK,
                      "legend.labelcolor": INK, "figure.facecolor": BG, "axes.facecolor": BG,
                      "savefig.facecolor": BG, "savefig.bbox": "tight", "savefig.dpi": 200})
-SOURCE = "Data: NeurIPS 2025 & 2026 accepted papers (neurips.cc) · Analysis: Hadi Mohammadi · github.com/mohammadi-hadi/NeurIPS2026_Analysis"
-URL = "mohammadi-hadi.github.io/NeurIPS2026_Analysis"
+SOURCE = "Data: NeurIPS 2025 & 2026 accepted papers (neurips.cc) · Analysis: Hadi Mohammadi · github.com/mohammadi-hadi/neurips"
+URL = "mohammadi.cv/neurips/2026"
 
 df = load_papers()
 L = json.load(open(ROOT / "data/labels/labels.json"))
