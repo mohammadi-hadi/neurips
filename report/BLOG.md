@@ -7,7 +7,7 @@ If I had to sum it up in one line: the fastest-growing part of machine learning 
 ## The short version
 
 - Agents doubled their share. The LLM Agents area went from 3.5% of papers in 2025 to 7.7% in 2026 (700 papers). No other area moved by more than 2 percentage points.
-- Six of the ten fastest-growing subtopics are about agents: agent benchmarks, agent reliability, agent memory, agent safety and prompt injection, coding agents, and multi-agent systems.
+- Six of the ten subtopics that gained the most share are about agents: agent benchmarks, agent reliability, agent memory, agent safety and prompt injection, coding agents, and multi-agent systems.
 - "Benchmark" is everywhere. 38% of 2026 abstracts use the word, up from 32% in 2025.
 - Some 2025 favourites shrank. Graph neural networks fell from 2.5% to 1.4% of papers, efficient chain-of-thought from 2.5% to 1.5%, and LoRA-style fine-tuning from 1.3% to 0.9%.
 - Theory gets the stage. Deep learning theory and neuroscience papers were made orals or spotlights at 8.4%, against 5.2% for the conference as a whole.
@@ -26,7 +26,7 @@ A language model proposed a name and a one-line description for each subtopic fr
 
 Because conference sizes differ (9,110 papers against 5,859), I compare shares of each year's papers, and differences in share are given in percentage points.
 
-You can explore the result yourself in the [interactive atlas](https://mohammadi-hadi.github.io/NeurIPS2026_Analysis/atlas.html): every paper is a dot, you can search by keyword or title, and clicking a dot opens the paper.
+You can explore the result yourself in the [interactive atlas](https://mohammadi-hadi.github.io/NeurIPS2026_Analysis/atlas.html): every paper is a dot, you can search by keyword or title, and clicking a dot opens the paper. The atlas can also be recoloured by how much each subtopic grew since 2025, by city, by oral/spotlight status, by who wrote the paper (academia, industry or both) and by team size, and a day-by-day bar lets you show only the papers presented on a given day.
 
 ## The map
 
@@ -34,11 +34,21 @@ You can explore the result yourself in the [interactive atlas](https://mohammadi
 
 Papers that are close on the map have similar abstracts. The language model work fills the top right: behaviour and safety, agents, reasoning and retrieval, post-training. Vision, video, 3D and robotics sit together on the left. Theory, optimisation, statistics, bandits and graph learning gather in the lower right, and the science-flavoured areas (biomolecules, PDEs, time series) sit along the bottom.
 
+## Where the field moved
+
+![The 2026 map coloured by how much each subtopic's share of papers changed since 2025](../outputs/figures/field_moved.png)
+
+This is the same map, coloured by change instead of by topic. Red regions hold a larger share of the conference than they did in 2025; blue regions hold a smaller one. The top of the map, where the agent and reasoning work sits, is the one large red block. Most of the vision side, the statistical and bandit corner, and graph learning at the bottom are blue: still large fields, but a smaller part of a conference that grew by more than half.
+
+The colour of each region comes from the subtopic shares computed in the embedding space, not from where the 2025 papers would land on the map, so the picture does not depend on the map layout.
+
+## The biggest areas
+
 The largest area is LLM Behavior & Safety, with 943 papers, or 10.4% of the conference. It covers interpretability, evaluation, sycophancy, hallucination, jailbreaks and unlearning. Next come 3D Vision & Perception (781), LLM Agents (700), DL Theory & Neuroscience (691) and Efficient LLMs & Architectures (680).
 
 ## Which areas grew and which shrank
 
-![Share of papers per research area, 2026 compared with 2025](../outputs/figures/areas_2026_vs_2025.png)
+![Share of papers per research area, 2025 to 2026](../outputs/figures/areas_slope.png)
 
 <!-- interactive: areas_dumbbell -->
 
@@ -47,6 +57,8 @@ LLM Agents is the headline. It held 3.5% of papers in 2025 and 7.7% in 2026, a g
 The losers are spread more thinly. 3D Vision & Perception lost 1.8 points, Image & 3D Generation 1.5, Trustworthy & Statistical ML 1.1, Graph Learning 0.9 and Vision-Language Models 0.7. Most other areas stayed within half a point of their 2025 share.
 
 Inside the agents area, growth is broad. Every one of its ten subtopics grew its share, and these six moved the most:
+
+![Papers per subtopic in the LLM Agents area, 2025 and 2026](../outputs/figures/agents_family.png)
 
 | Subtopic | 2026 papers | Share 2025 | Share 2026 |
 |---|---|---|---|
@@ -61,11 +73,11 @@ Read the names in that table again. Most of them are about whether agents work a
 
 ## Subtopic movers
 
-![Fastest-growing and fastest-shrinking subtopics, change in share in percentage points](../outputs/figures/subtopic_movers.png)
+![Subtopics with the largest gains and losses in share of papers](../outputs/figures/movers_x.png)
 
 <!-- interactive: treemap -->
 
-The ten fastest-growing subtopics include the six agent topics above. The other four are worth a look too:
+The ten subtopics that gained the most share include the six agent topics above. The other four are worth a look too:
 
 - Model Selection and Evaluation Pitfalls, from 0.38% to 0.83%: papers about how benchmarks and model comparisons go wrong.
 - Decoding for Diffusion Language Models, from 0.55% to 1.00%: text generated by diffusion instead of one token at a time.
@@ -102,13 +114,13 @@ When the data was pulled, 108 papers were orals and 266 were spotlights, and 1,9
 
 The rate differs by area. DL Theory & Neuroscience comes first at 8.4%, followed by Time Series & Forecasting (6.4%), LLM Agents (6.3%), Diffusion, Flows & Inference (6.2%) and Trustworthy & Statistical ML (6.1%). At the bottom are Video Generation & Understanding (2.4%) and LLM Reasoning & Retrieval (2.7%).
 
-Agents, then, are both numerous and highlighted a little above the average rate. The single subtopic with the most orals and spotlights is Human-AI Collaboration and Oversight, with 11 from its 80 papers. Theory subtopics punch above their weight too: PAC Learning and Sample Complexity has 8 orals and spotlights from 48 papers, and Deep Network Theory and Learning Dynamics has 10 from 114.
+Agents, then, are both numerous and highlighted a little above the average rate. The single subtopic with the most orals and spotlights is Human-AI Collaboration and Oversight, with 11 from its 80 papers. Some theory subtopics also stand out: PAC Learning and Sample Complexity has 8 orals and spotlights from 48 papers, and Deep Network Theory and Learning Dynamics has 10 from 114.
 
 These rates rest on small numbers. An area with 150 decided papers can move a full point with two extra spotlights, so read the middle of the chart as roughly equal.
 
 ## Three cities
 
-![Share of each area's papers presented in Sydney, Atlanta and Paris](../outputs/figures/site_mix_by_area.png)
+![How far each area's posters lean towards Sydney, Atlanta or Paris](../outputs/figures/cities_lean.png)
 
 <!-- interactive: site_mix -->
 
@@ -139,6 +151,7 @@ Teams are slightly smaller. The mean author count fell from 5.9 to 5.5, the medi
 ## Caveats
 
 - **Clusters are a lens.** Many papers sit between topics, and a different number of clusters would draw different boundaries. The shares are a good guide to direction and rough size, less so to the second decimal.
+- **The main result does not depend on how the topics were fitted.** As a check (`src/11_robustness.py`), the 150 subtopics were refitted on 2025 papers only and on both years pooled. The LLM Agents area roughly doubles its share in all three versions (3.5% → 7.7%, 3.2% → 6.8%, 2.9% → 7.3%), and 3D Vision & Perception, Image & 3D Generation, Trustworthy & Statistical ML, Graph Learning and Vision-Language Models lose share in all three. The size of individual subtopic moves varies more between fits, so read the subtopic factors as approximate.
 - **Affiliation mapping is partial.** The 1,200 most frequent affiliation strings were merged into canonical organisations with a country and a sector. That covers 97.3% of 2025 papers but 94.4% of 2026 papers, so the country and industry numbers for 2026 rest on a slightly smaller base, and any group that uses many spellings of its affiliation may be undercounted.
 - **The two exports may differ.** The 2025 and 2026 downloads may not include exactly the same tracks.
 - **The schedule is incomplete.** When the data was pulled, 1,905 papers had no published decision and 1,919 had no city, which affects the oral and spotlight rates and the site split.

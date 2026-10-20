@@ -6,7 +6,7 @@ research is split across the three conference sites (Sydney, Atlanta, Paris).
 
 - **Blog post:** [`report/BLOG.md`](report/BLOG.md) (web version: `docs/index.html`)
 - **Appendix:** [`report/APPENDIX.md`](report/APPENDIX.md), every area and subtopic with counts, shares and orals
-- **Interactive map:** `docs/atlas.html` (open in a browser; search, hover, click a dot to open the paper)
+- **Interactive atlas of change:** `docs/atlas.html` (search, hover, click a dot to open the paper; recolour by change since 2025, city, status, sector or team size; filter by presentation day; topic tree)
 - **Interactive charts:** `docs/charts/` (treemap of all subtopics, area shifts, cities, vocabulary, countries)
 - **Tables:** `outputs/*.csv`, figures in `outputs/figures/`
 
@@ -38,7 +38,9 @@ The raw files are not stored in this repository; `src/00_fetch_data.py` download
 5. **Statistics** (`src/05_stats.py`): topic shares, oral/spotlight rates, site mix, organisations
    and countries (top 1,200 affiliation strings merged into canonical names), team size, vocabulary trends.
 6. **Map and charts** (`src/06_map.py`, `src/07_dashboard.py`): interactive and static maps with [DataMapPlot](https://github.com/TutteInstitute/datamapplot), interactive charts with Plotly.
-7. **Site** (`src/08_appendix.py`, `src/09_build_site.py`): appendix tables and the web pages in `docs/`.
+7. **Story figures** (`src/10_story_figures.py`): the blog charts and the 1080x1350 social cards in `outputs/carousel/`.
+8. **Robustness** (`src/11_robustness.py`): refits the subtopics on 2025 only and on both years, to check the area shifts.
+9. **Site** (`src/08_appendix.py`, `src/09_build_site.py`): appendix tables and the web pages in `docs/`.
 
 ## Reproduce
 
@@ -50,6 +52,7 @@ python src/01_prepare.py && python src/02_embed.py && python src/03_cluster.py
 # labels: see src/04_labels.md, then
 python src/04_apply_labels.py
 python src/05_stats.py && python src/06_map.py && python src/07_dashboard.py
+python src/10_story_figures.py && python src/11_robustness.py
 python src/08_appendix.py && python src/09_build_site.py   # needs pandoc
 ```
 
