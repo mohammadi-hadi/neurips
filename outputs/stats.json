@@ -171,7 +171,7 @@
    "n_2026": 113,
    "n_2025": 22,
    "delta_pp": 0.86,
-   "growth_x": 3.03
+   "growth_x": 3.3
   },
   {
    "topic": "LLM Agent Reliability and Efficiency",
@@ -180,7 +180,7 @@
    "n_2026": 88,
    "n_2025": 17,
    "delta_pp": 0.68,
-   "growth_x": 2.99
+   "growth_x": 3.33
   },
   {
    "topic": "Long-Term Memory for LLM Agents",
@@ -189,7 +189,7 @@
    "n_2026": 66,
    "n_2025": 7,
    "delta_pp": 0.61,
-   "growth_x": 4.57
+   "growth_x": 6.06
   },
   {
    "topic": "LLM Agent Safety and Prompt Injection",
@@ -198,7 +198,7 @@
    "n_2026": 76,
    "n_2025": 19,
    "delta_pp": 0.51,
-   "growth_x": 2.36
+   "growth_x": 2.57
   },
   {
    "topic": "Model Selection and Evaluation Pitfalls",
@@ -207,7 +207,7 @@
    "n_2026": 76,
    "n_2025": 22,
    "delta_pp": 0.46,
-   "growth_x": 2.08
+   "growth_x": 2.22
   },
   {
    "topic": "Decoding for Diffusion Language Models",
@@ -216,7 +216,7 @@
    "n_2026": 91,
    "n_2025": 32,
    "delta_pp": 0.45,
-   "growth_x": 1.76
+   "growth_x": 1.83
   },
   {
    "topic": "Vision-Language-Action Robot Policies",
@@ -225,7 +225,7 @@
    "n_2026": 94,
    "n_2025": 35,
    "delta_pp": 0.43,
-   "growth_x": 1.67
+   "growth_x": 1.73
   },
   {
    "topic": "Coding Agents and SWE Benchmarks",
@@ -234,7 +234,7 @@
    "n_2026": 55,
    "n_2025": 12,
    "delta_pp": 0.4,
-   "growth_x": 2.57
+   "growth_x": 2.95
   },
   {
    "topic": "LLM Multi-Agent Systems",
@@ -243,7 +243,7 @@
    "n_2026": 73,
    "n_2025": 24,
    "delta_pp": 0.39,
-   "growth_x": 1.85
+   "growth_x": 1.96
   },
   {
    "topic": "GRPO-Style RL with Verifiable Rewards",
@@ -252,7 +252,7 @@
    "n_2026": 65,
    "n_2025": 19,
    "delta_pp": 0.39,
-   "growth_x": 2.04
+   "growth_x": 2.2
   },
   {
    "topic": "LLM Behavioral Tendencies and Evaluation Awareness",
@@ -261,7 +261,7 @@
    "n_2026": 96,
    "n_2025": 40,
    "delta_pp": 0.37,
-   "growth_x": 1.51
+   "growth_x": 1.54
   },
   {
    "topic": "Flow Matching Theory and Variants",
@@ -270,7 +270,7 @@
    "n_2026": 80,
    "n_2025": 30,
    "delta_pp": 0.37,
-   "growth_x": 1.65
+   "growth_x": 1.72
   }
  ],
  "fine_shrinkers": [
@@ -281,7 +281,7 @@
    "n_2026": 130,
    "n_2025": 146,
    "delta_pp": -1.06,
-   "growth_x": 0.58
+   "growth_x": 0.57
   },
   {
    "topic": "Efficient Chain-of-Thought Reasoning",
@@ -290,7 +290,7 @@
    "n_2026": 137,
    "n_2025": 145,
    "delta_pp": -0.97,
-   "growth_x": 0.62
+   "growth_x": 0.61
   },
   {
    "topic": "Learning with Noisy and Weak Labels",
@@ -299,7 +299,7 @@
    "n_2026": 48,
    "n_2025": 65,
    "delta_pp": -0.58,
-   "growth_x": 0.5
+   "growth_x": 0.47
   },
   {
    "topic": "Brain Encoding and Neural Recording Analysis",
@@ -308,7 +308,7 @@
    "n_2026": 42,
    "n_2025": 57,
    "delta_pp": -0.51,
-   "growth_x": 0.5
+   "growth_x": 0.47
   },
   {
    "topic": "LoRA and Parameter-Efficient Fine-Tuning",
@@ -317,7 +317,7 @@
    "n_2026": 82,
    "n_2025": 77,
    "delta_pp": -0.41,
-   "growth_x": 0.7
+   "growth_x": 0.68
   },
   {
    "topic": "Concept Erasure in Text-to-Image Diffusion",
@@ -326,7 +326,7 @@
    "n_2026": 34,
    "n_2025": 46,
    "delta_pp": -0.41,
-   "growth_x": 0.51
+   "growth_x": 0.48
   },
   {
    "topic": "Part-Level 3D Asset Generation",
@@ -335,7 +335,7 @@
    "n_2026": 64,
    "n_2025": 65,
    "delta_pp": -0.41,
-   "growth_x": 0.65
+   "growth_x": 0.63
   },
   {
    "topic": "Preference Optimization for LLM Alignment",
@@ -344,7 +344,7 @@
    "n_2026": 52,
    "n_2025": 57,
    "delta_pp": -0.4,
-   "growth_x": 0.61
+   "growth_x": 0.59
   },
   {
    "topic": "Federated Learning under Heterogeneity",
@@ -353,7 +353,7 @@
    "n_2026": 84,
    "n_2025": 77,
    "delta_pp": -0.39,
-   "growth_x": 0.71
+   "growth_x": 0.7
   },
   {
    "topic": "Regret Bounds for Stochastic and Contextual Bandits",
@@ -362,7 +362,7 @@
    "n_2026": 64,
    "n_2025": 63,
    "delta_pp": -0.37,
-   "growth_x": 0.67
+   "growth_x": 0.65
   },
   {
    "topic": "Test-Time and Few-Shot VLM Adaptation",
@@ -371,7 +371,7 @@
    "n_2026": 75,
    "n_2025": 70,
    "delta_pp": -0.37,
-   "growth_x": 0.7
+   "growth_x": 0.69
   },
   {
    "topic": "Neural Combinatorial Optimization",
@@ -380,7 +380,7 @@
    "n_2026": 56,
    "n_2025": 57,
    "delta_pp": -0.36,
-   "growth_x": 0.65
+   "growth_x": 0.63
   }
  ],
  "fine_largest": [
@@ -400,7 +400,7 @@
    "n_2026": 137,
    "n_2025": 145,
    "delta_pp": -0.97,
-   "growth_x": 0.62
+   "growth_x": 0.61
   },
   {
    "topic": "Diffusion Guidance and Reward Fine-Tuning",
@@ -409,7 +409,7 @@
    "n_2026": 132,
    "n_2025": 72,
    "delta_pp": 0.22,
-   "growth_x": 1.17
+   "growth_x": 1.18
   },
   {
    "topic": "Graph Neural Networks and Foundation Models",
@@ -418,7 +418,7 @@
    "n_2026": 130,
    "n_2025": 146,
    "delta_pp": -1.06,
-   "growth_x": 0.58
+   "growth_x": 0.57
   },
   {
    "topic": "Transformer Mechanisms and Expressivity Theory",
@@ -427,7 +427,7 @@
    "n_2026": 125,
    "n_2025": 99,
    "delta_pp": -0.32,
-   "growth_x": 0.82
+   "growth_x": 0.81
   },
   {
    "topic": "Deep Network Theory and Learning Dynamics",
@@ -436,7 +436,7 @@
    "n_2026": 114,
    "n_2025": 84,
    "delta_pp": -0.18,
-   "growth_x": 0.88
+   "growth_x": 0.87
   },
   {
    "topic": "Tool-Use, Web and GUI Agent Benchmarks",
@@ -445,7 +445,7 @@
    "n_2026": 113,
    "n_2025": 22,
    "delta_pp": 0.86,
-   "growth_x": 3.03
+   "growth_x": 3.3
   },
   {
    "topic": "Feed-Forward Multi-View Geometry Transformers",
@@ -472,7 +472,7 @@
    "n_2026": 99,
    "n_2025": 51,
    "delta_pp": 0.22,
-   "growth_x": 1.23
+   "growth_x": 1.25
   },
   {
    "topic": "LLM Behavioral Tendencies and Evaluation Awareness",
@@ -481,7 +481,7 @@
    "n_2026": 96,
    "n_2025": 40,
    "delta_pp": 0.37,
-   "growth_x": 1.51
+   "growth_x": 1.54
   },
   {
    "topic": "LLM Pruning and MoE Compression",
@@ -499,7 +499,7 @@
    "n_2026": 94,
    "n_2025": 35,
    "delta_pp": 0.43,
-   "growth_x": 1.67
+   "growth_x": 1.73
   },
   {
    "topic": "Medical Imaging and Pathology Models",
@@ -508,7 +508,7 @@
    "n_2026": 93,
    "n_2025": 55,
    "delta_pp": 0.08,
-   "growth_x": 1.08
+   "growth_x": 1.09
   },
   {
    "topic": "Image Restoration and Inverse Problems",
@@ -517,7 +517,7 @@
    "n_2026": 93,
    "n_2025": 75,
    "delta_pp": -0.26,
-   "growth_x": 0.81
+   "growth_x": 0.8
   }
  ],
  "decision_counts": {

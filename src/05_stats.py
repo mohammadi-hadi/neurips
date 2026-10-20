@@ -39,7 +39,7 @@ def shares(col):
 
 broad = shares("broad_name")
 fine = shares("fine_name")
-fine["growth_x"] = (fine["share_2026"] + 0.05) / (fine["share_2025"] + 0.05)
+fine["growth_x"] = fine["share_2026"] / fine["share_2025"].replace(0, np.nan)  # plain share ratio, used in every chart
 broad.round(2).to_csv(OUT / "topics_broad.csv")
 fine.round(2).to_csv(OUT / "topics_fine.csv")
 S["broad"] = broad.round(2).reset_index(names="topic").to_dict("records")
