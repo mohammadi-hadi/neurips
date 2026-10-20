@@ -2,9 +2,9 @@
 
 All 20 areas and 150 topics of NeurIPS 2026 (9,110 papers). For each topic you see what the papers do, how many there are, and its share of all papers in 2025 and 2026. ★ is the number of orals and spotlights.
 
-\* NeurIPS has not made the 2026 papers public on OpenReview yet (checked 20 October 2026). Those links will work once they do.
+OpenReview and PDF links will appear here once NeurIPS makes the 2026 papers public on OpenReview. Until then, each paper's NeurIPS page has the link.
 
-## LLM Behavior & Safety — 943 papers (10.4%, 2025: 9.1%)
+## LLM Behavior & Safety: 796 papers (8.7% of all, 2025: 7.8%)
 
 Interpretability, evaluation, sycophancy, hallucination, jailbreaks, unlearning, knowledge editing, steering and watermarking of language models, plus diffusion LMs, audio LMs and recommendation.
 
@@ -13,36 +13,35 @@ Interpretability, evaluation, sycophancy, hallucination, jailbreaks, unlearning,
 | LLM Self-Explanation and Hidden Computation | These papers probe what computations transformers perform internally, such as in-context learning, copying, belief states and hidden reasoning over filler tokens. | 102 | 1.18% → 1.12% | 4 |
 | LLM Benchmarking and LLM-as-a-Judge | These papers study how LLMs are evaluated, covering benchmark design and reliability, judge bias, leaderboard rankings and AI peer review. | 99 | 0.87% → 1.09% | 8 |
 | LLM Behavioral Tendencies and Evaluation Awareness | Evaluating LLM behaviors such as sycophancy, deception, confirmation bias, moral reasoning, risk attitudes and evaluation awareness. | 96 | 0.68% → 1.05% | 3 |
-| Decoding for Diffusion Language Models | These papers develop masked and discrete diffusion language models, focusing on parallel decoding, speculative sampling, unmasking strategies and RL post-training. | 91 | 0.55% → 1.00% | 6 |
-| Speech and Audio Language Models | Large audio language models, speech recognition, speech enhancement, audio generation and sign language recognition. | 91 | 0.97% → 1.00% | 3 |
+| AI Governance, Position Papers and Human Oversight | Position and empirical papers on human oversight, AI-assisted decisions, governance and how AI systems should be evaluated with people. | 80 | 0.63% → 0.88% | 11 |
 | Jailbreak and Red-Teaming Attacks | Designs, scales and detects jailbreak and red-teaming attacks on LLMs, multimodal and diffusion language models, along with safety defenses. | 77 | 0.92% → 0.85% | 5 |
 | Robustness of LLM Safety Alignment | These papers study how safety alignment and refusal behavior in LLMs and multimodal models hold up, break under jailbreaks or fine-tuning, and can be made more robust. | 68 | 0.58% → 0.75% | 3 |
-| LLM Hallucination Detection and Mitigation | Detecting and reducing hallucinations in LLMs and vision-language models using uncertainty, token-level signals and training. | 56 | 0.60% → 0.61% | 0 |
+| LLM Hallucination and Uncertainty | Detecting and reducing hallucinations in LLMs and vision-language models using uncertainty, token-level signals and training. | 56 | 0.60% → 0.61% | 0 |
 | LLM Personas, Sycophancy and Cultural Bias | These papers measure how LLMs simulate personas and opinions and how they show sycophancy, stereotypes and cultural or value biases. | 55 | 0.29% → 0.60% | 2 |
 | LLM Knowledge Editing and Forgetting | These papers update or edit the factual knowledge stored in LLMs and study the forgetting and memorization that happen during continual post-training. | 51 | 0.79% → 0.56% | 2 |
-| Sequential and Generative Recommendation | These papers model user preferences for sequential, multimodal and generative recommendation, increasingly with LLMs and diffusion models. | 45 | 0.44% → 0.49% | 0 |
 | Machine Unlearning in LLMs | These papers remove the influence of specific training data from models, mainly LLMs, while preserving utility and resisting relearning. | 40 | 0.55% → 0.44% | 2 |
 | Activation Steering of LLMs | Controlling language model behaviour at inference time by editing internal activations with steering vectors or subspace interventions. | 36 | 0.19% → 0.40% | 3 |
-| Watermarking Generative Model Outputs | Embedding and detecting watermarks in LLM text, images and audio to trace AI-generated content. | 36 | 0.49% → 0.40% | 0 |
+| Watermarking Generative Model Outputs | Embedding and detecting watermarks in LLM text, images and audio to trace AI-generated content. | 36 | 0.50% → 0.40% | 0 |
 
 **Orals**
 
-- ALTER: An Allen's Algebra-Based Evaluation Framework for Temporal Reasoning of LLMs: [NeurIPS page](https://neurips.cc/virtual/2026/poster/139265) · [arXiv](https://arxiv.org/search/?query=ALTER++An+Allen+s+Algebra-Based+Evaluation+Framework+for+Temporal+Reasoning+of+LLMs&searchtype=title) · [OpenReview*](https://openreview.net/forum?id=ay0UXDsniW) · [PDF*](https://openreview.net/pdf?id=ay0UXDsniW)
-- Benchmark Health Index: A Systematic Framework for Benchmarking the Benchmarks of LLMs: [NeurIPS page](https://neurips.cc/virtual/2026/poster/138960) · [arXiv](https://arxiv.org/search/?query=Benchmark+Health+Index++A+Systematic+Framework+for+Benchmarking+the+Benchmarks+of+LLMs&searchtype=title) · [OpenReview*](https://openreview.net/forum?id=tsoDWPkJOz) · [PDF*](https://openreview.net/pdf?id=tsoDWPkJOz)
-- Catch-Only-One: Non-Transferable Examples for Model-Specific Authorization: [NeurIPS page](https://neurips.cc/virtual/2026/poster/151014) · [arXiv](https://arxiv.org/search/?query=Catch-Only-One++Non-Transferable+Examples+for+Model-Specific+Authorization&searchtype=title) · [OpenReview*](https://openreview.net/forum?id=db0FP1G7V7) · [PDF*](https://openreview.net/pdf?id=db0FP1G7V7)
-- CLIOPATRA: Extracting Private Information from LLM Insights: [NeurIPS page](https://neurips.cc/virtual/2026/poster/152543) · [arXiv](https://arxiv.org/search/?query=CLIOPATRA++Extracting+Private+Information+from+LLM+Insights&searchtype=title) · [OpenReview*](https://openreview.net/forum?id=SNNm5MJ9dg) · [PDF*](https://openreview.net/pdf?id=SNNm5MJ9dg)
-- CURE: Counterfactual Unsafe-token Re-masking for Diffusion Large Language Model Test-time Alignment: [NeurIPS page](https://neurips.cc/virtual/2026/poster/151876) · [arXiv](https://arxiv.org/search/?query=CURE++Counterfactual+Unsafe-token+Re-masking+for+Diffusion+Large+Language+Model+Test-time+Alignment&searchtype=title) · [OpenReview*](https://openreview.net/forum?id=XF2UgJwAIj) · [PDF*](https://openreview.net/pdf?id=XF2UgJwAIj)
-- Fisher-R1: Training LLM Agents for Reliable Hypothesis Testing: [NeurIPS page](https://neurips.cc/virtual/2026/poster/152494) · [arXiv](https://arxiv.org/search/?query=Fisher-R1++Training+LLM+Agents+for+Reliable+Hypothesis+Testing&searchtype=title) · [OpenReview*](https://openreview.net/forum?id=ShMNgympCf) · [PDF*](https://openreview.net/pdf?id=ShMNgympCf)
-- HearSayBench: Can LLMs Navigate from Abstract Human Rights to Lived Lives?: [NeurIPS page](https://neurips.cc/virtual/2026/poster/139278) · [arXiv](https://arxiv.org/search/?query=HearSayBench++Can+LLMs+Navigate+from+Abstract+Human+Rights+to+Lived+Lives+&searchtype=title) · [OpenReview*](https://openreview.net/forum?id=ZqbnpmPYvV) · [PDF*](https://openreview.net/pdf?id=ZqbnpmPYvV)
-- Leaderboard Hacking: Preference-Based Model Evaluations are Vulnerable to Manipulation: [NeurIPS page](https://neurips.cc/virtual/2026/poster/152085) · [arXiv](https://arxiv.org/search/?query=Leaderboard+Hacking++Preference-Based+Model+Evaluations+are+Vulnerable+to+Manipulation&searchtype=title) · [OpenReview*](https://openreview.net/forum?id=VbWRUbpIUv) · [PDF*](https://openreview.net/pdf?id=VbWRUbpIUv)
-- Learning to Audit ML Models with Theory of Mind: [NeurIPS page](https://neurips.cc/virtual/2026/poster/155783) · [arXiv](https://arxiv.org/search/?query=Learning+to+Audit+ML+Models+with+Theory+of+Mind&searchtype=title) · [OpenReview*](https://openreview.net/forum?id=2vhiHLMdzi) · [PDF*](https://openreview.net/pdf?id=2vhiHLMdzi)
-- LittleLearner: Language Models Under Pedagogically-Controlled Knowledge Exposure: [NeurIPS page](https://neurips.cc/virtual/2026/poster/148220) · [arXiv](https://arxiv.org/search/?query=LittleLearner++Language+Models+Under+Pedagogically-Controlled+Knowledge+Exposure&searchtype=title) · [OpenReview*](https://openreview.net/forum?id=zSwgtp9S5a) · [PDF*](https://openreview.net/pdf?id=zSwgtp9S5a)
-- LoRAcles: Self-Supervised Weight-Space Interpretability at Scale: [NeurIPS page](https://neurips.cc/virtual/2026/poster/154333) · [arXiv](https://arxiv.org/search/?query=LoRAcles++Self-Supervised+Weight-Space+Interpretability+at+Scale&searchtype=title) · [OpenReview*](https://openreview.net/forum?id=EOoc3j4hW8) · [PDF*](https://openreview.net/pdf?id=EOoc3j4hW8)
-- Neural Chameleons: Language Models Can Learn to Hide Their Thoughts from Unseen Activation Monitors: [NeurIPS page](https://neurips.cc/virtual/2026/poster/148241) · [arXiv](https://arxiv.org/search/?query=Neural+Chameleons++Language+Models+Can+Learn+to+Hide+Their+Thoughts+from+Unseen+Activation+Monitors&searchtype=title) · [OpenReview*](https://openreview.net/forum?id=zLwGdQLBbW) · [PDF*](https://openreview.net/pdf?id=zLwGdQLBbW)
-- The Attacker in the Mirror: Breaking Self-Consistency in Safety via Anchored Bipolicy Self-Play: [NeurIPS page](https://neurips.cc/virtual/2026/poster/151513) · [arXiv](https://arxiv.org/search/?query=The+Attacker+in+the+Mirror++Breaking+Self-Consistency+in+Safety+via+Anchored+Bipolicy+Self-Play&searchtype=title) · [OpenReview*](https://openreview.net/forum?id=a5qQCbrc2b) · [PDF*](https://openreview.net/pdf?id=a5qQCbrc2b)
-- We Should Distinguish Unlearning From Untraining: [NeurIPS page](https://neurips.cc/virtual/2026/poster/140062) · [arXiv](https://arxiv.org/search/?query=We+Should+Distinguish+Unlearning+From+Untraining&searchtype=title) · [OpenReview*](https://openreview.net/forum?id=U9dDSCabjP) · [PDF*](https://openreview.net/pdf?id=U9dDSCabjP)
+- ALTER: An Allen's Algebra-Based Evaluation Framework for Temporal Reasoning of LLMs: [NeurIPS page](https://neurips.cc/virtual/2026/poster/139265) · [arXiv](https://arxiv.org/search/?query=ALTER++An+Allen+s+Algebra-Based+Evaluation+Framework+for+Temporal+Reasoning+of+LLMs&searchtype=title)
+- Benchmark Health Index: A Systematic Framework for Benchmarking the Benchmarks of LLMs: [NeurIPS page](https://neurips.cc/virtual/2026/poster/138960) · [arXiv](https://arxiv.org/search/?query=Benchmark+Health+Index++A+Systematic+Framework+for+Benchmarking+the+Benchmarks+of+LLMs&searchtype=title)
+- Catch-Only-One: Non-Transferable Examples for Model-Specific Authorization: [NeurIPS page](https://neurips.cc/virtual/2026/poster/151014) · [arXiv](https://arxiv.org/search/?query=Catch-Only-One++Non-Transferable+Examples+for+Model-Specific+Authorization&searchtype=title)
+- CLIOPATRA: Extracting Private Information from LLM Insights: [NeurIPS page](https://neurips.cc/virtual/2026/poster/152543) · [arXiv](https://arxiv.org/search/?query=CLIOPATRA++Extracting+Private+Information+from+LLM+Insights&searchtype=title)
+- Fisher-R1: Training LLM Agents for Reliable Hypothesis Testing: [NeurIPS page](https://neurips.cc/virtual/2026/poster/152494) · [arXiv](https://arxiv.org/search/?query=Fisher-R1++Training+LLM+Agents+for+Reliable+Hypothesis+Testing&searchtype=title)
+- GenAI Evaluation Results are Largely Artifacts of Evaluation Design Choices: Evidence from Audit Studies of Resume Screening: [NeurIPS page](https://neurips.cc/virtual/2026/poster/138976) · [arXiv](https://arxiv.org/search/?query=GenAI+Evaluation+Results+are+Largely+Artifacts+of+Evaluation+Design+Choices++Evidence+from+Audit+Studies+of+Resume+Screening&searchtype=title)
+- HearSayBench: Can LLMs Navigate from Abstract Human Rights to Lived Lives?: [NeurIPS page](https://neurips.cc/virtual/2026/poster/139278) · [arXiv](https://arxiv.org/search/?query=HearSayBench++Can+LLMs+Navigate+from+Abstract+Human+Rights+to+Lived+Lives+&searchtype=title)
+- Leaderboard Hacking: Preference-Based Model Evaluations are Vulnerable to Manipulation: [NeurIPS page](https://neurips.cc/virtual/2026/poster/152085) · [arXiv](https://arxiv.org/search/?query=Leaderboard+Hacking++Preference-Based+Model+Evaluations+are+Vulnerable+to+Manipulation&searchtype=title)
+- Learning to Audit ML Models with Theory of Mind: [NeurIPS page](https://neurips.cc/virtual/2026/poster/155783) · [arXiv](https://arxiv.org/search/?query=Learning+to+Audit+ML+Models+with+Theory+of+Mind&searchtype=title)
+- LittleLearner: Language Models Under Pedagogically-Controlled Knowledge Exposure: [NeurIPS page](https://neurips.cc/virtual/2026/poster/148220) · [arXiv](https://arxiv.org/search/?query=LittleLearner++Language+Models+Under+Pedagogically-Controlled+Knowledge+Exposure&searchtype=title)
+- LoRAcles: Self-Supervised Weight-Space Interpretability at Scale: [NeurIPS page](https://neurips.cc/virtual/2026/poster/154333) · [arXiv](https://arxiv.org/search/?query=LoRAcles++Self-Supervised+Weight-Space+Interpretability+at+Scale&searchtype=title)
+- Neural Chameleons: Language Models Can Learn to Hide Their Thoughts from Unseen Activation Monitors: [NeurIPS page](https://neurips.cc/virtual/2026/poster/148241) · [arXiv](https://arxiv.org/search/?query=Neural+Chameleons++Language+Models+Can+Learn+to+Hide+Their+Thoughts+from+Unseen+Activation+Monitors&searchtype=title)
+- Offloading Score: Measuring AI Reliance through Counterfactual Workflows: [NeurIPS page](https://neurips.cc/virtual/2026/poster/139388) · [arXiv](https://arxiv.org/search/?query=Offloading+Score++Measuring+AI+Reliance+through+Counterfactual+Workflows&searchtype=title)
+- The Attacker in the Mirror: Breaking Self-Consistency in Safety via Anchored Bipolicy Self-Play: [NeurIPS page](https://neurips.cc/virtual/2026/poster/151513) · [arXiv](https://arxiv.org/search/?query=The+Attacker+in+the+Mirror++Breaking+Self-Consistency+in+Safety+via+Anchored+Bipolicy+Self-Play&searchtype=title)
+- We Should Distinguish Unlearning From Untraining: [NeurIPS page](https://neurips.cc/virtual/2026/poster/140062) · [arXiv](https://arxiv.org/search/?query=We+Should+Distinguish+Unlearning+From+Untraining&searchtype=title)
 
-## 3D Vision & Perception — 781 papers (8.6%, 2025: 10.4%)
+## Vision & Perception: 781 papers (8.6% of all, 2025: 10.4%)
 
 Feed-forward and Gaussian-splatting 3D reconstruction, 3D scene grounding, LiDAR perception, medical imaging, restoration, anomaly and OOD detection, and image forensics.
 
@@ -52,7 +51,7 @@ Feed-forward and Gaussian-splatting 3D reconstruction, 3D scene grounding, LiDAR
 | Medical Imaging and Pathology Models | Segmentation, representation learning and vision-language models for radiology, CT and whole-slide pathology images. | 93 | 0.94% → 1.02% | 3 |
 | Image Restoration and Inverse Problems | Denoising, super-resolution, image fusion and plug-and-play or diffusion-based restoration of degraded images. | 93 | 1.28% → 1.02% | 2 |
 | Object Detection and OOD Detection | Develops open-world, domain-adaptive and long-tailed object detectors and methods for detecting out-of-distribution inputs in vision models. | 74 | 0.87% → 0.81% | 2 |
-| LiDAR and Radar Perception for Driving | These papers handle LiDAR, radar and multi-sensor data for localization, point-cloud registration, scene flow and HD map construction in driving and UAV settings. | 71 | 0.73% → 0.78% | 1 |
+| LiDAR, Radar and Multi-Sensor Perception | These papers handle LiDAR, radar and multi-sensor data for localization, point-cloud registration, scene flow and HD map construction in driving and UAV settings. | 71 | 0.73% → 0.78% | 1 |
 | 3D Gaussian Splatting | These papers improve 3D Gaussian splatting and neural rendering for novel view synthesis, including feed-forward reconstruction, compression and densification. | 66 | 0.99% → 0.72% | 2 |
 | Language-Grounded 3D Scene Understanding | These papers ground language in 3D scenes for open-vocabulary understanding, spatial reasoning, affordances and localization using point clouds, multi-view images and 3D-LLMs. | 64 | 0.99% → 0.70% | 6 |
 | Anomaly Detection Across Modalities | These papers detect anomalies in industrial images, time series, graphs, video and audio, including zero-shot and few-shot settings. | 57 | 0.67% → 0.63% | 0 |
@@ -63,49 +62,45 @@ Feed-forward and Gaussian-splatting 3D reconstruction, 3D scene grounding, LiDAR
 
 **Orals**
 
-- BEAST3D: animal behavioral analysis and neural encoding from multi-view video via Gaussian splatting: [NeurIPS page](https://neurips.cc/virtual/2026/poster/149762) · [arXiv](https://arxiv.org/search/?query=BEAST3D++animal+behavioral+analysis+and+neural+encoding+from+multi-view+video+via+Gaussian+splatting&searchtype=title) · [OpenReview*](https://openreview.net/forum?id=nWHsSjFVA0) · [PDF*](https://openreview.net/pdf?id=nWHsSjFVA0)
-- Certifiably Optimal Robust Angular Synchronization: [NeurIPS page](https://neurips.cc/virtual/2026/poster/153331) · [arXiv](https://arxiv.org/search/?query=Certifiably+Optimal+Robust+Angular+Synchronization&searchtype=title) · [OpenReview*](https://openreview.net/forum?id=M7UwJ21cjC) · [PDF*](https://openreview.net/pdf?id=M7UwJ21cjC)
-- Consistent 3D Surface Flow Model with Global State: [NeurIPS page](https://neurips.cc/virtual/2026/poster/148758) · [arXiv](https://arxiv.org/search/?query=Consistent+3D+Surface+Flow+Model+with+Global+State&searchtype=title) · [OpenReview*](https://openreview.net/forum?id=vGEOI5LZ5X) · [PDF*](https://openreview.net/pdf?id=vGEOI5LZ5X)
-- Déjà View: Looping Transformers for Multi-View 3D Reconstruction: [NeurIPS page](https://neurips.cc/virtual/2026/poster/154303) · [arXiv](https://arxiv.org/search/?query=D%C3%A9j%C3%A0+View++Looping+Transformers+for+Multi-View+3D+Reconstruction&searchtype=title) · [OpenReview*](https://openreview.net/forum?id=Eidz3t6qmk) · [PDF*](https://openreview.net/pdf?id=Eidz3t6qmk)
-- Non-Colliding Biometric Identities for Digital Entities: Geometry, Capacity, and Million-Scale Virtual Identity Provisioning: [NeurIPS page](https://neurips.cc/virtual/2026/poster/153119) · [arXiv](https://arxiv.org/search/?query=Non-Colliding+Biometric+Identities+for+Digital+Entities++Geometry++Capacity++and+Million-Scale+Virtual+Identity+Provisioning&searchtype=title) · [OpenReview*](https://openreview.net/forum?id=NmbGjaLeN2) · [PDF*](https://openreview.net/pdf?id=NmbGjaLeN2)
-- Releasing Anchors from Cross-View Correspondence: Probabilistic Multi-View Anchor Graph Clustering: [NeurIPS page](https://neurips.cc/virtual/2026/poster/154593) · [arXiv](https://arxiv.org/search/?query=Releasing+Anchors+from+Cross-View+Correspondence++Probabilistic+Multi-View+Anchor+Graph+Clustering&searchtype=title) · [OpenReview*](https://openreview.net/forum?id=CQIfXmGpTl) · [PDF*](https://openreview.net/pdf?id=CQIfXmGpTl)
-- SAM 3D Animal: Promptable Animal 3D Reconstruction from Images in the Wild: [NeurIPS page](https://neurips.cc/virtual/2026/poster/155674) · [arXiv](https://arxiv.org/search/?query=SAM+3D+Animal++Promptable+Animal+3D+Reconstruction+from+Images+in+the+Wild&searchtype=title) · [OpenReview*](https://openreview.net/forum?id=3pqVVK0kW3) · [PDF*](https://openreview.net/pdf?id=3pqVVK0kW3)
-- Trellis4D: Complex 4D Mesh Generation: [NeurIPS page](https://neurips.cc/virtual/2026/poster/153899) · [arXiv](https://arxiv.org/search/?query=Trellis4D++Complex+4D+Mesh+Generation&searchtype=title) · [OpenReview*](https://openreview.net/forum?id=Hse0SKGx7y) · [PDF*](https://openreview.net/pdf?id=Hse0SKGx7y)
-- Video Forensic Self-Descriptions: Leveraging Temporally Distributed Forensic Microstructures for Zero-Shot Detection of AI-Generated Videos: [NeurIPS page](https://neurips.cc/virtual/2026/poster/149484) · [arXiv](https://arxiv.org/search/?query=Video+Forensic+Self-Descriptions++Leveraging+Temporally+Distributed+Forensic+Microstructures+for+Zero-Shot+Detection+of+AI-Generated+Videos&searchtype=title) · [OpenReview*](https://openreview.net/forum?id=pnZvRHgjWk) · [PDF*](https://openreview.net/pdf?id=pnZvRHgjWk)
+- BEAST3D: animal behavioral analysis and neural encoding from multi-view video via Gaussian splatting: [NeurIPS page](https://neurips.cc/virtual/2026/poster/149762) · [arXiv](https://arxiv.org/search/?query=BEAST3D++animal+behavioral+analysis+and+neural+encoding+from+multi-view+video+via+Gaussian+splatting&searchtype=title)
+- Certifiably Optimal Robust Angular Synchronization: [NeurIPS page](https://neurips.cc/virtual/2026/poster/153331) · [arXiv](https://arxiv.org/search/?query=Certifiably+Optimal+Robust+Angular+Synchronization&searchtype=title)
+- Consistent 3D Surface Flow Model with Global State: [NeurIPS page](https://neurips.cc/virtual/2026/poster/148758) · [arXiv](https://arxiv.org/search/?query=Consistent+3D+Surface+Flow+Model+with+Global+State&searchtype=title)
+- Déjà View: Looping Transformers for Multi-View 3D Reconstruction: [NeurIPS page](https://neurips.cc/virtual/2026/poster/154303) · [arXiv](https://arxiv.org/search/?query=D%C3%A9j%C3%A0+View++Looping+Transformers+for+Multi-View+3D+Reconstruction&searchtype=title)
+- Non-Colliding Biometric Identities for Digital Entities: Geometry, Capacity, and Million-Scale Virtual Identity Provisioning: [NeurIPS page](https://neurips.cc/virtual/2026/poster/153119) · [arXiv](https://arxiv.org/search/?query=Non-Colliding+Biometric+Identities+for+Digital+Entities++Geometry++Capacity++and+Million-Scale+Virtual+Identity+Provisioning&searchtype=title)
+- Releasing Anchors from Cross-View Correspondence: Probabilistic Multi-View Anchor Graph Clustering: [NeurIPS page](https://neurips.cc/virtual/2026/poster/154593) · [arXiv](https://arxiv.org/search/?query=Releasing+Anchors+from+Cross-View+Correspondence++Probabilistic+Multi-View+Anchor+Graph+Clustering&searchtype=title)
+- SAM 3D Animal: Promptable Animal 3D Reconstruction from Images in the Wild: [NeurIPS page](https://neurips.cc/virtual/2026/poster/155674) · [arXiv](https://arxiv.org/search/?query=SAM+3D+Animal++Promptable+Animal+3D+Reconstruction+from+Images+in+the+Wild&searchtype=title)
+- Trellis4D: Complex 4D Mesh Generation: [NeurIPS page](https://neurips.cc/virtual/2026/poster/153899) · [arXiv](https://arxiv.org/search/?query=Trellis4D++Complex+4D+Mesh+Generation&searchtype=title)
+- Video Forensic Self-Descriptions: Leveraging Temporally Distributed Forensic Microstructures for Zero-Shot Detection of AI-Generated Videos: [NeurIPS page](https://neurips.cc/virtual/2026/poster/149484) · [arXiv](https://arxiv.org/search/?query=Video+Forensic+Self-Descriptions++Leveraging+Temporally+Distributed+Forensic+Microstructures+for+Zero-Shot+Detection+of+AI-Generated+Videos&searchtype=title)
 
-## LLM Agents — 700 papers (7.7%, 2025: 3.5%)
+## Efficient LLMs & Architectures: 771 papers (8.5% of all, 2025: 8.4%)
 
-Benchmarks, memory, skills, safety, multi-agent coordination and multi-turn training for tool-using and coding LLM agents, plus human oversight of AI decisions.
+Transformer theory, sparse attention, KV cache, quantization, pruning, speculative decoding, PEFT, model merging, scaling laws and LLM-written GPU kernels.
 
 | Subtopic | What the papers do | 2026 | share 2025 → 2026 | ★ |
 |---|---|---|---|---|
-| Tool-Use, Web and GUI Agent Benchmarks | Benchmarks and evaluation suites for tool-using, web, GUI and professional-workflow language agents. | 113 | 0.38% → 1.24% | 3 |
-| LLM Agent Reliability and Efficiency | Making LLM agents more reliable, safe and cost-efficient through tool-call decisions, failure prediction, abstention and resource control. | 88 | 0.29% → 0.97% | 6 |
-| Human-AI Collaboration and Oversight | Position and empirical papers on human oversight, AI-assisted decisions, governance and how AI systems should be evaluated with people. | 80 | 0.63% → 0.88% | 11 |
-| LLM Agent Safety and Prompt Injection | Benchmarks and defends LLM, computer-use and multi-agent systems against prompt injection, unsafe actions, sabotage and scheming. | 76 | 0.32% → 0.83% | 2 |
-| LLM Multi-Agent Systems | Designing, training and evaluating teams of collaborating or debating LLM agents, including coordination and orchestration. | 73 | 0.41% → 0.80% | 3 |
-| Long-Term Memory for LLM Agents | These papers build and benchmark memory systems that let LLM agents store, retrieve and update past experience over long dialogues and tasks. | 66 | 0.12% → 0.72% | 1 |
-| Skill Libraries for LLM Agents | LLM agents that discover, store, reuse and evolve skills to solve long-horizon web, embodied and tool-use tasks. | 58 | 0.31% → 0.64% | 3 |
-| Coding Agents and SWE Benchmarks | These papers benchmark and train LLM coding agents on repository-level software engineering, long-horizon development and debugging tasks. | 55 | 0.20% → 0.60% | 1 |
-| Multi-Turn LLM Dialogue and Agent RL | Reinforcement learning, credit assignment and evaluation for LLMs in multi-turn conversations and interactive agent tasks. | 48 | 0.43% → 0.53% | 2 |
-| Multimodal Agents for Search and Deep Research | These papers evaluate and train multimodal LLM agents for web search, deep research, tool use and embodied decision-making, mostly through new benchmarks. | 43 | 0.44% → 0.47% | 2 |
+| Transformer Mechanisms and Expressivity Theory | These papers analyze how transformers compute, covering in-context learning theory, looped transformers, attention sinks, massive activations and length generalization. | 125 | 1.69% → 1.37% | 4 |
+| LLM Pruning and MoE Compression | Structured pruning, layer removal and mixture-of-experts compression to make large language models cheaper to store and serve. | 95 | 0.97% → 1.04% | 2 |
+| Diffusion Language Models | These papers develop masked and discrete diffusion language models, focusing on parallel decoding, speculative sampling, unmasking strategies and RL post-training. | 91 | 0.55% → 1.00% | 6 |
+| LoRA and Parameter-Efficient Fine-Tuning | Proposes low-rank, sparse, orthogonal and zeroth-order adapter variants and optimizers for fine-tuning large language models with less memory and compute. | 82 | 1.31% → 0.90% | 2 |
+| Long-Context Sparse and Linear Attention | These papers make long-context language models efficient through sparse attention, linear RNNs and state-space models, and positional encodings that extend context length. | 77 | 0.94% → 0.85% | 3 |
+| Low-Bit LLM Quantization | These papers compress LLM weights and activations to low bit-widths through post-training quantization, quantization-aware training and mixed-precision search. | 66 | 0.51% → 0.72% | 1 |
+| KV Cache Compression and Eviction | These papers shrink the memory cost of LLM inference by evicting, quantizing, pruning or reusing key-value cache entries. | 53 | 0.53% → 0.58% | 1 |
+| Speculative Decoding for LLM Inference | Speeds up LLM generation and serving with draft-and-verify speculative decoding, tree drafting, self-speculation and scheduling. | 47 | 0.58% → 0.52% | 2 |
+| Neural Scaling Laws for Pretraining | These papers fit, explain and extrapolate power-law scaling laws that relate loss to model size, data and compute, and derive compute-optimal training recipes. | 43 | 0.61% → 0.47% | 3 |
+| LLM-Generated GPU Kernels and Systems | Using LLMs and agents to write and tune CUDA or Triton kernels, plus benchmarks for HPC and ML systems code. | 40 | 0.17% → 0.44% | 1 |
+| Model Merging and LoRA Fusion | Combining fine-tuned models, task vectors or LoRA adapters into a single model without retraining. | 29 | 0.26% → 0.32% | 1 |
+| Diffusion Transformer Quantization and Sparsity | These papers speed up image and video diffusion transformers with post-training or quantization-aware quantization and trainable sparse attention. | 23 | 0.27% → 0.25% | 0 |
 
 **Orals**
 
-- AgentAbstain: Do LLM Agents Know When Not to Act?: [NeurIPS page](https://neurips.cc/virtual/2026/poster/139558) · [arXiv](https://arxiv.org/search/?query=AgentAbstain++Do+LLM+Agents+Know+When+Not+to+Act+&searchtype=title) · [OpenReview*](https://openreview.net/forum?id=Iee7eL6QV0) · [PDF*](https://openreview.net/pdf?id=Iee7eL6QV0)
-- Agent Security is a Systems Problem: [NeurIPS page](https://neurips.cc/virtual/2026/poster/140106) · [arXiv](https://arxiv.org/search/?query=Agent+Security+is+a+Systems+Problem&searchtype=title) · [OpenReview*](https://openreview.net/forum?id=8gDb2bnWWf) · [PDF*](https://openreview.net/pdf?id=8gDb2bnWWf)
-- APS: Bias-Controlled Adaptive Prototype Simulation for Population-Scale LLM Agents: [NeurIPS page](https://neurips.cc/virtual/2026/poster/149524) · [arXiv](https://arxiv.org/search/?query=APS++Bias-Controlled+Adaptive+Prototype+Simulation+for+Population-Scale+LLM+Agents&searchtype=title) · [OpenReview*](https://openreview.net/forum?id=pVNs5UOYq3) · [PDF*](https://openreview.net/pdf?id=pVNs5UOYq3)
-- ExComm: Exploration-Stage Communication for Error-Resilient Agentic Test-Time Scaling: [NeurIPS page](https://neurips.cc/virtual/2026/poster/154319) · [arXiv](https://arxiv.org/search/?query=ExComm++Exploration-Stage+Communication+for+Error-Resilient+Agentic+Test-Time+Scaling&searchtype=title) · [OpenReview*](https://openreview.net/forum?id=EXtXoqNLl3) · [PDF*](https://openreview.net/pdf?id=EXtXoqNLl3)
-- GenAI Evaluation Results are Largely Artifacts of Evaluation Design Choices: Evidence from Audit Studies of Resume Screening: [NeurIPS page](https://neurips.cc/virtual/2026/poster/138976) · [arXiv](https://arxiv.org/search/?query=GenAI+Evaluation+Results+are+Largely+Artifacts+of+Evaluation+Design+Choices++Evidence+from+Audit+Studies+of+Resume+Screening&searchtype=title) · [OpenReview*](https://openreview.net/forum?id=sy5IWI4jWC) · [PDF*](https://openreview.net/pdf?id=sy5IWI4jWC)
-- HeMeR: Heterogeneous Memory Reconciliation for Embodied Agents via Structured KV Reuse: [NeurIPS page](https://neurips.cc/virtual/2026/poster/148497) · [arXiv](https://arxiv.org/search/?query=HeMeR++Heterogeneous+Memory+Reconciliation+for+Embodied+Agents+via+Structured+KV+Reuse&searchtype=title) · [OpenReview*](https://openreview.net/forum?id=xMqv6BYsZv) · [PDF*](https://openreview.net/pdf?id=xMqv6BYsZv)
-- LITMUS: Benchmarking Behavioral Jailbreaks of LLM Agents in Real OS Environments: [NeurIPS page](https://neurips.cc/virtual/2026/poster/150415) · [arXiv](https://arxiv.org/search/?query=LITMUS++Benchmarking+Behavioral+Jailbreaks+of+LLM+Agents+in+Real+OS+Environments&searchtype=title) · [OpenReview*](https://openreview.net/forum?id=iCXoa3VMy0) · [PDF*](https://openreview.net/pdf?id=iCXoa3VMy0)
-- MLS-Bench: A Holistic and Rigorous Assessment of AI Systems on Building Better AI: [NeurIPS page](https://neurips.cc/virtual/2026/poster/139626) · [arXiv](https://arxiv.org/search/?query=MLS-Bench++A+Holistic+and+Rigorous+Assessment+of+AI+Systems+on+Building+Better+AI&searchtype=title) · [OpenReview*](https://openreview.net/forum?id=EaF7FneBfZ) · [PDF*](https://openreview.net/pdf?id=EaF7FneBfZ)
-- Offloading Score: Measuring AI Reliance through Counterfactual Workflows: [NeurIPS page](https://neurips.cc/virtual/2026/poster/139388) · [arXiv](https://arxiv.org/search/?query=Offloading+Score++Measuring+AI+Reliance+through+Counterfactual+Workflows&searchtype=title) · [OpenReview*](https://openreview.net/forum?id=TT3ACb02l4) · [PDF*](https://openreview.net/pdf?id=TT3ACb02l4)
-- Resilience Matters for Embodied Agents System: New Metrics, Systematic Evaluation, and Optimization: [NeurIPS page](https://neurips.cc/virtual/2026/poster/148940) · [arXiv](https://arxiv.org/search/?query=Resilience+Matters+for+Embodied+Agents+System++New+Metrics++Systematic+Evaluation++and+Optimization&searchtype=title) · [OpenReview*](https://openreview.net/forum?id=u2TS1Rxun2) · [PDF*](https://openreview.net/pdf?id=u2TS1Rxun2)
-- SMART: Scalable Multi-Agent Role-conditioned Teaming via LLM-free Tree Search: [NeurIPS page](https://neurips.cc/virtual/2026/poster/149874) · [arXiv](https://arxiv.org/search/?query=SMART++Scalable+Multi-Agent+Role-conditioned+Teaming+via+LLM-free+Tree+Search&searchtype=title) · [OpenReview*](https://openreview.net/forum?id=mYzIBNy0LN) · [PDF*](https://openreview.net/pdf?id=mYzIBNy0LN)
-- Soteria: Formally Verified Planning with Runtime Enforcement for Safe LLM Agents: [NeurIPS page](https://neurips.cc/virtual/2026/poster/154927) · [arXiv](https://arxiv.org/search/?query=Soteria++Formally+Verified+Planning+with+Runtime+Enforcement+for+Safe+LLM+Agents&searchtype=title) · [OpenReview*](https://openreview.net/forum?id=9url1EFMaU) · [PDF*](https://openreview.net/pdf?id=9url1EFMaU)
+- Bridging Compute- and Data-Optimal Pretraining: [NeurIPS page](https://neurips.cc/virtual/2026/poster/155350) · [arXiv](https://arxiv.org/search/?query=Bridging+Compute-+and+Data-Optimal+Pretraining&searchtype=title)
+- Compact SO(3) Equivariant Atomistic Foundation Models via Structural Pruning: [NeurIPS page](https://neurips.cc/virtual/2026/poster/154865) · [arXiv](https://arxiv.org/search/?query=Compact+SO+3++Equivariant+Atomistic+Foundation+Models+via+Structural+Pruning&searchtype=title)
+- CURE: Counterfactual Unsafe-token Re-masking for Diffusion Large Language Model Test-time Alignment: [NeurIPS page](https://neurips.cc/virtual/2026/poster/151876) · [arXiv](https://arxiv.org/search/?query=CURE++Counterfactual+Unsafe-token+Re-masking+for+Diffusion+Large+Language+Model+Test-time+Alignment&searchtype=title)
+- Felid: A Flexible and Efficient Design for Transformer Fine-Tuning over Encrypted Data: [NeurIPS page](https://neurips.cc/virtual/2026/poster/148321) · [arXiv](https://arxiv.org/search/?query=Felid++A+Flexible+and+Efficient+Design+for+Transformer+Fine-Tuning+over+Encrypted+Data&searchtype=title)
+- Fractional State Space Transition for Long Sequence Modeling: [NeurIPS page](https://neurips.cc/virtual/2026/poster/150427) · [arXiv](https://arxiv.org/search/?query=Fractional+State+Space+Transition+for+Long+Sequence+Modeling&searchtype=title)
+- Pruning and Distilling Mixture-of-Experts into Dense Language Models: [NeurIPS page](https://neurips.cc/virtual/2026/poster/150472) · [arXiv](https://arxiv.org/search/?query=Pruning+and+Distilling+Mixture-of-Experts+into+Dense+Language+Models&searchtype=title)
 
-## DL Theory & Neuroscience — 691 papers (7.6%, 2025: 8.1%)
+## DL Theory & Neuroscience: 635 papers (7.0% of all, 2025: 7.1%)
 
 Learning dynamics and generalization theory, representation geometry, attribution and sparse autoencoders, plus brain decoding, spiking networks, quantum ML, verification and neural combinatorial optimization.
 
@@ -116,7 +111,6 @@ Learning dynamics and generalization theory, representation geometry, attributio
 | Grokking, Memorization and Generalization Theory | Explains why overparameterized networks generalize, covering grokking, double descent, memorization versus generalization and compression-based bounds. | 68 | 0.63% → 0.75% | 4 |
 | Shapley Values and Feature Attribution | These papers develop and critique post-hoc explanation methods such as Shapley values, integrated gradients and causal attributions for model predictions. | 62 | 0.82% → 0.68% | 5 |
 | Recurrent Network Dynamics in Neuroscience | Analyzes learning and dynamics in low-rank RNNs, Hopfield networks and reservoirs as models of neural circuits and memory. | 57 | 0.65% → 0.63% | 6 |
-| Neural Combinatorial Optimization | Learned solvers, often diffusion or RL based, for routing, SAT, MILP and other constraint satisfaction problems. | 56 | 0.97% → 0.61% | 3 |
 | Quantum Machine Learning | Applies machine learning to quantum systems and studies quantum neural networks, circuits, kernels, tomography and neural quantum states. | 42 | 0.22% → 0.46% | 0 |
 | Brain Encoding and Neural Recording Analysis | Models fMRI, EEG and spiking recordings with encoding models, connectivity estimation and neural data tokenizers, plus connectomics benchmarks. | 42 | 0.97% → 0.46% | 4 |
 | EEG and Physiological Foundation Models | Foundation models, benchmarks and datasets for EEG, ECG and other physiological signals in clinical and brain-computer interface settings. | 41 | 0.29% → 0.45% | 2 |
@@ -127,51 +121,53 @@ Learning dynamics and generalization theory, representation geometry, attributio
 
 **Orals**
 
-- BrainWorld: A Structural-Prior-Conditioned Generative Model for Whole-Brain 4D fMRI Dynamics: [NeurIPS page](https://neurips.cc/virtual/2026/poster/155412) · [arXiv](https://arxiv.org/search/?query=BrainWorld++A+Structural-Prior-Conditioned+Generative+Model+for+Whole-Brain+4D+fMRI+Dynamics&searchtype=title) · [OpenReview*](https://openreview.net/forum?id=5rS8m8pxgo) · [PDF*](https://openreview.net/pdf?id=5rS8m8pxgo)
-- DD-CAM: Minimal Sufficient Explanations for Vision Models Using Delta Debugging: [NeurIPS page](https://neurips.cc/virtual/2026/poster/151520) · [arXiv](https://arxiv.org/search/?query=DD-CAM++Minimal+Sufficient+Explanations+for+Vision+Models+Using+Delta+Debugging&searchtype=title) · [OpenReview*](https://openreview.net/forum?id=a30XWAYlaJ) · [PDF*](https://openreview.net/pdf?id=a30XWAYlaJ)
-- Decomposing Earth Embeddings with Sparse Autoencoders: [NeurIPS page](https://neurips.cc/virtual/2026/poster/150168) · [arXiv](https://arxiv.org/search/?query=Decomposing+Earth+Embeddings+with+Sparse+Autoencoders&searchtype=title) · [OpenReview*](https://openreview.net/forum?id=kB29xkjNQK) · [PDF*](https://openreview.net/pdf?id=kB29xkjNQK)
-- Evaluating Neural Data Tokenizers: A Framework for Assessing Learned Representations of Spiking Activity: [NeurIPS page](https://neurips.cc/virtual/2026/poster/139125) · [arXiv](https://arxiv.org/search/?query=Evaluating+Neural+Data+Tokenizers++A+Framework+for+Assessing+Learned+Representations+of+Spiking+Activity&searchtype=title) · [OpenReview*](https://openreview.net/forum?id=jYb8X9iFPY) · [PDF*](https://openreview.net/pdf?id=jYb8X9iFPY)
-- Exact Gaussian Moment Matching for Residual Networks: a Second-Order Method: [NeurIPS page](https://neurips.cc/virtual/2026/poster/155943) · [arXiv](https://arxiv.org/search/?query=Exact+Gaussian+Moment+Matching+for+Residual+Networks++a+Second-Order+Method&searchtype=title) · [OpenReview*](https://openreview.net/forum?id=1dsxDeHdpR) · [PDF*](https://openreview.net/pdf?id=1dsxDeHdpR)
-- Geometry-Aware Similarity Metrics for Neural Representations on Riemannian and Statistical Manifolds: [NeurIPS page](https://neurips.cc/virtual/2026/poster/150840) · [arXiv](https://arxiv.org/search/?query=Geometry-Aware+Similarity+Metrics+for+Neural+Representations+on+Riemannian+and+Statistical+Manifolds&searchtype=title) · [OpenReview*](https://openreview.net/forum?id=evbVz4WWXN) · [PDF*](https://openreview.net/pdf?id=evbVz4WWXN)
-- IDEA: Unwrapping Visual Black-box Models by Interaction Decomposition: [NeurIPS page](https://neurips.cc/virtual/2026/poster/151393) · [arXiv](https://arxiv.org/search/?query=IDEA++Unwrapping+Visual+Black-box+Models+by+Interaction+Decomposition&searchtype=title) · [OpenReview*](https://openreview.net/forum?id=azDcnhfVNx) · [PDF*](https://openreview.net/pdf?id=azDcnhfVNx)
-- Learning interpretable Schur forms of recurrent weight matrices: [NeurIPS page](https://neurips.cc/virtual/2026/poster/155071) · [arXiv](https://arxiv.org/search/?query=Learning+interpretable+Schur+forms+of+recurrent+weight+matrices&searchtype=title) · [OpenReview*](https://openreview.net/forum?id=8gcHRPsjr5) · [PDF*](https://openreview.net/pdf?id=8gcHRPsjr5)
-- Learning Reveals Invisible Structure in Low-Rank RNNs: [NeurIPS page](https://neurips.cc/virtual/2026/poster/152289) · [arXiv](https://arxiv.org/search/?query=Learning+Reveals+Invisible+Structure+in+Low-Rank+RNNs&searchtype=title) · [OpenReview*](https://openreview.net/forum?id=UB2Xsj6ZZA) · [PDF*](https://openreview.net/pdf?id=UB2Xsj6ZZA)
-- Learning Sparse Semantic-Cortical Atoms for Multisubject Naturalistic fMRI Encoding: [NeurIPS page](https://neurips.cc/virtual/2026/poster/151712) · [arXiv](https://arxiv.org/search/?query=Learning+Sparse+Semantic-Cortical+Atoms+for+Multisubject+Naturalistic+fMRI+Encoding&searchtype=title) · [OpenReview*](https://openreview.net/forum?id=YcEZoSqrxa) · [PDF*](https://openreview.net/pdf?id=YcEZoSqrxa)
-- MindAlign: Bridging EEG, Vision, and Language for Zero-Shot Visual Decoding: [NeurIPS page](https://neurips.cc/virtual/2026/poster/149255) · [arXiv](https://arxiv.org/search/?query=MindAlign++Bridging+EEG++Vision++and+Language+for+Zero-Shot+Visual+Decoding&searchtype=title) · [OpenReview*](https://openreview.net/forum?id=riv0NRuHeq) · [PDF*](https://openreview.net/pdf?id=riv0NRuHeq)
-- Neural population tuning statistics as priors for multitask generalization: [NeurIPS page](https://neurips.cc/virtual/2026/poster/153194) · [arXiv](https://arxiv.org/search/?query=Neural+population+tuning+statistics+as+priors+for+multitask+generalization&searchtype=title) · [OpenReview*](https://openreview.net/forum?id=N8F8d2c171) · [PDF*](https://openreview.net/pdf?id=N8F8d2c171)
-- The Dead Salmons of AI Interpretability: The Need for a Statistical Inference Perspective: [NeurIPS page](https://neurips.cc/virtual/2026/poster/140002) · [arXiv](https://arxiv.org/search/?query=The+Dead+Salmons+of+AI+Interpretability++The+Need+for+a+Statistical+Inference+Perspective&searchtype=title) · [OpenReview*](https://openreview.net/forum?id=w0wOa4UDHv) · [PDF*](https://openreview.net/pdf?id=w0wOa4UDHv)
-- The Sign Code: The Hidden Binary Nature of Deep Networks: [NeurIPS page](https://neurips.cc/virtual/2026/poster/155585) · [arXiv](https://arxiv.org/search/?query=The+Sign+Code++The+Hidden+Binary+Nature+of+Deep+Networks&searchtype=title) · [OpenReview*](https://openreview.net/forum?id=4WN4vV8RCR) · [PDF*](https://openreview.net/pdf?id=4WN4vV8RCR)
-- UECO: A Unified Encoder with Structure-Aware Attention Mixture via Iterative Edge Evolving for Neural Combinatorial Optimization: [NeurIPS page](https://neurips.cc/virtual/2026/poster/153347) · [arXiv](https://arxiv.org/search/?query=UECO++A+Unified+Encoder+with+Structure-Aware+Attention+Mixture+via+Iterative+Edge+Evolving+for+Neural+Combinatorial+Optimization&searchtype=title) · [OpenReview*](https://openreview.net/forum?id=M2lqt23VO7) · [PDF*](https://openreview.net/pdf?id=M2lqt23VO7)
-- Uniform-in-Time Weak Propagation of Chaos in Shallow Neural Networks: [NeurIPS page](https://neurips.cc/virtual/2026/poster/154794) · [arXiv](https://arxiv.org/search/?query=Uniform-in-Time+Weak+Propagation+of+Chaos+in+Shallow+Neural+Networks&searchtype=title) · [OpenReview*](https://openreview.net/forum?id=Aupfb8A52K) · [PDF*](https://openreview.net/pdf?id=Aupfb8A52K)
-- Unlocking Volition: Proactive Intention Decoding via Interpretable Graph Learning of Multi-Region ECoG: [NeurIPS page](https://neurips.cc/virtual/2026/poster/153824) · [arXiv](https://arxiv.org/search/?query=Unlocking+Volition++Proactive+Intention+Decoding+via+Interpretable+Graph+Learning+of+Multi-Region+ECoG&searchtype=title) · [OpenReview*](https://openreview.net/forum?id=IRTohTNxhM) · [PDF*](https://openreview.net/pdf?id=IRTohTNxhM)
+- BrainWorld: A Structural-Prior-Conditioned Generative Model for Whole-Brain 4D fMRI Dynamics: [NeurIPS page](https://neurips.cc/virtual/2026/poster/155412) · [arXiv](https://arxiv.org/search/?query=BrainWorld++A+Structural-Prior-Conditioned+Generative+Model+for+Whole-Brain+4D+fMRI+Dynamics&searchtype=title)
+- DD-CAM: Minimal Sufficient Explanations for Vision Models Using Delta Debugging: [NeurIPS page](https://neurips.cc/virtual/2026/poster/151520) · [arXiv](https://arxiv.org/search/?query=DD-CAM++Minimal+Sufficient+Explanations+for+Vision+Models+Using+Delta+Debugging&searchtype=title)
+- Decomposing Earth Embeddings with Sparse Autoencoders: [NeurIPS page](https://neurips.cc/virtual/2026/poster/150168) · [arXiv](https://arxiv.org/search/?query=Decomposing+Earth+Embeddings+with+Sparse+Autoencoders&searchtype=title)
+- Evaluating Neural Data Tokenizers: A Framework for Assessing Learned Representations of Spiking Activity: [NeurIPS page](https://neurips.cc/virtual/2026/poster/139125) · [arXiv](https://arxiv.org/search/?query=Evaluating+Neural+Data+Tokenizers++A+Framework+for+Assessing+Learned+Representations+of+Spiking+Activity&searchtype=title)
+- Exact Gaussian Moment Matching for Residual Networks: a Second-Order Method: [NeurIPS page](https://neurips.cc/virtual/2026/poster/155943) · [arXiv](https://arxiv.org/search/?query=Exact+Gaussian+Moment+Matching+for+Residual+Networks++a+Second-Order+Method&searchtype=title)
+- Geometry-Aware Similarity Metrics for Neural Representations on Riemannian and Statistical Manifolds: [NeurIPS page](https://neurips.cc/virtual/2026/poster/150840) · [arXiv](https://arxiv.org/search/?query=Geometry-Aware+Similarity+Metrics+for+Neural+Representations+on+Riemannian+and+Statistical+Manifolds&searchtype=title)
+- IDEA: Unwrapping Visual Black-box Models by Interaction Decomposition: [NeurIPS page](https://neurips.cc/virtual/2026/poster/151393) · [arXiv](https://arxiv.org/search/?query=IDEA++Unwrapping+Visual+Black-box+Models+by+Interaction+Decomposition&searchtype=title)
+- Learning interpretable Schur forms of recurrent weight matrices: [NeurIPS page](https://neurips.cc/virtual/2026/poster/155071) · [arXiv](https://arxiv.org/search/?query=Learning+interpretable+Schur+forms+of+recurrent+weight+matrices&searchtype=title)
+- Learning Reveals Invisible Structure in Low-Rank RNNs: [NeurIPS page](https://neurips.cc/virtual/2026/poster/152289) · [arXiv](https://arxiv.org/search/?query=Learning+Reveals+Invisible+Structure+in+Low-Rank+RNNs&searchtype=title)
+- Learning Sparse Semantic-Cortical Atoms for Multisubject Naturalistic fMRI Encoding: [NeurIPS page](https://neurips.cc/virtual/2026/poster/151712) · [arXiv](https://arxiv.org/search/?query=Learning+Sparse+Semantic-Cortical+Atoms+for+Multisubject+Naturalistic+fMRI+Encoding&searchtype=title)
+- MindAlign: Bridging EEG, Vision, and Language for Zero-Shot Visual Decoding: [NeurIPS page](https://neurips.cc/virtual/2026/poster/149255) · [arXiv](https://arxiv.org/search/?query=MindAlign++Bridging+EEG++Vision++and+Language+for+Zero-Shot+Visual+Decoding&searchtype=title)
+- Neural population tuning statistics as priors for multitask generalization: [NeurIPS page](https://neurips.cc/virtual/2026/poster/153194) · [arXiv](https://arxiv.org/search/?query=Neural+population+tuning+statistics+as+priors+for+multitask+generalization&searchtype=title)
+- The Dead Salmons of AI Interpretability: The Need for a Statistical Inference Perspective: [NeurIPS page](https://neurips.cc/virtual/2026/poster/140002) · [arXiv](https://arxiv.org/search/?query=The+Dead+Salmons+of+AI+Interpretability++The+Need+for+a+Statistical+Inference+Perspective&searchtype=title)
+- The Sign Code: The Hidden Binary Nature of Deep Networks: [NeurIPS page](https://neurips.cc/virtual/2026/poster/155585) · [arXiv](https://arxiv.org/search/?query=The+Sign+Code++The+Hidden+Binary+Nature+of+Deep+Networks&searchtype=title)
+- Uniform-in-Time Weak Propagation of Chaos in Shallow Neural Networks: [NeurIPS page](https://neurips.cc/virtual/2026/poster/154794) · [arXiv](https://arxiv.org/search/?query=Uniform-in-Time+Weak+Propagation+of+Chaos+in+Shallow+Neural+Networks&searchtype=title)
+- Unlocking Volition: Proactive Intention Decoding via Interpretable Graph Learning of Multi-Region ECoG: [NeurIPS page](https://neurips.cc/virtual/2026/poster/153824) · [arXiv](https://arxiv.org/search/?query=Unlocking+Volition++Proactive+Intention+Decoding+via+Interpretable+Graph+Learning+of+Multi-Region+ECoG&searchtype=title)
 
-## Efficient LLMs & Architectures — 680 papers (7.5%, 2025: 7.9%)
+## LLM Agents: 620 papers (6.8% of all, 2025: 2.9%)
 
-Transformer theory, sparse attention, KV cache, quantization, pruning, speculative decoding, PEFT, model merging, scaling laws and LLM-written GPU kernels.
+Benchmarks, memory, skills, safety, multi-agent coordination and multi-turn training for tool-using and coding LLM agents, plus human oversight of AI decisions.
 
 | Subtopic | What the papers do | 2026 | share 2025 → 2026 | ★ |
 |---|---|---|---|---|
-| Transformer Mechanisms and Expressivity Theory | These papers analyze how transformers compute, covering in-context learning theory, looped transformers, attention sinks, massive activations and length generalization. | 125 | 1.69% → 1.37% | 4 |
-| LLM Pruning and MoE Compression | Structured pruning, layer removal and mixture-of-experts compression to make large language models cheaper to store and serve. | 95 | 0.97% → 1.04% | 2 |
-| LoRA and Parameter-Efficient Fine-Tuning | Proposes low-rank, sparse, orthogonal and zeroth-order adapter variants and optimizers for fine-tuning large language models with less memory and compute. | 82 | 1.31% → 0.90% | 2 |
-| Long-Context Sparse and Linear Attention | These papers make long-context language models efficient through sparse attention, linear RNNs and state-space models, and positional encodings that extend context length. | 77 | 0.94% → 0.85% | 3 |
-| Low-Bit LLM Quantization | These papers compress LLM weights and activations to low bit-widths through post-training quantization, quantization-aware training and mixed-precision search. | 66 | 0.51% → 0.72% | 1 |
-| KV Cache Compression and Eviction | These papers shrink the memory cost of LLM inference by evicting, quantizing, pruning or reusing key-value cache entries. | 53 | 0.53% → 0.58% | 1 |
-| Speculative Decoding for LLM Inference | Speeds up LLM generation and serving with draft-and-verify speculative decoding, tree drafting, self-speculation and scheduling. | 47 | 0.63% → 0.52% | 2 |
-| Neural Scaling Laws for Pretraining | These papers fit, explain and extrapolate power-law scaling laws that relate loss to model size, data and compute, and derive compute-optimal training recipes. | 43 | 0.61% → 0.47% | 3 |
-| LLM-Generated GPU Kernels and Systems | Using LLMs and agents to write and tune CUDA or Triton kernels, plus benchmarks for HPC and ML systems code. | 40 | 0.17% → 0.44% | 1 |
-| Model Merging and LoRA Fusion | Combining fine-tuned models, task vectors or LoRA adapters into a single model without retraining. | 29 | 0.26% → 0.32% | 1 |
-| Diffusion Transformer Quantization and Sparsity | These papers speed up image and video diffusion transformers with post-training or quantization-aware quantization and trainable sparse attention. | 23 | 0.27% → 0.25% | 0 |
+| Tool-Use, Web and GUI Agent Benchmarks | Benchmarks and evaluation suites for tool-using, web, GUI and professional-workflow language agents. | 113 | 0.38% → 1.24% | 3 |
+| LLM Agent Reliability and Efficiency | Making LLM agents more reliable, safe and cost-efficient through tool-call decisions, failure prediction, abstention and resource control. | 88 | 0.29% → 0.97% | 6 |
+| LLM Agent Safety and Security | Benchmarks and defends LLM, computer-use and multi-agent systems against prompt injection, unsafe actions, sabotage and scheming. | 76 | 0.32% → 0.83% | 2 |
+| LLM Multi-Agent Systems | Designing, training and evaluating teams of collaborating or debating LLM agents, including coordination and orchestration. | 73 | 0.41% → 0.80% | 3 |
+| Long-Term Memory for LLM Agents | These papers build and benchmark memory systems that let LLM agents store, retrieve and update past experience over long dialogues and tasks. | 66 | 0.12% → 0.72% | 1 |
+| Self-Evolving Agents and Skill Learning | LLM agents that discover, store, reuse and evolve skills to solve long-horizon web, embodied and tool-use tasks. | 58 | 0.31% → 0.64% | 3 |
+| Coding Agents and SWE Benchmarks | These papers benchmark and train LLM coding agents on repository-level software engineering, long-horizon development and debugging tasks. | 55 | 0.20% → 0.60% | 1 |
+| Multi-Turn LLM Dialogue and Agent RL | Reinforcement learning, credit assignment and evaluation for LLMs in multi-turn conversations and interactive agent tasks. | 48 | 0.43% → 0.53% | 2 |
+| Multimodal Agents and Reasoning Benchmarks | These papers evaluate and train multimodal LLM agents for web search, deep research, tool use and embodied decision-making, mostly through new benchmarks. | 43 | 0.44% → 0.47% | 2 |
 
 **Orals**
 
-- Bridging Compute- and Data-Optimal Pretraining: [NeurIPS page](https://neurips.cc/virtual/2026/poster/155350) · [arXiv](https://arxiv.org/search/?query=Bridging+Compute-+and+Data-Optimal+Pretraining&searchtype=title) · [OpenReview*](https://openreview.net/forum?id=6HVSfPO1cT) · [PDF*](https://openreview.net/pdf?id=6HVSfPO1cT)
-- Compact SO(3) Equivariant Atomistic Foundation Models via Structural Pruning: [NeurIPS page](https://neurips.cc/virtual/2026/poster/154865) · [arXiv](https://arxiv.org/search/?query=Compact+SO+3++Equivariant+Atomistic+Foundation+Models+via+Structural+Pruning&searchtype=title) · [OpenReview*](https://openreview.net/forum?id=AJ8IWO0noE) · [PDF*](https://openreview.net/pdf?id=AJ8IWO0noE)
-- Felid: A Flexible and Efficient Design for Transformer Fine-Tuning over Encrypted Data: [NeurIPS page](https://neurips.cc/virtual/2026/poster/148321) · [arXiv](https://arxiv.org/search/?query=Felid++A+Flexible+and+Efficient+Design+for+Transformer+Fine-Tuning+over+Encrypted+Data&searchtype=title) · [OpenReview*](https://openreview.net/forum?id=yglphSefi0) · [PDF*](https://openreview.net/pdf?id=yglphSefi0)
-- Fractional State Space Transition for Long Sequence Modeling: [NeurIPS page](https://neurips.cc/virtual/2026/poster/150427) · [arXiv](https://arxiv.org/search/?query=Fractional+State+Space+Transition+for+Long+Sequence+Modeling&searchtype=title) · [OpenReview*](https://openreview.net/forum?id=i6ZEbxGeKu) · [PDF*](https://openreview.net/pdf?id=i6ZEbxGeKu)
-- Pruning and Distilling Mixture-of-Experts into Dense Language Models: [NeurIPS page](https://neurips.cc/virtual/2026/poster/150472) · [arXiv](https://arxiv.org/search/?query=Pruning+and+Distilling+Mixture-of-Experts+into+Dense+Language+Models&searchtype=title) · [OpenReview*](https://openreview.net/forum?id=hmvlyb1yQu) · [PDF*](https://openreview.net/pdf?id=hmvlyb1yQu)
+- AgentAbstain: Do LLM Agents Know When Not to Act?: [NeurIPS page](https://neurips.cc/virtual/2026/poster/139558) · [arXiv](https://arxiv.org/search/?query=AgentAbstain++Do+LLM+Agents+Know+When+Not+to+Act+&searchtype=title)
+- Agent Security is a Systems Problem: [NeurIPS page](https://neurips.cc/virtual/2026/poster/140106) · [arXiv](https://arxiv.org/search/?query=Agent+Security+is+a+Systems+Problem&searchtype=title)
+- APS: Bias-Controlled Adaptive Prototype Simulation for Population-Scale LLM Agents: [NeurIPS page](https://neurips.cc/virtual/2026/poster/149524) · [arXiv](https://arxiv.org/search/?query=APS++Bias-Controlled+Adaptive+Prototype+Simulation+for+Population-Scale+LLM+Agents&searchtype=title)
+- ExComm: Exploration-Stage Communication for Error-Resilient Agentic Test-Time Scaling: [NeurIPS page](https://neurips.cc/virtual/2026/poster/154319) · [arXiv](https://arxiv.org/search/?query=ExComm++Exploration-Stage+Communication+for+Error-Resilient+Agentic+Test-Time+Scaling&searchtype=title)
+- HeMeR: Heterogeneous Memory Reconciliation for Embodied Agents via Structured KV Reuse: [NeurIPS page](https://neurips.cc/virtual/2026/poster/148497) · [arXiv](https://arxiv.org/search/?query=HeMeR++Heterogeneous+Memory+Reconciliation+for+Embodied+Agents+via+Structured+KV+Reuse&searchtype=title)
+- LITMUS: Benchmarking Behavioral Jailbreaks of LLM Agents in Real OS Environments: [NeurIPS page](https://neurips.cc/virtual/2026/poster/150415) · [arXiv](https://arxiv.org/search/?query=LITMUS++Benchmarking+Behavioral+Jailbreaks+of+LLM+Agents+in+Real+OS+Environments&searchtype=title)
+- MLS-Bench: A Holistic and Rigorous Assessment of AI Systems on Building Better AI: [NeurIPS page](https://neurips.cc/virtual/2026/poster/139626) · [arXiv](https://arxiv.org/search/?query=MLS-Bench++A+Holistic+and+Rigorous+Assessment+of+AI+Systems+on+Building+Better+AI&searchtype=title)
+- Resilience Matters for Embodied Agents System: New Metrics, Systematic Evaluation, and Optimization: [NeurIPS page](https://neurips.cc/virtual/2026/poster/148940) · [arXiv](https://arxiv.org/search/?query=Resilience+Matters+for+Embodied+Agents+System++New+Metrics++Systematic+Evaluation++and+Optimization&searchtype=title)
+- SMART: Scalable Multi-Agent Role-conditioned Teaming via LLM-free Tree Search: [NeurIPS page](https://neurips.cc/virtual/2026/poster/149874) · [arXiv](https://arxiv.org/search/?query=SMART++Scalable+Multi-Agent+Role-conditioned+Teaming+via+LLM-free+Tree+Search&searchtype=title)
+- Soteria: Formally Verified Planning with Runtime Enforcement for Safe LLM Agents: [NeurIPS page](https://neurips.cc/virtual/2026/poster/154927) · [arXiv](https://arxiv.org/search/?query=Soteria++Formally+Verified+Planning+with+Runtime+Enforcement+for+Safe+LLM+Agents&searchtype=title)
 
-## Trustworthy & Statistical ML — 611 papers (6.7%, 2025: 7.8%)
+## Trustworthy & Statistical ML: 611 papers (6.7% of all, 2025: 7.8%)
 
 Federated learning, differential privacy, fairness, conformal prediction, calibration, causal effect estimation, noisy labels, PAC theory, clustering and tabular foundation models.
 
@@ -193,62 +189,63 @@ Federated learning, differential privacy, fairness, conformal prediction, calibr
 
 **Orals**
 
-- DD-Ranking: Rethinking the Evaluation of Dataset Distillation: [NeurIPS page](https://neurips.cc/virtual/2026/poster/139355) · [arXiv](https://arxiv.org/search/?query=DD-Ranking++Rethinking+the+Evaluation+of+Dataset+Distillation&searchtype=title) · [OpenReview*](https://openreview.net/forum?id=UreH0QGZXp) · [PDF*](https://openreview.net/pdf?id=UreH0QGZXp)
-- Filtered Conformal Ellipsoids for Graph-Native Time Series: [NeurIPS page](https://neurips.cc/virtual/2026/poster/155800) · [arXiv](https://arxiv.org/search/?query=Filtered+Conformal+Ellipsoids+for+Graph-Native+Time+Series&searchtype=title) · [OpenReview*](https://openreview.net/forum?id=2mdgP5ws1o) · [PDF*](https://openreview.net/pdf?id=2mdgP5ws1o)
-- Impossibility of Distribution-Free Predictive Inference for Individual Treatment Effects: [NeurIPS page](https://neurips.cc/virtual/2026/poster/149451) · [arXiv](https://arxiv.org/search/?query=Impossibility+of+Distribution-Free+Predictive+Inference+for+Individual+Treatment+Effects&searchtype=title) · [OpenReview*](https://openreview.net/forum?id=pyIv9zfcdd) · [PDF*](https://openreview.net/pdf?id=pyIv9zfcdd)
-- LLM-Enhanced Random Forests in Orthogonal Hyperbolic Subspaces for Tabular Learning: [NeurIPS page](https://neurips.cc/virtual/2026/poster/154957) · [arXiv](https://arxiv.org/search/?query=LLM-Enhanced+Random+Forests+in+Orthogonal+Hyperbolic+Subspaces+for+Tabular+Learning&searchtype=title) · [OpenReview*](https://openreview.net/forum?id=9e7CzWvHvW) · [PDF*](https://openreview.net/pdf?id=9e7CzWvHvW)
-- MaxSketch: Robust Distinct Counting in Streams via Random Projections: [NeurIPS page](https://neurips.cc/virtual/2026/poster/155987) · [arXiv](https://arxiv.org/search/?query=MaxSketch++Robust+Distinct+Counting+in+Streams+via+Random+Projections&searchtype=title) · [OpenReview*](https://openreview.net/forum?id=1MB9KxyzHe) · [PDF*](https://openreview.net/pdf?id=1MB9KxyzHe)
-- Mitigating Confidence Miscalibration in Open-World Semi-Supervised Learning: [NeurIPS page](https://neurips.cc/virtual/2026/poster/153397) · [arXiv](https://arxiv.org/search/?query=Mitigating+Confidence+Miscalibration+in+Open-World+Semi-Supervised+Learning&searchtype=title) · [OpenReview*](https://openreview.net/forum?id=LfaHJnaV9L) · [PDF*](https://openreview.net/pdf?id=LfaHJnaV9L)
-- Position: Fair Representations Cannot Hold What They Promise: [NeurIPS page](https://neurips.cc/virtual/2026/poster/140022) · [arXiv](https://arxiv.org/search/?query=Position++Fair+Representations+Cannot+Hold+What+They+Promise&searchtype=title) · [OpenReview*](https://openreview.net/forum?id=lmeLparD9S) · [PDF*](https://openreview.net/pdf?id=lmeLparD9S)
-- Scale-Sensitive Shattering: Learnability and Evaluability at Optimal Scale: [NeurIPS page](https://neurips.cc/virtual/2026/poster/149340) · [arXiv](https://arxiv.org/search/?query=Scale-Sensitive+Shattering++Learnability+and+Evaluability+at+Optimal+Scale&searchtype=title) · [OpenReview*](https://openreview.net/forum?id=qoanAQUemS) · [PDF*](https://openreview.net/pdf?id=qoanAQUemS)
-- Surprises in Proper Positive-Only Learning: [NeurIPS page](https://neurips.cc/virtual/2026/poster/148778) · [arXiv](https://arxiv.org/search/?query=Surprises+in+Proper+Positive-Only+Learning&searchtype=title) · [OpenReview*](https://openreview.net/forum?id=v81L38ZyrQ) · [PDF*](https://openreview.net/pdf?id=v81L38ZyrQ)
-- Testable and Actionable Calibration for Full Swap Regret: [NeurIPS page](https://neurips.cc/virtual/2026/poster/148311) · [arXiv](https://arxiv.org/search/?query=Testable+and+Actionable+Calibration+for+Full+Swap+Regret&searchtype=title) · [OpenReview*](https://openreview.net/forum?id=yls0nG3VKg) · [PDF*](https://openreview.net/pdf?id=yls0nG3VKg)
-- The Aleatoric-Epistemic Dichotomy of Uncertainty is Meaningful and Indispensable for Machine Learning: [NeurIPS page](https://neurips.cc/virtual/2026/poster/140101) · [arXiv](https://arxiv.org/search/?query=The+Aleatoric-Epistemic+Dichotomy+of+Uncertainty+is+Meaningful+and+Indispensable+for+Machine+Learning&searchtype=title) · [OpenReview*](https://openreview.net/forum?id=CuRV56FVBy) · [PDF*](https://openreview.net/pdf?id=CuRV56FVBy)
-- The Stability of Online Algorithms in Performative Prediction: [NeurIPS page](https://neurips.cc/virtual/2026/poster/151725) · [arXiv](https://arxiv.org/search/?query=The+Stability+of+Online+Algorithms+in+Performative+Prediction&searchtype=title) · [OpenReview*](https://openreview.net/forum?id=YYzvip7hPZ) · [PDF*](https://openreview.net/pdf?id=YYzvip7hPZ)
+- DD-Ranking: Rethinking the Evaluation of Dataset Distillation: [NeurIPS page](https://neurips.cc/virtual/2026/poster/139355) · [arXiv](https://arxiv.org/search/?query=DD-Ranking++Rethinking+the+Evaluation+of+Dataset+Distillation&searchtype=title)
+- Filtered Conformal Ellipsoids for Graph-Native Time Series: [NeurIPS page](https://neurips.cc/virtual/2026/poster/155800) · [arXiv](https://arxiv.org/search/?query=Filtered+Conformal+Ellipsoids+for+Graph-Native+Time+Series&searchtype=title)
+- Impossibility of Distribution-Free Predictive Inference for Individual Treatment Effects: [NeurIPS page](https://neurips.cc/virtual/2026/poster/149451) · [arXiv](https://arxiv.org/search/?query=Impossibility+of+Distribution-Free+Predictive+Inference+for+Individual+Treatment+Effects&searchtype=title)
+- LLM-Enhanced Random Forests in Orthogonal Hyperbolic Subspaces for Tabular Learning: [NeurIPS page](https://neurips.cc/virtual/2026/poster/154957) · [arXiv](https://arxiv.org/search/?query=LLM-Enhanced+Random+Forests+in+Orthogonal+Hyperbolic+Subspaces+for+Tabular+Learning&searchtype=title)
+- MaxSketch: Robust Distinct Counting in Streams via Random Projections: [NeurIPS page](https://neurips.cc/virtual/2026/poster/155987) · [arXiv](https://arxiv.org/search/?query=MaxSketch++Robust+Distinct+Counting+in+Streams+via+Random+Projections&searchtype=title)
+- Mitigating Confidence Miscalibration in Open-World Semi-Supervised Learning: [NeurIPS page](https://neurips.cc/virtual/2026/poster/153397) · [arXiv](https://arxiv.org/search/?query=Mitigating+Confidence+Miscalibration+in+Open-World+Semi-Supervised+Learning&searchtype=title)
+- Position: Fair Representations Cannot Hold What They Promise: [NeurIPS page](https://neurips.cc/virtual/2026/poster/140022) · [arXiv](https://arxiv.org/search/?query=Position++Fair+Representations+Cannot+Hold+What+They+Promise&searchtype=title)
+- Scale-Sensitive Shattering: Learnability and Evaluability at Optimal Scale: [NeurIPS page](https://neurips.cc/virtual/2026/poster/149340) · [arXiv](https://arxiv.org/search/?query=Scale-Sensitive+Shattering++Learnability+and+Evaluability+at+Optimal+Scale&searchtype=title)
+- Surprises in Proper Positive-Only Learning: [NeurIPS page](https://neurips.cc/virtual/2026/poster/148778) · [arXiv](https://arxiv.org/search/?query=Surprises+in+Proper+Positive-Only+Learning&searchtype=title)
+- Testable and Actionable Calibration for Full Swap Regret: [NeurIPS page](https://neurips.cc/virtual/2026/poster/148311) · [arXiv](https://arxiv.org/search/?query=Testable+and+Actionable+Calibration+for+Full+Swap+Regret&searchtype=title)
+- The Aleatoric-Epistemic Dichotomy of Uncertainty is Meaningful and Indispensable for Machine Learning: [NeurIPS page](https://neurips.cc/virtual/2026/poster/140101) · [arXiv](https://arxiv.org/search/?query=The+Aleatoric-Epistemic+Dichotomy+of+Uncertainty+is+Meaningful+and+Indispensable+for+Machine+Learning&searchtype=title)
+- The Stability of Online Algorithms in Performative Prediction: [NeurIPS page](https://neurips.cc/virtual/2026/poster/151725) · [arXiv](https://arxiv.org/search/?query=The+Stability+of+Online+Algorithms+in+Performative+Prediction&searchtype=title)
 
-## LLM Reasoning & Retrieval — 523 papers (5.7%, 2025: 6.1%)
-
-Efficient chain-of-thought, agentic reasoning, formal math and verified code, LLM-driven optimization modeling, clinical reasoning and retrieval-augmented generation.
-
-| Subtopic | What the papers do | 2026 | share 2025 → 2026 | ★ |
-|---|---|---|---|---|
-| Efficient Chain-of-Thought Reasoning | Analyzing reasoning traces and reducing overthinking in large reasoning models through pruning, early stopping and search. | 137 | 2.47% → 1.50% | 6 |
-| LLMs for Optimization Modeling and Algorithm Design | These papers use LLMs, often with evolutionary search, to formulate optimization models, discover algorithms and generate engineering or combinatorial code, with benchmarks for each. | 83 | 0.89% → 0.91% | 3 |
-| LLM Agentic Reasoning Strategies | These papers study how language-model agents choose and combine reasoning strategies for planning, abstraction and scientific problem solving, often with new benchmarks. | 63 | 0.65% → 0.69% | 0 |
-| Clinical LLMs and Medical Benchmarks | These papers evaluate and build LLM agents for clinical reasoning, EHR tasks, medical QA and report generation, along with medical benchmarks. | 62 | 0.46% → 0.68% | 0 |
-| Retriever and Long-Document Benchmarks | Builds benchmarks and pipelines for retrievers, embedding models, deep search and long-document understanding with evidence grounding. | 45 | 0.22% → 0.49% | 1 |
-| LLM Theorem Proving and Formal Math | Using LLMs for formal theorem proving in Lean, autoformalization, proof grading and math reasoning benchmarks. | 44 | 0.49% → 0.48% | 1 |
-| Verified Code and Software Security Benchmarks | Evaluates LLMs on formally verified code generation, proof writing, vulnerability detection, reverse engineering and cybersecurity tasks. | 34 | 0.29% → 0.37% | 0 |
-| GraphRAG and RL-Trained Search Agents | Retrieval-augmented generation over knowledge graphs and RL-trained search agents for multi-hop question answering. | 29 | 0.22% → 0.32% | 0 |
-| RAG Faithfulness and Knowledge Conflicts | Improving faithfulness, efficiency, privacy and knowledge-conflict handling in retrieval-augmented LLM generation. | 26 | 0.38% → 0.29% | 0 |
-
-**Orals**
-
-- Escaping the Cognitive Well: Efficient Competition Math with Off-the-Shelf Models: [NeurIPS page](https://neurips.cc/virtual/2026/poster/150429) · [arXiv](https://arxiv.org/search/?query=Escaping+the+Cognitive+Well++Efficient+Competition+Math+with+Off-the-Shelf+Models&searchtype=title) · [OpenReview*](https://openreview.net/forum?id=i6Ojls5BRt) · [PDF*](https://openreview.net/pdf?id=i6Ojls5BRt)
-- Nemotron-Cascade: Scaling Cascaded Reinforcement Learning for General-Purpose Reasoning Models: [NeurIPS page](https://neurips.cc/virtual/2026/poster/155022) · [arXiv](https://arxiv.org/search/?query=Nemotron-Cascade++Scaling+Cascaded+Reinforcement+Learning+for+General-Purpose+Reasoning+Models&searchtype=title) · [OpenReview*](https://openreview.net/forum?id=96v36aMNTx) · [PDF*](https://openreview.net/pdf?id=96v36aMNTx)
-
-## Vision-Language Models — 459 papers (5.0%, 2025: 5.8%)
+## Vision-Language & Speech Models: 550 papers (6.0% of all, 2025: 6.7%)
 
 Visual reasoning, image-text alignment, multimodal fusion, domain-specific benchmarks and test-time adaptation for vision-language models.
 
 | Subtopic | What the papers do | 2026 | share 2025 → 2026 | ★ |
 |---|---|---|---|---|
 | Latent and Chain-of-Thought Visual Reasoning | These papers improve and diagnose how vision-language models reason over images, including latent visual reasoning, visual chain-of-thought and grounding. | 138 | 1.55% → 1.51% | 10 |
+| Speech and Audio Language Models | Large audio language models, speech recognition, speech enhancement, audio generation and sign language recognition. | 91 | 0.97% → 1.00% | 3 |
 | CLIP-Style Image-Text Alignment | These papers improve image-text alignment in CLIP-style and vision-language models for compositional understanding, long captions and image retrieval. | 85 | 0.94% → 0.93% | 5 |
 | Multimodal Fusion and Missing Modalities | These papers study how multimodal models combine modalities, addressing modality imbalance, missing modalities, cross-modal alignment and synergy. | 84 | 1.26% → 0.92% | 2 |
-| Domain-Specific Vision Benchmarks for VLMs | Benchmarks probing multimodal models on specialised imagery such as remote sensing, medical scans, documents, try-on and image quality. | 77 | 0.80% → 0.85% | 4 |
-| Test-Time and Few-Shot VLM Adaptation | Adapting, fine-tuning, distilling and robustifying CLIP-style vision-language models and vision transformers under distribution shift. | 75 | 1.19% → 0.82% | 0 |
+| Vision Datasets, Benchmarks and Evaluation | Benchmarks probing multimodal models on specialised imagery such as remote sensing, medical scans, documents, try-on and image quality. | 77 | 0.80% → 0.85% | 4 |
+| Test-Time and Few-Shot VLM Adaptation | Adapting, fine-tuning, distilling and robustifying CLIP-style vision-language models and vision transformers under distribution shift. | 75 | 1.20% → 0.82% | 0 |
 
 **Orals**
 
-- Binding Multiple Modalities via Multimodal Wasserstein Barycenter: [NeurIPS page](https://neurips.cc/virtual/2026/poster/149098) · [arXiv](https://arxiv.org/search/?query=Binding+Multiple+Modalities+via+Multimodal+Wasserstein+Barycenter&searchtype=title) · [OpenReview*](https://openreview.net/forum?id=swVrjlNX4Q) · [PDF*](https://openreview.net/pdf?id=swVrjlNX4Q)
-- Clarification as Supervision: Reinforcement Learning for Vision-Language Interfaces: [NeurIPS page](https://neurips.cc/virtual/2026/poster/152087) · [arXiv](https://arxiv.org/search/?query=Clarification+as+Supervision++Reinforcement+Learning+for+Vision-Language+Interfaces&searchtype=title) · [OpenReview*](https://openreview.net/forum?id=VaoJb3PtWQ) · [PDF*](https://openreview.net/pdf?id=VaoJb3PtWQ)
-- GeoSym127K: Scalable Symbolically-verifiable Synthesis for Multimodal Geometric Reasoning: [NeurIPS page](https://neurips.cc/virtual/2026/poster/139481) · [arXiv](https://arxiv.org/search/?query=GeoSym127K++Scalable+Symbolically-verifiable+Synthesis+for+Multimodal+Geometric+Reasoning&searchtype=title) · [OpenReview*](https://openreview.net/forum?id=NO4INpEpCi) · [PDF*](https://openreview.net/pdf?id=NO4INpEpCi)
-- Incentivizing Medical Vision Capabilities from Large-Scale Multimodal Pre-training: [NeurIPS page](https://neurips.cc/virtual/2026/poster/156128) · [arXiv](https://arxiv.org/search/?query=Incentivizing+Medical+Vision+Capabilities+from+Large-Scale+Multimodal+Pre-training&searchtype=title) · [OpenReview*](https://openreview.net/forum?id=0BXKsjKlFJ) · [PDF*](https://openreview.net/pdf?id=0BXKsjKlFJ)
-- They Can See It but not Say It: Iterative Self Knowledge Re-expression in Visual Reasoning Relative Pose Identification: [NeurIPS page](https://neurips.cc/virtual/2026/poster/151372) · [arXiv](https://arxiv.org/search/?query=They+Can+See+It+but+not+Say+It++Iterative+Self+Knowledge+Re-expression+in+Visual+Reasoning+Relative+Pose+Identification&searchtype=title) · [OpenReview*](https://openreview.net/forum?id=b4HCV0e0V8) · [PDF*](https://openreview.net/pdf?id=b4HCV0e0V8)
-- Thinking with Images as Continuous Policy: Numerical Visual Chain-of-Thought: [NeurIPS page](https://neurips.cc/virtual/2026/poster/150085) · [arXiv](https://arxiv.org/search/?query=Thinking+with+Images+as+Continuous+Policy++Numerical+Visual+Chain-of-Thought&searchtype=title) · [OpenReview*](https://openreview.net/forum?id=kqCpiR360C) · [PDF*](https://openreview.net/pdf?id=kqCpiR360C)
+- Binding Multiple Modalities via Multimodal Wasserstein Barycenter: [NeurIPS page](https://neurips.cc/virtual/2026/poster/149098) · [arXiv](https://arxiv.org/search/?query=Binding+Multiple+Modalities+via+Multimodal+Wasserstein+Barycenter&searchtype=title)
+- Clarification as Supervision: Reinforcement Learning for Vision-Language Interfaces: [NeurIPS page](https://neurips.cc/virtual/2026/poster/152087) · [arXiv](https://arxiv.org/search/?query=Clarification+as+Supervision++Reinforcement+Learning+for+Vision-Language+Interfaces&searchtype=title)
+- GeoSym127K: Scalable Symbolically-verifiable Synthesis for Multimodal Geometric Reasoning: [NeurIPS page](https://neurips.cc/virtual/2026/poster/139481) · [arXiv](https://arxiv.org/search/?query=GeoSym127K++Scalable+Symbolically-verifiable+Synthesis+for+Multimodal+Geometric+Reasoning&searchtype=title)
+- Incentivizing Medical Vision Capabilities from Large-Scale Multimodal Pre-training: [NeurIPS page](https://neurips.cc/virtual/2026/poster/156128) · [arXiv](https://arxiv.org/search/?query=Incentivizing+Medical+Vision+Capabilities+from+Large-Scale+Multimodal+Pre-training&searchtype=title)
+- They Can See It but not Say It: Iterative Self Knowledge Re-expression in Visual Reasoning Relative Pose Identification: [NeurIPS page](https://neurips.cc/virtual/2026/poster/151372) · [arXiv](https://arxiv.org/search/?query=They+Can+See+It+but+not+Say+It++Iterative+Self+Knowledge+Re-expression+in+Visual+Reasoning+Relative+Pose+Identification&searchtype=title)
+- Thinking with Images as Continuous Policy: Numerical Visual Chain-of-Thought: [NeurIPS page](https://neurips.cc/virtual/2026/poster/150085) · [arXiv](https://arxiv.org/search/?query=Thinking+with+Images+as+Continuous+Policy++Numerical+Visual+Chain-of-Thought&searchtype=title)
 
-## Reinforcement Learning — 419 papers (4.6%, 2025: 4.8%)
+## LLM Reasoning & Retrieval: 523 papers (5.7% of all, 2025: 6.1%)
+
+Efficient chain-of-thought, agentic reasoning, formal math and verified code, LLM-driven optimization modeling, clinical reasoning and retrieval-augmented generation.
+
+| Subtopic | What the papers do | 2026 | share 2025 → 2026 | ★ |
+|---|---|---|---|---|
+| LLM Reasoning and Test-Time Scaling | Analyzing reasoning traces and reducing overthinking in large reasoning models through pruning, early stopping and search. | 137 | 2.48% → 1.50% | 6 |
+| LLM-Driven Evolutionary Design and Discovery | These papers use LLMs, often with evolutionary search, to formulate optimization models, discover algorithms and generate engineering or combinatorial code, with benchmarks for each. | 83 | 0.89% → 0.91% | 3 |
+| LLM Agentic Reasoning Strategies | These papers study how language-model agents choose and combine reasoning strategies for planning, abstraction and scientific problem solving, often with new benchmarks. | 63 | 0.65% → 0.69% | 0 |
+| Clinical LLMs and Medical Benchmarks | These papers evaluate and build LLM agents for clinical reasoning, EHR tasks, medical QA and report generation, along with medical benchmarks. | 62 | 0.46% → 0.68% | 0 |
+| Retriever and Long-Document Benchmarks | Builds benchmarks and pipelines for retrievers, embedding models, deep search and long-document understanding with evidence grounding. | 45 | 0.22% → 0.49% | 1 |
+| LLM Theorem Proving and Formal Math | Using LLMs for formal theorem proving in Lean, autoformalization, proof grading and math reasoning benchmarks. | 44 | 0.50% → 0.48% | 1 |
+| Verified Code and Software Security Benchmarks | Evaluates LLMs on formally verified code generation, proof writing, vulnerability detection, reverse engineering and cybersecurity tasks. | 34 | 0.29% → 0.37% | 0 |
+| GraphRAG and RL-Trained Search Agents | Retrieval-augmented generation over knowledge graphs and RL-trained search agents for multi-hop question answering. | 29 | 0.22% → 0.32% | 0 |
+| RAG Faithfulness and Knowledge Conflicts | Improving faithfulness, efficiency, privacy and knowledge-conflict handling in retrieval-augmented LLM generation. | 26 | 0.38% → 0.29% | 0 |
+
+**Orals**
+
+- Escaping the Cognitive Well: Efficient Competition Math with Off-the-Shelf Models: [NeurIPS page](https://neurips.cc/virtual/2026/poster/150429) · [arXiv](https://arxiv.org/search/?query=Escaping+the+Cognitive+Well++Efficient+Competition+Math+with+Off-the-Shelf+Models&searchtype=title)
+- Nemotron-Cascade: Scaling Cascaded Reinforcement Learning for General-Purpose Reasoning Models: [NeurIPS page](https://neurips.cc/virtual/2026/poster/155022) · [arXiv](https://arxiv.org/search/?query=Nemotron-Cascade++Scaling+Cascaded+Reinforcement+Learning+for+General-Purpose+Reasoning+Models&searchtype=title)
+
+## Reinforcement Learning: 419 papers (4.6% of all, 2025: 4.8%)
 
 Deep, offline, multi-agent, goal-conditioned and constrained RL, generative policies and convergence theory for MDPs.
 
@@ -260,19 +257,19 @@ Deep, offline, multi-agent, goal-conditioned and constrained RL, generative poli
 | Policy Gradient and MDP Convergence Theory | These papers prove convergence and sample-complexity results for policy gradient, value iteration and off-policy evaluation in discounted and average-reward MDPs. | 62 | 0.79% → 0.68% | 1 |
 | Generative Policies for Offline RL | Offline and offline-to-online reinforcement learning using diffusion, flow-matching and generative policies trained on fixed datasets. | 42 | 0.60% → 0.46% | 0 |
 | Constrained and Robust MDPs | These papers give provable algorithms for constrained, chance-constrained and robust Markov decision processes, often via primal-dual policy optimization. | 38 | 0.38% → 0.42% | 1 |
-| Goal-Conditioned RL and Task Specifications | These papers train RL agents to reach goals or satisfy formal task specifications such as temporal logic and reward machines, often offline and with subgoal planning. | 33 | 0.56% → 0.36% | 1 |
+| Goal-Conditioned and Reward-Free RL | These papers train RL agents to reach goals or satisfy formal task specifications such as temporal logic and reward machines, often offline and with subgoal planning. | 33 | 0.56% → 0.36% | 1 |
 | Flow and Diffusion Policy Optimization | Trains diffusion and flow-matching policies with policy gradients, Q-guidance and offline-to-online RL for multimodal continuous control. | 29 | 0.10% → 0.32% | 3 |
 
 **Orals**
 
-- Can In-Context Learning Support Intrinsic Curiosity?: [NeurIPS page](https://neurips.cc/virtual/2026/poster/151481) · [arXiv](https://arxiv.org/search/?query=Can+In-Context+Learning+Support+Intrinsic+Curiosity+&searchtype=title) · [OpenReview*](https://openreview.net/forum?id=aHSKeImV3Z) · [PDF*](https://openreview.net/pdf?id=aHSKeImV3Z)
-- CIG: Exploration via Conditional Information Gain: [NeurIPS page](https://neurips.cc/virtual/2026/poster/149190) · [arXiv](https://arxiv.org/search/?query=CIG++Exploration+via+Conditional+Information+Gain&searchtype=title) · [OpenReview*](https://openreview.net/forum?id=sDCGZbVL6d) · [PDF*](https://openreview.net/pdf?id=sDCGZbVL6d)
-- Coordination Connectivity: Shared Initialization Shapes the Joint-Policy Landscape in MARL: [NeurIPS page](https://neurips.cc/virtual/2026/poster/154512) · [arXiv](https://arxiv.org/search/?query=Coordination+Connectivity++Shared+Initialization+Shapes+the+Joint-Policy+Landscape+in+MARL&searchtype=title) · [OpenReview*](https://openreview.net/forum?id=D2HpZYZ8aI) · [PDF*](https://openreview.net/pdf?id=D2HpZYZ8aI)
-- Emergence of Physical Intelligence via Controllable Information Production: [NeurIPS page](https://neurips.cc/virtual/2026/poster/152582) · [arXiv](https://arxiv.org/search/?query=Emergence+of+Physical+Intelligence+via+Controllable+Information+Production&searchtype=title) · [OpenReview*](https://openreview.net/forum?id=S15gujrcKN) · [PDF*](https://openreview.net/pdf?id=S15gujrcKN)
-- Training Generalizable Collaborative Agents via Strategic Risk Aversion: [NeurIPS page](https://neurips.cc/virtual/2026/poster/151685) · [arXiv](https://arxiv.org/search/?query=Training+Generalizable+Collaborative+Agents+via+Strategic+Risk+Aversion&searchtype=title) · [OpenReview*](https://openreview.net/forum?id=YmGCdpjNNh) · [PDF*](https://openreview.net/pdf?id=YmGCdpjNNh)
-- Unifying Goal-Conditioned RL and Unsupervised Skill Learning via Control-Maximization: [NeurIPS page](https://neurips.cc/virtual/2026/poster/153300) · [arXiv](https://arxiv.org/search/?query=Unifying+Goal-Conditioned+RL+and+Unsupervised+Skill+Learning+via+Control-Maximization&searchtype=title) · [OpenReview*](https://openreview.net/forum?id=MHeZHmPRnt) · [PDF*](https://openreview.net/pdf?id=MHeZHmPRnt)
+- Can In-Context Learning Support Intrinsic Curiosity?: [NeurIPS page](https://neurips.cc/virtual/2026/poster/151481) · [arXiv](https://arxiv.org/search/?query=Can+In-Context+Learning+Support+Intrinsic+Curiosity+&searchtype=title)
+- CIG: Exploration via Conditional Information Gain: [NeurIPS page](https://neurips.cc/virtual/2026/poster/149190) · [arXiv](https://arxiv.org/search/?query=CIG++Exploration+via+Conditional+Information+Gain&searchtype=title)
+- Coordination Connectivity: Shared Initialization Shapes the Joint-Policy Landscape in MARL: [NeurIPS page](https://neurips.cc/virtual/2026/poster/154512) · [arXiv](https://arxiv.org/search/?query=Coordination+Connectivity++Shared+Initialization+Shapes+the+Joint-Policy+Landscape+in+MARL&searchtype=title)
+- Emergence of Physical Intelligence via Controllable Information Production: [NeurIPS page](https://neurips.cc/virtual/2026/poster/152582) · [arXiv](https://arxiv.org/search/?query=Emergence+of+Physical+Intelligence+via+Controllable+Information+Production&searchtype=title)
+- Training Generalizable Collaborative Agents via Strategic Risk Aversion: [NeurIPS page](https://neurips.cc/virtual/2026/poster/151685) · [arXiv](https://arxiv.org/search/?query=Training+Generalizable+Collaborative+Agents+via+Strategic+Risk+Aversion&searchtype=title)
+- Unifying Goal-Conditioned RL and Unsupervised Skill Learning via Control-Maximization: [NeurIPS page](https://neurips.cc/virtual/2026/poster/153300) · [arXiv](https://arxiv.org/search/?query=Unifying+Goal-Conditioned+RL+and+Unsupervised+Skill+Learning+via+Control-Maximization&searchtype=title)
 
-## Diffusion, Flows & Inference — 417 papers (4.6%, 2025: 3.9%)
+## Diffusion, Flows & Inference: 417 papers (4.6% of all, 2025: 3.9%)
 
 Diffusion guidance and sampling, flow matching, diffusion theory, optimal transport, and variational and simulation-based Bayesian inference.
 
@@ -280,23 +277,23 @@ Diffusion guidance and sampling, flow matching, diffusion theory, optimal transp
 |---|---|---|---|---|
 | Diffusion Guidance and Reward Fine-Tuning | Improves how diffusion and flow models are guided and sampled, including classifier-free guidance, reward-guided and RL post-training, few-step generation and score-matching analysis. | 132 | 1.23% → 1.45% | 6 |
 | Flow Matching Theory and Variants | New formulations, theory and constrained or distilled variants of flow matching and transport-based generative models. | 80 | 0.51% → 0.88% | 5 |
-| MCMC, SMC and Posterior Samplers | These papers design and analyze samplers built on diffusion models, Langevin dynamics and sequential Monte Carlo, including posterior sampling for inverse problems. | 71 | 0.75% → 0.78% | 1 |
-| Variational and Simulation-Based Bayesian Inference | Develops variational inference, neural posterior estimation, Gaussian process and Laplace methods for scalable and robust Bayesian inference. | 60 | 0.85% → 0.66% | 5 |
+| Samplers and Diffusion-Based Sampling | These papers design and analyze samplers built on diffusion models, Langevin dynamics and sequential Monte Carlo, including posterior sampling for inverse problems. | 71 | 0.75% → 0.78% | 1 |
+| Bayesian Inference and Gaussian Processes | Develops variational inference, neural posterior estimation, Gaussian process and Laplace methods for scalable and robust Bayesian inference. | 60 | 0.85% → 0.66% | 5 |
 | Statistical Theory of Diffusion Models | Theoretical and statistical work on score-based diffusion models, density estimation, denoising and posterior inference for inverse problems. | 41 | 0.29% → 0.45% | 3 |
 | Optimal Transport Algorithms and Theory | These papers propose solvers and estimation theory for optimal transport, including Gromov-Wasserstein, sliced, unbalanced and barycenter problems. | 33 | 0.31% → 0.36% | 1 |
 
 **Orals**
 
-- Free Decompression with Algebraic Spectral Curves: [NeurIPS page](https://neurips.cc/virtual/2026/poster/155558) · [arXiv](https://arxiv.org/search/?query=Free+Decompression+with+Algebraic+Spectral+Curves&searchtype=title) · [OpenReview*](https://openreview.net/forum?id=4fadvXVZXs) · [PDF*](https://openreview.net/pdf?id=4fadvXVZXs)
-- Generative Modeling via Drifting: [NeurIPS page](https://neurips.cc/virtual/2026/poster/154240) · [arXiv](https://arxiv.org/search/?query=Generative+Modeling+via+Drifting&searchtype=title) · [OpenReview*](https://openreview.net/forum?id=FCkkBolf4o) · [PDF*](https://openreview.net/pdf?id=FCkkBolf4o)
-- ParetoSlider: Diffusion Models Post-Training for Continuous Reward Control: [NeurIPS page](https://neurips.cc/virtual/2026/poster/154172) · [arXiv](https://arxiv.org/search/?query=ParetoSlider++Diffusion+Models+Post-Training+for+Continuous+Reward+Control&searchtype=title) · [OpenReview*](https://openreview.net/forum?id=FikEkhzT3F) · [PDF*](https://openreview.net/pdf?id=FikEkhzT3F)
-- Query Lower Bounds for Diffusion Sampling: [NeurIPS page](https://neurips.cc/virtual/2026/poster/151581) · [arXiv](https://arxiv.org/search/?query=Query+Lower+Bounds+for+Diffusion+Sampling&searchtype=title) · [OpenReview*](https://openreview.net/forum?id=ZXOqN26lhR) · [PDF*](https://openreview.net/pdf?id=ZXOqN26lhR)
-- Representation Fréchet Loss for Visual Generation: [NeurIPS page](https://neurips.cc/virtual/2026/poster/154990) · [arXiv](https://arxiv.org/search/?query=Representation+Fr%C3%A9chet+Loss+for+Visual+Generation&searchtype=title) · [OpenReview*](https://openreview.net/forum?id=9OK87o8Wkf) · [PDF*](https://openreview.net/pdf?id=9OK87o8Wkf)
-- Shaping Useful Noise: Energy Distributions Predict Visual Pretraining Quality: [NeurIPS page](https://neurips.cc/virtual/2026/poster/153569) · [arXiv](https://arxiv.org/search/?query=Shaping+Useful+Noise++Energy+Distributions+Predict+Visual+Pretraining+Quality&searchtype=title) · [OpenReview*](https://openreview.net/forum?id=KQRZdjU6Q1) · [PDF*](https://openreview.net/pdf?id=KQRZdjU6Q1)
-- Strong Stochastic Flow Maps: [NeurIPS page](https://neurips.cc/virtual/2026/poster/149475) · [arXiv](https://arxiv.org/search/?query=Strong+Stochastic+Flow+Maps&searchtype=title) · [OpenReview*](https://openreview.net/forum?id=ppj0Eq4Y6y) · [PDF*](https://openreview.net/pdf?id=ppj0Eq4Y6y)
-- Tessellations of Semi-Discrete Flow Matching: [NeurIPS page](https://neurips.cc/virtual/2026/poster/153677) · [arXiv](https://arxiv.org/search/?query=Tessellations+of+Semi-Discrete+Flow+Matching&searchtype=title) · [OpenReview*](https://openreview.net/forum?id=JbKDDvGT8o) · [PDF*](https://openreview.net/pdf?id=JbKDDvGT8o)
+- Free Decompression with Algebraic Spectral Curves: [NeurIPS page](https://neurips.cc/virtual/2026/poster/155558) · [arXiv](https://arxiv.org/search/?query=Free+Decompression+with+Algebraic+Spectral+Curves&searchtype=title)
+- Generative Modeling via Drifting: [NeurIPS page](https://neurips.cc/virtual/2026/poster/154240) · [arXiv](https://arxiv.org/search/?query=Generative+Modeling+via+Drifting&searchtype=title)
+- ParetoSlider: Diffusion Models Post-Training for Continuous Reward Control: [NeurIPS page](https://neurips.cc/virtual/2026/poster/154172) · [arXiv](https://arxiv.org/search/?query=ParetoSlider++Diffusion+Models+Post-Training+for+Continuous+Reward+Control&searchtype=title)
+- Query Lower Bounds for Diffusion Sampling: [NeurIPS page](https://neurips.cc/virtual/2026/poster/151581) · [arXiv](https://arxiv.org/search/?query=Query+Lower+Bounds+for+Diffusion+Sampling&searchtype=title)
+- Representation Fréchet Loss for Visual Generation: [NeurIPS page](https://neurips.cc/virtual/2026/poster/154990) · [arXiv](https://arxiv.org/search/?query=Representation+Fr%C3%A9chet+Loss+for+Visual+Generation&searchtype=title)
+- Shaping Useful Noise: Energy Distributions Predict Visual Pretraining Quality: [NeurIPS page](https://neurips.cc/virtual/2026/poster/153569) · [arXiv](https://arxiv.org/search/?query=Shaping+Useful+Noise++Energy+Distributions+Predict+Visual+Pretraining+Quality&searchtype=title)
+- Strong Stochastic Flow Maps: [NeurIPS page](https://neurips.cc/virtual/2026/poster/149475) · [arXiv](https://arxiv.org/search/?query=Strong+Stochastic+Flow+Maps&searchtype=title)
+- Tessellations of Semi-Discrete Flow Matching: [NeurIPS page](https://neurips.cc/virtual/2026/poster/153677) · [arXiv](https://arxiv.org/search/?query=Tessellations+of+Semi-Discrete+Flow+Matching&searchtype=title)
 
-## Robotics & Embodied AI — 405 papers (4.4%, 2025: 3.7%)
+## Robotics & Embodied AI: 405 papers (4.4% of all, 2025: 3.7%)
 
 Vision-language-action policies, dexterous and humanoid manipulation, autonomous driving, world models for planning and embodied spatial reasoning.
 
@@ -311,17 +308,17 @@ Vision-language-action policies, dexterous and humanoid manipulation, autonomous
 
 **Orals**
 
-- HABIT: Human-Aware Behavior and Interaction Training Dataset for Robot Manipulation: [NeurIPS page](https://neurips.cc/virtual/2026/poster/139828) · [arXiv](https://arxiv.org/search/?query=HABIT++Human-Aware+Behavior+and+Interaction+Training+Dataset+for+Robot+Manipulation&searchtype=title) · [OpenReview*](https://openreview.net/forum?id=2MmzwEyeO2) · [PDF*](https://openreview.net/pdf?id=2MmzwEyeO2)
-- Language-Conditioned World Modeling for Visual Navigation: [NeurIPS page](https://neurips.cc/virtual/2026/poster/154464) · [arXiv](https://arxiv.org/search/?query=Language-Conditioned+World+Modeling+for+Visual+Navigation&searchtype=title) · [OpenReview*](https://openreview.net/forum?id=DOtvhTItcX) · [PDF*](https://openreview.net/pdf?id=DOtvhTItcX)
-- SyncWorld: Visual Calibration Enables World Models as Zero-Shot Simulators: [NeurIPS page](https://neurips.cc/virtual/2026/poster/149981) · [arXiv](https://arxiv.org/search/?query=SyncWorld++Visual+Calibration+Enables+World+Models+as+Zero-Shot+Simulators&searchtype=title) · [OpenReview*](https://openreview.net/forum?id=lj7OHtUYX1) · [PDF*](https://openreview.net/pdf?id=lj7OHtUYX1)
+- HABIT: Human-Aware Behavior and Interaction Training Dataset for Robot Manipulation: [NeurIPS page](https://neurips.cc/virtual/2026/poster/139828) · [arXiv](https://arxiv.org/search/?query=HABIT++Human-Aware+Behavior+and+Interaction+Training+Dataset+for+Robot+Manipulation&searchtype=title)
+- Language-Conditioned World Modeling for Visual Navigation: [NeurIPS page](https://neurips.cc/virtual/2026/poster/154464) · [arXiv](https://arxiv.org/search/?query=Language-Conditioned+World+Modeling+for+Visual+Navigation&searchtype=title)
+- SyncWorld: Visual Calibration Enables World Models as Zero-Shot Simulators: [NeurIPS page](https://neurips.cc/virtual/2026/poster/149981) · [arXiv](https://arxiv.org/search/?query=SyncWorld++Visual+Calibration+Enables+World+Models+as+Zero-Shot+Simulators&searchtype=title)
 
-## Image & 3D Generation — 375 papers (4.1%, 2025: 5.6%)
+## Image & 3D Generation: 375 papers (4.1% of all, 2025: 5.6%)
 
 Text-to-image generation and evaluation, efficient high-resolution diffusion, image editing, unified multimodal models, part-level 3D assets and concept erasure.
 
 | Subtopic | What the papers do | 2026 | share 2025 → 2026 | ★ |
 |---|---|---|---|---|
-| Efficient High-Resolution Image Diffusion | These papers make image diffusion models faster and higher-resolution through feature caching, few-step distillation, pixel-space diffusion and diffusion-based super-resolution. | 90 | 1.33% → 0.99% | 6 |
+| Efficient Image Diffusion | These papers make image diffusion models faster and higher-resolution through feature caching, few-step distillation, pixel-space diffusion and diffusion-based super-resolution. | 90 | 1.33% → 0.99% | 6 |
 | Text-to-Image Generation and Evaluation | Improving and evaluating text-to-image models via reward models, compositional control, aesthetics and bias analysis. | 76 | 0.84% → 0.83% | 2 |
 | Part-Level 3D Asset Generation | Generating structured, part-decomposed or articulated 3D objects and scenes from images or text. | 64 | 1.11% → 0.70% | 1 |
 | Unified Multimodal Understanding and Generation | Builds single models and visual tokenizers that both understand and generate images, including autoregressive and representation-autoencoder approaches. | 61 | 1.02% → 0.67% | 3 |
@@ -330,17 +327,17 @@ Text-to-image generation and evaluation, efficient high-resolution diffusion, im
 
 **Orals**
 
-- Can We Model the Artifacts Explicitly? Disentangle Artifacts via Pairwise Edit Relations for Image Manipulation Localization: [NeurIPS page](https://neurips.cc/virtual/2026/poster/155638) · [arXiv](https://arxiv.org/search/?query=Can+We+Model+the+Artifacts+Explicitly++Disentangle+Artifacts+via+Pairwise+Edit+Relations+for+Image+Manipulation+Localization&searchtype=title) · [OpenReview*](https://openreview.net/forum?id=45xs8n0hj4) · [PDF*](https://openreview.net/pdf?id=45xs8n0hj4)
-- EntiRE: Invariant Learning for Robust Concept Erasure in Text-to-Image Generative Models: [NeurIPS page](https://neurips.cc/virtual/2026/poster/151144) · [arXiv](https://arxiv.org/search/?query=EntiRE++Invariant+Learning+for+Robust+Concept+Erasure+in+Text-to-Image+Generative+Models&searchtype=title) · [OpenReview*](https://openreview.net/forum?id=ch8Vn8e6ZM) · [PDF*](https://openreview.net/pdf?id=ch8Vn8e6ZM)
+- Can We Model the Artifacts Explicitly? Disentangle Artifacts via Pairwise Edit Relations for Image Manipulation Localization: [NeurIPS page](https://neurips.cc/virtual/2026/poster/155638) · [arXiv](https://arxiv.org/search/?query=Can+We+Model+the+Artifacts+Explicitly++Disentangle+Artifacts+via+Pairwise+Edit+Relations+for+Image+Manipulation+Localization&searchtype=title)
+- EntiRE: Invariant Learning for Robust Concept Erasure in Text-to-Image Generative Models: [NeurIPS page](https://neurips.cc/virtual/2026/poster/151144) · [arXiv](https://arxiv.org/search/?query=EntiRE++Invariant+Learning+for+Robust+Concept+Erasure+in+Text-to-Image+Generative+Models&searchtype=title)
 
-## Video Generation & Understanding — 370 papers (4.1%, 2025: 4.0%)
+## Video Generation & Understanding: 370 papers (4.1% of all, 2025: 4.0%)
 
 Long and controllable video generation, physical plausibility, long-video QA, temporal grounding and human motion generation.
 
 | Subtopic | What the papers do | 2026 | share 2025 → 2026 | ★ |
 |---|---|---|---|---|
 | Long-Video Understanding with MLLMs | These papers help multimodal LLMs answer questions over long and streaming videos via frame selection, token allocation, KV-cache memory and agentic pipelines. | 88 | 1.21% → 0.97% | 1 |
-| Autoregressive Long Video Generation | These papers extend video diffusion models to long or streaming generation with autoregressive rollout, memory for consistency, and distillation for real-time speed. | 68 | 0.55% → 0.75% | 1 |
+| Efficient and Long Video Diffusion | These papers extend video diffusion models to long or streaming generation with autoregressive rollout, memory for consistency, and distillation for real-time speed. | 68 | 0.55% → 0.75% | 1 |
 | Video Temporal Grounding and Segmentation | These papers localize actions, moments and objects in time and space in video, covering temporal grounding, video object segmentation and video reasoning segmentation. | 65 | 0.73% → 0.71% | 1 |
 | Physical Plausibility in Video Generation | Evaluating and improving physical consistency, motion realism and world modeling in text-to-video generators. | 54 | 0.43% → 0.59% | 3 |
 | Controllable Video Generation and Editing | These papers generate and edit videos with control over subjects, motion, identity and lighting, often by turning image editors into video editors. | 52 | 0.48% → 0.57% | 0 |
@@ -348,9 +345,9 @@ Long and controllable video generation, physical plausibility, long-video QA, te
 
 **Orals**
 
-- Behavioral Geometric Supervision Aligns Video Foundation Models with Human Social Perception: [NeurIPS page](https://neurips.cc/virtual/2026/poster/149277) · [arXiv](https://arxiv.org/search/?query=Behavioral+Geometric+Supervision+Aligns+Video+Foundation+Models+with+Human+Social+Perception&searchtype=title) · [OpenReview*](https://openreview.net/forum?id=rVX7LF9vry) · [PDF*](https://openreview.net/pdf?id=rVX7LF9vry)
+- Behavioral Geometric Supervision Aligns Video Foundation Models with Human Social Perception: [NeurIPS page](https://neurips.cc/virtual/2026/poster/149277) · [arXiv](https://arxiv.org/search/?query=Behavioral+Geometric+Supervision+Aligns+Video+Foundation+Models+with+Human+Social+Perception&searchtype=title)
 
-## Biomolecules & Causal Discovery — 345 papers (3.8%, 2025: 3.5%)
+## Biomolecules & Causal Discovery: 345 papers (3.8% of all, 2025: 3.5%)
 
 Single-cell, protein, molecule and chemistry models alongside causal discovery and structural causal models.
 
@@ -358,7 +355,7 @@ Single-cell, protein, molecule and chemistry models alongside causal discovery a
 |---|---|---|---|---|
 | Single-Cell and Spatial Transcriptomics Models | Builds foundation models and generative methods for single-cell gene expression, spatial transcriptomics from histology, perturbation response and genomic sequences. | 63 | 0.39% → 0.69% | 0 |
 | Protein Language Models and Structure | Protein language models, structure prediction, docking and fitness prediction for biomolecules and drug discovery. | 62 | 0.63% → 0.68% | 6 |
-| Chemical Reactions and Interatomic Potentials | These papers build models and benchmarks for chemistry tasks such as reaction prediction, retrosynthesis, mass-spectrometry retrieval and machine-learned interatomic potentials. | 57 | 0.70% → 0.63% | 2 |
+| Molecular and Materials ML | These papers build models and benchmarks for chemistry tasks such as reaction prediction, retrosynthesis, mass-spectrometry retrieval and machine-learned interatomic potentials. | 57 | 0.70% → 0.63% | 2 |
 | 3D Molecule and Material Generation | These papers generate 3D molecules, crystals, proteins and materials with equivariant diffusion, flow and autoregressive models, including structure-based drug design. | 53 | 0.65% → 0.58% | 2 |
 | Causal Identifiability and Latent-Variable Models | Learning causal graphs and identifying causal effects with structural causal models, interventions and latent variables. | 51 | 0.41% → 0.56% | 2 |
 | Protein, Antibody and RNA Design | Generative models and optimization for designing proteins, antibodies, peptides, RNA and DNA sequences. | 37 | 0.34% → 0.41% | 1 |
@@ -366,27 +363,10 @@ Single-cell, protein, molecule and chemistry models alongside causal discovery a
 
 **Orals**
 
-- C3P: Contrastive promoter-protein pretraining yields representations capturing bacterial gene regulation: [NeurIPS page](https://neurips.cc/virtual/2026/poster/156046) · [arXiv](https://arxiv.org/search/?query=C3P++Contrastive+promoter-protein+pretraining+yields+representations+capturing+bacterial+gene+regulation&searchtype=title) · [OpenReview*](https://openreview.net/forum?id=0pWBLS7Kzj) · [PDF*](https://openreview.net/pdf?id=0pWBLS7Kzj)
-- CausalBind: Causal Modeling and Learning for Protein-Molecule Virtual Screening: [NeurIPS page](https://neurips.cc/virtual/2026/poster/151296) · [arXiv](https://arxiv.org/search/?query=CausalBind++Causal+Modeling+and+Learning+for+Protein-Molecule+Virtual+Screening&searchtype=title) · [OpenReview*](https://openreview.net/forum?id=bURAYAEF84) · [PDF*](https://openreview.net/pdf?id=bURAYAEF84)
+- C3P: Contrastive promoter-protein pretraining yields representations capturing bacterial gene regulation: [NeurIPS page](https://neurips.cc/virtual/2026/poster/156046) · [arXiv](https://arxiv.org/search/?query=C3P++Contrastive+promoter-protein+pretraining+yields+representations+capturing+bacterial+gene+regulation&searchtype=title)
+- CausalBind: Causal Modeling and Learning for Protein-Molecule Virtual Screening: [NeurIPS page](https://neurips.cc/virtual/2026/poster/151296) · [arXiv](https://arxiv.org/search/?query=CausalBind++Causal+Modeling+and+Learning+for+Protein-Molecule+Virtual+Screening&searchtype=title)
 
-## LLM Post-Training — 335 papers (3.7%, 2025: 3.1%)
-
-RL with verifiable rewards, preference optimization, reward models, on-policy distillation and continual learning for language models.
-
-| Subtopic | What the papers do | 2026 | share 2025 → 2026 | ★ |
-|---|---|---|---|---|
-| Off-Policy Stability in LLM RL | Off-policy corrections, importance ratios, entropy control and credit assignment for stable reinforcement learning post-training of LLMs. | 87 | 0.67% → 0.95% | 1 |
-| GRPO-Style RL with Verifiable Rewards | Studies reinforcement learning with verifiable rewards for reasoning models, focusing on GRPO-style advantage estimation, rollout efficiency and training stability. | 65 | 0.32% → 0.71% | 1 |
-| Preference Optimization for LLM Alignment | DPO-style and RLHF objectives, data selection and robustness methods for aligning LLMs with human preferences. | 52 | 0.97% → 0.57% | 1 |
-| Class-Incremental Continual Learning | These papers learn new classes or tasks one after another without forgetting old ones, often with LoRA adapters, merging or optimizers built for stability and plasticity. | 50 | 0.75% → 0.55% | 2 |
-| On-Policy Distillation for LLM Reasoning | Teacher-student distillation where reasoning LLMs learn from teacher feedback on their own generated trajectories. | 49 | 0.29% → 0.54% | 3 |
-| Reward Models and Human Behavior Modeling | These papers mix reward and process-reward modeling for LLMs, including reward hacking, with computational models of human and animal decision-making behavior. | 32 | 0.12% → 0.35% | 2 |
-
-**Orals**
-
-- The Algorithm Is Not the Behavior: Learned Priors Override Look-Ahead in a Chess-Playing Neural Network: [NeurIPS page](https://neurips.cc/virtual/2026/poster/152268) · [arXiv](https://arxiv.org/search/?query=The+Algorithm+Is+Not+the+Behavior++Learned+Priors+Override+Look-Ahead+in+a+Chess-Playing+Neural+Network&searchtype=title) · [OpenReview*](https://openreview.net/forum?id=ULhusDnCQy) · [PDF*](https://openreview.net/pdf?id=ULhusDnCQy)
-
-## Optimization & Statistics — 280 papers (3.1%, 2025: 3.5%)
+## Optimization & Statistics: 336 papers (3.7% of all, 2025: 4.4%)
 
 Optimizer design such as Muon and Adam, stochastic and convex convergence theory, robust regression and Bayesian optimization.
 
@@ -395,15 +375,37 @@ Optimizer design such as Muon and Adam, stochastic and convex convergence theory
 | Muon, Adam and Sign-Based Optimizers | These papers analyse and design neural-network optimizers such as Muon, Adam, Lion and SignSGD, covering orthogonalized updates, momentum and edge-of-stability dynamics. | 88 | 0.92% → 0.97% | 6 |
 | Stochastic and Convex Optimization Theory | Convergence rates for stochastic, decentralized, minimax and nonconvex gradient methods, including heavy-tailed noise and step-size schedules. | 85 | 1.08% → 0.93% | 1 |
 | Robust Regression and Statistical Inference | Statistical theory for linear regression, covariance estimation and inference under heavy tails, corruption and high dimensions. | 70 | 1.01% → 0.77% | 2 |
+| Neural Combinatorial Optimization | Learned solvers, often diffusion or RL based, for routing, SAT, MILP and other constraint satisfaction problems. | 56 | 0.97% → 0.61% | 3 |
 | Bayesian and Multi-Objective Optimization | Sample-efficient black-box optimization with Gaussian process surrogates, acquisition functions and multi-objective Pareto search. | 37 | 0.46% → 0.41% | 0 |
 
-## Bandits, Games & Mechanisms — 234 papers (2.6%, 2025: 3.0%)
+**Orals**
+
+- UECO: A Unified Encoder with Structure-Aware Attention Mixture via Iterative Edge Evolving for Neural Combinatorial Optimization: [NeurIPS page](https://neurips.cc/virtual/2026/poster/153347) · [arXiv](https://arxiv.org/search/?query=UECO++A+Unified+Encoder+with+Structure-Aware+Attention+Mixture+via+Iterative+Edge+Evolving+for+Neural+Combinatorial+Optimization&searchtype=title)
+
+## LLM Post-Training: 335 papers (3.7% of all, 2025: 3.1%)
+
+RL with verifiable rewards, preference optimization, reward models, on-policy distillation and continual learning for language models.
+
+| Subtopic | What the papers do | 2026 | share 2025 → 2026 | ★ |
+|---|---|---|---|---|
+| LLM RL Training Dynamics and Stability | Off-policy corrections, importance ratios, entropy control and credit assignment for stable reinforcement learning post-training of LLMs. | 87 | 0.67% → 0.95% | 1 |
+| GRPO-Style RL with Verifiable Rewards | Studies reinforcement learning with verifiable rewards for reasoning models, focusing on GRPO-style advantage estimation, rollout efficiency and training stability. | 65 | 0.32% → 0.71% | 1 |
+| Preference Optimization for LLM Alignment | DPO-style and RLHF objectives, data selection and robustness methods for aligning LLMs with human preferences. | 52 | 0.97% → 0.57% | 1 |
+| Continual Learning and Catastrophic Forgetting | These papers learn new classes or tasks one after another without forgetting old ones, often with LoRA adapters, merging or optimizers built for stability and plasticity. | 50 | 0.75% → 0.55% | 2 |
+| On-Policy Distillation for LLM Reasoning | Teacher-student distillation where reasoning LLMs learn from teacher feedback on their own generated trajectories. | 49 | 0.29% → 0.54% | 3 |
+| Reward Models and Human Behavior Modeling | These papers mix reward and process-reward modeling for LLMs, including reward hacking, with computational models of human and animal decision-making behavior. | 32 | 0.12% → 0.35% | 2 |
+
+**Orals**
+
+- The Algorithm Is Not the Behavior: Learned Priors Override Look-Ahead in a Chess-Playing Neural Network: [NeurIPS page](https://neurips.cc/virtual/2026/poster/152268) · [arXiv](https://arxiv.org/search/?query=The+Algorithm+Is+Not+the+Behavior++Learned+Priors+Override+Look-Ahead+in+a+Chess-Playing+Neural+Network&searchtype=title)
+
+## Bandits, Games & Mechanisms: 234 papers (2.6% of all, 2025: 3.0%)
 
 Bandit regret and best-arm identification, online convex optimization, equilibrium learning in games, and mechanism design and social choice.
 
 | Subtopic | What the papers do | 2026 | share 2025 → 2026 | ★ |
 |---|---|---|---|---|
-| Mechanism Design, Auctions and Social Choice | Designs and analyzes auctions, pricing, resource allocation, persuasion and voting rules for strategic agents, often with learning-augmented guarantees. | 72 | 0.90% → 0.79% | 5 |
+| Mechanism Design, Auctions and Social Choice | Designs and analyzes auctions, pricing, resource allocation, persuasion and voting rules for strategic agents, often with learning-augmented guarantees. | 72 | 0.91% → 0.79% | 5 |
 | Regret Bounds for Stochastic and Contextual Bandits | Regret bounds and algorithms for stochastic, linear, contextual, dueling and cascading bandit problems. | 64 | 1.08% → 0.70% | 1 |
 | Learning Equilibria in Games | Learning dynamics and sample complexity for reaching Nash or correlated equilibria in zero-sum, Markov and potential games. | 44 | 0.53% → 0.48% | 1 |
 | Online Convex Optimization Regret Bounds | Derives regret guarantees for online convex and non-convex optimization under delays, switching costs, memory and bandit feedback. | 31 | 0.32% → 0.34% | 1 |
@@ -411,10 +413,10 @@ Bandit regret and best-arm identification, online convex optimization, equilibri
 
 **Orals**
 
-- Follow the Regularized Leader Does Not Converge in Constrained Optimization: [NeurIPS page](https://neurips.cc/virtual/2026/poster/150986) · [arXiv](https://arxiv.org/search/?query=Follow+the+Regularized+Leader+Does+Not+Converge+in+Constrained+Optimization&searchtype=title) · [OpenReview*](https://openreview.net/forum?id=dmNapb9nHG) · [PDF*](https://openreview.net/pdf?id=dmNapb9nHG)
-- The Power of a Random Sample in Online Algorithms: [NeurIPS page](https://neurips.cc/virtual/2026/poster/152757) · [arXiv](https://arxiv.org/search/?query=The+Power+of+a+Random+Sample+in+Online+Algorithms&searchtype=title) · [OpenReview*](https://openreview.net/forum?id=QaYdB3AQtP) · [PDF*](https://openreview.net/pdf?id=QaYdB3AQtP)
+- Follow the Regularized Leader Does Not Converge in Constrained Optimization: [NeurIPS page](https://neurips.cc/virtual/2026/poster/150986) · [arXiv](https://arxiv.org/search/?query=Follow+the+Regularized+Leader+Does+Not+Converge+in+Constrained+Optimization&searchtype=title)
+- The Power of a Random Sample in Online Algorithms: [NeurIPS page](https://neurips.cc/virtual/2026/poster/152757) · [arXiv](https://arxiv.org/search/?query=The+Power+of+a+Random+Sample+in+Online+Algorithms&searchtype=title)
 
-## Time Series & Forecasting — 219 papers (2.4%, 2025: 2.2%)
+## Time Series & Forecasting: 219 papers (2.4% of all, 2025: 2.2%)
 
 Time series forecasting models, irregular and continuous-time sequences, weather and climate prediction, and urban mobility.
 
@@ -427,11 +429,21 @@ Time series forecasting models, irregular and continuous-time sequences, weather
 
 **Orals**
 
-- MOVEBENCH: A Benchmark for Global-Scale Wildlife Movement Forecasting: [NeurIPS page](https://neurips.cc/virtual/2026/poster/139749) · [arXiv](https://arxiv.org/search/?query=MOVEBENCH++A+Benchmark+for+Global-Scale+Wildlife+Movement+Forecasting&searchtype=title) · [OpenReview*](https://openreview.net/forum?id=6ss3Wyzv27) · [PDF*](https://openreview.net/pdf?id=6ss3Wyzv27)
-- Spectral Energy Allocation Enables Source-Free Domain Adaptation in Time Series Forecasting: [NeurIPS page](https://neurips.cc/virtual/2026/poster/154914) · [arXiv](https://arxiv.org/search/?query=Spectral+Energy+Allocation+Enables+Source-Free+Domain+Adaptation+in+Time+Series+Forecasting&searchtype=title) · [OpenReview*](https://openreview.net/forum?id=9zd8FaFWpx) · [PDF*](https://openreview.net/pdf?id=9zd8FaFWpx)
-- TiRex-2: Generalizing TiRex to Multivariate Data and Streaming: [NeurIPS page](https://neurips.cc/virtual/2026/poster/151700) · [arXiv](https://arxiv.org/search/?query=TiRex-2++Generalizing+TiRex+to+Multivariate+Data+and+Streaming&searchtype=title) · [OpenReview*](https://openreview.net/forum?id=YgN3LimhOJ) · [PDF*](https://openreview.net/pdf?id=YgN3LimhOJ)
+- MOVEBENCH: A Benchmark for Global-Scale Wildlife Movement Forecasting: [NeurIPS page](https://neurips.cc/virtual/2026/poster/139749) · [arXiv](https://arxiv.org/search/?query=MOVEBENCH++A+Benchmark+for+Global-Scale+Wildlife+Movement+Forecasting&searchtype=title)
+- Spectral Energy Allocation Enables Source-Free Domain Adaptation in Time Series Forecasting: [NeurIPS page](https://neurips.cc/virtual/2026/poster/154914) · [arXiv](https://arxiv.org/search/?query=Spectral+Energy+Allocation+Enables+Source-Free+Domain+Adaptation+in+Time+Series+Forecasting&searchtype=title)
+- TiRex-2: Generalizing TiRex to Multivariate Data and Streaming: [NeurIPS page](https://neurips.cc/virtual/2026/poster/151700) · [arXiv](https://arxiv.org/search/?query=TiRex-2++Generalizing+TiRex+to+Multivariate+Data+and+Streaming&searchtype=title)
 
-## PDEs & Dynamical Systems — 173 papers (1.9%, 2025: 1.5%)
+## Graph Learning & Recommendation: 195 papers (2.1% of all, 2025: 3.0%)
+
+Graph neural network architectures, graph foundation models and generative models for graphs and hypergraphs.
+
+| Subtopic | What the papers do | 2026 | share 2025 → 2026 | ★ |
+|---|---|---|---|---|
+| Graph Neural Networks | GNN architectures, graph contrastive learning, temporal graphs and graph foundation models for node, link and graph tasks. | 130 | 2.49% → 1.43% | 4 |
+| Sequential and Generative Recommendation | These papers model user preferences for sequential, multimodal and generative recommendation, increasingly with LLMs and diffusion models. | 45 | 0.44% → 0.49% | 0 |
+| Graph and Hypergraph Generation | These papers propose diffusion, flow-matching, autoencoder and sequence models that generate graphs and hypergraphs at scale. | 20 | 0.09% → 0.22% | 0 |
+
+## PDEs & Dynamical Systems: 173 papers (1.9% of all, 2025: 1.5%)
 
 Neural operators, physics-informed networks and data-driven identification of dynamical systems.
 
@@ -443,15 +455,6 @@ Neural operators, physics-informed networks and data-driven identification of dy
 
 **Orals**
 
-- Breakeven complexity: A new perspective on neural partial differential equation solvers: [NeurIPS page](https://neurips.cc/virtual/2026/poster/148644) · [arXiv](https://arxiv.org/search/?query=Breakeven+complexity++A+new+perspective+on+neural+partial+differential+equation+solvers&searchtype=title) · [OpenReview*](https://openreview.net/forum?id=wBeG0ytI2l) · [PDF*](https://openreview.net/pdf?id=wBeG0ytI2l)
-- DIAGNO: Diagonal Spherical Neural Operators for Heterogeneous Earth Dynamics Modeling: [NeurIPS page](https://neurips.cc/virtual/2026/poster/154008) · [arXiv](https://arxiv.org/search/?query=DIAGNO++Diagonal+Spherical+Neural+Operators+for+Heterogeneous+Earth+Dynamics+Modeling&searchtype=title) · [OpenReview*](https://openreview.net/forum?id=GtXyIhzAqI) · [PDF*](https://openreview.net/pdf?id=GtXyIhzAqI)
-- Mechanism-Aware Ensemble Conditioning for Data-Limited Emulation of Extreme Events: [NeurIPS page](https://neurips.cc/virtual/2026/poster/151389) · [arXiv](https://arxiv.org/search/?query=Mechanism-Aware+Ensemble+Conditioning+for+Data-Limited+Emulation+of+Extreme+Events&searchtype=title) · [OpenReview*](https://openreview.net/forum?id=b0AOZbejEk) · [PDF*](https://openreview.net/pdf?id=b0AOZbejEk)
-
-## Graph Learning — 150 papers (1.6%, 2025: 2.6%)
-
-Graph neural network architectures, graph foundation models and generative models for graphs and hypergraphs.
-
-| Subtopic | What the papers do | 2026 | share 2025 → 2026 | ★ |
-|---|---|---|---|---|
-| Graph Neural Networks and Foundation Models | GNN architectures, graph contrastive learning, temporal graphs and graph foundation models for node, link and graph tasks. | 130 | 2.49% → 1.43% | 4 |
-| Graph and Hypergraph Generation | These papers propose diffusion, flow-matching, autoencoder and sequence models that generate graphs and hypergraphs at scale. | 20 | 0.09% → 0.22% | 0 |
+- Breakeven complexity: A new perspective on neural partial differential equation solvers: [NeurIPS page](https://neurips.cc/virtual/2026/poster/148644) · [arXiv](https://arxiv.org/search/?query=Breakeven+complexity++A+new+perspective+on+neural+partial+differential+equation+solvers&searchtype=title)
+- DIAGNO: Diagonal Spherical Neural Operators for Heterogeneous Earth Dynamics Modeling: [NeurIPS page](https://neurips.cc/virtual/2026/poster/154008) · [arXiv](https://arxiv.org/search/?query=DIAGNO++Diagonal+Spherical+Neural+Operators+for+Heterogeneous+Earth+Dynamics+Modeling&searchtype=title)
+- Mechanism-Aware Ensemble Conditioning for Data-Limited Emulation of Extreme Events: [NeurIPS page](https://neurips.cc/virtual/2026/poster/151389) · [arXiv](https://arxiv.org/search/?query=Mechanism-Aware+Ensemble+Conditioning+for+Data-Limited+Emulation+of+Extreme+Events&searchtype=title)

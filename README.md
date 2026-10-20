@@ -11,7 +11,7 @@ research is split across the three conference sites (Sydney, Atlanta, Paris).
 - **Blog post:** [`report/BLOG.md`](report/BLOG.md) (web version: `docs/2026/index.html`)
 - **Appendix:** [`report/APPENDIX.md`](report/APPENDIX.md), every area and subtopic with counts, shares and orals
 - **Interactive atlas of change:** `docs/2026/atlas.html` (search, hover, click a dot to open the paper; recolour by change since 2025, city, status, sector or team size; filter by presentation day; topic tree)
-- **Paper index:** `docs/2026/papers.html`, every paper with links to its NeurIPS page, an arXiv search, its OpenReview page and PDF (also `outputs/papers_index.csv`)
+- **Paper index:** `docs/2026/papers.html`, every paper with links to its NeurIPS page and an arXiv search; OpenReview and PDF links are added once NeurIPS opens the 2026 papers (also `outputs/papers_index.csv`)
 - **Interactive charts:** `docs/2026/charts/` (treemap of all subtopics, area shifts, cities, vocabulary, countries)
 - **Tables:** `outputs/*.csv`, figures in `outputs/figures/`
 
@@ -22,7 +22,7 @@ All data comes from the public NeurIPS website:
 | File | Source | Content |
 |---|---|---|
 | `neurips2026_papers_abstracts.csv` | "Download Data" export on [neurips.cc/Downloads/2026](https://neurips.cc/Downloads/2026) | 9,110 papers: title, authors with affiliations, abstract, link |
-| `neurips2025_papers_abstracts.csv` | same export for [2025](https://neurips.cc/Downloads/2025) | 5,859 papers, used for the year-over-year comparison |
+| `neurips2025_papers_abstracts.csv` | same export for [2025](https://neurips.cc/Downloads/2025) | 5,859 rows; one paper is listed 4 times, so the 3 copies are dropped, leaving 5,856 papers for the year-over-year comparison |
 | `neurips2026_orals_posters_meta.json` | schedule data behind the virtual site | decision (oral / spotlight / poster), site, session, room, time |
 | each paper's page on neurips.cc | `src/01b_fill_schedule.py` | city, poster time, room and OpenReview link for the 1,919 papers missing from the schedule file |
 
@@ -71,9 +71,17 @@ python src/13_check_links.py   # checks every link
 - Clusters are a lens, not ground truth: many papers sit between topics.
 - Country and sector counts use the authors' listed affiliations; a paper counts once for every
   country or organisation that appears on it. The 1,200 most frequent affiliation strings are merged
-  into canonical names with a country and sector; this covers 97% of 2025 and 94% of 2026 papers.
+  into canonical names with a country and sector, and strings that name several organisations
+  (e.g. "MIT/Google") count for each of them. At least one affiliation is matched for 98% of 2025 and
+  95% of 2026 papers.
   Country and industry shares are computed over the papers with at least one mapped affiliation.
-- The 2025 export and the 2026 export may differ slightly in which tracks they include.
+- Both exports cover the main, datasets/evaluations, position and journal tracks. About 100 of the
+  2026 papers came through journals (e.g. TMLR) or the reproducibility challenge. All tracks together grew
+  by 56%; the main track alone went from 5,290 to about 7,900 accepted papers (+49%).
+- Topic names were checked against samples of their papers; corrections are in
+  `data/labels/label_fixes.json`.
+- NeurIPS 2026 papers were not public on OpenReview on 20 October 2026, so the site hides those links
+  (switch `OPENREVIEW_PUBLIC` in `src/common.py` once they open).
 
 Inspired by Jay Alammar's [Illustrated NeurIPS 2025](https://newsletter.languagemodels.co/p/the-illustrated-neurips-2025-a-visual).
 
