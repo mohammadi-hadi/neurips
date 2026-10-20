@@ -17,6 +17,8 @@
 .atlas-hero iframe{width:100%;height:min(78vh,760px);border:1px solid var(--rule);border-radius:10px;background:#fff;display:block;
   box-shadow:0 2px 18px rgba(30,58,95,.08)}
 .map-frame{position:relative}
+.map-preview{width:100%;height:min(78vh,760px);object-fit:contain;background:#fff;border:1px solid var(--rule);border-radius:10px;display:block}
+@media (max-width:720px){.map-preview{height:auto}}
 .map-cover{position:absolute;inset:0;border:0;background:transparent;cursor:pointer;display:flex;align-items:flex-end;justify-content:center;padding-bottom:18px}
 .map-cover span{font-family:var(--sans);font-size:.9rem;font-weight:500;background:var(--accent);color:#fff;padding:8px 14px;border-radius:8px;box-shadow:0 2px 10px rgba(0,0,0,.15)}
 .map-cover:hover span{background:var(--accent-hover)}
@@ -51,7 +53,7 @@
 <div class="post-body"><div class="post-wrap">
 <p>NeurIPS 2026 has 9,110 papers on its program. That is far too many to read, so I put them all on one map and compared them with the 5,856 papers from 2025.</p>
 <p>The big story is agents. Papers about LLM agents more than doubled their share of the conference.</p>
-</div><section class="container atlas-hero" aria-label="map of all papers"><div class="map-frame"><iframe src="atlas.html" title="Map of all NeurIPS 2026 papers"></iframe><button class="map-cover" type="button" onclick="this.remove()"><span>Click to explore the map</span></button></div><div class="actions"><a class="btn" href="atlas.html">Open the map full screen</a><a class="btn btn-ghost" href="papers.html">Search all papers</a></div></section><div class="post-wrap">
+</div><section class="container atlas-hero" aria-label="map of all papers"><div class="map-frame"><img class="map-preview" src="figures/atlas_clusters.png" alt="Map of all NeurIPS 2026 papers, coloured by research area"><button class="map-cover" type="button" onclick="openMap(this)"><span>Click to explore the map</span></button></div><div class="actions"><a class="btn" href="atlas.html">Open the map full screen</a><a class="btn btn-ghost" href="papers.html">Search all papers</a></div></section><script>function openMap(b){if(window.innerWidth<900){location.href="atlas.html";return;}b.parentNode.innerHTML='<iframe src="atlas.html" title="Map of all NeurIPS 2026 papers"></iframe>';}</script><div class="post-wrap">
 <h2 id="seven-things-that-stood-out">Seven things that stood out</h2>
 <ol type="1">
 <li>LLM agents went from 2.9% of papers in 2025 to 6.8% in 2026. That is 620 papers. No other area moved more than 2 points.</li>

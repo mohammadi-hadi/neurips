@@ -14,11 +14,15 @@ for f in (ROOT / "outputs/figures").glob("*.png"):
 
 HEIGHTS = {"treemap": 820, "vocabulary": 740}
 HERO = ('</div><section class="container atlas-hero" aria-label="map of all papers">'
-        '<div class="map-frame"><iframe src="atlas.html" title="Map of all NeurIPS 2026 papers"></iframe>'
-        '<button class="map-cover" type="button" onclick="this.remove()">'
-        '<span>Click to explore the map</span></button></div>'
+        '<div class="map-frame"><img class="map-preview" src="figures/atlas_clusters.png" '
+        'alt="Map of all NeurIPS 2026 papers, coloured by research area">'
+        '<button class="map-cover" type="button" onclick="openMap(this)"><span>Click to explore the map</span></button></div>'
         '<div class="actions"><a class="btn" href="atlas.html">Open the map full screen</a>'
-        '<a class="btn btn-ghost" href="papers.html">Search all papers</a></div></section><div class="post-wrap">')
+        '<a class="btn btn-ghost" href="papers.html">Search all papers</a></div></section>'
+        # the live map only loads on click; on small screens it opens full screen instead
+        '<script>function openMap(b){if(window.innerWidth<900){location.href="atlas.html";return;}'
+        'b.parentNode.innerHTML=\'<iframe src="atlas.html" title="Map of all NeurIPS 2026 papers"></iframe>\';}</script>'
+        '<div class="post-wrap">')
 
 
 def md_to_html(md_path):

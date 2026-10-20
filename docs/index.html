@@ -17,6 +17,8 @@
 .atlas-hero iframe{width:100%;height:min(78vh,760px);border:1px solid var(--rule);border-radius:10px;background:#fff;display:block;
   box-shadow:0 2px 18px rgba(30,58,95,.08)}
 .map-frame{position:relative}
+.map-preview{width:100%;height:min(78vh,760px);object-fit:contain;background:#fff;border:1px solid var(--rule);border-radius:10px;display:block}
+@media (max-width:720px){.map-preview{height:auto}}
 .map-cover{position:absolute;inset:0;border:0;background:transparent;cursor:pointer;display:flex;align-items:flex-end;justify-content:center;padding-bottom:18px}
 .map-cover span{font-family:var(--sans);font-size:.9rem;font-weight:500;background:var(--accent);color:#fff;padding:8px 14px;border-radius:8px;box-shadow:0 2px 10px rgba(0,0,0,.15)}
 .map-cover:hover span{background:var(--accent-hover)}
