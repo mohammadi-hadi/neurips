@@ -61,11 +61,12 @@ for s, c in zip(start, city):
 title = d["title_display"]
 hover = (title + " — " + status + " · " + city).to_numpy()
 safe = title.str.replace(r"[`$\\]", "", regex=True)
+GONE = set(json.load(open(ROOT / "data/labels/gone_from_program.json")))  # papers whose NeurIPS page is gone
 extra = pd.DataFrame({
     "title": title, "safe_title": safe, "openreview": d["or_link"], "pdf": d["pdf_link"], "arxiv": d["arxiv"],
     "authors": d["authors"].str.slice(0, 160), "status": status, "city": city,
     "topic": d["fine"].map(fine_name), "area": d["broad"].map(broad_name), "change": change_txt,
-    "url": d["url"], "abstract": d["abstract"].str.slice(0, 420) + "…",
+    "url": d["url"].where(~d["url"].str.rsplit("/", n=1).str[-1].isin(GONE), ""), "abstract": d["abstract"].str.slice(0, 420) + "…",
 })
 marker = np.where(d["decision"].isin(["oral", "spotlight"]), 7, 2.5)
 
@@ -155,7 +156,7 @@ if (window.self !== window.top) {
 function showLinks(page, arxiv, forum, pdf, title) {
   const box = document.getElementById('paper-links');
   box.querySelector('.t').textContent = title;
-  let h = '<a class="main" href="' + page + '" target="_blank" rel="noopener">NeurIPS page</a>' +
+  let h = (page ? '<a class="main" href="' + page + '" target="_blank" rel="noopener">NeurIPS page</a>' : '') +
           '<a href="' + arxiv + '" target="_blank" rel="noopener">Find on arXiv</a>';
   if (forum) h += '<a href="' + forum + '" target="_blank" rel="noopener">OpenReview</a>' +
                   '<a href="' + pdf + '" target="_blank" rel="noopener">PDF</a>';

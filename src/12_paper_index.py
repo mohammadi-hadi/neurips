@@ -29,7 +29,9 @@ csv = idx.drop(columns=["openreview", "pdf"]).rename(columns={"or_link": "openre
 csv["pdf"] = csv["openreview"].str.replace("/forum?id=", "/pdf?id=", regex=False)
 csv.to_csv(OUT / "papers_index.csv", index=False)  # OpenReview columns stay empty until the papers are public
 
-rows = [[r.title, r.authors[:180], r.area, r.subtopic, r.status, r.city, r.when, r.url.rsplit("/", 1)[-1],
+GONE = set(json.load(open(ROOT / "data/labels/gone_from_program.json")))  # papers whose NeurIPS page is gone
+rows = [[r.title, r.authors[:180], r.area, r.subtopic, r.status, r.city, r.when,
+         "" if r.url.rsplit("/", 1)[-1] in GONE else r.url.rsplit("/", 1)[-1],
          r.or_link.rsplit("=", 1)[-1] if r.or_link else ""] for r in idx.itertuples()]
 areas = sorted(idx["area"].unique())
 
@@ -70,7 +72,7 @@ function more() {
     const tag = r[4] === 'Oral' ? '<span class="tag o">Oral</span>' : r[4] === 'Spotlight' ? '<span class="tag s">Spotlight</span>' : '';
     const where = r[5] ? `${r[5]}${r[6] ? ' · ' + r[6] : ''}` : 'time not published';
     const ax = 'https://arxiv.org/search/?query=' + encodeURIComponent(r[0].replace(/[^\\w\\s-]/g, ' ')).replace(/%20/g, '+') + '&searchtype=title';
-    const links = `<a href="https://neurips.cc/virtual/2026/poster/${r[7]}" target="_blank" rel="noopener">NeurIPS page</a>` +
+    const links = (r[7] ? `<a href="https://neurips.cc/virtual/2026/poster/${r[7]}" target="_blank" rel="noopener">NeurIPS page</a>` : '') +
       `<a href="${ax}" target="_blank" rel="noopener">Find on arXiv</a>` +
       (r[8] ? `<a href="https://openreview.net/forum?id=${r[8]}" target="_blank" rel="noopener">OpenReview</a><a href="https://openreview.net/pdf?id=${r[8]}" target="_blank" rel="noopener">PDF</a>` : '');
     return `<div class="p"><div class="t">${tag}${esc(r[0])}</div><div class="m">${esc(r[1])}</div>` +
