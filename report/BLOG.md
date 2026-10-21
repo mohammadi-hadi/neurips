@@ -21,6 +21,16 @@ Same map, new colours. Red parts grew their share since 2025 and blue parts shra
 
 ![Papers per agent topic, 2025 and 2026](../outputs/figures/agents_family.png)
 
+Most of these papers ask whether agents work and whether we can trust them: how to test them, how they remember and how they get attacked. The agent memory topic alone went from 7 papers to 66.
+
+## Three cities and who wrote the papers
+
+![How much each area leans towards Sydney, Atlanta or Paris](../outputs/figures/cities_lean.png)
+
+About 67% of papers are presented in Sydney, 19% in Atlanta and 14% in Paris. Vision and robotics lean towards Sydney, and theory leans towards Paris.
+
+Of the papers where I could match an affiliation, 46% have an author in the US and 34% in China. China was at 42% last year. Tsinghua University is on the most papers (479), followed by Google (378).
+
 ## How I made it
 
 All the data is public. I downloaded the titles, authors, affiliations and abstracts from neurips.cc on 20 October 2026. An open model, Qwen3-Embedding-0.6B, turned each paper into numbers. Then I grouped similar papers into 150 topics. Each 2025 paper went into its closest 2026 topic, so both years are measured the same way. I made the same map for [EMNLP 2026](https://mohammadi.cv/emnlp/2026/).
