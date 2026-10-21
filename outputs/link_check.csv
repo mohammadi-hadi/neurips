@@ -226,18 +226,12 @@ report/APPENDIX.md,https://arxiv.org/search/?query=DIAGNO++Diagonal+Spherical+Ne
 report/APPENDIX.md,https://neurips.cc/virtual/2026/poster/151389,ok,HTTP 200
 report/APPENDIX.md,https://arxiv.org/search/?query=Mechanism-Aware+Ensemble+Conditioning+for+Data-Limited+Emulation+of+Extreme+Events&searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
 report/BLOG.md,https://mohammadi.cv/neurips/2026/atlas.html,ok,HTTP 200
-report/BLOG.md,https://mohammadi.cv/neurips/2026/appendix.html,ok,HTTP 200
-report/BLOG.md,../outputs/figures/atlas_clusters.png,ok,relative file
 report/BLOG.md,../outputs/figures/field_moved.png,ok,relative file
 report/BLOG.md,../outputs/figures/agents_family.png,ok,relative file
-report/BLOG.md,../outputs/figures/areas_slope.png,ok,relative file
-report/BLOG.md,../outputs/figures/movers_x.png,ok,relative file
-report/BLOG.md,../outputs/figures/vocabulary_trends.png,ok,relative file
-report/BLOG.md,../outputs/figures/cities_lean.png,ok,relative file
-report/BLOG.md,../outputs/figures/countries.png,ok,relative file
-report/BLOG.md,https://github.com/mohammadi-hadi/neurips/blob/main/data/labels/label_fixes.json,ok,HTTP 200
+report/BLOG.md,https://mohammadi.cv/emnlp/2026/,ok,HTTP 200
 report/BLOG.md,https://mohammadi.cv/neurips/2026/papers.html,ok,HTTP 200
 report/BLOG.md,https://mohammadi.cv/neurips/2026/charts/treemap.html,ok,HTTP 200
+report/BLOG.md,https://mohammadi.cv/neurips/2026/appendix.html,ok,HTTP 200
 report/BLOG.md,https://github.com/mohammadi-hadi/neurips,ok,HTTP 200
 report/BLOG.md,https://mohammadi.cv,ok,HTTP 200
 docs/2026/appendix.html,https://mohammadi.cv/neurips/2026/appendix.html,ok,HTTP 200
@@ -258,6 +252,7 @@ docs/2026/appendix.html,papers.html,ok,relative file
 docs/2026/appendix.html,charts/treemap.html,ok,relative file
 docs/2026/appendix.html,appendix.html,ok,relative file
 docs/2026/appendix.html,https://github.com/mohammadi-hadi/neurips,ok,HTTP 200
+docs/2026/appendix.html,https://mohammadi.cv/emnlp/2026/,ok,HTTP 200
 docs/2026/appendix.html,https://neurips.cc/virtual/2026/poster/139265,ok,HTTP 200
 docs/2026/appendix.html,https://arxiv.org/search/?query=ALTER++An+Allen+s+Algebra-Based+Evaluation+Framework+for+Temporal+Reasoning+of+LLMs&amp;searchtype=title,ok (pattern),same arXiv title-search pattern as the sampled links
 docs/2026/appendix.html,https://neurips.cc/virtual/2026/poster/138960,ok,HTTP 200
@@ -493,15 +488,10 @@ docs/2026/index.html,papers.html,ok,relative file
 docs/2026/index.html,charts/treemap.html,ok,relative file
 docs/2026/index.html,appendix.html,ok,relative file
 docs/2026/index.html,https://github.com/mohammadi-hadi/neurips,ok,HTTP 200
+docs/2026/index.html,https://mohammadi.cv/emnlp/2026/,ok,HTTP 200
 docs/2026/index.html,figures/atlas_clusters.png,ok,relative file
 docs/2026/index.html,figures/field_moved.png,ok,relative file
 docs/2026/index.html,figures/agents_family.png,ok,relative file
-docs/2026/index.html,figures/areas_slope.png,ok,relative file
-docs/2026/index.html,figures/movers_x.png,ok,relative file
-docs/2026/index.html,figures/vocabulary_trends.png,ok,relative file
-docs/2026/index.html,figures/cities_lean.png,ok,relative file
-docs/2026/index.html,figures/countries.png,ok,relative file
-docs/2026/index.html,https://github.com/mohammadi-hadi/neurips/blob/main/data/labels/label_fixes.json,ok,HTTP 200
 docs/2026/index.html,https://mohammadi.cv,ok,HTTP 200
 docs/2026/papers.html,https://mohammadi.cv/neurips/2026/papers.html,ok,HTTP 200
 docs/2026/papers.html,"https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400;1,8..60,600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap",ok,HTTP 200
@@ -521,6 +511,7 @@ docs/2026/papers.html,papers.html,ok,relative file
 docs/2026/papers.html,charts/treemap.html,ok,relative file
 docs/2026/papers.html,appendix.html,ok,relative file
 docs/2026/papers.html,https://github.com/mohammadi-hadi/neurips,ok,HTTP 200
+docs/2026/papers.html,https://mohammadi.cv/emnlp/2026/,ok,HTTP 200
 docs/2026/charts/areas_dumbbell.html,https://cdn.plot.ly/plotly-4.1.1.min.js,ok,HTTP 200
 docs/2026/charts/countries.html,https://cdn.plot.ly/plotly-4.1.1.min.js,ok,HTTP 200
 docs/2026/charts/site_mix.html,https://cdn.plot.ly/plotly-4.1.1.min.js,ok,HTTP 200
