@@ -32,7 +32,7 @@ html,body{overflow-x:hidden}
 .map-cover:hover span{background:var(--accent-hover)}
 .atlas-hero .actions{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin-top:14px}
 .post-body figure{margin:32px 0 32px 50%;width:min(1000px,calc(100vw - 32px));transform:translateX(-50%)}
-.post-body figure img{width:100%;height:auto;border:1px solid var(--rule);border-radius:8px;background:#fff}
+.post-body figure img{display:block;width:auto;max-width:100%;height:auto;max-height:min(85vh,860px);margin:0 auto;border:1px solid var(--rule);border-radius:8px;background:#fff}
 .post-body figcaption{text-align:center}
 .post-body iframe.chart{width:min(1000px,calc(100vw - 32px))!important;margin-left:50%!important;transform:translateX(-50%)}
 .post-body figcaption{font-size:var(--step--1);color:var(--ink-3);margin-top:6px}
@@ -49,11 +49,11 @@ HEADER = """<a class="skip-link" href="#main">Skip to content</a>
 <nav class="site-nav" aria-label="Main"><ul>
 <li><a href="/research/">Research</a></li><li><a href="/publications/">Publications</a></li>
 <li><a href="/software/">Software</a></li><li><a href="/blog/">Blog</a></li>
-<li><a href="/neurips/">NeurIPS Atlas</a></li><li><a href="/assets/docs/HadiMohammadiCV.pdf">CV</a></li></ul></nav>
+<li><a href="/neurips/">NeurIPS Atlas</a></li><li><a href="/emnlp/">EMNLP Atlas</a></li><li><a href="/assets/docs/HadiMohammadiCV.pdf">CV</a></li></ul></nav>
 <details class="nav-toggle"><summary>Menu</summary><nav class="site-nav" aria-label="Mobile"><ul>
 <li><a href="/research/">Research</a></li><li><a href="/publications/">Publications</a></li>
 <li><a href="/software/">Software</a></li><li><a href="/blog/">Blog</a></li>
-<li><a href="/neurips/">NeurIPS Atlas</a></li><li><a href="/assets/docs/HadiMohammadiCV.pdf">CV</a></li></ul></nav></details>
+<li><a href="/neurips/">NeurIPS Atlas</a></li><li><a href="/emnlp/">EMNLP Atlas</a></li><li><a href="/assets/docs/HadiMohammadiCV.pdf">CV</a></li></ul></nav></details>
 </div></header>"""
 
 
