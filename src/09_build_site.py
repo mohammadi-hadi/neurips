@@ -54,7 +54,7 @@ def article(md_path, crumbs, dek, byline):
 CRUMBS = '<a href="/blog/">Blog</a><span class="sep">/</span><a href="../">NeurIPS Atlas</a>'
 words = len(re.sub(r"[#*\[\]()!<>-]", " ", (ROOT / "report/BLOG.md").read_text()).split())
 title, body = article(ROOT / "report/BLOG.md", CRUMBS,
-                      "I put all 9,110 NeurIPS 2026 papers on one map and compared them with 2025. Agents are the big story.",
+                      "Every NeurIPS 2026 paper on one map, and what changed since 2025.",
                       f"{round(words / 220)} min read · 20 October 2026")
 (DOCS / "index.html").write_text(page(title, "All NeurIPS 2026 papers on one map, and what changed since 2025.",
                                       SITE, body))
