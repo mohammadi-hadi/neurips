@@ -49,7 +49,7 @@ html,body{overflow-x:hidden}
 </div></header>
 <nav class="atlas-nav" aria-label="NeurIPS Atlas"><div class="container"><a class="name" href="../">NeurIPS Atlas</a><a class="map" href="atlas.html">Open the map</a><a href="index.html">2026 story</a><a href="papers.html">All papers</a><a href="charts/treemap.html">All topics</a><a href="appendix.html">Appendix</a><a href="https://github.com/mohammadi-hadi/neurips">Code &amp; data</a><a href="/emnlp/2026/">EMNLP 2026 map</a></div></nav><main id="main"><article class="post">
 <header class="post-head"><div class="post-wrap">
-<p class="post-crumbs"><a href="/blog/">Blog</a><span class="sep">/</span><a href="../">NeurIPS Atlas</a></p><h1>What 9,110 NeurIPS 2026 papers are about</h1><p class="post-dek">I put all 9,110 NeurIPS 2026 papers on one map and compared them with 2025. Agents are the big story.</p>
+<p class="post-crumbs"><a href="/blog/">Blog</a><span class="sep">/</span><a href="../">NeurIPS Atlas</a></p><h1>What 9,110 NeurIPS 2026 papers are about</h1><p class="post-dek">Every NeurIPS 2026 paper on one map, and what changed since 2025.</p>
 <p class="post-byline"><span>2 min read · 20 October 2026</span></p></div></header>
 <div class="post-body"><div class="post-wrap">
 <p>NeurIPS 2026 has 9,110 papers, 56% more than last year. I put all of them on one map and compared them with the 5,856 papers from 2025. The big story is agents.</p>
@@ -66,6 +66,11 @@ html,body{overflow-x:hidden}
 <figure><img src="figures/field_moved.png" alt="The 2026 map coloured by how each topic&#39;s share changed since 2025" loading="lazy"><figcaption>The 2026 map coloured by how each topic&#39;s share changed since 2025</figcaption></figure>
 <p>Same map, new colours. Red parts grew their share since 2025 and blue parts shrank, and the agent corner at the top is the one big red block.</p>
 <figure><img src="figures/agents_family.png" alt="Papers per agent topic, 2025 and 2026" loading="lazy"><figcaption>Papers per agent topic, 2025 and 2026</figcaption></figure>
+<p>Most of these papers ask whether agents work and whether we can trust them: how to test them, how they remember and how they get attacked. The agent memory topic alone went from 7 papers to 66.</p>
+<h2 id="three-cities-and-who-wrote-the-papers">Three cities and who wrote the papers</h2>
+<figure><img src="figures/cities_lean.png" alt="How much each area leans towards Sydney, Atlanta or Paris" loading="lazy"><figcaption>How much each area leans towards Sydney, Atlanta or Paris</figcaption></figure>
+<p>About 67% of papers are presented in Sydney, 19% in Atlanta and 14% in Paris. Vision and robotics lean towards Sydney, and theory leans towards Paris.</p>
+<p>Of the papers where I could match an affiliation, 46% have an author in the US and 34% in China. China was at 42% last year. Tsinghua University is on the most papers (479), followed by Google (378).</p>
 <h2 id="how-i-made-it">How I made it</h2>
 <p>All the data is public. I downloaded the titles, authors, affiliations and abstracts from neurips.cc on 20 October 2026. An open model, Qwen3-Embedding-0.6B, turned each paper into numbers. Then I grouped similar papers into 150 topics. Each 2025 paper went into its closest 2026 topic, so both years are measured the same way. I made the same map for <a href="https://mohammadi.cv/emnlp/2026/">EMNLP 2026</a>.</p>
 <p>Topics are a rough lens. I re-ran the grouping two other ways, with different settings each time, and agents at least doubled in every run. About 1,900 papers had no oral, spotlight or poster decision yet when I pulled the data, so some of the oral and poster counts on the map will still change before the conference.</p>
