@@ -64,7 +64,8 @@ def atlas_nav(prefix=""):
             f'<a class="map" href="{prefix}atlas.html">Open the map</a>'
             f'<a href="{prefix}index.html">2026 story</a><a href="{prefix}papers.html">All papers</a>'
             f'<a href="{prefix}charts/treemap.html">All topics</a><a href="{prefix}appendix.html">Appendix</a>'
-            f'<a href="https://github.com/mohammadi-hadi/neurips">Code &amp; data</a></div></nav>')
+            f'<a href="https://github.com/mohammadi-hadi/neurips">Code &amp; data</a>'
+            f'<a href="/emnlp/2026/">EMNLP 2026 map</a></div></nav>')
 
 
 FOOTER = """<footer class="site-footer"><div class="container">

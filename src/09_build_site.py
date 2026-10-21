@@ -80,6 +80,7 @@ LANDING = f"""{atlas_nav("2026/")}<main id="main"><section class="hero"><div cla
 <div class="prose" style="margin-top:28px">
 <h2>Editions</h2>
 <p><a href="2026/"><strong>NeurIPS 2026: the story.</strong></a> All 9,110 papers on one map, and what changed since 2025.</p>
+<p>Also see the <a href="/emnlp/"><strong>EMNLP Atlas</strong></a>: all 5,534 EMNLP 2026 papers on one map, and how they compare with NeurIPS.</p>
 <p><strong>NeurIPS through the years.</strong> Coming soon: how topics, submissions and countries changed since 2014.</p>
 </div></div></section></main>"""
 (ROOT / "docs/index.html").write_text(page("NeurIPS Atlas", "Maps and numbers on what NeurIPS papers are about.",

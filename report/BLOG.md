@@ -101,6 +101,7 @@ Of those papers, 26% have an author from industry, down from 29%.
 - [All 150 topics](https://mohammadi.cv/neurips/2026/charts/treemap.html) in one picture.
 - [Appendix](https://mohammadi.cv/neurips/2026/appendix.html): every topic with its numbers and every oral.
 - [Code and data](https://github.com/mohammadi-hadi/neurips), so you can check my work.
+- [EMNLP 2026 atlas](https://mohammadi.cv/emnlp/2026/): the same map for all 5,534 EMNLP papers, and how the two conferences compare.
 
 Every paper links to its NeurIPS page and an arXiv search. NeurIPS has not opened the 2026 papers on OpenReview yet. I will add those links when it does.
 
