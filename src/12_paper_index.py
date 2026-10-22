@@ -13,24 +13,35 @@ L = json.load(open(ROOT / "data/labels/labels.json"))
 fine_name = {int(k): v["name"] for k, v in L["fine"].items()}
 broad_name = {int(k): v["name"] for k, v in L["broad"].items()}
 
+
+def short_authors(a, n=180):
+    """Cuts a long author list at a name, not in the middle of one."""
+    names = [x.strip() for x in str(a).replace(";", ",").split(",") if x.strip()]
+    out = []
+    for x in names:
+        if len(", ".join(out + [x])) > n: return ", ".join(out) + f" and {len(names) - len(out)} more"
+        out.append(x)
+    return ", ".join(out)
+
 d = load_papers()
 d = d[d.year == 2026].copy()
 tz = {"Sydney": "Australia/Sydney", "Atlanta": "America/New_York", "Paris": "Europe/Paris"}
 start = pd.to_datetime(d["start"], errors="coerce", utc=True)
-d["when"] = [s.tz_convert(tz[c]).strftime("%a %d %b %H:%M") if (c in tz and not pd.isna(s)) else ""
+d["when"] = [s.tz_convert(tz[c]).strftime("%a %-d %b %H:%M") if (c in tz and not pd.isna(s)) else ""
              for s, c in zip(start, d["site"])]
 d["area"] = d["broad"].map(broad_name)
 d["subtopic"] = d["fine"].map(fine_name)
 d["status"] = d["decision"].map({"oral": "Oral", "spotlight": "Spotlight", "poster": "Poster"}).fillna("Decision not yet public")
 d["city"] = d["site"].where(d["site"].isin(list(tz)), "")
 cols = ["title_display", "authors", "area", "subtopic", "status", "city", "when", "url", "arxiv", "openreview", "pdf", "or_link"]
-idx = d[cols].rename(columns={"title_display": "title"}).sort_values("title").fillna("")
+idx = d[cols].rename(columns={"title_display": "title"}).fillna("")
+idx = idx.iloc[idx["title"].str.replace(r"^[^0-9A-Za-z]+", "", regex=True).str.lower().argsort(kind="stable")]  # "(How)..." sorts under H
 csv = idx.drop(columns=["openreview", "pdf"]).rename(columns={"or_link": "openreview"})
 csv["pdf"] = csv["openreview"].str.replace("/forum?id=", "/pdf?id=", regex=False)
 csv.to_csv(OUT / "papers_index.csv", index=False)  # OpenReview columns stay empty until the papers are public
 
 GONE = set(json.load(open(ROOT / "data/labels/gone_from_program.json")))  # papers whose NeurIPS page is gone
-rows = [[r.title, r.authors[:180], r.area, r.subtopic, r.status, r.city, r.when,
+rows = [[r.title, short_authors(r.authors), r.area, r.subtopic, r.status, r.city, r.when,
          "" if r.url.rsplit("/", 1)[-1] in GONE else r.url.rsplit("/", 1)[-1],
          r.or_link.rsplit("=", 1)[-1] if r.or_link else ""] for r in idx.itertuples()]
 areas = sorted(idx["area"].unique())
@@ -39,6 +50,8 @@ CSS = """<style>
 .controls{display:flex;gap:8px;flex-wrap:wrap;margin:18px 0}
 .controls input,.controls select{font:inherit;font-size:var(--step--1);padding:8px 10px;border:1px solid var(--rule);border-radius:8px;background:var(--surface);color:var(--ink)}
 .controls input{flex:1;min-width:220px}
+@media (max-width:560px){.controls input,.controls select{flex:1 1 100%;min-width:0}}
+.when{white-space:nowrap}
 .p{border-bottom:1px solid var(--rule);padding:12px 0}.p .t{font-weight:600;line-height:1.4}
 .p .m,.meta{color:var(--ink-3);font-size:var(--step--1)}.p .a{font-size:var(--step--1);margin-top:4px}
 .p .a a{margin-right:14px;font-weight:500}
@@ -76,7 +89,7 @@ function more() {
       `<a href="${ax}" target="_blank" rel="noopener">Find on arXiv</a>` +
       (r[8] ? `<a href="https://openreview.net/forum?id=${r[8]}" target="_blank" rel="noopener">OpenReview</a><a href="https://openreview.net/pdf?id=${r[8]}" target="_blank" rel="noopener">PDF</a>` : '');
     return `<div class="p"><div class="t">${tag}${esc(r[0])}</div><div class="m">${esc(r[1])}</div>` +
-      `<div class="a"><span class="tag">${esc(r[2])}</span><span class="tag">${esc(r[3])}</span>${esc(where)}</div><div class="a">${links}</div></div>`;
+      `<div class="a"><span class="tag">${esc(r[2])}</span><span class="tag">${esc(r[3])}</span><span class="when">${esc(where)}</span></div><div class="a">${links}</div></div>`;
   }).join('');
   document.getElementById('list').insertAdjacentHTML('beforeend', html);
   shown += 100;
