@@ -1,8 +1,8 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="color-scheme" content="light">
-<title>What 9,110 NeurIPS 2026 papers are about — Hadi Mohammadi</title><meta name="description" content="All NeurIPS 2026 papers on one map, and what changed since 2025.">
+<title>What 9,110 NeurIPS 2026 papers are about — Hadi Mohammadi</title><meta name="description" content="Every NeurIPS 2026 paper on one map, and what changed since 2025.">
 <link rel="canonical" href="https://mohammadi.cv/neurips/2026/"><meta name="author" content="Hadi Mohammadi">
-<meta property="og:title" content="What 9,110 NeurIPS 2026 papers are about"><meta property="og:description" content="All NeurIPS 2026 papers on one map, and what changed since 2025.">
+<meta property="og:title" content="What 9,110 NeurIPS 2026 papers are about"><meta property="og:description" content="Every NeurIPS 2026 paper on one map, and what changed since 2025.">
 <meta property="og:url" content="https://mohammadi.cv/neurips/2026/"><meta property="og:type" content="article"><meta property="og:site_name" content="Hadi Mohammadi">
 <meta property="og:image" content="https://mohammadi.cv/neurips/2026/figures/atlas_static.png"><meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400;1,8..60,600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"><link rel="stylesheet" href="/assets/css/site.css"><link rel="icon" href="/assets/img/favicon.png"><link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png"><style>
@@ -34,6 +34,15 @@ html,body{overflow-x:hidden}
 .post-body th,.post-body td{border-bottom:1px solid var(--rule);padding:6px 8px;text-align:left;vertical-align:top}
 .post-body .note{font-size:var(--step--1);color:var(--ink-3)}
 .wide{max-width:1080px}
+.atlas-nav a[aria-current]{color:var(--ink);text-decoration:underline;text-underline-offset:4px;text-decoration-thickness:1.5px}
+.post-body .btn,.atlas-hero .btn{text-decoration:none}
+.map-preview{padding-bottom:58px;box-sizing:border-box}
+@media (max-width:720px){.map-preview{padding-bottom:0}.map-cover span{display:none}}
+.landing-actions{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:16px}
+.post-body figcaption .tap{display:none}
+@media (max-width:640px){.post-body figcaption .tap{display:inline}}
+.post-body .links{white-space:nowrap}
+.post-body table + h3{margin-top:28px}
 .landing-map{width:100%;height:min(70vh,680px);object-fit:contain;border:1px solid var(--rule);border-radius:10px;background:#fff;display:block}
 @media (max-width:720px){.landing-map{height:auto}}
 @media (max-width:640px){.post-wrap.wide table,.post-wrap.wide tbody,.post-wrap.wide tr,.post-wrap.wide td{display:block;width:auto;min-width:0}
@@ -41,6 +50,8 @@ html,body{overflow-x:hidden}
 .post-wrap.wide td{border:0;padding:2px 0}.post-wrap.wide td:first-child{font-weight:600}
 .post-wrap.wide td[data-label]{display:inline-block;margin:4px 14px 0 0;font-family:var(--mono);font-size:.78rem;color:var(--ink-3)}
 .post-wrap.wide td[data-label]::before{content:attr(data-label) ": "}}
+/* desktop: the same column widths in every table, numbers on one line */
+@media (min-width:641px){.post-wrap.wide table{table-layout:fixed}.post-wrap.wide th:nth-child(1){width:21%}.post-wrap.wide th:nth-child(3){width:4.5em}.post-wrap.wide th:nth-child(4){width:9.5em}.post-wrap.wide th:nth-child(5){width:3em}.post-wrap.wide td[data-label]{white-space:nowrap}}
 </style></head><body>
 <a class="skip-link" href="#main">Skip to content</a>
 <header class="site-header"><div class="container">
@@ -54,35 +65,35 @@ html,body{overflow-x:hidden}
 <li><a href="/software/">Software</a></li><li><a href="/experience/">Experience</a></li><li><a href="/teaching/">Teaching</a></li>
 <li><a href="/blog/" aria-current="page">Blog</a></li><li><a href="/thesis/">Thesis</a></li><li><a href="/assets/docs/HadiMohammadiCV.pdf">CV</a></li></ul></nav></details>
 </div></header>
-<nav class="atlas-nav" aria-label="NeurIPS Atlas"><div class="container"><a class="name" href="../">NeurIPS Atlas</a><a class="map" href="atlas.html">Open the map</a><a href="index.html">2026 story</a><a href="papers.html">All papers</a><a href="charts/treemap.html">All topics</a><a href="appendix.html">Appendix</a><a href="https://github.com/mohammadi-hadi/neurips">Code &amp; data</a><a href="/emnlp/2026/">EMNLP 2026 map</a></div></nav><main id="main"><article class="post">
+<nav class="atlas-nav" aria-label="NeurIPS Atlas"><div class="container"><a class="name" href="../">NeurIPS Atlas</a><a class="map" href="atlas.html">Open the map</a><a href="index.html" aria-current="page">2026 story</a><a href="papers.html">All papers</a><a href="charts/treemap.html">All topics</a><a href="appendix.html">Appendix</a><a href="https://github.com/mohammadi-hadi/neurips">Code and data</a><a href="/emnlp/2026/">EMNLP 2026</a></div></nav><main id="main"><article class="post">
 <header class="post-head"><div class="post-wrap">
 <p class="post-crumbs"><a href="/blog/">Blog</a><span class="sep">/</span><a href="../">NeurIPS Atlas</a></p><h1>What 9,110 NeurIPS 2026 papers are about</h1><p class="post-dek">Every NeurIPS 2026 paper on one map, and what changed since 2025.</p>
 <p class="post-byline"><span>2 min read · 20 October 2026</span></p></div></header>
 <div class="post-body"><div class="post-wrap">
 <p>NeurIPS 2026 has 9,110 papers, 56% more than last year. I put all of them on one map and compared them with the 5,856 papers from 2025. The big story is agents.</p>
-</div><section class="container atlas-hero" aria-label="map of all papers"><div class="map-frame"><img class="map-preview" src="figures/atlas_clusters.png" alt="Map of all NeurIPS 2026 papers, coloured by research area"><button class="map-cover" type="button" onclick="openMap(this)"><span>Click to explore the map</span></button></div><div class="actions"><a class="btn" href="atlas.html">Open the map full screen</a><a class="btn btn-ghost" href="papers.html">Search all papers</a></div></section><script>function openMap(b){if(window.innerWidth<900){location.href="atlas.html";return;}b.parentNode.innerHTML='<iframe src="atlas.html" title="Map of all NeurIPS 2026 papers"></iframe>';}</script><div class="post-wrap">
-<p>Each dot is a paper. Search it, zoom in, or click any paper to see the city, day and time of its poster and go straight to the paper.</p>
+</div><section class="container atlas-hero" aria-label="map of all papers"><div class="map-frame"><img class="map-preview" src="figures/atlas_clusters.png" alt="Map of all NeurIPS 2026 papers, coloured by research area"><button class="map-cover" type="button" onclick="openMap(this)"><span>Explore the map</span></button></div><div class="actions"><a class="btn" href="atlas.html">Open the map full screen</a><a class="btn btn-ghost" href="papers.html">Search all papers</a></div></section><script>function openMap(b){if(window.innerWidth<900){location.href="atlas.html";return;}b.parentNode.innerHTML='<iframe src="atlas.html" title="Map of all NeurIPS 2026 papers"></iframe>';}</script><div class="post-wrap">
+<p>Each dot is a paper. Search the map, zoom in, or click any paper to see the city, day and time of its poster and go straight to the paper.</p>
 <h2 id="what-changed">What changed</h2>
 <ul>
-<li>LLM agents went from 2.9% of papers to 6.8%. That is 620 papers, and no other area moved more than 2 points.</li>
+<li>LLM agents went from 2.9% of papers to 6.8%. That is 620 papers, and no other area moved more than 2 percentage points.</li>
 <li>Six of the ten topics that grew most are about agents: testing them, making them reliable, memory, safety, coding and teams of agents.</li>
-<li>"Benchmark" is in 38% of abstracts, up from 32%.</li>
+<li>"Benchmark" is in the title or abstract of 38% of papers, up from 32%.</li>
 <li>Graph neural networks fell from 2.5% to 1.4% of papers.</li>
 <li>Two out of three papers are presented in Sydney, the rest in Atlanta and Paris.</li>
 </ul>
-<figure><a href="figures/field_moved.png"><img src="figures/field_moved.png" alt="The 2026 map coloured by how each topic&#39;s share changed since 2025" loading="lazy"></a><figcaption>The 2026 map coloured by how each topic&#39;s share changed since 2025</figcaption></figure>
+<figure><a href="figures/field_moved.png"><img src="figures/field_moved.png" alt="The 2026 map coloured by how each topic&#39;s share changed since 2025" width="2440" height="2534" loading="lazy"></a><figcaption>The 2026 map coloured by how each topic&#39;s share changed since 2025<span class="tap"> · Tap to enlarge.</span></figcaption></figure>
 <p>Same map, new colours. Red parts grew their share since 2025 and blue parts shrank, and the agent corner at the top is the one big red block.</p>
-<figure><a href="figures/agents_family.png"><img src="figures/agents_family.png" alt="Papers per agent topic, 2025 and 2026" loading="lazy"></a><figcaption>Papers per agent topic, 2025 and 2026</figcaption></figure>
+<figure><a href="figures/agents_family.png"><img src="figures/agents_family.png" alt="Papers per agent topic, 2025 and 2026" width="2221" height="1426" loading="lazy"></a><figcaption>Papers per agent topic, 2025 and 2026<span class="tap"> · Tap to enlarge.</span></figcaption></figure>
 <p>Most of these papers ask whether agents work and whether we can trust them: how to test them, how they remember and how they get attacked. The agent memory topic alone went from 7 papers to 66.</p>
 <h2 id="three-cities-and-who-wrote-the-papers">Three cities and who wrote the papers</h2>
-<figure><a href="figures/cities_lean.png"><img src="figures/cities_lean.png" alt="How much each area leans towards Sydney, Atlanta or Paris" loading="lazy"></a><figcaption>How much each area leans towards Sydney, Atlanta or Paris</figcaption></figure>
+<figure><a href="figures/cities_lean.png"><img src="figures/cities_lean.png" alt="How much each area leans towards Sydney, Atlanta or Paris" width="1960" height="1901" loading="lazy"></a><figcaption>How much each area leans towards Sydney, Atlanta or Paris<span class="tap"> · Tap to enlarge.</span></figcaption></figure>
 <p>About 67% of papers are presented in Sydney, 19% in Atlanta and 14% in Paris. Vision and robotics lean towards Sydney, and theory leans towards Paris.</p>
-<p>Of the papers where I could match an affiliation, 46% have an author in the US and 34% in China. China was at 42% last year. Tsinghua University is on the most papers (479), followed by Google (378).</p>
+<p>Of the papers where I could match an affiliation, 46% have an author in the US and 34% in China. China was at 42% last year. Tsinghua University has authors on the most papers (479), followed by Google (378).</p>
 <h2 id="how-i-made-it">How I made it</h2>
-<p>All the data is public. I downloaded the titles, authors, affiliations and abstracts from neurips.cc on 20 October 2026. An open model, Qwen3-Embedding-0.6B, turned each paper into numbers. Then I grouped similar papers into 150 topics. Each 2025 paper went into its closest 2026 topic, so both years are measured the same way. I made the same map for <a href="https://mohammadi.cv/emnlp/2026/">EMNLP 2026</a>.</p>
+<p>All the data is public. I downloaded the titles, authors, affiliations and abstracts from neurips.cc on 20 October 2026. An open model, Qwen3‑Embedding‑0.6B, turned each paper into numbers. Then I grouped similar papers into 150 topics. Each 2025 paper went into its closest 2026 topic, so both years are measured the same way. I made the same map for <a href="https://mohammadi.cv/emnlp/2026/">EMNLP 2026</a>.</p>
 <p>Topics are a rough lens. I re-ran the grouping two other ways, with different settings each time, and agents at least doubled in every run. About 1,900 papers had no oral, spotlight or poster decision yet when I pulled the data, so some of the oral and poster counts on the map will still change before the conference.</p>
 <h2 id="explore">Explore</h2>
-<p><a href="atlas.html">The map</a> · <a href="papers.html">All papers with poster times</a> · <a href="charts/treemap.html">All topics</a> · <a href="appendix.html">Appendix</a> · <a href="https://github.com/mohammadi-hadi/neurips">Code and data</a></p>
+<p><a href="atlas.html">The map</a> · <a href="papers.html">All papers with poster times</a> · <a href="charts/treemap.html">All topics</a> · <a href="appendix.html">Appendix</a> · <a href="https://github.com/mohammadi-hadi/neurips">Code and data</a></p>
 <p>Hadi Mohammadi · <a href="https://mohammadi.cv">mohammadi.cv</a></p>
 </div></div></article></main>
 <footer class="site-footer"><div class="container">

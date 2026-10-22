@@ -3,7 +3,7 @@
 <title>NeurIPS Atlas — Hadi Mohammadi</title><meta name="description" content="Maps and numbers on what NeurIPS papers are about.">
 <link rel="canonical" href="https://mohammadi.cv/neurips/"><meta name="author" content="Hadi Mohammadi">
 <meta property="og:title" content="NeurIPS Atlas"><meta property="og:description" content="Maps and numbers on what NeurIPS papers are about.">
-<meta property="og:url" content="https://mohammadi.cv/neurips/"><meta property="og:type" content="article"><meta property="og:site_name" content="Hadi Mohammadi">
+<meta property="og:url" content="https://mohammadi.cv/neurips/"><meta property="og:type" content="website"><meta property="og:site_name" content="Hadi Mohammadi">
 <meta property="og:image" content="https://mohammadi.cv/neurips/2026/figures/atlas_static.png"><meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400;1,8..60,600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"><link rel="stylesheet" href="/assets/css/site.css"><link rel="icon" href="/assets/img/favicon.png"><link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png"><style>
 html,body{overflow-x:hidden}
@@ -34,6 +34,15 @@ html,body{overflow-x:hidden}
 .post-body th,.post-body td{border-bottom:1px solid var(--rule);padding:6px 8px;text-align:left;vertical-align:top}
 .post-body .note{font-size:var(--step--1);color:var(--ink-3)}
 .wide{max-width:1080px}
+.atlas-nav a[aria-current]{color:var(--ink);text-decoration:underline;text-underline-offset:4px;text-decoration-thickness:1.5px}
+.post-body .btn,.atlas-hero .btn{text-decoration:none}
+.map-preview{padding-bottom:58px;box-sizing:border-box}
+@media (max-width:720px){.map-preview{padding-bottom:0}.map-cover span{display:none}}
+.landing-actions{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:16px}
+.post-body figcaption .tap{display:none}
+@media (max-width:640px){.post-body figcaption .tap{display:inline}}
+.post-body .links{white-space:nowrap}
+.post-body table + h3{margin-top:28px}
 .landing-map{width:100%;height:min(70vh,680px);object-fit:contain;border:1px solid var(--rule);border-radius:10px;background:#fff;display:block}
 @media (max-width:720px){.landing-map{height:auto}}
 @media (max-width:640px){.post-wrap.wide table,.post-wrap.wide tbody,.post-wrap.wide tr,.post-wrap.wide td{display:block;width:auto;min-width:0}
@@ -41,6 +50,8 @@ html,body{overflow-x:hidden}
 .post-wrap.wide td{border:0;padding:2px 0}.post-wrap.wide td:first-child{font-weight:600}
 .post-wrap.wide td[data-label]{display:inline-block;margin:4px 14px 0 0;font-family:var(--mono);font-size:.78rem;color:var(--ink-3)}
 .post-wrap.wide td[data-label]::before{content:attr(data-label) ": "}}
+/* desktop: the same column widths in every table, numbers on one line */
+@media (min-width:641px){.post-wrap.wide table{table-layout:fixed}.post-wrap.wide th:nth-child(1){width:21%}.post-wrap.wide th:nth-child(3){width:4.5em}.post-wrap.wide th:nth-child(4){width:9.5em}.post-wrap.wide th:nth-child(5){width:3em}.post-wrap.wide td[data-label]{white-space:nowrap}}
 </style></head><body>
 <a class="skip-link" href="#main">Skip to content</a>
 <header class="site-header"><div class="container">
@@ -54,20 +65,21 @@ html,body{overflow-x:hidden}
 <li><a href="/software/">Software</a></li><li><a href="/experience/">Experience</a></li><li><a href="/teaching/">Teaching</a></li>
 <li><a href="/blog/" aria-current="page">Blog</a></li><li><a href="/thesis/">Thesis</a></li><li><a href="/assets/docs/HadiMohammadiCV.pdf">CV</a></li></ul></nav></details>
 </div></header>
-<nav class="atlas-nav" aria-label="NeurIPS Atlas"><div class="container"><a class="name" href="">NeurIPS Atlas</a><a class="map" href="2026/atlas.html">Open the map</a><a href="2026/index.html">2026 story</a><a href="2026/papers.html">All papers</a><a href="2026/charts/treemap.html">All topics</a><a href="2026/appendix.html">Appendix</a><a href="https://github.com/mohammadi-hadi/neurips">Code &amp; data</a><a href="/emnlp/2026/">EMNLP 2026 map</a></div></nav><main id="main"><section class="hero"><div class="container">
+<nav class="atlas-nav" aria-label="NeurIPS Atlas"><div class="container"><a class="name" href="">NeurIPS Atlas</a><a class="map" href="2026/atlas.html">Open the map</a><a href="2026/index.html">2026 story</a><a href="2026/papers.html">All papers</a><a href="2026/charts/treemap.html">All topics</a><a href="2026/appendix.html">Appendix</a><a href="https://github.com/mohammadi-hadi/neurips">Code and data</a><a href="/emnlp/2026/">EMNLP 2026</a></div></nav><main id="main"><section class="hero"><div class="container">
 <span class="kicker">Project</span><h1>NeurIPS Atlas</h1>
 <p class="section-lede">What NeurIPS papers are about, and how that changes each year. Made from the public paper lists on neurips.cc.</p>
 </div></section>
 <section class="section"><div class="container">
 <a href="2026/atlas.html"><img src="2026/figures/atlas_clusters.png" alt="Map of all NeurIPS 2026 papers"
  class="landing-map"></a>
-<p style="text-align:center;margin-top:16px"><a class="btn" href="2026/atlas.html">Open the NeurIPS 2026 map</a>
-<a class="btn btn-ghost" href="2026/papers.html">Search all papers</a></p>
+<div class="landing-actions"><a class="btn" href="2026/atlas.html">Open the NeurIPS 2026 map</a>
+<a class="btn btn-ghost" href="2026/papers.html">Search all papers</a></div>
 <div class="prose" style="margin-top:28px">
 <h2>Editions</h2>
 <p><a href="2026/"><strong>NeurIPS 2026: the story.</strong></a> All 9,110 papers on one map, and what changed since 2025.</p>
-<p>Also see the <a href="/emnlp/"><strong>EMNLP Atlas</strong></a>: all 5,534 EMNLP 2026 papers on one map.</p>
 <p><strong>NeurIPS through the years.</strong> Coming soon: how topics, submissions and countries changed since 2014.</p>
+<h2>Also see</h2>
+<p>The <a href="/emnlp/"><strong>EMNLP Atlas</strong></a>: all 5,534 EMNLP 2026 papers on one map, made the same way.</p>
 </div></div></section></main>
 <footer class="site-footer"><div class="container">
 <p>&copy; 2026 Hadi Mohammadi &middot; Data: public paper lists from neurips.cc</p>
