@@ -179,6 +179,11 @@ plot = datamapplot.create_interactive_plot(
 if (window.self !== window.top) {
   document.documentElement.classList.add('embedded');
 }
+// narrow screens: start a little further out, so the whole map fits the width of a phone
+if (window.innerWidth < 600) {
+  const vs = datamap.deckgl.props.initialViewState;
+  datamap.deckgl.setProps({initialViewState: {...vs, zoom: vs.zoom - 0.9}});
+}
 function showLinks(page, arxiv, forum, pdf, title, where) {
   const box = document.getElementById('paper-links');
   box.querySelector('.t').textContent = title;
