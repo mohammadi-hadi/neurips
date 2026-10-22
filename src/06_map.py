@@ -2,6 +2,7 @@
 
 The interactive map can be recoloured by research area, change since 2025, city, status,
 industry involvement and team size, filtered by presentation day, and browsed with a topic tree."""
+import re
 import json
 from pathlib import Path
 import numpy as np
@@ -54,9 +55,10 @@ local_tz = {"Sydney": "Australia/Sydney", "Atlanta": "America/New_York", "Paris"
 day = []
 for s, c in zip(start, city):
     if pd.isna(s) or c not in local_tz:
-        day.append("not yet scheduled")
+        day.append("Unscheduled")
     else:
-        day.append(s.tz_convert(local_tz[c]).strftime("%d") + " " + c[:3])  # "08 Syd": short, sorts by date
+        # one word per label ("08-Tue"): the histogram shows only the first word. Colour by city tells the cities apart
+        day.append(s.tz_convert(local_tz[c]).strftime("%d-%a"))
 
 title = d["title_display"]
 hover = (title + " — " + status + " · " + city).to_numpy()
@@ -66,6 +68,8 @@ extra = pd.DataFrame({
     "title": title, "safe_title": safe, "openreview": d["or_link"], "pdf": d["pdf_link"], "arxiv": d["arxiv"],
     "authors": d["authors"].str.slice(0, 160), "status": status, "city": city,
     "topic": d["fine"].map(fine_name), "area": d["broad"].map(broad_name), "change": change_txt,
+    "where": [f"{c} · {s.tz_convert(local_tz[c]).strftime('%a %-d %b %H:%M')}, local time" if (c in local_tz and not pd.isna(s))
+              else "" for s, c in zip(start, city)],
     "url": d["url"].where(~d["url"].str.rsplit("/", n=1).str[-1].isin(GONE), ""), "abstract": d["abstract"].str.slice(0, 420) + "…",
 })
 marker = np.where(d["decision"].isin(["oral", "spotlight"]), 7, 2.5)
@@ -96,12 +100,17 @@ CSS = """
 #paper-links .t{font-weight:700;margin:0 22px 10px 0}
 #paper-links a{display:inline-block;margin:0 6px 6px 0;padding:6px 10px;border-radius:7px;background:#f1f3f5;color:#1f2a44;text-decoration:none;font-weight:600}
 #paper-links a.main{background:#1e3a5f;color:#fff}
-#paper-links .n{font-size:11px;color:#6b7489;margin-top:2px}
+#paper-links .n{font-size:12px;color:#6b7489;margin:0 0 8px}
+#paper-links .n:empty{display:none}
 #paper-links .x{position:absolute;top:8px;right:10px;cursor:pointer;font-size:16px;color:#6b7489;border:0;background:none}
 .embedded #topic-tree,.embedded #d3histogram-container,.embedded .atlas-back{display:none!important}
 .embedded #title-container{display:none!important}
 .atlas-back{position:absolute;bottom:14px;right:14px;z-index:10;font:600 13px Inter,system-ui,sans-serif;
   background:#1e3a5f;color:#fff;padding:8px 12px;border-radius:8px;text-decoration:none}
+/* the loading box is wider than a phone */
+#progress-container{max-width:calc(100vw - 24px)!important;box-sizing:border-box}
+/* short windows: the topic tree scrolls instead of running under the colour menu */
+#topic-tree{max-height:calc(100vh - 330px)!important;overflow:auto!important}
 /* phones: placed last so these rules win over the ones above */
 @media (max-width:768px){
   #main-title{font-size:21px!important;margin-bottom:4px}
@@ -118,8 +127,25 @@ CSS = """
   #paper-links{left:12px;right:12px;width:auto;bottom:132px}
 }
 """
+
+# the map page is linked from the posts: give it the same head as the other pages (viewport for phones,
+# description, preview card, icon), and the site name in the tab title
+def finish_head(page, title, desc, url, image):
+    head = (f'<meta name="viewport" content="width=device-width, initial-scale=1">\n'
+            f'<meta name="description" content="{desc}"><link rel="canonical" href="{url}">\n'
+            f'<meta property="og:title" content="{title}"><meta property="og:description" content="{desc}">\n'
+            f'<meta property="og:url" content="{url}"><meta property="og:type" content="website">'
+            f'<meta property="og:site_name" content="Hadi Mohammadi">\n'
+            f'<meta property="og:image" content="{image}"><meta name="twitter:card" content="summary_large_image">\n'
+            '<link rel="icon" href="/assets/img/favicon.png"><link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">\n')
+    assert page.count("<head>") == 1 and "name=\"viewport\"" not in page
+    page = page.replace("<head>", "<head>\n" + head)
+    old = re.search(r"<title>(.*?)</title>", page, re.S)
+    return page.replace(old.group(0), f"<title>{title} — Hadi Mohammadi</title>") if old else page.replace("</head>", f"<title>{title} — Hadi Mohammadi</title></head>")
+
+nb = lambda a: np.char.replace(a.astype(str), "-", "\u2011")  # non-breaking hyphen: the topic tree wrapped 'Post-Training' as 'Post- Training'
 plot = datamapplot.create_interactive_plot(
-    coords, fine_lab, broad_lab,  # finest layer first
+    coords, nb(fine_lab), nb(broad_lab),  # finest layer first
     hover_text=hover,
     extra_point_data=extra,
     hover_text_html_template="""<div style="max-width:440px;font-family:Inter,system-ui,sans-serif">
@@ -129,7 +155,7 @@ plot = datamapplot.create_interactive_plot(
 <div style="font-size:12px;color:#d9480f;margin:2px 0 6px">{change}</div>
 <div style="font-size:12px;opacity:.85">{abstract}</div>
 <div style="font-size:11px;margin-top:6px;color:#1f2a44"><b>Click</b> for links to the paper.</div></div>""",
-    on_click="showLinks(`{url}`, `{arxiv}`, `{openreview}`, `{pdf}`, `{safe_title}`)",
+    on_click="showLinks(`{url}`, `{arxiv}`, `{openreview}`, `{pdf}`, `{safe_title}`, `{where}`)",
     marker_size_array=marker,
     title="NeurIPS 2026: every paper on one map",
     sub_title=f"Each dot is one of the {len(d):,} papers. Similar papers sit close together. Big dots are orals and "
@@ -140,22 +166,23 @@ plot = datamapplot.create_interactive_plot(
     colormap_metadata=cmap_meta,
     histogram_data=pd.Series(day),
     histogram_n_bins=40,
-    histogram_settings={"histogram_title": "Poster day. Click a bar to filter.",
+    histogram_settings={"histogram_title": "Poster day in December, local time. Click a bar to filter.",
                         "histogram_bin_unselected_fill_color": "#d0d7e2",
                         "histogram_bin_selected_fill_color": "#d9480f",
                         "histogram_width": 420, "histogram_height": 90},
     custom_css=CSS,
     custom_html='<a class="atlas-back" href="index.html">← Back to the story</a>'
                 '<div id="paper-links"><button class="x" onclick="this.parentNode.style.display=\'none\'" '
-                'aria-label="close">×</button><div class="t"></div><div class="l"></div></div>',
+                'aria-label="close">×</button><div class="t"></div><div class="n"></div><div class="l"></div></div>',
     custom_js="""
 // When the map is embedded in the story page, keep it clean: only the map, search and the colour menu.
 if (window.self !== window.top) {
   document.documentElement.classList.add('embedded');
 }
-function showLinks(page, arxiv, forum, pdf, title) {
+function showLinks(page, arxiv, forum, pdf, title, where) {
   const box = document.getElementById('paper-links');
   box.querySelector('.t').textContent = title;
+  box.querySelector('.n').textContent = where;
   let h = (page ? '<a class="main" href="' + page + '" target="_blank" rel="noopener">NeurIPS page</a>' : '') +
           '<a href="' + arxiv + '" target="_blank" rel="noopener">Find on arXiv</a>';
   if (forum) h += '<a href="' + forum + '" target="_blank" rel="noopener">OpenReview</a>' +
@@ -178,6 +205,8 @@ FONT_LINK = '<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4
 anchor = '<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />'
 assert page.count(anchor) == 1
 page = page.replace(anchor, anchor + "\n" + FONT_LINK)
+page = finish_head(page, "NeurIPS 2026: every paper on one map", f"All {len(d):,} NeurIPS 2026 papers on one interactive map. Search, zoom in and click any paper.",
+                   "https://mohammadi.cv/neurips/2026/atlas.html", "https://mohammadi.cv/neurips/2026/figures/atlas_static.png")
 (DOCS / "atlas.html").write_text(page)
 
 BG, INK, MUTED = "#fbfaf7", "#1f2a44", "#6b7489"
