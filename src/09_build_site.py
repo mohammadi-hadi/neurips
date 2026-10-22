@@ -25,6 +25,20 @@ HERO = ('</div><section class="container atlas-hero" aria-label="map of all pape
         '<div class="post-wrap">')
 
 
+PHONE_LABELS = {"2026": "Papers", "★": "Orals and spotlights"}
+
+
+def label_cells(body):
+    """Gives each number cell of a table its column name, so on a phone a row can be shown as a card."""
+    def table(m):
+        heads = [html.unescape(re.sub(r"<[^>]+>", "", h)).strip() for h in re.findall(r"<th[^>]*>(.*?)</th>", m.group(0), re.S)]
+        def row(r):
+            cells = iter(range(10**6))
+            return re.sub(r"<td>", lambda _: (lambda i: f'<td data-label="{html.escape(PHONE_LABELS.get(heads[i], heads[i][:1].upper() + heads[i][1:]))}">'
+                                                         if 2 <= i < len(heads) else "<td>")(next(cells)), r.group(0))
+        return re.sub(r"<tr>.*?</tr>", row, m.group(0), flags=re.S)
+    return re.sub(r"<table>.*?</table>", table, body, flags=re.S)
+
 def md_to_html(md_path):
     body = subprocess.run(["pandoc", str(md_path), "-f", "gfm", "-t", "html5", "--wrap=none"], capture_output=True,
                           text=True, check=True).stdout
@@ -33,8 +47,8 @@ def md_to_html(md_path):
     body = re.sub(r"<h1[^>]*>.*?</h1>", "", body, count=1, flags=re.S)
     # images become figures with a caption from their alt text
     body = re.sub(r'<p>(<a href="[^"]*">)?<img\s+src="([^"]+)"\s+alt="([^"]*)"\s*/?>(</a>)?</p>',
-                  lambda m: f'<figure>{m.group(1) or ""}<img src="{m.group(2)}" alt="{m.group(3)}" loading="lazy">'
-                            f'{m.group(4) or ""}<figcaption>{m.group(3)}</figcaption></figure>', body)
+                  lambda m: f'<figure>{m.group(1) or '<a href="' + m.group(2) + '">'}<img src="{m.group(2)}" alt="{m.group(3)}" loading="lazy">'
+                            f'{m.group(4) or "</a>"}<figcaption>{m.group(3)}</figcaption></figure>', body)
     body = re.sub(r"<!--\s*atlas-hero\s*-->\s*<p><strong><a [^>]*>[^<]*</a></strong></p>", HERO, body)
     body = re.sub(r"<!--\s*interactive:\s*([a-z_]+)\s*-->",
                   lambda m: f'<iframe class="chart" style="height:{HEIGHTS.get(m.group(1), 680)}px" '
@@ -62,7 +76,7 @@ print("wrote", DOCS / "index.html")
 
 title, body = article(ROOT / "report/APPENDIX.md", CRUMBS + '<span class="sep">/</span><a href="index.html">2026</a>',
                       "Every NeurIPS 2026 area and topic with its numbers, and every oral.", "Reference")
-body = body.replace('<div class="post-wrap">', '<div class="post-wrap wide">')
+body = label_cells(body.replace('<div class="post-wrap">', '<div class="post-wrap wide">'))
 (DOCS / "appendix.html").write_text(page(title, "Every NeurIPS 2026 topic with its numbers, and every oral.",
                                          SITE + "appendix.html", body))
 print("wrote", DOCS / "appendix.html")
