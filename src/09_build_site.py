@@ -88,7 +88,7 @@ LANDING = f"""{atlas_nav("2026/")}<main id="main"><section class="hero"><div cla
 </div></section>
 <section class="section"><div class="container">
 <a href="2026/atlas.html"><img src="2026/figures/atlas_clusters.png" alt="Map of all NeurIPS 2026 papers"
- style="width:100%;border:1px solid var(--rule);border-radius:10px;background:#fff"></a>
+ class="landing-map"></a>
 <p style="text-align:center;margin-top:16px"><a class="btn" href="2026/atlas.html">Open the NeurIPS 2026 map</a>
 <a class="btn btn-ghost" href="2026/papers.html">Search all papers</a></p>
 <div class="prose" style="margin-top:28px">

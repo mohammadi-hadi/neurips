@@ -9,7 +9,8 @@ FONTS = ('<link rel="preconnect" href="https://fonts.googleapis.com">'
          '<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;'
          '0,8..60,700;1,8..60,400;1,8..60,600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500'
          '&display=swap" rel="stylesheet">'
-         '<link rel="stylesheet" href="/assets/css/site.css">')
+         '<link rel="stylesheet" href="/assets/css/site.css">'
+         '<link rel="icon" href="/assets/img/favicon.png"><link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">')
 
 # small additions for this project, written with the site's own tokens
 EXTRA_CSS = """
@@ -41,6 +42,8 @@ html,body{overflow-x:hidden}
 .post-body th,.post-body td{border-bottom:1px solid var(--rule);padding:6px 8px;text-align:left;vertical-align:top}
 .post-body .note{font-size:var(--step--1);color:var(--ink-3)}
 .wide{max-width:1080px}
+.landing-map{width:100%;height:min(70vh,680px);object-fit:contain;border:1px solid var(--rule);border-radius:10px;background:#fff;display:block}
+@media (max-width:720px){.landing-map{height:auto}}
 @media (max-width:640px){.post-wrap.wide table,.post-wrap.wide tbody,.post-wrap.wide tr,.post-wrap.wide td{display:block;width:auto;min-width:0}
 .post-wrap.wide thead{display:none}.post-wrap.wide tr{padding:12px 0;border-bottom:1px solid var(--rule)}
 .post-wrap.wide td{border:0;padding:2px 0}.post-wrap.wide td:first-child{font-weight:600}
@@ -53,12 +56,12 @@ HEADER = """<a class="skip-link" href="#main">Skip to content</a>
 <a class="wordmark" href="/">Hadi Mohammadi</a>
 <nav class="site-nav" aria-label="Main"><ul>
 <li><a href="/research/">Research</a></li><li><a href="/publications/">Publications</a></li>
-<li><a href="/software/">Software</a></li><li><a href="/blog/">Blog</a></li>
-<li><a href="/neurips/">NeurIPS Atlas</a></li><li><a href="/emnlp/">EMNLP Atlas</a></li><li><a href="/assets/docs/HadiMohammadiCV.pdf">CV</a></li></ul></nav>
+<li><a href="/software/">Software</a></li><li><a href="/experience/">Experience</a></li><li><a href="/teaching/">Teaching</a></li>
+<li><a href="/blog/" aria-current="page">Blog</a></li><li><a href="/thesis/">Thesis</a></li><li><a href="/assets/docs/HadiMohammadiCV.pdf">CV</a></li></ul></nav>
 <details class="nav-toggle"><summary>Menu</summary><nav class="site-nav" aria-label="Mobile"><ul>
 <li><a href="/research/">Research</a></li><li><a href="/publications/">Publications</a></li>
-<li><a href="/software/">Software</a></li><li><a href="/blog/">Blog</a></li>
-<li><a href="/neurips/">NeurIPS Atlas</a></li><li><a href="/emnlp/">EMNLP Atlas</a></li><li><a href="/assets/docs/HadiMohammadiCV.pdf">CV</a></li></ul></nav></details>
+<li><a href="/software/">Software</a></li><li><a href="/experience/">Experience</a></li><li><a href="/teaching/">Teaching</a></li>
+<li><a href="/blog/" aria-current="page">Blog</a></li><li><a href="/thesis/">Thesis</a></li><li><a href="/assets/docs/HadiMohammadiCV.pdf">CV</a></li></ul></nav></details>
 </div></header>"""
 
 
