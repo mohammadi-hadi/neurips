@@ -143,6 +143,152 @@ def finish_head(page, title, desc, url, image):
     old = re.search(r"<title>(.*?)</title>", page, re.S)
     return page.replace(old.group(0), f"<title>{title} — Hadi Mohammadi</title>") if old else page.replace("</head>", f"<title>{title} — Hadi Mohammadi</title></head>")
 
+# ---------- easier exploring: zoom buttons, jump to an area, zoom to search matches, keyboard, a first-visit tip
+ICON = '<svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round">{}</svg>'
+ZOOM_HTML = ('<div id="zoomctl" role="group" aria-label="Move around the map">'
+             '<label class="zc-area" title="Fly to a research area"><span>Areas</span>'
+             '<select aria-label="Fly to a research area"><option value="">Fly to an area…</option></select></label>'
+             '<button type="button" class="zc" data-z="in" title="Zoom in (+)" aria-label="Zoom in">' + ICON.format('<path d="M12 5v14M5 12h14"/>') + '</button>'
+             '<button type="button" class="zc" data-z="out" title="Zoom out (−)" aria-label="Zoom out">' + ICON.format('<path d="M5 12h14"/>') + '</button>'
+             '<button type="button" class="zc" data-z="fit" title="Whole map (0)" aria-label="Show the whole map">'
+             + ICON.format('<path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/>') + '</button></div>'
+             '<div id="zoomtip" aria-hidden="true"></div>')
+ZOOM_CSS = """
+#zoomctl{position:absolute;right:14px;top:50%;transform:translateY(-50%);z-index:15;display:flex;flex-direction:column;align-items:flex-end;gap:8px}
+#zoomctl .zc{width:42px;height:42px;padding:0;border:0;border-radius:10px;background:#fff;color:#1e3a5f;cursor:pointer;
+  box-shadow:0 2px 12px rgba(31,42,68,.18);display:grid;place-items:center}
+#zoomctl .zc:hover{background:#eef1f6}
+#zoomctl .zc:focus-visible,.zc-area:focus-within,.zc-match:focus-visible{outline:2px solid #d9480f;outline-offset:2px}
+.zc-area{position:relative;display:flex;align-items:center;gap:8px;box-sizing:border-box;height:42px;margin:0;padding:0 14px;border-radius:10px;
+  background:#1e3a5f;color:#fff;font:600 13px/1 Inter,system-ui,sans-serif;white-space:nowrap;cursor:pointer;box-shadow:0 2px 12px rgba(31,42,68,.18)}
+.zc-area::after{content:"";border:4px solid transparent;border-top:5px solid #fff;margin-top:5px}
+#text-search{width:230px;box-sizing:border-box;padding:6px 10px;font:14px Inter,system-ui,sans-serif}
+.zc-area select{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:pointer;font-size:16px}
+.zc-match{display:block;margin:8px 0 0;border:0;border-radius:8px;background:#1e3a5f;color:#fff;font:600 12.5px Inter,system-ui,sans-serif;
+  padding:7px 11px;cursor:pointer}
+.zc-match[hidden]{display:none}
+#zoomtip{position:absolute;right:70px;top:50%;transform:translateY(-50%);z-index:15;max-width:230px;padding:9px 12px;border-radius:9px;
+  background:rgba(31,42,68,.93);color:#fff;font:13px/1.4 Inter,system-ui,sans-serif;pointer-events:none;transition:opacity .5s}
+#zoomtip.gone{opacity:0}
+@media (max-width:768px){
+  #zoomctl{right:10px}
+  #text-search{width:min(230px,calc(100vw - 72px));font-size:16px}
+  #zoomtip{right:62px;max-width:200px}
+  body:has(#paper-links[style*="block"]) #zoomctl,body:has(#paper-links[style*="block"]) #zoomtip{visibility:hidden}
+}
+"""
+
+
+def zoom_js(names, area_of):
+    """names: the area names; area_of: each paper's index into names, in map order. The boxes are worked out in the
+    page from DataMapPlot's own point positions, which it rescales from ours."""
+    return r"""
+// ---------- easier exploring: zoom buttons, fly to an area, zoom to search matches, keyboard, a first-visit tip
+(function () {
+  const AREAS = __AREAS__, AREA_OF = __AREA_OF__;
+  let boxes = null;
+  // An area's papers are spread over the map, so a box around all of them is nearly the whole map. Fly to where the
+  // area is densest instead: centre on its label (DataMapPlot puts it at the core) and frame its nearest 55% of papers.
+  function areaBox(k) {
+    if (!boxes) {
+      const X = datamap.pointData.x, Y = datamap.pointData.y, per = AREAS.map(() => []);
+      AREA_OF.forEach((a, i) => per[a].push(i));
+      const labels = (datamap.labelData || []).filter(l => l.parent === 'base');
+      boxes = per.map((idx, a) => {
+        const lab = labels.find(l => String(l.label).replace(/‑/g, '-').replace(/\s+/g, ' ') === AREAS[a]);
+        const med = v => { const s = v.slice().sort((p, q) => p - q); return s[s.length >> 1]; };
+        const cx = lab ? lab.x : med(idx.map(i => X[i])), cy = lab ? lab.y : med(idx.map(i => Y[i]));
+        const near = idx.map(i => [(X[i] - cx) ** 2 + (Y[i] - cy) ** 2, i]).sort((p, q) => p[0] - q[0])
+                        .slice(0, Math.max(20, Math.round(idx.length * 0.55))).map(p => p[1]);
+        let b = [cx, cx, cy, cy];
+        near.forEach(i => { b = [Math.min(b[0], X[i]), Math.max(b[1], X[i]), Math.min(b[2], Y[i]), Math.max(b[3], Y[i])]; });
+        return b;
+      });
+    }
+    return boxes[k];
+  }
+  const box = document.getElementById('zoomctl'), tip = document.getElementById('zoomtip');
+  const home = {...datamap.deckgl.props.initialViewState};
+  const lim = {minZoom: home.zoom - 1.5, maxZoom: home.zoom + 9};  // never lose the map in empty space
+  let cur = {...home, ...lim};
+  datamap.deckgl.setProps({initialViewState: cur});
+  datamap.onViewStateChange('zoomctl', p => { if (p && p.viewState) cur = {...cur, ...p.viewState}; });
+  function go(v, ms) {
+    const z = Math.max(lim.minZoom, Math.min(lim.maxZoom, v.zoom === undefined ? cur.zoom : v.zoom));
+    cur = {...cur, ...v, zoom: z, ...lim, transitionDuration: ms || 350};
+    datamap.deckgl.setProps({initialViewState: cur});
+    datamap.notifyViewStateChange(cur);
+    hideTip();
+  }
+  // same sum as DataMapPlot's own fit, with a little room around the box
+  function fit(b) {
+    const w = document.documentElement.clientWidth, h = document.documentElement.clientHeight;
+    const zx = Math.log2(360 / ((b[1] - b[0]) / (w / 256))), zy = Math.log2(180 / ((b[3] - b[2]) / (h / 256)));
+    go({longitude: (b[0] + b[1]) / 2, latitude: (b[2] + b[3]) / 2, zoom: Math.min(zx, zy) - 0.6}, 800);
+  }
+  box.addEventListener('click', e => {
+    const b = e.target.closest('[data-z]'); if (!b) return;
+    const k = b.dataset.z;
+    if (k === 'in') go({zoom: cur.zoom + 1});
+    else if (k === 'out') go({zoom: cur.zoom - 1});
+    else go({longitude: home.longitude, latitude: home.latitude, zoom: home.zoom}, 700);
+  });
+  const sel = box.querySelector('select');
+  AREAS.map((a, i) => [a, i]).sort((u, v) => u[0].localeCompare(v[0])).forEach(([a, i]) => sel.add(new Option(a, i)));
+  sel.addEventListener('change', () => { if (sel.value !== '' && datamap.pointData) fit(areaBox(+sel.value)); sel.value = ''; sel.blur(); });
+
+  // zoom to the papers the search box found
+  const input = document.getElementById('text-search');
+  if (input) input.placeholder = '🔍 Search titles';
+  const mb = document.createElement('button');
+  mb.type = 'button'; mb.className = 'zc-match'; mb.hidden = true;
+  if (input) input.insertAdjacentElement('afterend', mb);
+  const found = () => { const s = datamap.dataSelectionManager.selectedIndicesByItem[datamap.searchItemId]; return s ? Array.from(s) : []; };
+  const orig = datamap.searchText.bind(datamap);
+  datamap.searchText = term => {
+    orig(term);
+    const n = term ? found().length : 0;
+    mb.hidden = n === 0;
+    mb.textContent = n === 1 ? 'Zoom to the 1 match' : `Zoom to the ${n.toLocaleString()} matches`;
+  };
+  mb.addEventListener('click', () => {
+    const idx = found(); if (!idx.length || !datamap.pointData) return;
+    const X = datamap.pointData.x, Y = datamap.pointData.y;
+    let b = [Infinity, -Infinity, Infinity, -Infinity];
+    idx.forEach(i => { b[0] = Math.min(b[0], X[i]); b[1] = Math.max(b[1], X[i]); b[2] = Math.min(b[2], Y[i]); b[3] = Math.max(b[3], Y[i]); });
+    const m = 0.35;  // a single paper still gets some neighbours around it
+    if (b[1] - b[0] < 2 * m) { const c = (b[0] + b[1]) / 2; b[0] = c - m; b[1] = c + m; }
+    if (b[3] - b[2] < 2 * m) { const c = (b[2] + b[3]) / 2; b[2] = c - m; b[3] = c + m; }
+    fit(b);
+  });
+
+  // keyboard: + and - zoom, 0 shows the whole map, Esc closes the paper box
+  window.addEventListener('keydown', e => {
+    if (e.target.closest && e.target.closest('input, textarea, select') || e.metaKey || e.ctrlKey || e.altKey) return;
+    if (e.key === '+' || e.key === '=') go({zoom: cur.zoom + 1});
+    else if (e.key === '-' || e.key === '_') go({zoom: cur.zoom - 1});
+    else if (e.key === '0') go({longitude: home.longitude, latitude: home.latitude, zoom: home.zoom}, 700);
+    else if (e.key === 'Escape') { const p = document.getElementById('paper-links'); if (p) p.style.display = 'none'; }
+  });
+
+  // a short tip on the first visit, gone after the first move or a few seconds
+  const touch = window.matchMedia('(hover: none)').matches;
+  tip.textContent = touch ? 'Pinch or use + and − to zoom, drag to move, tap a dot for its links.'
+                          : 'Scroll or use + and − to zoom, drag to move, click a dot for its links.';
+  let tipDone = false;
+  function hideTip() { if (!tipDone) { tipDone = true; tip.classList.add('gone'); setTimeout(() => tip.remove(), 600); } }
+  setTimeout(hideTip, 9000);
+  ['wheel', 'touchstart', 'pointerdown'].forEach(ev => document.getElementById('deck-container').addEventListener(ev, hideTip, {once: true, passive: true}));
+})();
+""".replace("__AREAS__", json.dumps(names)).replace("__AREA_OF__", json.dumps(area_of, separators=(",", ":")))
+
+
+def area_index(names):
+    """Area names and each paper's position in that list."""
+    uniq = sorted(set(names), key=str.casefold)
+    pos = {a: k for k, a in enumerate(uniq)}
+    return uniq, [pos[a] for a in names]
+
 nb = lambda a: np.char.replace(a.astype(str), "-", "\u2011")  # non-breaking hyphen: the topic tree wrapped 'Post-Training' as 'Post- Training'
 plot = datamapplot.create_interactive_plot(
     coords, nb(fine_lab), nb(broad_lab),  # finest layer first
@@ -170,10 +316,10 @@ plot = datamapplot.create_interactive_plot(
                         "histogram_bin_unselected_fill_color": "#d0d7e2",
                         "histogram_bin_selected_fill_color": "#d9480f",
                         "histogram_width": 420, "histogram_height": 90},
-    custom_css=CSS,
+    custom_css=CSS + ZOOM_CSS,
     custom_html='<a class="atlas-back" href="index.html">← Back to the story</a>'
                 '<div id="paper-links"><button class="x" onclick="this.parentNode.style.display=\'none\'" '
-                'aria-label="close">×</button><div class="t"></div><div class="n"></div><div class="l"></div></div>',
+                'aria-label="close">×</button><div class="t"></div><div class="n"></div><div class="l"></div></div>' + ZOOM_HTML,
     custom_js="""
 // When the map is embedded in the story page, keep it clean: only the map, search and the colour menu.
 if (window.self !== window.top) {
@@ -195,7 +341,7 @@ function showLinks(page, arxiv, forum, pdf, title, where) {
   box.querySelector('.l').innerHTML = h;
   box.style.display = 'block';
 }
-""",
+""" + zoom_js(*area_index(list(broad_lab))),
     darkmode=False,
     font_family="Inter",
     cluster_boundary_polygons=True,
