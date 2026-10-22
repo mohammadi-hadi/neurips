@@ -41,9 +41,11 @@ csv["pdf"] = csv["openreview"].str.replace("/forum?id=", "/pdf?id=", regex=False
 csv.to_csv(OUT / "papers_index.csv", index=False)  # OpenReview columns stay empty until the papers are public
 
 GONE = set(json.load(open(ROOT / "data/labels/gone_from_program.json")))  # papers whose NeurIPS page is gone
+full = lambda a: ", ".join(x.strip() for x in str(a).replace(";", ",").split(",") if x.strip())
 rows = [[r.title, short_authors(r.authors), r.area, r.subtopic, r.status, r.city, r.when,
          "" if r.url.rsplit("/", 1)[-1] in GONE else r.url.rsplit("/", 1)[-1],
-         r.or_link.rsplit("=", 1)[-1] if r.or_link else ""] for r in idx.itertuples()]
+         r.or_link.rsplit("=", 1)[-1] if r.or_link else "",
+         full(r.authors) if short_authors(r.authors) != full(r.authors) else ""] for r in idx.itertuples()]
 areas = sorted(idx["area"].unique(), key=str.casefold)
 
 CSS = """<style>
@@ -74,12 +76,19 @@ BODY = """__NAV__<main id="main"><article class="post"><header class="post-head"
 </div></header></article></main>
 <script>
 const D = __DATA__;
+const norm = s => s.normalize('NFD').replace(/[\\u0300-\\u036f]/g, '').replace(/[’‘`]/g, "'").toLowerCase();
+// search text: title, all authors (also the ones the card hides behind "and N more"), without accents
+const KEY = D.map(r => norm(r[0] + ' ' + r[1] + ' ' + (r[9] || '')).replace(/\\s+/g, ' '));
 const esc = s => s.replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 let shown = 0, hits = [];
 function filter() {
-  const q = document.getElementById('q').value.toLowerCase(), a = document.getElementById('area').value,
+  const q = document.getElementById('q').value, a = document.getElementById('area').value,
         c = document.getElementById('city').value, s = document.getElementById('status').value;
-  hits = D.filter(r => (!q || (r[0] + ' ' + r[1]).toLowerCase().includes(q)) && (!a || r[2] === a) && (!c || r[5] === c) && (!s || r[4] === s));
+  // the exact phrase first (so a shared link for a name shows only that person); if nothing has it, every word in any order
+  const nq = norm(q).trim().replace(/\\s+/g, ' '), words = nq.split(' ').filter(Boolean);
+  const phrase = nq && KEY.some(k => k.includes(nq));
+  const match = i => !nq || (phrase ? KEY[i].includes(nq) : words.every(w => KEY[i].includes(w)));
+  hits = D.filter((r, i) => match(i) && (!a || r[2] === a) && (!c || r[5] === c) && (!s || r[4] === s));
   shown = 0; document.getElementById('list').innerHTML = ''; more();
 }
 function more() {
@@ -87,9 +96,9 @@ function more() {
     const tag = r[4] === 'Oral' ? '<span class="tag o">Oral</span>' : r[4] === 'Spotlight' ? '<span class="tag s">Spotlight</span>' :
       r[4] === 'Decision not yet public' ? '<span class="tag n">No decision yet</span>' : '';
     const where = r[5] ? `${r[5]}${r[6] ? ' · ' + r[6] : ''}` : 'City and time not published yet';
-    const ax = 'https://arxiv.org/search/?query=' + encodeURIComponent(r[0].replace(/[^\\w\\s-]/g, ' ')).replace(/%20/g, '+') + '&searchtype=title';
+    const ax = 'https://arxiv.org/search/?query=' + encodeURIComponent(r[0].replace(/[’‘]/g, "'").replace(/[^\\w\\s'-]/g, ' ')).replace(/%20/g, '+') + '&searchtype=title';
     const links = (r[7] ? `<a href="https://neurips.cc/virtual/2026/poster/${r[7]}" target="_blank" rel="noopener">NeurIPS page</a>` : '') +
-      `<a href="${ax}" target="_blank" rel="noopener">Find on arXiv</a>` +
+      `<a href="${ax}" target="_blank" rel="noopener">Search arXiv</a>` +
       (r[8] ? `<a href="https://openreview.net/forum?id=${r[8]}" target="_blank" rel="noopener">OpenReview</a><a href="https://openreview.net/pdf?id=${r[8]}" target="_blank" rel="noopener">PDF</a>` : '');
     return `<div class="p"><div class="t">${tag}${esc(r[0])}</div><div class="m">${esc(r[1])}</div>` +
       `<div class="a"><span class="tag">${esc(r[2])}</span><span class="tag">${esc(r[3])}</span><span class="when">${esc(where)}</span></div><div class="a">${links}</div></div>`;
