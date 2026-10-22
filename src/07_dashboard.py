@@ -6,6 +6,7 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 from common import load_papers
+from site_template import treemap_page, treemap_figure
 import plotly.graph_objects as go
 import plotly.express as px
 
@@ -43,16 +44,15 @@ t["subtopic"] = t.fine.map(fine_name)
 t["about"] = t.fine.map(fine_line)
 hi = d26[d26.decision.isin(["oral", "spotlight"])].groupby("fine").size()
 t["highlights"] = t.fine.map(hi).fillna(0).astype(int)
-fig = px.treemap(t, path=[px.Constant("NeurIPS 2026"), "area", "subtopic"], values="papers", color="growth",
-                 color_continuous_scale=["#3b5bdb", "#f1f3f5", "#d9480f"], range_color=(-1.5, 1.5),
-                 custom_data=["share_2025", "share_2026", "highlights", "about"])
-fig.update_traces(hovertemplate="<b>%{label}</b><br>%{value} papers in 2026<br>share 2025 → 2026: "
-                  "%{customdata[0]:.2f}% → %{customdata[1]:.2f}%<br>orals + spotlights: %{customdata[2]}"
-                  "<br><i>%{customdata[3]}</i><extra></extra>", root_color="white", textinfo="label+value")
-fig.update_layout(title="All 9,110 papers by area and subtopic (colour: grew vs shrank since 2025)",
-                  coloraxis_colorbar=dict(title="log₂ share<br>2026/2025", tickvals=[-1.5, 0, 1.5],
-                                          ticktext=["shrank", "same", "grew"]))
-save(fig, "treemap", 760)
+t["label"], t["share_cur"], t["share_prev"] = t.subtopic, t.share_2026, t.share_2025
+t["info"] = [f"orals + spotlights: {h}" + (f"<br><i>{a}</i>" if a else "") for h, a in zip(t.highlights, t.about.fillna(""))]
+hl = t.groupby("area").highlights.sum()
+fig = treemap_figure(t, "NeurIPS 2026", "2026", "2025", {a: f"orals + spotlights: {n}" for a, n in hl.items()})
+fig.update_layout(font=FONT, margin=dict(l=0, r=0, t=0, b=0), paper_bgcolor="white")
+LEDE = (f"All {len(d26):,} papers in {t.area.nunique()} areas and {len(t)} topics. Each box is an area, sized by its "
+        f"number of papers. The colour shows how its share of the papers changed since 2025: red grew, blue shrank. "
+        "Click an area to see its topics, and click the bar at the top to go back. Hover over or tap a topic for its numbers.")
+(DOCS / "charts" / "treemap.html").write_text(treemap_page(fig, "NeurIPS", LEDE, "https://mohammadi.cv/neurips/2026/charts/treemap.html"))
 
 # 2. dumbbell: area share 2025 -> 2026
 b = pd.DataFrame(S["broad"]).sort_values("share_2026")
@@ -100,5 +100,5 @@ fig.update_layout(barmode="group", title="Countries behind the papers",
                   legend=dict(orientation="h", y=1.05, x=0))
 save(fig, "countries", 650)
 
-t.sort_values("papers", ascending=False).to_csv(OUT / "subtopics_treemap_data.csv", index=False)
+t.drop(columns=["label", "share_cur", "share_prev", "info"]).sort_values("papers", ascending=False).to_csv(OUT / "subtopics_treemap_data.csv", index=False)
 print("charts written to", DOCS / "charts")

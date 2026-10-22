@@ -41,6 +41,11 @@ html,body{overflow-x:hidden}
 .post-body th,.post-body td{border-bottom:1px solid var(--rule);padding:6px 8px;text-align:left;vertical-align:top}
 .post-body .note{font-size:var(--step--1);color:var(--ink-3)}
 .wide{max-width:1080px}
+@media (max-width:640px){.post-wrap.wide table,.post-wrap.wide tbody,.post-wrap.wide tr,.post-wrap.wide td{display:block;width:auto;min-width:0}
+.post-wrap.wide thead{display:none}.post-wrap.wide tr{padding:12px 0;border-bottom:1px solid var(--rule)}
+.post-wrap.wide td{border:0;padding:2px 0}.post-wrap.wide td:first-child{font-weight:600}
+.post-wrap.wide td[data-label]{display:inline-block;margin:4px 14px 0 0;font-family:var(--mono);font-size:.78rem;color:var(--ink-3)}
+.post-wrap.wide td[data-label]::before{content:attr(data-label) ": "}}
 """
 
 HEADER = """<a class="skip-link" href="#main">Skip to content</a>
@@ -88,3 +93,56 @@ def page(title, description, url, body, image=None, extra_head=""):
 {body}
 {FOOTER}
 </body></html>"""
+
+
+TREEMAP_CSS = """<style>
+#tm{height:min(80vh,820px)!important;min-height:520px;margin:4px 0 8px}
+.scale{display:flex;align-items:center;flex-wrap:wrap;gap:8px;font-size:var(--step--1);color:var(--ink-3);margin:14px 0 4px}
+.scale i{display:block;width:140px;height:10px;border-radius:5px;background:linear-gradient(90deg,#3b5bdb,#f1f3f5,#d9480f)}
+</style>"""
+
+
+def treemap_page(fig, conf, lede, url):
+    """charts/treemap.html as a page of the site: header, project menu, a short explanation, then the chart.
+    The chart opens on the areas, where the names are readable; a click on an area shows its topics."""
+    div = fig.to_html(full_html=False, include_plotlyjs="cdn", div_id="tm",
+                      config={"displaylogo": False, "responsive": True, "displayModeBar": False})
+    nav = atlas_nav("../").replace('class="name" href=""', 'class="name" href="../../"')
+    body = f"""{nav}<main id="main"><article class="post"><header class="post-head"><div class="post-wrap wide">
+<p class="post-crumbs"><a href="../../">{conf} Atlas</a><span class="sep">/</span><a href="../index.html">2026</a></p>
+<h1>All {conf} 2026 topics</h1>
+<p>{lede}</p>
+<p class="scale"><span>shrank</span><i></i><span>grew</span></p>
+{div}
+</div></header></article></main>"""
+    return page(f"All {conf} 2026 topics", f"Every {conf} 2026 topic, sized by papers and coloured by its change since last year.",
+                url, body, extra_head=TREEMAP_CSS)
+
+
+def treemap_figure(t, root, cur, prev, area_info):
+    """Treemap root -> area -> topic. t has one row per topic with area, label, papers, share_cur, share_prev
+    and info (extra hover lines); area_info gives extra hover lines per area. Built by hand so the area boxes
+    get real numbers on hover too (plotly express shows "(?)" for parents)."""
+    import numpy as np
+    import plotly.graph_objects as go
+    growth = lambda sc, sp: float(np.log2((sc + 0.05) / (sp + 0.05)))
+    tip = lambda name, n, sc, sp, extra: (f"<b>{name}</b><br>{int(n):,} papers in {cur}<br>share of all papers: "
+                                          f"{sp:.2f}% in {prev}, {sc:.2f}% in {cur}" + (f"<br>{extra}" if extra else ""))
+    a = t.groupby("area").agg(papers=("papers", "sum"), share_cur=("share_cur", "sum"),
+                              share_prev=("share_prev", "sum"), topics=("label", "size"))
+    total = int(t.papers.sum())
+    ids, labels, parents, values = ["root"], [root], [""], [total]
+    colors, tips = [0.0], [f"<b>{root}</b><br>{total:,} papers. Click an area to see its topics."]
+    for name, r in a.iterrows():
+        ids.append(f"a/{name}"); labels.append(name); parents.append("root"); values.append(int(r.papers))
+        colors.append(growth(r.share_cur, r.share_prev))
+        tips.append(tip(name, r.papers, r.share_cur, r.share_prev, f"{int(r.topics)} topics" + (f"<br>{area_info[name]}" if area_info.get(name) else "")))
+    for i, r in t.reset_index(drop=True).iterrows():
+        ids.append(f"t/{i}"); labels.append(r.label); parents.append(f"a/{r.area}"); values.append(int(r.papers))
+        colors.append(growth(r.share_cur, r.share_prev)); tips.append(tip(r.label, r.papers, r.share_cur, r.share_prev, r.info))
+    return go.Figure(go.Treemap(
+        ids=ids, labels=labels, parents=parents, values=values, branchvalues="total", maxdepth=2, sort=True,
+        marker=dict(colors=colors, colorscale=[[0, "#3b5bdb"], [0.5, "#f1f3f5"], [1, "#d9480f"]], cmin=-1.5, cmax=1.5,
+                    line=dict(color="white", width=1)),
+        customdata=[[s] for s in tips], hovertemplate="%{customdata[0]}<extra></extra>",
+        textinfo="label+value", textfont_size=13, root_color="white", pathbar=dict(thickness=24)))
