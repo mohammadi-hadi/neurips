@@ -102,10 +102,39 @@ TREEMAP_CSS = """<style>
 #tm{height:min(80vh,820px)!important;min-height:520px;margin:4px 0 8px}
 .scale{display:flex;align-items:center;flex-wrap:wrap;gap:8px;font-size:var(--step--1);color:var(--ink-3);margin:14px 0 4px}
 .scale i{display:block;width:140px;height:10px;border-radius:5px;background:linear-gradient(90deg,#3b5bdb,#f1f3f5,#d9480f)}
+.areas{list-style:none;padding:0;margin:8px 0 0;columns:2 340px;column-gap:28px}
+.areas li{break-inside:avoid;border-bottom:1px solid var(--rule)}
+.areas button{all:unset;cursor:pointer;display:flex;gap:10px;align-items:baseline;width:100%;padding:8px 2px}
+.areas button:hover .n,.areas button:focus-visible .n{color:var(--accent);text-decoration:underline}
+.areas .d{flex:none;width:11px;height:11px;border-radius:3px;border:1px solid rgba(0,0,0,.12);transform:translateY(1px)}
+.areas .n{flex:1}.areas .v{font-family:var(--mono);font-size:.76rem;color:var(--ink-3);white-space:nowrap}
 </style>"""
 
 
-def treemap_page(fig, conf, lede, url):
+def _mix(g):
+    """The chart's colour for a growth value, so the list below matches the boxes."""
+    stops = [(-1.5, (59, 91, 219)), (0, (241, 243, 245)), (1.5, (217, 72, 15))]
+    g = max(-1.5, min(1.5, g)); (a, ca), (b, cb) = (stops[0], stops[1]) if g <= 0 else (stops[1], stops[2])
+    f = (g - a) / (b - a)
+    return "#%02x%02x%02x" % tuple(round(x + f * (y - x)) for x, y in zip(ca, cb))
+
+
+def area_list(t, prev, cur):
+    """Areas as a plain list, largest growth first. A click opens the area in the chart."""
+    import html, numpy as np
+    a = t.groupby("area").agg(papers=("papers", "sum"), sc=("share_cur", "sum"), sp=("share_prev", "sum"))
+    a["g"] = np.log2((a.sc + 0.05) / (a.sp + 0.05))
+    items = "".join(f'<li><button type="button" data-a="{html.escape(n)}"><span class="d" style="background:{_mix(r.g)}"></span>'
+                    f'<span class="n">{html.escape(n)}</span><span class="v">{int(r.papers):,} · {r.sp:.1f}% → {r.sc:.1f}%</span></button></li>'
+                    for n, r in a.sort_values("g", ascending=False).iterrows())
+    return (f'<h2>All areas</h2><p>From the one that grew most to the one that shrank most: papers in {cur}, then the share of all '
+            f'papers in {prev} and {cur}. Click a name to open it in the chart.</p><ol class="areas">{items}</ol>'
+            "<script>document.querySelectorAll('.areas button').forEach(b => b.addEventListener('click', () => {"
+            "Plotly.restyle('tm', {level: 'a/' + b.dataset.a}); document.getElementById('tm').scrollIntoView({behavior: 'smooth', block: 'center'});"
+            "}));</script>")
+
+
+def treemap_page(fig, conf, lede, url, below=""):
     """charts/treemap.html as a page of the site: header, project menu, a short explanation, then the chart.
     The chart opens on the areas, where the names are readable; a click on an area shows its topics."""
     div = fig.to_html(full_html=False, include_plotlyjs="cdn", div_id="tm",
@@ -117,6 +146,7 @@ def treemap_page(fig, conf, lede, url):
 <p>{lede}</p>
 <p class="scale"><span>shrank</span><i></i><span>grew</span></p>
 {div}
+{below}
 </div></header></article></main>"""
     return page(f"All {conf} 2026 topics", f"Every {conf} 2026 topic, sized by papers and coloured by its change since last year.",
                 url, body, extra_head=TREEMAP_CSS)
