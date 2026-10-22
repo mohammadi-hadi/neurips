@@ -189,7 +189,7 @@ function showLinks(page, arxiv, forum, pdf, title, where) {
   box.querySelector('.t').textContent = title;
   box.querySelector('.n').textContent = where;
   let h = (page ? '<a class="main" href="' + page + '" target="_blank" rel="noopener">NeurIPS page</a>' : '') +
-          '<a href="' + arxiv + '" target="_blank" rel="noopener">Find on arXiv</a>';
+          '<a href="' + arxiv + '" target="_blank" rel="noopener">Search arXiv</a>';
   if (forum) h += '<a href="' + forum + '" target="_blank" rel="noopener">OpenReview</a>' +
                   '<a href="' + pdf + '" target="_blank" rel="noopener">PDF</a>';
   box.querySelector('.l').innerHTML = h;

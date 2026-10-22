@@ -45,7 +45,7 @@ for b in order:
         lines += ["", f"### Orals ({len(orals)})", ""]
         for o in orals.itertuples():
             extra = f" · [OpenReview]({o.or_link}) · [PDF]({o.pdf_link})" if o.or_link else ""
-            lines.append(f'- {o.title_display} · <span class="links">[NeurIPS page]({o.url}) · [arXiv]({o.arxiv}){extra}</span>')
+            lines.append(f'- {o.title_display} · <span class="links">[NeurIPS page]({o.url}) · [Search arXiv]({o.arxiv}){extra}</span>')
     lines.append("")
 S = "https://mohammadi.cv/neurips/2026/"
 lines += ["## Explore", "", f"[The map]({S}atlas.html) · [All papers with poster times]({S}papers.html) · "

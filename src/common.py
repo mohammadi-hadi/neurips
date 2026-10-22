@@ -46,7 +46,9 @@ OPENREVIEW_NOTE = ("OpenReview and PDF links will appear here once NeurIPS makes
 
 def arxiv_search(title):
     """arXiv title search: finds the preprint today, while OpenReview is still closed."""
-    return "https://arxiv.org/search/?query=" + quote_plus(re.sub(r"[^\w\s-]", " ", title)) + "&searchtype=title"
+    # keep apostrophes: arXiv finds "Don't" but not "Don t"
+    q = re.sub(r"[^\w\s'-]", " ", re.sub(r"[’‘]", "'", title))
+    return "https://arxiv.org/search/?query=" + quote_plus(q) + "&searchtype=title"
 
 
 def display_titles():
