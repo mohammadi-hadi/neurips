@@ -12,7 +12,7 @@ Social cards (outputs/carousel/, 1080x1350): drawn separately with large type, n
 Subtopics are fitted on 2026 papers; each 2025 paper is assigned to its nearest subtopic in the
 embedding space. "Factor" always means the plain ratio of shares, share_2026 / share_2025.
 """
-import json
+import json, textwrap
 from pathlib import Path
 import numpy as np
 import pandas as pd
@@ -79,6 +79,15 @@ field = np.ma.masked_where(cnt < 0.08, wsum / np.maximum(cnt, 1e-9))
 med = d26.groupby("broad")[["x", "y"]].median()
 
 
+def soft_field(x, y, w, ext):
+    """The same colour field on a finer grid, fading out at the edges instead of stepping in square pixels."""
+    rng, bins, sig = [ext[:2], ext[2:]], 600, 7
+    cnt = gaussian_filter(np.histogram2d(x, y, bins=bins, range=rng)[0], sig)
+    wsum = gaussian_filter(np.histogram2d(x, y, bins=bins, range=rng, weights=w)[0], sig)
+    rgba = plt.cm.RdBu_r(plt.Normalize(-1.2, 1.2)(wsum / np.maximum(cnt, 1e-9)))
+    rgba[..., 3] = np.clip((cnt - 0.012) / 0.016, 0, 1)
+    return rgba.transpose(1, 0, 2)
+
 def spread_labels(pos, dy=0.45, dx=2.2):
     pos = pos.copy()
     for _ in range(300):
@@ -96,13 +105,19 @@ def spread_labels(pos, dy=0.45, dx=2.2):
     return pos
 
 
-def draw_field(ax, keep=None, fs=10.5, scatter=True):
-    ax.imshow(field.T, origin="lower", extent=ext, cmap="RdBu_r", vmin=-1.2, vmax=1.2, interpolation="bilinear")
+def draw_field(ax, keep=None, fs=10.5, scatter=True, soft=None, wrap=None):
+    if soft is not None:
+        ax.imshow(soft, origin="lower", extent=ext, interpolation="bilinear")
+    else:
+        ax.imshow(field.T, origin="lower", extent=ext, cmap="RdBu_r", vmin=-1.2, vmax=1.2, interpolation="bilinear")
     if scatter:
         ax.scatter(d26.x, d26.y, s=0.5, c=INK, alpha=0.15, linewidths=0)
     pos = med if keep is None else med.loc[[b for b in med.index if broad_name[b] in keep]]
-    for b, r in spread_labels(pos, dx=2.2 * fs / 10.5, dy=0.45 * fs / 10.5).iterrows():
-        outline(ax.text(r.x, r.y, broad_name[b], ha="center", va="center", fontsize=fs, color=INK,
+    name = (lambda b: textwrap.fill(broad_name[b], wrap)) if wrap else (lambda b: broad_name[b])
+    lines = max(name(b).count("\n") + 1 for b in pos.index)
+    # two-line labels need a bit more room, not twice as much: their lines are shorter
+    for b, r in spread_labels(pos, dx=2.2 * fs / 10.5 * (0.8 if wrap else 1), dy=0.45 * fs / 10.5 * (1 + 0.35 * (lines - 1))).iterrows():
+        outline(ax.text(r.x, r.y, name(b), ha="center", va="center", fontsize=fs, color=INK, linespacing=1.0,
                         fontweight="bold"), fs / 3)
     ax.set_xlim(ext[:2]); ax.set_ylim(ext[2:]); ax.axis("off")
 
@@ -115,8 +130,9 @@ def field_colorbar(fig, box, fs=9):
 
 
 fig = plt.figure(figsize=(12, 12.6))
-draw_field(fig.add_axes([0.0, 0.03, 1.0, 0.9]))
-field_colorbar(fig, [0.68, 0.07, 0.28, 0.014])
+# bigger labels than the cards: the story shows this figure at about a third of its size
+draw_field(fig.add_axes([0.0, 0.03, 1.0, 0.9]), fs=14, soft=soft_field(d26.x, d26.y, d26.fine.map(grow), ext), wrap=20)
+field_colorbar(fig, [0.62, 0.925, 0.34, 0.016], fs=12)  # top right: the bottom right holds a label
 frame(fig, "Where NeurIPS moved between 2025 and 2026",
       "Red topics grew their share of papers. Blue ones shrank.")
 fig.savefig(FIG / "field_moved.png"); plt.close(fig)
