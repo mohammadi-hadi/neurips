@@ -54,6 +54,7 @@
     "4": "Graph neural network architectures, graph foundation models, generative models for graphs and hypergraphs, and sequential and generative recommendation.",
     "5": "Learning dynamics and generalization theory, representation geometry, attribution and sparse autoencoders, plus brain decoding, spiking networks, quantum ML and verification.",
     "7": "Visual reasoning, image-text alignment, multimodal fusion, benchmarks and test-time adaptation for vision-language models, plus speech and audio language models.",
-    "18": "Transformer theory, sparse attention, KV cache, quantization, pruning, speculative decoding, PEFT, model merging, scaling laws, diffusion language models and LLM-written GPU kernels."
+    "18": "Transformer theory, sparse attention, KV cache, quantization, pruning, speculative decoding, PEFT, model merging, scaling laws, diffusion language models and LLM-written GPU kernels.",
+    "0": "Benchmarks, memory, skills, safety, multi-agent coordination and multi-turn training for tool-using and coding LLM agents."
   }
 }

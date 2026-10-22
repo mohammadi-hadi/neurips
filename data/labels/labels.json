@@ -398,7 +398,7 @@
   },
   "33": {
    "name": "Muon, Adam and Sign-Based Optimizers",
-   "one_line": "These papers analyse and design neural-network optimizers such as Muon, Adam, Lion and SignSGD, covering orthogonalized updates, momentum and edge-of-stability dynamics.",
+   "one_line": "These papers analyze and design neural-network optimizers such as Muon, Adam, Lion and SignSGD, covering orthogonalized updates, momentum and edge-of-stability dynamics.",
    "keywords": [
     "Muon",
     "Adam",
@@ -521,7 +521,7 @@
   },
   "43": {
    "name": "Deep Network Theory and Learning Dynamics",
-   "one_line": "These papers analyse ReLU and residual networks theoretically, covering implicit bias, incremental learning, parameter symmetries, identifiability and feature learning.",
+   "one_line": "These papers analyze ReLU and residual networks theoretically, covering implicit bias, incremental learning, parameter symmetries, identifiability and feature learning.",
    "keywords": [
     "deep learning theory",
     "ReLU networks",
@@ -706,7 +706,7 @@
   },
   "58": {
    "name": "Spiking Neural Networks",
-   "one_line": "These papers train and analyse spiking neural networks for energy-efficient neuromorphic computing, using learnable delays, neuron models and plasticity rules.",
+   "one_line": "These papers train and analyze spiking neural networks for energy-efficient neuromorphic computing, using learnable delays, neuron models and plasticity rules.",
    "keywords": [
     "spiking neural networks",
     "SNN",
@@ -851,7 +851,7 @@
   },
   "70": {
    "name": "Vision-Language-Action Robot Policies",
-   "one_line": "Training, fine-tuning, analysing and evaluating vision-language-action models for robotic manipulation.",
+   "one_line": "Training, fine-tuning, analyzing and evaluating vision-language-action models for robotic manipulation.",
    "keywords": [
     "vision-language-action",
     "VLA",
@@ -911,7 +911,7 @@
   },
   "75": {
    "name": "Activation Steering of LLMs",
-   "one_line": "Controlling language model behaviour at inference time by editing internal activations with steering vectors or subspace interventions.",
+   "one_line": "Controlling language model behavior at inference time by editing internal activations with steering vectors or subspace interventions.",
    "keywords": [
     "activation steering",
     "steering vectors",
@@ -1829,7 +1829,7 @@
  "broad": {
   "0": {
    "name": "LLM Agents",
-   "one_line": "Benchmarks, memory, skills, safety, multi-agent coordination and multi-turn training for tool-using and coding LLM agents, plus human oversight of AI decisions."
+   "one_line": "Benchmarks, memory, skills, safety, multi-agent coordination and multi-turn training for tool-using and coding LLM agents."
   },
   "1": {
    "name": "Vision & Perception",
