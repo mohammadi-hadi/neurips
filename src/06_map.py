@@ -212,10 +212,13 @@ def zoom_js(names, area_of):
   const lim = {minZoom: home.zoom - 1.5, maxZoom: home.zoom + 9};  // never lose the map in empty space
   let cur = {...home, ...lim};
   datamap.deckgl.setProps({initialViewState: cur});
-  datamap.onViewStateChange('zoomctl', p => { if (p && p.viewState) cur = {...cur, ...p.viewState}; });
+  // follow the user's own moves; skip the in-between frames of an animation, or quick pinches and clicks get lost
+  datamap.onViewStateChange('zoomctl', p => {
+    if (p && p.viewState && !(p.interactionState && p.interactionState.inTransition)) cur = {...cur, ...p.viewState};
+  });
   function go(v, ms) {
     const z = Math.max(lim.minZoom, Math.min(lim.maxZoom, v.zoom === undefined ? cur.zoom : v.zoom));
-    cur = {...cur, ...v, zoom: z, ...lim, transitionDuration: ms || 350};
+    cur = {...cur, ...v, zoom: z, ...lim, transitionDuration: ms === undefined ? 350 : ms};
     datamap.deckgl.setProps({initialViewState: cur});
     datamap.notifyViewStateChange(cur);
     hideTip();
@@ -261,6 +264,20 @@ def zoom_js(names, area_of):
     if (b[3] - b[2] < 2 * m) { const c = (b[2] + b[3]) / 2; b[2] = c - m; b[3] = c + m; }
     fit(b);
   });
+
+  // trackpad pinch (the browser sends it as a wheel event with ctrlKey): zoom faster than deck.gl's default,
+  // without its smoothing lag, and keep the point under the fingers where it is
+  const deckEl = document.getElementById('deck-container');
+  // on the window, capture phase: runs before deck.gl's own wheel handler, which would otherwise take the event first
+  window.addEventListener('wheel', e => {
+    if (!e.ctrlKey || !deckEl.contains(e.target)) return;
+    e.preventDefault(); e.stopImmediatePropagation();
+    const vp = datamap.deckgl.getViewports()[0]; if (!vp) return;
+    const r = deckEl.getBoundingClientRect(), p = vp.unproject([e.clientX - r.left, e.clientY - r.top]);
+    const z = Math.max(lim.minZoom, Math.min(lim.maxZoom, cur.zoom - Math.max(-0.6, Math.min(0.75, e.deltaY / 45))));
+    const k = Math.pow(2, cur.zoom - z);
+    go({longitude: p[0] + (cur.longitude - p[0]) * k, latitude: p[1] + (cur.latitude - p[1]) * k, zoom: z}, 0);
+  }, {capture: true, passive: false});
 
   // keyboard: + and - zoom, 0 shows the whole map, Esc closes the paper box
   window.addEventListener('keydown', e => {
